@@ -1,0 +1,3 @@
+show_debug_message(instance_exists(dialogue_opening_cutscene));
+show_debug_message(instance_exists(obj_textbox))
+show_debug_message(obj_textbox.visible);

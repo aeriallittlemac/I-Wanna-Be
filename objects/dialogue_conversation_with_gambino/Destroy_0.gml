@@ -1,0 +1,1 @@
+teleport_player(1575, 95, diamondwood_high_1F);

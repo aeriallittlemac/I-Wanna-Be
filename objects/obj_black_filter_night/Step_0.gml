@@ -1,0 +1,1 @@
+image_alpha = night_alpha*global.night;

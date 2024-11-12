@@ -1,0 +1,1 @@
+depth = LAMP_DEPTH;

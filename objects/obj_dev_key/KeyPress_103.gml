@@ -1,0 +1,1 @@
+teleport_player(65, 100, diamondwood_high_bathroom);

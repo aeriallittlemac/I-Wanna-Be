@@ -1,0 +1,13 @@
+depth = TEXTBOX_DEPTH-1
+sprite[RIGHT] = spr_playerpoint_right;
+sprite[UP] = spr_playerpoint_up;
+sprite[LEFT] = spr_playerpoint_left;
+sprite[DOWN] = spr_playerpoint_down;
+global.real_left_border = 0;
+global.real_right_border = room_width;
+global.real_top_border = 94;
+global.real_bottom_border = 152;
+global.map_left_border = 197;
+global.map_right_border = 265;
+global.map_top_border = 9;
+global.map_bottom_border = 14;

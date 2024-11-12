@@ -1,0 +1,11 @@
+global.cutscene = true;
+obj_player.sprite_index = obj_player.sprite[LEFT];
+obj_player.face = LEFT;
+game_filter_set_visible("black_screen");
+instance_create_depth(obj_cow.x, obj_cow.y, TEXTBOX_DEPTH, obj_slice);
+instance_destroy(obj_cow);
+game_wait(1.8);
+game_teleport_player(454,110,school_3F);
+//game_filter_set_invisible("find_cow_filter");
+game_filter_set_invisible("black_screen");
+game_NewDialogue(dialogue_you_hand_the_burger);

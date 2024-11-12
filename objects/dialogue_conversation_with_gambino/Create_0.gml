@@ -1,0 +1,17 @@
+event_inherited();
+scr_text("Oh well, I’m not paying the both of them, so I suppose I can't really complain...", spr_gambino_icon, 0);
+scr_text("Anyways, enough with the formalities. Let’s get down to business, shall we?", spr_gambino_icon, 0);
+scr_text("You nod your head in agreement.");
+scr_text("Look, Bobby. I’d really like to run this school well. Develop our students.", spr_gambino_icon, 0);
+scr_text("Make them good enough to compete with the other schools in town, even.", spr_gambino_icon, 0);
+scr_text("But alas, the school is in a terrible state.", spr_gambino_icon, 0);
+scr_text("The children are retarded and the entire school personnel is literally one miserable middle aged man...", spr_gambino_icon, 0);
+scr_text("...if you don’t count the other retarded children who I have hired as temporary substitutes.", spr_gambino_icon, 0);
+scr_text("For all I care, this is a sinking ship.", spr_gambino_icon, 0);
+scr_text("So, as the captain, I need you to do things for me to help me save this ship.", spr_gambino_icon, 0);
+scr_text("Understood?", spr_gambino_icon, 0);
+scr_text("You nod your head.");
+scr_text("A good start would be to actually hire a competent educator, and maybe even two...", spr_gambino_icon, 0);
+scr_text("Oh well.", spr_gambino_icon, 0);
+scr_text("That's besides the point.", spr_gambino_icon, 0);
+scr_text("Your first mission starts in 15 minutes, so listen carefully.", spr_gambino_icon, 0);

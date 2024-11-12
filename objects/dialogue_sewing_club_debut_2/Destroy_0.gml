@@ -1,0 +1,2 @@
+game_NewCharacterIntro(obj_ashley);
+game_NewDialogue(dialogue_sewing_club_debut_3);

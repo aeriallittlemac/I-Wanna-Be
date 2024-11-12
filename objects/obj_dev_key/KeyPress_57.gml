@@ -1,0 +1,1 @@
+show_debug_message(instance_create_depth(196, 74, 0, obj_hallway_monitor_vet));

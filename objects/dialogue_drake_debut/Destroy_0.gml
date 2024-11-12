@@ -1,0 +1,2 @@
+game_NewCharacterIntro(obj_drake);
+game_NewDialogue(dialogue_come_with_us);

@@ -1,0 +1,13 @@
+event_inherited();
+camera_set_view_target(view_camera[0], obj_player);
+move_to_pos(1, 0, 1310, obj_player.y);
+show_debug_message(obj_player.c_sequences[0]);
+show_debug_message(obj_player.c_target_x);
+show_debug_message(obj_player.c_target_y);
+show_debug_message(obj_player.c_previous_xspeed);
+show_debug_message(obj_player.c_previous_yspeed);
+show_debug_message(obj_player.c_xspeed);
+show_debug_message(obj_player.c_yspeed);
+npc_move_to_pos(obj_drake, 1, 0, 1240, obj_drake.y);
+npc_move_to_pos(obj_jake, 1, 0, 1350, obj_jake.y);
+scr_text("Basement One...the trial due");

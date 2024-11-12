@@ -1,0 +1,10 @@
+event_inherited();
+scr_text("You open the box that Brooklyn places in front of you.");
+scr_text("You see a piece of cloth, a needle and thread.");
+scr_text("Stitch a pattern, kid. Consider this your entry test.", spr_brooklyn_icon, 1);
+scr_text("But-", spr_grace_icon, 0);
+scr_text("Wait, Grace. Let her cook.", spr_mei_icon, 0);
+scr_text("You try to stitch a bear onto the cloth.");
+scr_text("It looks like shit.");
+scr_text("You need a reference for it.");
+scr_text("Somewhere in this classroom...");

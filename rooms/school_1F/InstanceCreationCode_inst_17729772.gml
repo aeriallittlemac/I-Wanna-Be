@@ -1,0 +1,1 @@
+cutscene_object = dialogue_my_name_is_wei;

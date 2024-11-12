@@ -1,0 +1,2 @@
+obj_bear_interactable.entityActivateScript = NewDialogue;
+obj_bear_interactable.entityActivateArg = dialogue_sewing_club_bear;
