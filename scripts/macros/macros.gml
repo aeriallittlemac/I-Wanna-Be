@@ -15,4 +15,7 @@
 #macro CLASSROOM_SEATS_SPACING_X 62
 #macro CLASSROOM_SEATS_SPACING_Y 25
 #macro QUEST_TEXT_FONT_SIZE 10
-#macro QUEST_TEXT_TIMER 2.5
+#macro QUEST_TEXT_TIMER 1.5
+#macro KICK_DRUM_1 keyboard_check_pressed(ord("Z"))
+#macro KICK_DRUM_2 keyboard_check_pressed(ord("X"))
+#macro SNARE_DRUM keyboard_check_pressed(vk_left)

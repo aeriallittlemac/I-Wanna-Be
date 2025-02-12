@@ -1,1 +1,1 @@
-show_debug_message(instance_create_depth(196, 74, 0, obj_hallway_monitor_vet));
+instance_create_depth(obj_player.x, obj_player.y, OBJ_MAX_DEPTH, obj_rap_machine);

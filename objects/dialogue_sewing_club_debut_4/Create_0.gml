@@ -1,13 +1,14 @@
 event_inherited();
 scr_text("Welcome to the club, Bobby. I trust that you walked in here to join us?", spr_mei_icon, 0);
 scr_text("Hold up. You're really going to just let him walk in?", spr_brooklyn_icon, 1);
-scr_text("What do you mean?", spr_grace_icon, 0);
+scr_text("What do you mean?", spr_grace_fake_smile, 0);
 scr_text("You know damn well what I mean.",spr_brooklyn_icon,1);
 scr_text("A boy interested in sewing? Gimme a break.",spr_brooklyn_icon,1);
-scr_text("You're just here to pick up girls, aren't you?", spr_brooklyn_icon,1);
+scr_text("You're just here to chase skirts, aren't you?", spr_brooklyn_icon,1);
 scr_text("Come on, Brooklyn, you're being unreasonable.", spr_mei_icon, 0);
 scr_text("How?",spr_brooklyn_icon, 1);
-scr_text("Does it matter why he wants to join?", spr_mei_icon, 0);
-scr_text("As long as he's willing to put in the work, he should have a place here.", spr_mei_icon,0);
+scr_text("None of us are even wearing skirts!", spr_mei_icon, 0);
+scr_text("*gives Mei a \"are you fucking with me\" glare", spr_brooklyn_icon,1);
+scr_text("*returns with \"yes, I am fucking with you\" smile", spr_mei_icon, 0);
 scr_text("Whatever.",spr_brooklyn_icon, 1);
 scr_text("Come over here, you.",spr_brooklyn_icon, 1);

@@ -1,3 +1,4 @@
+//Grace: I mean, I would totally wear a skirt, but the studio had to cut budget on the demo... 
 instance_create_depth(88, 63, inst_4A221EE.depth, obj_sewing_kit);
 var player_dist_to_brooklyn = abs( x - obj_brooklyn.x) +  abs( y - obj_brooklyn.y - 7);
 game_wait(player_dist_to_brooklyn/room_speed);

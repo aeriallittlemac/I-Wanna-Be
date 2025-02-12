@@ -7,7 +7,7 @@ instance_destroy(inst_325AA326);
 teleport_npc(obj_grace, school_3F, 396, 119, DOWN);
 global.game_time = "12:30 am"
 global.night = true;
-
+AddInstanceToActivate(inst_3D85AE7E);
 
 
 

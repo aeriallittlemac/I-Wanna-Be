@@ -1,1 +1,2 @@
-cutscene_object = dialogue_didnt_see_you_there;
+cutscene_object = cutscene_meeting_grace;
+instance_deactivate_object(self);

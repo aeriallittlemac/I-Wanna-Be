@@ -1,6 +1,4 @@
-textbox_reset();
-global.in_dialogue = true;
-obj_textbox.cur_dialogue = self;
+event_inherited();
 scr_text("This is the women's bathroom.", spr_wei_icon, 1);
 scr_text("Read the fucking sign, jackass.", spr_wei_icon, 0);
 scr_option("first", "first");
@@ -34,4 +32,5 @@ function branches(branch){
 
 	}
 }
+
 

@@ -3,6 +3,7 @@ global.game_time = "5:00 pm";
 global.night = false;
 global.player_sleeping = false;
 global.input_off = false;
+global.destroy_soon = noone;
 timer = array_create(0);
 sequences = array_create(0);
 filters = array_create(0);
@@ -16,3 +17,23 @@ game_change_image_object = array_create();
 game_change_image_index_num = array_create();
 character_intro_flag = false;
 global.isometric_room = false;
+game_sfx = array_create(0);
+game_sound_loop = array_create(0);
+alarm[0] = 1200;
+
+game_overlay_text = array_create(0);
+game_text_x = array_create(0);
+game_text_y = array_create(0);
+game_font = array_create(0);
+game_text_timer = array_create(0);
+game_real_text_last_timer = array_create(0);
+game_font_color = array_create(0);
+game_inst_x = array_create(0);
+game_inst_y = array_create(0);
+game_obj = array_create(0);
+game_obj_depth = array_create(0);
+game_var_struct = array_create(0);
+
+game_ctarget = array_create(0);
+game_chspeed = array_create(0);
+

@@ -18,14 +18,14 @@ if array_length(sequences) > 0{
 
 	if (real_xspeed == 0 && real_yspeed == 0) || skip_sequence{
 		image_index = 0;
-		if abs(x - obj_player.x) < player_reach || skip_sequence{
+		//if abs(x - obj_player.x) < player_reach || skip_sequence{
 		array_delete(target_x, 0, 1);
 		array_delete(target_y, 0, 1);
 		array_delete(xspeed, 0, 1);
 		array_delete(yspeed, 0, 1);
 		array_delete(sequences, 0, 1);
 		skip_sequence = false;
-		}
+		//}
 	}
 
 	previous_xspeed = real_xspeed;
@@ -69,7 +69,11 @@ if array_length(sequences) > 0{
 	else if sequences[0] == "play_sfx"{
 		audio_play_sound(sfx[0], 1, false);
 		array_delete(sfx, 1, false);
-		array_delete(sequences, 0, false);
+		array_delete(sequences, 0, 1);
+	}
+	else if sequences[0]  == "animate"{
+		sprite_index = animation[0];
+		array_delete(sequences, 0, 1);
 	}
 }
 else{

@@ -1,1 +1,2 @@
-cutscene_object = dialogue_didnt_see_you_there;
+cutscene_object = dialogue_wei_microwave;
+instance_deactivate_object(self);

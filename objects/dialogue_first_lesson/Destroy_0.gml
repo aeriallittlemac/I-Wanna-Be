@@ -1,4 +1,6 @@
 global.cutscene = true;
+audio_stop_sound(classroom);
+audio_play_sound(sfx_light_switch, 1, false);
 game_filter_set_visible("black_screen");
 teleport_npc(obj_gambino, school_main_classroom, 173, 42, DOWN)
 game_wait(0.7);

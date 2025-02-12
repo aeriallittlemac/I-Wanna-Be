@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Untitled_49.wav",
-  "duration": 20.733969,
+  "duration": 15.0,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

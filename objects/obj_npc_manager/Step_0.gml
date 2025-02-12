@@ -4,3 +4,4 @@ for(var i=0; i < array_length(npcs); i++){
 	}
 	
 }
+global.npc_active = check_npc_activity();

@@ -1,3 +1,7 @@
-event_inherited();
-scr_text("Follow Wei up the stairs.");
-NewQuest(global.quest_list.enter_dorm, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
+//this object isn't actually a dialogue...just not bothered to change the name lmao
+instance_destroy(player_n_wei);
+game_camera_change_settings(obj_player, 1);
+game_wait(1);
+game_camera_change_settings(obj_player, -1);
+game_NewDialogue(dialogue_follow_wei_up_2);
+

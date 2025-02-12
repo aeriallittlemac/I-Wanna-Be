@@ -1,6 +1,5 @@
 function scr_text(_text){
 	array_push(obj_textbox.text,_text);
-	
 	if argument_count > 1{
 		array_push(obj_textbox.speaker_sprite, argument[1]);
 		array_push(obj_textbox.speaker_side, argument[2]);

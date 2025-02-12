@@ -53,3 +53,8 @@ function npc_play_sfx(npc, sfx){
 	array_push(npc.sfx, sfx);
 	array_push(npc.sequences, "play_sfx");
 }
+
+function npc_animate(npc, spr){
+	array_push(npc.animation, spr);
+	array_push(npc.sequences, "animate");
+}

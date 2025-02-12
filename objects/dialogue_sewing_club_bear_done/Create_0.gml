@@ -1,8 +1,8 @@
 event_inherited();
 scr_text("You show everyone your work.");
 scr_text("That's not bad at all.", spr_mei_icon, 0);
-scr_text("Yeah! The design is soooo cute!", spr_grace_icon, 0);
-scr_text("You feel bad now, Brooklyn?", spr_grace_icon, 0);
+scr_text("Yeah! The design is soooo cute!", spr_grace_fake_smile, 0);
+scr_text("You feel bad now, Brooklyn?", spr_grace_fake_smile, 0);
 scr_text("Yeah...", spr_brooklyn_icon, 1);
 scr_text("Sorry, Bobby. I have to come clean.", spr_brooklyn_icon, 1);
 scr_text("The \"sewing\" part of the club is pretty much a hoax.", spr_brooklyn_icon, 1);
@@ -11,7 +11,7 @@ scr_text("Sorry about testing you and stuff, I didn’t realize you were so seri
 scr_text("Well, that’s not entirely true.",spr_mei_icon,0);
 scr_text("Grace does sew here every now and then, and she’s pretty much Arachne incarnate!.",spr_mei_icon,0);
 scr_text("You could learn a lot from her.",spr_mei_icon,0);
-scr_text("You’re taking it too far...", spr_grace_icon,0);
+scr_text("You’re taking it too far...", spr_grace_fake_smile,0);
 scr_text("Would you like to gift the bear?");
 scr_option("Yes", "y");
 scr_option("No", "n");
@@ -32,9 +32,9 @@ function branches(branch){
 	    break;
 		case "grace":
 			scr_text("You hand Grace the bear you just made.");
-			scr_text("Woah, this is really neat - wait, are you giving this to me? Why???",spr_grace_icon,0);
+			scr_text("Woah, this is really neat - wait, are you giving this to me? Why???",spr_grace_fake_smile,0);
 			scr_text("You tell her that you think it reminds you of her.");
-			scr_text("W-what is that supposed to mean? Um, I’m very happy though! Thank you!",spr_grace_icon,0);
+			scr_text("W-what is that supposed to mean? Um, I’m very happy though! Thank you!",spr_grace_fake_smile,0);
 	    break;
 		case "mei":
 			scr_text("You hand Mei the bear you just made.");

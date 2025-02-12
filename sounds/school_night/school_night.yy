@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "school_night.wav",
-  "duration": 48.007168,
+  "duration": 48.0,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

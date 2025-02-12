@@ -1,4 +1,5 @@
 event_inherited();
+audio_play_sound(classroom, 1, true);
 scr_text("Greetings, little runts.", spr_mrchen_icon, 0);
 scr_text("How was the break?", spr_mrchen_icon, 0);
 scr_option("Great", "great");

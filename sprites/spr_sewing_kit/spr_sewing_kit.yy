@@ -72,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "General Sprites",
+    "path": "folders/General Sprites.yy",
   },
 }

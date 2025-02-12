@@ -1,3 +1,3 @@
 event_inherited();
-scr_text("You check the alarm clock.")
-scr_text("The time is " + global.game_time+".");
+scr_text("You check the time.");
+scr_text("It's "+global.game_time);

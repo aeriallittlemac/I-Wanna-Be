@@ -8,6 +8,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	grace : {
 		object: obj_grace,
@@ -18,6 +19,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : spr_grace_silhouette,
 	},
 	drake : {
 		object: obj_drake,
@@ -28,6 +30,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	guy : {
 		object: obj_guy,
@@ -38,6 +41,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	brooklyn : {
 		object : obj_brooklyn,
@@ -48,6 +52,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	mcronald : {
 		object : obj_mcronald,
@@ -58,6 +63,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	job : {
 		object : obj_job,
@@ -68,7 +74,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
-	
+		initial_animation : noone,	
 	},
 	mrchen : {
 		object : obj_mrchen,
@@ -79,7 +85,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
-		
+		initial_animation : noone,
 	},
 	gambino : {
 		object: obj_gambino,
@@ -90,6 +96,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	ashley : {
 		object: obj_ashley,
@@ -100,6 +107,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	mei : {
 		object: obj_mei,
@@ -110,6 +118,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	jake : {
 		object: obj_jake,
@@ -120,6 +129,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
+		initial_animation : noone,
 	},
 	
 
@@ -137,6 +147,7 @@ array_push(npcs, global.npc_list.gambino);
 array_push(npcs, global.npc_list.ashley);
 array_push(npcs, global.npc_list.mei);
 array_push(npcs, global.npc_list.jake);
+global.npc_active = false;
 
 for(var i = 0; i < array_length(npcs); i++){
 	if !instance_exists(npcs[i].object){
@@ -150,11 +161,27 @@ function teleport(npc){
 		if npc == npcs[i].object{
 			npc.x = npcs[i].initial_x;
 			npc.y = npcs[i].initial_y;
-			npc.sprite_index = npc.sprite[npcs[i].initial_face];
+			if npcs[i].initial_animation == noone{
+				npc.sprite_index = npc.sprite[npcs[i].initial_face];
+			}
+			else{
+				npc.sprite_index =npcs[i].initial_animation;
+			}
 			if npcs[i].cur_room != room{
 				instance_deactivate_object(npc);
 			}
 			array_delete(npc.sequences, 0, 1);
 		}
 	}
+}
+
+function check_npc_activity(){
+	for(var i=0; i < array_length(npcs); i++){
+		if instance_exists(npcs[i].object){
+			if array_length(npcs[i].object.sequences) > 0{
+				return true;
+			}
+		}	
+	}
+	return false;
 }

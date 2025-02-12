@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Character Portraits",
-    "path": "folders/UI/Dialogue System/Character Portraits.yy",
+    "name": "Grace_expressions",
+    "path": "folders/UI/Dialogue System/Character Portraits/Grace_expressions.yy",
   },
 }

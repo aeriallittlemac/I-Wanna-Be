@@ -1,11 +1,11 @@
-run_key = vk_lshift;
+run_key = keyboard_check(vk_lshift) ||keyboard_check(ord("X"));
 right_key = keyboard_check(vk_right);
 left_key = keyboard_check(vk_left);
 up_key = keyboard_check(vk_up);
 down_key = keyboard_check(vk_down);
 image_alpha = !global.player_sleeping;
 var speed_multiplier = 1;
-if keyboard_check(run_key) {
+if run_key {
 	speed_multiplier = run_speed_multiplier;
 }
 if  keyboard_check_released(run_key){
@@ -36,7 +36,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if !global.cutscene && !global.in_dialogue{
+	if !global.cutscene && !global.in_dialogue && !instance_exists(obj_rhythm_game) && !global.in_inventory{
 	
 		//set sprite
 		if yspeed == 0{

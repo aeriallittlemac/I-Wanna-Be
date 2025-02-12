@@ -1,0 +1,4 @@
+game_wait((obj_grace.x - 300)/room_speed);
+npc_move_to_pos(obj_grace, 1, 0, 300, obj_grace.y);
+npc_wait(obj_grace, 1.5);
+npc_dialogue(obj_grace, dialogue_grace_threat);

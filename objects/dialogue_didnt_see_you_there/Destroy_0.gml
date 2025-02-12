@@ -1,2 +1,2 @@
-game_NewCharacterIntro(obj_grace);
-game_NewDialogue(dialogue_didnt_see_you_there_1);
+instance_create_depth(0, 0, 0, beatmap_grace_first_meeting);
+instance_create_depth(0, 0, 0, player_n_grace);

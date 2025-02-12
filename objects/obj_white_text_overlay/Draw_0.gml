@@ -1,8 +1,11 @@
-default_pixel_font = font_add("joystix monospace.otf", font_size, false, false, 16, 128);
+if default_pixel_font == noone{
+default_pixel_font = font_add("joystix monospace.otf", font_size*4, false, false, 16, 128);
 font_add_enable_aa(false);
+}
 draw_set_colour(font_color);
 draw_set_font(default_pixel_font);
-draw_text_colour(x, y, displayed_overlay_text, font_color, font_color, font_color, font_color, set_text_alpha);
+draw_text_transformed_colour(x, y, displayed_overlay_text, 0.25, 0.25, 0,font_color, font_color, font_color, font_color, set_text_alpha);
+
 if string_length(overlay_text) > string_length(displayed_overlay_text){
 	if timer <= 0 {
 		i++;

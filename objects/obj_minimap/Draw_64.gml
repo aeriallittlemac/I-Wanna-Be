@@ -8,7 +8,7 @@ room_name = room_get_name(room)
 floor_cutoff = string_pos("_", room_name)
 floor_name_text = string_copy(room_name,floor_cutoff+1, string_length(room_name) - floor_cutoff);
 school_hall = string_length(floor_name_text)<3
-map_visible = !global.cutscene&&!global.in_dialogue && string_length(floor_name_text)<3;
+map_visible = !global.cutscene&&!global.in_dialogue && string_length(floor_name_text)<3 && !instance_exists(obj_rhythm_game);
 if map_visible{
 minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
 draw_sprite_ext(spr_minimap, -1, x*minimap_scale, y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );

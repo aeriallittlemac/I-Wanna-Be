@@ -1,4 +1,4 @@
-default_pixel_font = font_add("joystix monospace.otf", 14, false, false, 32, 128);
+default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
 font_add_enable_aa(false);
 cur_dialogue = noone;
 x_border = 32;
@@ -7,13 +7,14 @@ y_border = 40;
 line_sep = 8;
 display_text = "";
 text = array_create(0);
-line_sep = 30;
+line_sep = 60;
+style = "normal";
 //text = ["I walk this empty street, on the boulevard of broken dreams. Where the city sleeps, and I'm the only one and I walk alone.", "My shadow's only thing that walks besides me."]
 global.in_dialogue = false;
 
-
-char_speed = 1;
-timer = 1;
+punctucation_pause = 0.2 * room_speed;
+regular_pause = 0.02 * room_speed;
+timer = 0;
 i=1;
 j=0;
 

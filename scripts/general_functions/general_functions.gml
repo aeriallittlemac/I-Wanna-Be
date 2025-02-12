@@ -33,6 +33,14 @@ function game_NewDialogue(dialogue_object){
 	array_push(obj_settings.dialogue_objects, dialogue_object);	
 	array_push(obj_settings.sequences, "new_dialogue");
 }
+function game_NewCutscene(cutscene){
+	if object_get_parent(cutscene) == dialogue_parent{
+		NewDialogue(cutscene);
+	}
+	else{
+		instance_create_depth(0,0,0, cutscene);
+	}
+}
 
 function NewQuest(quest, size, color, linger_time){
 	array_push(obj_minimap.inv, quest);
@@ -43,9 +51,12 @@ function NewQuest(quest, size, color, linger_time){
 		font_size = size;
 		font_color = color;
 		seconds = linger_time;
-		timer = seconds*room_speed;	
+		timer = seconds * room_speed;	
+		default_pixel_font = font_add("joystix monospace.otf", font_size, false, false, 32, 128);
+		font_add_enable_aa(false);
 	}
 }
+
 
 function QuestCompleted(quest){
 	for (var i=0; i < array_length(obj_minimap.inv); i++){
@@ -76,13 +87,24 @@ function game_NewCharacterIntro(npc){
 	array_push(obj_settings.sequences, "character_intro");
 }
 
-function NewSlideshow(spr, dialog){
+function NewSlideshow(spr){
 	array_push(obj_slideshow.slides, spr);
-	NewDialogue(dialog);
+	if argument_count > 1{
+		NewDialogue(argument[1]);
+	}
+	
 }
 
 function AddInstanceToActivate(instance){
 	array_push(obj_activate_manager.activate_list, instance);
+}
+
+function RemoveFromActivateList(instance){
+	for(var j = 0; j < array_length(obj_activate_manager.activate_list); j++){
+		if instance == obj_activate_manager.activate_list[j]{
+			array_delete(obj_activate_manager.activate_list, j, 1);
+		}
+	}
 }
 
 function AddInstanceToDestroy(instance){
@@ -111,4 +133,58 @@ function game_change_image_index(obj, nun){
 	array_push(obj_settings.sequences, "change_image_index")
 	array_push(obj_settings.game_change_image_object, obj);
 	array_push(obj_settings.game_change_image_index_num, nun);
+}
+function game_play_sfx(sfx, loop){
+	array_push(obj_settings.game_sfx, sfx);
+	array_push(obj_settings.game_sound_loop, loop);
+	array_push(obj_settings.sequences, "play_sfx");
+}
+
+function game_write_text(txt, text_x, text_y, font, font_color, text_timer, text_Last_timer){
+	array_push(obj_settings.game_overlay_text, txt);
+	array_push(obj_settings.game_text_x, text_x);
+	array_push(obj_settings.game_text_y, text_y);
+	array_push(obj_settings.game_font, font);
+	array_push(obj_settings.game_font_color, font_color);
+	array_push(obj_settings.game_text_timer, text_timer);
+	array_push(obj_settings.game_real_text_last_timer, text_Last_timer*room_speed);
+	array_push(obj_settings.sequences, "write_text");
+}
+function game_create_instance_depth(inst_x, inst_y, dep, obj){
+	array_push(obj_settings.game_inst_x, inst_x);
+	array_push(obj_settings.game_inst_y, inst_y);
+	array_push(obj_settings.game_obj, obj);
+	array_push(obj_settings.game_obj_depth, dep);
+	if argument_count > 4{
+		array_push(obj_settings.game_var_struct, argument[4]);		
+	}
+	else{
+		array_push(obj_settings.game_var_struct, noone);
+	}
+	array_push(obj_settings.sequences, "create_instance");
+}
+
+function item_acquired(item){
+	array_push(obj_inventory.inventory, item);
+	var inst = instance_create_depth(obj_player.x-30, obj_player.y + 10, OBJ_MAX_DEPTH, obj_white_text_overlay);
+	with inst{
+		overlay_text = item.item_name + " acquired!";
+		font_size = 4;
+		text_timer = 0.01;
+		text_last_timer = 0.7;
+	}
+}
+
+function item_remove(item){
+	for (var i=0; i < array_length(obj_inventory.inventory); i++){
+		if obj_inventory.inventory[i] == item{
+			array_delete(obj_inventory.inventory, i, 1);
+		}
+	}
+}
+
+function game_camera_change_settings(ctarget, chspeed){
+	array_push(obj_settings.game_ctarget, ctarget); 
+	array_push(obj_settings.game_chspeed, chspeed);
+	array_push(obj_settings.sequences, "camera_change_settings");
 }

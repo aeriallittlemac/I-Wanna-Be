@@ -42,7 +42,7 @@ global.quest_list = {
 		quest_y : 95,
 	},
 	
-	sewing_club : {
+	sewing_club_quest : {
 		description : "Go meet the sewing club",
 		icon: spr_main_quest_icon,
 		quest_room : school_1F,
@@ -59,6 +59,15 @@ global.quest_list = {
 		//1620 is default
 		quest_x : 650,
 		quest_y : 104,
+	},
+	hot_pocket : {
+		description : "Go up to the kitchen to microwave your hot pocket",
+		icon: spr_main_quest_icon,
+		quest_room : school_3F,
+		quest_room_width : 1080,
+		//1620 is default
+		quest_x : 513,
+		quest_y : 114,
 	},
 	
 	

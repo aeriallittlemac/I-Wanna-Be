@@ -11,7 +11,10 @@ game_wait(3.5);
 global.player_sleeping = false;
 QuestCompleted(global.quest_list.enter_dorm);
 teleport_npc(obj_grace, school_3F, 396, 119, DOWN);
-instance_activate_object(inst_3D85AE7E);
+AddInstanceToActivate(inst_3D85AE7E);
+AddInstanceToActivate(inst_60CDF728);
+AddInstanceToActivate(inst_53414DC0);
+AddInstanceToActivate(inst_1A7BF3E9);
 game_NewDialogue(dialogue_hunger);
 //array_pop(obj_minimap.inv);
 

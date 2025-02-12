@@ -1,4 +1,5 @@
 event_inherited();
+audio_play_sound(conversation_with_gambino, 1, true);
 scr_text("Oh well, I’m not paying the both of them, so I suppose I can't really complain...", spr_gambino_icon, 0);
 scr_text("Anyways, enough with the formalities. Let’s get down to business, shall we?", spr_gambino_icon, 0);
 scr_text("You nod your head in agreement.");
@@ -15,3 +16,5 @@ scr_text("A good start would be to actually hire a competent educator, and maybe
 scr_text("Oh well.", spr_gambino_icon, 0);
 scr_text("That's besides the point.", spr_gambino_icon, 0);
 scr_text("Your first mission starts in 15 minutes, so listen carefully.", spr_gambino_icon, 0);
+scr_text("You are to sneak through the physics building of Diamondwood High, and get into the second floor bathroom.", spr_gambino_icon, 0);
+scr_text("Lock yourself in the stall and deliver these goods...", spr_gambino_icon, 0);
