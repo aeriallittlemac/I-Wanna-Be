@@ -44,6 +44,7 @@ else if filter_mode == "fade_in"{
 		}
 	else{
 		global.player_sleeping = false;
+		obj_player.y += 15;
 	}
 	if !global.night{
 		if global.day == 2{

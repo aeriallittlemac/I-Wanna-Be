@@ -1,0 +1,1 @@
+teleport_player(866, 135, school_1F);

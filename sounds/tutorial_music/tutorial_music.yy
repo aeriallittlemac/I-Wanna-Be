@@ -4,7 +4,7 @@
   "name": "tutorial_music",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.29,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tutorial_music.wav",
-  "duration": 48.2,
+  "duration": 45.333286,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

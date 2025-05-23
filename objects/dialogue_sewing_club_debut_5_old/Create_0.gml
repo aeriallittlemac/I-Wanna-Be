@@ -1,0 +1,14 @@
+event_inherited();
+scr_text("Fine.", spr_brooklyn_icon, 1);
+scr_text("I challenge Grace to a game of Blackjack.", spr_brooklyn_icon, 1);
+scr_text("Conditions?", spr_ashley_icon, 0);
+scr_text("I win and Grace shuts the fuck up about that stupid gossip from Diamond High.", spr_brooklyn_icon, 1);
+scr_text("And then we move on to talking about something more intellectual.", spr_brooklyn_icon, 1);
+scr_text("In the unlikely event that I lose, I will entertain her brain dead conversation.", spr_brooklyn_icon, 1);
+scr_text("Grace, your answer?", spr_ashley_icon, 0);
+scr_text("Challenge rejected!", spr_grace_fake_smile, 1);
+scr_text("Why, is it not dumb enough for you?", spr_brooklyn_icon, 0);
+scr_text("No, it’s because we’re not bothered to explain the game all over again to the tik tok generation.");
+scr_text("I’d much rather we do a fashion contest, with the same conditions!.",  spr_grace_fake_smile, 0);
+scr_text("Rejected.", spr_brooklyn_icon, 1);
+scr_text("None of you normies would be able to stomach the best of my avant garde fits..", spr_brooklyn_icon, 1);

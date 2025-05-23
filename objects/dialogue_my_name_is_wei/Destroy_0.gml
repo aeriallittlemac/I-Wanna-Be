@@ -1,4 +1,4 @@
-wait(0.4);
+wait(0.25);
 var y_margin = abs(obj_player.y - obj_wei.y)
 move_to_pos(1, 1, obj_player.x - y_margin, obj_wei.y)
 npc_move_to_pos(obj_wei, 1, 0, 610, obj_wei.y);

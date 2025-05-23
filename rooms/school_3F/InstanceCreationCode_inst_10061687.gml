@@ -1,0 +1,2 @@
+cutscene_object = cutscene_grace_appearanace;
+instance_deactivate_object(self);

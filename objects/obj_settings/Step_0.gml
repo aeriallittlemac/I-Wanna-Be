@@ -119,11 +119,13 @@ if array_length(sequences) > 0{
 	
 }
 else{
-	 if array_length(obj_player.c_sequences) <= 0 && !instance_exists(obj_transition){
-		 global.cutscene = false;
-	 }
-	 else{
-	 }
+	if instance_exists(obj_player){
+		 if array_length(obj_player.c_sequences) <= 0 && !instance_exists(obj_transition){
+			 global.cutscene = false;
+		 }
+		 else{
+		 }
+	}
 }
 
 

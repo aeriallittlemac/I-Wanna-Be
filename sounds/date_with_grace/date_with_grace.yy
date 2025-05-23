@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "date_with_grace.wav",
-  "duration": 48.001408,
+  "duration": 48.0,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

@@ -4,7 +4,7 @@
   "name": "sewing_club",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.4,
+  "volume": 0.2,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sewing_club.wav",
-  "duration": 16.009796,
+  "duration": 22.993765,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

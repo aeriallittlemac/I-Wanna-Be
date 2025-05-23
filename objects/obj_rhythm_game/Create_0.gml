@@ -1,3 +1,4 @@
+global.closest_block_dist = 100000;
 default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
 font_add_enable_aa(false);
 player_score = 0;
@@ -6,6 +7,7 @@ song_timer = 0;
 win_cutscene_object = noone;
 lose_cutscene_object = noone;
 line_speed_dir = 1;
+line_sprite = spr_rhythm_line_original
 unit = 14;
 tempo = 110;
 beatmap_kicks = array_create(0);
@@ -20,6 +22,12 @@ snare_ending_rhythm = snare_main_rhythm;
 song = hip_hop_sample;
 stop = 1;
 display_player_score_string = "0000";
+temp_input = 0;
+temp_input_type = "";
+vfx_offset = 120;
+misses = 0;
+kick_sound = noone;
+snare_sound = noone;
 //intro
 array_push(beatmap_kicks, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
 array_push(beatmap_kicks, [1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0]);
@@ -63,4 +71,9 @@ function endofbar(){
 		return true;
 	}
 }
-first_frame = true;
+if global.rap_battle{
+	y = 70;
+}
+else{
+	y = 0;
+}

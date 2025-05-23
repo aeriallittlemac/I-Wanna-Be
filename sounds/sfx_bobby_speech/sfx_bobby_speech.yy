@@ -4,7 +4,7 @@
   "name": "sfx_bobby_speech",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.1,
+  "volume": 0.06,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,

@@ -2,12 +2,21 @@ event_inherited();
 if global.day == 1{
 	global.player_sleeping = true;
 	if global.night{
-		QuestCompleted(global.quest_list.go_back_to_sleep);
-		scr_text("After making a new acquaintance, you go to sleep...");
-		obj_black_filter_bed.filter_mode = "fade_out";
-		global.game_time = "10:00 am";
-		audio_sound_gain(school_night, 0, 1600);
-		global.day = 2;
+		if obj_minimap.inv[0] == global.quest_list.go_back_to_sleep{
+			QuestCompleted(global.quest_list.go_back_to_sleep);
+			scr_text("After making a new acquaintance, you go to sleep...");
+			obj_black_filter_bed.filter_mode = "fade_out";
+			global.game_time = "10:00 am";
+			audio_sound_gain(school_night, 0, 1600);
+			global.day = 2;
+			AddInstanceToActivate(inst_608F3966);
+			AddInstanceToActivate(inst_62024E88);
+			AddInstanceToActivate(inst_1DF12FEC);
+		}
+		else{
+			scr_text("The night is still young...");
+			global.player_sleeping = false;
+		}
 	}
 	else{
 		instance_destroy(inst_60A96728);
@@ -17,6 +26,7 @@ if global.day == 1{
 		scr_text("You think you'll take a little nap...");
 		obj_black_filter_bed.filter_mode = "fade_out";
 		global.game_time = "12:30 am";
+		//global.night = true;
 		audio_sound_gain(bobbys_room, 0, 3200);
 	}
 }

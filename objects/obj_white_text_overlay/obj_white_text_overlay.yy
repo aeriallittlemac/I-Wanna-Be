@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "Text",
+    "path": "folders/General Objects/Text.yy",
   },
 }

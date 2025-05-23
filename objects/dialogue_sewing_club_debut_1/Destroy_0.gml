@@ -1,2 +1,2 @@
-game_NewCharacterIntro(obj_mei);
+game_NewCharacterIntro(obj_brooklyn);
 game_NewDialogue(dialogue_sewing_club_debut_2);

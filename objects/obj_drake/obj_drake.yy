@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_drake",
   "spriteId": {
-    "name": "spr_drake_up",
-    "path": "sprites/spr_drake_up/spr_drake_up.yy",
+    "name": "spr_drake_down",
+    "path": "sprites/spr_drake_down/spr_drake_down.yy",
   },
   "solid": false,
   "visible": true,

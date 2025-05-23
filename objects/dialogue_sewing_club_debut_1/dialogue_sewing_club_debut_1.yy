@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "dialogue_sewing_club_debut_1",
   "spriteId": null,
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

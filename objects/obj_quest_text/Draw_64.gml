@@ -1,4 +1,4 @@
-if !global.cutscene && !global.in_dialogue{
+if obj_minimap.map_visible{
 draw_set_colour(font_color);
 draw_set_font(default_pixel_font);
 draw_text(20, 20, "Current Objective: " +sign_text);

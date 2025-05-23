@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_brooklyn",
   "spriteId": {
-    "name": "spr_brooklyn_down",
-    "path": "sprites/spr_brooklyn_down/spr_brooklyn_down.yy",
+    "name": "spr_brooklyn_left",
+    "path": "sprites/spr_brooklyn_left/spr_brooklyn_left.yy",
   },
   "solid": false,
   "visible": true,

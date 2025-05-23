@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_gambino",
   "spriteId": {
-    "name": "spr_gambino_down",
-    "path": "sprites/spr_gambino_down/spr_gambino_down.yy",
+    "name": "spr_gambino_up",
+    "path": "sprites/spr_gambino_up/spr_gambino_up.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,8 +1,8 @@
-if instance_exists(obj_rhythm_game) && !start{
-	if audio_is_playing(obj_rhythm_game.song) && obj_rhythm_game.bars == start_bar{
+if instance_exists(obj_rhythm_game){
+	
+	if !start && audio_is_playing(obj_rhythm_game.song) && obj_rhythm_game.bars == start_bar{
 		start = true;
 	}
-}
 
 if start{
 	if obj_rhythm_game.line_speed_dir == 1
@@ -18,7 +18,22 @@ if start{
 		UpdateText();
 		}
 	}
+	//if instance_exists(obj_rhythm_game){
+	//	if obj_rhythm_game.misses > max_misses{
+	//		stutter = true;
+	//	}
+	//}
+	//if stutter{
+	//		audio_pause_all();
+	//		audio_play_sound(sfx_stop, 1, false);
+	//		instance_destroy(self);
+	//	}
+	}
 }
+else{
+	instance_destroy(self);
+}
+
 
 
 

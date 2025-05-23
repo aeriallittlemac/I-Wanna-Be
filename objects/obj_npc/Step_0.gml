@@ -3,11 +3,7 @@ event_inherited();
 }
 
 depth = -bbox_bottom;
-
 if array_length(sequences) > 0{
-	if sequences[0] != "move"{
-		image_index = 0;
-	}
 	if sequences[0] == "move"{
 	previous_xspeed = 0;
 	previous_yspeed = 0;
@@ -17,7 +13,7 @@ if array_length(sequences) > 0{
 	if previous_yspeed*real_yspeed < 0{yspeed[0] = 0;}
 
 	if (real_xspeed == 0 && real_yspeed == 0) || skip_sequence{
-		image_index = 0;
+		//image_index = 0;
 		//if abs(x - obj_player.x) < player_reach || skip_sequence{
 		array_delete(target_x, 0, 1);
 		array_delete(target_y, 0, 1);
@@ -72,12 +68,29 @@ if array_length(sequences) > 0{
 		array_delete(sequences, 0, 1);
 	}
 	else if sequences[0]  == "animate"{
+		if !(sprite_index !=sprite[RIGHT] && sprite_index !=sprite[LEFT]
+	&& sprite_index !=sprite[DOWN] && sprite_index !=sprite[UP]) || image_index >= image_number-1{
 		sprite_index = animation[0];
+		array_delete(animation, 0, 1);
 		array_delete(sequences, 0, 1);
+	}
+	}
+	else if sequences[0] != "move"{
+		image_index = 0;
 	}
 }
 else{
-	image_index = 0;
+	var npc_index = 0;
+	for(var i = 0; i < array_length(obj_npc_manager.npcs); i++){
+		if obj_npc_manager.npcs[i].object == object_index{
+			npc_index = i;
+		}
+	}
+	if obj_npc_manager.npcs[npc_index].initial_animation == noone 
+	&& !(sprite_index !=sprite[RIGHT] && sprite_index !=sprite[LEFT]
+	&& sprite_index !=sprite[DOWN] && sprite_index !=sprite[UP]) {
+		image_index = 0;
+	}
 }
 
 if obj_minimap.school_hall||global.isometric_room{

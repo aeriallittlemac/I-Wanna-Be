@@ -1,1 +1,1 @@
-instance_create_depth(obj_player.x, obj_player.y, OBJ_MAX_DEPTH, obj_rap_machine);
+instance_create_depth(0, 0, 0, obj_rap_grace_verse_1);

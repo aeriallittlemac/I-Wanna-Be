@@ -1,0 +1,1 @@
+teleport_player(0,0, rap_battle_hall);

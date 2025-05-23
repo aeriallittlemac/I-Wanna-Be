@@ -1,0 +1,11 @@
+system = part_system_create();
+particle = part_type_create();
+part_type_shape(particle, pt_shape_pixel);
+part_type_life(particle, 200, 250);
+part_type_color1(particle, c_black);
+//part_type_color2(particle, #e1d0bd, #d29464);
+part_type_direction(particle, 100, 140, 0, 0);
+part_type_speed(particle, 0, 0.6, 0, 0);
+part_type_gravity(particle, 0.1, 270);
+emitter = part_emitter_create(system);
+part_emitter_region(system, emitter, x, x-6,y,y-7, ps_shape_rectangle, ps_distr_gaussian);

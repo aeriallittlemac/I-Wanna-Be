@@ -36,7 +36,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if !global.cutscene && !global.in_dialogue && !instance_exists(obj_rhythm_game) && !global.in_inventory{
+	if obj_minimap.map_visible && !global.in_inventory{
 	
 		//set sprite
 		if yspeed == 0{
@@ -70,11 +70,25 @@ if image_alpha > 0{
 			var inst = instance_nearest(x, y, obj_wall)
 			if abs (bbox_left - inst.bbox_right) < 1 || abs (bbox_right - inst.bbox_left) < 1
 			{
+				if xspeed>0{
+					x-=xspeed;
+				}
+				else if xspeed<0{
+					x+=xspeed;
+				}
 				if inst.x < x{
-					x += ((bbox_right-bbox_left)*change_scale)/2;
+					xspeed = 0
+					while place_meeting(x-((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
+						x++;
+					}
+					//x += ((bbox_right-bbox_left)*change_scale)/2;
 				}
 				else if inst.x > x{
-					x -= ((bbox_right-bbox_left)*change_scale)/2;
+					xspeed = 0
+					while place_meeting(x+((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
+						x--;
+					}
+					//x -= ((bbox_right-bbox_left)*change_scale)/2;
 				}
 				
 			}

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_grace",
   "spriteId": {
-    "name": "spr_grace_down",
-    "path": "sprites/spr_grace_down/spr_grace_down.yy",
+    "name": "spr_grace_right",
+    "path": "sprites/spr_grace_right/spr_grace_right.yy",
   },
   "solid": false,
   "visible": true,

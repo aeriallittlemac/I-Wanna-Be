@@ -1,4 +1,5 @@
 event_inherited();
+instance_destroy(cutscene_mcronald_dont_walk_away);
 scr_text("Finally! You find the card.", spr_mcronald_icon, 0);
 scr_text("Now, give it back!", spr_mcronald_icon, 0);
 scr_text("You give the card back.");

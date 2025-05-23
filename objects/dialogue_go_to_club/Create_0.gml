@@ -17,6 +17,7 @@ function branches(branch){
 
 	    case "yes":
 			scr_text("Excellent choice.");
+			scr_text("It is the only story route we have the budget for, after all.");
 			scr_text("Now, go make your debut.");
 	    break;
 		

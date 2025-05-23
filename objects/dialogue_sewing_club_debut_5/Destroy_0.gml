@@ -1,2 +1,1 @@
-obj_bear_interactable.entityActivateScript = NewDialogue;
-obj_bear_interactable.entityActivateArg = dialogue_sewing_club_bear;
+instance_create_depth(0, 0, 0, beatmap_grace_sewing_club_2);

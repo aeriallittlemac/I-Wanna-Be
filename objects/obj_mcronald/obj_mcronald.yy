@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_mcronald",
   "spriteId": {
-    "name": "spr_mcronald_up",
-    "path": "sprites/spr_mcronald_up/spr_mcronald_up.yy",
+    "name": "spr_mcronald_down",
+    "path": "sprites/spr_mcronald_down/spr_mcronald_down.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,6 +29,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

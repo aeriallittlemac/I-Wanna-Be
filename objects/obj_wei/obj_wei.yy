@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_wei",
   "spriteId": {
-    "name": "spr_wei_right",
-    "path": "sprites/spr_wei_right/spr_wei_right.yy",
+    "name": "spr_wei_down",
+    "path": "sprites/spr_wei_down/spr_wei_down.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,5 +1,17 @@
+y = 2;
+show_debug_message("Minimap y:");
+show_debug_message(y);
 depth = TEXTBOX_DEPTH
 school_hall = true;
+
+text_x_pos = 62.5
+text_y_pos = 7
+
+single_floor_margin = 8;
+multiple_floor_margin = 15;
+
+quest_arrow_y = 2;
+
 global.quest_list = {
 
 	enter_dorm : {

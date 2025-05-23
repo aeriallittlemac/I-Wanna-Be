@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_sewing_club_row_2",
   "spriteId": {
-    "name": "spr_sewing_club_row_2",
-    "path": "sprites/spr_sewing_club_row_2/spr_sewing_club_row_2.yy",
+    "name": "row_two_sprite_1",
+    "path": "sprites/row_two_sprite_1/row_two_sprite_1.yy",
   },
   "solid": false,
   "visible": true,

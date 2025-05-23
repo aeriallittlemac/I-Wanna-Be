@@ -19,7 +19,7 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
-		initial_animation : spr_grace_silhouette,
+		initial_animation : noone,
 	},
 	drake : {
 		object: obj_drake,
@@ -170,7 +170,6 @@ function teleport(npc){
 			if npcs[i].cur_room != room{
 				instance_deactivate_object(npc);
 			}
-			array_delete(npc.sequences, 0, 1);
 		}
 	}
 }

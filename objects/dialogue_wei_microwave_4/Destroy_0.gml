@@ -1,10 +1,9 @@
-//wei pulls out boombox
-instance_create_depth(0,0,0, obj_rhythm_game);
-var ins = instance_create_depth(396,25,TEXTBOX_DEPTH, obj_sign);
-global.destroy_soon = ins;
-with ins{
-font_size = 8;
-font_color = c_white;
-default_pixel_font = font_add("joystix monospace.otf", font_size, false, false, 32, 128);
-font_add_enable_aa(false);
-}
+//instance_create_depth(obj_wei.x + 30, obj_wei.y +10, obj_wei.depth-1, obj_boombox);
+//npc_animate(obj_wei, spr_wei_rapping)
+////obj_wei.face = DOWN;
+////obj_wei.sprite_index = obj_wei.sprite[DOWN]
+//instance_destroy(obj_pork_bun);
+//instance_destroy(obj_hot_pocket);
+//instance_create_depth(0,0,0, beatmap_weI_drum_audition);
+npc_move_to_pos(obj_wei, 0, 1, obj_wei.x, obj_wei.y+1)
+game_NewDialogue(dialogue_wei_microwave_4_5);
