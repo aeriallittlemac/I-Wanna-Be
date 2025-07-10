@@ -1,8 +1,9 @@
 global.day = 2
+global.game_time = "3:30 pm";
 teleport_npc(obj_wei, noone, 0,0,DOWN);
 instance_destroy(inst_29E75538);
 game_camera_change_settings(obj_player, -1);
-var sewing_club_r1 = [obj_ashley, obj_grace]; 
+var sewing_club_r1 = [obj_ashley]; 
 		for(var i = 0; i < array_length(sewing_club_r1); i++){
 				teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
 			}

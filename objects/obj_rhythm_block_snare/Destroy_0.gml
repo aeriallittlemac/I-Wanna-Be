@@ -1,7 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
-
+var inst = instance_create_depth(x,y,depth, obj_rhythm_block_vfx);
+inst.vfx_sprite = vfx_sprite;

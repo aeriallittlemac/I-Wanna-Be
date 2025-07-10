@@ -21,4 +21,4 @@ AddInstanceToActivate(inst_MCRONALD_DEBUT);
 AddInstanceToActivate(inst_WEI_MICROWAVE);
 global.cutscene = false;
 global.game_time = "12:00 pm";
-teleport_player(1130, 120, school_1F);
+teleport_player(840, 120, school_1F);

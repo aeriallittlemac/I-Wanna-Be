@@ -1,3 +1,4 @@
+audio_stop_all();
 var inst = instance_create_depth(0,0,OBJ_MAX_DEPTH, obj_rhythm_game);
 inst.win_cutscene_object = win_cutscene;
 inst.lose_cutscene_object = lose_cutscene;

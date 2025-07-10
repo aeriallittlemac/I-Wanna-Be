@@ -1,1 +1,1 @@
-teleport_player(65, 100, diamondwood_high_bathroom);
+instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_rhythm_game);

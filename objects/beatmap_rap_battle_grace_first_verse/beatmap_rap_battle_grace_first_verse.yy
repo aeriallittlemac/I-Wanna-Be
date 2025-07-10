@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Rhythm Game",
-    "path": "folders/UI/Rhythm Game.yy",
+    "name": "Grace vs Brooklyn",
+    "path": "folders/UI/Rhythm Game/Archived/Rap Battle Beatmaps/Grace vs Brooklyn.yy",
   },
 }

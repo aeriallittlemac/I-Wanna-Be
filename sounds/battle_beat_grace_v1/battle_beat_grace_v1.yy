@@ -18,6 +18,6 @@
   "duration": 16.6,
   "parent": {
     "name": "Grace vs Brooklyn",
-    "path": "folders/UI/Rhythm Game/Rap Battle Beatmaps/Grace vs Brooklyn.yy",
+    "path": "folders/UI/Rhythm Game/Archived/Rap Battle Beatmaps/Grace vs Brooklyn.yy",
   },
 }

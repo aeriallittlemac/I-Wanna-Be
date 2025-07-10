@@ -55,17 +55,24 @@ if image_alpha > 0{
 		if yspeed < 0 {face = UP};
 	
 		//collisions
+		
 		if place_meeting(x + xspeed, y, obj_wall){
-			if y > previous_y_pos {
-				if left_key{
-					x += ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+			if !classroom_mode{
+				if y > previous_y_pos {
+					if left_key{
+						x += ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+					}
+					if right_key{
+						x -= ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+					}
 				}
-				if right_key{
-					x -= ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+				xspeed = 0
 				}
+			else{
+				x -= xspeed
 			}
-			xspeed = 0
-			}
+		}
+		
 		if place_meeting(x , y + yspeed, obj_wall){
 			var inst = instance_nearest(x, y, obj_wall)
 			if abs (bbox_left - inst.bbox_right) < 1 || abs (bbox_right - inst.bbox_left) < 1

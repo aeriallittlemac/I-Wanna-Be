@@ -9,6 +9,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	grace : {
 		object: obj_grace,
@@ -20,6 +22,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Affection",
+		relationshipPoints : 5,
 	},
 	drake : {
 		object: obj_drake,
@@ -31,6 +35,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	guy : {
 		object: obj_guy,
@@ -42,6 +48,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "???",
+		relationshipPoints : 5,
 	},
 	brooklyn : {
 		object : obj_brooklyn,
@@ -53,6 +61,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Affection",
+		relationshipPoints : 5,
 	},
 	mcronald : {
 		object : obj_mcronald,
@@ -64,6 +74,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	job : {
 		object : obj_job,
@@ -74,7 +86,9 @@ global.npc_list = {
 		initial_x : 0,
 		initial_y : 0,
 		initial_face : DOWN,
-		initial_animation : noone,	
+		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	mrchen : {
 		object : obj_mrchen,
@@ -86,6 +100,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	gambino : {
 		object: obj_gambino,
@@ -97,6 +113,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	ashley : {
 		object: obj_ashley,
@@ -108,6 +126,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Affection",
+		relationshipPoints : 5,
 	},
 	mei : {
 		object: obj_mei,
@@ -119,6 +139,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Affection",
+		relationshipPoints : 5,
 	},
 	jake : {
 		object: obj_jake,
@@ -130,6 +152,8 @@ global.npc_list = {
 		initial_y : 0,
 		initial_face : DOWN,
 		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 5,
 	},
 	
 
@@ -157,6 +181,7 @@ for(var i = 0; i < array_length(npcs); i++){
 }
 
 function teleport(npc){
+	if npc != noone{
 	for(var i=0; i < array_length(npcs); i++){
 		if npc == npcs[i].object{
 			npc.x = npcs[i].initial_x;
@@ -171,6 +196,7 @@ function teleport(npc){
 				instance_deactivate_object(npc);
 			}
 		}
+	}
 	}
 }
 

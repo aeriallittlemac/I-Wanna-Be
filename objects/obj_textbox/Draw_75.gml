@@ -1,5 +1,5 @@
 if global.in_dialogue{
-	var y_offset = !(obj_minimap.school_hall||global.isometric_room)*270
+	var y_offset = (!(obj_minimap.school_hall||global.isometric_room)||!instance_exists(obj_slideshow))*270
 	minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
 	draw_sprite_ext(sprite_index, -1, x*minimap_scale, y*minimap_scale + y_offset, minimap_scale, minimap_scale, 0, c_white, 1 );
 	draw_set_font(default_pixel_font);
