@@ -27,6 +27,7 @@ option_link_id[0] = -1;
 option_pos = 0;
 option_number = 0;
 text_width_limit = 0;
+skip_key = false;
 //speaker_side
 //1:Left 0: Right
 

@@ -1,6 +1,6 @@
 if abs(obj_player.x - x) < 200{
 	x -= 135;
-	if x < 270{
+	if x < RESOLUTION_W{
 		enable_vets = true;
 	}
 }

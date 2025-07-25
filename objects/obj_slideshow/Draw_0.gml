@@ -7,10 +7,10 @@
 //	}
 //	else{
 //	global.in_slideshow = true;
-//	draw_sprite_ext(slides[0], slide_num, x, y, 270 / sprite_get_width(slides[0]), 152 / sprite_get_height(slides[0]) , 0, c_white, 1 );
-//	//draw_sprite_stretched(slides[0], slide_num, x, y, 270 / sprite_get_width(slides[0]), 152 / sprite_get_height(slides[0]));
+//	draw_sprite_ext(slides[0], slide_num, x, y, RESOLUTION_W / sprite_get_width(slides[0]), 152 / sprite_get_height(slides[0]) , 0, c_white, 1 );
+//	//draw_sprite_stretched(slides[0], slide_num, x, y, RESOLUTION_W / sprite_get_width(slides[0]), 152 / sprite_get_height(slides[0]));
 //	}
-//	if !global.in_dialogue &&  keyboard_check_pressed(ord("Z") && previously_on){
+//	if !global.in_dialogue &&  keyboard_check_pressed(CONFIRM_ACTION && previously_on){
 //		slide_num++;
 //	}
 //	previously_on = true

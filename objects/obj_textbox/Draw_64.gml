@@ -1,6 +1,6 @@
 //if global.in_dialogue{
-//	var y_offset = !(obj_minimap.school_hall||global.isometric_room)*270
-//	minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
+//	var y_offset = !(obj_minimap.school_hall||global.isometric_room)*RESOLUTION_W
+//	minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 //	draw_sprite_ext(sprite_index, -1, x*minimap_scale, y*minimap_scale + y_offset, minimap_scale, minimap_scale, 0, c_white, 1 );
 //	draw_set_font(default_pixel_font);
 //	var text_offset = 0;
@@ -20,7 +20,7 @@
 //	draw_text_ext_transformed(x*minimap_scale + x_border + text_offset, y*minimap_scale + y_offset + y_border, display_text,  line_sep, text_width_limit, 0.5, 0.5, 0);
 //	//options
 //	if display_text == text[j] && j == array_length(text)-1{
-//		option_pos += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
+//		option_pos += keyboard_check_pressed(MOVE_RIGHT) - keyboard_check_pressed(MOVE_LEFT);
 //		option_pos = clamp(option_pos, 0, option_number-1);
 //		var option_x_offset = 68;
 //		var option_y_offset = 80;
@@ -38,8 +38,8 @@
 //		}
 //	}
 //	timer --;
-//	accept_key = keyboard_check_pressed(ord("Z"))&&!global.input_off;
-//	skip_key = keyboard_check(ord("X"));
+//	accept_key = keyboard_check_pressed(CONFIRM_ACTION)&&!global.input_off;
+//	skip_key = keyboard_check(CANCEL_ACTION);
 //	if timer <= 0 && i <= string_length(text[j]){
 //		display_text += string_char_at(text[j],i);
 //		if string_char_at(text[j],i) == "." || string_char_at(text[j],i) == "," || string_char_at(text[j], i) == "!" || string_char_at(text[j],i) == "?"{

@@ -11,7 +11,7 @@ if global.day == 1{
 			global.day = 2;
 			AddInstanceToActivate(inst_608F3966);
 			AddInstanceToActivate(inst_62024E88);
-			AddInstanceToActivate(inst_1DF12FEC);
+//			AddInstanceToActivate(inst_1DF12FEC);
 		}
 		else{
 			scr_text("The night is still young...");

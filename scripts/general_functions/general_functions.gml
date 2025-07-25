@@ -87,23 +87,7 @@ function game_NewCharacterIntro(npc){
 	array_push(obj_settings.sequences, "character_intro");
 }
 
-function AddRelationshipPoints(npc, num){
-for(var i=0; i < array_length(obj_npc_manager.npcs); i++){
-		if npc == obj_npc_manager.npcs[i].object{
-			var relationship = obj_npc_manager.npcs[i].relationship;
-			obj_npc_manager.npcs[i].relationshipPoints += num;
-			var inst = instance_create_depth(npc.x, npc.y - 45, OBJ_MAX_DEPTH, obj_ghost_text)
-				with inst{
-				default_pixel_font = font_add("joystix monospace.otf", 11*2, false, false, 32, 128);
-				overlay_text = relationship + string(num);
-				angle = 0;
-				timer = 0;
-				fade_speed = 1.5;
-				}
-			break;
-		}
-	}
-}
+
 
 function NewSlideshow(spr){
 	array_push(obj_slideshow.slides, spr);
@@ -206,3 +190,10 @@ function game_camera_change_settings(ctarget, chspeed){
 	array_push(obj_settings.game_chspeed, chspeed);
 	array_push(obj_settings.sequences, "camera_change_settings");
 }
+function redo_UI(){
+	obj_redo_UI.life_count --;
+	obj_redo_UI.star_dying = true;
+	obj_redo_UI.visible = true;
+	
+}
+

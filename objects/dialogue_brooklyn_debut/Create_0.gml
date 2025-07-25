@@ -1,10 +1,3 @@
 event_inherited();
-scr_text("This is what tends to amuse normies, Ashley.", spr_brooklyn_icon, 0);
-scr_text("When a boy is plays games with a majority of girls,", spr_brooklyn_icon, 0);
-scr_text("the girls get to dictate the tempo...", spr_brooklyn_icon, 0);
-scr_text("...but they also get the benefit of fucking with the boy.", spr_brooklyn_icon,0);
-scr_text("Boys are more resilient to bullying, after all.", spr_ashley_icon, 1);
-scr_text("I understand it now.", spr_ashley_icon, 1);
-scr_text("Indeed, simple as that.", spr_brooklyn_icon,0);
-scr_text("Sit in the empty seat, Bobby!", spr_mei_grin,0);
-scr_text("Ashley, roll the eraser dice!", spr_mei_grin,0);
+scr_text("Relax, he’s outnumbered.", spr_brooklyn_icon, 0);
+scr_text("If anything happens, it's our word against his.", spr_brooklyn_icon, 0);

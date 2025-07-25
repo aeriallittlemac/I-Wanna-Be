@@ -1,1 +1,1 @@
-instance_create_depth(0, 0, 0, obj_rap_grace_verse_1);
+AddRelationshipPoints(obj_wei, 15);

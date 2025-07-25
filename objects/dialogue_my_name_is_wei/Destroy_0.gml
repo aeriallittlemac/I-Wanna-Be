@@ -1,3 +1,4 @@
+obj_npc_manager.npcs[WEI].introduced = true;
 wait(0.25);
 var y_margin = abs(obj_player.y - obj_wei.y)
 move_to_pos(1, 1, obj_player.x - y_margin, obj_wei.y)

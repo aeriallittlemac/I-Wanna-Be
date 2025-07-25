@@ -1,4 +1,5 @@
 event_inherited();
+
 QuestCompleted(global.quest_list.midnight_snack);
 audio_stop_all();
 scr_text("Hey...", spr_grace_demonic, 0);

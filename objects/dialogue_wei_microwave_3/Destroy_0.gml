@@ -11,4 +11,5 @@ game_NewDialogue(dialogue_wei_microwave_4);
 npc_animate(obj_wei, spr_wei_eating);
 //obj_wei.sprite_index = obj_wei.sprite[LEFT]
 //instance_create_depth(obj_wei.x - 25, obj_wei.y - 25, obj_wei.depth-1, obj_pork_bun);
+item_remove(global.item_list.hot_pocket);
 instance_create_depth(obj_player.x - 7, obj_player.y - 14, obj_player.depth-1, obj_hot_pocket);

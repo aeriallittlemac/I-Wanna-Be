@@ -1,3 +1,4 @@
+AddRelationshipPoints(obj_grace, 5);
 audio_play_sound(sfx_school_bell, 1, false);
 var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 with inst{

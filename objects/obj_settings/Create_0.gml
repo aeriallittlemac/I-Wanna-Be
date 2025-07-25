@@ -1,3 +1,4 @@
+//window_set_fullscreen(true);
 global.day = 1;
 global.game_time = "5:00 pm";
 global.night = false;
@@ -14,8 +15,8 @@ game_teleport_rm = array_create(0);
 dialogue_objects = array_create(0);
 CharacterIntros = array_create(0);
 moving_npc = array_create(0);
-game_change_image_object = array_create();
-game_change_image_index_num = array_create();
+game_change_image_object = array_create(0);
+game_change_image_index_num = array_create(0);
 character_intro_flag = false;
 global.isometric_room = false;
 game_sfx = array_create(0);
@@ -37,4 +38,3 @@ game_var_struct = array_create(0);
 
 game_ctarget = array_create(0);
 game_chspeed = array_create(0);
-

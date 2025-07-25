@@ -1,3 +1,4 @@
+event_inherited();
 xspeed = array_create(0);
 yspeed = array_create(0);
 run_speed_multiplier = 2.5;

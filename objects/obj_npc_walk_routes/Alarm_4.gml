@@ -1,0 +1,1 @@
+teleport_npc(obj_npc_manager.npcs[npc_numbers[4]].object, t_room,t_x[4],t_y[4],facing_dir[4]);

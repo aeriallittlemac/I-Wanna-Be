@@ -6,5 +6,6 @@ if truth{
 	game_NewDialogue(dialogue_truth);
 }
 else{
+	global.storylines.Grace.day_one_dare = true;
 	game_NewDialogue(dialogue_dare);
 }

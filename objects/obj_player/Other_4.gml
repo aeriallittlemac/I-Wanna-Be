@@ -6,8 +6,6 @@ if room == rap_battle_hall{
 	global.player_sleeping = true;
 }
 if (room == school_1F || room == school_2F) && global.day == 2 && global.game_time == "5:00 pm"{
-	game_wait(0.5);
-	game_NewDialogue(dialogue_go_back_to_nap);
 	global.game_time = "5:01 pm";
 	
 }

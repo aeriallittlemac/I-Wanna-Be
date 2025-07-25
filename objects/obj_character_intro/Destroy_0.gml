@@ -1,3 +1,4 @@
+character.introduced = true;
 global.input_off = false;
 global.cutscene = false;
 array_delete(obj_settings.CharacterIntros, 0, 1);

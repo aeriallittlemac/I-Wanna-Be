@@ -1,20 +1,9 @@
 event_inherited();
 scr_text("*Swallows half a bun", spr_wei_icon, 0);
-scr_text("I was thinking about this earlier.", spr_wei_icon, 0)
-scr_text("Why was your lunch wrapped in a giant condom?", spr_wei_icon, 0);
+scr_text("So, you talk to any of the other f*cking kids here?", spr_wei_icon, 0)
 scr_text("You tell him about your encounter with McRonald.");
-scr_text("Ah, that crackhead magician, eh?", spr_wei_icon, 0);
-scr_text("He’s a pretty funny guy.", spr_wei_icon, 0);
-scr_text("Don’t know much about him, though.", spr_wei_icon, 0);
-scr_text("Think he usually hangs out with Frenchie and that emo dude.", spr_wei_icon, 0);
-scr_text("I also heard that he’s a devil on the keys.", spr_wei_icon, 0);
-scr_text("I was thinking of recruiting him to start a band, actually.", spr_wei_icon,0);
-scr_text("You interested?", spr_wei_icon,0);
-scr_text("You tell him that you’ve never touched an instrument in your life.");
-scr_text("Really? You look like a drummer to me. Got the arms for it.", spr_wei_icon,0);
-scr_text("You tell him that you wouldn’t be against trying the drums if you ever had the chance.");
-scr_text("Well, there’s no problem then!", spr_wei_icon,0);
-scr_text("You tell Wei that you don’t have a kit.");
-scr_text("I’ll see what gear we can scrap by.", spr_wei_icon,0);
-scr_text("Playing music together...", spr_wei_icon,0);
-scr_text("...seems like a good way to lift ourselves up from all this crap.", spr_wei_icon,0);
+scr_text("Ah, the magician, eh?", spr_wei_icon, 0);
+scr_text("He’s a pretty funny c@cksucka.", spr_wei_icon, 0);
+scr_text("He talks to everyone, so be nice to him, hahaha.", spr_wei_icon, 0);
+scr_text("Especially, if you don’t wanna hear bad sh*t of yourself getting around, Bobby Johns.", spr_wei_icon, 0);
+scr_text("I also hear that he’s a devil on the keys...", spr_wei_icon,0);

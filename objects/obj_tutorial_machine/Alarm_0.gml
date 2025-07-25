@@ -1,16 +1,1 @@
-//show_debug_message("print text!");
-//default_pixel_font = font_add("joystix monospace.otf", 24*4, false, false, 16, 128);
-//game_write_text(" Life...", 20, 20, default_pixel_font, c_black, 0.2, 2);
-//game_wait(2);
-//default_pixel_font = font_add("joystix monospace.otf", 22*4, false, false, 16, 128);
-//game_write_text("is tiring.", 10, 60, default_pixel_font, c_black, 0.05, 1);
-//game_wait(3);
-//default_pixel_font = font_add("joystix monospace.otf", 12*4, false, false, 16, 128);
-//game_write_text("Who wouldn’t want", 10,10, default_pixel_font, c_black, 0.05, 2);
-//game_wait(1);
-//game_write_text("to drown...", 10,30, default_pixel_font, c_black, 0.05, 2);
-//game_wait(2);
-// default_pixel_font = font_add("joystix monospace.otf", 20*4, false, false, 16, 128);
-//game_write_text("In fantasy?", 10, 60, default_pixel_font, c_black, 0.2, 0);
-//game_wait(3);
-game_create_instance_depth(0, 0, 0, beatmap_tutorial);
+game_NewDialogue(dialogue_tutorial);

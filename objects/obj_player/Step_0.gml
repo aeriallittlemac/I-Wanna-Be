@@ -1,8 +1,10 @@
-run_key = keyboard_check(vk_lshift) ||keyboard_check(ord("X"));
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+if !global.pause_menu{
+if room != tutorial{
+run_key = keyboard_check(vk_lshift) ||keyboard_check(CANCEL_ACTION);
+right_key = keyboard_check(MOVE_RIGHT);
+left_key = keyboard_check(MOVE_LEFT);
+up_key = keyboard_check(MOVE_UP);
+down_key = keyboard_check(MOVE_DOWN);
 image_alpha = !global.player_sleeping;
 var speed_multiplier = 1;
 if run_key {
@@ -36,8 +38,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory{
-	
+	if obj_minimap.map_visible && !global.in_inventory && room != tutorial{
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};
@@ -56,63 +57,63 @@ if image_alpha > 0{
 	
 		//collisions
 		
-		if place_meeting(x + xspeed, y, obj_wall){
-			if !classroom_mode{
-				if y > previous_y_pos {
-					if left_key{
-						x += ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
-					}
-					if right_key{
-						x -= ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
-					}
-				}
-				xspeed = 0
-				}
-			else{
-				x -= xspeed
-			}
-		}
+		//if place_meeting(x + xspeed, y, obj_wall){
+		//	if !classroom_mode{
+		//		if y > previous_y_pos {
+		//			if left_key{
+		//				x += ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+		//			}
+		//			if right_key{
+		//				x -= ((bbox_right-bbox_left)*(y - previous_y_pos)*change_scale)/2;
+		//			}
+		//		}
+		//		xspeed = 0
+		//		}
+		//	else{
+		//		x -= xspeed
+		//	}
+		//}
 		
-		if place_meeting(x , y + yspeed, obj_wall){
-			var inst = instance_nearest(x, y, obj_wall)
-			if abs (bbox_left - inst.bbox_right) < 1 || abs (bbox_right - inst.bbox_left) < 1
-			{
-				if xspeed>0{
-					x-=xspeed;
-				}
-				else if xspeed<0{
-					x+=xspeed;
-				}
-				if inst.x < x{
-					xspeed = 0
-					while place_meeting(x-((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
-						x++;
-					}
-					//x += ((bbox_right-bbox_left)*change_scale)/2;
-				}
-				else if inst.x > x{
-					xspeed = 0
-					while place_meeting(x+((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
-						x--;
-					}
-					//x -= ((bbox_right-bbox_left)*change_scale)/2;
-				}
+		//if place_meeting(x , y + yspeed, obj_wall){
+		//	var inst = instance_nearest(x, y, obj_wall)
+		//	if abs (bbox_left - inst.bbox_right) < 1 || abs (bbox_right - inst.bbox_left) < 1
+		//	{
+		//		if xspeed>0{
+		//			x-=xspeed;
+		//		}
+		//		else if xspeed<0{
+		//			x+=xspeed;
+		//		}
+		//		if inst.x < x{
+		//			xspeed = 0
+		//			while place_meeting(x-((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
+		//				x++;
+		//			}
+		//			//x += ((bbox_right-bbox_left)*change_scale)/2;
+		//		}
+		//		else if inst.x > x{
+		//			xspeed = 0
+		//			while place_meeting(x+((bbox_right-bbox_left)*change_scale)/2 , y + yspeed, obj_wall){
+		//				x--;
+		//			}
+		//			//x -= ((bbox_right-bbox_left)*change_scale)/2;
+		//		}
 				
-			}
-			else{
-				yspeed = 0
-			}
-		}
-		if place_meeting(x + xspeed,y + yspeed, obj_wall){
-			var inst = instance_nearest(x, y, obj_wall)
-				if bbox_top - inst.bbox_bottom <= yspeed || bbox_bottom - inst.bbox_top <= yspeed{
-					yspeed = 0
-				}
-			else{
-				yspeed = 0
-			}
+		//	}
+		//	else{
+		//		yspeed = 0
+		//	}
+		//}
+		//if place_meeting(x + xspeed,y + yspeed, obj_wall){
+		//	var inst = instance_nearest(x, y, obj_wall)
+		//		if bbox_top - inst.bbox_bottom <= yspeed || bbox_bottom - inst.bbox_top <= yspeed{
+		//			yspeed = 0
+		//		}
+		//	else{
+		//		yspeed = 0
+		//	}
 			
-		}
+		//}
 	
 
 
@@ -199,4 +200,13 @@ if image_alpha > 0{
 	}
 
 
+}
+	
+}
+else{
+image_index = 0;
+}
+}
+else{
+	image_index = 0;
 }

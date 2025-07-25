@@ -16,6 +16,15 @@
 #macro CLASSROOM_SEATS_SPACING_Y 25
 #macro QUEST_TEXT_FONT_SIZE 10
 #macro QUEST_TEXT_TIMER 1.5
-#macro KICK_DRUM_1 keyboard_check_pressed(ord("Z"))
-#macro KICK_DRUM_2 keyboard_check_pressed(ord("X"))
-#macro SNARE_DRUM keyboard_check_pressed(vk_left)
+#macro KICK_DRUM_1 keyboard_check_pressed(CONFIRM_ACTION)
+#macro KICK_DRUM_2 keyboard_check_pressed(CANCEL_ACTION)
+#macro SNARE_DRUM keyboard_check_pressed(MOVE_LEFT)
+#macro WEI 0
+
+//controls
+#macro CONFIRM_ACTION  ord("Z")//ord("K")
+#macro CANCEL_ACTION ord("X") //ord("J")
+#macro MOVE_UP  vk_up// ord("W")
+#macro MOVE_DOWN vk_down //ord("S")
+#macro MOVE_RIGHT vk_right// ord("D")
+#macro MOVE_LEFT vk_left // ord("A")

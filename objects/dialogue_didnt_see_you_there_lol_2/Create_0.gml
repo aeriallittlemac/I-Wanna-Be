@@ -18,7 +18,6 @@ function branches(branch){
 			scr_text("Another clown has come to the circus to play...", spr_grace_fake_smile, 0);
 			scr_text("How PUTRID.", spr_grace_frown, 0);
 			scr_text("Never do this again.", spr_grace_frown, 0);
-			scr_text("Next time, it will mean your death...", spr_grace_frown, 0);
 	    break;
 
 	    case "double_down":

@@ -31,7 +31,7 @@ hurt_timer = 0;
 stutter_cutscene = dialogue_cutscene_sub;
 
 
-minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
+minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 
 start = false;
 default_pixel_font = font_add("joystix monospace.otf", 20, false, false, 32, 128);

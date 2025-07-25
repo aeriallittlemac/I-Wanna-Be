@@ -2,7 +2,7 @@ global.npc_list = {
 	wei : {
 		object: obj_wei,
 		first_name : "Wei",
-		title : "the Wanderer",
+		title : "F*cking Torres",
 		intro_sprite : spr_wei_down,
 		cur_room : school_1F,
 		initial_x : 0,
@@ -10,7 +10,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Crude bastard. Former drug addict in his preteens. Devout Christian. Wants to be friends."
 	},
 	grace : {
 		object: obj_grace,
@@ -23,7 +25,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Affection",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Two-faced bitch. Most popular girl in school(self proclaimed). Closeted glutton."
 	},
 	drake : {
 		object: obj_drake,
@@ -36,7 +40,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Alcoholic",
 	},
 	guy : {
 		object: obj_guy,
@@ -49,7 +55,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "???",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "???",
 	},
 	brooklyn : {
 		object : obj_brooklyn,
@@ -62,7 +70,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Affection",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Snarky goth bitch. Refers to normies like they're muggles.",
 	},
 	mcronald : {
 		object : obj_mcronald,
@@ -75,7 +85,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 60,
+		introduced : false,
+		current_obersavation : "Funny magic man. Apparently talks to everyone. Seems friendly enough.",
 	},
 	job : {
 		object : obj_job,
@@ -88,12 +100,14 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "???",
 	},
 	mrchen : {
 		object : obj_mrchen,
 		first_name : "Mr. Chen",
-		title : "",
+		title : "the Employee",
 		intro_sprite : spr_mrchen_down,
 		cur_room : noone,
 		initial_x : 0,
@@ -101,7 +115,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : -9999,
+		introduced : false,
+		current_obersavation : "This man is tired of living and possibly needs help.",
 	},
 	gambino : {
 		object: obj_gambino,
@@ -114,7 +130,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Sicilian mafia boss living in a teenage boy's body.",
 	},
 	ashley : {
 		object: obj_ashley,
@@ -127,7 +145,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Affection",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Timid, scared of the opposite sex.",
 	},
 	mei : {
 		object: obj_mei,
@@ -140,7 +160,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Affection",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Loud normie.",
 	},
 	jake : {
 		object: obj_jake,
@@ -153,7 +175,9 @@ global.npc_list = {
 		initial_face : DOWN,
 		initial_animation : noone,
 		relationship : "Friendship",
-		relationshipPoints : 5,
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Dumb jock.",
 	},
 	
 
@@ -172,13 +196,6 @@ array_push(npcs, global.npc_list.ashley);
 array_push(npcs, global.npc_list.mei);
 array_push(npcs, global.npc_list.jake);
 global.npc_active = false;
-
-for(var i = 0; i < array_length(npcs); i++){
-	if !instance_exists(npcs[i].object){
-		show_debug_message(npcs[i].title);
-		instance_create_depth(-9999, -9999, 0, npcs[i].object);
-	}
-}
 
 function teleport(npc){
 	if npc != noone{

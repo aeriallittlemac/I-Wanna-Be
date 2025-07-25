@@ -1,0 +1,1 @@
+NewSlideshow(spr_game_over, dialogue_game_over_hard_on_2_0);

@@ -1,4 +1,3 @@
-minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
 draw_sprite_ext(spr_rhythm_block_ghost, -1, x*minimap_scale, y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
 if instance_exists(obj_rhythm_game){
 	if (KICK_DRUM_1 || KICK_DRUM_2)&& obj_rhythm_game.rhythm_line_x_pos >= block_left_border && obj_rhythm_game.rhythm_line_x_pos <= block_right_border{
@@ -14,6 +13,8 @@ if instance_exists(obj_rhythm_game){
 				}
 			}
 		obj_rhythm_game.player_score += 1;
+		var inst = instance_create_depth(x,y,depth, obj_rhythm_block_vfx);
+		inst.vfx_sprite = vfx_sprite;
 		instance_destroy(self);
 	}
 }

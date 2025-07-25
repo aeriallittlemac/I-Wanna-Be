@@ -5,7 +5,6 @@ floor_cutoff = string_pos("_", room_name)
 floor_name_text = string_copy(room_name,floor_cutoff+1, string_length(room_name) - floor_cutoff);
 school_hall = string_length(floor_name_text)<3
 if map_visible && school_hall{
-minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
 var minimap_sprite = spr_minimap_yk_ver;
 	if floor_name_text == "2F"{
 		minimap_sprite = spr_minimap_yk_ver_2F;

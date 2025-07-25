@@ -4,7 +4,7 @@
   "name": "sfx_snare",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 0.25,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_snare.wav",
-  "duration": 0.433265,
+  "duration": 1.0,
   "parent": {
     "name": "Rhythm Game",
     "path": "folders/UI/Rhythm Game.yy",

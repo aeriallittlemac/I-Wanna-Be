@@ -1,3 +1,4 @@
+if !global.pause_menu{
 if !classroom_mode{
 event_inherited();
 }
@@ -7,9 +8,11 @@ if array_length(sequences) > 0{
 	if sequences[0] == "move"{
 	previous_xspeed = 0;
 	previous_yspeed = 0;
-	real_xspeed = xspeed[0]*((target_x[0] < x)*(-1) + (target_x[0] > x));
+	var x_margin_of_error_dist = xspeed[0]-1;
+	var y_margin_of_error_dist = yspeed[0]-1;
+	real_xspeed = xspeed[0]*((target_x[0] - x_margin_of_error_dist <= x)*(-1) + (target_x[0] + x_margin_of_error_dist >= x));
 	if previous_xspeed*real_xspeed < 0{xspeed[0] = 0;}
-	real_yspeed = yspeed[0]*((target_y[0] < y)*(-1) + (target_y[0] > y));
+	real_yspeed = yspeed[0]*((target_y[0] - y_margin_of_error_dist <= y)*(-1) + (target_y[0] + y_margin_of_error_dist >= y));
 	if previous_yspeed*real_yspeed < 0{yspeed[0] = 0;}
 
 	if (real_xspeed == 0 && real_yspeed == 0) || skip_sequence{
@@ -46,6 +49,8 @@ if array_length(sequences) > 0{
 
 	}
 	else if sequences[0] == "teleport"{
+		real_xspeed = 0;
+		real_yspeed = 0;
 		obj_npc_manager.teleport(object_index);
 		array_delete(sequences, 0, 1);
 	}
@@ -108,4 +113,8 @@ else{
 image_xscale = CLASSROOM_CHARACTER_SCALE;
 image_yscale = CLASSROOM_CHARACTER_SCALE;
 classroom_mode = true;
+}
+}
+else{
+	image_index = 0;
 }

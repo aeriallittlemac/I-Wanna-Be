@@ -1,5 +1,8 @@
-player_relative_pos = "UP"
 player_facing_self = false;
 depth = -bbox_bottom;
-dist_to_player = 0;
-player_adjacent = false;
+player_relative_pos = ""
+O = bbox_left;
+P = bbox_right;
+M = bbox_top;
+N = bbox_bottom;
+box_outline_thickness = 3;

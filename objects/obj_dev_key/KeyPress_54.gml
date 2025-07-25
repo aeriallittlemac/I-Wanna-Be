@@ -1,1 +1,1 @@
-teleport_player(0,0, rap_battle_hall);
+instance_create_depth(0,0,TEXTBOX_DEPTH-1, obj_character_pamphlet);

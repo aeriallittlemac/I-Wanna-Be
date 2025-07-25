@@ -87,8 +87,8 @@ global.quest_list = {
 		quest_room : school_1F,
 		quest_room_width : 1620,
 		//1620 is default
-		quest_x : 199,
-		quest_y : 95,
+		quest_x : 144,
+		quest_y : 121,
 	},
 	
 	
@@ -101,4 +101,29 @@ array_push(rooms, school_1F);
 array_push(rooms, school_2F);
 array_push(rooms, school_3F);
 inv = array_create(0);
-//array_push(inv,global.quest_list.enter_dorm);
+
+//
+global.storylines = {
+	Mechanics_Introduced : {
+		redo: false,
+		pause_menu: false,
+		pamphlet: false,
+	},
+	Beatmaps : {
+		Day_Two : {
+		mei_first_meeting: false,
+		date_grace_truth: false,
+		},
+	},
+	Sewing_Club : {
+		hard_on: false,
+	},
+	
+	Grace : {
+		day_one_dare: false,
+		truth_or_dare_confession: false,
+	},
+	
+}
+
+global.hottest_rumor = "";

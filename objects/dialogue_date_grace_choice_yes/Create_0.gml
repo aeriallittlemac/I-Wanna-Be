@@ -1,0 +1,1 @@
+scr_text("Huh?", spr_grace_icon, 0);

@@ -1,5 +1,5 @@
 if set_timer > 0{
-minimap_scale = room_get_viewport(room,0)[3]/camera_get_view_width(view_camera[0]);
+minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, intro_alpha);
 draw_sprite_ext(character_sprite, 0, character_x, character_y, character_scale*minimap_scale, character_scale*minimap_scale, 0, c_white, 1);
 draw_set_color(c_white);

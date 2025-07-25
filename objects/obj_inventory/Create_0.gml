@@ -20,6 +20,16 @@ global.item_list = {
 		item_dialogue: dialogue_hot_pocket,
 
 	},
+	character_pamphlet : {
+		item_name: "Le Pamphlet",
+		item_dialogue: obj_character_pamphlet,
+
+	},
+	graces_contact_lens : {
+		item_name: "Grace's Contacts",
+		item_dialogue: -1,
+	
+	},
 	
 	
 

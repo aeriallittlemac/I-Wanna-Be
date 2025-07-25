@@ -20,13 +20,13 @@ function teleport_npc(npc, rm, targetx, targety, facing){
 	}
 	for(var i=0; i < array_length(obj_npc_manager.npcs); i++){
 		if obj_npc_manager.npcs[i].object == npc{
-			if activate_first{
-				instance_activate_object(obj_npc_manager.npcs[i].object);
-			}
 			obj_npc_manager.npcs[i].cur_room = rm;
 			obj_npc_manager.npcs[i].initial_x = targetx;
 			obj_npc_manager.npcs[i].initial_y = targety;
 			obj_npc_manager.npcs[i].initial_face = facing;
+			if activate_first{
+				instance_activate_object(obj_npc_manager.npcs[i].object);
+			}
 		}
 	}
 	array_push(npc.sequences, "teleport");
@@ -57,4 +57,21 @@ function npc_play_sfx(npc, sfx){
 function npc_animate(npc, spr){
 	array_push(npc.animation, spr);
 	array_push(npc.sequences, "animate");
+}
+function AddRelationshipPoints(npc, num){
+for(var i=0; i < array_length(obj_npc_manager.npcs); i++){
+		if npc == obj_npc_manager.npcs[i].object{
+			var relationship = obj_npc_manager.npcs[i].relationship;
+			obj_npc_manager.npcs[i].relationshipPoints += num;
+			var inst = instance_create_depth(npc.x - 25, npc.y - 50, OBJ_MAX_DEPTH, obj_ghost_text)
+				with inst{
+				default_pixel_font = font_add("joystix monospace.otf", 11*2, false, false, 32, 128);
+				overlay_text = relationship + " + " + string(num);
+				angle = -15;
+				timer = 0;
+				fade_speed = 0.8;
+				}
+			break;
+		}
+	}
 }
