@@ -1,0 +1,10 @@
+{
+	"name": "Ubuntu + GameMaker",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "gms2",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+	"forwardPorts": [6080]
+}
