@@ -37,3 +37,5 @@ rm appimagetool-x86_64.AppImage
 
 sudo dpkg -i "$GAMEMAKER_PACKAGE"
 rm "$GAMEMAKER_PACKAGE"
+
+gcc -fPIC -shared -o .devcontainer/ignore_badmatch.so .devcontainer/ignore_badmatch.c -ldl -lX11
