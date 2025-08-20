@@ -1,5 +1,6 @@
 
-if !global.cutscene&&!global.in_dialogue && !instance_exists(obj_rhythm_game) && room != tutorial && !instance_exists(obj_character_pamphlet) &&!global.pause_menu{
+if !global.cutscene&&!global.in_dialogue && !instance_exists(obj_rhythm_game) && !instance_exists(obj_rhythm_game_new)
+&& room != tutorial && !instance_exists(obj_character_pamphlet) &&!global.pause_menu{
 	if !map_visible && alarm[0] == -1{
 		alarm[0] = 2;
 	}

@@ -45,7 +45,7 @@ global.quest_list = {
 	},
 	
 	first_class : {
-		description : "Go take your first class in the morning",
+		description : "Go take your first class",
 		icon: spr_main_quest_icon,
 		quest_room : school_1F,
 		quest_room_width : 1620,
@@ -73,7 +73,7 @@ global.quest_list = {
 		quest_y : 104,
 	},
 	hot_pocket : {
-		description : "Go up to the kitchen to microwave your hot pocket",
+		description : "Microwave your hot pocket",
 		icon: spr_main_quest_icon,
 		quest_room : school_3F,
 		quest_room_width : 1080,

@@ -9,3 +9,4 @@
 //		 }
 //	}
 //}
+on_beat =  obj_rhythm_game_new.rhythm_line_x_pos >= block_left_border && obj_rhythm_game_new.rhythm_line_x_pos <= block_right_border;

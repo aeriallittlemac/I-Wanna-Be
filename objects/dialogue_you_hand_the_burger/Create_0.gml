@@ -1,6 +1,5 @@
 event_inherited();
 instance_create_depth(417, 118, inst_7AC3F02C.depth-1, obj_burger_on_a_plate);
-audio_play_sound(date_with_grace, 0, true);
 scr_text("You hand the burger to Grace on a plate.")
 scr_text("All...for me?", spr_grace_fake_smile, 0);
 scr_option("be considerate", "tease");

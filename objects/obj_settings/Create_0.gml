@@ -4,7 +4,6 @@ global.game_time = "5:00 pm";
 global.night = false;
 global.player_sleeping = false;
 global.input_off = false;
-global.destroy_soon = noone;
 global.rap_battle = false;
 timer = array_create(0);
 sequences = array_create(0);

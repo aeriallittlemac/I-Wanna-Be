@@ -2,7 +2,7 @@ minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 depth = FILTER_DEPTH
 intro_alpha = 0.6;
 text_x_offset = 60;
-text_y_offset = 20;
+text_y_offset = 40;
 corner_label_x = 680;
 
 player_x = 0;

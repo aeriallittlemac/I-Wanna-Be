@@ -20,6 +20,11 @@ global.item_list = {
 		item_dialogue: dialogue_hot_pocket,
 
 	},
+	wooden_cross : {
+		item_name: "wooden cross",
+		item_dialogue: dialogue_cross,
+	
+	},
 	character_pamphlet : {
 		item_name: "Le Pamphlet",
 		item_dialogue: obj_character_pamphlet,

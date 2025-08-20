@@ -34,7 +34,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D1E2453","properties":[],"isDnd":false,"objectId":{"name":"obj_poster_1","path":"objects/obj_poster_1/obj_poster_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66C2FF94","properties":[],"isDnd":false,"objectId":{"name":"obj_poster_3","path":"objects/obj_poster_3/obj_poster_3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63689AFE","properties":[],"isDnd":false,"objectId":{"name":"obj_poster_2","path":"objects/obj_poster_2/obj_poster_2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2258A9ED","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_GRACESEAT","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_graceseat",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"seat_empty","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"value":"True",},
@@ -47,7 +47,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_brooklynseat",},
           ],"isDnd":false,"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.222222,"scaleY":0.55263156,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":73.0,"y":96.34818,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DE8F459","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_MEISEAT","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_meiseat",},
           ],"isDnd":false,"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.222222,"scaleY":0.57894737,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":116.0,"y":96.0,},
@@ -73,10 +73,10 @@
     {"name":"inst_3D1E2453","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_66C2FF94","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_63689AFE","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_2258A9ED","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_GRACESEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_6CFAA135","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_2DC079CB","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_1DE8F459","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_MEISEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_551BCA1D","path":"rooms/school_sewing_club/school_sewing_club.yy",},
   ],
   "inheritCreationOrder": false,

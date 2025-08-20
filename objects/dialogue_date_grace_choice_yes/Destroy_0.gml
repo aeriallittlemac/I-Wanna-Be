@@ -1,4 +1,4 @@
-audio_stop_sound(sewing_club);
+audio_stop_sound(sewing_club_new);
 var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 with inst{
 	default_pixel_font = font_add("joystix monospace.otf", 45*2, false, false, 32, 128);

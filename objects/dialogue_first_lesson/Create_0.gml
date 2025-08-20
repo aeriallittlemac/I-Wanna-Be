@@ -26,17 +26,17 @@ function continuation(branch){
 		case "dontcare":
 			scr_text("No, don't actually answer that, I honestly don’t really give a damn.", spr_mrchen_icon, 0);
 			scr_text("First class in and I already wanna kill myself...", spr_mrchen_icon, 0);
-			scr_text("Thankfully, we don't have much of an agenda today.", spr_mrchen_icon, 0);
-			scr_text("Math class, whoopie-freaking-doo.", spr_mrchen_icon, 0);
+			scr_text("Alright, Math class.", spr_mrchen_icon, 0);
 			scr_text("Let’s get this over with, shall we?", spr_mrchen_icon, 0);
 			scr_text("Wait, Mr. Chen!", spr_grace_fake_smile, 1);
 			scr_text("What about welcoming the new kid?", spr_grace_fake_smile, 1);
 			scr_text("F*ck the new kid.", spr_mrchen_icon, 0);
-			scr_text("If I was paid by the hour to “welcome” each and every transfer...", spr_mrchen_icon, 0);
-			scr_text("I’d be on my f*cking knees blowing him right now, Jesus Christ.", spr_mrchen_icon, 0);
+			scr_text("We’re already well behind schedule, there’s no time for that useless crap.", spr_mrchen_icon, 0);
+			scr_text("But how can we be behind schedule? Isn’t it our first day of class?", spr_grace_fake_smile, 0);
+			scr_text("Words from the president:", spr_mrchen_icon, 0);
+			scr_text("\"The kids are retarded, so we might as well be behind schedule.\"", spr_mrchen_icon, 0);
+			scr_text("There you go. Happy?", spr_mrchen_icon, 0);
 			scr_text("...", spr_grace_fake_smile, 1);
-			scr_text("Anyways. You kids are retarded, which means that we are already well behind schedule.", spr_mrchen_icon, 0);
-			scr_text("President’s words, not mine.", spr_mrchen_icon, 0);
 			scr_text("Eat a d*ck.", spr_wei_angry, 1);
 			scr_text("Is he wrong though?", spr_mcronald_icon, 0);
 			scr_text("Speak for yourself, fool.", spr_brooklyn_icon, 1);
