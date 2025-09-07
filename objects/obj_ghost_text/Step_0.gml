@@ -1,6 +1,9 @@
-
+if angle>0 && !check_angle{
+	fade_move_speed*=-1;
+	check_angle = true;
+}
 if timer > 0 {
-	timer --;
+	timer -= 1/room_speed;
 	x += dcos(angle)*fade_move_speed;
 	y += dsin(angle)*fade_move_speed;
 }

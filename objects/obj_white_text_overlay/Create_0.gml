@@ -8,4 +8,5 @@ fade_out_speed = 1;
 timer = 0;
 text_timer = 0.2;
 text_last_timer = 2 * room_speed;
+minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 i = 0;

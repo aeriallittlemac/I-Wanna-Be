@@ -1,1 +1,1 @@
-instance_create_depth(0,0,0,beatmap_testing_new);
+set_QTE_bgm(song_band_first_song);

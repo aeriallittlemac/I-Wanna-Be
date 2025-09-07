@@ -1,1 +1,1 @@
-teleport_player(1575, 95, diamondwood_high_1F);
+instance_create_depth(0,0,0,beatmap_gambino_first_meeting)

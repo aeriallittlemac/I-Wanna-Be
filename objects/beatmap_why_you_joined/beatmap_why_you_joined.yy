@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "beatmap_parent",
-    "path": "objects/beatmap_parent/beatmap_parent.yy",
+    "name": "beatmap_parent_new",
+    "path": "objects/beatmap_parent_new/beatmap_parent_new.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

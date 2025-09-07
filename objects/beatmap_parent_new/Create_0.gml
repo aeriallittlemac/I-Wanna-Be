@@ -12,9 +12,13 @@ inst.beatmap_snares = beatmap_snares;
 inst.target_score = target_score;
 inst.kick_sound = kick_sound;
 inst.snare_sound = snare_sound;
-
+inst.QTE = QTE;
+if QTE == false{
+inst.max_misses = max_misses;
+}
 if beatmap_kicks[0][0] == 1{
 	instance_create_depth(16*14 + inst.kick_offset_x, global.rap_battle * 75 + inst.kick_offset_y, depth-1, obj_rhythm_block_kick_ghost);
 }
+inst.calculate_start_time();
 instance_destroy(self);
 

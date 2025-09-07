@@ -11,6 +11,20 @@ function scr_text(_text){
 	
 }
 
+function scr_text_timed(_text, _pause){
+	array_push(obj_timed_textbox.text,_text);
+	array_push(obj_timed_textbox.pause_after_line, _pause);
+	if argument_count > 2{
+		array_push(obj_timed_textbox.speaker_sprite, argument[2]);
+		array_push(obj_timed_textbox.speaker_side, argument[3]);
+	}
+	else{
+		array_push(obj_timed_textbox.speaker_sprite, noone);
+		array_push(obj_timed_textbox.speaker_side, -1);
+	}
+	
+}
+
 function scr_option(_option, _link_id){
 	obj_textbox.option[obj_textbox.option_number] = _option;
 	obj_textbox.option_link_id[obj_textbox.option_number] = _link_id;
@@ -26,6 +40,16 @@ function textbox_reset(){
 	obj_textbox.display_text = "";
 	clear_options();
 }
+
+function timed_textbox_reset(){
+	obj_timed_textbox.text = array_create(0);
+	obj_timed_textbox.speaker_sprite = array_create(0);
+	obj_timed_textbox.speaker_side = array_create(0);	
+	obj_timed_textbox.i=1;
+	obj_timed_textbox.j=0;
+	obj_timed_textbox.display_text = "";
+}
+
 
 function clear_options(){
 	obj_textbox.option = [""]

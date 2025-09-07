@@ -1,1 +1,2 @@
-instance_create_depth(0, 0, 0, beatmap_why_you_joined);
+set_QTE_bgm(grace_debut_theme);
+game_NewDialogue(dialogue_help_grace_find_contacts_complete_1);

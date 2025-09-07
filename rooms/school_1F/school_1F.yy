@@ -72,6 +72,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A054795","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_walk_routes","path":"objects/obj_npc_walk_routes/obj_npc_walk_routes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1539.0,"y":133.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B35921","properties":[],"isDnd":false,"objectId":{"name":"obj_redo_UI","path":"objects/obj_redo_UI/obj_redo_UI.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1593.0,"y":114.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_546ABF72","properties":[],"isDnd":false,"objectId":{"name":"obj_music_manager","path":"objects/obj_music_manager/obj_music_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1539.0,"y":114.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37774942","properties":[],"isDnd":false,"objectId":{"name":"obj_timed_textbox","path":"objects/obj_timed_textbox/obj_timed_textbox.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":22.0,"y":8.0,},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_3","assets":[],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":24,"gridY":24,"layers":[],"hierarchyFrozen":true,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
@@ -129,6 +130,7 @@
     {"name":"inst_3A054795","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_6B35921","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_546ABF72","path":"rooms/school_1F/school_1F.yy",},
+    {"name":"inst_37774942","path":"rooms/school_1F/school_1F.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -1,3 +1,4 @@
+QTE = true;
 target_score = 6;
 win_cutscene = dialogue_you_nod_your_head;
 lose_cutscene = dialogue_didnt_see_you_there_lol;

@@ -158,3 +158,7 @@ if rhythm_line_x_pos >= 246{
 	else{
 	offset_time -= delta_time/1000000;
 	}
+	
+if !QTE && misses > max_misses{
+	instance_destroy(self);
+}

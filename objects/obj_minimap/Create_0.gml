@@ -13,7 +13,7 @@ multiple_floor_margin = 15;
 quest_arrow_y = 2;
 
 global.quest_list = {
-
+	//day 1
 	enter_dorm : {
 		description : "Check out your dorm room",
 		icon: spr_main_quest_icon,
@@ -90,6 +90,15 @@ global.quest_list = {
 		quest_x : 144,
 		quest_y : 121,
 	},
+	back_to_your_room : {
+		description : "Go back to your room",
+		icon: spr_main_quest_icon,
+		quest_room : school_2F,
+		quest_room_width : 810,
+		//1620 is default
+		quest_x : 650,
+		quest_y : 104,
+	},
 	
 	
 	
@@ -108,6 +117,7 @@ global.storylines = {
 		redo: false,
 		pause_menu: false,
 		pamphlet: false,
+		night_no_drums: false,
 	},
 	Beatmaps : {
 		Day_Two : {

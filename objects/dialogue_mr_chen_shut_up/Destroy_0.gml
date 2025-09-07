@@ -1,0 +1,1 @@
+global.storylines.Mechanics_Introduced.night_no_drums = true;

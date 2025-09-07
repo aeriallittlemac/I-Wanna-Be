@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Rhythm Game",
-    "path": "folders/UI/Rhythm Game.yy",
+    "name": "Old Beatmaps",
+    "path": "folders/UI/Rhythm Game/Archived/Old Beatmaps.yy",
   },
 }

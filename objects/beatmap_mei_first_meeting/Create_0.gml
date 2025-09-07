@@ -1,3 +1,4 @@
+QTE = true;
 target_score = 7;
 win_cutscene = dialogue_mei_debut;
 lose_cutscene = dialogue_game_over_hard_on_0;

@@ -1,3 +1,4 @@
+QTE = true;
 target_score = 3;
 tempo = 90;
 beatmap_kicks = array_create(0);

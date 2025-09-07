@@ -1,0 +1,10 @@
+event_inherited();
+scr_text("*smile fades", spr_grace_icon, 0);
+scr_text("Oh, it’s you...", spr_grace_icon, 0);
+scr_text("...");
+scr_text("Well, I owe you one now, I guess..", spr_grace_icon, 0);
+scr_text("...", spr_grace_icon, 0);
+scr_text("*Awkward silence ensues");
+scr_text("So...", spr_grace_icon, 0);
+scr_text("What made you join this club?", spr_grace_icon, 0);
+scr_text("I didn't think you were the sewing type.", spr_grace_icon, 0);

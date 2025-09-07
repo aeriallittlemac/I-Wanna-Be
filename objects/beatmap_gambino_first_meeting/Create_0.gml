@@ -1,0 +1,12 @@
+QTE = true;
+target_score = 3;
+win_cutscene = beatmap_gambino_first_meeting_0_1;
+lose_cutscene = beatmap_gambino_first_meeting_0_2;
+tempo = 90;
+beatmap_kicks = array_create(0);
+beatmap_snares = array_create(0);
+kick_sound = sfx_stomp;
+snare_sound = sfx_snare;
+array_push(beatmap_kicks, [1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0]);
+array_push(beatmap_snares, [0,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0]);
+event_inherited();
