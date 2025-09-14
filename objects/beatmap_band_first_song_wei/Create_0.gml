@@ -8,18 +8,20 @@ beatmap_snares = array_create(0);
 kick_sound = sfx_stomp;
 snare_sound = sfx_snare;
 max_misses = 10;
-for(var i = 0; i<2; i++){
-array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
-array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1]);
-array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
-array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
-array_push(beatmap_kicks, [1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1]);
+for(var j = 0; j<2; j++){
+	for(var i = 0; i<2; i++){
+	array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0]);
+	array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
+	array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1]);
+	array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
+	array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0]);
+	array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
+	array_push(beatmap_kicks, [1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0]);
+	array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1]);
+	}
+	for(var i = 0; i<4; i++){
+	array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]);
+	array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
+	}
 }
-//array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0]);
-//array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0]);
-//array_push(beatmap_kicks, [1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0]);
-//array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1]);
 event_inherited();

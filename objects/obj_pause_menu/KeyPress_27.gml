@@ -1,3 +1,6 @@
+if instance_exists(cutscene_check_rumors){
+	instance_destroy(cutscene_check_rumors);
+}
 if(!global.pause_menu){
 	player_x = obj_player.x;
 	player_y = obj_player.y;
@@ -8,18 +11,13 @@ if(!global.pause_menu){
 		cur_quest = obj_minimap.inv[0].description;
 	}
 }
-if instance_exists(cutscene_check_rumors){
-	instance_destroy(cutscene_check_rumors);
-	global.storylines.Mechanics_Introduced.pause_menu = true;
-}
-global.storylines.Mechanics_Introduced.pause_menu = true;
-global.pause_menu = !global.pause_menu;
-if !global.pause_menu{
-	 
-	if global.storylines.Mechanics_Introduced.pause_menu
-&& !global.storylines.Mechanics_Introduced.pamphlet
-&& global.storylines.Grace.truth_or_dare_confession{
-	game_NewDialogue(dialogue_check_relationship_pamphlet)
-	global.storylines.Mechanics_Introduced.pamphlet = true;
+else{
+	if !global.storylines.Mechanics_Introduced.pause_menu
+//&& global.storylines.Grace.truth_or_dare_confession
+	{
+		game_NewDialogue(dialogue_check_relationship_pamphlet)
+		global.storylines.Mechanics_Introduced.pause_menu = true;
 	}
 }
+global.pause_menu = !global.pause_menu;
+

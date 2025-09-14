@@ -1,1 +1,1 @@
-set_QTE_bgm(song_band_first_song);
+set_QTE_bgm(song_grace_first_meeting);

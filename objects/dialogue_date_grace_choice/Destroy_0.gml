@@ -17,5 +17,6 @@ else
 	}
 	global.cutscene = false;
 	global.game_time = "5:00 pm";
+	global.hottest_rumor = "The new kid is gay!";
 	teleport_player(855, 125, school_1F,dialogue_check_rumors);
 }

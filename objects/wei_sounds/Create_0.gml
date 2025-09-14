@@ -10,4 +10,4 @@ function random_wei_sound(){
 	}
 }
 random_wei_sound();
-alarm[0] = 100;
+alarm[0] = 400;
