@@ -4,7 +4,7 @@ font_add_enable_aa(false);
 }
 draw_set_colour(font_color);
 draw_set_font(default_pixel_font);
-draw_text_transformed_colour(x*minimap_scale, y*minimap_scale, displayed_overlay_text, 0.25*minimap_scale, 0.25*minimap_scale, 0,font_color, font_color, font_color, font_color, set_text_alpha);
+draw_text_transformed_colour((x-camera_get_view_x(view_camera[0]))*minimap_scale, y*minimap_scale, displayed_overlay_text, 0.25*minimap_scale, 0.25*minimap_scale, 0,font_color, font_color, font_color, font_color, set_text_alpha);
 
 if string_length(overlay_text) > string_length(displayed_overlay_text){
 	if timer <= 0 {

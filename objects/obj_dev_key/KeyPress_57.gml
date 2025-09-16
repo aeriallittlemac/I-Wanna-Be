@@ -1,6 +1,6 @@
 game_camera_change_settings(obj_player,-1);
 teleport_npc(obj_wei, school_2F, 100, obj_wei.y, RIGHT);
-destroy_if_in_scene(inst_29E75538);
+destroy_if_in_scene(inst_GAME_START_CUTSCENE_TRIGGER);
 AddInstanceToDestroy(inst_1D43132F);
 teleport_player(650, 118, school_2F);
 global.day = 2;

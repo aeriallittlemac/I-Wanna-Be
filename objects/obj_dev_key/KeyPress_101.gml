@@ -11,7 +11,7 @@ var classroom_map = [[obj_guy, obj_mcronald, obj_job],
 		}
 	}
 	teleport_npc(obj_mrchen, school_main_classroom, 108, 57, DOWN);
-	instance_destroy(inst_29E75538);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
 
 
 
