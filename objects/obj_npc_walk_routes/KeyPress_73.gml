@@ -1,6 +1,6 @@
 test_start_walk = true;
 teleport_npc(obj_wei, noone, 0,0,RIGHT);
-instance_destroy(inst_29E75538);
+instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
 game_camera_change_settings(obj_player, -1);
 teleport_npc(obj_guy, school_1F,1585,161,LEFT);
 			npc_move_to_pos(obj_guy, 2, 0, 722, obj_guy.y);

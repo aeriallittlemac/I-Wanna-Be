@@ -3,7 +3,6 @@ show_debug_message("Minimap y:");
 show_debug_message(y);
 depth = TEXTBOX_DEPTH
 school_hall = true;
-
 text_x_pos = 62.5
 text_y_pos = 7
 
@@ -117,6 +116,7 @@ global.storylines = {
 		redo: false,
 		pause_menu: false,
 		pamphlet: false,
+		pamphlet_finished_reading: false,
 		night_no_drums: false,
 	},
 	Beatmaps : {

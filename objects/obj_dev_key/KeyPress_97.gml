@@ -1,5 +1,5 @@
 teleport_npc(obj_wei, school_2F, 100, obj_wei.y, RIGHT);
-destroy_if_in_scene(inst_29E75538);
+destroy_if_in_scene(inst_GAME_START_CUTSCENE_TRIGGER);
 teleport_player(600,100,school_3F);
 destroy_if_in_scene(inst_1D43132F);
 instance_destroy(inst_60A96728);
