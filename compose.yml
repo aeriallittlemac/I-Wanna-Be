@@ -17,5 +17,5 @@ services:
     volumes:
       - ./windows:/storage
       - ./shared:/data
-    restart: always
+    # restart: always
     stop_grace_period: 2m
