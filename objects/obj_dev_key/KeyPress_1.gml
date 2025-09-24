@@ -1,7 +1,17 @@
 //Shortcuts to scenes
 #macro LAB_SCENE ord("U")
+#macro GAMBINOS_ROOM ord("Y")
 
 if keyboard_check(LAB_SCENE){
 	show_debug_message("lab!");
-	
+}
+
+if keyboard_check(GAMBINOS_ROOM){
+	global.day = 2
+	game_camera_change_settings(obj_player,-1);
+	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP);
+	teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP);
+	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
+	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
+	AddInstanceToDestroy(inst_1D43132F);
 }

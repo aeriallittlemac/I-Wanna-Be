@@ -10,4 +10,4 @@ function random_guitar_sound(){
 	}
 }
 random_guitar_sound();
-alarm[0] = 500;
+alarm[0] = 1000;
