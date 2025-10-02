@@ -4,7 +4,7 @@
   "name": "conversation_with_gambino",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.48,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "conversation_with_gambino.wav",
-  "duration": 128.00284,
+  "duration": 65.37145,
   "parent": {
     "name": "Music",
     "path": "folders/Non-UI Sounds/Music.yy",

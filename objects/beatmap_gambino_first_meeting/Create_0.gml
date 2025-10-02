@@ -1,8 +1,8 @@
 QTE = true;
 target_score = 3;
-win_cutscene = beatmap_gambino_first_meeting_0_1;
-lose_cutscene = beatmap_gambino_first_meeting_0_2;
-tempo = 90;
+win_cutscene = dialogue_conversation_with_gambino_0_1;
+lose_cutscene = dialogue_conversation_with_gambino_0_2;
+tempo = 80;
 beatmap_kicks = array_create(0);
 beatmap_snares = array_create(0);
 kick_sound = sfx_stomp;

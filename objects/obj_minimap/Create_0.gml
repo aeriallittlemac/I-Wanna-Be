@@ -129,10 +129,19 @@ global.storylines = {
 		hard_on: false,
 	},
 	
+	Band : {
+		First_song : {
+			Frenchies_guitar: false,
+			Weis_vocals: false,
+		},
+	},
+	
 	Grace : {
 		day_one_dare: false,
 		truth_or_dare_confession: false,
 	},
+	
+	
 	
 }
 
