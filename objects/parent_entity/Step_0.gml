@@ -35,6 +35,3 @@ player_facing_self =
 || (player_relative_pos == "RIGHT" && obj_player.sprite_index == obj_player.sprite[LEFT]) 
 || (player_relative_pos == "UP" && obj_player.sprite_index == obj_player.sprite[DOWN]) 
 || (player_relative_pos == "DOWN" && obj_player.sprite_index == obj_player.sprite[UP]);
-//if player_facing_self{
-//	show_debug_message(player_relative_pos);
-//}

@@ -1,7 +1,6 @@
 if !global.pause_menu{
-if !classroom_mode{
+
 event_inherited();
-}
 
 depth = -bbox_bottom;
 if array_length(sequences) > 0{

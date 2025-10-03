@@ -1,19 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_grace",
-  "spriteId": {
-    "name": "spr_grace_right",
-    "path": "sprites/spr_grace_right/spr_grace_right.yy",
-  },
+  "name": "dialogue_grace_interact",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
-    "name": "obj_npc",
-    "path": "objects/obj_npc/obj_npc.yy",
+    "name": "dialogue_parent",
+    "path": "objects/dialogue_parent/dialogue_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,12 +26,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Grace",
-    "path": "folders/Characters/Grace.yy",
+    "name": "Day 3 - lab",
+    "path": "folders/Dialogue_Lines/Day 3 - lab.yy",
   },
 }
