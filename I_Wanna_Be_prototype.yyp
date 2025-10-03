@@ -55,6 +55,7 @@
     {"id":{"name":"sfx_light_switch","path":"sounds/sfx_light_switch/sfx_light_switch.yy",},"order":13,},
     {"id":{"name":"spr_PBnJ_plate","path":"sprites/spr_PBnJ_plate/spr_PBnJ_plate.yy",},"order":28,},
     {"id":{"name":"spr_playerpoint_down","path":"sprites/spr_playerpoint_down/spr_playerpoint_down.yy",},"order":6,},
+    {"id":{"name":"dialogue_grace_interact","path":"objects/dialogue_grace_interact/dialogue_grace_interact.yy",},"order":0,},
     {"id":{"name":"Slideshow","path":"scripts/Slideshow/Slideshow.yy",},"order":9,},
     {"id":{"name":"obj_heart","path":"objects/obj_heart/obj_heart.yy",},"order":1,},
     {"id":{"name":"spr_2F_1","path":"sprites/spr_2F_1/spr_2F_1.yy",},"order":0,},
@@ -807,6 +808,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Grace vs Brooklyn","folderPath":"folders/UI/Rhythm Game/Archived/Rap Battle Beatmaps/Grace vs Brooklyn.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"vfx","folderPath":"folders/UI/Rhythm Game/vfx.yy","order":26,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX","folderPath":"folders/VFX.yy","order":22,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Day 3 - lab","folderPath":"folders/Dialogue_Lines/Day 3 - lab.yy","order":7,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

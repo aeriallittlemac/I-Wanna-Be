@@ -4,6 +4,8 @@
 
 if keyboard_check(LAB_SCENE){
 	show_debug_message("lab!");
+	teleport_player(110, 90, school_lab);
+	teleport_npc(obj_grace, school_lab, 100, 55, DOWN);
 }
 
 if keyboard_check(GAMBINOS_ROOM){
