@@ -179,8 +179,21 @@ global.npc_list = {
 		introduced : false,
 		current_obersavation : "Dumb jock.",
 	},
-	
-
+	frenchie : {
+		object: obj_frenchie,
+		first_name : "Jake",
+		title: "le French",
+		intro_sprite : spr_frenchie_down,
+		cur_room : noone,
+		initial_x : 0,
+		initial_y : 0,
+		initial_face : DOWN,
+		initial_animation : noone,
+		relationship : "Friendship",
+		relationshipPoints : 0,
+		introduced : false,
+		current_obersavation : "Innocent and good hearted.",
+	},
 }
 npcs = array_create(0);
 array_push(npcs, global.npc_list.wei);
@@ -195,6 +208,7 @@ array_push(npcs, global.npc_list.gambino);
 array_push(npcs, global.npc_list.ashley);
 array_push(npcs, global.npc_list.mei);
 array_push(npcs, global.npc_list.jake);
+array_push(npcs, global.npc_list.frenchie);
 global.npc_active = false;
 
 function teleport(npc){
