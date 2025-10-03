@@ -1,1 +1,1 @@
-set_QTE_bgm(song_grace_first_meeting);
+set_QTE_bgm(sewing_club_new);

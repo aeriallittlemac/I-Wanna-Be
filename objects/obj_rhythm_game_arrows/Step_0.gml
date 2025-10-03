@@ -1,0 +1,1 @@
+block_speed = ((right_border - left_border)*tempo*(delta_time/1000000))/240

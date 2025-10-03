@@ -46,7 +46,7 @@ kick_offset_x = left_border;//22
 kick_offset_y = 28;
 snare_offset_x = kick_offset_x;
 snare_offset_y = 51;//61
-
+block_speed = 0;
 misses = 0;
 kick_sound = noone;
 snare_sound = noone;
@@ -78,38 +78,10 @@ function calculate_start_time(){
 	}
 }
 //intro
-array_push(beatmap_kicks, [1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0]);
-array_push(beatmap_kicks, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0]);
-array_push(beatmap_snares, [0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
-
-//main (verse)
-for (var j=0; j<2; j++){
-	for (var i = 0; i < 3; i++){
-		array_push(beatmap_kicks, kick_main_rhythm);
-		array_push(beatmap_snares, snare_main_rhythm);
-	}
-	array_push(beatmap_kicks, kick_main_fill);
-	array_push(beatmap_snares, snare_main_fill);
-}
-
-//bridge(intro)
-
-array_push(beatmap_kicks, [1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0]);
-array_push(beatmap_kicks, [1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0]);
+array_push(beatmap_kicks, [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]);
+array_push(beatmap_kicks, [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]);
 array_push(beatmap_snares, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
 array_push(beatmap_snares, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
-
-//ending (chorus)
-for (var i = 0; i < 6; i++){
-	array_push(beatmap_kicks, kick_ending_rhythm);
-	array_push(beatmap_snares, snare_ending_rhythm);
-}
-array_push(beatmap_kicks, [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0]);
-array_push(beatmap_kicks, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
-array_push(beatmap_snares, [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
-
 
 bars = 0;
 first_beat = false;

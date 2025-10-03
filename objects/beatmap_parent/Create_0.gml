@@ -10,9 +10,9 @@ inst.target_score = target_score;
 inst.song = song;
 inst.kick_sound = kick_sound;
 inst.snare_sound = snare_sound;
-kick_offset_x = 22;
-kick_offset_y = 61;
+kick_offset_x = inst.left_border;
+kick_offset_y = 51;
 if beatmap_kicks[0][0] == 1{
-	instance_create_depth(16*14 + 22, global.rap_battle * 75 + 28, depth-1, obj_rhythm_block_kick_ghost);
+	instance_create_depth(16*inst.unit + kick_offset_x, global.rap_battle * 75 + kick_offset_y, depth-1, obj_rhythm_block_kick_ghost);
 }
 instance_destroy(self);
