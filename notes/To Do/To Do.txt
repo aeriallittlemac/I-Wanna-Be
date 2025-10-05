@@ -1,0 +1,3 @@
+To Do:
+- Camera Follow Points: formerly objects which calculated the X midpoint between two hard coded characters.
+- Figure out the purpose of Room Order.

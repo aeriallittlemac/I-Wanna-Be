@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Brooklyn",
-    "path": "folders/Characters/Brooklyn.yy",
+    "path": "folders/Sprites/Brooklyn.yy",
   },
 }

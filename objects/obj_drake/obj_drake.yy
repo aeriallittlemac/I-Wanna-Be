@@ -39,6 +39,6 @@
   ],
   "parent": {
     "name": "Drake",
-    "path": "folders/Characters/Drake.yy",
+    "path": "folders/Objects/NPCs/Drake.yy",
   },
 }

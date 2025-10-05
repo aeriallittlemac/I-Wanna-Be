@@ -33,6 +33,6 @@
   ],
   "parent": {
     "name": "Brooklyn",
-    "path": "folders/Characters/Brooklyn.yy",
+    "path": "folders/Objects/NPCs/Brooklyn.yy",
   },
 }

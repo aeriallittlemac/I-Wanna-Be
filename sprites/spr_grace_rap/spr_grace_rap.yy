@@ -85,6 +85,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Animations",
-    "path": "folders/Characters/Grace/Animations.yy",
+    "path": "folders/Sprites/Grace/Animations.yy",
   },
 }

@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "McRonald",
-    "path": "folders/Characters/McRonald.yy",
+    "path": "folders/Sprites/McRonald.yy",
   },
 }

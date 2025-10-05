@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "animation",
-    "path": "folders/Characters/Brooklyn/animation.yy",
+    "name": "Animations",
+    "path": "folders/Sprites/Brooklyn/Animations.yy",
   },
 }

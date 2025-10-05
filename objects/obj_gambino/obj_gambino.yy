@@ -39,6 +39,6 @@
   ],
   "parent": {
     "name": "Gambino",
-    "path": "folders/Characters/Gambino.yy",
+    "path": "folders/Objects/NPCs/Gambino.yy",
   },
 }

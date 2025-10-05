@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "McRonald",
-    "path": "folders/Characters/McRonald.yy",
+    "path": "folders/Objects/NPCs/McRonald.yy",
   },
 }

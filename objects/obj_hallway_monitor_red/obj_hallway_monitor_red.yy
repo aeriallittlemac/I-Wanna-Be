@@ -36,6 +36,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Hallway Monitor Red",
-    "path": "folders/Characters/Hallway Monitor Red.yy",
+    "path": "folders/Objects/NPCs/Hallway Monitor Red.yy",
   },
 }

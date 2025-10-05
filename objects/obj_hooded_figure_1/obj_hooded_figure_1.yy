@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Hooded Figure 1",
-    "path": "folders/Characters/Hooded Figure 1.yy",
+    "path": "folders/Objects/NPCs/Hooded Figure 1.yy",
   },
 }
