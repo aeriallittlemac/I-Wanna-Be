@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tutorial",
-    "path": "folders/Dialogue_Lines/Tutorial.yy",
+    "path": "folders/Dialogue Lines/Tutorial.yy",
   },
 }

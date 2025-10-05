@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Job",
-    "path": "folders/Sprites/Job.yy",
+    "path": "folders/Sprites/NPCs/Job.yy",
   },
 }

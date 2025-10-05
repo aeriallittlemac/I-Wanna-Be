@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Hallway Monitor Red",
-    "path": "folders/Sprites/Hallway Monitor Red.yy",
+    "path": "folders/Sprites/NPCs/Hallway Monitor Red.yy",
   },
 }

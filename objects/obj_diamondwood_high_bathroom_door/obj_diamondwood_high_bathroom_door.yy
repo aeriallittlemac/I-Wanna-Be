@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Diamondwood High Bathroom",
-    "path": "folders/Diamondwood High Assets/Diamondwood High Bathroom.yy",
+    "name": "Bathroom",
+    "path": "folders/Objects/Rooms/Diamondwood High/Bathroom.yy",
   },
 }

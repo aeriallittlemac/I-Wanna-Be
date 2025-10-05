@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 2 - day",
-    "path": "folders/Dialogue_Lines/Day 2 - day.yy",
+    "name": "Day 2 - Day",
+    "path": "folders/Dialogue Lines/Days/Day 2 - Day.yy",
   },
 }

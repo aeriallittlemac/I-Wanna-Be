@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sewing_club_debut",
-    "path": "folders/Dialogue_Lines/Day 2 - day/sewing_club_debut.yy",
+    "name": "Sewing Club Debut",
+    "path": "folders/Dialogue Lines/Days/Day 2 - Day/Sewing Club Debut.yy",
   },
 }

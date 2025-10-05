@@ -34,7 +34,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"interact_range","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"2.5",},
   ],
   "parent": {
-    "name": "Diamondwood High Bathroom",
-    "path": "folders/Diamondwood High Assets/Diamondwood High Bathroom.yy",
+    "name": "Bathroom",
+    "path": "folders/Objects/Rooms/Diamondwood High/Bathroom.yy",
   },
 }

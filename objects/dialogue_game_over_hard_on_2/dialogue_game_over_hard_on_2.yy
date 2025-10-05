@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 2 Sewing Club",
-    "path": "folders/Dialogue_Lines/Game Overs(Redos)/Day 2 Sewing Club.yy",
+    "name": "Day 2 - Sewing Club",
+    "path": "folders/Dialogue Lines/Days/Day 2 - Sewing Club.yy",
   },
 }

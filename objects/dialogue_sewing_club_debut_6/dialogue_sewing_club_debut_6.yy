@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "archived",
-    "path": "folders/Dialogue_Lines/Day 2 - day/archived.yy",
+    "name": "Archived",
+    "path": "folders/Dialogue Lines/Days/Day 2 - Day/Archived.yy",
   },
 }

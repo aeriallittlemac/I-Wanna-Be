@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Diamondwood High Bathroom",
-    "path": "folders/Diamondwood High Assets/Diamondwood High Bathroom.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

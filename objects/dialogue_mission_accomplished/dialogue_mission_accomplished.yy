@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Diamondwood High",
-    "path": "folders/Dialogue_Lines/Day 2 - after_club/Diamondwood High.yy",
+    "path": "folders/Dialogue Lines/Days/Day 2 - After Club/Diamondwood High.yy",
   },
 }

@@ -75,6 +75,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Hooded Figure 1",
-    "path": "folders/Sprites/Hooded Figure 1.yy",
+    "path": "folders/Sprites/NPCs/Hooded Figure 1.yy",
   },
 }

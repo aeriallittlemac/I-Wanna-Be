@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 2 - after_club",
-    "path": "folders/Dialogue_Lines/Day 2 - after_club.yy",
+    "name": "Day 2 - After Club",
+    "path": "folders/Dialogue Lines/Days/Day 2 - After Club.yy",
   },
 }
