@@ -21,7 +21,7 @@ global.item_list = {
 
 	},
 	wooden_cross : {
-		item_name: "wooden cross",
+		item_name: "Wooden Cross",
 		item_dialogue: dialogue_cross,
 	
 	},
@@ -35,8 +35,11 @@ global.item_list = {
 		item_dialogue: -1,
 	
 	},
+	stack_of_papers : {
+		item_name: "Stack of Papers",
+		item_dialogue: -1,
 	
-	
+	},
 
 }
 inventory = array_create(0);

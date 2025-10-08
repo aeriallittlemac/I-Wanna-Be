@@ -1,0 +1,1 @@
+draw_sprite_ext(arrow_sprite, arrow_num, x*minimap_scale, y*minimap_scale, minimap_scale*2, minimap_scale*2, 0, c_white, 1 );

@@ -125,6 +125,20 @@ global.storylines = {
 		date_grace_truth: false,
 		},
 	},
+	Main_Classroom : {
+		Day_Two : {
+		papers_handed_out: 0,
+			papers_given:{
+				wei: false,
+				grace: false,
+				brooklyn: false,
+				drake: false,
+				mei: false,
+				mcronald: false,
+				job: false,
+			},
+		},
+	},
 	Sewing_Club : {
 		hard_on: false,
 	},

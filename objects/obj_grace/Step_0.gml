@@ -5,6 +5,3 @@
 
 // Inherit the parent event
 event_inherited();
-if player_facing_self{
-	show_debug_message("rape")
-}

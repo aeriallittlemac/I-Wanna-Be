@@ -1,0 +1,1 @@
+draw_sprite_ext(line_sprite, VFXframe, x*minimap_scale, y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
