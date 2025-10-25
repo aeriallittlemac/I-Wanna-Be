@@ -1,4 +1,5 @@
-
+obj_mrchen.entityActivateScript = NewDialogue;
+obj_mrchen.entityActivateArg = dialogue_first_lesson_2
 //audio_stop_sound(classroom);
 //var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 //with inst{

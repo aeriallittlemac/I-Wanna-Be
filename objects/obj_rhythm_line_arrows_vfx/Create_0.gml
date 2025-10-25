@@ -26,7 +26,6 @@ if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
 		}
 	}
 	else if keyboard_lastkey == MOVE_UP{
-		show_debug_message("up");
 		if nearest_arrow.arrow_num == 1{
 			obj_rhythm_game_arrows.player_score++;
 			instance_destroy(nearest_arrow);

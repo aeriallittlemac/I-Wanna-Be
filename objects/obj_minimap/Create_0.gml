@@ -43,6 +43,8 @@ global.quest_list = {
 		quest_y : 104,
 	},
 	
+	//day 2
+	
 	first_class : {
 		description : "Go take your first class",
 		icon: spr_main_quest_icon,
@@ -88,6 +90,24 @@ global.quest_list = {
 		//1620 is default
 		quest_x : 144,
 		quest_y : 121,
+	},
+	find_drake : {
+		description : "Find Drake",
+		icon: spr_main_quest_icon,
+		quest_room : school_B1,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 215,
+		quest_y : 104,
+	},
+	get_padlock : {
+		description : "Get padlock",
+		icon: spr_main_quest_icon,
+		quest_room : school_1F,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1330,
+		quest_y : 104,
 	},
 	back_to_your_room : {
 		description : "Go back to your room",

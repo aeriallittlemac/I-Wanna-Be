@@ -40,6 +40,11 @@ global.item_list = {
 		item_dialogue: -1,
 	
 	},
+	padlock_key : {
+		item_name: "This should unlock someone's locker...",
+		item_dialogue: -1,
+	},
+
 
 }
 inventory = array_create(0);

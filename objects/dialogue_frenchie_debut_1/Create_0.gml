@@ -1,0 +1,10 @@
+event_inherited();
+scr_text("That doesn't sound very French");
+scr_text("I know what you're thinking. Real funny, I know." ,spr_frenchie_icon, 0);
+scr_text("You see, my name was supposed to be Renni, but some dimwit mispronouncs my name on the first day, and Bob's your uncle..." ,spr_frenchie_icon, 0);
+scr_text("This been my bloody name ever since, I've resigned to it." ,spr_frenchie_icon, 0);
+scr_text("Don't think those bastards even know my real name, fuck me..." ,spr_frenchie_icon, 0);
+scr_text("Anyways, you'll have to wait behind me for your turn." ,spr_frenchie_icon, 0);
+scr_text("You tell him that you're here for business.");
+scr_text("Oh." ,spr_frenchie_icon, 0);
+scr_text("Nevermind, then. Door's behind me." ,spr_frenchie_icon, 0);

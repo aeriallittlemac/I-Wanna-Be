@@ -1,3 +1,10 @@
+//obj_job.entityActivateArg = dialogue_jobseat_classroom;
+//obj_mcronald.entityActivateArg = dialogue_mcronaldseat_classroom;
+//obj_mei.entityActivateArg = dialogue_meiseat_classroom;
+//obj_grace.entityActivateArg = dialogue_graceseat_classroom;
+//obj_brooklyn.entityActivateArg = dialogue_brooklynseat_classroom;
+//obj_drake.entityActivateArg = dialogue_drakeseat_classroom;
+//obj_wei.entityActivateArg = dialogue_weiseat_classroom;
 event_inherited();
 audio_play_sound(classroom, 1, true);
 scr_text("Greetings, my little crayon eaters.", spr_mrchen_icon, 0);
@@ -42,7 +49,7 @@ function continuation(branch){
 			scr_text("Speak for yourself, fool.", spr_brooklyn_icon, 1);
 			scr_text("So, let’s start by reviewing the multiplication table, shall we?", spr_mrchen_icon, 0);
 			scr_text("Wait, this is a high school, right?");
-			scr_text("Doesn’t matter. That’s what the president says.")
+			scr_text("Doesn’t matter. That’s what the president says.", spr_mrchen_icon, 0)
 			scr_text("Anyways, I need somebody to hand these out.", spr_mrchen_icon, 0);
 			scr_text("New kid, get over here!.", spr_mrchen_icon, 0);
 

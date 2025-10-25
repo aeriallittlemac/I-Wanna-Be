@@ -1,0 +1,1 @@
+game_NewDialogue(cutscene_hand_out_papers);

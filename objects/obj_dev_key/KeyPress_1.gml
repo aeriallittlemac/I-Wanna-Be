@@ -8,13 +8,21 @@ if keyboard_check(LAB_SCENE){
 	show_debug_message("lab!");
 	teleport_player(110, 90, school_lab);
 	teleport_npc(obj_grace, school_lab, 100, 55, DOWN);
-	obj_grace.entityActivateScript = NewDialogue;
-	obj_grace.entityActivateArg = dialogue_grace_interact;
 	teleport_npc(obj_frenchie, school_lab, 65, 90, RIGHT);
 	teleport_npc(obj_brooklyn, school_lab, 170, 90, LEFT);
 	teleport_npc(obj_mei, school_lab, 35, 45, DOWN);
 	teleport_npc(obj_job, school_lab, 120, 70, LEFT);
 	teleport_npc(obj_guy, school_lab, 120, 110, LEFT);
+	obj_grace.entityActivateScript = NewDialogue;
+	obj_grace.entityActivateArg = dialogue_grace_interact_lab;
+	obj_brooklyn.entityActivateScript = NewDialogue;
+	obj_brooklyn.entityActivateArg = dialogue_brooklyn_interact_lab;
+	obj_mei.entityActivateScript = NewDialogue;
+	obj_mei.entityActivateArg = dialogue_mei_interact_lab;
+	obj_job.entityActivateScript = NewDialogue;
+	obj_job.entityActivateArg = dialogue_job_interact_lab;
+	obj_guy.entityActivateScript = NewDialogue;
+	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;
