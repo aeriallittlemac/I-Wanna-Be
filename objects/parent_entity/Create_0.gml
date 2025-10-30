@@ -6,3 +6,5 @@ P = bbox_right;
 M = bbox_top;
 N = bbox_bottom;
 box_outline_thickness = 3;
+opt = 0;
+hmm = false;

@@ -118,7 +118,16 @@ global.quest_list = {
 		quest_x : 650,
 		quest_y : 104,
 	},
-	
+	//day 3
+	potato_battery : {
+		description : "Complete the lab experiment",
+		icon: spr_main_quest_icon,
+		quest_room : school_lab,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1330,
+		quest_y : 104,
+	},
 	
 	
 }
@@ -158,6 +167,25 @@ global.storylines = {
 				job: false,
 			},
 		},
+	},
+	Lab : {
+		Day_Three : {
+			talked_to:{
+					//grace: false,
+					//brooklyn: false,
+					//drake: false,
+					//mei: false,
+					//mcronald: false,
+					guy: false,
+					job: false,
+				},
+			potato_battery:{
+				potato: false,
+				zinc: false,
+				copper_coin: false,
+				},
+			},
+			
 	},
 	Sewing_Club : {
 		hard_on: false,

@@ -14,9 +14,10 @@ N = bbox_bottom;
 
 player_relative_pos = "";
 if B-A < P-O{
-	if (B < P + interact_range || A > O - interact_range){
+	if ((A > O && A < P)||(B > O && B < P)){
 		if C >= N - interact_range && C <= N + interact_range{
 			player_relative_pos = "DOWN";
+			opt = 1;
 		}
 		else if D <= M + interact_range && D >= M - interact_range{
 			player_relative_pos = "UP";
@@ -24,9 +25,10 @@ if B-A < P-O{
 	}
 }
 else{
-	if (P < B + interact_range || O > A - interact_range){
+	if ((P > A && P < B)||(O > A && O < B)){
 		if C >= N - interact_range && C <= N + interact_range{
 			player_relative_pos = "DOWN";
+			opt = 2;
 		}
 		else if D <= M + interact_range && D >= M - interact_range{
 			player_relative_pos = "UP";
@@ -36,7 +38,7 @@ else{
 
 
 if D-C < N-M{
-	if (D < N + interact_range || C > M - interact_range){
+	if ((C > M && C < N) || (D > M && D < N)){
 		if A >= P - interact_range && A <= P + interact_range{
 			player_relative_pos = "RIGHT";
 		}
@@ -46,7 +48,7 @@ if D-C < N-M{
 	}
 }
 else{
-	if  (N < D + interact_range || M > C - interact_range){
+	if  ((M > C && M < D) || (N > C && N < D)){
 		if A >= P - interact_range && A <= P + interact_range{
 			player_relative_pos = "RIGHT";
 		}

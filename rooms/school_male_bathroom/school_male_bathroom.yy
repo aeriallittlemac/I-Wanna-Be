@@ -32,6 +32,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F090E4E","properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.42105263,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":102.0,"y":99.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53F1BD70","properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.1111112,"scaleY":0.8947368,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":151.0,"y":99.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F4DC3BA","properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.8947368,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":216.0,"y":99.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_101DD537","properties":[],"isDnd":false,"objectId":{"name":"obj_door_warp","path":"objects/obj_door_warp/obj_door_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":-66.0,"scaleX":1.0,"scaleY":3.0475485,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.07587,"y":90.49422,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3F2EA464","spriteId":{"name":"spr_male_bathroom","path":"sprites/spr_male_bathroom/spr_male_bathroom.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -53,6 +54,7 @@
     {"name":"inst_6F090E4E","path":"rooms/school_male_bathroom/school_male_bathroom.yy",},
     {"name":"inst_53F1BD70","path":"rooms/school_male_bathroom/school_male_bathroom.yy",},
     {"name":"inst_7F4DC3BA","path":"rooms/school_male_bathroom/school_male_bathroom.yy",},
+    {"name":"inst_101DD537","path":"rooms/school_male_bathroom/school_male_bathroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

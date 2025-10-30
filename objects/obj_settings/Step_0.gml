@@ -1,4 +1,5 @@
 global.isometric_room = room == school_bobbys_room || room == school_gambinos_room 
+|| room == school_male_bathroom
 || room == diamondwood_high_1F || room == diamondwood_high_bathroom
 if array_length(sequences) > 0{
 	global.cutscene = true;

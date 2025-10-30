@@ -41,7 +41,19 @@ global.item_list = {
 	
 	},
 	padlock_key : {
-		item_name: "This should unlock someone's locker...",
+		item_name: "Locker Padlock",
+		item_dialogue: -1,
+	},
+	potato : {
+		item_name: "Potato",
+		item_dialogue: -1,
+	},
+	zinc_chip : {
+		item_name: "Zinc chip",
+		item_dialogue: -1,
+	},
+	copper_coin : {
+		item_name: "Copper Coin",
 		item_dialogue: -1,
 	},
 
