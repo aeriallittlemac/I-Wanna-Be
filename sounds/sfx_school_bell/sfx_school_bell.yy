@@ -17,7 +17,7 @@
   "soundFile": "sfx_school_bell.mp3",
   "duration": 2.716735,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

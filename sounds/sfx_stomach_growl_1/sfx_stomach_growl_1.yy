@@ -17,7 +17,7 @@
   "soundFile": "sfx_stomach_growl_1.wav",
   "duration": 3.58102,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

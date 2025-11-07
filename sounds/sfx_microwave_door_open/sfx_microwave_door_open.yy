@@ -17,7 +17,7 @@
   "soundFile": "sfx_microwave_door_open.wav",
   "duration": 0.511043,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

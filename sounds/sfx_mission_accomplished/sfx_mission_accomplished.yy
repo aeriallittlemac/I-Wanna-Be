@@ -17,7 +17,7 @@
   "soundFile": "sfx_mission_accomplished.wav",
   "duration": 5.497075,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

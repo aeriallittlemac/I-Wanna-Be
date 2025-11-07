@@ -17,7 +17,7 @@
   "soundFile": "sfx_microwave_door_close.wav",
   "duration": 1.499909,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

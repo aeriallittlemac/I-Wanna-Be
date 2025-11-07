@@ -17,7 +17,7 @@
   "soundFile": "sfx_bang_door.wav",
   "duration": 2.02254,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_microwave_operating.wav",
   "duration": 8.903792,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

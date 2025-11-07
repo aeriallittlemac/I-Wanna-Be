@@ -17,7 +17,7 @@
   "soundFile": "sfx_chewing.wav",
   "duration": 2.127483,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

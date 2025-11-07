@@ -17,7 +17,7 @@
   "soundFile": "sfx_sword_slice.wav",
   "duration": 0.42,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

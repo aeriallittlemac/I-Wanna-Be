@@ -17,7 +17,7 @@
   "soundFile": "sfx_stop.wav",
   "duration": 0.70025,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

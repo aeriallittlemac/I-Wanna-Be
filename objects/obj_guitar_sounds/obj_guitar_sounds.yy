@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "guitar_sounds",
+  "name": "obj_guitar_sounds",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "General",
+    "path": "folders/Objects/General.yy",
   },
 }

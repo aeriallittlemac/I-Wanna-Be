@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "parent_entity",
+  "name": "obj_parent_entity",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -37,7 +37,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "General",
+    "path": "folders/Objects/General.yy",
   },
 }

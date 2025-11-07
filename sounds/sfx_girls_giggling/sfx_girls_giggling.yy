@@ -17,7 +17,7 @@
   "soundFile": "sfx_girls_giggling.wav",
   "duration": 2.550635,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

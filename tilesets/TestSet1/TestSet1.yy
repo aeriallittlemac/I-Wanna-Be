@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "TestSet1",
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "spr_sprite_7",
+    "path": "sprites/spr_sprite_7/spr_sprite_7.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,

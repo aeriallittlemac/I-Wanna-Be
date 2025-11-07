@@ -17,7 +17,7 @@
   "soundFile": "sfx_light_switch.wav",
   "duration": 0.949546,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

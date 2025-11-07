@@ -18,6 +18,6 @@
   "duration": 43.570206,
   "parent": {
     "name": "Music",
-    "path": "folders/Non-UI Sounds/Music.yy",
+    "path": "folders/Sounds/Music.yy",
   },
 }

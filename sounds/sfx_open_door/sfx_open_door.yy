@@ -17,7 +17,7 @@
   "soundFile": "sfx_open_door.wav",
   "duration": 1.789083,
   "parent": {
-    "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

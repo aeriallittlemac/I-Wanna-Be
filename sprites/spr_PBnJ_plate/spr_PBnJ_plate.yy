@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "General Objects",
-    "path": "folders/General Objects.yy",
+    "name": "General",
+    "path": "folders/Objects/General.yy",
   },
 }
