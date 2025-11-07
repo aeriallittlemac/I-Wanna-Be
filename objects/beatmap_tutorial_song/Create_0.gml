@@ -1,5 +1,5 @@
 target_score = 10;
-win_cutscene = start_screen;
+win_cutscene = obj_start_screen;
 lose_cutscene = noone;
 tempo = 120;
 beatmap_kicks = array_create(0);

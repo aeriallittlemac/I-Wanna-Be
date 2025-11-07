@@ -37,7 +37,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"objectId":{"name":"obj_parent_entity","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"value":"-1",},
   ],
   "parent": {
-    "name": "school_1F",
-    "path": "folders/School Assets/school_1F.yy",
+    "name": "1F",
+    "path": "folders/School Assets/School/1F.yy",
   },
 }

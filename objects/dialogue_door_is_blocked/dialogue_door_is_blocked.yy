@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1F",
-    "path": "folders/Dialogue Lines/Rooms/Diamondwood High/1F.yy",
+    "name": "Interactable Dialogues",
+    "path": "folders/School Assets/Diamondwood High/1F/Interactable Dialogues.yy",
   },
 }

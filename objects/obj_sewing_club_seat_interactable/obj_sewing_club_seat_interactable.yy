@@ -39,7 +39,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"interact_range","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"objectId":{"name":"obj_parent_entity","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"value":"1.5",},
   ],
   "parent": {
-    "name": "sewing_club",
-    "path": "folders/School Assets/new/classrooms/sewing_club.yy",
+    "name": "Sewing Club",
+    "path": "folders/School Assets/New/Classrooms/Sewing Club.yy",
   },
 }

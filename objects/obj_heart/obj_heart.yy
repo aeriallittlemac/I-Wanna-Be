@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "vfx",
-    "path": "folders/UI/Rhythm Game/vfx.yy",
+    "name": "VFX",
+    "path": "folders/UI/Rhythm Game/VFX.yy",
   },
 }

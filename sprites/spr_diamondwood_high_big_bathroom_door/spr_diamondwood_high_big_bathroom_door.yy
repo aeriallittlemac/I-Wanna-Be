@@ -95,6 +95,6 @@
   },
   "parent": {
     "name": "Bathroom",
-    "path": "folders/Sprites/Rooms/Diamondwood High/Bathroom.yy",
+    "path": "folders/School Assets/Diamondwood High/Bathroom.yy",
   },
 }

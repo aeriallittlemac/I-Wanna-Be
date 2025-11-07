@@ -28,6 +28,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Camera Follow Points",
-    "path": "folders/Camera Follow Points.yy",
+    "path": "folders/Objects/Camera Follow Points.yy",
   },
 }

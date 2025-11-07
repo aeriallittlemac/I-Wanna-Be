@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "main_classroom",
-    "path": "folders/School Assets/school_1F/main_classroom.yy",
+    "path": "folders/School Assets/School/1F/main_classroom.yy",
   },
 }

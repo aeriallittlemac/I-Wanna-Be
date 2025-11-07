@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactable Lines",
-    "path": "folders/School Assets/school_1F/Interactable Lines.yy",
+    "name": "Interactable Dialogues",
+    "path": "folders/School Assets/School/1F/Interactable Dialogues.yy",
   },
 }

@@ -35,7 +35,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"interact_range","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"objectId":{"name":"obj_parent_entity","path":"objects/obj_parent_entity/obj_parent_entity.yy",},"value":"2.5",},
   ],
   "parent": {
-    "name": "school_3F",
-    "path": "folders/School Assets/school_3F.yy",
+    "name": "3F",
+    "path": "folders/School Assets/School/3F.yy",
   },
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Locker",
+  "name": "locker",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "interactable_dialogues",
-    "path": "folders/School Assets/new/classrooms/sewing_club/interactable_dialogues.yy",
+    "name": "Interactable Dialogues",
+    "path": "folders/School Assets/New/Classrooms/Sewing Club/Interactable Dialogues.yy",
   },
 }

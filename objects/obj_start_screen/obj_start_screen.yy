@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "start_screen",
+  "name": "obj_start_screen",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Tutorial",
-    "path": "folders/Tutorial.yy",
+    "path": "folders/Objects/Tutorial.yy",
   },
 }

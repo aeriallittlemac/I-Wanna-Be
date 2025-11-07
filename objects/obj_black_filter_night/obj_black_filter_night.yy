@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Filter",
-    "path": "folders/Filter.yy",
+    "path": "folders/Objects/Filter.yy",
   },
 }

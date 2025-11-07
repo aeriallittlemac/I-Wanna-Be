@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Particle Effects",
-    "path": "folders/Particle Effects.yy",
+    "path": "folders/Objects/Particle Effects.yy",
   },
 }

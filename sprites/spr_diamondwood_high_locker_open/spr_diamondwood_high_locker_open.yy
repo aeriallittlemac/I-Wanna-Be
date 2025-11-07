@@ -93,6 +93,6 @@
   "nineSlice": null,
   "parent": {
     "name": "1F",
-    "path": "folders/Sprites/Rooms/Diamondwood High/1F.yy",
+    "path": "folders/School Assets/Diamondwood High/1F.yy",
   },
 }

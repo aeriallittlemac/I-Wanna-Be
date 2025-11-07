@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sewing_club",
-    "path": "folders/School Assets/new/classrooms/sewing_club.yy",
+    "name": "Sewing Club",
+    "path": "folders/School Assets/New/Classrooms/Sewing Club.yy",
   },
 }

@@ -4,9 +4,9 @@ To Do:
 - Dialogue, three types: regular, cutscenes, timed
 - The Diamondwood High locker script belongs to 1F and the the bathroom cutscene script belongs to the bathroom.
 - Filter folder contents are appropriately grouped in a single folder. Need to determine what spr_white is used for.
-- Possible unused assets: spr_sprite_7
+- Possible unused assets: spr_sprite_7, TestSet1
+- Need to reorganize assets in Objects/General, and maybe Sprites/General
+- Left the current arrangement of mixing objects, sprites, and dialogue in School Assets
+- Left the current arrangement of UI and VFX
 
 - Test if moving assets around impacted game.
-
-- Moved General Objects and General Sprites.
-- Moved Sounds.
