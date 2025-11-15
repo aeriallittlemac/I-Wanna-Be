@@ -1,7 +1,10 @@
-if room == school_1F && obj_player.x > 1260{
-	instance_create_depth(0,0,0,obj_stealth_mission_bars);
-	AddInstanceToActivate(INST_STEALTH_ZONE);
-	instance_create_depth(INST_STEALTH_ZONE.x-9,INST_STEALTH_ZONE.y,0,obj_stealth_mission_border);
-	instance_destroy(self);
-	//instance_create_depth(0,0,0,obj_stealth_mission_bars);
+if instance_exists(obj_welcome_table){
+	if room == school_1F && obj_player.x > obj_welcome_table.x{
+		instance_create_depth(0,0,0,obj_stealth_mission_bars);
+		AddInstanceToActivate(INST_STEALTH_ZONE);
+		instance_create_depth(INST_STEALTH_ZONE.x-9,0,0,obj_stealth_mission_border);
+		instance_create_depth(0, 0, 0, stealth_camera_point)
+		instance_destroy(self);
+		//instance_create_depth(0,0,0,obj_stealth_mission_bars);
+	}
 }

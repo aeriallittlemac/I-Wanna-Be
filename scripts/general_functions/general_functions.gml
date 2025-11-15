@@ -168,7 +168,7 @@ function game_create_instance_depth(inst_x, inst_y, dep, obj){
 
 function item_acquired(item){
 	array_push(obj_inventory.inventory, item);
-	var inst = instance_create_depth(obj_player.x-30, obj_player.y + 10, OBJ_MAX_DEPTH, obj_white_text_overlay);
+	var inst = instance_create_depth(obj_player.x-30, min(obj_player.y + 10, 140), OBJ_MAX_DEPTH, obj_white_text_overlay);
 	with inst{
 		overlay_text = item.item_name + " acquired!";
 		font_size = 4;

@@ -3,6 +3,7 @@ block_speed = ((right_border - rhythm_line_x)*(tempo/240)*block_speed_multiplier
 beat_unit = 240/tempo/16;
 calculate_start_time()
 flag = true;
+alarm[1] = 120/character_frame_rate*120/ tempo;
 }
 else if !start{
 	if obj_music_manager.song_current_runtime >= start_time - offset_time{
@@ -47,14 +48,14 @@ else{
 		}
 		else{
 			if !instance_exists(obj_arrow){
-				if instance_exists(obj_rhythm_line_arrows_vfx){
-					instance_destroy(obj_rhythm_line_arrows_vfx)
-				}
-				instance_destroy(self);
+				destroy_rhythm_game = true;
 			}
 		}
 	}
 	else{
 	beat_timer -= (delta_time/1000000);
 	}
+}
+if destroy_rhythm_game && alarm[0] == -1{
+	alarm[0] = 120;
 }

@@ -65,13 +65,13 @@ if offset_time < 0{
 
 function calculate_start_time(){
 	bgm_runtime_half_bars = round(obj_music_manager.song_current_runtime/(120/tempo));
-	show_debug_message(obj_music_manager.song_current_runtime);
-	show_debug_message(bgm_runtime_half_bars);
+	//show_debug_message(obj_music_manager.song_current_runtime);
+	//show_debug_message(bgm_runtime_half_bars);
 	start_time = (bgm_runtime_half_bars+1)*(120/tempo);
-	show_debug_message("start time:");
-	show_debug_message(start_time);
+	//show_debug_message("start time:");
+	//show_debug_message(start_time);
 	offset_time = (bgm_runtime_half_bars)*(120/tempo) - obj_music_manager.song_current_runtime;
-	show_debug_message(offset_time);
+	//show_debug_message(offset_time);
 	rhythm_line_x_pos = 135;
 	if offset_time < 0{
 		rhythm_line_x_pos -= line_speed_dir*(right_border - left_border)*tempo*offset_time/240;

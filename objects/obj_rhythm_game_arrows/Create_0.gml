@@ -6,6 +6,9 @@ current_fps = game_get_speed(gamespeed_fps);
 game_set_speed(240, gamespeed_fps)
 left_character_silhouette = spr_bobby_silhouette;
 right_character_silhouette = spr_grace_silhouette;
+character_frame_rate = 12;
+character_anim_frame = 0;
+
 left_character_x = 0;
 right_character_x = 200;
 character_y = 20;
@@ -18,7 +21,7 @@ r3_arrow_y = 122;
 flag = false;
 start = false;
 stop_rhythm_game = false;
-
+destroy_rhythm_game = false;
 left_border = 78;
 rhythm_line_x = left_border+20;
 right_border = 220;
@@ -54,4 +57,12 @@ function calculate_start_time(){
 for (var i = 0; i < 8; i++){
 	array_push(arrows,[1,0,0,1,0,0,1,0,0,1,1,0,1,0,1,0]);
 }
+
+enemy_stun_fps = 12;
+enemy_stun_frame = 0;
+enemy_stun_frames = 8;
+function enemy_hit(){
+	alarm[2] = 0;
+}
+		
      

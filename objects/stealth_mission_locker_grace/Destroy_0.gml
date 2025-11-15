@@ -1,0 +1,10 @@
+npc_move_to_pos(obj_grace, 1, 0, 900, obj_grace.y);
+teleport_npc(obj_grace, noone, 0,0,0);
+instance_destroy(obj_map_pin);
+instance_destroy(stealth_UI_objective);
+teleport_npc(obj_job, school_1F, 1415, obj_grace.y, RIGHT);
+teleport_npc(obj_frenchie, school_1F, 1440, obj_grace.y, LEFT);
+stealth_camera_point.target = obj_job;
+game_camera_change_settings(stealth_camera_point, 1);
+instance_create_depth(0,0,0, stealth_mission_locker_job);
+instance_create_depth(1352,29,OBJ_MAX_DEPTH, obj_map_pin);
