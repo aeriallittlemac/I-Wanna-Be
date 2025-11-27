@@ -24,6 +24,13 @@ if keyboard_check(LAB_SCENE){
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
+	npc_speech_bubble(obj_grace, speech_grace);
+	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
+	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
+	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
+	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
+	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
+	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;

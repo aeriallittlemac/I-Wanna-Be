@@ -21,6 +21,8 @@ classroom_mode = false;
 skip_sequence = false;
 sfx = array_create(0);
 animation = array_create(0);
+speech_bubbles = array_create(0)
+active_speech_bubbles = array_create(0)
 
 if  instance_number(self.object_index) > 1{
 	instance_destroy(self);
