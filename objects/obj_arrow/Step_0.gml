@@ -6,6 +6,7 @@ if original_arrow{
 	}
 }
 
-if x < camera_get_view_x((view_camera[0])) - 300{
+if x < camera_get_view_x(view_camera[0]) - 30{
+	show_debug_message(x-camera_get_view_x(view_camera[0]))
 		instance_destroy(self);
 }

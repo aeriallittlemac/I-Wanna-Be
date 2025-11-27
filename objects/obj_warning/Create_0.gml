@@ -1,1 +1,1 @@
-warning_parent = noone;
+alarm[0] = 120;

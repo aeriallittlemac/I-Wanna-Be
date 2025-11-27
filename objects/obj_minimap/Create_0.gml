@@ -109,6 +109,15 @@ global.quest_list = {
 		quest_x : 1330,
 		quest_y : 104,
 	},
+	get_key_back_to_drake : {
+		description : "Get key back to Drake",
+		icon: spr_main_quest_icon,
+		quest_room : school_B1,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 215,
+		quest_y : 104,
+	},
 	back_to_your_room : {
 		description : "Go back to your room",
 		icon: spr_main_quest_icon,
@@ -147,6 +156,11 @@ global.storylines = {
 		pamphlet: false,
 		pamphlet_finished_reading: false,
 		night_no_drums: false,
+	},
+	Gambinos_Missions : {
+		Day_One:{
+			acquired_padlock: false,	
+		}
 	},
 	Beatmaps : {
 		Day_Two : {

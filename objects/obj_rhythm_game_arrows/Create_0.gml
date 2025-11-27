@@ -27,7 +27,7 @@ rhythm_line_x = left_border+20;
 right_border = 220;
 tempo = 90;
 block_speed = 0;
-block_speed_multiplier = 0.7;
+block_speed_multiplier = 1.2;
 player_score = 0;
 target_score = 0;
 //song_timer = 0;
@@ -58,11 +58,12 @@ for (var i = 0; i < 8; i++){
 	array_push(arrows,[1,0,0,1,0,0,1,0,0,1,1,0,1,0,1,0]);
 }
 
-enemy_stun_fps = 12;
+enemy_stun_fps = 3;
 enemy_stun_frame = 0;
-enemy_stun_frames = 8;
+enemy_stun_frames = 4;
 function enemy_hit(){
-	alarm[2] = 0;
+	show_debug_message("enemy_hiy");
+	alarm[2] = 1;
 }
 		
      

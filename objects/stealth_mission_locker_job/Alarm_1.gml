@@ -1,0 +1,1 @@
+instance_create_depth(obj_frenchie.x, obj_frenchie.y - 40, OBJ_MAX_DEPTH, obj_warning);

@@ -18,6 +18,6 @@
   "duration": 2.550635,
   "parent": {
     "name": "Non-UI Sounds",
-    "path": "folders/Non-UI Sounds.yy",
+    "path": "folders/Dialogue_Lines/Day 3 - lab/Non-UI Sounds.yy",
   },
 }

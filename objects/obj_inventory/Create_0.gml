@@ -41,7 +41,11 @@ global.item_list = {
 	
 	},
 	padlock_key : {
-		item_name: "Locker Padlock",
+		item_name: "Padlock Key",
+		item_dialogue: -1,
+	},
+	padlock : {
+		item_name: "Padlock",
 		item_dialogue: -1,
 	},
 	potato : {

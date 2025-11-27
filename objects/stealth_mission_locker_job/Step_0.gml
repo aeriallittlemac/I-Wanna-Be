@@ -5,19 +5,20 @@ for(var i=0; i<3; i++){
 		player_hidden = true;
 	}
 }
-if obj_grace.x < obj_player.x + 135 && obj_grace.x > obj_player.x - 135{
-	if obj_grace.x > obj_player.x{
-		if !player_hidden && obj_grace.sprite_index == obj_grace.sprite[LEFT]{
-			stealth_UI_objective.display_text = "CAUGHT!"
-			global.cutscene = true;
-			alarm[0] = 15;
-		}
+	
+	if !player_hidden && instance_exists(obj_warning_2){
+		stealth_UI_objective.display_text = "CAUGHT!"
+		global.cutscene = true;
+		alarm[0] = 15;
 	}
-	else{
-		if !player_hidden && obj_grace.face = RIGHT{
-			stealth_UI_objective.display_text = "CAUGHT!"
-			global.cutscene = true;
-			alarm[0] = 15;
-		}
+if alarm[1] == -1 && !player_hidden && !instance_exists(obj_warning){
+	alarm[1] = frenchie_check_interval;
+}
+if obj_player.x > left_locker_border && obj_player.x < right_locker_border && obj_player.y < 116{
+	if keyboard_check(CONFIRM_ACTION){
+		locker_unlock_points--;
 	}
+}
+if locker_unlock_points <= 0{
+	instance_destroy(self);
 }

@@ -20,8 +20,8 @@ function branches(branch){
 			scr_text("W-what the hell is going on?", spr_grace_icon, 0);
 			scr_text("You just got rejected lmao", spr_brooklyn_icon, 1);
 			scr_text("I can't see clearly right now cuz I lost my contacts.", spr_grace_icon, 0);
-			scr_text("Who's this guy? He's gotta be gay, right?", spr_grace_icon, 0);
-			scr_text("WWhy else would anyone in their right mind reject me?", spr_grace_icon, 0);
+			scr_text("Who's this guy? He's gotta be gay, right?", spr_grace_fake_smile, 0);
+			scr_text("WWhy else would anyone in their right mind reject me?", spr_grace_fake_smile, 0);
 		break;
 
 	}

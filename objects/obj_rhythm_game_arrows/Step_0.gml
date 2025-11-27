@@ -35,7 +35,7 @@ else{
 		}
 		last_arrow_dir = randint;
 		if arrows[bar][beat] == 1{
-			instance_create_depth(x+right_border, arrow_y, OBJ_MAX_DEPTH, obj_arrow);
+			instance_create_depth(camera_get_view_x(view_camera[0])+right_border, arrow_y, OBJ_MAX_DEPTH, obj_arrow);
 		}
 		beat++;
 		if beat >= 16{

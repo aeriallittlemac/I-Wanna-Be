@@ -11,12 +11,12 @@ var nearest_arrow_x = 0;
 for (var i = 0; i < instance_number(obj_arrow); i++)
 {
 	var arrow = instance_find(obj_arrow,i);
-    if abs(x - arrow.x) < (x - nearest_arrow_x){
+    if abs(x+camera_get_view_x(view_camera[0]) - arrow.x) < (x+camera_get_view_x(view_camera[0]) - nearest_arrow_x){
 		nearest_arrow_x = arrow.x;
 		nearest_arrow = arrow;
 	}
 }
-if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
+if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arrow_x < x+camera_get_view_x(view_camera[0]) + error{
 	if keyboard_lastkey == MOVE_RIGHT{
 		if nearest_arrow.arrow_num == 0{
 			obj_rhythm_game_arrows.player_score++;

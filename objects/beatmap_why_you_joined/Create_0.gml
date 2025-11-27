@@ -1,3 +1,4 @@
+right_character_silhouette = spr_grace_silhouette;
 QTE = true;
 target_score = 10;
 win_cutscene = dialogue_help_grace_find_contacts_flirt;

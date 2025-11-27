@@ -1,3 +1,4 @@
+right_character_silhouette = spr_gambino_silhouette;
 QTE = true;
 target_score = 7;
 win_cutscene = dialogue_conversation_with_gambino_4_success;
