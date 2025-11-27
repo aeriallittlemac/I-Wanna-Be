@@ -26,6 +26,7 @@ if keyboard_check_pressed(LAB_SCENE){
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
+	npc_speech_bubble(obj_grace, speech_grace);
 }
 if keyboard_check_pressed(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;

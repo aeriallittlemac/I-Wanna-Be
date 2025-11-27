@@ -58,6 +58,16 @@ function npc_animate(npc, spr){
 	array_push(npc.animation, spr);
 	array_push(npc.sequences, "animate");
 }
+
+function npc_speech_bubble(npc, speech) {
+	array_push(npc.speech_bubbles, speech);
+	array_push(npc.sequences, "speech");
+}
+
+function npc_speech_pop(npc) {
+	array_push(npc.sequences, "speech_pop");
+}
+
 function AddRelationshipPoints(npc, num){
 for(var i=0; i < array_length(obj_npc_manager.npcs); i++){
 		if npc == obj_npc_manager.npcs[i].object{

@@ -66,6 +66,18 @@ if array_length(sequences) > 0{
 		array_delete(npc_dialogues, 0, 1);
 		array_delete(sequences, 0, 1);
 	}
+	else if sequences[0] == "speech" {
+		array_push(active_speech_bubbles, NewSpeech(self, speech_bubbles[0]));
+		array_delete(speech_bubbles, 0, 1);
+		array_delete(sequences, 0, 1);
+	}
+	else if sequences[0] == "speech_pop" {
+		if array_length(active_speech_bubbles) > 0 {
+			instance_destroy(active_speech_bubbles[0])
+			array_delete(active_speech_bubbles, 0, 1);
+		}
+		array_delete(sequences, 0, 1);
+	}
 	else if sequences[0] == "play_sfx"{
 		audio_play_sound(sfx[0], 1, false);
 		array_delete(sfx, 1, false);
