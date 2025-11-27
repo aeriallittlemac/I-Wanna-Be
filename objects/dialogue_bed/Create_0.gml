@@ -9,7 +9,7 @@ if global.day == 1{
 			global.game_time = "10:00 am";
 			audio_sound_gain(school_night, 0, 1600);
 			global.day = 2;
-			AddInstanceToActivate(inst_608F3966);
+			AddInstanceToActivate(inst_WELCOME_TABLE);
 			AddInstanceToActivate(inst_62024E88);
 //			AddInstanceToActivate(inst_1DF12FEC);
 		}

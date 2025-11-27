@@ -49,7 +49,7 @@ global.item_list = {
 		item_dialogue: -1,
 	},
 	zinc_chip : {
-		item_name: "Zinc chip",
+		item_name: "Zinc Chip",
 		item_dialogue: -1,
 	},
 	copper_coin : {

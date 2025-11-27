@@ -1,1 +1,0 @@
-NewDialogue(cutscene_character_pamphlet);

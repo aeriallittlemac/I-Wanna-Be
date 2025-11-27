@@ -1,4 +1,5 @@
 event_inherited();
+potato_battery = false;
 if !global.storylines.Lab.Day_Three.talked_to.guy{
 	scr_text("Well, well, well.", spr_guy_icon, 0);
 	scr_text("What do we have here?", spr_guy_icon, 0);
@@ -24,6 +25,9 @@ else{
 		scr_text("Get on with it!", spr_guy_icon, 0);
 	}
 	else{
+		potato_battery = true;
 		scr_text("Okay, I see you have the materials.", spr_guy_icon, 0);
+		scr_text("Here, have this LED light with wires.", spr_guy_icon, 0);
+		scr_text("Don't you google this, alright?", spr_guy_icon, 0);
 	}
 }

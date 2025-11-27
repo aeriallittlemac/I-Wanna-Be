@@ -16,7 +16,7 @@ else{
 	else{
 		if !global.storylines.Lab.Day_Three.potato_battery.copper_coin{
 			scr_text("Ok, you got the instructions? Got everything you need?", spr_job_icon, 0);
-			scr_text("You mention that you still gathering parts.");
+			scr_text("You mention that you're still gathering parts.");
 			scr_text("I got a copper coin here, if that helps.", spr_job_icon, 0);
 		}
 		else{

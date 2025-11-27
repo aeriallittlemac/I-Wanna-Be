@@ -1,6 +1,6 @@
 event_inherited();
 opt = 0;
-scr_text("There's a number of drawers in the cabinet?");
+scr_text("There's a number of drawers in the cabinet.");
 scr_text("What do you wanna take?")
 
 scr_option("zinc chip", "zinc");

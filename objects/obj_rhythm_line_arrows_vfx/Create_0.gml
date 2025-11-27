@@ -1,7 +1,8 @@
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 line_sprite = spr_rhythm_line_arrows_vfx;
 VFXframe = 0;
-vfxFrames = 6;
+vfxFrames = 3;
+frame_rate = 24;
 timer = 0;
 keyDir = vk_nokey;
 error = 14;
@@ -19,6 +20,8 @@ if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
 	if keyboard_lastkey == MOVE_RIGHT{
 		if nearest_arrow.arrow_num == 0{
 			obj_rhythm_game_arrows.player_score++;
+			var inst = instance_create_depth(nearest_arrow.x, nearest_arrow.y, 0, obj_arrow_hit_vfx)
+			inst.arrow_hit_vfx = spr_arrows_hit_right_vfx
 			instance_destroy(nearest_arrow);
 		}
 		else{
@@ -28,6 +31,8 @@ if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
 	else if keyboard_lastkey == MOVE_UP{
 		if nearest_arrow.arrow_num == 1{
 			obj_rhythm_game_arrows.player_score++;
+			var inst = instance_create_depth(nearest_arrow.x, nearest_arrow.y, 0, obj_arrow_hit_vfx)
+			inst.arrow_hit_vfx = spr_arrows_hit_up_vfx
 			instance_destroy(nearest_arrow);
 		}
 		else{
@@ -37,6 +42,8 @@ if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
 	else if keyboard_lastkey == MOVE_LEFT{
 		if nearest_arrow.arrow_num == 2{
 			obj_rhythm_game_arrows.player_score++;
+			var inst = instance_create_depth(nearest_arrow.x, nearest_arrow.y, 0, obj_arrow_hit_vfx)
+			inst.arrow_hit_vfx = spr_arrows_hit_left_vfx
 			instance_destroy(nearest_arrow);
 		}
 		else{
@@ -46,6 +53,8 @@ if nearest_arrow_x > x - error || nearest_arrow_x < x + error{
 	else if keyboard_lastkey == MOVE_DOWN{
 		if nearest_arrow.arrow_num == 3{
 			obj_rhythm_game_arrows.player_score++;
+			var inst = instance_create_depth(nearest_arrow.x, nearest_arrow.y, 0, obj_arrow_hit_vfx)
+			inst.arrow_hit_vfx = spr_arrows_hit_down_vfx
 			instance_destroy(nearest_arrow);
 		}
 		else{
