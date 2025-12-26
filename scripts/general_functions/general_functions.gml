@@ -185,6 +185,11 @@ function item_remove(item){
 	}
 }
 
+function hint_obtain(hint) {
+	hint.found = true;
+	obj_hints.draw_hint_emphemeral(hint.text, string_length(hint.text) * 0.1);
+}
+
 function game_camera_change_settings(ctarget, chspeed){
 	array_push(obj_settings.game_ctarget, ctarget); 
 	array_push(obj_settings.game_chspeed, chspeed);

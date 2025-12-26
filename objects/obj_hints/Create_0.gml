@@ -46,11 +46,17 @@ default_pixel_font = font_add("joystix monospace.otf", 32, false, false, 32, 128
 
 function draw_hint(text) {
 	draw_set_font(default_pixel_font);
+	draw_set_colour(#55402c);
 	var text_height = string_height_ext(text, -1, hint_text_max_width) * hint_text_scale;
 	var hint_scale_y = (text_height + hint_text_padding) / sprite_get_height(spr_hint) * 1.1;
 	draw_sprite_ext(spr_hint, -1, 0, viewport_height - text_height - hint_text_padding, hint_scale_x / ui_scale, hint_scale_y, 0, c_white, 1);	
 	draw_text_ext_transformed(hint_text_padding, viewport_height - text_height - hint_text_padding, text, -1, hint_text_max_width, hint_text_scale, hint_text_scale, 0);
 }
 
+ephemeral_text = "";
+ephemeral_duration = 0;
+
 function draw_hint_emphemeral(text, duration) {
+	ephemeral_text = text;
+	ephemeral_duration = duration;
 }
