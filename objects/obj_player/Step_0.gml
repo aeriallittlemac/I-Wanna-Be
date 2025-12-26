@@ -13,8 +13,8 @@ if run_key {
 if  keyboard_check_released(run_key){
 	speed_multiplier = 1;
 }
-xspeed = (right_key - left_key)*move_speed*speed_multiplier;
-yspeed = (down_key - up_key)*move_speed*speed_multiplier;
+xspeed = (right_key - left_key)*move_speed*speed_multiplier * !global.in_hints;
+yspeed = (down_key - up_key)*move_speed*speed_multiplier * !global.in_hints;
 image_speed = speed_multiplier;
 
 //depth
