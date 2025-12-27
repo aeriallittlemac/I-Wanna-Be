@@ -44,7 +44,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory && room != tutorial{
+	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && room != tutorial{
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};

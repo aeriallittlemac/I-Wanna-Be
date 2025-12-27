@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "dialogue_mei_interact_lab",
+  "name": "dialogue_restore_save_choice",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 3 - lab",
-    "path": "folders/Dialogue_Lines/Day 3 - lab.yy",
+    "name": "Hints",
+    "path": "folders/UI/Hints.yy",
   },
 }

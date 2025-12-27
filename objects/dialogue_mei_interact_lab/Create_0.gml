@@ -1,3 +1,3 @@
 event_inherited();
 
-scr_text("I am Grace.", spr_grace_icon, 0);
+scr_text("I am Mei.", spr_mei_icon, 0);

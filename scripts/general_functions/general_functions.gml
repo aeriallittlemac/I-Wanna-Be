@@ -185,6 +185,14 @@ function item_remove(item){
 	}
 }
 
+function hint_obtain(hint) {
+	if (!hint.found) {
+		hint.found = true;
+		obj_hints.draw_hint_emphemeral(hint.text, string_length(hint.text) * 0.1);
+	}
+	game_save_json(hint.save_name);
+}
+
 function game_camera_change_settings(ctarget, chspeed){
 	array_push(obj_settings.game_ctarget, ctarget); 
 	array_push(obj_settings.game_chspeed, chspeed);
@@ -202,3 +210,76 @@ function set_QTE_bgm(song){
 	obj_music_manager.song_current_runtime = 0;
 }
 
+function game_save_json(save_name) {
+	var npcs_in_sequences = false;
+	var members = variable_struct_get_names(global.npc_list);
+	for (var i = 0; i < array_length(members); ++i) {
+		var npc = global.npc_list[$members[i]].object;
+		if (instance_exists(npc)) {
+			npcs_in_sequences |= array_length(npc.sequences) > 0;
+		}
+	};
+	
+	//show_debug_message(
+	//	string(array_length(obj_player.c_sequences) > 0) 
+	//	+ string(array_length(obj_settings.sequences) > 0) 
+	//	+ string(npcs_in_sequences) 
+	//	+ string(global.cutscene) 
+	//	+ string(instance_exists(obj_rhythm_game_new)) 
+	//	+ string(instance_exists(obj_rhythm_game)) 
+	//	+ string(instance_exists(potato_battery_experiment))
+	//);
+
+	if (array_length(obj_player.c_sequences) > 0 
+		|| array_length(obj_settings.sequences) > 0 
+		|| npcs_in_sequences 
+		|| global.cutscene 
+		|| instance_exists(obj_rhythm_game_arrows) 
+		|| instance_exists(potato_battery_experiment) 
+	) {
+		return;
+	}
+	var save_data = {
+		player_pos: {
+			x: obj_player.x, 
+			y: obj_player.y
+		}, 
+		current_room: room, 
+		minimap: {
+			map_visible: obj_minimap.map_visible, 
+			inv: obj_minimap.inv, 
+		}, 
+		storylines: global.storylines, 
+		hints: global.hints, 
+		npc_list: global.npc_list, 
+		game_time: global.game_time, 
+		hottest_rumor: global.hottest_rumor, 
+		inventory: obj_inventory.inventory
+	};
+	var fout = file_text_open_write("save_" + sha1_string_unicode(save_name) + ".json");
+	file_text_write_string(fout, json_stringify(save_data));
+	file_text_close(fout);
+}
+
+function game_load_json(save_name) {
+	var fname = "save_" + sha1_string_unicode(save_name) + ".json";
+	if (!file_exists(fname)) {
+		show_debug_message("No such save state: " + save_name);
+		return;
+	}
+	var fin = file_text_open_read(fname);
+	var save_data = json_parse(file_text_read_string(fin));
+	file_text_close(fin);
+	obj_player.x = save_data.player_pos.x;
+	obj_player.y = save_data.player_pos.y;
+	room = save_data.current_room;
+	obj_minimap.map_visible = save_data.minimap.map_visible;
+	obj_minimap.inv = save_data.minimap.inv;
+	global.storylines = save_data.storylines;
+	// Restoring the hints themselves will make using checkpoints annoying.
+	//global.hints = save_data.hints;
+	global.npc_list = save_data.npc_list;
+	global.game_time = save_data.game_time;
+	global.hottest_rumor = save_data.hottest_rumor;
+	obj_inventory.inventory = save_data.inventory;
+}
