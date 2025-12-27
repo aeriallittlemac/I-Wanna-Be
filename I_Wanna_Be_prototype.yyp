@@ -577,6 +577,7 @@
     {"id":{"name":"spr_diamondwood_high_big_bathroom_door","path":"sprites/spr_diamondwood_high_big_bathroom_door/spr_diamondwood_high_big_bathroom_door.yy",},"order":2,},
     {"id":{"name":"dialogue_frenchie_debut_1","path":"objects/dialogue_frenchie_debut_1/dialogue_frenchie_debut_1.yy",},"order":34,},
     {"id":{"name":"spr_ashley_down","path":"sprites/spr_ashley_down/spr_ashley_down.yy",},"order":4,},
+    {"id":{"name":"dialogue_restore_save_choice","path":"objects/dialogue_restore_save_choice/dialogue_restore_save_choice.yy",},"order":6,},
     {"id":{"name":"dialogue_brooklyn_debut_2","path":"objects/dialogue_brooklyn_debut_2/dialogue_brooklyn_debut_2.yy",},"order":14,},
     {"id":{"name":"spr_mcronald_right","path":"sprites/spr_mcronald_right/spr_mcronald_right.yy",},"order":3,},
     {"id":{"name":"dialogue_wei_microwave_2","path":"objects/dialogue_wei_microwave_2/dialogue_wei_microwave_2.yy",},"order":12,},

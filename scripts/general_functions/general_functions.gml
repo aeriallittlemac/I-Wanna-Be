@@ -190,6 +190,7 @@ function hint_obtain(hint) {
 		hint.found = true;
 		obj_hints.draw_hint_emphemeral(hint.text, string_length(hint.text) * 0.1);
 	}
+	game_save_json(hint.save_name);
 }
 
 function game_camera_change_settings(ctarget, chspeed){
@@ -251,7 +252,9 @@ function game_save_json(save_name) {
 		}, 
 		storylines: global.storylines, 
 		hints: global.hints, 
-		npc_list: global.npc_list
+		npc_list: global.npc_list, 
+		game_time: global.game_time, 
+		hottest_rumor: global.hottest_rumor
 	};
 	var fout = file_text_open_write("save_" + sha1_string_unicode(save_name) + ".json");
 	file_text_write_string(fout, json_stringify(save_data));
@@ -273,6 +276,9 @@ function game_load_json(save_name) {
 	obj_minimap.map_visible = save_data.minimap.map_visible;
 	obj_minimap.inv = save_data.minimap.inv;
 	global.storylines = save_data.storylines;
-	global.hints = save_data.hints;
+	// Restoring the hints themselves will make using checkpoints annoying.
+	//global.hints = save_data.hints;
 	global.npc_list = save_data.npc_list;
+	global.game_time = save_data.game_time;
+	global.hottest_rumor = save_data.hottest_rumor;
 }

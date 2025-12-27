@@ -4,24 +4,30 @@ global.hints = {
 	sandwich: {
 		sprite: spr_PBnJ_plate, 
 		text: "Studies have found that exposure to peanuts at an early age can reduce the chance of developing peanut allergies.", 
-		found: false
+		found: false, 
+		save_name: "Sandwich"
 	}, 
 	lorem_ipsum: {
 		sprite: spr_grace_default, 
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-		found: true
+		found: true, 
+		save_name: "Lorem Ipsum"
 	}, 
 	cretaceous: {
 		sprite: spr_grace_demonic, 
 		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
-		found: true
+		found: true, 
+		save_name: "Cretaceous"
 	}, 
 	beef: {
 		sprite: spr_hot_pocket, 
 		text: "A recall for the \"philly cheesesteak\" variety of Hot Pockets was issued due to concern of beef contamination caused by a supplier.", 
-		found: false
+		found: false, 
+		save_name: "Chicken Katsu"
 	}
 };
+
+is_choosing_restore = false;
 
 hint_grid = [
 	["sandwich", "lorem_ipsum"], 
