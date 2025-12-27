@@ -58,5 +58,5 @@ ephemeral_duration = 0;
 
 function draw_hint_emphemeral(text, duration) {
 	ephemeral_text = text;
-	ephemeral_duration = duration;
+	ephemeral_duration = duration * room_speed;
 }

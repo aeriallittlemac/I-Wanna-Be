@@ -13,8 +13,8 @@ if run_key {
 if  keyboard_check_released(run_key){
 	speed_multiplier = 1;
 }
-xspeed = (right_key - left_key)*move_speed*speed_multiplier * !global.in_hints;
-yspeed = (down_key - up_key)*move_speed*speed_multiplier * !global.in_hints;
+xspeed = (right_key - left_key)*move_speed*speed_multiplier;
+yspeed = (down_key - up_key)*move_speed*speed_multiplier;
 image_speed = speed_multiplier;
 
 //depth
@@ -38,7 +38,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory && room != tutorial{
+	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && room != tutorial{
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};
