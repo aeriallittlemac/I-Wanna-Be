@@ -4,6 +4,7 @@ if array_length(obj_grace.sequences) < 2{
 	npc_move_to_pos(obj_grace, 1, 0, 1225, obj_grace.y);
 	npc_move_to_pos(obj_grace, 1, 0, 1224, obj_grace.y);
 	npc_wait(obj_grace, 0.3);
+	//npc_speech_bubble(obj_grace, speech_grace_locker)
 }
 if obj_player.x > 1224{
 	instance_destroy(self);

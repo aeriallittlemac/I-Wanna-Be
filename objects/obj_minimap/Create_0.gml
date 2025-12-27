@@ -147,7 +147,23 @@ array_push(rooms, school_1F);
 array_push(rooms, school_2F);
 array_push(rooms, school_3F);
 inv = array_create(0);
-
+global.checkpoints = {
+	Day_One:{
+		
+	},
+	Day_Two:{
+		sewing_club_debut:{
+			checkpoint_name:"",
+			time: "1:00 pm",
+			checkpoint_room: school_1F,
+			player_x: 809,
+			player_y: 104
+		},
+	},
+	Day_Three:{
+	
+	}
+}
 //
 global.storylines = {
 	Mechanics_Introduced : {
@@ -158,7 +174,7 @@ global.storylines = {
 		night_no_drums: false,
 	},
 	Gambinos_Missions : {
-		Day_One:{
+		Day_One : {
 			acquired_padlock: false,	
 		}
 	},
@@ -209,6 +225,9 @@ global.storylines = {
 		First_song : {
 			Frenchies_guitar: false,
 			Weis_vocals: false,
+		},
+		First_practice : {
+			run: 1, //1, 2, 3
 		},
 	},
 	

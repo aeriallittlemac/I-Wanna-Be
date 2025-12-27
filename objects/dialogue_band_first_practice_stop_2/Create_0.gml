@@ -1,0 +1,13 @@
+audio_stop_all();
+event_inherited();
+scr_text("Dude, low end.", spr_wei_icon, 0);
+scr_text("???", spr_mcronald_icon, 1);
+scr_text("I was playing bass parts?", spr_mcronald_icon, 1);
+scr_text("Nah, I mean...", spr_wei_icon, 0);
+scr_text("Exclusively.", spr_wei_icon, 0);
+scr_text("Just, the low end.", spr_wei_icon, 0);
+scr_text("Um...", spr_wei_icon, 0);
+scr_text("Ya know, like those old disco beats?", spr_wei_icon, 0);
+scr_text("Keep it simple, man.", spr_wei_icon, 0);
+scr_text("Hmm?", spr_mcronald_icon, 1);
+scr_text("Alright, my bad...", spr_mcronald_icon, 1);

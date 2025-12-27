@@ -5,8 +5,8 @@ vfxFrames = 3;
 frame_rate = 24;
 timer = 0;
 keyDir = vk_nokey;
-error = 14;
-var nearest_arrow;
+error = 28
+var nearest_arrow = noone;
 var nearest_arrow_x = 0;
 for (var i = 0; i < instance_number(obj_arrow); i++)
 {
@@ -16,6 +16,7 @@ for (var i = 0; i < instance_number(obj_arrow); i++)
 		nearest_arrow = arrow;
 	}
 }
+if nearest_arrow != noone{
 if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arrow_x < x+camera_get_view_x(view_camera[0]) + error{
 	if keyboard_lastkey == MOVE_RIGHT{
 		if nearest_arrow.arrow_num == 0{
@@ -59,6 +60,18 @@ if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arro
 		}
 		else{
 			obj_rhythm_game_arrows.player_score--;
+		}
+	}
+}
+else{
+	var inst = instance_create_depth(x+camera_get_view_x(view_camera[0]), 70 - 30*(nearest_arrow.arrow_num == 1) + 30*(nearest_arrow.arrow_num == 3), OBJ_MAX_DEPTH, obj_ghost_text)
+		with inst{
+			default_pixel_font = font_add("joystix monospace.otf", 11*2, false, false, 32, 128);
+			overlay_text = "Missed";
+			angle = -45;
+			timer = 0;
+			fade_speed = 1;
+			text_fade = false;
 		}
 	}
 }

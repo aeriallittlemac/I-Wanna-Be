@@ -3,6 +3,11 @@ if player_facing_self && !global.cutscene &&
 &&!(audio_is_playing(song_band_first_song)){
 	if global.day == 2{
 		instance_create_depth(0,0,0,cutscene_drum_kit_debut);
+		
 	}
+	else if global.day == 3{
+		instance_create_depth(0,0,0,cutscene_drum_kit_first_practice);
+	}
+	//global.drumming = true;
 	
 }

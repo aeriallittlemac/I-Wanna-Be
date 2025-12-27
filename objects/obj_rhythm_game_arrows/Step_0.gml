@@ -1,5 +1,9 @@
 if !flag{
-block_speed = ((right_border - rhythm_line_x)*(tempo/240)*block_speed_multiplier*(delta_time/1000000));
+	if !QTE{
+		//rhythm_line_x = 100;
+		block_speed_multiplier = 4;
+	}
+
 beat_unit = 240/tempo/16;
 calculate_start_time()
 flag = true;
@@ -11,6 +15,7 @@ else if !start{
 	}
 }
 else{
+	block_speed = ((right_border - rhythm_line_x)*(tempo/240)*block_speed_multiplier*(delta_time/1000000));
 	if keyboard_check_pressed(MOVE_RIGHT) || keyboard_check_pressed(MOVE_UP) || keyboard_check_pressed(MOVE_LEFT)|| keyboard_check_pressed(MOVE_DOWN){
 		var inst = instance_create_depth(rhythm_line_x, 0, OBJ_MAX_DEPTH, obj_rhythm_line_arrows_vfx);
 		inst.keyDir = keyboard_key;

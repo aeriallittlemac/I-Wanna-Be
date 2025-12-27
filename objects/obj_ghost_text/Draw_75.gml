@@ -1,2 +1,7 @@
 draw_set_font(default_pixel_font);
-draw_text_transformed_color((x-camera_get_view_x(view_camera[0])) * minimap_scale, y* minimap_scale, overlay_text, 0.5, 0.5, angle, c_white, c_white, c_white, c_white, text_alpha);
+if text_fade{
+	draw_text_transformed_color((x-camera_get_view_x(view_camera[0])) * minimap_scale, y* minimap_scale, overlay_text, 0.5, 0.5, angle, c_white, c_white, c_white, c_white, text_alpha);
+}
+else{
+	draw_text_transformed_color((x-camera_get_view_x(view_camera[0])) * minimap_scale, y* minimap_scale, overlay_text, 0.5, 0.5, angle, c_white, c_white, c_white, c_white, 1);
+}

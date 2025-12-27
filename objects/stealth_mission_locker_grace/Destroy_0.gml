@@ -1,3 +1,7 @@
+for( var i=0; i<10; i++){
+	npc_speech_pop(obj_grace)
+}
+npc_speech_bubble(obj_grace,speech_grace_locker_done);
 npc_move_to_pos(obj_grace, 1, 0, 900, obj_grace.y);
 teleport_npc(obj_grace, noone, 0,0,0);
 instance_destroy(obj_map_pin);

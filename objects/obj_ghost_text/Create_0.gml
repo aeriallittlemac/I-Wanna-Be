@@ -8,3 +8,4 @@ fade_move_speed = 0.2;
 text_alpha = 1;
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 check_angle = false;
+text_fade = true;

@@ -5,12 +5,19 @@
 
 // Inherit the parent event
 event_inherited();
-if !instance_exists(obj_rhythm_game_arrows){
-	image_index = 0
+if instance_exists(obj_rhythm_game_arrows){
+	image_alpha = 0;
+	if !start{
+		sprite_index = spr_drum_kit;
+		start = true;
+	}
+	else{
+		if !new_tempo{
+			image_speed *= (obj_rhythm_game_arrows.tempo)/120;
+			new_tempo = true;
+		}
+	}
 }
 else{
-	if !new_tempo{
-		image_speed *= (obj_rhythm_game_arrows.tempo)/120;
-		new_tempo = true;
-	}
+	image_alpha = 1;	
 }

@@ -1,5 +1,6 @@
 QTE = true;
 default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
+misses = 0;
 max_misses = 0;
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 current_fps = game_get_speed(gamespeed_fps);
@@ -16,8 +17,6 @@ beat_timer = 0;
 r1_arrow_y = 44;
 r2_arrow_y = 82;
 r3_arrow_y = 122;
-
-
 flag = false;
 start = false;
 stop_rhythm_game = false;
@@ -27,7 +26,7 @@ rhythm_line_x = left_border+20;
 right_border = 220;
 tempo = 90;
 block_speed = 0;
-block_speed_multiplier = 1.2;
+block_speed_multiplier = 6;
 player_score = 0;
 target_score = 0;
 //song_timer = 0;

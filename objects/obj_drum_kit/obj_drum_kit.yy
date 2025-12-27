@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_drum_kit",
   "spriteId": {
-    "name": "spr_drum_kit",
-    "path": "sprites/spr_drum_kit/spr_drum_kit.yy",
+    "name": "spr_drum_kit_idle",
+    "path": "sprites/spr_drum_kit_idle/spr_drum_kit_idle.yy",
   },
   "solid": false,
   "visible": true,

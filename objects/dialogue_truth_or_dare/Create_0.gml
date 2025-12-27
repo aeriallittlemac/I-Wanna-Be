@@ -16,7 +16,7 @@ function branches(branch){
 	    break;
 
 	    case "dare":
-			scr_text("Hmmm...what to do?", spr_mei_grin, 0);
+			scr_text("Alright, how can we make this entertaining?", spr_brooklyn_icon, 0);
 			truth = false;
 	    break;
 		default:

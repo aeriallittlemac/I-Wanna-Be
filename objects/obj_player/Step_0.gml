@@ -5,7 +5,13 @@ right_key = keyboard_check(MOVE_RIGHT);
 left_key = keyboard_check(MOVE_LEFT);
 up_key = keyboard_check(MOVE_UP);
 down_key = keyboard_check(MOVE_DOWN);
-image_alpha = !global.player_sleeping;
+var drumming = false;
+if instance_exists(obj_rhythm_game_arrows){
+	if obj_rhythm_game_arrows.QTE = false{
+		drumming = true;
+	}
+}
+image_alpha = !global.player_sleeping && !drumming;
 var speed_multiplier = 1;
 if run_key {
 	speed_multiplier = run_speed_multiplier;

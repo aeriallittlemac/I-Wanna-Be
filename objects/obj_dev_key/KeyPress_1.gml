@@ -2,8 +2,27 @@
 #macro LAB_SCENE ord("U")
 #macro GAMBINOS_ROOM ord("Y")
 #macro LOCKERS ord("T")
-#macro RHYTHM_GAME_TEST ord("I")
+#macro DRUM_TEST ord("I")
+#macro BAND_FIRST_PRACTICE ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
+
+if keyboard_check(ord("Q")){
+	show_debug_message(obj_rhythm_game_arrows.block_speed);
+	show_debug_message(game_get_speed(gamespeed_fps));
+}
+if keyboard_check(BAND_FIRST_PRACTICE){
+	global.day = 3;
+	AddInstanceToDestroy(inst_1D032C1A);
+	AddInstanceToActivate(inst_210D4C1);
+	game_camera_change_settings(obj_player,-1);
+	obj_npc_manager.npcs[0].initial_animation = spr_wei_rapping;
+	obj_npc_manager.npcs[5].initial_animation = spr_mcronald_keyboard;
+	obj_npc_manager.npcs[12].initial_animation = spr_frenchie_guitar;
+	teleport_npc(obj_frenchie, school_2F, 375, 135, DOWN);
+	teleport_npc(obj_mcronald, school_2F, 450, 150, DOWN);
+	teleport_npc(obj_wei, school_2F, 350, 185, DOWN);
+	teleport_player(410, 110, school_2F);
+}
 
 if keyboard_check(LAB_SCENE){
 	show_debug_message("lab!");
@@ -24,13 +43,6 @@ if keyboard_check(LAB_SCENE){
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
-	npc_speech_bubble(obj_grace, speech_grace);
-	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
-	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
-	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
-	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
-	npc_move_to_pos(obj_grace, 0.25, 0, 120, 115);
-	npc_move_to_pos(obj_grace, 0.25, 0, 220, 115);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;
@@ -51,8 +63,12 @@ if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 			inst.target_rm = school_main_classroom;
 			inst.start_cutscene = dialogue_first_lesson;
 }
-if keyboard_check(RHYTHM_GAME_TEST){
-	instance_create_depth(0, 0, 0, obj_rhythm_game_arrows)
+if keyboard_check(DRUM_TEST){
+	NewQuest(global.quest_list.enter_dorm, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
+	global.day = 2
+	teleport_player(144,121, school_bobbys_room);
+	instance_activate_object(inst_BOBBYS_ROOM_DRUM_KIT);
+	
 }
 
 if keyboard_check(GAMBINOS_ROOM){

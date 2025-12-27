@@ -4,7 +4,7 @@ image_yscale = bubble_yscale;
 npc_speaker = noone;
 speech_text = array_create(0);
 text_progress = 0;
-
+write_speed = 0.3;
 default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
 font_add_enable_aa(false);
 

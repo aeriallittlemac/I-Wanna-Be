@@ -1,0 +1,10 @@
+global.day = 3;
+AddInstanceToDestroy(inst_1D032C1A);
+AddInstanceToActivate(inst_210D4C1);
+game_camera_change_settings(obj_player,-1);
+teleport_npc(obj_frenchie, school_2F, 375, 135, DOWN);
+teleport_npc(obj_mcronald, school_2F, 450, 150, DOWN);
+teleport_npc(obj_wei, school_2F, 350, 185, UP);
+teleport_player(410, 110, school_2F, dialogue_band_first_practice);
+obj_npc_manager.npcs[5].initial_animation = spr_mcronald_keyboard;
+obj_npc_manager.npcs[12].initial_animation = spr_frenchie_guitar;

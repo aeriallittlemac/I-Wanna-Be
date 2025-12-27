@@ -19,3 +19,6 @@ if lose_cutscene_object != noone{
 else{
 	game_NewCutscene(win_cutscene_object);
 }
+//if !QTE{
+//	global.drumming = false;
+//}
