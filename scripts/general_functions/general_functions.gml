@@ -234,8 +234,7 @@ function game_save_json(save_name) {
 		|| array_length(obj_settings.sequences) > 0 
 		|| npcs_in_sequences 
 		|| global.cutscene 
-		|| instance_exists(obj_rhythm_game_new) 
-		|| instance_exists(obj_rhythm_game) 
+		|| instance_exists(obj_rhythm_game_arrows) 
 		|| instance_exists(potato_battery_experiment) 
 	) {
 		return;
@@ -254,7 +253,8 @@ function game_save_json(save_name) {
 		hints: global.hints, 
 		npc_list: global.npc_list, 
 		game_time: global.game_time, 
-		hottest_rumor: global.hottest_rumor
+		hottest_rumor: global.hottest_rumor, 
+		inventory: obj_inventory.inventory
 	};
 	var fout = file_text_open_write("save_" + sha1_string_unicode(save_name) + ".json");
 	file_text_write_string(fout, json_stringify(save_data));
@@ -281,4 +281,5 @@ function game_load_json(save_name) {
 	global.npc_list = save_data.npc_list;
 	global.game_time = save_data.game_time;
 	global.hottest_rumor = save_data.hottest_rumor;
+	obj_inventory.inventory = save_data.inventory;
 }
