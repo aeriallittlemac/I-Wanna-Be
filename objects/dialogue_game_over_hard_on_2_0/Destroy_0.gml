@@ -8,7 +8,7 @@ if redo{
 	}
 }
 else{
-	global.storylines.Sewing_Club.hard_on = true;
+	global.storylines.Sewing_Club.Day_Two.hard_on = true;
 	instance_create_depth(cutscene_date_grace_choice_no);
 }
 redo_UI();

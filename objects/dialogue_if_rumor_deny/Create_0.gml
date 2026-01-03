@@ -1,0 +1,11 @@
+event_inherited();
+scr_text("Word goes around quick, Bobby.", spr_grace_icon, 0);
+scr_text("You thought I wouldn't know that you've been running your mouth?", spr_grace_icon, 0);
+scr_text("My reputation is in the dumpster, all because these dumbasses think we’re together!", spr_grace_icon, 0);
+scr_text("The worst thing is, you act like you don't care enough to even fucking acknowledge me!", spr_grace_icon, 0);
+scr_text("How could you so nonchalantly deny the rumors? Think you're too good for me, bastard?", spr_grace_icon, 0);
+scr_text("And what the hell is that in your hand?", spr_grace_icon, 0);
+scr_text("*snatches Frenchie's letter from your hand", spr_grace_icon, 0);
+scr_text("Ha! You think you can just hand me this, idiot?", spr_grace_icon, 0);
+scr_text("Well, too bad!", spr_grace_icon, 0);
+scr_text("This letter is going up everywhere, so everyone can see just how much of a pathetic loser you are!", spr_grace_icon, 0);

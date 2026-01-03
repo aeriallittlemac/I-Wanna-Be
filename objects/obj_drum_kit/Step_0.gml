@@ -13,11 +13,14 @@ if instance_exists(obj_rhythm_game_arrows){
 	}
 	else{
 		if !new_tempo{
-			image_speed *= (obj_rhythm_game_arrows.tempo)/120;
+			image_speed = (obj_rhythm_game_arrows.tempo)/120;
 			new_tempo = true;
 		}
 	}
 }
 else{
-	image_alpha = 1;	
+	image_alpha = 1;
+	image_speed = 0;
+	image_index = 0;
+	new_tempo = false;
 }

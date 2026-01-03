@@ -147,23 +147,6 @@ array_push(rooms, school_1F);
 array_push(rooms, school_2F);
 array_push(rooms, school_3F);
 inv = array_create(0);
-global.checkpoints = {
-	Day_One:{
-		
-	},
-	Day_Two:{
-		sewing_club_debut:{
-			checkpoint_name:"",
-			time: "1:00 pm",
-			checkpoint_room: school_1F,
-			player_x: 809,
-			player_y: 104
-		},
-	},
-	Day_Three:{
-	
-	}
-}
 //
 global.storylines = {
 	Mechanics_Introduced : {
@@ -218,7 +201,18 @@ global.storylines = {
 			
 	},
 	Sewing_Club : {
-		hard_on: false,
+		Day_Two:{
+			hard_on: false,
+		},
+		Day_Three:{
+			talked_to: {
+				mei: false,
+				grace: false,
+				ashley: false,
+				brooklyn: false,
+			},
+		},
+		
 	},
 	
 	Band : {
@@ -232,8 +226,8 @@ global.storylines = {
 	},
 	
 	Grace : {
-		day_one_dare: false,
 		truth_or_dare_confession: false,
+		deny_rumor: false,
 	},
 	
 	

@@ -2,10 +2,51 @@
 #macro LAB_SCENE ord("U")
 #macro GAMBINOS_ROOM ord("Y")
 #macro LOCKERS ord("T")
-#macro DRUM_TEST ord("I")
+#macro LUNCH ord("I")
 #macro BAND_FIRST_PRACTICE ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
+#macro SEWING_CLUB_SECOND_DAY ord("N")
 
+
+if keyboard_check(SEWING_CLUB_SECOND_DAY){
+	teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+	global.day = 3
+	global.game_time = "3:30 pm";
+	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
+	game_camera_change_settings(obj_player, -1);
+	var sewing_club_r1 = [obj_ashley, obj_grace]; 
+		for(var i = 0; i < array_length(sewing_club_r1); i++){
+						teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
+		}
+
+		var sewing_club_r2 = [obj_brooklyn, obj_mei]; 
+		for(var i = 0; i < array_length(sewing_club_r2); i++){
+			teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
+		}
+	obj_grace.entityActivateScript = NewDialogue;
+	obj_brooklyn.entityActivateScript = NewDialogue;
+	obj_mei.entityActivateScript = NewDialogue;
+	obj_ashley.entityActivateScript = NewDialogue;
+	if global.storylines.Grace.truth_or_dare_confession{
+	
+		if !global.storylines.Grace.deny_rumor{
+			obj_grace.entityActivateArg = dialogue_grace_interact_if_rumor_true;
+	
+			obj_brooklyn.entityActivateArg = dialogue_brooklyn_interact_if_rumor_true;
+	
+			obj_mei.entityActivateArg = dialogue_mei_interact_if_rumor_true;
+	
+			obj_ashley.entityActivateArg = dialogue_ashley_interact_if_rumor_true;
+		}
+		else{
+		
+		}
+	
+	}
+	
+
+}
 if keyboard_check(ord("Q")){
 	show_debug_message(obj_rhythm_game_arrows.block_speed);
 	show_debug_message(game_get_speed(gamespeed_fps));
@@ -63,12 +104,17 @@ if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 			inst.target_rm = school_main_classroom;
 			inst.start_cutscene = dialogue_first_lesson;
 }
-if keyboard_check(DRUM_TEST){
-	NewQuest(global.quest_list.enter_dorm, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-	global.day = 2
-	teleport_player(144,121, school_bobbys_room);
-	instance_activate_object(inst_BOBBYS_ROOM_DRUM_KIT);
-	
+if keyboard_check(LUNCH){
+	global.day = 3;
+	global.game_time = "12:00 pm"
+	AddInstanceToDestroy(inst_1D032C1A);
+	AddInstanceToActivate(inst_210D4C1);
+	game_camera_change_settings(obj_player,-1);
+	teleport_npc(obj_frenchie, school_1F, 875, 135, DOWN);
+	teleport_npc(obj_mcronald, school_1F, 950, 120, DOWN);
+	teleport_npc(obj_wei, school_1F, 850, 135, DOWN);
+	teleport_player(910, 110, school_1F);
+	instance_activate_object(INST_LUNCH_TABLE);
 }
 
 if keyboard_check(GAMBINOS_ROOM){

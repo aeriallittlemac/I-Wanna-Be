@@ -4,7 +4,7 @@
   "name": "song_band_first_song_bass_3",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.4,
+  "volume": 0.65,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -18,6 +18,6 @@
   "duration": 75.78,
   "parent": {
     "name": "Music",
-    "path": "folders/Dialogue_Lines/Day 3 - lab/Non-UI Sounds/Music.yy",
+    "path": "folders/School Assets/Non-UI Sounds/Music.yy",
   },
 }
