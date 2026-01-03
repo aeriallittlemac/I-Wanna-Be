@@ -519,6 +519,7 @@
     {"id":{"name":"obj_warning_2","path":"objects/obj_warning_2/obj_warning_2.yy",},"order":6,},
     {"id":{"name":"spr_minimap_v2","path":"sprites/spr_minimap_v2/spr_minimap_v2.yy",},"order":8,},
     {"id":{"name":"dialogue_brooklyns_v2_turn","path":"objects/dialogue_brooklyns_v2_turn/dialogue_brooklyns_v2_turn.yy",},"order":3,},
+    {"id":{"name":"spr_padlock","path":"sprites/spr_padlock/spr_padlock.yy",},"order":10,},
     {"id":{"name":"spr_drake_up","path":"sprites/spr_drake_up/spr_drake_up.yy",},"order":3,},
     {"id":{"name":"dialogue_brooklyn_debut","path":"objects/dialogue_brooklyn_debut/dialogue_brooklyn_debut.yy",},"order":3,},
     {"id":{"name":"spr_mrchen_icon","path":"sprites/spr_mrchen_icon/spr_mrchen_icon.yy",},"order":4,},
