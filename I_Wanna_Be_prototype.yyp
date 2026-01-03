@@ -353,6 +353,7 @@
     {"id":{"name":"spr_sewing_kit","path":"sprites/spr_sewing_kit/spr_sewing_kit.yy",},"order":21,},
     {"id":{"name":"test_talk","path":"sprites/test_talk/test_talk.yy",},"order":0,},
     {"id":{"name":"dialogue_sewing_club_debut_2","path":"objects/dialogue_sewing_club_debut_2/dialogue_sewing_club_debut_2.yy",},"order":11,},
+    {"id":{"name":"school_1F","path":"rooms/school_1F/school_1F.yy",},"order":16,},
     {"id":{"name":"spr_gambino_table","path":"sprites/spr_gambino_table/spr_gambino_table.yy",},"order":2,},
     {"id":{"name":"beatmap_grace_second_decision","path":"objects/beatmap_grace_second_decision/beatmap_grace_second_decision.yy",},"order":16,},
     {"id":{"name":"spr_grace_rap","path":"sprites/spr_grace_rap/spr_grace_rap.yy",},"order":5,},
@@ -826,7 +827,7 @@
     {"id":{"name":"obj_sewing_club_choices","path":"objects/obj_sewing_club_choices/obj_sewing_club_choices.yy",},"order":20,},
     {"id":{"name":"obj_diamondwood_high_bathroom_door","path":"objects/obj_diamondwood_high_bathroom_door/obj_diamondwood_high_bathroom_door.yy",},"order":5,},
     {"id":{"name":"dialogue_meeting_gambino","path":"objects/dialogue_meeting_gambino/dialogue_meeting_gambino.yy",},"order":8,},
-    {"id":{"name":"school_1F","path":"rooms/school_1F/school_1F.yy",},"order":0,},
+    {"id":{"name":"school_1F_run_minigame","path":"rooms/school_1F_run_minigame/school_1F_run_minigame.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -847,6 +848,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"school_1F","path":"rooms/school_1F/school_1F.yy",},},
+    {"roomId":{"name":"school_1F_run_minigame","path":"rooms/school_1F_run_minigame/school_1F_run_minigame.yy",},},
     {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"roomId":{"name":"school_B1","path":"rooms/school_B1/school_B1.yy",},},
     {"roomId":{"name":"school_2F","path":"rooms/school_2F/school_2F.yy",},},
