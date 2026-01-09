@@ -1,1 +1,0 @@
-cutscene_object = dialogue_mcronald_debut;
