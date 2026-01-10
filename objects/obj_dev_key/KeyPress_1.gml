@@ -6,7 +6,7 @@
 #macro BAND_FIRST_PRACTICE ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_SECOND_DAY ord("N")
-
+#macro RUN_MINIGAME ord("R")
 
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
@@ -84,6 +84,9 @@ if keyboard_check(LAB_SCENE){
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
+}
+if (keyboard_check(RUN_MINIGAME)) {
+	teleport_player(135, 120, school_1F_run_minigame);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;
