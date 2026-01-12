@@ -1,6 +1,6 @@
 if !global.pause_menu && !instance_exists(potato_battery_experiment){
 if room != tutorial{
-run_key = keyboard_check(vk_lshift) ||keyboard_check(CANCEL_ACTION);
+run_key = keyboard_check(vk_lshift) ||keyboard_check(CANCEL_ACTION) || x_lock != 0;
 right_key = keyboard_check(MOVE_RIGHT);
 left_key = keyboard_check(MOVE_LEFT);
 up_key = keyboard_check(MOVE_UP);
@@ -19,7 +19,7 @@ if run_key {
 if  keyboard_check_released(run_key){
 	speed_multiplier = 1;
 }
-xspeed = (right_key - left_key)*move_speed*speed_multiplier;
+xspeed = (max(x_lock, right_key) - left_key)*move_speed*speed_multiplier;
 yspeed = (down_key - up_key)*move_speed*speed_multiplier;
 image_speed = speed_multiplier;
 
@@ -44,7 +44,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && room != tutorial{
+	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && !player_frozen && room != tutorial{
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};

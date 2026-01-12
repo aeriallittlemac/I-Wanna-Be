@@ -1,2 +1,1 @@
-obj_player.sprite_index = obj_player.sprite[DOWN];
-obj_player.face = DOWN
+instance_create_depth(0, 0, 0, obj_run_minigame);

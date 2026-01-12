@@ -16,6 +16,8 @@ if keyboard_check(WEI_DRUMS_DEBUT){
 	global.game_time = "8:00 pm";
 	global.night = true;
 }
+#macro RUN_MINIGAME ord("R")
+
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	if global.storylines.Grace.truth_or_dare_confession{
 		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
@@ -116,6 +118,9 @@ if keyboard_check(LAB_SCENE){
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
+}
+if (keyboard_check(RUN_MINIGAME)) {
+	teleport_player(135, 120, school_1F_run_minigame);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;

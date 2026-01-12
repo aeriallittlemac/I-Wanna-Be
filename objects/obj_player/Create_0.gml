@@ -1,4 +1,6 @@
 global.cutscene = false
+player_frozen = false;
+x_lock = 0;
 
 xspeed = 0;
 yspeed = 0;

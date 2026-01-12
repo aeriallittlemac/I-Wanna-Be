@@ -4,4 +4,8 @@ if place_meeting(x,y,obj_player) && !instance_exists(obj_transition){
 	inst.target_y = target_y;
 	inst.target_rm = target_rm;
 	//inst.facing = facing;
+	
+	if (variable_instance_exists(self, "callback")) {
+		callback();
+	}
 }
