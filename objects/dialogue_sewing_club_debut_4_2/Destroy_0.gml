@@ -1,1 +1,0 @@
-NewDialogue(dialogue_sewing_club_debut_5);

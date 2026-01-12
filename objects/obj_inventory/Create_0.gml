@@ -60,6 +60,10 @@ global.item_list = {
 		item_name: "Copper Coin",
 		item_dialogue: -1,
 	},
+	love_potion: {
+		item_name: "'Love Potion'",
+		item_dialogue: -1,
+	},
 	frenchies_envelope : {
 		item_name: "Frenchie's Envelope",
 		item_dialogue: -1,

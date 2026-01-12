@@ -2,6 +2,15 @@ if !flag{
 	if !QTE{
 		//rhythm_line_x = 100;
 		block_speed_multiplier = 4;
+		if instance_exists(obj_wei){
+			npc_animate(obj_wei, spr_wei_rapping);
+		}
+		if instance_exists(obj_frenchie){
+			npc_animate(obj_frenchie, spr_frenchie_guitar);
+		}
+		if instance_exists(obj_mcronald){
+			npc_animate(obj_mcronald, spr_mcronald_keyboard);
+		}
 	}
 
 beat_unit = 240/tempo/16;

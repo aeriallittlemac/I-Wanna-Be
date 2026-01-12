@@ -1,0 +1,1 @@
+teleport_npc(obj_guy, noone, 0, 0, DOWN);

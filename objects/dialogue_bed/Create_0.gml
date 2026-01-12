@@ -10,7 +10,7 @@ if global.day == 1{
 			audio_sound_gain(school_night, 0, 1600);
 			global.day = 2;
 			AddInstanceToActivate(inst_WELCOME_TABLE);
-			AddInstanceToActivate(inst_62024E88);
+			AddInstanceToActivate(obj_bulletin_board_monday);
 //			AddInstanceToActivate(inst_1DF12FEC);
 		}
 		else{
@@ -28,6 +28,16 @@ if global.day == 1{
 		global.game_time = "12:30 am";
 		//global.night = true;
 		audio_sound_gain(bobbys_room, 0, 3200);
+	}
+}
+else if global.day == 2{
+	if global.night && !instance_exists(obj_wei){
+		scr_text("After joining a new band, you go to sleep...");
+	}
+	else{
+		scr_text("Really?");
+		scr_text("You're sleeping, now?");
+		scr_text("Get a grip.");
 	}
 }
 else if global.night{

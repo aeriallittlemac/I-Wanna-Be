@@ -1,1 +1,0 @@
-instance_create_depth(0, 0, 0, beatmap_grace_sewing_club_2);

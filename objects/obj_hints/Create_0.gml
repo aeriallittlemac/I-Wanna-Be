@@ -1,29 +1,17 @@
 global.in_hints = false;
 
 global.hints = {
-	morning: {
-		sprite: spr_mrchen_icon, 
-		text: "Studies have found that exposure to peanuts at an early age can reduce the chance of developing peanut allergies.", 
+	meeting_mei: {
+		sprite: spr_mei_grin, 
+		text: "Public composure is key to survival.", 
 		found: false, 
-		save_name: "Morning"
+		save_name: "Meeting Mei"
 	}, 
 	after_first_class: {
 		sprite: spr_wei_icon, 
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+		text: "stuff?", 
 		found: false, 
 		save_name: "After First Class"
-	}, 
-	after_lunch: {
-		sprite: spr_grace_default, 
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-		found: false, 
-		save_name: "After Lunch"
-	}, 
-	after_club: {
-		sprite: spr_PBnJ_plate_2, 
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-		found: false, 
-		save_name: "After Club"
 	}, 
 	cretaceous: {
 		sprite: spr_grace_demonic, 
@@ -67,7 +55,7 @@ global.hints = {
 is_choosing_restore = false;
 
 hint_grid = [
-	["morning", "after_first_class", "after_lunch", "after_club"], 
+	["meeting_mei", "after_first_class"], 
 	["cretaceous", "beef"],
 	["yup", "uhhuh"],
 	["yeh", "bi"]

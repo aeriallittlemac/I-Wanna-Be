@@ -1,1 +1,1 @@
-NewSlideshow(spr_game_over, dialogue_game_over_hard_on_2_0);
+instance_create_depth(0, 0, OBJ_MAX_DEPTH, obj_game_over_screen);

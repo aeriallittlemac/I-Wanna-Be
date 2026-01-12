@@ -14,9 +14,17 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 					teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
 				}
 				teleport_player(215, 45, school_sewing_club);
+			obj_ashley.entityActivateArg = dialogue_ashleyseat;
+			obj_mei.entityActivateArg = dialogue_meiseat;
+			obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
+				
 		}
 	
 	}
+	else if global.day == 3{
+	
+	}
+	
 	
 }
 

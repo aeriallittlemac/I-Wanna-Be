@@ -1,0 +1,2 @@
+cutscene_object = dialogue_mcronald_interjection;
+instance_deactivate_object(self);

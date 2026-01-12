@@ -56,7 +56,7 @@ global.quest_list = {
 	},
 	
 	sewing_club_quest : {
-		description : "Go meet the sewing club",
+		description : "Go to the sewing club",
 		icon: spr_main_quest_icon,
 		quest_room : school_1F,
 		quest_room_width : 1620,
@@ -137,6 +137,7 @@ global.quest_list = {
 		quest_x : 1330,
 		quest_y : 104,
 	},
+
 	
 	
 }

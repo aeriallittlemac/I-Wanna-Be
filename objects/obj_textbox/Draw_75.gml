@@ -1,7 +1,7 @@
 if global.in_dialogue{
 	var y_offset = 0;
 	if room != tutorial{
-		y_offset = (!(obj_minimap.school_hall||global.isometric_room)&&!(array_length(obj_slideshow.slides)>0))*RESOLUTION_W;
+		y_offset = ((!(obj_minimap.school_hall||global.isometric_room) && !global.text_box_top)&&!(array_length(obj_slideshow.slides)>0))*RESOLUTION_W;
 	}
 	draw_sprite_ext(sprite_index, -1, x*minimap_scale, y*minimap_scale + y_offset, minimap_scale, minimap_scale, 0, c_white, 1 );
 	draw_set_font(default_pixel_font);
@@ -25,7 +25,7 @@ if global.in_dialogue{
 		option_pos += keyboard_check_pressed(MOVE_RIGHT) - keyboard_check_pressed(MOVE_LEFT);
 		option_pos = clamp(option_pos, 0, option_number-1);
 		var option_x_offset = 68;
-		var option_y_offset = 80;
+ 		var option_y_offset = 80;
 		var arrow_x_offset = -sprite_get_width(spr_textbox_arrow) * minimap_scale;
 		var _op_space = 500;
 		//draw the options

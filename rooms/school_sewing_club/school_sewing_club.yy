@@ -39,11 +39,11 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_graceseat",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"seat_empty","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"value":"True",},
           ],"isDnd":false,"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.2222219,"scaleY":0.28947368,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":116.0,"y":70.5,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6CFAA135","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_ASHLEYSEAT","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_ashleyseat",},
           ],"isDnd":false,"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.2222219,"scaleY":0.3157895,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":73.0,"y":70.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2DC079CB","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BROOKLYNSEAT","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_brooklynseat",},
           ],"isDnd":false,"objectId":{"name":"obj_sewing_club_seat_interactable","path":"objects/obj_sewing_club_seat_interactable/obj_sewing_club_seat_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.222222,"scaleY":0.55263156,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":73.0,"y":96.34818,},
@@ -74,8 +74,8 @@
     {"name":"inst_66C2FF94","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_63689AFE","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_GRACESEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_6CFAA135","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_2DC079CB","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_ASHLEYSEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_BROOKLYNSEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_MEISEAT","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_551BCA1D","path":"rooms/school_sewing_club/school_sewing_club.yy",},
   ],

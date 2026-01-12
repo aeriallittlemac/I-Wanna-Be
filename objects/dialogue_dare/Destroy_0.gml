@@ -1,1 +1,2 @@
-instance_create_depth(0,0,0,beatmap_dare);
+obj_grace.entityActivateScript = NewDialogue;
+obj_grace.entityActivateArg = dialogue_dare_2;

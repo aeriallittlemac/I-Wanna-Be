@@ -1,1 +1,0 @@
-game_create_instance_depth(0,0, 0, obj_rap_brooklyn_verse_1);

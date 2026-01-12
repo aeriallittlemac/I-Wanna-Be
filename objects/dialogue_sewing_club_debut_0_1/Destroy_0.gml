@@ -1,2 +1,0 @@
-game_NewCharacterIntro(obj_mei);
-game_NewDialogue(dialogue_sewing_club_debut_1);

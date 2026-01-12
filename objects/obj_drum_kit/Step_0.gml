@@ -17,10 +17,11 @@ if instance_exists(obj_rhythm_game_arrows){
 			new_tempo = true;
 		}
 	}
+	show_debug_message(image_speed);
 }
 else{
 	image_alpha = 1;
-	image_speed = 0;
-	image_index = 0;
+	sprite_index = spr_drum_kit_idle;
 	new_tempo = false;
+	start = false;
 }

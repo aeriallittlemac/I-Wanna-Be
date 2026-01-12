@@ -1,4 +1,7 @@
 if room == school_sewing_club{
+	if global.day == 2 && instance_exists(obj_mei){
+		hint_obtain(global.hints.meeting_mei);
+	}
 	set_QTE_bgm(sewing_club_new);
 }
 if room == school_1F && global.game_time = "12:00 pm"{

@@ -1,5 +1,4 @@
 event_inherited();
-
 if !global.storylines.Lab.Day_Three.talked_to.job{
 	scr_text("Oh, hello.", spr_job_icon, 0);
 	scr_text("You’re the new kid, right?", spr_job_icon, 0);

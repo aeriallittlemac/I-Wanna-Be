@@ -1,0 +1,9 @@
+event_inherited();
+scr_text("Hmmmm, nice place you got here...", spr_mcronald_icon, 0);
+scr_text("So, what's up with those drums right there?", spr_mcronald_icon, 0);
+scr_text("You mentioned how Gambino gave it to you.");
+scr_text("Ah, you did a favor for him.", spr_mcronald_icon, 0);
+scr_text("You say that he seems like a nice guy.");
+scr_text("Haha! I think so too. Well? What are you going to do with that?", spr_mcronald_icon, 0);
+scr_text("You shrug.");
+scr_text("Might as well try it out, right?", spr_mcronald_icon, 0);

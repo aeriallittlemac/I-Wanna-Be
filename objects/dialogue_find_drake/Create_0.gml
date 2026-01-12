@@ -1,4 +1,5 @@
 event_inherited();
+found_drake = false;
 if !global.storylines.Gambinos_Missions.Day_One.acquired_padlock{
 	if obj_minimap.inv[0] == global.quest_list.find_drake{
 		QuestCompleted(global.quest_list.find_drake);

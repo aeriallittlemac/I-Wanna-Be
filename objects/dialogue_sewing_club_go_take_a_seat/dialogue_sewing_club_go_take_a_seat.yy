@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "archived",
-    "path": "folders/Dialogue_Lines/Day 2 - day/archived.yy",
+    "name": "interactable_dialogues",
+    "path": "folders/School Assets/new/classrooms/sewing_club/interactable_dialogues.yy",
   },
 }

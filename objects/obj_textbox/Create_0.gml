@@ -11,7 +11,7 @@ line_sep = 60;
 style = "normal";
 //text = ["I walk this empty street, on the boulevard of broken dreams. Where the city sleeps, and I'm the only one and I walk alone.", "My shadow's only thing that walks besides me."]
 global.in_dialogue = false;
-
+global.text_box_top = false;
 punctucation_pause = 0.2 * room_speed;
 regular_pause = 0.02 * room_speed;
 timer = 0;

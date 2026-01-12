@@ -1,4 +1,4 @@
-if !global.pause_menu{
+if !global.pause_menu && !instance_exists(potato_battery_experiment){
 if room != tutorial{
 run_key = keyboard_check(vk_lshift) ||keyboard_check(CANCEL_ACTION);
 right_key = keyboard_check(MOVE_RIGHT);

@@ -1,4 +1,6 @@
 event_inherited();
+obj_player.face = UP;
+obj_player.sprite_index = obj_player.sprite[UP];
 envelopes = false;
 if global.storylines.Grace.truth_or_dare_confession{
 	scr_text("Alright, spill the tea man.", spr_mcronald_icon, 1);

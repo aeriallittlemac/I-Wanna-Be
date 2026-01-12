@@ -1,0 +1,16 @@
+event_inherited();
+scr_text("Bobby! Was that you? Oh hey. McRonald.", spr_wei_icon, 0);
+scr_text("'Sup.", spr_mcronald_icon, 0);
+scr_text("You confirm, and ask how Wei got inside.");
+scr_text("Well, for one, I have keys to all the boys' rooms.", spr_wei_icon, 0);
+scr_text("Hall monitor privileges and such. Two, that was great!", spr_wei_icon, 0);
+scr_text("Listen, me and another guy from homeroom are putting together a rock band. ", spr_wei_icon, 0);
+scr_text("We're looking for a drummer, and I think you’ve got the stuff for the job!", spr_wei_icon, 0);
+scr_text("You’ve got nothing better to do, so you accept.");
+scr_text("Great!", spr_wei_icon, 0);
+scr_text("Oh! Since you're here, McRonald. You wanna join too?", spr_wei_icon, 0);
+scr_text("I'm assuming Frenchie is on this with you?", spr_mcronald_icon, 1);
+scr_text("He's been talking about wanting to play music for some time.", spr_mcronald_icon, 1);
+scr_text("Yup!", spr_wei_icon, 0);
+scr_text("Sounds interesting. I'm in.", spr_mcronald_icon, 1);
+scr_text("This is awesome! Let's meet up before lunch period tomorrow!", spr_wei_icon, 0);

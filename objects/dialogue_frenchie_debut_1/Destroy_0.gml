@@ -1,2 +1,0 @@
-game_NewCharacterIntro(obj_frenchie);
-game_NewDialogue(dialogue_frenchie_debut_1)
