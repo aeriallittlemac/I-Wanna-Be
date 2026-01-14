@@ -210,7 +210,7 @@ function set_QTE_bgm(song){
 	obj_music_manager.song_current_runtime = 0;
 }
 
-function game_save_json(save_name) {
+function is_deus_ex_machina() {
 	var npcs_in_sequences = false;
 	var members = variable_struct_get_names(global.npc_list);
 	for (var i = 0; i < array_length(members); ++i) {
@@ -220,23 +220,34 @@ function game_save_json(save_name) {
 		}
 	};
 	
-	//show_debug_message(
-	//	string(array_length(obj_player.c_sequences) > 0) 
-	//	+ string(array_length(obj_settings.sequences) > 0) 
-	//	+ string(npcs_in_sequences) 
-	//	+ string(global.cutscene) 
-	//	+ string(instance_exists(obj_rhythm_game_new)) 
-	//	+ string(instance_exists(obj_rhythm_game)) 
-	//	+ string(instance_exists(potato_battery_experiment))
-	//);
+	var player_sequences = array_length(obj_player.c_sequences) > 0;
+	var settings_sequences = array_length(obj_settings.sequences) > 0;
+	var in_rhythm_game = instance_exists(obj_rhythm_game_arrows);
+	var in_potato_battery_experiment = instance_exists(potato_battery_experiment);
 
-	if (array_length(obj_player.c_sequences) > 0 
-		|| array_length(obj_settings.sequences) > 0 
+	if (!(player_sequences 
+		|| settings_sequences 
 		|| npcs_in_sequences 
 		|| global.cutscene 
-		|| instance_exists(obj_rhythm_game_arrows) 
-		|| instance_exists(potato_battery_experiment) 
-	) {
+		|| in_rhythm_game 
+		|| in_potato_battery_experiment 
+	)) {
+		return false;
+	}
+	show_debug_message(
+		"Player Sequences: " + string(player_sequences) 
+		+ ", Settings Sequences: " + string(settings_sequences) 
+		+ ", NPCs in Sequences: " + string(npcs_in_sequences) 
+		+ ", Cutscene: " + string(global.cutscene) 
+		+ ", In Rhythm Game: " + string(in_rhythm_game) 
+		+ ", In Potato Battery Experiment: " + string(in_potato_battery_experiment)
+	);
+	return true;
+}
+
+function game_save_json(save_name) {
+	if (is_deus_ex_machina()) {
+		show_debug_message("Refusing to save.");
 		return;
 	}
 	var save_data = {
@@ -256,12 +267,19 @@ function game_save_json(save_name) {
 		hottest_rumor: global.hottest_rumor, 
 		inventory: obj_inventory.inventory
 	};
-	var fout = file_text_open_write("save_" + sha1_string_unicode(save_name) + ".json");
+	var fname = "save_" + sha1_string_unicode(save_name) + ".json";
+	var fout = file_text_open_write(fname);
 	file_text_write_string(fout, json_stringify(save_data));
 	file_text_close(fout);
+	
+	show_debug_message("Saved: " + fname);
 }
 
 function game_load_json(save_name) {
+	if (is_deus_ex_machina()) {
+		show_debug_message("Refusing to load.");
+		return;
+	}
 	var fname = "save_" + sha1_string_unicode(save_name) + ".json";
 	if (!file_exists(fname)) {
 		show_debug_message("No such save state: " + save_name);
@@ -282,4 +300,6 @@ function game_load_json(save_name) {
 	global.game_time = save_data.game_time;
 	global.hottest_rumor = save_data.hottest_rumor;
 	obj_inventory.inventory = save_data.inventory;
+	
+	show_debug_message("Loaded: " + fname);
 }
