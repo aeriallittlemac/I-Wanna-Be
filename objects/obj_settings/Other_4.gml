@@ -1,5 +1,7 @@
 if room == school_sewing_club{
 	if global.day == 2 && instance_exists(obj_mei){
+		// `obj_settings` step doesn't have time to reset the cutscene flag.
+		global.cutscene = false;
 		hint_obtain(global.hints.meeting_mei);
 	}
 	set_QTE_bgm(sewing_club_new);
