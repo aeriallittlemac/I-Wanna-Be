@@ -1,4 +1,4 @@
-if (global.in_hints) {
+if (global.in_hints || global.pause_menu) {
 	draw_sprite_ext(spr_hints_background, -1, 0, 0, ui_scale, ui_scale, 0, c_white, 1);
 	draw_sprite_ext(spr_hint_highlight, -1, hint_grid_x + focus_col * hint_grid_spacing + highlight_offset, hint_grid_y + focus_row * hint_grid_spacing + highlight_offset, highlight_scale * ui_scale, highlight_scale * ui_scale, 0, c_white, 1);
 	

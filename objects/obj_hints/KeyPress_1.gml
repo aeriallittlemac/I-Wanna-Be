@@ -15,10 +15,12 @@ if (global.in_hints && !is_choosing_restore) {
 	focus_col = clamp(focus_col + col_delta, 0, array_length(hint_grid[focus_row]) - 1);
 	
 	var focus_hint = global.hints[$hint_grid[focus_row][focus_col]];
-	if (select_key && focus_hint.found) {
-		instance_create_depth(
-			0, 0, 9999, dialogue_restore_save_choice, 
-			{save_name: focus_hint.save_name}
-		);
+	if global.in_hints{
+		if (select_key && focus_hint.found) {
+			instance_create_depth(
+				0, 0, 9999, dialogue_restore_save_choice, 
+				{save_name: focus_hint.save_name}
+			);
+		}
 	}
 }

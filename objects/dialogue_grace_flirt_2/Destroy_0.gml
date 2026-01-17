@@ -9,4 +9,4 @@ with inst{
 }
 global.cutscene = false;
 global.game_time = "5:00 pm";
-teleport_player(306, 111, school_2F, dialogue_check_relationship_pamphlet);
+teleport_player(855, 125, school_1F, dialogue_check_relationship_pamphlet);

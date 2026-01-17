@@ -13,3 +13,6 @@ teleport_npc(obj_frenchie, noone, 0, 0, DOWN);
 item_acquired(global.item_list.padlock);
 NewQuest(global.quest_list.get_key_back_to_drake, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
 global.storylines.Gambinos_Missions.Day_One.acquired_padlock = true;
+if instance_exists(INST_STEALTH_ZONE){
+	instance_destroy(INST_STEALTH_ZONE)
+}

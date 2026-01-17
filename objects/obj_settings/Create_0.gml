@@ -1,4 +1,3 @@
-//window_set_fullscreen(true);
 global.day = 1;
 global.game_time = "5:00 pm";
 global.night = false;

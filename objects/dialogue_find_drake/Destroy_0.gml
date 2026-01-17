@@ -1,4 +1,6 @@
 if !global.storylines.Gambinos_Missions.Day_One.acquired_padlock{
+	global.night = true;
+	global.game_time = "8:00 pm";
 	if !found_drake{
 		item_acquired(global.item_list.padlock_key);
 		NewQuest(global.quest_list.get_padlock, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
@@ -13,6 +15,6 @@ else{
 		NewQuest(global.quest_list.back_to_your_room, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
 		AddInstanceToActivate(inst_BOBBYS_ROOM_DRUM_KIT);
 		AddInstanceToActivate(inst_WEI_DRUM_DEBUT);
-		teleport_npc(obj_wei, school_2F, 582, 125, LEFT);
+		teleport_npc(obj_mcronald, school_2F, 582, 125, LEFT);
 	}
 }

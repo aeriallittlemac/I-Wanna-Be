@@ -5,8 +5,8 @@ if global.day == 2 && global.game_time = "3:30 pm"{
 		scr_text("With a tint of a familiar feminine smell...");
 	}
 	else{
-		inst_GRACESEAT.entityActivateArg = -1;	
-		scr_text("*What?", spr_grace_icon,0);
+		scr_text("*Whispers", spr_ashley_icon, 0);
+		scr_text("W-Why is a boy playing with us?.", spr_ashley_icon, 0);
 	}
 }
 else if global.day == 3 && global.game_time = "3:30 pm"{

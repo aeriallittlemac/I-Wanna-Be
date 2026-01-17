@@ -31,8 +31,12 @@ if global.day == 1{
 	}
 }
 else if global.day == 2{
-	if global.night && !instance_exists(obj_wei){
+	if global.night{
+		global.player_sleeping = true;
 		scr_text("After joining a new band, you go to sleep...");
+		obj_black_filter_bed.filter_mode = "fade_out";
+		global.game_time = "10:00 am";
+		global.day = 3;
 	}
 	else{
 		scr_text("Really?");

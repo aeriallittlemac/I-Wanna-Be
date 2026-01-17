@@ -4,4 +4,4 @@
 //}
 
 set_QTE_bgm(song_band_first_song);
-alarm[0] = 3.2*room_speed;
+alarm[0] = 0.1*room_speed;

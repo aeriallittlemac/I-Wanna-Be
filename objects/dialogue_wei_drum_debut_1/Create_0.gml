@@ -1,4 +1,5 @@
 event_inherited();
+clear_c_sequences();
 scr_text("Hmmmm, nice place you got here...", spr_mcronald_icon, 0);
 scr_text("So, what's up with those drums right there?", spr_mcronald_icon, 0);
 scr_text("You mentioned how Gambino gave it to you.");
