@@ -15,6 +15,11 @@ sprite[UP] = noone;
 sprite[LEFT] = noone;
 sprite[DOWN] = noone;
 face = DOWN
+face_matrix = [
+	[UP, LEFT, DOWN], 
+	[UP, DOWN, DOWN], 
+	[UP, RIGHT, DOWN]
+];
 player_reach = 120;
 timer = array_create(0);
 classroom_mode = false;

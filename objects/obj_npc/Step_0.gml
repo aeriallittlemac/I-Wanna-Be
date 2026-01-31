@@ -4,48 +4,28 @@ event_inherited();
 
 depth = -bbox_bottom;
 if array_length(sequences) > 0{
-	if sequences[0] == "move"{
-	previous_xspeed = 0;
-	previous_yspeed = 0;
-	var x_margin_of_error_dist = xspeed[0]-1;
-	var y_margin_of_error_dist = yspeed[0]-1;
-	real_xspeed = xspeed[0]*((target_x[0] - x_margin_of_error_dist <= x)*(-1) + (target_x[0] + x_margin_of_error_dist >= x));
-	if previous_xspeed*real_xspeed < 0{xspeed[0] = 0;}
-	real_yspeed = yspeed[0]*((target_y[0] - y_margin_of_error_dist <= y)*(-1) + (target_y[0] + y_margin_of_error_dist >= y));
-	if previous_yspeed*real_yspeed < 0{yspeed[0] = 0;}
+	if (sequences[0] == "move") {
+		// Normally, this wouldn't be sufficient to ensure 
+		// that the NPC stops on the target, 
+		// but it seems to be surprisingly resilient.
+		var real_xspeed = clamp(target_x[0] - x, -xspeed[0], xspeed[0]);
+		var real_yspeed = clamp(target_y[0] - y, -yspeed[0], yspeed[0]);
+		previous_xspeed = real_xspeed;
+		previous_yspeed = real_yspeed;
 
-	if (real_xspeed == 0 && real_yspeed == 0) || skip_sequence{
-		//image_index = 0;
-		//if abs(x - obj_player.x) < player_reach || skip_sequence{
-		array_delete(target_x, 0, 1);
-		array_delete(target_y, 0, 1);
-		array_delete(xspeed, 0, 1);
-		array_delete(yspeed, 0, 1);
-		array_delete(sequences, 0, 1);
-		skip_sequence = false;
-		//}
-	}
-
-	previous_xspeed = real_xspeed;
-	previous_yspeed = real_yspeed;
-	if real_xspeed > 0{
-		sprite_index = sprite[RIGHT];
-	}
-	if real_xspeed < 0{
-		sprite_index = sprite[LEFT];
-	}
-	if real_yspeed > 0{
-		sprite_index = sprite[DOWN];
-	}
-	if real_yspeed < 0{
-		sprite_index = sprite[UP];
-	}
-
-	x += real_xspeed;
-
-	y += real_yspeed;
-
-
+		if ((real_xspeed == 0 && real_yspeed == 0) || skip_sequence) {
+			skip_sequence = false;
+			array_delete(target_x, 0, 1);
+			array_delete(target_y, 0, 1);
+			array_delete(xspeed, 0, 1);
+			array_delete(yspeed, 0, 1);
+			array_delete(sequences, 0, 1);
+		} else {
+			face = face_matrix[clamp(real_xspeed, -1, 1) + 1][clamp(real_yspeed, -1, 1) + 1];
+			sprite_index = sprite[face];
+			x += real_xspeed;
+			y += real_yspeed;
+		}
 	}
 	else if sequences[0] == "teleport"{
 		real_xspeed = 0;

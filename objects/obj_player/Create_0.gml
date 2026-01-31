@@ -16,6 +16,11 @@ sprite[LEFT] = spr_player_left;
 sprite[DOWN] = spr_player_down;
 
 face = DOWN
+face_matrix = [
+	[UP, LEFT, DOWN], 
+	[UP, DOWN, DOWN], 
+	[UP, RIGHT, DOWN]
+];
 
 c_sequences = array_create(0);
 c_xspeed = array_create(0);

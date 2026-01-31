@@ -142,49 +142,29 @@ if image_alpha > 0{
 	}
 	else{
 		if array_length(c_sequences) > 0{
-			if c_sequences[0] == "move"{
-				c_previous_xspeed = 0;
-				c_previous_yspeed = 0;
-				var real_xspeed = c_xspeed[0]*((c_target_x[0] < x)*(-1) + (c_target_x[0] > x));
-				if c_previous_xspeed*real_xspeed < 0{c_xspeed[0] = 0;}
-				var real_yspeed = c_yspeed[0]*((c_target_y[0] < y)*(-1) + (c_target_y[0] > y));
-				if c_previous_yspeed*real_yspeed < 0{c_yspeed[0] = 0;}
+			if (c_sequences[0] == "move") {
+				// Normally, this wouldn't be sufficient to ensure 
+				// that the player stops on the target, 
+				// but it seems to be surprisingly resilient.
+				var real_xspeed = clamp(c_target_x[0] - x, -c_xspeed[0], c_xspeed[0]);
+				var real_yspeed = clamp(c_target_y[0] - y, -c_yspeed[0], c_yspeed[0]);
+				c_previous_xspeed = real_xspeed;
+				c_previous_yspeed = real_yspeed;
 
-				if (real_xspeed == 0 && real_yspeed == 0) || skip_c_sequence{
-				
+				if ((real_xspeed == 0 && real_yspeed == 0) || skip_c_sequence) {
 					image_index = 0;
+					skip_c_sequence = false;
 					array_delete(c_target_x, 0, 1);
 					array_delete(c_target_y, 0, 1);
 					array_delete(c_xspeed, 0, 1);
 					array_delete(c_yspeed, 0, 1);
 					array_delete(c_sequences, 0, 1);
-					skip_c_sequence = false;
-				
+				} else {
+					face = face_matrix[clamp(real_xspeed, -1, 1) + 1][clamp(real_yspeed, -1, 1) + 1];
+					sprite_index = sprite[face];
+					x += real_xspeed;
+					y += real_yspeed;
 				}
-
-				c_previous_xspeed = real_xspeed;
-				c_previous_yspeed = real_yspeed;
-				if real_xspeed > 0{
-					sprite_index = sprite[RIGHT];
-					face = RIGHT;
-				}
-				if real_xspeed < 0{
-					sprite_index = sprite[LEFT];
-					face = LEFT;
-				}
-				if real_yspeed > 0{
-					sprite_index = sprite[DOWN];
-					face = DOWN;
-				}
-				if real_yspeed < 0{
-					sprite_index = sprite[UP];
-					face = UP;
-				}
-
-
-				x += real_xspeed;
-
-				y += real_yspeed;
 			}
 			else if c_sequences[0] == "wait"{
 				image_index = 0;
