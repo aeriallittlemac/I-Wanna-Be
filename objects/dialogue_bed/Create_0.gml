@@ -1,4 +1,7 @@
 event_inherited();
+if instance_exists(inst_60A96728){
+	instance_destroy(inst_60A96728)
+}
 if global.day == 1{
 	global.player_sleeping = true;
 	if global.night{

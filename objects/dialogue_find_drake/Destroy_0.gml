@@ -13,8 +13,9 @@ else{
 		item_remove(global.item_list.padlock);
 		QuestCompleted(global.quest_list.get_padlock);
 		NewQuest(global.quest_list.back_to_your_room, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-		AddInstanceToActivate(inst_BOBBYS_ROOM_DRUM_KIT);
 		AddInstanceToActivate(inst_WEI_DRUM_DEBUT);
 		teleport_npc(obj_mcronald, school_2F, 582, 125, LEFT);
+		global.game_time = "8:00 pm";
+		global.night = true;
 	}
 }

@@ -128,6 +128,24 @@ global.quest_list = {
 		quest_y : 104,
 	},
 	//day 3
+	go_to_lab : {
+		description : "Go to Lab",
+		icon: spr_main_quest_icon,
+		quest_room : school_B1,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1130,
+		quest_y : 104,
+	},
+	guys_potion : {
+		description : "Guy's potion",
+		icon: spr_side_quest_icon,
+		quest_room : school_B1,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1290,
+		quest_y : 104,
+	},
 	potato_battery : {
 		description : "Complete the lab experiment",
 		icon: spr_main_quest_icon,
@@ -135,6 +153,15 @@ global.quest_list = {
 		quest_room_width : 1620,
 		//1620 is default
 		quest_x : 1330,
+		quest_y : 104,
+	},
+	band_practice : {
+		description : "Go to band practice.",
+		icon: spr_main_quest_icon,
+		quest_room : school_2F,
+		quest_room_width : 810,
+		//1620 is default
+		quest_x : 409,
 		quest_y : 104,
 	},
 
@@ -181,6 +208,9 @@ global.storylines = {
 				job: false,
 			},
 		},
+		Day_Four : {
+			quiz_pass: false,
+		},
 	},
 	Lab : {
 		Day_Three : {
@@ -212,18 +242,20 @@ global.storylines = {
 				ashley: false,
 				brooklyn: false,
 			},
+			letters_delievered:{
+				grace: false,
+				brooklyn: false,
+			},
 		},
 		
 	},
 	
 	Band : {
-		First_song : {
-			Frenchies_guitar: false,
-			Weis_vocals: false,
-		},
+		
 		First_practice : {
 			run: 1, //1, 2, 3
 		},
+		Frenchie_poisoned: false,
 	},
 	
 	Grace : {

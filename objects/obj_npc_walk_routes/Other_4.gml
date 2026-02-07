@@ -43,6 +43,24 @@ if room == school_1F{
 		default:
 		}
 	}
+	if global.day == 4
+	{
+		switch (global.game_time){
+
+		case "10:00 am":
+			teleport_npc(obj_mei, school_1F,1585,161,LEFT);
+			teleport_npc(obj_ashley, school_1F,1565,161,LEFT);
+			npc_speech_bubble(obj_mei, speech_mei_chatter);
+			npc_move_to_pos(obj_mei, 0.5, 0, 722, obj_guy.y);
+			npc_move_to_pos(obj_ashley, 0.5, 0, 722, obj_guy.y);
+			npc_move_to_pos(obj_mei, 0, 1, obj_mei.x, 96);
+			npc_move_to_pos(obj_ashley, 0, 1, obj_ashley.x, 96);
+			delayed_npc_tp(obj_mei, noone, 0,0);
+			delayed_npc_tp(obj_ashley, noone, 0,0);
+		break;
+		default:
+		}
+	}
 	
 }
 	alarm[11] = 20;

@@ -1,7 +1,7 @@
 if global.storylines.Grace.truth_or_dare_confession{
 	if envelopes{
 		global.storylines.Grace.deny_rumor = true
-		npc_move_to_pos(obj_frenchie, 1, 0, obj_player.x + 8, 0);
+		npc_move_to_pos(obj_frenchie, 1, 0, obj_player.x - 8, 0);
 		game_wait(1);
 		game_NewDialogue(cutscene_band_first_lunch_1_envelope);
 		//make frenchie walk over to player
@@ -14,7 +14,7 @@ if global.storylines.Grace.truth_or_dare_confession{
 	}
 }
 else{
-	npc_move_to_pos(obj_frenchie, 1, 0, obj_player.x + 8, 0);
+	npc_move_to_pos(obj_frenchie, 1, 0, obj_player.x - 12, 0);
 	game_wait(1);
 	game_NewDialogue(cutscene_band_first_lunch_2_envelope);
 }

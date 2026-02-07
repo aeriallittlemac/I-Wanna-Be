@@ -1,3 +1,4 @@
+game_camera_change_settings(obj_player.x, -1);
 teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP)
 teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP)
 teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);

@@ -5,7 +5,7 @@ win_cutscene = dialogue_band_first_practice_end;
 lose_cutscene = dialogue_band_first_practice_start_over_1;
 tempo = 100;
 arrows = array_create(0);
-for(var i = 0; i<28; i++){
+for(var i = 0; i<29; i++){
 array_push(arrows, [1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0]);
 }
 event_inherited();

@@ -1,13 +1,11 @@
 teleport_npc(obj_frenchie, school_1F_run_minigame, 20, 120, RIGHT);
 
 obstacle_sprites = [
-	spr_PBnJ_plate, 
-	spr_burger_on_a_plate, 
-	spr_crack_bag, 
-	spr_hot_pocket, 
-	spr_pork_bun, 
-	spr_blender, 
-	spr_toaster, 
+	spr_cake, 
+	spr_caution_sign, 
+	spr_fallen_trashcan, 
+	spr_pigeon, 
+	spr_soccer_ball,
 ];
 
 obstacle_count = 30;
@@ -37,6 +35,7 @@ var initial_seed = random_get_seed();
 randomize();
 
 for (var i = 0; i < obstacle_count; ++i) {
+	
 	var obstacle = instance_create_depth(
 		obstacle_start_x + obstacle_spacing_x * i, 
 		obstacle_start_y + irandom(2) * obstacle_spacing_y, 
@@ -44,7 +43,7 @@ for (var i = 0; i < obstacle_count; ++i) {
 		obj_obstacle, 
 		{
 			obstacle_sprite: obstacle_sprites[irandom(array_length(obstacle_sprites) - 1)], 
-			obstacle_width: obstacle_width, 
+			obstacle_width: obstacle_width,
 			obstacle_height: obstacle_height
 		}
 	);
@@ -68,5 +67,5 @@ obj_player.player_frozen = true;
 call_later(countdown_length, time_source_units_seconds, function() {
 	obj_player.player_frozen = false;
 	obj_player.x_lock = player_speed;
-	npc_animate(obj_frenchie, spr_frenchie_right);
+	npc_animate(obj_frenchie, spr_frenchie_right_scalpel_chase);
 });

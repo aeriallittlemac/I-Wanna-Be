@@ -24,6 +24,7 @@ if global.storylines.Grace.truth_or_dare_confession{
 				scr_text("Are you two friends, or-", spr_frenchie_icon, 1);
 				scr_text("Why do you care so much, man?", spr_wei_icon, 0);
 				scr_text("What, is this conversation not Christian enough for you, Wei?", spr_mcronald_icon, 1);
+				scr_text("Shall we tell him about your “no dating before marriage”?", spr_mcronald_icon, 1);
 				scr_text("Nah, it just bores me.",  spr_wei_icon, 0);
 				scr_text("Tell them that you barely know her, and you just go to the same club as her.");
 				scr_text("*sigh of relief", spr_frenchie_icon, 1);

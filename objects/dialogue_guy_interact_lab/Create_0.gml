@@ -67,10 +67,13 @@ else{
 		scr_text("Come back to me when you got the goods.", spr_guy_icon, 0);
 		scr_text("Get on with it!", spr_guy_icon, 0);
 	}
-	else{
+	else if global.storylines.Lab.Day_Three.potato_battery.potato && global.storylines.Lab.Day_Three.potato_battery.zinc && global.storylines.Lab.Day_Three.potato_battery.copper_coin{
 		potato_battery = true;
 		scr_text("Okay, I see you have the materials.", spr_guy_icon, 0);
 		scr_text("Here, have this LED light with wires.", spr_guy_icon, 0);
 		scr_text("Don't you google this, alright?", spr_guy_icon, 0);
+	}
+	else{
+		scr_text("You and your buddy need one potato, a piece of copper, and a piece of zinc.", spr_guy_icon, 0);
 	}
 }

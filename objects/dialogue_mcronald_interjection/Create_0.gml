@@ -37,6 +37,8 @@ else{
 	
 	scr_text("It’s the former, right? Tell me it’s the former.", spr_mcronald_icon, 0);
 	
+	scr_text("You");
+	
 	scr_option("Triple Down", "triple-down");
 	
 	scr_option("Affirm", "affirm");
