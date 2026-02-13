@@ -164,7 +164,16 @@ global.quest_list = {
 		quest_x : 409,
 		quest_y : 104,
 	},
-
+	//day 4
+	math_quiz : {
+		description : "Math quiz.",
+		icon: spr_main_quest_icon,
+		quest_room : school_1F,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1080,
+		quest_y : 95,
+	},
 	
 	
 }

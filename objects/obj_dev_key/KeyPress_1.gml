@@ -9,14 +9,17 @@
 #macro SEWING_CLUB_WEDNESDAY ord("F")
 #macro WEI_DRUMS_DEBUT ord("V")
 #macro MATH_QUIZ ord("L")
-#macro THURSDAY_MORNING ord("M")
+#macro WEDNESDAY_MORNING ord("M")
 
 if keyboard_check(SEWING_CLUB_WEDNESDAY){
 	global.day = 4;
 	global.game_time = "3:30 pm";
 	var sewing_club_r1 = [obj_ashley, obj_grace];
-	if global.storylines.Grace.truth_or_dare_confession && global.storylines.Grace.deny_rumor{
+	if global.storylines.Grace.truth_or_dare_confession{
 		sewing_club_r1 = [obj_ashley, noone];
+		if (!global.storylines.Grace.deny_rumor){
+			teleport_npc(obj_grace, school_sewing_club, 202, 117, DOWN);
+		}
 	}
 	for(var i = 0; i < array_length(sewing_club_r1); i++){
 		teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
@@ -35,8 +38,11 @@ if keyboard_check(SEWING_CLUB_WEDNESDAY){
 	obj_grace.entityActivateArg = dialogue_graceseat;
 }
 
-if keyboard_check(THURSDAY_MORNING){
+if keyboard_check(WEDNESDAY_MORNING){
+	game_camera_change_settings(obj_player,-1);
 	AddInstanceToActivate(inst_JAKE_CONTRACT);
+	teleport_player(654, 122, school_2F);
+	AddInstanceToDestroy(inst_1D43132F);
 	teleport_npc(obj_jake, school_2F, 551, 120, DOWN);
 	global.day = 4;
 	global.game_time = "10:00 am";

@@ -1,1 +1,1 @@
-instance_destroy(self);
+time_over = true;

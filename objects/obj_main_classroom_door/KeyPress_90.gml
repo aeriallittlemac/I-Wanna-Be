@@ -23,6 +23,7 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue&&!instance_exists(o
 	else if global.day == 4{
 		if global.game_time == "10:00 am"{
 			show_debug_message("door");
+			QuestCompleted(global.quest_list.math_quiz);
 			var classroom_map = [[obj_job, obj_mcronald, obj_frenchie], [obj_wei, noone, obj_grace], [obj_drake, noone, obj_brooklyn]];
 			for(var i = 0; i < array_length(classroom_map); i++){
 			for(var j = 0; j < array_length(classroom_map[0]); j++){

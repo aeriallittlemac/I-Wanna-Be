@@ -1,4 +1,5 @@
 event_inherited();
+frenchie_storms_in = false;
 if global.day == 2 && global.game_time = "3:30 pm"{
 	if inst_GRACESEAT.seat_empty{
 		scr_text("An empty seat...");
@@ -55,4 +56,17 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 		global.hottest_rumor = "Pictures of Frenchie's love letter to Grace is being passed around!"
 		global.storylines.Sewing_Club.Day_Three.talked_to.grace = true;
 	}
+}
+else if global.day == 4 && global.game_time = "3:30 pm"{
+	if global.storylines.Grace.truth_or_dare_confession{
+		if (!global.storylines.Grace.deny_rumor){
+			frenchie_storms_in = true;
+			scr_text("asdkasdasd", spr_grace_fake_smile, 0);
+		}
+		else{
+			scr_text("An empty seat...");
+			scr_text("With a tint of a familiar (bloody?) feminine smell...");
+		}
+	}
+
 }

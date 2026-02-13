@@ -1,6 +1,7 @@
 var exit_cutscene = noone
 if player_score > 15{
 	exit_cutscene = dialogue_math_quiz_pass;
+	global.storylines.Main_Classroom.Day_Four.talked_to.quiz_pass = true;
 }
 else{
 	exit_cutscene = dialogue_math_quiz_fail

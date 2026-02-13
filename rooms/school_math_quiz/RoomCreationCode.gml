@@ -1,1 +1,1 @@
-instance_create_depth(0,0,0, obj_math_quiz);
+instance_create_depth(0,0,OBJ_MAX_DEPTH, obj_math_quiz);

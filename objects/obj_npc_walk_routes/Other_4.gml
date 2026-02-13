@@ -48,11 +48,11 @@ if room == school_1F{
 		switch (global.game_time){
 
 		case "10:00 am":
-			teleport_npc(obj_mei, school_1F,1585,161,LEFT);
-			teleport_npc(obj_ashley, school_1F,1565,161,LEFT);
+			teleport_npc(obj_mei, school_1F,1420,161,LEFT);
+			teleport_npc(obj_ashley, school_1F,1485,161,LEFT);
 			npc_speech_bubble(obj_mei, speech_mei_chatter);
-			npc_move_to_pos(obj_mei, 0.5, 0, 722, obj_guy.y);
-			npc_move_to_pos(obj_ashley, 0.5, 0, 722, obj_guy.y);
+			npc_move_to_pos(obj_mei, 1, 0, 722, obj_mei.y);
+			npc_move_to_pos(obj_ashley, 1, 0, 722, obj_ashley.y);
 			npc_move_to_pos(obj_mei, 0, 1, obj_mei.x, 96);
 			npc_move_to_pos(obj_ashley, 0, 1, obj_ashley.x, 96);
 			delayed_npc_tp(obj_mei, noone, 0,0);

@@ -6,3 +6,6 @@ if global.day == 2{
 		game_NewDialogue(dialogue_brooklyn_debut);
 	}
 }
+if frenchie_storms_in{
+	game_NewDialogue(dialogue_frenchies_confession);
+}
