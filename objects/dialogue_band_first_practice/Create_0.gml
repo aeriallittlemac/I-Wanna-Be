@@ -1,9 +1,7 @@
 event_inherited();
-scr_text("Yo, Bobby. Remember that band I was talking about?", spr_wei_icon, 0);
 scr_text("Here it is. Here’s our drummer, guys!", spr_wei_icon, 0);
-scr_text("Our new drummer is Bobby? Haha, splendid!", spr_mcronald_icon, 1);
+scr_text("My man!", spr_mcronald_icon, 0);
 scr_text("W-what about lunch, guys?", spr_frenchie_icon, 1);
-scr_text("Our new drummer is Bobby? Haha, splendid!", spr_mcronald_icon, 1);
 scr_text("It’s all good, I’ve bargained with Gambino.", spr_mcronald_icon, 1);
 scr_text("He’s so pleased that there’s some kind of artistic talent coming from the school.", spr_mcronald_icon, 1);
 scr_text("He’s willing to give us this time period and free lunch on top of it!", spr_mcronald_icon, 1);
@@ -11,3 +9,7 @@ scr_text("The meals from the cafeteria?", spr_wei_icon, 0);
 scr_text("Nah. Actual, edible stuff that doesn’t give you food poisoning.", spr_mcronald_icon, 1);
 scr_text("Anyways, let’s go down to do what we’re here for!", spr_wei_icon, 0);
 scr_text("Come on, give us that beat from yesterday!", spr_wei_icon, 0);
+scr_text("*notices your confused look", spr_wei_icon, 0);
+scr_text("We’re forming a rock band, Bobby!", spr_wei_icon, 0);
+scr_text("Come on, give us that beat from yesterday!", spr_wei_icon, 0);
+scr_text("You heard the man.");

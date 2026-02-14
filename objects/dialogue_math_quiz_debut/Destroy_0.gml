@@ -1,0 +1,1 @@
+teleport_player(80, 76, school_math_quiz);

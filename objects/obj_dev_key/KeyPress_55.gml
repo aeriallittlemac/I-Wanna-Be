@@ -1,1 +1,1 @@
-set_QTE_bgm(sewing_club_new);
+global.storylines.Grace.truth_or_dare_confession = true;

@@ -1,3 +1,3 @@
-npc_move_to_pos(obj_frenchie, 0.5, 0, obj_player.x-50, obj_player.x);
+npc_move_to_pos(obj_frenchie, 0.25, 0, obj_frenchie.x+15, obj_player.y);
 game_wait(0.7);
 game_NewDialogue(dialogue_frenchies_murder_attempt_5);

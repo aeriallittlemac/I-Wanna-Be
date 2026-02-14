@@ -1,0 +1,4 @@
+if instance_exists(obj_frenchie){
+	x = (obj_player.x + obj_frenchie.x)/2;
+	y = 76;
+}

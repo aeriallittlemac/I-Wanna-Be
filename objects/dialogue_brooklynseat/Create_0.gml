@@ -8,15 +8,19 @@ scr_text("I’m sure you’ll find her to be easier to deal with than me.", spr_
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
 	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			scr_text("Hmm?", spr_grace_icon, 0);
-			scr_text("What do you want, Grace’s boyfriend?", spr_grace_icon, 0);
-			scr_text("*snickers", spr_grace_icon, 0);
+		if !global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
+			if !global.storylines.Grace.deny_rumor{
+				scr_text("Hmm?", spr_grace_icon, 0);
+				scr_text("What do you want, Grace’s boyfriend?", spr_grace_icon, 0);
+				scr_text("*snickers", spr_grace_icon, 0);
+			}
+			else{
+				scr_text("Oof, that's rough.", spr_brooklyn_icon, 0);
+				scr_text("What else can I say?", spr_brooklyn_icon, 0);
+				scr_text("I pity the fool...", spr_brooklyn_icon, 0);
+			}
 		}
 		else{
-			scr_text("Oof, that's rough.", spr_brooklyn_icon, 0);
-			scr_text("What else can I say?", spr_brooklyn_icon, 0);
 			scr_text("I pity the fool...", spr_brooklyn_icon, 0);
 		}
 	
@@ -27,6 +31,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 			scr_text("You hand her McRonald’s letter")
 			scr_text("Now what? I’m kinda busy, kid.", spr_brooklyn_icon, 0);
 			scr_text("Just hand it here and scram.", spr_brooklyn_icon, 0);
+			global.storylines.Sewing_Club.Day_Three.letters_delievered.brooklyn = true;
 			item_remove(global.item_list.mcronalds_envelope);
 		}
 		else{
@@ -35,4 +40,13 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 		
 	}
 	global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn = true;
+}
+else if global.day == 4 && global.game_time == "3:30 pm"{
+	if global.storylines.Sewing_Club.Day_Three.letters_delievered.brooklyn{
+		scr_text("*sad", spr_brooklyn_icon, 0);
+	}
+	else{
+		scr_text("*about Grace", spr_brooklyn_icon, 0);
+	}
+	global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
 }
