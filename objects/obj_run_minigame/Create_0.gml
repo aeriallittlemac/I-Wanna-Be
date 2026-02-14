@@ -10,19 +10,16 @@ obstacle_sprites = [
 
 obstacle_count = 30;
 
-obstacle_width = 20;
-obstacle_height = 20;
-
 obstacle_start_x = 285;
-obstacle_start_y = 105;
+obstacle_start_y = 100;
 obstacle_spacing_x = (2400 - obstacle_start_x) / obstacle_count;
-obstacle_spacing_y = 15;
+obstacle_spacing_y = 20;
 
 player_speed = 1;
 player_slowed = 0.25;
 player_slowed_duration = 0.5;
 
-frenchie_speed = 100;
+frenchie_speed = 105;
 stab_error = 10;
 
 timer = -1;
@@ -42,9 +39,7 @@ for (var i = 0; i < obstacle_count; ++i) {
 		0, 
 		obj_obstacle, 
 		{
-			obstacle_sprite: obstacle_sprites[irandom(array_length(obstacle_sprites) - 1)], 
-			obstacle_width: obstacle_width,
-			obstacle_height: obstacle_height
+			obstacle_sprite: obstacle_sprites[irandom(array_length(obstacle_sprites) - 1)]
 		}
 	);
 	obstacle.on_collision = function() {

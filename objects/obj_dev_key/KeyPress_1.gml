@@ -8,6 +8,7 @@
 #macro SEWING_CLUB_SECOND_DAY ord("N")
 #macro SEWING_CLUB_WEDNESDAY ord("F")
 #macro WEI_DRUMS_DEBUT ord("V")
+#macro RUN_MINIGAME ord("R")
 #macro MATH_QUIZ ord("L")
 #macro WEDNESDAY_MORNING ord("M")
 
@@ -61,7 +62,6 @@ if keyboard_check(WEI_DRUMS_DEBUT){
 	global.game_time = "8:00 pm";
 	global.night = true;
 }
-#macro RUN_MINIGAME ord("R")
 
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	if global.storylines.Grace.truth_or_dare_confession{
