@@ -1,3 +1,4 @@
+instance_destroy(inst_60CDF728);
 npc_move_to_pos(obj_grace, 1, 0, 89, obj_grace.y);
 game_camera_change_settings(obj_player, 1);
 game_wait(3);
