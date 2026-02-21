@@ -277,3 +277,5 @@ global.storylines = {
 }
 
 global.hottest_rumor = "";
+global.reputation = 50;
+global.female_affinity = 50;

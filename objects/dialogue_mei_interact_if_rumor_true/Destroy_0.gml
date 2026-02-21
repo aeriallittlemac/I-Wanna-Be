@@ -1,1 +1,0 @@
-global.storylines.Sewing_Club.Day_Three.talked_to.mei = true;

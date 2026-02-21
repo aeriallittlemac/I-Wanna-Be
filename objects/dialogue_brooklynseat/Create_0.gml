@@ -15,9 +15,19 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 				scr_text("*snickers", spr_grace_icon, 0);
 			}
 			else{
-				scr_text("Oof, that's rough.", spr_brooklyn_icon, 0);
-				scr_text("What else can I say?", spr_brooklyn_icon, 0);
-				scr_text("I pity the fool...", spr_brooklyn_icon, 0);
+				scr_text("You’re cooked, buddy.", spr_brooklyn_icon, 0);
+				scr_text("I don’t know what to tell you.", spr_brooklyn_icon, 0);
+				scr_text("Grace’s parents are rich lawyers, you might actually end up in a juvenile cell.", spr_brooklyn_icon, 0);
+				scr_text("Hm? A wax-sealed envelope in this day and age...");
+				scr_text("interesting.", spr_brooklyn_icon, 0);
+				scr_text("You don’t strike me as such an old fashioned guy.", spr_brooklyn_icon, 0);
+				scr_text("I assume you’re just the messenger boy?", spr_brooklyn_icon, 0);
+				scr_text("You nod your head.");
+				scr_text("Well, I thank you for your service.", spr_brooklyn_icon, 0);
+				scr_text("And your sacrifice for our amusement.", spr_brooklyn_icon, 0);
+				scr_text("But hey, sometimes little jokes turn into criminal records, you know.", spr_brooklyn_icon, 0);
+				scr_text("It happens.", spr_brooklyn_icon, 0);
+				scr_text("Holy sh*t, this girl is evil.");
 			}
 		}
 		else{

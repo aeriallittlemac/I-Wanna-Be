@@ -35,3 +35,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 	}
 	global.storylines.Sewing_Club.Day_Three.talked_to.ashley = true;
 }
+else if global.day == 4 && global.game_time == "3:30 pm"{
+	scr_text("Someone seems to not be here...")
+	scr_text("You can still smell the faint fragrance of books...")
+}

@@ -3,6 +3,7 @@
 #macro GAMBINOS_ROOM ord("Y")
 #macro LOCKERS ord("T")
 #macro LUNCH ord("G")
+#macro WEDNESDAY_LUNCH ord("H")
 #macro BAND_FIRST_PRACTICE ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_SECOND_DAY ord("N")
@@ -11,31 +12,57 @@
 #macro MATH_QUIZ ord("L")
 #macro WEDNESDAY_MORNING ord("M")
 
+if keyboard_check(WEDNESDAY_LUNCH){
+	global.day = 4;
+	global.game_time = "12:00 pm"
+	AddInstanceToDestroy(inst_1D032C1A);
+	AddInstanceToActivate(inst_210D4C1);
+	game_camera_change_settings(obj_player,-1);
+	obj_npc_manager.npcs[0].initial_animation = spr_wei_eating;
+	obj_npc_manager.npcs[5].initial_animation = spr_mcronald_eating;
+	obj_npc_manager.npcs[12].initial_animation = spr_frenchie_eating;
+	
+	//npc_animate(obj_frenchie, spr_frenchie_right)
+	teleport_npc(obj_frenchie, school_1F, 900, 155, RIGHT);
+	//npc_animate(obj_mcronald, spr_mcronald_down)
+	teleport_npc(obj_mcronald, school_1F, 945, 135, DOWN);
+	//npc_animate(obj_wei, spr_wei_down)
+	teleport_npc(obj_wei, school_1F, 1000, 135, DOWN);
+	teleport_player(980, 170, school_1F, dialogue_band_first_lunch);
+	instance_activate_object(INST_LUNCH_TABLE);
+}
+
 if keyboard_check(SEWING_CLUB_WEDNESDAY){
 	global.day = 4;
 	global.game_time = "3:30 pm";
-	var sewing_club_r1 = [obj_ashley, obj_grace];
-	if global.storylines.Grace.truth_or_dare_confession{
-		sewing_club_r1 = [obj_ashley, noone];
-		if (!global.storylines.Grace.deny_rumor){
-			teleport_npc(obj_grace, school_sewing_club, 202, 117, DOWN);
-		}
-	}
-	for(var i = 0; i < array_length(sewing_club_r1); i++){
-		teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
-		}
-
-		
 	var sewing_club_r2 = [obj_brooklyn, obj_mei]; 
-	for(var i = 0; i < array_length(sewing_club_r2); i++){
-		teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
+	if global.storylines.Grace.truth_or_dare_confession && !global.storylines.Grace.deny_rumor{
+		sewing_club_r2 = [obj_brooklyn]; 
+		for(var i = 0; i < array_length(sewing_club_r2); i++){
+			teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
+		}
 	}
+	else{
+		var sewing_club_r1 = [obj_grace];
+		if !global.storylines.Grace.deny_rumor{
+			for(var i = 0; i < array_length(sewing_club_r1); i++){
+				teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
+			}
+		}
+		
+		for(var i = 0; i < array_length(sewing_club_r2); i++){
+			teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
+		}
+	}
+
 	teleport_player(215, 45, school_sewing_club);
-	
-	obj_ashley.entityActivateArg = dialogue_ashleyseat;
-	obj_mei.entityActivateArg = dialogue_meiseat;
+	if instance_exists(obj_mei){
+		obj_mei.entityActivateArg = dialogue_meiseat;
+	}
 	obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
-	obj_grace.entityActivateArg = dialogue_graceseat;
+	if instance_exists(obj_grace){
+		obj_grace.entityActivateArg = dialogue_graceseat;
+	}
 }
 
 if keyboard_check(WEDNESDAY_MORNING){
@@ -68,7 +95,7 @@ if keyboard_check(SEWING_CLUB_SECOND_DAY){
 		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
 	}
 	else{
-		teleport_player(215, 45, school_sewing_club);
+		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor_deny);
 	}
 	instance_create_depth(0,0,0,cutscene_talk_to_girls);
 	global.day = 3
@@ -146,6 +173,7 @@ if keyboard_check(BAND_FIRST_PRACTICE){
 }
 
 if keyboard_check(LAB_SCENE){
+	global.storylines.Grace.truth_or_dare_confession = true;
 	game_camera_change_settings(obj_player,-1);
 	show_debug_message("lab!");
 	teleport_player(100, 120, school_lab, dialogue_lab_debut);
@@ -158,9 +186,9 @@ if keyboard_check(LAB_SCENE){
 	obj_grace.entityActivateScript = NewDialogue;
 	obj_grace.entityActivateArg = dialogue_grace_interact_lab;
 	obj_brooklyn.entityActivateScript = NewDialogue;
-	obj_brooklyn.entityActivateArg = dialogue_brooklyn_interact_lab;
+	obj_brooklyn.entityActivateArg = dialogue_brooklyn_n_mei_interact_lab;
 	obj_mei.entityActivateScript = NewDialogue;
-	obj_mei.entityActivateArg = dialogue_mei_interact_lab;
+	obj_mei.entityActivateArg = dialogue_brooklyn_n_mei_interact_lab;
 	obj_job.entityActivateScript = NewDialogue;
 	obj_job.entityActivateArg = dialogue_job_interact_lab;
 	obj_guy.entityActivateScript = NewDialogue;

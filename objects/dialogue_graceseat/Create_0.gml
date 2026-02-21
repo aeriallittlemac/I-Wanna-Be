@@ -58,15 +58,25 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 	}
 }
 else if global.day == 4 && global.game_time = "3:30 pm"{
+	//if global.storylines.Grace.truth_or_dare_confession{
+	//	if (!global.storylines.Grace.deny_rumor){
+	//		frenchie_storms_in = true;
+	//		scr_text("asdkasdasd", spr_grace_fake_smile, 0);
+	//	}
+	//	else{
+	//		scr_text("An empty seat...");
+	//		scr_text("With a tint of a familiar (bloody?) feminine smell...");
+	//	}
+	//}
 	if global.storylines.Grace.truth_or_dare_confession{
-		if (!global.storylines.Grace.deny_rumor){
-			frenchie_storms_in = true;
-			scr_text("asdkasdasd", spr_grace_fake_smile, 0);
+		if !global.storylines.Grace.deny_rumor{
+			scr_text("Yo!", spr_mei_icon, 0);
 		}
 		else{
-			scr_text("An empty seat...");
-			scr_text("With a tint of a familiar (bloody?) feminine smell...");
+			scr_text("Yo!", spr_mei_icon, 0);
 		}
 	}
-
+	else{
+		scr_text("Yo!", spr_mei_icon, 0);
+	}
 }

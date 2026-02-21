@@ -34,4 +34,8 @@ draw_text_transformed_colour(text_x_offset, text_y_offset + 35, "Hottest rumor: 
 draw_set_font(quest_pixel_font);
 draw_text_transformed_colour(text_x_offset, text_y_offset, "Current quest: "+cur_quest, 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
 
+draw_text_transformed_colour(text_x_offset, text_y_offset - 35, "Reputation: " + global.reputation, 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
+
+draw_text_transformed_colour(text_x_offset, text_y_offset - 70, "Female affinity: " + global.female_affinity, 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
+
 }
