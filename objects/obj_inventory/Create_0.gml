@@ -43,6 +43,7 @@ global.item_list = {
 	padlock_key : {
 		item_name: "Padlock Key",
 		item_dialogue: -1,
+		acquired: false,
 	},
 	padlock : {
 		item_name: "Padlock",

@@ -1,11 +1,11 @@
 if !global.storylines.Gambinos_Missions.Day_One.acquired_padlock{
 	global.night = true;
 	global.game_time = "8:00 pm";
-	if !found_drake{
+	if (!global.item_list.padlock_key.acquired) {
 		item_acquired(global.item_list.padlock_key);
 		NewQuest(global.quest_list.get_padlock, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
 		instance_create_depth(0,0,0,stealth_mission_locker);
-		found_drake = true;
+		global.item_list.padlock_key.acquired = true;
 	}
 }
 else{
