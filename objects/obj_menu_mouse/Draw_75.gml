@@ -1,0 +1,1 @@
+draw_sprite_ext(self.sprite_index, -1, x, y, obj_pause_menu_new.minimap_scale, obj_pause_menu_new.minimap_scale, 0, c_white, 1);

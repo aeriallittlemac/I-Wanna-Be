@@ -85,3 +85,37 @@ for(var i=0; i < array_length(obj_npc_manager.npcs); i++){
 		}
 	}
 }
+
+function AddReputationPoints(num){
+		global.reputation += num;
+		var inst = instance_create_depth(obj_player.x - 28, obj_player.y - 56, OBJ_MAX_DEPTH, obj_ghost_text)
+			with inst{
+				default_pixel_font = font_add("joystix monospace.otf", 11*2, false, false, 32, 128);
+				ssign = "+"
+				if num < 0{
+					ssign = "-"
+				} 
+				overlay_text = "Reputatiion" + ssign + string(abs(num));
+				angle = -15;
+				timer = 0;
+				fade_speed = 0.8;
+				}
+
+}
+
+function AddFemaleAffinityPoints(num){
+	global.female_affinity += num;
+		var inst = instance_create_depth(obj_player.x - 22, obj_player.y - 44, OBJ_MAX_DEPTH, obj_ghost_text)
+			with inst{
+				default_pixel_font = font_add("joystix monospace.otf", 11*2, false, false, 32, 128);
+				ssign = "+"
+				if num < 0{
+					ssign = "-"
+				}
+				overlay_text = "Female Affinity" + ssign + string(abs(num));
+				angle = -15;
+				timer = 0;
+				fade_speed = 0.8;
+				}
+
+}

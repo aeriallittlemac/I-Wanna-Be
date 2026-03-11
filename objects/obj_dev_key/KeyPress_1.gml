@@ -1,27 +1,71 @@
 //Shortcuts to scenes
 #macro LAB_SCENE ord("U")
 #macro GAMBINOS_ROOM ord("Y")
+#macro FRENCHIE_GHOST ord("O")
 #macro LOCKERS ord("T")
 #macro LUNCH ord("G")
 #macro WEDNESDAY_LUNCH ord("H")
 #macro BAND_FIRST_PRACTICE ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_SECOND_DAY ord("N")
-#macro SEWING_CLUB_WEDNESDAY ord("F")
+#macro SEWING_CLUB_TEST ord("F")
 #macro WEI_DRUMS_DEBUT ord("V")
 #macro RUN_MINIGAME ord("R")
 #macro MATH_QUIZ ord("L")
 #macro WEDNESDAY_MORNING ord("M")
-
+#macro GRACE_RIPS_FRENCHIE ord("Q")
+if keyboard_check(FRENCHIE_GHOST){
+	game_camera_change_settings(obj_player, -1);
+	item_acquired(global.item_list.potato_battery);
+	teleport_player(62, 117, school_bobbys_room, dialogue_frenchie_ghost_debut);
+	AddInstanceToActivate(obj_frenchie_ghost);
+	AddInstanceToDestroy(inst_325AA326);
+	AddInstanceToDestroy(inst_60A96728);
+	AddInstanceToDestroy(inst_1D43132F);
+	AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
+	
+}
+if keyboard_check(GRACE_RIPS_FRENCHIE){
+	//audio_sound_gain()
+	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
+	instance_create_depth(0,0,0, player_n_grace);
+var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
+		with inst{
+			default_pixel_font = font_add("joystix monospace.otf", 45*2, false, false, 32, 128);
+			overlay_text = "10 seconds later\n";
+			angle = 0;
+			timer = 0;
+			fade_speed = 0.4;
+		}
+		teleport_npc(obj_grace, school_1F, 700, 125, LEFT);
+		teleport_npc(obj_brooklyn, school_1F, 760, 118, LEFT);
+		teleport_npc(obj_mei, school_1F, 810, 130, LEFT);
+		
+		npc_move_to_pos(obj_grace, 1, 0, 570, obj_grace.y);
+		npc_move_to_pos(obj_brooklyn, 1, 0, 615, obj_grace.y);
+		npc_move_to_pos(obj_mei, 1, 0, 660, obj_mei.y);
+		npc_move_to_pos(obj_mei, 1, 1, 655, 135 + 5);
+		npc_move_to_pos(obj_mei, 1, 0, 650, 135 + 5);
+		//npc_move_to_pos(obj_mei, 0, 1, 650, 135 + 4);
+		
+		//game_camera_change_settings(obj_grace, 1);
+		
+		global.cutscene = false;
+		global.game_time = "5:00 pm";
+		teleport_player(870, 135, school_1F);
+		move_to_pos(1, 0, 705, obj_player.y)
+		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
+}
 if keyboard_check(WEDNESDAY_LUNCH){
 	global.day = 4;
 	global.game_time = "12:00 pm"
 	AddInstanceToDestroy(inst_1D032C1A);
 	AddInstanceToActivate(inst_210D4C1);
 	game_camera_change_settings(obj_player,-1);
-	obj_npc_manager.npcs[0].initial_animation = spr_wei_eating;
-	obj_npc_manager.npcs[5].initial_animation = spr_mcronald_eating;
-	obj_npc_manager.npcs[12].initial_animation = spr_frenchie_eating;
+	obj_npc_manager.npcs[WEI].initial_animation = spr_wei_eating;
+	obj_npc_manager.npcs[MCRONALD].initial_animation = spr_mcronald_eating;
+	obj_npc_manager.npcs[FRENCHIE].initial_animation = spr_frenchie_eating;
 	
 	//npc_animate(obj_frenchie, spr_frenchie_right)
 	teleport_npc(obj_frenchie, school_1F, 900, 155, RIGHT);
@@ -33,28 +77,14 @@ if keyboard_check(WEDNESDAY_LUNCH){
 	instance_activate_object(INST_LUNCH_TABLE);
 }
 
-if keyboard_check(SEWING_CLUB_WEDNESDAY){
-	global.day = 4;
-	global.game_time = "3:30 pm";
-	var sewing_club_r2 = [obj_brooklyn, obj_mei]; 
-	if global.storylines.Grace.truth_or_dare_confession && !global.storylines.Grace.deny_rumor{
-		sewing_club_r2 = [obj_brooklyn]; 
-		for(var i = 0; i < array_length(sewing_club_r2); i++){
-			teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
-		}
-	}
-	else{
-		var sewing_club_r1 = [obj_grace];
-		if !global.storylines.Grace.deny_rumor{
-			for(var i = 0; i < array_length(sewing_club_r1); i++){
-				teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
-			}
-		}
-		
-		for(var i = 0; i < array_length(sewing_club_r2); i++){
-			teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
-		}
-	}
+if keyboard_check(SEWING_CLUB_TEST){
+	obj_npc_manager.npcs[BROOKLYN].initial_animation = spr_brooklyn_phone;
+	teleport_npc(obj_grace, school_sewing_club, 85+43*2, 90, LEFT);
+	teleport_npc(obj_mei, school_sewing_club, 106, 95, UP);
+	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, DOWN);
+	obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
+	teleport_npc(obj_ashley, school_sewing_club, 85+43, 68, DOWN);
+	
 
 	teleport_player(215, 45, school_sewing_club);
 	if instance_exists(obj_mei){
@@ -92,12 +122,17 @@ if keyboard_check(WEI_DRUMS_DEBUT){
 
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	if global.storylines.Grace.truth_or_dare_confession{
-		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+		if global.storylines.Grace.deny_rumor{
+			teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+		}
+		else{
+			teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+		}
 	}
 	else{
-		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor_deny);
+		teleport_player(215, 45, school_sewing_club);
 	}
-	instance_create_depth(0,0,0,cutscene_talk_to_girls);
+	//instance_create_depth(0,0,0,cutscene_talk_to_girls);
 	global.day = 3
 	global.game_time = "3:30 pm";
 	teleport_npc(obj_wei, noone, 0,0,DOWN);
@@ -152,10 +187,7 @@ if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	}
 
 }
-if keyboard_check(ord("Q")){
-	show_debug_message(obj_rhythm_game_arrows.block_speed);
-	show_debug_message(game_get_speed(gamespeed_fps));
-}
+
 if keyboard_check(BAND_FIRST_PRACTICE){
 	global.day = 3;
 	AddInstanceToDestroy(inst_1D032C1A);

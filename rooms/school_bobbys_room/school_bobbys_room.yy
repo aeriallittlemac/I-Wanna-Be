@@ -35,6 +35,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_224A5696","properties":[],"isDnd":false,"objectId":{"name":"obj_bookshelf","path":"objects/obj_bookshelf/obj_bookshelf.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CF0070E","properties":[],"isDnd":false,"objectId":{"name":"obj_drawers","path":"objects/obj_drawers/obj_drawers.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":8.0,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":53.0,"y":104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BOBBYS_ROOM_DRUM_KIT","properties":[],"isDnd":false,"objectId":{"name":"obj_drum_kit","path":"objects/obj_drum_kit/obj_drum_kit.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":133.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_383B1207","properties":[],"isDnd":false,"objectId":{"name":"obj_frenchie_ghost","path":"objects/obj_frenchie_ghost/obj_frenchie_ghost.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":10.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":212.0,"y":119.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2ED6D034","spriteId":{"name":"spr_bobbys_room_1_png","path":"sprites/spr_bobbys_room_1_png/spr_bobbys_room_1_png.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -59,6 +60,7 @@
     {"name":"inst_224A5696","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
     {"name":"inst_1CF0070E","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
     {"name":"inst_BOBBYS_ROOM_DRUM_KIT","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
+    {"name":"inst_383B1207","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

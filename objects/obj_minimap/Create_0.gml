@@ -192,6 +192,8 @@ global.storylines = {
 		pamphlet: false,
 		pamphlet_finished_reading: false,
 		night_no_drums: false,
+		vacuum_debut : false,
+		battery_in_vacuum: false,
 	},
 	Gambinos_Missions : {
 		Day_One : {
@@ -237,6 +239,7 @@ global.storylines = {
 				zinc: false,
 				copper_coin: false,
 				},
+				vacuum: false,
 			},
 			
 	},
@@ -271,7 +274,9 @@ global.storylines = {
 		truth_or_dare_confession: false,
 		deny_rumor: false,
 	},
-	
+	Frenchie : {
+		talk_to_ghost_debut: false,
+	},
 	
 	
 }

@@ -1,0 +1,1 @@
+global.storylines.Grace.truth_or_dare_confession = true;

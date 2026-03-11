@@ -18,7 +18,7 @@ function branches(branch){
 	switch(branch){
 		case "yes":
 			scr_text("You stuff the potato into your pocket.");
-			potato = true
+			potato = true;
 		break;
 
 	    case "no":
