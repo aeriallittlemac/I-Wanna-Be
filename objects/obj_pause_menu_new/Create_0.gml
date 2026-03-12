@@ -25,6 +25,27 @@ default_pixel_font = font_add("joystix monospace.otf", 40, false, false, 64, 128
 quest_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 rumor_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 
+name_pixel_font = font_add("joystix monospace.otf", 30, false, false, 64, 128);
+//character pamphlet setting
+title_pixel_font = font_add("joystix monospace.otf", 13, false, false, 64, 128);
+//relationship_pixel_font = font_add("joystix monospace.otf", 12, false, false, 64, 128);
+description_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
+
+pamphletPage = 0;
+character = obj_npc_manager.npcs[0];
+character_name = "";
+character_title = "";
+character_x = 260;
+character_y = 280;
+
+character_x_offset = 440;
+
+text_y = 90
+title_y = 130
+current_obersavation_y = 170;
+character_scale = 1.4;
+female_y_offset = 24;
+
 global.pause_menu = false;
 paused_surf = -1;
 
@@ -60,6 +81,13 @@ button_positions = {
 			left_x : 50,
 			top_y: 106,
 			right_x : 63 + sprite_get_bbox_right(IWB_UI_character_left_arrow)-sprite_get_bbox_left(IWB_UI_character_left_arrow),
+			bottom_y : 116 + sprite_get_bbox_bottom(IWB_UI_character_left_arrow) - sprite_get_bbox_top(IWB_UI_character_left_arrow),
+			button_sprite : IWB_UI_character_left_arrow,
+		},
+		right_arrow : {
+			left_x : 207,
+			top_y: 106,
+			right_x : 220 + sprite_get_bbox_right(IWB_UI_character_left_arrow)-sprite_get_bbox_left(IWB_UI_character_left_arrow),
 			bottom_y : 116 + sprite_get_bbox_bottom(IWB_UI_character_left_arrow) - sprite_get_bbox_top(IWB_UI_character_left_arrow),
 			button_sprite : IWB_UI_character_left_arrow,
 		},
@@ -112,8 +140,31 @@ else if page == 2{
 	draw_sprite_ext(IWB_UI_settings_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_top, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_character_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-	draw_sprite_ext(IWB_UI_character_left_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-	draw_sprite_ext(IWB_UI_character_right_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	if pamphletPage > 0{
+		draw_sprite_ext(IWB_UI_character_left_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+		if obj_menu_mouse.x > button_positions.page_three.left_arrow.left_x*minimap_scale
+	&& obj_menu_mouse.x < button_positions.page_three.left_arrow.right_x*minimap_scale
+	&& obj_menu_mouse.y > button_positions.page_three.left_arrow.top_y*minimap_scale
+	&& obj_menu_mouse.y < button_positions.page_three.left_arrow.bottom_y*minimap_scale{
+			draw_sprite_ext(IWB_UI_character_left_arrow_selected, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+			if keyboard_check_pressed(CONFIRM_ACTION){
+				pamphletPage --;
+			}
+		}
+	}
+	if pamphletPage < array_length(obj_npc_manager.npcs)-1{
+		draw_sprite_ext(IWB_UI_character_right_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+		if obj_menu_mouse.x > button_positions.page_three.right_arrow.left_x*minimap_scale
+	&& obj_menu_mouse.x < button_positions.page_three.right_arrow.right_x*minimap_scale
+	&& obj_menu_mouse.y > button_positions.page_three.right_arrow.top_y*minimap_scale
+	&& obj_menu_mouse.y < button_positions.page_three.right_arrow.bottom_y*minimap_scale{
+			draw_sprite_ext(IWB_UI_character_right_arrow_selected, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1); 
+			if keyboard_check_pressed(CONFIRM_ACTION){
+				pamphletPage ++;
+			}
+		}
+	}
+	
 }
 //draw_set_font(corner_pixel_font);
 //draw_text_transformed_colour(corner_label_x, 20, "pause menu", 1, 1, 0, c_white, c_white, c_white, c_white, 1);
@@ -128,4 +179,30 @@ else if page == 2{
 
 //draw_text_transformed_colour(text_x_offset + 270, text_y_offset - 35, "Female affinity: " + string(global.female_affinity), 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
 
+}
+function DrawCharacter(){
+character = obj_npc_manager.npcs[pamphletPage];
+var female = character.object == obj_mei || character.object == obj_grace || character.object == obj_ashley || character.object ==  obj_brooklyn;
+
+if character.introduced{
+	draw_sprite_ext(character.intro_sprite, 0, character_x, character_y + female_y_offset*female, character_scale*minimap_scale, character_scale*minimap_scale, 0, c_white, 1);
+	draw_set_color(c_maroon);
+	draw_set_font(name_pixel_font);
+	draw_text_transformed(character_x_offset, text_y, character.first_name, 1, 1, 0);
+
+	draw_set_font(title_pixel_font);
+	draw_text_transformed(character_x_offset, title_y, character.title, 1, 1, 0);
+
+
+	draw_set_font(description_pixel_font);
+	draw_text_ext_transformed_colour(character_x_offset, current_obersavation_y, character.current_obersavation, 16, 210, 1, 1, 0, c_maroon, c_maroon, c_maroon, c_maroon, 1);
+
+}
+else{
+	draw_sprite_ext(character.intro_sprite, 0, character_x, character_y + female_y_offset*female, character_scale*minimap_scale, character_scale*minimap_scale, 0, c_black, 1);
+	draw_set_color(c_maroon);
+	draw_set_font(default_pixel_font);
+	draw_text_transformed(character_x_offset, text_y, "???", 1, 1, 0);
+
+}
 }

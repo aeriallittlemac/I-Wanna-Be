@@ -36,8 +36,6 @@ if global.pause_menu
 		}
 	
 		}
-
-	}
 	if (hint_columns > page_max_columns){
 		for(var i=page_max_columns; i< hint_columns; i++){
 			for(var j=0; j<4; j++){
@@ -57,6 +55,12 @@ if global.pause_menu
 		}
 	
 	}
+	}
+	else if page == 2{
+		DrawCharacter();
+	
+	}
+	
 	//draw_sprite_ext(player_sprite, 0, (player_x - camera_get_view_x(view_camera[0]) )*minimap_scale, player_y*minimap_scale, player_scale_x*minimap_scale, player_scale_y*minimap_scale, 0, c_black, 1);
 }
 else{
@@ -65,10 +69,3 @@ else{
 
 	//draw_text_transformed_colour(text_x_offset + 270, text_y_offset - 35, "Female affinity: " + string(global.female_affinity), 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
 }
-
-
-
-
-
-
-

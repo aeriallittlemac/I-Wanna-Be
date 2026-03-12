@@ -3,6 +3,7 @@
 		instance_destroy(cutscene_check_rumors);
 	}
 	if(!global.pause_menu){
+		//obj_npc_manager.npcs[0].introduced = true;
 		instance_create_depth(160, 100, OBJ_MAX_DEPTH, obj_menu_mouse);
 		player_x = obj_player.x;
 		player_y = obj_player.y;

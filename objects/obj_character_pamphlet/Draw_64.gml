@@ -1,5 +1,5 @@
-draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, intro_alpha);
-draw_sprite_ext(spr_character_pamphlet, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+//draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, intro_alpha);
+//draw_sprite_ext(spr_character_pamphlet, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 character = obj_npc_manager.npcs[page];
 var female = character.object == obj_mei || character.object == obj_grace || character.object == obj_ashley || character.object ==  obj_brooklyn;
 
@@ -27,18 +27,18 @@ else{
 
 }
 
-draw_set_font(arrow_pixel_font);
-if page == 0{
-	draw_text_transformed_colour(right_arrow_x, arrow_y, "next\npage", 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
-}
-else if page == array_length(obj_npc_manager.npcs)-1{
-	draw_text_transformed_colour(left_arrow_x, arrow_y, "last\npage", 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
-}
-else{
-	if cursor == RIGHT{
-		right_arrow_selected();
-	}
-	else{
-		left_arrow_selected();
-	}
-}
+//draw_set_font(arrow_pixel_font);
+//if page == 0{
+//	draw_text_transformed_colour(right_arrow_x, arrow_y, "next\npage", 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
+//}
+//else if page == array_length(obj_npc_manager.npcs)-1{
+//	draw_text_transformed_colour(left_arrow_x, arrow_y, "last\npage", 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
+//}
+//else{
+//	if cursor == RIGHT{
+//		right_arrow_selected();
+//	}
+//	else{
+//		left_arrow_selected();
+//	}
+//}
