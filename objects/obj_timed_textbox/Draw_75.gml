@@ -55,7 +55,7 @@
 			} 
 			alarm[0] = pause_after_line[jj]*room_speed;
 			paused = true;
-			j++;
+			//j++;
 		}
 	}
 	if i > string_length(text[jj]){
@@ -71,7 +71,7 @@
 		else{
 			alarm[0] = pause_after_line[jj]*room_speed;
 			paused = true;
-			j++;
+			//j++;
 			i=1;
 			timer = 1;
 			if room != tutorial{

@@ -13,11 +13,11 @@ global.hints = {
 		found: false, 
 		save_name: "After First Class"
 	}, 
-	cretaceous: {
-		sprite: spr_grace_demonic, 
-		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
+	if_rumor_deny: {
+		sprite: spr_mei_nervous_grin, 
+		text: "Some people are better mediators? Perchance.", 
 		found: false, 
-		save_name: "Cretaceous"
+		save_name: "if_rumor_deny"
 	}, 
 	beef: {
 		sprite: spr_hot_pocket, 
@@ -55,8 +55,8 @@ global.hints = {
 is_choosing_restore = false;
 
 hint_grid = [
-	["meeting_mei", "after_first_class"], 
-	["cretaceous", "beef"],
+	["meeting_mei", "if_rumor_deny"], 
+	["after_first_class", "beef"],
 	["yup", "uhhuh"],
 	["yeh", "bi"]
 ];

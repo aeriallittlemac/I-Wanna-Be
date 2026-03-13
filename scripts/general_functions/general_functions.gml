@@ -197,6 +197,7 @@ function game_camera_change_settings(ctarget, chspeed){
 	array_push(obj_settings.game_ctarget, ctarget); 
 	array_push(obj_settings.game_chspeed, chspeed);
 	array_push(obj_settings.sequences, "camera_change_settings");
+	show_debug_message("Cam new target: " + object_get_name(ctarget));
 }
 function redo_UI(){
 	obj_redo_UI.life_count --;

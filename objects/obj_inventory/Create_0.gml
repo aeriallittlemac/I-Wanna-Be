@@ -61,6 +61,10 @@ global.item_list = {
 		item_name: "Copper Coin",
 		item_dialogue: -1,
 	},
+	potato_battery : {
+		item_name: "Potato Battery",
+		item_dialogue: dialogue_potato_battery,
+	},
 	love_potion: {
 		item_name: "'Love Potion'",
 		item_dialogue: -1,
@@ -72,6 +76,10 @@ global.item_list = {
 	mcronalds_envelope : {
 		item_name: "McRonald's Envelope",
 		item_dialogue: -1,
+	},
+	vacuum : {
+		item_name: "Vacuum Cleaner",
+		item_dialogue: dialogue_vacuum,
 	},
 
 

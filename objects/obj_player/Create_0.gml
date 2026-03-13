@@ -5,6 +5,7 @@ x_lock = 0;
 xspeed = 0;
 yspeed = 0;
 move_speed = 1;
+minigame_boost = 2;
 run_speed_multiplier = 2;
 previous_speed = 0;
 previous_y_pos = STANDARD_Y_POS;

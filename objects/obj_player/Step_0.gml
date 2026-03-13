@@ -13,14 +13,21 @@ if instance_exists(obj_rhythm_game_arrows){
 }
 image_alpha = !global.player_sleeping && !drumming;
 var speed_multiplier = 1;
+var minigame_boost_temp = 1;
 if run_key {
 	speed_multiplier = run_speed_multiplier;
 }
 if  keyboard_check_released(run_key){
 	speed_multiplier = 1;
 }
-xspeed = (max(x_lock, right_key) - left_key)*move_speed*speed_multiplier;
-yspeed = (down_key - up_key)*move_speed*speed_multiplier;
+if instance_exists(obj_math_quiz){
+	minigame_boost_temp = minigame_boost;
+}
+else{
+	minigame_boost_temp = 1;
+}
+xspeed = (max(x_lock, right_key) - left_key)*move_speed*speed_multiplier*minigame_boost_temp;
+yspeed = (down_key - up_key)*move_speed*speed_multiplier*minigame_boost_temp;
 image_speed = speed_multiplier;
 
 //depth

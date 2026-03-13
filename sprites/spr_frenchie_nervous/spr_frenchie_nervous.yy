@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Character Portraits",
-    "path": "folders/UI/Dialogue System/Character Portraits.yy",
+    "name": "Frenchie_expressions",
+    "path": "folders/UI/Dialogue System/Character Portraits/Frenchie_expressions.yy",
   },
 }

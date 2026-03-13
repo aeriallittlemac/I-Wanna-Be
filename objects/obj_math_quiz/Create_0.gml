@@ -57,22 +57,27 @@ function spawn_question(){
 				a = b;
 				b = temp;
 			}
-			var c = choose(a+b, irandom(9));
+			
 			var msign = choose("+", "-");
-			mq.qtext = string(a)+msign+string(b)+" = "+string(a+b);
+			var c = choose(a+b, irandom(9));
+			
 			if msign == "+"{
+				c = choose(a+b, irandom(9));
 				mq.qanswer = string(a+b == c);
 			}
 			else{
+				c = choose(a-b, irandom(9));
 				mq.qanswer = string(a-b == c);
 			}
+			mq.qtext = string(a)+msign+string(b)+" = "+string(c);
 		
 		}
+		mq.qspeed = min(6-(alarm[1]/576), 4);
 	}
 }
 time_over = false;
-cycles = 7;
-minimum_time = 1;
+cycles = 30;
+minimum_time = 1.5;
 maximum_time = 3;
 alarm[0] = random_range(minimum_time, maximum_time)*room_speed;
 alarm[1] = 96*cycles;

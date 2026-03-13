@@ -1,0 +1,17 @@
+event_inherited();
+teleport_npc(obj_mei, school_1F, obj_player.x - 40, obj_player.y, DOWN);
+teleport_npc(obj_wei, school_1F, obj_player.x - 80, obj_player.y, RIGHT);
+obj_mei.xspeed = 0;
+obj_mei.yspeed = 0;
+scr_text("So, sis.", spr_wei_icon, 1);
+scr_text("Whatchu text me for?", spr_wei_icon, 1);
+scr_text("Somebody putting hands on you?", spr_wei_icon, 1);
+scr_text("No!", spr_mei_nervous_grin, 0);
+scr_text("Bobby, this is Wei. my brother.", spr_mei_nervous_grin, 0);
+scr_text("I mean, you guys have met before, right?", spr_mei_nervous_grin, 0);
+scr_text("Duh. We play in a f*ckin' band n everythin'.", spr_wei_icon, 1);
+scr_text("Oh, nice!", spr_mei_nervous_grin, 0);
+scr_text("You ask why he's here.");
+scr_text("I don't know why, but this guy has always had an uncanny knack for finding people...", spr_mei_nervous_guilty, 0);
+scr_text("It's the coke. All that snorting made my nose super good.", spr_wei_icon, 1);
+scr_text("Can smell a pig from a mile away.", spr_wei_icon, 1);

@@ -196,18 +196,31 @@ global.npc_list = {
 	},
 }
 npcs = array_create(0);
+#macro WEI 0
 array_push(npcs, global.npc_list.wei);
+#macro GRACE 1
 array_push(npcs, global.npc_list.grace);
+#macro DRAKE 2
 array_push(npcs, global.npc_list.drake);
+#macro GUY 3
 array_push(npcs, global.npc_list.guy);
+#macro BROOKLYN 4
 array_push(npcs, global.npc_list.brooklyn);
+#macro MCRONALD 5
 array_push(npcs, global.npc_list.mcronald);
+#macro JOB 6
 array_push(npcs, global.npc_list.job);
+#macro MRCHEN 7
 array_push(npcs, global.npc_list.mrchen);
+#macro GAMBINO 8
 array_push(npcs, global.npc_list.gambino);
+#macro ASHLEY 9
 array_push(npcs, global.npc_list.ashley);
+#macro MEI 10
 array_push(npcs, global.npc_list.mei);
+#macro JAKE 11
 array_push(npcs, global.npc_list.jake);
+#macro FRENCHIE 12
 array_push(npcs, global.npc_list.frenchie);
 global.npc_active = false;
 

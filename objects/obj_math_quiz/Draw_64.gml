@@ -18,3 +18,5 @@ else{
 if time_over{
 	instance_destroy(self);
 }
+draw_set_font(default_pixel_font);
+draw_text_transformed_color(245 * minimap_scale,0,display_player_score_string, 0.5, 0.5, 0, c_white, c_white, c_white, c_white,1);

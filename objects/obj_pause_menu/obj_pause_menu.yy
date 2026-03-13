@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/UI.yy",
+    "name": "Pause Menu",
+    "path": "folders/UI/Pause Menu.yy",
   },
 }

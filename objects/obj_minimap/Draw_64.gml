@@ -1,4 +1,4 @@
-
+ 
 // viewport width / camera width
 room_name = room_get_name(room)
 floor_cutoff = string_pos("_", room_name)

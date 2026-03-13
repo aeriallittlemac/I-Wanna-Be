@@ -1,3 +1,4 @@
+teleport_npc(obj_job, school_1F, 1000, 125, DOWN);
 audio_stop_sound(classroom);
 var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 with inst{
@@ -9,12 +10,3 @@ with inst{
 }
 global.cutscene = false;
 global.game_time = "11:00 pm";
-NewQuest(global.quest_list.band_practice, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-teleport_npc(obj_frenchie, school_2F, 375, 135, DOWN);
-teleport_npc(obj_mcronald, school_2F, 450, 150, DOWN);
-teleport_npc(obj_wei, school_2F, 350, 185, UP);
-obj_npc_manager.npcs[0].initial_animation = spr_wei_rapping_1;
-obj_npc_manager.npcs[5].initial_animation = spr_mcronald_keyboard_1;
-obj_npc_manager.npcs[12].initial_animation = spr_frenchie_guitar_1;
-global.storylines.Main_Classroom.Day_Four.quiz_pass = true;
-teleport_player(1140, 120, school_1F);

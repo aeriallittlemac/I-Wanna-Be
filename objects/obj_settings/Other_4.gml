@@ -14,3 +14,6 @@ else{
 		instance_deactivate_object(INST_LUNCH_TABLE);
 	}
 }
+if room == school_lab{
+	set_QTE_bgm(lab_theme);
+}

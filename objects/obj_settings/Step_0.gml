@@ -128,6 +128,9 @@ else{
 		 }
 	}
 }
+if global.reputation <= 0 || global.female_affinity <= 0{
+	instance_create_depth(0, 0, OBJ_MAX_DEPTH, obj_game_over_screen);
+}
 
 
 

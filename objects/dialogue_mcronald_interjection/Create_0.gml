@@ -3,28 +3,6 @@ if global.storylines.Grace.truth_or_dare_confession{
 	if !global.storylines.Grace.deny_rumor{
 		scr_text("Hey, Bobby.", spr_mcronald_icon, 0);
 
-		scr_text("Having fun? Ha ha.", spr_mcronald_icon, 0);
-
-		scr_text("A word to the wise, yeah?", spr_mcronald_icon, 0);
-
-		scr_text("Don’t get too close to the girls.", spr_mcronald_icon, 0);
-
-		scr_text("I mean, you can talk to them...", spr_mcronald_icon, 0);
-
-		scr_text("But get too close to them, and they might bite, yeah...?", spr_mcronald_icon, 0);
-
-		scr_text("You don’t follow.");
-
-		scr_text("I guess what I’m trying to say is...", spr_mcronald_icon, 0);
-
-		scr_text("I’ve seen this before. And I know how this ends.", spr_mcronald_icon, 0);
-
-		scr_text("...Sure.");
-	}
-}
-else{
-	scr_text("Hey, Bobby.", spr_mcronald_icon, 0);
-
 	scr_text("Having fun? Ha ha.", spr_mcronald_icon, 0);
 
 	scr_text("Listen. You seem to be enjoying yourself.", spr_mcronald_icon, 0);
@@ -79,5 +57,28 @@ else{
 
 		}
 	}
+		
+	}
+}
+else{
+	scr_text("Hey, Bobby.", spr_mcronald_icon, 0);
+
+		scr_text("Having fun? Ha ha.", spr_mcronald_icon, 0);
+
+		scr_text("A word to the wise, yeah?", spr_mcronald_icon, 0);
+
+		scr_text("Don’t get too close to the girls.", spr_mcronald_icon, 0);
+
+		scr_text("I mean, you can talk to them...", spr_mcronald_icon, 0);
+
+		scr_text("But get too close to them, and they might bite, yeah...?", spr_mcronald_icon, 0);
+
+		scr_text("You don’t follow.");
+
+		scr_text("I guess what I’m trying to say is...", spr_mcronald_icon, 0);
+
+		scr_text("I’ve seen this before. And I know how this ends.", spr_mcronald_icon, 0);
+
+		scr_text("...Sure.");
 
 }

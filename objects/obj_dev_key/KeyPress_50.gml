@@ -1,0 +1,1 @@
+global.storylines.Grace.deny_rumor = true;

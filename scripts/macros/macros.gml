@@ -17,7 +17,6 @@
 #macro QUEST_TEXT_FONT_SIZE 10
 #macro QUEST_TEXT_TIMER 1.5
 
-#macro WEI 0
 
 //controls
 #macro CONFIRM_ACTION  ord("Z")//ord("K")
