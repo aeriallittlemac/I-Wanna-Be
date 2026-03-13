@@ -20,6 +20,7 @@ if global.pause_menu
 	}
 	
 	if page == 0{
+	//cursor select for page one
 	for(var i=0; i< page_max_columns; i++){
 		for(var j=0; j<4; j++){
 			//draw_sprite_ext(IWB_UI_hint_box_column, -1, second_page_margin*minimap_scale + (sprite_get_bbox_right(IWB_UI_hint_box_column) - sprite_get_bbox_left(IWB_UI_hint_box_column) + hint_horizontal_margin)*minimap_scale*i, 0, minimap_scale, minimap_scale, 0, c_white, 1);
@@ -29,6 +30,7 @@ if global.pause_menu
 			&& obj_menu_mouse.y > hint_vertical_offset*minimap_scale + (hint_box_height + hint_vertical_margin)*minimap_scale*j
 			&& obj_menu_mouse.y < hint_vertical_offset*minimap_scale + (hint_box_height + hint_vertical_margin)*minimap_scale*(j+1){
 				draw_set_font(default_pixel_font);
+				draw_set_color(c_white);
 				draw_text_transformed(15, 15, "x: "+string(i), 0.5, 0.5, 0);
 				draw_text_transformed(15, 45, "y: "+string(j), 0.5, 0.5, 0);
 	
@@ -36,6 +38,7 @@ if global.pause_menu
 		}
 	
 		}
+	//cursor select for page two
 	if (hint_columns > page_max_columns){
 		for(var i=page_max_columns; i< hint_columns; i++){
 			for(var j=0; j<4; j++){
@@ -47,6 +50,7 @@ if global.pause_menu
 			&& obj_menu_mouse.y > hint_vertical_offset*minimap_scale + (hint_box_height + hint_vertical_margin)*minimap_scale*j
 			&& obj_menu_mouse.y < hint_vertical_offset*minimap_scale + (hint_box_height + hint_vertical_margin)*minimap_scale*(j+1){
 					draw_set_font(default_pixel_font);
+					draw_set_color(c_white);
 					draw_text_transformed(15, 15, "x: "+string(i), 0.5, 0.5, 0);
 					draw_text_transformed(15, 45, "y: "+string(j), 0.5, 0.5, 0);
 	
