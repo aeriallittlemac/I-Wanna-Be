@@ -17,7 +17,7 @@ global.hints = {
 		sprite: spr_mei_nervous_grin, 
 		text: "Some people are better mediators? Perchance.", 
 		found: false, 
-		save_name: "if_rumor_deny"
+		save_name: "If Rumor Deny"
 	}, 
 	beef: {
 		sprite: spr_hot_pocket, 
@@ -69,21 +69,46 @@ highlight_scale = sprite_get_width(spr_hint_box) / sprite_get_width(spr_hint_hig
 icon_scale_relative = 0.85;
 hint_grid_x = 100;
 hint_grid_y = 80;
-hint_grid_spacing = 80;
+hint_grid_row_spacing = 62;
+hint_grid_col_spacing = 70;
 hint_text_scale = 0.3;
 hint_text_max_width = 1500;
+hint_text_menu_max_width = 750;
 hint_text_padding = 10;
 hint_scale_x = hint_text_max_width / sprite_get_width(spr_hint);
+hint_menu_scale_x = hint_text_menu_max_width / sprite_get_width(spr_hint);
 
 default_pixel_font = font_add("joystix monospace.otf", 32, false, false, 32, 128);
 
-function draw_hint(text) {
+spr_hint_height = sprite_get_height(spr_hint);
+spr_hint_width = sprite_get_width(spr_hint);
+
+box_width = 15;
+
+function get_hint(row, col) {
+	var row_clamped = clamp(row, 0, array_length(hint_grid) - 1);
+	var col_clamped = clamp(col, 0, array_length(hint_grid[row_clamped]) - 1);
+	return global.hints[$hint_grid[row_clamped][col_clamped]];
+}
+
+function draw_hint_icon(row, col, origin_x, origin_y) {
+	var hint = get_hint(row, col);
+	if (!hint.found) {
+		return;
+	}
+	var icon_width = sprite_get_width(hint.sprite);
+	var icon_scale = box_width / icon_width;
+	draw_sprite_ext(hint.sprite, -1, origin_x + col * hint_grid_col_spacing, origin_y + row * hint_grid_row_spacing, icon_scale * ui_scale, icon_scale * ui_scale, 0, c_white, 1);
+}
+
+function draw_hint(text, origin_x, origin_y) {
 	draw_set_font(default_pixel_font);
 	draw_set_colour(#55402c);
-	var text_height = string_height_ext(text, -1, hint_text_max_width) * hint_text_scale;
-	var hint_scale_y = (text_height + hint_text_padding) / sprite_get_height(spr_hint) * 1.1;
-	draw_sprite_ext(spr_hint, -1, 0, viewport_height - text_height - hint_text_padding, hint_scale_x / ui_scale, hint_scale_y, 0, c_white, 1);	
-	draw_text_ext_transformed(hint_text_padding, viewport_height - text_height - hint_text_padding, text, -1, hint_text_max_width, hint_text_scale, hint_text_scale, 0);
+	var text_height = string_height_ext(text, -1, hint_text_menu_max_width) * hint_text_scale;
+	var hint_scale_y = (text_height + hint_text_padding) / spr_hint_height * 1.1;
+	var x_offset = spr_hint_width / 2 * hint_menu_scale_x / ui_scale;
+	draw_sprite_ext(spr_hint, -1, origin_x - x_offset, origin_y - text_height - hint_text_padding, hint_menu_scale_x / ui_scale, hint_scale_y, 0, c_white, 1);	
+	draw_text_ext_transformed(origin_x + hint_text_padding - x_offset, origin_y - text_height - hint_text_padding, text, -1, hint_text_menu_max_width, hint_text_scale, hint_text_scale, 0);
 }
 
 ephemeral_text = "";

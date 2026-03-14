@@ -17,6 +17,7 @@ hint_vertical_margin = 2;
 hint_box_height = 19;
 second_page_margin = 95;
 page_max_columns = 3;
+page_max_rows = 4;
 hint_columns = 6;
 
 font_add_enable_aa(false);
@@ -52,6 +53,7 @@ paused_surf = -1;
 cur_quest ="";
 page = 0;
 selected_page = page;
+focus_hint = -1;
 button_positions = {
 	bookmarks:{
 		hint_button : {
@@ -110,7 +112,6 @@ draw_text_transformed_colour(text_x_offset, text_y_offset, "Current quest: "+cur
 
 	draw_sprite_ext(IWB_UI_base, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	
-	
 if page == 0{
 	draw_sprite_ext(IWB_UI_character_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_settings_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
@@ -118,10 +119,20 @@ if page == 0{
 	draw_sprite_ext(IWB_UI_hint_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	for(var i=0; i<page_max_columns; i++){
 		draw_sprite_ext(IWB_UI_hint_box_column, -1, 12+(sprite_get_bbox_right(IWB_UI_hint_box_column) - sprite_get_bbox_left(IWB_UI_hint_box_column) + hint_horizontal_margin)*minimap_scale*i, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+		
+		var col = i;
+		for (var row = 0; row < page_max_rows; ++row) {
+			obj_hints.draw_hint_icon(row, col, 180, 105);
+		}
 	}
 	if (hint_columns > page_max_columns){
 		for(var i=0; i<hint_columns - page_max_columns; i++){
 			draw_sprite_ext(IWB_UI_hint_box_column, -1, second_page_margin*minimap_scale + (sprite_get_bbox_right(IWB_UI_hint_box_column) - sprite_get_bbox_left(IWB_UI_hint_box_column) + hint_horizontal_margin)*minimap_scale*i, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+			
+			var col = i + page_max_columns;
+			for (var row = 0; row < page_max_rows; ++row) {
+				obj_hints.draw_hint_icon(row, col, 170 - obj_hints.hint_grid_col_spacing * page_max_columns + second_page_margin * minimap_scale, 105);
+			}
 		}
 	
 	}

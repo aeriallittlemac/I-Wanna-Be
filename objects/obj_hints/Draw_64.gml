@@ -1,3 +1,15 @@
+if (ephemeral_duration > 0) {
+	draw_set_font(default_pixel_font);
+	draw_set_colour(#55402c);
+	var text_height = string_height_ext(ephemeral_text, -1, hint_text_max_width) * hint_text_scale;
+	var hint_scale_y = (text_height + hint_text_padding) / spr_hint_height * 1.1;
+	draw_sprite_ext(spr_hint, -1, 0, viewport_height - text_height - hint_text_padding, hint_scale_x / ui_scale, hint_scale_y, 0, c_white, 1);	
+	draw_text_ext_transformed(hint_text_padding, viewport_height - text_height - hint_text_padding, ephemeral_text, -1, hint_text_max_width, hint_text_scale, hint_text_scale, 0);
+}
+
+// BELOW IS DEPRECATED
+exit;
+
 if (global.in_hints){ //|| global.pause_menu) {
 	draw_sprite_ext(spr_hints_background, -1, 0, 0, ui_scale, ui_scale, 0, c_white, 1);
 	draw_sprite_ext(spr_hint_highlight, -1, hint_grid_x + focus_col * hint_grid_spacing + highlight_offset, hint_grid_y + focus_row * hint_grid_spacing + highlight_offset, highlight_scale * ui_scale, highlight_scale * ui_scale, 0, c_white, 1);
@@ -19,8 +31,4 @@ if (global.in_hints){ //|| global.pause_menu) {
 	draw_hint(focus_hint.found ? focus_hint.text : "???");
 	
 	ephemeral_duration = 0;
-}
-
-if (ephemeral_duration > 0) {
-	draw_hint(ephemeral_text);
 }
