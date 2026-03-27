@@ -16,8 +16,9 @@ obstacle_spacing_x = (2400 - obstacle_start_x) / obstacle_count;
 obstacle_spacing_y = 20;
 
 player_speed = 1;
-player_slowed = 0.25;
-player_slowed_duration = 0.5;
+has_immunity = false;
+player_fall_duration = 0.5;
+player_immune_duration = 2;
 
 frenchie_speed = 105;
 stab_error = 10;
@@ -26,13 +27,16 @@ timer = -1;
 countdown = ["3", "2", "1", "Run!"];
 countdown_length = array_length(countdown);
 
+flash_animation_steps = 0;
+flash_animation_period_steps = 10;
+image_alpha_override = 1;
+
 show_debug_message("Creating obstacles...");
 
 var initial_seed = random_get_seed();
 randomize();
 
 for (var i = 0; i < obstacle_count; ++i) {
-	
 	var obstacle = instance_create_depth(
 		obstacle_start_x + obstacle_spacing_x * i, 
 		obstacle_start_y + irandom(2) * obstacle_spacing_y, 
@@ -43,12 +47,18 @@ for (var i = 0; i < obstacle_count; ++i) {
 		}
 	);
 	obstacle.on_collision = function() {
-		if (obj_player.x_lock < player_speed) {
+		if (has_immunity) {
 			return;
 		}
-		obj_player.x_lock = player_slowed;
-		call_later(player_slowed_duration, time_source_units_seconds, function() {
-			obj_player.x_lock = player_speed;
+		has_immunity = true;
+		obj_player.image_angle = 90;
+		obj_player.player_frozen = true;
+		call_later(player_fall_duration, time_source_units_seconds, function() {
+			obj_player.image_angle = 0;
+			obj_player.player_frozen = false;
+		});
+		call_later(player_immune_duration, time_source_units_seconds, function() {
+			has_immunity = false;
 		});
 	};
 }
