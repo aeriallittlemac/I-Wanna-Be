@@ -1,0 +1,16 @@
+text_switch_timer = room_speed/3;
+knife_timer = room_speed * 3;
+question_zero_x = 30;
+question_zero_y = 385;
+question_x_margin = 400;
+question_y_margin = 90;
+question_width = 600;
+question_line_sep = 40;
+text_option = 0;
+text_margin_of_error = 20;
+last_lane = 0;
+default_pixel_font = font_add("joystix monospace.otf", 35, false, false, 32, 128);
+alarm[1] = text_switch_timer;
+alarm[0] = knife_timer+ random_range(-knife_timer, 1);
+doubleknifecooldown = room_speed*2;
+knife = 0;

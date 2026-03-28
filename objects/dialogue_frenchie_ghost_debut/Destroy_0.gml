@@ -1,3 +1,1 @@
-
-
-//global.storylines.Lab.Day_Three.vacuum = true;
+NewQuest(global.quest_list.frenchie_ghost_pt_1, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);

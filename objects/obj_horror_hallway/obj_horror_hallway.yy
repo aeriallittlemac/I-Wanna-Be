@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_run_minigame",
-  "spriteId": null,
+  "name": "obj_horror_hallway",
+  "spriteId": {
+    "name": "spr_horror_hallway",
+    "path": "sprites/spr_horror_hallway/spr_horror_hallway.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,15 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Run Minigame",
-    "path": "folders/UI/Run Minigame.yy",
+    "name": "General Objects",
+    "path": "folders/General Objects.yy",
   },
 }

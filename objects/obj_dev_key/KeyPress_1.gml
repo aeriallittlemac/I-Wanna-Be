@@ -16,6 +16,9 @@
 #macro GRACE_RIPS_FRENCHIE ord("Q")
 if keyboard_check(FRENCHIE_GHOST){
 	game_camera_change_settings(obj_player, -1);
+	global.day = 3;
+	global.game_time = "12:00 am";
+	global.night = true;
 	item_acquired(global.item_list.potato_battery);
 	teleport_player(62, 117, school_bobbys_room, dialogue_frenchie_ghost_debut);
 	AddInstanceToActivate(obj_frenchie_ghost);
@@ -227,7 +230,8 @@ if keyboard_check(LAB_SCENE){
 	obj_guy.entityActivateArg = dialogue_guy_interact_lab;
 }
 if (keyboard_check(RUN_MINIGAME)) {
-	teleport_player(135, 120, school_1F_run_minigame);
+	//teleport_player(135, 120, school_1F_run_minigame);
+	teleport_player(x, y, school_run_minigame_new);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;

@@ -15,5 +15,6 @@ else{
 	}
 }
 if room == school_lab{
+	audio_stop_all();
 	set_QTE_bgm(lab_theme);
 }

@@ -1,6 +1,8 @@
-if selection == 1{
-	selection = 0;
-}
-else if selection == 3{
-	selection = 2;
+if !results{
+	if selection == 1{
+		selection = 0;
+	}
+	else if selection == 3{
+		selection = 2;
+	}
 }

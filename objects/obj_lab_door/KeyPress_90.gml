@@ -20,6 +20,12 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 			obj_guy.entityActivateScript = NewDialogue;
 			obj_guy.entityActivateArg = dialogue_guy_interact_lab;
 		}
+		else{
+			teleport_player(100, 120, school_lab);
+		}
+	}
+	else{
+		teleport_player(100, 120, school_lab);
 	}
 }
 

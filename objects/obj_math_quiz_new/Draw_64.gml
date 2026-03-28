@@ -1,5 +1,11 @@
 draw_set_font(default_pixel_font);
 if results{
+	if question_list[questions_displayed[selection]].question_answer{
+		draw_text_transformed_colour(85, 50, "Correct", 0.5, 0.5, 0, c_green, c_green, c_lime, c_lime,1);
+	}
+	else{
+		draw_text_transformed_colour(85, 50, "WRONG", 0.5, 0.5, 0, c_red, c_red, c_maroon, c_maroon,1);
+	}
 	draw_rectangle_colour(rect_one_x, rect_one_y, rect_one_x+rect_width, rect_one_y-rect_height_unit*red, #E51537, #E51537, #E51537, #E51537, false);
 	draw_rectangle_colour(rect_one_x+rect_width+rect_margins, rect_one_y,rect_one_x+rect_width+rect_margins+rect_width, rect_one_y-rect_height_unit*blue, #0565D1, #0565D1, #0565D1, #0565D1, false);
 	draw_rectangle_colour(rect_one_x+rect_width*2+rect_margins*2, rect_one_y, rect_one_x+rect_width*2+rect_margins*2+rect_width, rect_one_y-rect_height_unit*yellow, #D99F00, #D99F00, #D99F00, #D99F00, false);

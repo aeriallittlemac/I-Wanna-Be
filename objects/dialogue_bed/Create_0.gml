@@ -2,6 +2,21 @@ event_inherited();
 if instance_exists(inst_60A96728){
 	instance_destroy(inst_60A96728)
 }
+if instance_exists(obj_frenchie_ghost){
+	if global.storylines.Lab.Day_Three.vacuum{
+		scr_text("You have a tool at your disposal to get rid of him.");
+		scr_text("Use it.");
+		scr_text("W-whatchu looking at?", spr_frenchie_down_stare, 0);
+		scr_text("I'm gonna do it to you any time, n-now!", spr_frenchie_down_stare, 0);
+	}
+	else{
+		scr_text("I-I'm gonna ejaculate all over your bed, Bobby Johns!", spr_frenchie_down_stare, 0);
+		scr_text("There must be a way to deal with this incel.");
+		scr_text("Perhaps there's a device...");
+	}
+	
+}
+else{
 if global.day == 1{
 	global.player_sleeping = true;
 	if global.night{
@@ -57,4 +72,5 @@ else if global.night{
 }
 else {
 	scr_text("You can only sleep at night.");
+}
 }

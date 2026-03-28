@@ -164,6 +164,24 @@ global.quest_list = {
 		quest_x : 409,
 		quest_y : 104,
 	},
+	frenchie_ghost_pt_1 : {
+		description : "Find ghost dispelling device.",
+		icon: spr_main_quest_icon,
+		quest_room : school_B1,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1130,
+		quest_y : 104,
+	},
+	frenchie_ghost_pt_2 : {
+		description : "Dispel the ghost of frenchie",
+		icon: spr_main_quest_icon,
+		quest_room : school_2F,
+		quest_room_width : 810,
+		//1620 is default
+		quest_x : 650,
+		quest_y : 104,
+	},
 	//day 4
 	math_quiz : {
 		description : "Math quiz.",

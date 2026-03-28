@@ -1,7 +1,7 @@
 event_inherited();
 frenchie_suck = false;
 if instance_exists(obj_frenchie_ghost){
-	if global.storylines.Mechanics_Introduced.battery_in_vacuum{
+	if !global.storylines.Mechanics_Introduced.battery_in_vacuum{
 		scr_text("Out of battery.");
 		scr_text("How are you gonna use this?");
 		global.storylines.Mechanics_Introduced.vacuum_debut = true;

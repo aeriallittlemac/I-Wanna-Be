@@ -1,4 +1,4 @@
-if !global.pause_menu && !instance_exists(potato_battery_experiment){
+if !global.pause_menu && !instance_exists(potato_battery_experiment) && room != school_run_minigame_new{
 if room != tutorial{
 run_key = (keyboard_check(vk_lshift) || keyboard_check(CANCEL_ACTION) || x_lock != 0) && !global.cutscene;
 right_key = keyboard_check(MOVE_RIGHT);
@@ -202,4 +202,5 @@ image_index = 0;
 }
 else{
 	image_index = 0;
+	image_alpha = 0;
 }
