@@ -39,6 +39,10 @@ if room == school_1F{
 			npc_move_to_pos(obj_mei, 1, 0, 1620, obj_mei.y);
 			delayed_npc_tp(obj_mei, noone, 0,0);
 			
+			// Prevent dialogue from being triggered once class ends.
+			obj_mei.entityActivateArg = -1;
+			obj_grace.entityActivateArg = -1;
+			
 		break;
 		default:
 		}

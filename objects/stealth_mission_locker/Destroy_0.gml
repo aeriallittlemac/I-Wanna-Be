@@ -1,3 +1,8 @@
+if (destroy_stop) {
+	// Prevent possible double-initialization during debugging.
+	exit;
+}
+
 instance_create_depth(1232, 120, OBJ_MAX_DEPTH, obj_map_pin)
 teleport_npc(obj_grace, school_1F, 1170, 115, LEFT);
 npc_speech_bubble(obj_grace, speech_grace_locker)

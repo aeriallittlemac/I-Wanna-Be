@@ -1,3 +1,6 @@
+// DEPRECATED
+exit;
+
 if (global.in_hints && !is_choosing_restore) {
 	var right_key = keyboard_check_pressed(MOVE_RIGHT);
 	var left_key = keyboard_check_pressed(MOVE_LEFT);

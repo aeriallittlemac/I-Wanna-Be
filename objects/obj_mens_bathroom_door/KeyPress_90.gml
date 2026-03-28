@@ -1,6 +1,7 @@
 if (player_facing_self 
 	&& !global.cutscene && !global.in_dialogue
 	&& global.day >= 2
+	&& global.npc_list.frenchie.introduced
 ) {
 	var inst = instance_create_depth(0,0,-9999,obj_transition);
 	inst.target_x = 70;
