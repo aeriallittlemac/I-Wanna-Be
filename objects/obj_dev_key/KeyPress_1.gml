@@ -141,6 +141,7 @@ if keyboard_check(WEI_DRUMS_DEBUT){
 }
 
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
+	global.sewing_club_second_day_debug = true;
 	if global.storylines.Grace.truth_or_dare_confession{
 		if global.storylines.Grace.deny_rumor{
 			teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);

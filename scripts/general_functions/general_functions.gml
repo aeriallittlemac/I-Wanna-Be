@@ -332,3 +332,10 @@ function game_load_json(save_name) {
 	
 	show_debug_message("Loaded: " + fname);
 }
+
+function debug_skip(cond, func) {
+	if (variable_global_exists(cond) && variable_global_get(cond)) {
+		return;
+	}
+	func();
+}

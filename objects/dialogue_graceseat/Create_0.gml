@@ -29,15 +29,17 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 	}
 	else{
 		scr_text("Mmmm, what’s up?", spr_grace_fake_smile, 0);
-		scr_text("You hand her Frenchie’s letter.");
-		scr_text("Oh, what? That’s crazy, haha!", spr_grace_fake_smile, 0);
-		scr_text("Hey, look what I found!", spr_grace_fake_smile, 0);
-		scr_text("Is that a love letter?", spr_mei_icon, 0);
-		scr_text("That’s hilarious.", spr_brooklyn_icon, 1);
-		scr_text("H-how so?", spr_ashley_icon, 0);
-		scr_text("Shut up and listen to this:", spr_grace_fake_smile, 0);
+		debug_skip("sewing_club_second_day_debug", function() {
+			scr_text("You hand her Frenchie’s letter.");
+			scr_text("Oh, what? That’s crazy, haha!", spr_grace_fake_smile, 0);
+			scr_text("Hey, look what I found!", spr_grace_fake_smile, 0);
+			scr_text("Is that a love letter?", spr_mei_icon, 0);
+			scr_text("That’s hilarious.", spr_brooklyn_icon, 1);
+			scr_text("H-how so?", spr_ashley_icon, 0);
+			scr_text("Shut up and listen to this:", spr_grace_fake_smile, 0);
 		
-		scr_text("Dear Grace:...", spr_grace_icon, 0);
+			scr_text("Dear Grace:...", spr_grace_icon, 0);
+		});
 		
 		global.storylines.Sewing_Club.Day_Three.talked_to.grace = true;
 	}
