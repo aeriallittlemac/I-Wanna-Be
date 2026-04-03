@@ -116,6 +116,14 @@ if array_length(sequences) > 0{
 		array_delete(game_chspeed, 0, 1);
 		array_delete(sequences, 0, 1);
 	}
+	else if sequences[0] == "change_reputation"{
+		change_reputation(change_reputation_val[0]);
+		array_delete(sequences, 0, 1);
+	}
+	else if sequences[0] == "change_female_affinity"{
+		change_female_affinity(change_female_affinity_val[0]);
+		array_delete(sequences, 0, 1);
+	}
 	
 	
 }

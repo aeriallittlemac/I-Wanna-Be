@@ -204,6 +204,9 @@ array_push(rooms, school_3F);
 inv = array_create(0);
 //
 global.storylines = {
+	Side_Quests : {
+		toast_obtained : false,
+	},
 	Mechanics_Introduced : {
 		redo: false,
 		pause_menu: false,

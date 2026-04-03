@@ -42,6 +42,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_210D4C1","properties":[],"isDnd":false,"objectId":{"name":"obj_drum_kit","path":"objects/obj_drum_kit/obj_drum_kit.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":392.0,"y":111.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_WEI_DRUM_DEBUT","properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":531.0,"y":95.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_JAKE_CONTRACT","properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":603.0,"y":95.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D63E5F9","properties":[],"isDnd":false,"objectId":{"name":"obj_do_not_enter","path":"objects/obj_do_not_enter/obj_do_not_enter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":577.0,"y":33.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F_toaster","properties":[],"isDnd":false,"objectId":{"name":"obj_toaster","path":"objects/obj_toaster/obj_toaster.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":740.0,"y":117.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3C31B05D","spriteId":{"name":"spr_2F_1","path":"sprites/spr_2F_1/spr_2F_1.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -76,6 +78,8 @@
     {"name":"inst_210D4C1","path":"rooms/school_2F/school_2F.yy",},
     {"name":"inst_WEI_DRUM_DEBUT","path":"rooms/school_2F/school_2F.yy",},
     {"name":"inst_JAKE_CONTRACT","path":"rooms/school_2F/school_2F.yy",},
+    {"name":"inst_5D63E5F9","path":"rooms/school_2F/school_2F.yy",},
+    {"name":"inst_2F_toaster","path":"rooms/school_2F/school_2F.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

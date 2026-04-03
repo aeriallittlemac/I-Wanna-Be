@@ -66,8 +66,8 @@ if global.pause_menu
 				&& obj_menu_mouse.y < bottom_bound {
 					draw_set_font(default_pixel_font);
 					draw_set_color(c_white);
-					draw_text_transformed(15, 15, "x: "+string(i), 0.5, 0.5, 0);
-					draw_text_transformed(15, 45, "y: "+string(j), 0.5, 0.5, 0);
+					//draw_text_transformed(15, 15, "x: "+string(i), 0.5, 0.5, 0);
+					//draw_text_transformed(15, 45, "y: "+string(j), 0.5, 0.5, 0);
 					
 					focus_hint = obj_hints.get_hint(j, i);
 					obj_hints.draw_hint(focus_hint.found ? focus_hint.text : "???", (left_bound + right_bound) / 2, top_bound - 10);

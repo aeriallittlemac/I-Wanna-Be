@@ -166,6 +166,16 @@ function game_create_instance_depth(inst_x, inst_y, dep, obj){
 	array_push(obj_settings.sequences, "create_instance");
 }
 
+function game_change_reputation(val){
+	array_push(obj_settings.change_reputation_val, val);
+	array_push(obj_settings.sequences, "change_reputation");
+	
+}
+function game_change_female_affinity(val){
+	array_push(obj_settings.change_female_affinity_val, val);
+	array_push(obj_settings.sequences, "change_female_affinity");
+	
+}
 function item_acquired(item){
 	array_push(obj_inventory.inventory, item);
 	var inst = instance_create_depth(obj_player.x-30, min(obj_player.y + 10, 140), OBJ_MAX_DEPTH, obj_white_text_overlay);
@@ -209,6 +219,24 @@ function set_QTE_bgm(song){
 	audio_play_sound(song, 1, true);
 	global.bgm = song;
 	obj_music_manager.song_current_runtime = 0;
+}
+
+function change_reputation(val){
+	var inst = instance_create_depth(0,0,OBJ_MAX_DEPTH, obj_reputation_bar);
+	with inst{
+		new_val = global.reputation + val;
+		cur_val = global.reputation;
+		global.reputation += val;
+	}
+}
+
+function change_female_affinity(val){
+	var inst = instance_create_depth(0,0,OBJ_MAX_DEPTH, obj_female_affinity_bar);
+	with inst{
+		new_val = global.female_affinity + val;
+		cur_val = global.female_affinity;
+		global.female_affinity += val;
+	}
 }
 
 function is_deus_ex_machina() {

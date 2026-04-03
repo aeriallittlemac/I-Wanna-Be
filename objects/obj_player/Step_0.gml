@@ -51,7 +51,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && !player_frozen && room != tutorial{
+	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && !player_frozen && room != tutorial && !instance_exists(obj_reputation_bar) && !instance_exists(obj_female_affinity_bar){
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};

@@ -111,6 +111,8 @@ draw_set_font(quest_pixel_font);
 draw_text_transformed_colour(text_x_offset, text_y_offset, "Current quest: "+cur_quest, 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
 
 	draw_sprite_ext(IWB_UI_base, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	draw_healthbar(25*minimap_scale, 128*minimap_scale, 245*minimap_scale, 134*minimap_scale, global.reputation, #093315, c_maroon, #22B14C, 0, true, false);
+	draw_healthbar(25*minimap_scale, (128+11)*minimap_scale, 245*minimap_scale, (134+11)*minimap_scale, global.female_affinity, #4B214C, c_maroon, #A349A4, 0, true, false);
 	
 if page == 0{
 	draw_sprite_ext(IWB_UI_character_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);

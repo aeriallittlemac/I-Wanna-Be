@@ -51,7 +51,7 @@ else if filter_mode == "fade_in"{
 			NewQuest(global.quest_list.first_class, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)	
 		}
 		else if global.day ==3 {
-			NewQuest(global.quest_list.go_to_lab, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)
+			//NewQuest(global.quest_list.go_to_lab, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)
 		}
 		else if global.day == 4{
 			AddInstanceToActivate(inst_JAKE_CONTRACT);

@@ -53,6 +53,10 @@ global.item_list = {
 		item_name: "Potato",
 		item_dialogue: -1,
 	},
+	moldy_toast : {
+		item_name: "Moldy Toast",
+		item_dialogue: -1,
+	},
 	zinc_chip : {
 		item_name: "Zinc Chip",
 		item_dialogue: -1,

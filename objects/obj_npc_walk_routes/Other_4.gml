@@ -69,3 +69,21 @@ if room == school_1F{
 }
 	alarm[11] = 20;
 }
+if room == school_2F{
+	if global.day == 3
+	{
+		switch (global.game_time){
+
+		case "10:00 am":
+			//teleport_npc(obj_frenchie, school_2F,158,90,RIGHT);
+			//npc_move_to_pos(obj_frenchie, 1, 0, 358, obj_frenchie.y);
+			//delayed_npc_tp(obj_frenchie, noone, 0,0);
+			teleport_npc(obj_wei, school_2F,750,104,DOWN);
+			teleport_npc(obj_jake, school_2F,789,126,LEFT);
+			AddInstanceToActivate(inst_2F_toaster);
+			
+		break;
+		default:
+		}
+	}
+}

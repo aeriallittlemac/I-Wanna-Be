@@ -1,6 +1,7 @@
 //Shortcuts to scenes
 #macro LAB_SCENE ord("U")
-#macro GAMBINOS_ROOM ord("Y")
+//#macro GAMBINOS_ROOM ord("Y")
+#macro TUESDAY_MORNING ord("Y")
 #macro FRENCHIE_GHOST ord("O")
 #macro LOCKERS ord("T")
 #macro LUNCH ord("G")
@@ -14,6 +15,22 @@
 #macro MATH_QUIZ ord("L")
 #macro WEDNESDAY_MORNING ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("Q")
+if keyboard_check(TUESDAY_MORNING){
+		game_camera_change_settings(obj_player, -1);
+		global.day = 3;
+		global.game_time = "10:00 am";
+		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
+		//global.reputation = 1;
+		//global.female_affinity = 1;
+		//instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
+		//game_change_reputation(49);
+		//game_wait(1.2);
+		//game_change_female_affinity(49);
+		AddInstanceToDestroy(inst_325AA326);
+		AddInstanceToDestroy(inst_60A96728);
+		AddInstanceToDestroy(inst_1D43132F);
+ 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
+}
 if keyboard_check(FRENCHIE_GHOST){
 	game_camera_change_settings(obj_player, -1);
 	global.day = 3;
@@ -208,7 +225,7 @@ if keyboard_check(BAND_FIRST_PRACTICE){
 }
 
 if keyboard_check(LAB_SCENE){
-	global.storylines.Grace.truth_or_dare_confession = true;
+	//global.storylines.Grace.truth_or_dare_confession = true;
 	game_camera_change_settings(obj_player,-1);
 	show_debug_message("lab!");
 	teleport_player(100, 120, school_lab, dialogue_lab_debut);
@@ -271,19 +288,19 @@ if keyboard_check(LUNCH){
 	instance_activate_object(INST_LUNCH_TABLE);
 }
 
-if keyboard_check(GAMBINOS_ROOM){
-	global.day = 2
-	instance_activate_object(inst_WELCOME_TABLE);
-	game_camera_change_settings(obj_player,-1);
-	teleport_npc(obj_wei, noone, 0, 0, DOWN);
-	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP);
-	teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP);
-	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
-	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
-	AddInstanceToDestroy(inst_1D43132F);
+//if keyboard_check(GAMBINOS_ROOM){
+//	global.day = 2
+//	instance_activate_object(inst_WELCOME_TABLE);
+//	game_camera_change_settings(obj_player,-1);
+//	teleport_npc(obj_wei, noone, 0, 0, DOWN);
+//	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP);
+//	teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP);
+//	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
+//	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
+//	AddInstanceToDestroy(inst_1D43132F);
 	
 	
-}
+//}
 
 if keyboard_check(LOCKERS){
 	instance_activate_object(inst_WELCOME_TABLE);

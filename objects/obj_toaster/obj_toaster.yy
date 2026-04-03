@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "parent_entity",
+    "path": "objects/parent_entity/parent_entity.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,9 +27,16 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateScript","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"NewDialogue",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityActivateArg","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"dialogue_toaster_debut",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"interact_range","path":"objects/parent_entity/parent_entity.yy",},"objectId":{"name":"parent_entity","path":"objects/parent_entity/parent_entity.yy",},"value":"1.5",},
+  ],
   "parent": {
     "name": "school_3F",
     "path": "folders/School Assets/school_3F.yy",

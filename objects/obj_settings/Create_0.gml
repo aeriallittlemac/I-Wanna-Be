@@ -37,3 +37,6 @@ game_var_struct = array_create(0);
 
 game_ctarget = array_create(0);
 game_chspeed = array_create(0);
+
+change_reputation_val = array_create(0);
+change_female_affinity_val = array_create(0);
