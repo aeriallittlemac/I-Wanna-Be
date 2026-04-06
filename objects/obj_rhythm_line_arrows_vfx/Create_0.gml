@@ -26,7 +26,9 @@ if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arro
 			instance_destroy(nearest_arrow);
 		}
 		else{
+			if obj_rhythm_game_arrows.player_score >= 0{
 			obj_rhythm_game_arrows.player_score--;
+			}
 		}
 	}
 	else if keyboard_lastkey == MOVE_UP{
@@ -37,7 +39,9 @@ if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arro
 			instance_destroy(nearest_arrow);
 		}
 		else{
+			if obj_rhythm_game_arrows.player_score >= 0{
 			obj_rhythm_game_arrows.player_score--;
+			}
 		}
 	}
 	else if keyboard_lastkey == MOVE_LEFT{
@@ -48,7 +52,9 @@ if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arro
 			instance_destroy(nearest_arrow);
 		}
 		else{
+			if obj_rhythm_game_arrows.player_score >= 0{
 			obj_rhythm_game_arrows.player_score--;
+			}
 		}
 	}
 	else if keyboard_lastkey == MOVE_DOWN{
@@ -59,7 +65,9 @@ if nearest_arrow_x > x+camera_get_view_x(view_camera[0]) - error && nearest_arro
 			instance_destroy(nearest_arrow);
 		}
 		else{
+			if obj_rhythm_game_arrows.player_score >= 0{
 			obj_rhythm_game_arrows.player_score--;
+			}
 		}
 	}
 }

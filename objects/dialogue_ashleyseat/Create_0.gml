@@ -4,7 +4,8 @@ if global.day == 2 && global.game_time == "3:30 pm"{
 	scr_text("You notice that she’s reading the book upside down.");
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
-	
+	obj_player.face = LEFT;
+	obj_player.sprite_index = obj_player.sprite[LEFT];
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		if !global.storylines.Grace.deny_rumor{
@@ -80,4 +81,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 else if global.day == 4 && global.game_time == "3:30 pm"{
 	scr_text("Someone seems to not be here...")
 	scr_text("You can still smell the faint fragrance of books...")
+}
+else{
+	scr_text("*Too nervous to look at you", spr_ashley_icon, 0);
 }

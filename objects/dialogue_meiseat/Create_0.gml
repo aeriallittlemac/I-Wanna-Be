@@ -10,6 +10,10 @@ if global.day == 2 && global.game_time == "3:30 pm"{
 	scr_text("I can walk you over!", spr_mei_grin, 0);
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
+	obj_player.face = UP;
+	obj_player.sprite_index = obj_player.sprite[UP];
+	obj_mei.face = DOWN;
+	obj_mei.sprite_index = obj_mei.sprite[DOWN];
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Sewing_Club.Day_Three.talked_to.mei{
 			if global.storylines.Grace.deny_rumor{
@@ -24,7 +28,6 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 			else{
 				scr_text("Hey new kid!", spr_mei_icon, 0);
 				scr_text("I didn’t get the chance to talk to you in detail during lab...", spr_mei_icon, 0);
-				scr_text("Hey new kid!", spr_mei_icon, 0);
 				scr_text("But are you ok with all this?", spr_mei_icon, 0);
 				scr_text("I’m worried that Brooklyn is taking it too far with the joke...", spr_mei_icon, 0);
 				scr_text("You ask her why she didn’t try to stop her then.");
@@ -72,4 +75,8 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 		scr_text("Yo!", spr_mei_icon, 0);
 	}
 	
+}
+else{
+
+	scr_text("Test dialogue!", spr_mei_grin, 0);
 }

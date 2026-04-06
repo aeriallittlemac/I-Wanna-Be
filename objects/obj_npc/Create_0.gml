@@ -1,4 +1,7 @@
 event_inherited();
+oval_detection_scale = 220;
+detection = false;
+icon = false;
 xspeed = array_create(0);
 yspeed = array_create(0);
 run_speed_multiplier = 2.5;
@@ -31,4 +34,38 @@ active_speech_bubbles = array_create(0)
 
 if  instance_number(self.object_index) > 1{
 	instance_destroy(self);
+}
+player_relative_pos = "";
+function setPlayerFace(){
+A = obj_player_hitbox.bbox_left;
+B = obj_player_hitbox.bbox_right;
+C = obj_player_hitbox.bbox_top;
+D = obj_player_hitbox.bbox_bottom;
+
+//player col width B-A
+//player col height C-D
+
+O = bbox_left;
+P = bbox_right;
+M = bbox_top;
+N = bbox_bottom;
+
+
+player_relative_pos = "";
+if abs(max(A-P, M-D, O-B, C-N) - (A-P))<0.001{
+	player_relative_pos = "RIGHT"
+}
+else if abs(max(A-P, M-D, O-B, C-N) - (M-D))<0.001{
+	player_relative_pos = "UP"
+}
+else if abs(max(A-P, M-D, O-B, C-N) - (O-B))<0.001{
+	player_relative_pos = "LEFT"
+}
+else if abs(max(A-P, M-D, O-B, C-N) - (C-N))<0.001{
+	player_relative_pos = "DOWN"
+}
+show_debug_message(player_relative_pos);
+
+
+
 }

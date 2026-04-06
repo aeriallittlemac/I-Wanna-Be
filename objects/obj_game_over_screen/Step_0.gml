@@ -9,9 +9,12 @@ if !fade_out{
 	}
 }
 else{
-	if !global.in_hints{
-			global.in_hints = true;
+	if !global.pause_menu{
+		with obj_pause_menu_new{
+			pauseMenu();
 		}
+	}
+	
 	if screen_image_alpha > 0{
 		screen_image_alpha -= fade_in_speed/100;
 	}

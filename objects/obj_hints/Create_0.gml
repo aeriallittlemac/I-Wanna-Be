@@ -13,6 +13,18 @@ global.hints = {
 		found: false, 
 		save_name: "After First Class"
 	}, 
+	if_rumor_choose: {
+		sprite: spr_mcronald_icon, 
+		text: "Word goes around", 
+		found: false, 
+		save_name: "Hanging with the boys"
+	}, 
+	if_rumor: {
+		sprite: spr_grace_frown, 
+		text: "Always double down.", 
+		found: false, 
+		save_name: "If Rumor"
+	}, 
 	if_rumor_deny: {
 		sprite: spr_mei_nervous_grin, 
 		text: "Some people are better mediators? Perchance.", 
@@ -56,7 +68,8 @@ is_choosing_restore = false;
 
 hint_grid = [
 	["meeting_mei", "if_rumor_deny"], 
-	["after_first_class", "beef"],
+	//["after_first_class", "beef"],
+	["if_rumor_choose", "if_rumor"],
 	["yup", "uhhuh"],
 	["yeh", "bi"]
 ];

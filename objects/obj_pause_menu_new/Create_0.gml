@@ -1,4 +1,4 @@
-minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
+ minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 depth = FILTER_DEPTH
 intro_alpha = 0.6;
 text_x_offset = 60;
@@ -15,10 +15,22 @@ hint_vertical_offset = 32;
 hint_horizontal_margin = 5;
 hint_vertical_margin = 2;
 hint_box_height = 19;
-second_page_margin = 95;
+box_select_i = 0;
+box_select_j = 0;
+second_page_margin = 92;
 page_max_columns = 3;
 page_max_rows = 4;
 hint_columns = 6;
+book_sliding = false;
+
+bookmark_select = true;
+
+selected_bookmark = 0;
+cover_anchor_set = -180;
+cover_anchor = -180;
+cover_slide_target = 0;
+cover_slide_speed = 8;
+
 
 font_add_enable_aa(false);
 corner_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
@@ -58,21 +70,21 @@ button_positions = {
 	bookmarks:{
 		hint_button : {
 			left_x : 216,
-			top_y: 30,
+			top_y: 29,
 			right_x : 216 + sprite_get_bbox_right(IWB_UI_hint_button)-sprite_get_bbox_left(IWB_UI_hint_button),
 			bottom_y : 30 + sprite_get_bbox_bottom(IWB_UI_hint_button) - sprite_get_bbox_top(IWB_UI_hint_button),
 			button_sprite : IWB_UI_hint_button,
 		},
 		settings_button : {
 			left_x : 216,
-			top_y: 44,
+			top_y: 43,
 			right_x : 216 + sprite_get_bbox_right(IWB_UI_settings_button)-sprite_get_bbox_left(IWB_UI_settings_button),
 			bottom_y : 44 + sprite_get_bbox_bottom(IWB_UI_settings_button) - sprite_get_bbox_top(IWB_UI_settings_button),
 			button_sprite : IWB_UI_settings_button,
 		},
 		character_button : {
 			left_x : 216,
-			top_y: 58,
+			top_y: 57,
 			right_x : 216 + sprite_get_bbox_right(IWB_UI_character_button)-sprite_get_bbox_left(IWB_UI_character_button),
 			bottom_y : 58 + sprite_get_bbox_bottom(IWB_UI_character_button) - sprite_get_bbox_top(IWB_UI_character_button),
 			button_sprite : IWB_UI_character_button,
@@ -109,12 +121,24 @@ draw_text_transformed_colour(text_x_offset, text_y_offset + 25, "Hottest rumor: 
 
 draw_set_font(quest_pixel_font);
 draw_text_transformed_colour(text_x_offset, text_y_offset, "Current quest: "+cur_quest, 1, 1, 0, c_yellow, c_orange, c_yellow, c_orange, 1);
-
+if bookmark_select{
+	draw_sprite_ext(IWB_UI_cover, -1, cover_anchor, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	if !book_sliding{
+	if selected_bookmark == 0{
+		//show_debug_message("red");
+		draw_sprite_ext(red_bookmark_highlight, -1, cover_anchor, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	}
+	else if selected_bookmark == 1{
+		draw_sprite_ext(green_bookmark_highlight, -1, cover_anchor, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	}
+	else if selected_bookmark == 2{
+		draw_sprite_ext(blue_bookmark_highlight, -1, cover_anchor, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+	}
+	}
+}
+else{
 	draw_sprite_ext(IWB_UI_base, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-	draw_healthbar(25*minimap_scale, 128*minimap_scale, 245*minimap_scale, 134*minimap_scale, global.reputation, #093315, c_maroon, #22B14C, 0, true, false);
-	draw_healthbar(25*minimap_scale, (128+11)*minimap_scale, 245*minimap_scale, (134+11)*minimap_scale, global.female_affinity, #4B214C, c_maroon, #A349A4, 0, true, false);
-	
-if page == 0{
+	if page == 0{
 	draw_sprite_ext(IWB_UI_character_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_settings_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_top, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
@@ -153,32 +177,17 @@ else if page == 2{
 	draw_sprite_ext(IWB_UI_settings_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_top, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 	draw_sprite_ext(IWB_UI_character_button, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-	if pamphletPage > 0{
-		draw_sprite_ext(IWB_UI_character_left_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-		if obj_menu_mouse.x > button_positions.page_three.left_arrow.left_x*minimap_scale
-	&& obj_menu_mouse.x < button_positions.page_three.left_arrow.right_x*minimap_scale
-	&& obj_menu_mouse.y > button_positions.page_three.left_arrow.top_y*minimap_scale
-	&& obj_menu_mouse.y < button_positions.page_three.left_arrow.bottom_y*minimap_scale{
-			draw_sprite_ext(IWB_UI_character_left_arrow_selected, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-			if keyboard_check_pressed(CONFIRM_ACTION){
-				pamphletPage --;
-			}
-		}
-	}
-	if pamphletPage < array_length(obj_npc_manager.npcs)-1{
-		draw_sprite_ext(IWB_UI_character_right_arrow, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
-		if obj_menu_mouse.x > button_positions.page_three.right_arrow.left_x*minimap_scale
-	&& obj_menu_mouse.x < button_positions.page_three.right_arrow.right_x*minimap_scale
-	&& obj_menu_mouse.y > button_positions.page_three.right_arrow.top_y*minimap_scale
-	&& obj_menu_mouse.y < button_positions.page_three.right_arrow.bottom_y*minimap_scale{
-			draw_sprite_ext(IWB_UI_character_right_arrow_selected, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1); 
-			if keyboard_check_pressed(CONFIRM_ACTION){
-				pamphletPage ++;
-			}
-		}
-	}
+	
+
+
+	
 	
 }
+}
+	draw_healthbar(25*minimap_scale, 128*minimap_scale, 245*minimap_scale, 134*minimap_scale, global.reputation, #093315, c_maroon, #22B14C, 0, true, false);
+	draw_healthbar(25*minimap_scale, (128+11)*minimap_scale, 245*minimap_scale, (134+11)*minimap_scale, global.female_affinity, #4B214C, c_maroon, #A349A4, 0, true, false);
+	
+
 //draw_set_font(corner_pixel_font);
 //draw_text_transformed_colour(corner_label_x, 20, "pause menu", 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 
@@ -218,4 +227,38 @@ else{
 	draw_text_transformed(character_x_offset, text_y, "???", 1, 1, 0);
 
 }
+}
+
+
+function pauseMenu(){
+if instance_exists(cutscene_check_rumors){
+		instance_destroy(cutscene_check_rumors);
+	}
+	if(!global.pause_menu){
+		bookmark_select= true;
+		//obj_npc_manager.npcs[0].introduced = true;
+		//instance_create_depth(160, 100, OBJ_MAX_DEPTH, obj_menu_mouse);
+		player_x = obj_player.x;
+		player_y = obj_player.y;
+		player_scale_x = obj_player.image_xscale;
+		player_scale_y = obj_player.image_yscale;
+		player_sprite = obj_player.sprite[obj_player.face];
+		if array_length(obj_minimap.inv) > 0{
+			cur_quest = obj_minimap.inv[0].description;
+		}
+	}
+	else{
+		instance_destroy(obj_menu_mouse);
+		
+		
+	//	if !global.storylines.Mechanics_Introduced.pamphlet
+	////&& global.storylines.Grace.truth_or_dare_confession
+	//	{
+	//		game_NewDialogue(dialogue_check_relationship_pamphlet)
+	//		global.storylines.Mechanics_Introduced.pamphlet = true;
+	//	}
+	}
+	global.pause_menu = !global.pause_menu;
+
+
 }

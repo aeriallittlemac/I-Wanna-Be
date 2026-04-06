@@ -74,11 +74,11 @@ global.item_list = {
 		item_dialogue: -1,
 	},
 	frenchies_envelope : {
-		item_name: "Frenchie's Envelope",
+		item_name: "F. Letter",
 		item_dialogue: -1,
 	},
 	mcronalds_envelope : {
-		item_name: "McRonald's Envelope",
+		item_name: "Mc. Letter",
 		item_dialogue: -1,
 	},
 	vacuum : {

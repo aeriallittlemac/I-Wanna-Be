@@ -1,4 +1,6 @@
 event_inherited();
+obj_player.sprite_index = obj_player.sprite[UP];
+obj_player.face = UP;
 if !global.storylines.Lab.Day_Three.talked_to.job{
 	scr_text("Oh, hello.", spr_job_icon, 0);
 	scr_text("You’re the new kid, right?", spr_job_icon, 0);
@@ -19,10 +21,12 @@ else{
 		scr_text("Talk to the guy in the gas mask for me, will ya?", spr_job_icon, 0);
 	}
 	else{
-		if !global.storylines.Lab.Day_Three.potato_battery.copper_coin{
+		if !global.storylines.Lab.Day_Three.copper_coin{
 			scr_text("Ok, you got the instructions? Got everything you need?", spr_job_icon, 0);
+			if global.storylines.Lab.Day_Three.instructions_obtained{
 			scr_text("You mention that you're still gathering parts.");
 			scr_text("I got a copper coin here, if that helps.", spr_job_icon, 0);
+			}
 		}
 		else{
 			scr_text("Good luck on the experiment.", spr_job_icon, 0);

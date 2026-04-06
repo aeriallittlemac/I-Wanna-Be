@@ -1,5 +1,6 @@
 event_inherited();
-
+obj_player.sprite_index = obj_player.sprite[UP];
+obj_player.face = UP;
 if !global.storylines.Grace.truth_or_dare_confession{
 	scr_text("Oh, it's the newbie", spr_brooklyn_icon, 0);
 	scr_text("Hey, Bobby!", spr_mei_icon, 0);

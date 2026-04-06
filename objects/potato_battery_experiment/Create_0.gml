@@ -15,3 +15,4 @@ LED_placed = false;
 zinc_placed = false;
 obj_player.x = 147;
 obj_player.y = 143;
+experiment_over = false;

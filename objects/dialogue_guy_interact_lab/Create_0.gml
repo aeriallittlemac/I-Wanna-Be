@@ -1,4 +1,6 @@
 event_inherited();
+obj_player.sprite_index = obj_player.sprite[UP];
+obj_player.face = UP;
 potato_battery = false;
 global.text_box_top = true;
 if !global.storylines.Lab.Day_Three.talked_to.guy{
@@ -32,6 +34,11 @@ if !global.storylines.Lab.Day_Three.talked_to.guy{
 					scr_text("You need one potato, a piece of copper, and a piece of zinc.", spr_guy_icon, 0);
 					scr_text("Come back to me when you got the goods.", spr_guy_icon, 0);
 					scr_text("Get on with it!", spr_guy_icon, 0);
+					global.storylines.Lab.Day_Three.instructions_obtained = true;
+					show_debug_message("obtained " + string(global.storylines.Lab.Day_Three.instructions_obtained));
+					if global.storylines.Lab.Day_Three.instructions_obtained{
+					show_debug_message("ay");
+					}
 				}
 				break;
 				case "no":
@@ -66,6 +73,11 @@ else{
 		scr_text("You and your buddy need one potato, a piece of copper, and a piece of zinc.", spr_guy_icon, 0);
 		scr_text("Come back to me when you got the goods.", spr_guy_icon, 0);
 		scr_text("Get on with it!", spr_guy_icon, 0);
+		global.storylines.Lab.Day_Three.instructions_obtained = true;
+					show_debug_message("obtained " + string(global.storylines.Lab.Day_Three.instructions_obtained));
+					if global.storylines.Lab.Day_Three.instructions_obtained{
+					show_debug_message("ay");
+					}
 	}
 	else if global.storylines.Lab.Day_Three.potato_battery.potato && global.storylines.Lab.Day_Three.potato_battery.zinc && global.storylines.Lab.Day_Three.potato_battery.copper_coin{
 		potato_battery = true;

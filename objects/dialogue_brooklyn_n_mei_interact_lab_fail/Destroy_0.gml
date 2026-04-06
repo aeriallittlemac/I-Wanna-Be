@@ -1,2 +1,3 @@
-global.reputation -= 20;
-global.female_affinity -= 30;
+change_reputation(-20);
+
+change_female_affinity(-30)

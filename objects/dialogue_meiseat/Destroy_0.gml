@@ -16,3 +16,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 	
 	}
 }
+else{
+
+scr_text("Test dialogue", spr_mei_grin, 0);
+}

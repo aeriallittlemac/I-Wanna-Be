@@ -177,6 +177,7 @@ function game_change_female_affinity(val){
 	
 }
 function item_acquired(item){
+	audio_play_sound(sfx_item_acquired, 1, false);
 	array_push(obj_inventory.inventory, item);
 	var inst = instance_create_depth(obj_player.x-30, min(obj_player.y + 10, 140), OBJ_MAX_DEPTH, obj_white_text_overlay);
 	with inst{

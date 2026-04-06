@@ -1,6 +1,4 @@
 event_inherited();
-obj_player.face = UP;
-obj_player.sprite_index = obj_player.sprite[UP];
 envelopes = false;
 if global.storylines.Grace.truth_or_dare_confession{
 	scr_text("Alright, spill the tea man.", spr_mcronald_icon, 1);
@@ -8,7 +6,7 @@ if global.storylines.Grace.truth_or_dare_confession{
 	scr_text("You ask him to be more specific.");
 	scr_text("I mean, I heard from the girls that you guys were dating, no?", spr_mcronald_icon, 1);
 	scr_text("What’s going on between you and Grace, buddy?", spr_mcronald_icon, 1);
-	scr_text("Ya serious? That’s my f*cking guy, haha!", spr_wei_icon, 0);
+	scr_text("Ya serious? That’s my f*cking guy, haha!", spr_wei_laugh, 0);
 	scr_text("W-what?", spr_frenchie_icon, 1);
 	
 	scr_option("Deny", "deny");
@@ -20,34 +18,34 @@ if global.storylines.Grace.truth_or_dare_confession{
 		
 			case "deny":
 				scr_text("You deny the allegations.");
-				scr_text("S-so, what exactly is your relationship with her...?", spr_frenchie_icon, 1);
-				scr_text("Are you two friends, or-", spr_frenchie_icon, 1);
+				scr_text("S-so, what exactly is your relationship with her...?", spr_frenchie_nervous, 1);
+				scr_text("Are you two friends, or-", spr_frenchie_nervous, 1);
 				scr_text("Why do you care so much, man?", spr_wei_icon, 0);
 				scr_text("What, is this conversation not Christian enough for you, Wei?", spr_mcronald_icon, 1);
 				scr_text("Shall we tell him about your “no dating before marriage”?", spr_mcronald_icon, 1);
 				scr_text("Nah, it just bores me.",  spr_wei_icon, 0);
 				scr_text("Tell them that you barely know her, and you just go to the same club as her.");
-				scr_text("*sigh of relief", spr_frenchie_icon, 1);
-				scr_text("Sounds like a load of horsesh*t to me, haha!", spr_mcronald_icon, 0);
-				scr_text("Um...", spr_frenchie_icon, 1);
-				scr_text("If you go to the same club as her, could you give her this?,", spr_frenchie_icon, 1);
+				scr_text("*sigh of relief", spr_frenchie_down_stare, 1);
+				scr_text("Sounds like a load of horsesh*t to me, haha!", spr_wei_laugh, 0);
+				scr_text("Um...", spr_frenchie_down_stare, 1);
+				scr_text("If you go to the same club as her, could you give her this?,", spr_frenchie_nervous_blushing, 1);
 				envelopes = true;
 				
 			break;
 
 		    case "lie":
 				scr_text("You tell them that you already slept with her.");
-				scr_text("Is that so...", spr_frenchie_icon, 1);
-				scr_text("Jesus Christ man, it’s your third day here!", spr_wei_icon, 0);
-				scr_text("Chill out, you’re gonna catch something man!", spr_wei_icon, 0);
+				scr_text("Is that so...", spr_frenchie_down_stare, 1);
+				scr_text("Jesus Christ man, it’s your third day here!", spr_wei_angry, 0);
+				scr_text("Chill out, you’re gonna catch something man!", spr_wei_angry, 0);
 				scr_text("Guys, relax. He’s definitely capping.", spr_mcronald_icon, 1);
 				scr_text("There's no way she let you hit, first day. Right, Bobby?", spr_mcronald_icon, 1);
 				scr_text("*Awkward silence");
 				scr_text("Right?", spr_mcronald_icon, 1);
 				scr_text("L-let's just eat our l-lunch.", spr_mcronald_icon, 1);
 				scr_text("I guess. You good man? You seem shaken up.", spr_wei_icon, 0);
-				scr_text("I'M FINE. Ok? I’m fine. I just...", spr_frenchie_icon, 1);
-				scr_text("I-I need to use the b-bathroom.", spr_frenchie_icon, 1);
+				scr_text("I'M FINE. Ok? I’m fine. I just...", spr_frenchie_down_stare, 1);
+				scr_text("I-I need to use the b-bathroom.", spr_frenchie_down_stare, 1);
 		    break;
 			default:
 			

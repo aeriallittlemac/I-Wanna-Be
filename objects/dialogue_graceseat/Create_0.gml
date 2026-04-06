@@ -11,6 +11,11 @@ if global.day == 2 && global.game_time = "3:30 pm"{
 	}
 }
 else if global.day == 3 && global.game_time = "3:30 pm"{
+	obj_player.face = LEFT;
+	obj_player.sprite_index = obj_player.sprite[LEFT];
+	obj_grace.face = RIGHT;
+	obj_grace.sprite_index = obj_grace.sprite[RIGHT];
+	
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		if !global.storylines.Grace.deny_rumor{
@@ -64,4 +69,9 @@ else if global.day == 4 && global.game_time = "3:30 pm"{
 	else{
 		scr_text("Yo!", spr_mei_icon, 0);
 	}
+}
+else{
+	obj_grace.sprite_index = obj_grace.sprite[RIGHT];
+	obj_grace.face = RIGHT;
+	scr_text("Test dialogue", spr_grace_fake_smile, 0);
 }

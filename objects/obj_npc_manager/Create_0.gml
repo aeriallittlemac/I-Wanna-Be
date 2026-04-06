@@ -181,7 +181,7 @@ global.npc_list = {
 	},
 	frenchie : {
 		object: obj_frenchie,
-		first_name : "Jake",
+		first_name : "Frenchie",
 		title: "le French",
 		intro_sprite : spr_frenchie_down,
 		cur_room : noone,

@@ -12,5 +12,6 @@ last_lane = 0;
 default_pixel_font = font_add("joystix monospace.otf", 35, false, false, 32, 128);
 alarm[1] = text_switch_timer;
 alarm[0] = knife_timer+ random_range(-knife_timer, 1);
+alarm[2] = room_speed*20; 
 doubleknifecooldown = room_speed*2;
 knife = 0;

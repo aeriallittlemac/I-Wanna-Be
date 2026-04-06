@@ -1,3 +1,1 @@
-//slap sound effect
-//black screen
-game_wait(0.3);
+game_change_female_affinity(-50);

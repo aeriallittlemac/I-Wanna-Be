@@ -247,6 +247,7 @@ global.storylines = {
 	},
 	Lab : {
 		Day_Three : {
+			
 			talked_to:{
 					//grace: false,
 					//brooklyn: false,
@@ -256,11 +257,14 @@ global.storylines = {
 					guy: false,
 					job: false,
 				},
+			instructions_obtained: false,
+			copper_coin: false,
 			potato_battery:{
 				potato: false,
 				zinc: false,
 				copper_coin: false,
 				},
+				//instructions_obtained: false,
 				vacuum: false,
 			},
 			

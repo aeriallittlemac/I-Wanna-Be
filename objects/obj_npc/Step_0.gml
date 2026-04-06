@@ -1,6 +1,5 @@
 if !global.pause_menu{
-
-event_inherited();
+//setPlayerFace();
 
 depth = -bbox_bottom;
 if array_length(sequences) > 0{
@@ -109,3 +108,9 @@ classroom_mode = true;
 else{
 	image_index = 0;
 }
+xdiff = obj_player.x - x;
+ydiff = obj_player.y - y - 2;
+detection = ((xdiff*xdiff/7)+(ydiff*ydiff/5)) < oval_detection_scale;
+icon =  detection && !global.cutscene && 
+!global.in_dialogue && !global.timed_dialogue && entityActivateScript != -1 && entityActivateArg != -1 &&!global.in_slideshow && !instance_exists(obj_rhythm_game_arrows)
+&& !global.in_hints;

@@ -6,7 +6,12 @@ if zinc_placed{
 	draw_sprite_ext(spr_experiment_zinc_chip, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1 );
 }
 if LED_placed{
-	draw_sprite_ext(spr_experiment_led_light, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1 );
+	if experiment_over{
+		draw_sprite_ext(spr_experiment_led_light_2, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1 );
+	}
+	else{
+		draw_sprite_ext(spr_experiment_led_light, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1 );
+	}
 }
 draw_set_font(default_pixel_font);
 for (var i=0; i<3; i++){

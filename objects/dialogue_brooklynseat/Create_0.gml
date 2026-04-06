@@ -8,6 +8,8 @@ scr_text("Black hair girl with two chinese-style buns, club president.", spr_bro
 scr_text("I’m sure you’ll find her to be easier to deal with than me.", spr_brooklyn_icon, 0);
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
+	obj_player.face = DOWN;
+	obj_player.sprite_index = obj_player.sprite[DOWN];
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 			if !global.storylines.Grace.deny_rumor{
@@ -96,4 +98,7 @@ else if global.day == 4 && global.game_time == "3:30 pm"{
 		scr_text("*about Grace", spr_brooklyn_icon, 0);
 	}
 	global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
+}
+else{
+	scr_text("Test dialogue", spr_brooklyn_glare, 0);
 }

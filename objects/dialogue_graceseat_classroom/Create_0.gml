@@ -21,6 +21,7 @@ if (global.day == 2 && global.storylines.Main_Classroom.Day_Two.chen_obtained_pa
 	scr_text("*This kid...", spr_grace_icon, 0);
 	global.storylines.Main_Classroom.Day_Two.papers_given.grace = true;
 	global.storylines.Main_Classroom.Day_Two.papers_handed_out++;
-} else{
+}
+else{
 	scr_text("Go to Mr. Chen.");
 }

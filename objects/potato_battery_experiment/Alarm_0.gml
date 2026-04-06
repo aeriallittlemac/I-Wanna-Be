@@ -1,0 +1,4 @@
+instance_destroy(obj_experiment_copper_coin);
+instance_destroy(obj_experiment_LED_light);
+instance_destroy(obj_experiment_zinc_chip);
+instance_destroy(self);

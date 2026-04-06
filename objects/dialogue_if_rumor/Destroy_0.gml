@@ -4,3 +4,5 @@ if deny{
 	game_NewDialogue(dialogue_if_rumor_deny);
 	global.storylines.Sewing_Club.Day_Three.talked_to.grace = true;
 }
+NewDialogue(cutscene_sewing_club_setup);
+hint_obtain(global.hints.if_rumor)
