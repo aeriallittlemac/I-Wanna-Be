@@ -1,6 +1,6 @@
 show_debug_message(page);
 show_debug_message(selected_page);
-
+if global.pause_menu{
 if bookmark_select{
 	audio_play_sound(sfx_book_slide, 1, false);
 	audio_play_sound(sfx_book_open, 1, false);
@@ -15,4 +15,5 @@ if (focus_hint != -1 && focus_hint.found && !global.in_dialogue) {
 		{save_name: focus_hint.save_name}
 	);
 	}
+}
 }

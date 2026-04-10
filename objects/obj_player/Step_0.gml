@@ -1,6 +1,6 @@
 if !global.pause_menu && !instance_exists(potato_battery_experiment) && room != school_run_minigame_new{
 if room != tutorial{
-run_key = (keyboard_check(vk_lshift) || keyboard_check(CANCEL_ACTION) || x_lock != 0) && !global.cutscene;
+run_key = (keyboard_check(vk_lshift) || keyboard_check(CANCEL_ACTION) || x_lock != 0) && !global.cutscene && !global.QTE;
 right_key = keyboard_check(MOVE_RIGHT);
 left_key = keyboard_check(MOVE_LEFT);
 up_key = keyboard_check(MOVE_UP);

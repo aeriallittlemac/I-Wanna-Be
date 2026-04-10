@@ -1,3 +1,4 @@
+if global.pause_menu{
 if bookmark_select && !book_sliding{
 if selected_bookmark > 0{
 	selected_bookmark --;
@@ -10,4 +11,5 @@ if selected_bookmark > 0{
 		}
 	}
 	
+}
 }

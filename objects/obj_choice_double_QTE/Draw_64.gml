@@ -1,0 +1,3 @@
+draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.4);
+draw_sprite_ext(left_character_silhouette, character_anim_frame, left_character_x*minimap_scale, character_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
+draw_sprite_ext(right_character_silhouette, -1, right_character_x*minimap_scale, character_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );

@@ -1,0 +1,1 @@
+drag_speed_y-=drag_accel*delta_time/1000000;

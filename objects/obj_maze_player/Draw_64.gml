@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index, -1, x*maze_scale, y*maze_scale, maze_scale, maze_scale, 0, c_white, 1);

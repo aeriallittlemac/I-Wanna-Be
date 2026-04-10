@@ -1,0 +1,1 @@
+draw_sprite_stretched(sprite_index,-1,x*tile_size/sprite_width, y*tile_size/sprite_height, tile_size,tile_size);
