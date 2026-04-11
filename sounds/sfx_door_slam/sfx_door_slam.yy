@@ -17,7 +17,7 @@
   "soundFile": "sfx_door_slam.wav",
   "duration": 1.937854,
   "parent": {
-    "name": "Rhythm Game",
-    "path": "folders/UI/Rhythm Game.yy",
+    "name": "Non-UI Sounds",
+    "path": "folders/School Assets/Non-UI Sounds.yy",
   },
 }

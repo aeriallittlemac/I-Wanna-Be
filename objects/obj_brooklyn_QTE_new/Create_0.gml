@@ -1,6 +1,7 @@
 
 randomise();
-
+win_cutscene = dialogue_QTE_one;
+lose_cutscene = dialogue_QTE_two;
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 character_silhouette = spr_brooklyn_silhouette;
 character_frame_rate = 12;

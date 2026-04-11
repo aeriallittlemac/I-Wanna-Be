@@ -1,4 +1,5 @@
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
+global.QTE = true;
 tempo = 100;
 character_silhouette = spr_bobby_silhouette;
 character_frame_rate = 12;
@@ -15,7 +16,6 @@ camera_set_view_target(view_camera[0], obj_player);
 current_camera_y = camera_get_view_y(view_camera[0]);
 current_camera_height = camera_get_view_height(view_camera[0]);
 current_camera_width = camera_get_view_width(view_camera[0]);
-global.QTE = true;
 timer = 5;
 target_camera_height = 80;
 character_scale = target_camera_height/current_camera_height;

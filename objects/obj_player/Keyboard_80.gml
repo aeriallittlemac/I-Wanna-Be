@@ -4,6 +4,9 @@ show_debug_message(global.cutscene);
 show_debug_message("Dialogue: ");
 show_debug_message(global.in_dialogue);
 
+show_debug_message("QTE: ");
+show_debug_message(global.QTE);
+
 show_debug_message("Classroom mode: ");
 show_debug_message(classroom_mode);
 if !global.in_inventory && room != tutorial{

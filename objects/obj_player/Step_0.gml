@@ -169,8 +169,21 @@ if image_alpha > 0{
 				} else {
 					face = face_matrix[clamp(real_xspeed, -1, 1) + 1][clamp(real_yspeed, -1, 1) + 1];
 					sprite_index = sprite[face];
-					x += real_xspeed;
-					y += real_yspeed;
+					if obj_player_hitbox.hitwall(real_xspeed, real_yspeed){
+						image_index = 0;
+						skip_c_sequence = false;
+						array_delete(c_target_x, 0, 1);
+						array_delete(c_target_y, 0, 1);
+						array_delete(c_xspeed, 0, 1);
+						array_delete(c_yspeed, 0, 1);
+						array_delete(c_sequences, 0, 1);
+					
+					}
+					else{
+						x += real_xspeed;
+						y += real_yspeed;
+					}
+					
 				}
 			}
 			else if c_sequences[0] == "wait"{

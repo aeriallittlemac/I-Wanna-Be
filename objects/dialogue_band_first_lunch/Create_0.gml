@@ -28,7 +28,7 @@ if global.storylines.Grace.truth_or_dare_confession{
 				scr_text("*sigh of relief", spr_frenchie_down_stare, 1);
 				scr_text("Sounds like a load of horsesh*t to me, haha!", spr_wei_laugh, 0);
 				scr_text("Um...", spr_frenchie_down_stare, 1);
-				scr_text("If you go to the same club as her, could you give her this?,", spr_frenchie_nervous_blushing, 1);
+				scr_text("If you go to the same club as her, could you give her this?", spr_frenchie_nervous_blushing, 1);
 				envelopes = true;
 				
 			break;

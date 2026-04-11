@@ -78,9 +78,10 @@ var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
 }
 if keyboard_check(CAMERA_ZOOM) && !global.QTE && !global.in_dialogue{
-	//instance_create_depth(0,0,0, obj_choice_default_QTE);
-	instance_create_depth(0,0,0, obj_mei_QTE);
+	instance_create_depth(0,0,0, obj_choice_default_QTE);
+	//instance_create_depth(0,0,0, obj_mei_QTE);
 	//instance_create_depth(0,0,0, obj_brooklyn_QTE_new);
+	//show_debug_message(global.storylines.Grace.truth_or_dare_confession);
 }
 
 if keyboard_check(SEWING_CLUB_TEST){
@@ -132,6 +133,7 @@ if keyboard_check(SEWING_CLUB_SECOND_DAY){
 	game_camera_change_settings(obj_player, -1);
 	global.day = 3;
 	global.storylines.Grace.truth_or_dare_confession = true;
+	global.storylines.Grace.deny_rumor = true;
 	if global.storylines.Grace.truth_or_dare_confession{
 				if global.storylines.Grace.deny_rumor{
 					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);

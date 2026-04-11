@@ -1,5 +1,4 @@
 event_inherited();
-beatmap = false;
 if global.day == 2 && global.game_time = "3:30 pm"{
 scr_text("*looks up from her phone", spr_brooklyn_icon, 0);
 scr_text("You’re the transfer, I presume?", spr_brooklyn_icon, 0);
@@ -18,38 +17,9 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 				scr_text("*snickers", spr_brooklyn_snicker_hand, 0);
 			}
 			else{
-				scr_text("You’re cooked, buddy.", spr_brooklyn_icon, 0);
+				scr_text("You’re in deep, buddy.", spr_brooklyn_icon, 0);
 				scr_text("I don’t know what to tell you.", spr_brooklyn_icon, 0);
 				scr_text("Grace’s parents are rich lawyers, you might actually end up in a juvenile cell.", spr_brooklyn_icon, 0);
-				scr_text("Hand her the letter?");
-				scr_option("Yes", "yes");
-				scr_option("No", "no");
-				function branches(branch){
-					textbox_reset();
-					switch(branch){
-		
-						case "yes":
-							scr_text("Hm? A wax-sealed envelope in this day and age...", spr_brooklyn_icon, 0);
-							scr_text("interesting.", spr_brooklyn_icon, 0);
-							scr_text("You don’t strike me as such an old fashioned guy.", spr_brooklyn_icon, 0);
-							scr_text("I assume you’re just the messenger boy?", spr_brooklyn_icon, 0);
-							scr_text("You nod your head.");
-							scr_text("Well, I thank you for your service.", spr_brooklyn_icon, 0);
-							scr_text("And your sacrifice for our amusement.", spr_brooklyn_icon, 0);
-							scr_text("But hey, sometimes little jokes turn into criminal records, you know.", spr_brooklyn_icon, 0);
-							scr_text("It happens.", spr_brooklyn_icon, 0);
-							scr_text("Holy sh*t, this girl is evil.");
-			
-						break;
-						case "no":
-							scr_text("And what are you looking at me for?", spr_brooklyn_icon, 1);
-							scr_text("I'm not going to save you.", spr_brooklyn_icon, 1);
-							scr_text("Do I look like I have Jewish parents?", spr_brooklyn_icon, 1);
-							beatmap = true;
-						break;
-
-					}
-}
 				
 			}
 		}
@@ -88,7 +58,6 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 		}
 		
 	}
-	global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn = true;
 }
 else if global.day == 4 && global.game_time == "3:30 pm"{
 	if global.storylines.Sewing_Club.Day_Three.letters_delievered.brooklyn{
@@ -97,7 +66,6 @@ else if global.day == 4 && global.game_time == "3:30 pm"{
 	else{
 		scr_text("*about Grace", spr_brooklyn_icon, 0);
 	}
-	global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
 }
 else{
 	scr_text("Test dialogue", spr_brooklyn_glare, 0);

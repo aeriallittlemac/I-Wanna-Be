@@ -1,7 +1,8 @@
 global.cutscene = false
 player_frozen = false;
 x_lock = 0;
-
+x_hitwall = false;
+y_hitwall = true;
 xspeed = 0;
 yspeed = 0;
 move_speed = 1;

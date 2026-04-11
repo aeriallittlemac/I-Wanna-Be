@@ -47,7 +47,6 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 				teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 				obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
 				teleport_npc(obj_ashley, school_sewing_club, 85+43, 140, DOWN);
-				teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup);
 	
 			//obj_ashley.entityActivateArg = dialogue_ashleyseat;
 			//obj_mei.entityActivateArg = dialogue_meiseat;
