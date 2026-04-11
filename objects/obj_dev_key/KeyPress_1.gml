@@ -130,6 +130,23 @@ if keyboard_check(WEI_DRUMS_DEBUT){
 }
 
 if keyboard_check(SEWING_CLUB_SECOND_DAY){
+	global.sewing_club_second_day_debug = true;
+	if global.storylines.Grace.truth_or_dare_confession{
+		if global.storylines.Grace.deny_rumor{
+			teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+		}
+		else{
+			teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+		}
+	}
+	else{
+		teleport_player(215, 45, school_sewing_club);
+	}
+	//instance_create_depth(0,0,0,cutscene_talk_to_girls);
+	global.day = 3
+	global.game_time = "3:30 pm";
+	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
 	game_camera_change_settings(obj_player, -1);
 	global.day = 3;
 	global.storylines.Grace.truth_or_dare_confession = true;
