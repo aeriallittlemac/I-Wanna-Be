@@ -14,5 +14,7 @@ function frenchie_cremation_moment() {
 		global.night = true;
 		global.game_time = "12:00 am";
 		instance_destroy(obj_frenchie_projection);
+		AddInstanceToActivate(obj_frenchie_ghost);
+		global.is_frenchie_dead = true;
 	});
 }
