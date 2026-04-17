@@ -1,1 +1,1 @@
-draw_sprite_stretched(sprite_index,-1,x*tile_size/sprite_width, y*tile_size/sprite_height, tile_size,tile_size);
+draw_sprite_stretched(sprite_index,-1,x*tile_size/sprite_get_width(spr_maze_wall), y*tile_size/sprite_get_height(spr_maze_wall), tile_size*image_xscale,tile_size*image_yscale);

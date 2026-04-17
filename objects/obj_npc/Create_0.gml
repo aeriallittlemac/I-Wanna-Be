@@ -1,4 +1,5 @@
 event_inherited();
+talk_priority = false;
 oval_detection_scale = 220;
 detection = false;
 icon = false;

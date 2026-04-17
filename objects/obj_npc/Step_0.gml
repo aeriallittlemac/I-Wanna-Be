@@ -3,6 +3,7 @@ if !global.pause_menu{
 
 depth = -bbox_bottom;
 if array_length(sequences) > 0{
+	talk_priority = false;
 	if (sequences[0] == "move") {
 		// Normally, this wouldn't be sufficient to ensure 
 		// that the NPC stops on the target, 

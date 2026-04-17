@@ -1,0 +1,16 @@
+teleport_npc(obj_grace, school_3F, 210, 100);
+obj_grace.visible = false;
+npc_wait(obj_grace, 1);
+obj_grace.visible = true;
+npc_move_to_pos(obj_grace, 0, 1, obj_grace.x, 110);
+npc_wait(obj_grace, 1);
+npc_move_to_pos(obj_grace, 1, 0, obj_grace.x+5, obj_grace.y);
+npc_wait(obj_grace, 0.3);
+npc_move_to_pos(obj_grace, 1, 0, obj_grace.x-5, obj_grace.y);
+npc_wait(obj_grace, 0.3);
+npc_move_to_pos(obj_grace, 1, 0, obj_grace.x+5, obj_grace.y);
+npc_wait(obj_grace, 0.3);
+npc_move_to_pos(obj_grace, 1, 0, obj_grace.x-5, obj_grace.y);
+npc_wait(obj_grace, 0.7);
+npc_move_to_pos(obj_grace, 1, 1, 100, obj_grace.y);
+npc_move_to_pos(obj_grace, 0, 1, obj_grace.x, 119);

@@ -74,7 +74,9 @@ function drawPuzzle(){
 				text_angle = -60;
 			}
 		}
+		if !displayed_missing[i]{
 		draw_text_ext_transformed_colour(puzzle_x + (col+0.5)*piece_size,  puzzle_y+(row+0.5)*piece_size, displayed_words[i], -1, -1, 1,  1.2, text_angle, c_yellow, c_yellow, c_yellow, c_yellow, 1);
+		}
 	}
 }
 

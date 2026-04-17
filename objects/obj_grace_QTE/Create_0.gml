@@ -9,12 +9,23 @@ character_anchor_x = 135;
 character_y = 20+45;
 
 character_x = character_anchor_x;
-character_slide_target = 160;
+character_slide_target = 50;
 character_slide_speed = 1;
 character_damage_anim_frames = 12;
 character_shake_offset = 0;
 character_shake_margins = 3; 
 character_shake_count = 8;
+player_x = 70;
+player_y = 30;
+snake_game_wall_x = 45;
+snake_game_wall_y = 10;
+snake_game_width = 75;
+snake_game_height = 55;
+snake_x = 80;
+snake_y = 40;
+map_scale = 6;
+
+
 
 choice_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 timer_pixel_font = font_add("joystix monospace.otf", 25, false, false, 64, 128);

@@ -13,7 +13,7 @@ if place_meeting(x , y + y_speed, obj_maze_wall){
 	y -= y_speed;
 	y_speed = 0;
 }
-if y >= 56{
+if instance_exists(obj_mei_QTE)&&y >= 56{
 	obj_mei_QTE.alarm[2]=1;
 	instance_destroy(obj_maze_wall);
 	instance_destroy(self);

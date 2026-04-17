@@ -1,0 +1,10 @@
+npc_move_to_pos(obj_grace, 0, 1, obj_grace.x, 100);
+npc_move_to_pos(obj_brooklyn, 1, 0, obj_brooklyn.x- 30, obj_brooklyn.y);
+npc_move_to_pos(obj_brooklyn, 0, 1, obj_brooklyn.x, obj_brooklyn.y+6);
+teleport_npc(obj_grace, noone, 0,0,DOWN);
+instance_create_depth(0, 0, 0, stealth_camera_point);
+game_wait(1.7);
+sprite[RIGHT] = spr_player_crawl_right;
+sprite[UP] = spr_player_crawl_left;
+sprite[LEFT] = spr_player_crawl_left;
+sprite[DOWN] = spr_player_crawl_left;
