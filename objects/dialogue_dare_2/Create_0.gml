@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("What's this?", spr_grace_fake_smile, 0);
+scr_text("What's this?", spr_grace_silhouette, 0);

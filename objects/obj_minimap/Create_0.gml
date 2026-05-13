@@ -82,15 +82,6 @@ global.quest_list = {
 		quest_x : 513,
 		quest_y : 114,
 	},
-	help_grace : {
-		description : "Help Grace find her contact lens",
-		icon: spr_main_quest_icon,
-		quest_room : school_1F,
-		quest_room_width : 1620,
-		//1620 is default
-		quest_x : 144,
-		quest_y : 121,
-	},
 	find_drake : {
 		description : "Find Drake",
 		icon: spr_main_quest_icon,
@@ -271,6 +262,12 @@ global.storylines = {
 	},
 	Sewing_Club : {
 		Day_Two:{
+			talked_to: {
+				mei: false,
+				grace: false,
+				ashley: false,
+				brooklyn: false,
+			},
 			hard_on: false,
 		},
 		Day_Three:{

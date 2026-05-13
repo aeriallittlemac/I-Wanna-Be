@@ -1,0 +1,1 @@
+game_NewDialogue(dialogue_mei_debut);

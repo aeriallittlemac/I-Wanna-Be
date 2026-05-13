@@ -4,7 +4,7 @@
   "name": "sfx_open_door",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.7,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_open_door.wav",
-  "duration": 1.789083,
+  "duration": 0.691021,
   "parent": {
     "name": "Non-UI Sounds",
     "path": "folders/School Assets/Non-UI Sounds.yy",

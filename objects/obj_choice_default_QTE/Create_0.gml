@@ -1,3 +1,5 @@
+original_bgm_gain = audio_sound_get_gain(global.bgm);
+audio_sound_gain(global.bgm, 0, 0);
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 global.QTE = true;
 tempo = 100;

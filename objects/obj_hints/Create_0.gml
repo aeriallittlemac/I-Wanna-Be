@@ -2,7 +2,7 @@ global.in_hints = false;
 
 global.hints = {
 	meeting_mei: {
-		sprite: spr_mei_grin, 
+		sprite: spr_mei_silhouette, 
 		text: "Public composure is key to survival.", 
 		found: false, 
 		save_name: "Meeting Mei"
@@ -26,7 +26,7 @@ global.hints = {
 		save_name: "If Rumor"
 	}, 
 	if_rumor_deny: {
-		sprite: spr_mei_nervous_grin, 
+		sprite: spr_mei_silhouette, 
 		text: "Some people are better mediators? Perchance.", 
 		found: false, 
 		save_name: "If Rumor Deny"
@@ -38,7 +38,7 @@ global.hints = {
 		save_name: "Chicken Katsu"
 	},
 	yup: {
-		sprite: spr_grace_demonic, 
+		sprite: spr_grace_silhouette, 
 		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
 		found: false, 
 		save_name: "Cretaceous"
@@ -50,7 +50,7 @@ global.hints = {
 		save_name: "Chicken Katsu"
 	},
 	yeh: {
-		sprite: spr_grace_demonic, 
+		sprite: spr_grace_silhouette, 
 		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
 		found: false, 
 		save_name: "Cretaceous"

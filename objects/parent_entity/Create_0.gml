@@ -8,3 +8,5 @@ N = bbox_bottom;
 box_outline_thickness = 3;
 opt = 0;
 hmm = false;
+alternative_sprite = noone;
+in_detect_range = false;

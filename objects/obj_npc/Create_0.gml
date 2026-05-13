@@ -1,6 +1,6 @@
 event_inherited();
 talk_priority = false;
-oval_detection_scale = 220;
+oval_detection_scale = 160;
 detection = false;
 icon = false;
 xspeed = array_create(0);

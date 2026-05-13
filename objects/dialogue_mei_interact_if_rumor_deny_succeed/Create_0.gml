@@ -1,10 +1,8 @@
 event_inherited();
 
-scr_text("You tell Mei that you’ll try your best to manage with whoever’s around.");
-scr_text("You’re just a transfer, after all.");
-scr_text("That’s good, I guess?", spr_mei_nervous_guilty, 0);
-scr_text("Umm...", spr_mei_nervous_guilty, 0);
-scr_text("How about this?", spr_mei_nervous_guilty, 0);
-scr_text("Wanna go find her together?", spr_mei_nervous_guilty, 0);
-scr_text("You nonchalantly shrug.");
-scr_text("I'll take that as a yes, let's go...", spr_mei_nervous_guilty, 0);
+scr_text("You tell Mei that you don’t negotiate with emotional terrorists.");
+scr_text("Come on, please?", spr_mei_silhouette, 0);
+scr_text("Wei keeps telling me how cool you are, surely this isn't too much to ask?", spr_mei_silhouette, 0);
+scr_text("Come on, just make make up with her!", spr_mei_silhouette, 0);
+scr_text("I'll come along, ok? Pleeeeease!", spr_mei_silhouette, 0);
+scr_text("You reluctantly agree.");

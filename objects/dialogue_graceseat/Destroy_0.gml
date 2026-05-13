@@ -1,16 +1,11 @@
-if global.day == 2{
-	if inst_GRACESEAT.seat_empty{
-	}
-	else{
-		game_NewCharacterIntro(obj_ashley);
-		game_NewDialogue(dialogue_brooklyn_debut);
-	}
+if global.day == 2&& global.game_time = "3:30 pm" && !global.storylines.Sewing_Club.Day_Two.talked_to.grace{
+	global.storylines.Sewing_Club.Day_Two.talked_to.grace = true;
 }
 else if global.day == 3 && global.game_time = "3:30 pm"{
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		if !global.storylines.Grace.deny_rumor{
-			instance_create_depth(0,0,0, beatmap_grace_tuesday_sewing_club_rumor_escalated);
+			//instance_create_depth(0,0,0, beatmap_grace_tuesday_sewing_club_rumor_escalated);
 		}
 		
 	}

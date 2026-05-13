@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "General Sprites",
-    "path": "folders/General Sprites.yy",
+    "name": "bobbys_room",
+    "path": "folders/School Assets/school_1F/bobbys_room.yy",
   },
 }

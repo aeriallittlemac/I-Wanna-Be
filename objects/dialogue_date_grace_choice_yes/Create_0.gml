@@ -1,1 +1,1 @@
-scr_text("Huh?", spr_grace_icon, 0);
+scr_text("Huh?", spr_grace_silhouette, 0);

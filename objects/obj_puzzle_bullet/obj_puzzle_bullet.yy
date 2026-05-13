@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Puzzles",
-    "path": "folders/UI/QTEs/Puzzles.yy",
+    "name": "Brooklyn Puzzles",
+    "path": "folders/UI/QTEs/Brooklyn Puzzles.yy",
   },
 }

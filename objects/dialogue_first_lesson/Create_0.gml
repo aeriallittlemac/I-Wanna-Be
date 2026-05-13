@@ -35,18 +35,18 @@ function continuation(branch){
 			scr_text("First class in and I already wanna kill myself...", spr_mrchen_icon, 0);
 			scr_text("Alright, Math class.", spr_mrchen_icon, 0);
 			scr_text("Let’s get this over with, shall we?", spr_mrchen_icon, 0);
-			scr_text("Wait, Mr. Chen!", spr_grace_fake_smile, 1);
-			scr_text("What about welcoming the new kid?", spr_grace_fake_smile, 1);
+			scr_text("Wait, Mr. Chen!", spr_grace_silhouette, 1);
+			scr_text("What about welcoming the new kid?", spr_grace_silhouette, 1);
 			scr_text("We’re already well behind schedule, there’s no time for that useless crap.", spr_mrchen_icon, 0);
-			scr_text("But how can we be behind schedule? Isn’t it our first day of class?", spr_grace_fake_smile, 0);
+			scr_text("But how can we be behind schedule? Isn’t it our first day of class?", spr_grace_silhouette, 0);
 			scr_text("Words from the president:", spr_mrchen_icon, 0);
 			scr_text("\"The kids are...what do they say now, mentally challenged...", spr_mrchen_icon, 0);
 			scr_text("... so we might as well be behind schedule.\" - what he said.", spr_mrchen_icon, 0);
 			scr_text("There you go. Happy?", spr_mrchen_icon, 0);
-			scr_text("...", spr_grace_fake_smile, 1);
+			scr_text("...", spr_grace_silhouette, 1);
 			scr_text("Suck my balls.", spr_wei_angry, 1);
 			scr_text("Is he wrong though?", spr_mcronald_icon, 0);
-			scr_text("Speak for yourself, fool.", spr_brooklyn_icon, 1);
+			scr_text("Speak for yourself, fool.", spr_brooklyn_silhouette, 1);
 			scr_text("So, let’s start by reviewing the multiplication table, shall we?", spr_mrchen_icon, 0);
 			scr_text("Wait, this is a high school, right?");
 			scr_text("Doesn’t matter. That’s what the president says.", spr_mrchen_icon, 0)

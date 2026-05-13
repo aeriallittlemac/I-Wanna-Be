@@ -4,5 +4,14 @@ if deny{
 	game_NewDialogue(dialogue_if_rumor_deny);
 	global.storylines.Sewing_Club.Day_Three.talked_to.grace = true;
 }
-NewDialogue(cutscene_sewing_club_setup);
+obj_mei.entityActivateScript = NewDialogue;
+obj_mei.entityActivateArg = dialogue_meiseat;
+//obj_mei.talk_priority = true;
+obj_ashley.entityActivateScript = NewDialogue;
+obj_ashley.entityActivateArg = dialogue_ashleyseat;
+obj_brooklyn.entityActivateScript = NewDialogue;
+obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
+//obj_grace.entityActivateScript = NewDialogue;
+//obj_grace.entityActivateArg = dialogue_graceseat;
+game_wait(0.8);
 hint_obtain(global.hints.if_rumor)

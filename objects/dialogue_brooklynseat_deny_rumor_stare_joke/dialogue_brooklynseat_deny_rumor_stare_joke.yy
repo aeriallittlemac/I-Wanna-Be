@@ -26,11 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "interactable_dialogues",
-    "path": "folders/School Assets/new/classrooms/sewing_club/interactable_dialogues.yy",
+    "name": "Day 3 - sewing_club",
+    "path": "folders/Dialogue_Lines/Day 3 - sewing_club.yy",
   },
 }

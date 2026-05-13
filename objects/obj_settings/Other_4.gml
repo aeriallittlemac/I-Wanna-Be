@@ -4,7 +4,19 @@ if room == school_sewing_club{
 		global.cutscene = false;
 		hint_obtain(global.hints.meeting_mei);
 	}
-	set_QTE_bgm(sewing_club_new);
+	if global.day == 2{
+	set_QTE_bgm(sewing_club_happy);
+	}
+	else{
+		if global.storylines.Grace.truth_or_dare_confession{
+			if global.storylines.Grace.deny_rumor{
+				
+			}
+			else{
+				set_QTE_bgm(sewing_club_happy);
+			}
+		}
+	}
 }
 if !audio_is_playing(morning){
 if room == school_2F && global.game_time = "10:00 am"{

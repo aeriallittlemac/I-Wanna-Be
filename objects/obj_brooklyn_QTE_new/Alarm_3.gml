@@ -49,10 +49,37 @@ else{
 		 array_delete(sentence_puzzle_index_list, answer_piece_index, 1);
 	}
 	show_debug_message(scattered_words);
-	for(var i=0; i<array_length(random_words);i++){
-		array_push(scattered_words, random_words[i]);	
-	}
-	
+	//for(var i=0; i<array_length(random_words);i++){
+	//	array_push(scattered_words, random_words[i]);	
+	//}
+//Claude code starts here
+	for (var i = 0; i < array_length(random_words); i++) {
+    var is_duplicate = false;
+    
+    // Check against every sentence word
+    for (var j = 0; j < array_length(sentence); j++) {
+        if (random_words[i] == sentence[j]) {
+            is_duplicate = true;
+            break;
+        }
+    }
+    
+    // Also check against already-added scattered words (no duplicates among distractors either)
+    if (!is_duplicate) {
+        for (var j = 0; j < array_length(scattered_words); j++) {
+            if (random_words[i] == scattered_words[j]) {
+                is_duplicate = true;
+                break;
+            }
+        }
+    }
+    
+    if (!is_duplicate) {
+        array_push(scattered_words, random_words[i]);
+    }
+}
+//Claude code ends here
+
 	var scattered_words_count = array_length(scattered_words);
 	
 	for(var i=0; i<scattered_words_count; i++){
@@ -64,7 +91,7 @@ else{
 			if scattered_words[rand_scattered_piece] == displayed_words[puzzle_answer_index_list[j]]{
 				displayed_missing[puzzle_answer_index_list[j]] = true;
 				inst.puzzle_index = puzzle_answer_index_list[j];
-				flag = true;
+				flag = true;				
 				break;
 			}
 		}
@@ -94,7 +121,6 @@ else{
 		}
 		inst.puzzle_word = scattered_words[rand_scattered_piece];
 		inst.piece_index = i;
-		
 		
 		
 		array_delete(scattered_words, rand_scattered_piece, 1);

@@ -1,0 +1,13 @@
+event_inherited();
+scr_text("Ew, no!", spr_grace_silhouette, 0);
+scr_text("Brooklyn! You’re up now, take us away!", spr_mei_silhouette, 0);
+scr_text("Truth or dare, Grace?", spr_brooklyn_silhouette, 0);
+scr_text("...", spr_grace_silhouette, 0);
+scr_text("Dare.", spr_grace_silhouette, 0);
+scr_text("Pose for a picture with the transfer, would you?", spr_brooklyn_silhouette, 0);
+scr_text("???", spr_grace_silhouette, 0);
+scr_text("You’re usually way crueler. What’s going on?", spr_grace_silhouette, 0);
+scr_text("Just do it.", spr_brooklyn_silhouette, 0);
+scr_text("Fine, I guess.", spr_grace_silhouette, 0);
+scr_text("Brooklyn would go on to use AI to doctor indecent photos of you and Grace and put them on the internet.");
+scr_text("But no one would find out...until it was too late.");

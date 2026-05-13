@@ -1,0 +1,3 @@
+obj_ashley.entityActivateArg = dialogue_ashleyseat;
+obj_mei.entityActivateArg = dialogue_meiseat;
+game_NewDialogue(dialogue_sewing_club_setup_day_3_no_rumor);

@@ -1,0 +1,2 @@
+//GRACE minigame
+game_NewDialogue(dialogue_grace_interact_rumor_escalation_success);

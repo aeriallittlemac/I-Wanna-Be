@@ -1,7 +1,21 @@
 event_inherited();
+original_bgm_gain = audio_sound_get_gain(global.bgm);
+audio_sound_gain(global.bgm, 0, 0);
+audio_play_sound(sewing_club_ashley, 1, true);
 if global.day == 2 && global.game_time == "3:30 pm"{
-	scr_text("*holds up the book to her face.", spr_ashley_icon, 0);
-	scr_text("You notice that she’s reading the book upside down.");
+	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
+		scr_text("*blushes", spr_ashley_icon, 0);
+		scr_text("N-n-nice to m-meet you, sempaai!", spr_ashley_icon, 0);
+		scr_text("I come from a lineage of \"Carpenter\"s, that’s my family name,", spr_ashley_icon, 0);
+		scr_text("but if you want, you can call me Ah–", spr_ashley_icon, 0);
+		scr_text("ah- ", spr_ashley_icon, 0);
+		scr_text("*blushes some more", spr_ashley_icon, 0);
+		scr_text("Ashley-chan...", spr_ashley_icon, 0);
+		scr_text("Methinks there is something wrong with her brain.");
+	}
+	else{
+		scr_text("Sempaai!", spr_ashley_icon, 0);
+	}
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
 	obj_player.face = LEFT;
@@ -9,39 +23,12 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		if !global.storylines.Grace.deny_rumor{
-			scr_text("You notice Ashley has been writing on a bunch of individual sheets of composition paper.");
-			scr_text("Ask her about it?");
-			scr_option("Yes", "yes");
-			scr_option("No", "no");
-			function branches(branch){
-				textbox_reset();
-				switch(branch){
-					case "yes":
-						scr_text("You tap on her shoulder, catching her by surprise.");
-						scr_text("*Freaks out", spr_ashley_icon, 0);
-						scr_text("*Blood rushing to her face", spr_ashley_icon, 0);
-						scr_text("*Gasping for air", spr_ashley_icon, 0);
-						scr_text("W-what is this tight feeling in my chest?", spr_ashley_icon, 0);
-						scr_text("It is anxiety.");
-						scr_text("A-are these...", spr_ashley_icon, 0);
-						scr_text("S-symptoms of b-biological arousal? What are the o-odds?", spr_ashley_icon, 0);
-						scr_text("After 6 million years of evolution, it seems that I still retain my primal instincts of r-reproduction!", spr_ashley_icon, 0);
-						scr_text("Wut");
-						scr_text("A-am I...in l-love?", spr_ashley_icon, 0);
-						scr_text("Ignoring her nonsensical mumbling, you ask about the papers.");
-						scr_text("P-papers? I see, you are referring to m-marriage papers, yes?", spr_ashley_icon, 0);
-						scr_text("It’s quite early, y-yet I s-suppose it is optimal in terms of tax benefits...", spr_ashley_icon, 0);
-						scr_text("U-um! Please allow me to ponder this over, I-I will give you a satisfactory answer before tomorrow, 12 pm!", spr_ashley_icon, 0);
-						scr_text("You leave her to her own devices.");
-					
-				    break;
-
-					case "no":
-						scr_text("You walk away.");
-					break;
-		
-					}
-				}
+			scr_text("*scribbling away", spr_ashley_icon, 0);
+			scr_text("S-sempai, I'm sorta busy right now.", spr_ashley_icon, 0);
+			scr_text("If-if you want, we could go on a da-agh!", spr_ashley_icon, 0);
+			scr_text("No, I mean...", spr_ashley_icon, 0);
+			scr_text("Please, stop it. I'm begging you.");
+			
 		}
 		else{
 			scr_text("...", spr_ashley_icon, 0);
@@ -50,28 +37,22 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 	
 	}
 	else{
-		
-		scr_text("You notice Ashley has been writing on a bunch of individual sheets of composition paper.");
-		scr_text("Ask her about it?");
-		scr_option("Yes", "yes");
-		scr_option("No", "no");
-		function branches(branch){
-			textbox_reset();
-			switch(branch){
-				case "yes":
-					scr_text("You tap on her shoulder, catching her by surprise.");
-					scr_text("*Skips a concerning length in the opposite direction.", spr_ashley_icon, 0);
-					scr_text("W-w-what do y-y-y-you want from me? I’m...uh...just...doing some stuff...", spr_ashley_icon, 0);
-					scr_text("I don’t...know how to continue this exchange.");
-					scr_text("You leave her to her own devices.");
-					
-			    break;
-
-				case "no":
-					scr_text("You walk away.");
-				break;
-		
-			}
+		if !global.storylines.Sewing_Club.Day_Three.talked_to.ashley{
+			scr_text("You notice Ashley has been writing on a bunch of individual sheets of composition paper.");
+			scr_text("You tap on her shoulder, catching her by surprise.");
+			scr_text("*Skips a concerning length in the opposite direction.", spr_ashley_icon, 0);
+			scr_text("*Unnecessarily surprised", spr_ashley_icon, 0);
+			scr_text("You’re b-back, s-senpai?", spr_ashley_icon, 0);
+			scr_text("I’m so g-glad to s-see y-", spr_ashley_icon, 0);
+			scr_text("*Gasp* Is that a l-l-l-letter... For me??!!", spr_ashley_icon, 0);
+			scr_text("*Turns around* Ah! My heart is in my throat… My chest is pounding!", spr_ashley_icon, 0);
+			scr_text("*Gasp* Is that a l-l-l-letter... For me??!!", spr_ashley_icon, 0);
+			scr_text("What could be in that letter... Could it be... A confession?!", spr_ashley_icon, 0);
+			scr_text("This is all too fast...", spr_ashley_icon, 0);
+			scr_text("All of that was... very audible.");
+		}
+		else{
+			scr_text("*Breathing heavily", spr_ashley_icon, 0);
 		}
 		
 		

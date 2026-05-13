@@ -1,5 +1,3 @@
-inst_GRACESEAT.seat_empty = false;
-//sewing_club_seats
-inst_ASHLEYSEAT.entityActivateArg = -1;
-inst_BROOKLYNSEAT.entityActivateArg = -1;
-inst_MEISEAT.entityActivateArg = dialogue_sewing_club_go_take_a_seat;
+audio_play_sound(sfx_drum_roll, 1, true);
+game_wait(4);
+game_NewDialogue(dialogue_mei_debut_3);
