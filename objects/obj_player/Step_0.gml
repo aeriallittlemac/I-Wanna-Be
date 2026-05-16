@@ -1,5 +1,5 @@
 if !global.pause_menu && !instance_exists(potato_battery_experiment) && room != school_run_minigame_new{
-if room != tutorial{
+if true{//room != graces_snake_game{
 run_key = (keyboard_check(vk_lshift) || keyboard_check(CANCEL_ACTION) || x_lock != 0) && !global.cutscene && !global.QTE;
 right_key = keyboard_check(MOVE_RIGHT);
 left_key = keyboard_check(MOVE_LEFT);
@@ -51,7 +51,7 @@ if image_alpha > 0{
 	classroom_mode = true;
 	}
 
-	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && !player_frozen && room != tutorial && !instance_exists(obj_reputation_bar) && !instance_exists(obj_female_affinity_bar){
+	if obj_minimap.map_visible && !global.in_inventory && !global.in_hints && !player_frozen && !instance_exists(obj_reputation_bar) && !instance_exists(obj_female_affinity_bar){
 		//set sprite
 		if yspeed == 0{
 			if xspeed > 0 {face = RIGHT};

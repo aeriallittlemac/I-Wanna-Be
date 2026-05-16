@@ -1,0 +1,1 @@
+teleport_player(player_x, player_y, previous_room, win_cutscene);

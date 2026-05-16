@@ -137,7 +137,7 @@ global.npc_list = {
 	ashley : {
 		object: obj_ashley,
 		first_name : "Ashley",
-		title: "the All-Knowing",
+		title: "the Anime Fan",
 		intro_sprite : spr_ashley_down,
 		cur_room : noone,
 		initial_x : 0,

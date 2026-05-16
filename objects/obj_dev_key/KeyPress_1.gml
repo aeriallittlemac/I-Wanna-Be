@@ -11,7 +11,7 @@
 #macro SEWING_CLUB_SECOND_DAY ord("N")
 #macro TESTING_SHADERS ord("F")
 #macro WEI_DRUMS_DEBUT ord("V")
-#macro RUN_MINIGAME ord("R")
+#macro BOBBYS_ROOM ord("R")
 #macro GRACE_QTE ord("L")
 #macro WEDNESDAY_MORNING ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("Q")
@@ -111,7 +111,11 @@ if keyboard_check(WEDNESDAY_MORNING){
 }
 
 if keyboard_check(GRACE_QTE){
-	instance_create_depth(0,0,0, obj_grace_QTE);
+	var inst = instance_create_depth(0,0,0, obj_graces_snake_game);
+	with inst{
+		win_cutscene = dialogue_QTE_one;
+		lose_cutscene = dialogue_QTE_two;
+	}
 }
 
 if keyboard_check(WEI_DRUMS_DEBUT){
@@ -219,8 +223,8 @@ if keyboard_check(BAND_FIRST_PRACTICE){
 if keyboard_check(TEST_VENT){
 	instance_create_depth(0,0,OBJ_MAX_DEPTH, obj_vent_test);
 }
-if (keyboard_check(RUN_MINIGAME)) {
-	teleport_player(x, y, school_run_minigame_new);
+if (keyboard_check(BOBBYS_ROOM)) {
+	teleport_player(62, 117, school_bobbys_room);
 }
 if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 	global.day = 2;

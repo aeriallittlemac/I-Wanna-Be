@@ -1,7 +1,19 @@
 if global.day == 2&& global.game_time = "3:30 pm" && !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
 	var inst = instance_create_depth(0,0,0,obj_brooklyn_QTE_new);
+	inst.choices[0].choice_text = "You have filthy and perverted intentions, don't you?"
 	inst.win_cutscene = dialogue_brooklynseat_debut_succeed;
 	inst.lose_cutscene = dialogue_brooklynseat_debut_fail;
+	
+	sentence = array_create(0);
+	array_push(sentence, "You");
+	array_push(sentence, "have");
+	array_push(sentence, "no");
+	array_push(sentence, "proof");
+	inst.sentence = sentence;
+	inst.full_sentence = "You have no proof";
+	
+	
+	
 	global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn = true;
 }
 if global.day == 3 && global.game_time = "3:30 pm" && !global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{

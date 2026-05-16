@@ -1,8 +1,11 @@
 //set_QTE_bgm(song_band_first_song)
-global.day = 2;
-global.night = true;
-global.game_time = "8:00 pm";
-AddInstanceToActivate(inst_BOBBYS_ROOM_DRUM_KIT);
-move_to_pos(1, 0, 650, obj_player.y);
-teleport_npc(obj_mcronald, school_bobbys_room, 193, 130, LEFT);
-teleport_player(60, 120, school_bobbys_room, dialogue_wei_drum_debut_1)
+show_debug_message("minimap_visible_conditions: "+string(obj_minimap.map_visible_conditions));
+show_debug_message(!global.cutscene)
+show_debug_message(!global.in_dialogue)
+show_debug_message(!global.timed_dialogue)
+show_debug_message(!instance_exists(obj_rhythm_game_arrows))
+show_debug_message(!instance_exists(obj_rhythm_game_new))
+show_debug_message(!instance_exists(obj_character_pamphlet))
+show_debug_message(!global.pause_menu)
+show_debug_message(!global.QTE)
+show_debug_message(room != graces_snake_game);

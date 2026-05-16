@@ -1,9 +1,9 @@
 if global.in_dialogue{
 	var y_offset = 0;
-	if room != tutorial{
-		//y_offset = ((!(obj_minimap.school_hall||global.isometric_room) && !global.text_box_top)&&!(array_length(obj_slideshow.slides)>0))*RESOLUTION_W;
-		y_offset = instance_exists(obj_dialogue_character)*RESOLUTION_W;
-	}
+	//if room != tutorial{
+	//	//y_offset = ((!(obj_minimap.school_hall||global.isometric_room) && !global.text_box_top)&&!(array_length(obj_slideshow.slides)>0))*RESOLUTION_W;
+		y_offset = RESOLUTION_W;
+	//}
 	draw_sprite_ext(sprite_index, -1, x*minimap_scale, y*minimap_scale + y_offset, minimap_scale, minimap_scale, 0, c_white, 1 );
 	draw_set_font(default_pixel_font);
 	var text_offset = 0;
@@ -94,12 +94,12 @@ if global.in_dialogue{
 				}
 				else{
 					global.in_dialogue = false;
-					if room != tutorial{
+					//if room != tutorial{
 						if array_length(obj_slideshow.slides) >= 1{
 							obj_slideshow.slide_num++;
 							show_debug_message("one_next_sllide");
 						}
-					}
+					//}
 			
 				}
 				
@@ -110,13 +110,13 @@ if global.in_dialogue{
 			i=1;
 			timer = 1;
 			display_text = "";
-			if room != tutorial{
+			//if room != tutorial{
 				if array_length(obj_slideshow.slides) >= 1{
 							obj_slideshow.slide_num++;
 							show_debug_message("two_next_sllide");
 						}
 				}
-			}
+			//}
 		}
 	}
 	

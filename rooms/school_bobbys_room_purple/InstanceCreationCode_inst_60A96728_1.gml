@@ -1,1 +1,0 @@
-cutscene_object = dialogue_try_the_bed;
