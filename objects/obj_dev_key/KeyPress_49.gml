@@ -1,1 +1,1 @@
-global.storylines.Grace.truth_or_dare_confession = true;
+instance_create_depth(0,0,0, obj_brooklyn_QTE_new);

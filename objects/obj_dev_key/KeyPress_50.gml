@@ -1,1 +1,1 @@
-global.storylines.Grace.deny_rumor = true;
+instance_create_depth(0,0,0, obj_mei_QTE);
