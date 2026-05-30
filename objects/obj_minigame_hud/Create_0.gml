@@ -1,5 +1,5 @@
 text_switch_timer = room_speed/3;
-knife_timer = room_speed * 3;
+knife_timer = room_speed*2;
 question_zero_x = 30;
 question_zero_y = 385;
 question_x_margin = 400;
@@ -13,5 +13,5 @@ default_pixel_font = font_add("joystix monospace.otf", 35, false, false, 32, 128
 alarm[1] = text_switch_timer;
 alarm[0] = knife_timer+ random_range(-knife_timer, 1);
 alarm[2] = room_speed*20; 
-doubleknifecooldown = room_speed*2;
+doubleknifecooldown = room_speed*5;
 knife = 0;

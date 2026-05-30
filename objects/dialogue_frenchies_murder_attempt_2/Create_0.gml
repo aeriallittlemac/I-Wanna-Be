@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("Is that...one of the lab’s scalpels?");
+scr_text("...things which you won't ever see again.", spr_frenchie_down_stare, 0);

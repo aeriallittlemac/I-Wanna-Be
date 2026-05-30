@@ -1,7 +1,7 @@
 default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
 font_add_enable_aa(false);
 cur_dialogue = noone;
-x_border = 32;
+x_border = 80;
 portrait_x_border = 24;
 y_border = 40;
 line_sep = 8;

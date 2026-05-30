@@ -1,6 +1,6 @@
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 tempo = 100;
-character_silhouette = spr_brooklyn_silhouette;
+character_silhouette = spr_brooklyn_portrait_default;
 character_frame_rate = 12;
 character_anim_frame = 0;
 character_x = 135;

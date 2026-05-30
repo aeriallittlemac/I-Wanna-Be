@@ -6,4 +6,3 @@
 
 // Inherit the parent event
 event_inherited();
-alternative_sprite = spr_bookshelf;

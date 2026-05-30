@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_textbox",
   "spriteId": {
-    "name": "spr_textbox",
-    "path": "sprites/spr_textbox/spr_textbox.yy",
+    "name": "spr_textbox_new",
+    "path": "sprites/spr_textbox_new/spr_textbox_new.yy",
   },
   "solid": false,
   "visible": true,

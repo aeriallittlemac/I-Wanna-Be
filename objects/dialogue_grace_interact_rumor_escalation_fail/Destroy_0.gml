@@ -1,0 +1,1 @@
+game_change_female_affinity(-999);

@@ -23,7 +23,10 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 	
 	}
 }
+else if global.day == 4 && global.game_time == "3:30 pm"{
+	global.storylines.Sewing_Club.Day_Four.talked_to.mei = true;
+}
 else{
 
-scr_text("Test dialogue", spr_mei_silhouette, 0);
+scr_text("Test dialogue", spr_mei_portrait_default, 0);
 }

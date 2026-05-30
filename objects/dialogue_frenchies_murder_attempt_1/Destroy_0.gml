@@ -1,5 +1,5 @@
-instance_create_depth((obj_frenchie.x + obj_player.x)/2 , 0, 0, player_n_frenchie);
-game_camera_change_settings(player_n_frenchie, 2)
-game_wait(3);
-game_camera_change_settings(player_n_frenchie, -1)
+//teleport_player(135, 120, school_1F_run_minigame);
+obj_frenchie.sprite[RIGHT] = spr_frenchie_right_scalpel_chase;
+npc_move_to_pos(obj_frenchie, 1, 0, obj_frenchie.x+1, obj_frenchie.y);
+game_wait(1);
 game_NewDialogue(dialogue_frenchies_murder_attempt_2);

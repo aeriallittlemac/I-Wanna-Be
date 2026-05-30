@@ -1,4 +1,4 @@
-right_character_silhouette = spr_brooklyn_silhouette;
+right_character_silhouette = spr_brooklyn_portrait_default;
 QTE = true;
 target_score = 10;
 win_cutscene = dialogue_brooklyn_n_mei_interact_lab_success_ashley;

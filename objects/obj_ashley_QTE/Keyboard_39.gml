@@ -1,0 +1,1 @@
+hammer_x += hammer_speed;

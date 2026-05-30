@@ -11,7 +11,7 @@ if instance_exists(obj_rhythm_game_arrows){
 		drumming = true;
 	}
 }
-image_alpha = !global.player_sleeping && !drumming;
+image_alpha = !global.player_sleeping && !drumming && room != graces_snake_game;
 var speed_multiplier = 1;
 var minigame_boost_temp = 1;
 if run_key {

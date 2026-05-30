@@ -16,6 +16,9 @@ if room == school_sewing_club{
 				set_QTE_bgm(sewing_club_happy);
 			}
 		}
+		else{
+			set_QTE_bgm(sewing_club_happy);
+		}
 	}
 }
 if !audio_is_playing(morning){

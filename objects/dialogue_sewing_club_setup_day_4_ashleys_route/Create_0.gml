@@ -1,0 +1,11 @@
+event_inherited();
+scr_text("S-senpaaai!", spr_ashley_portrait_default, 0);
+scr_text("Lord have mercy.");
+scr_text("S-senpaaai!", spr_ashley_portrait_default, 0);
+scr_text("*dead inside", spr_mei_portrait_default, 0);
+scr_text("...", spr_mei_portrait_default, 0);
+scr_text("*are we deadass?", spr_mei_portrait_default, 0);
+scr_text("???", spr_mei_portrait_default, 0);
+scr_text("W-we gotta get ready for the math competition, s-senpai!", spr_ashley_portrait_default, 0);
+scr_text("I’m honestly impressed how thick your skull is, there’s gotta be a genetic defect somewhere.", spr_brooklyn_portrait_default, 0);
+scr_text("S-senpai, follow me!", spr_ashley_portrait_default, 0);

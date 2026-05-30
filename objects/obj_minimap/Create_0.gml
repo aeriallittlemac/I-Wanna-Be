@@ -282,6 +282,14 @@ global.storylines = {
 				brooklyn: false,
 			},
 		},
+		Day_Four:{
+			talked_to: {
+				mei: false,
+				grace: false,
+				ashley: false,
+				brooklyn: false,
+			},
+		},
 		
 	},
 	
@@ -291,6 +299,10 @@ global.storylines = {
 			run: 1, //1, 2, 3
 		},
 		Frenchie_poisoned: false,
+	},
+	Graces_room:{
+		phone: false,
+		megaphone: false,
 	},
 	
 	Grace : {

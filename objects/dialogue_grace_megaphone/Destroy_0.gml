@@ -1,0 +1,1 @@
+global.storylines.Graces_room.megaphone = true;

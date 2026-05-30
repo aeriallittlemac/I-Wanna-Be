@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("Better stay in your lane.", spr_grace_silhouette, 0);
+scr_text("Better stay in your lane.", spr_grace_portrait_default, 0);

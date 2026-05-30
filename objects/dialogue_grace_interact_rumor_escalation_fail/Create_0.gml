@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("placeholder", spr_grace_silhouette, 0);
+scr_text("Unable to process the sequence of events, you faint on the spot...");

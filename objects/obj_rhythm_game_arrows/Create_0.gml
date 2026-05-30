@@ -6,7 +6,7 @@ minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 current_fps = game_get_speed(gamespeed_fps);
 game_set_speed(240, gamespeed_fps)
 left_character_silhouette = spr_bobby_silhouette;
-right_character_silhouette = spr_grace_silhouette;
+right_character_silhouette = spr_grace_portrait_default;
 character_frame_rate = 12;
 character_anim_frame = 0;
 

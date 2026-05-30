@@ -1,0 +1,13 @@
+event_inherited();
+scr_text("Mei would go on to report Grace's disapparance to the school.");
+scr_text("Gambino's men would search the entire school for her, but to no avail...");
+scr_text("*gasp", spr_frenchie_portrait_default, 0);
+scr_text("G-grace is missing?", spr_frenchie_portrait_default, 0);
+scr_text("S-she must be scared out of her wits, that poor delicate flower!", spr_frenchie_portrait_default, 0);
+scr_text("Really?");
+scr_text("Just you w-wait, my love! It doesn't matter how many damn miles I have to walk...", spr_frenchie_portrait_default, 0);
+scr_text("What kind of treacherous seas I have to sail...", spr_frenchie_portrait_default, 0);
+scr_text("or however nasty, the gas station restrooms that await me...", spr_frenchie_portrait_default, 0);
+scr_text("I will chase you, to the end of the Earth!!!", spr_frenchie_portrait_default, 0);
+scr_text("And thus Frenchie goes on a journey across the world to find the girl who will never love him back...");
+scr_text("Back to Bobby...");

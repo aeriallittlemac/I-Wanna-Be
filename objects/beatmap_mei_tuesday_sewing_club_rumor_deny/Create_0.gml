@@ -1,4 +1,4 @@
-right_character_silhouette = spr_mei_silhouette;
+right_character_silhouette = spr_mei_portrait_default;
 QTE = true;
 target_score = 7;
 win_cutscene = dialogue_mei_interact_if_rumor_deny_succeed;

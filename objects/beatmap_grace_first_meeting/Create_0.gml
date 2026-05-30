@@ -1,4 +1,4 @@
-right_character_silhouette = spr_grace_silhouette;
+right_character_silhouette = spr_grace_portrait_default;
 QTE = true;
 target_score = 4;
 win_cutscene = dialogue_didnt_see_you_there_no;

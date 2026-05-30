@@ -2,7 +2,7 @@
 randomise();
 
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
-character_silhouette = spr_grace_silhouette;
+character_silhouette = spr_grace_portrait_default;
 character_frame_rate = 12;
 character_anim_frame = 0;
 character_anchor_x = 135;

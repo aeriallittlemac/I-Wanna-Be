@@ -1,0 +1,1 @@
+game_change_reputation(s10);

@@ -1,6 +1,4 @@
-alarm[2] = doubleknifecooldown;
 
-alarm[0] = knife_timer+ random_range(-knife_timer, 1);
 if knife < 2{
 knife ++;
 lane = irandom(2);
@@ -22,4 +20,9 @@ else if lane == 2{
 	lane_x = obj_player_running.right_lane;
 }
 instance_create_depth(lane_x, obj_player_running.y-15 - irandom(10) , OBJ_MAX_DEPTH, obj_knife_warning);
+alarm[0] = knife_timer+ random_range(-knife_timer, 1);
+}
+else{
+	alarm[0] = doubleknifecooldown;
+	knife = 0;
 }

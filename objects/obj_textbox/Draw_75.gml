@@ -19,6 +19,9 @@ if global.in_dialogue{
 		//draw_sprite_ext(speaker_sprite[j], -1, x*minimap_scale + right_side_icon_pos*speaker_side[j] + portrait_x_border, y*minimap_scale + y_offset + speaker_y_offset, minimap_scale*image_scale, minimap_scale*image_scale, 0, c_white, 1 );	
 		obj_dialogue_character.character_silhouette = speaker_sprite[j];
 	}
+	else{
+		obj_dialogue_character.character_silhouette = noone;
+	}
 	draw_set_colour(c_white);
 	text_width_limit = ((sprite_get_width(spr_textbox))*minimap_scale - x_border*2)*2;
 	//text_width_limit = (((sprite_get_width(spr_textbox)- (speaker_sprite[j] != noone)*sprite_get_width(speaker_sprite[j])))*minimap_scale - x_border*2)*2;

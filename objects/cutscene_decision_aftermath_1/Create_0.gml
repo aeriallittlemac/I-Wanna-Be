@@ -1,0 +1,2 @@
+instance_destroy(cutscene_decision_aftermath);
+instance_destroy(self);

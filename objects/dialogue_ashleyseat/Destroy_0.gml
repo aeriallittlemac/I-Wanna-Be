@@ -4,7 +4,7 @@ if global.day == 2&& global.game_time = "3:30 pm" && !global.storylines.Sewing_C
 	
 }
 if global.day == 3 && global.game_time == "3:30 pm"{
-	
+	global.storylines.Sewing_Club.Day_Three.talked_to.ashley = true;
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		if !global.storylines.Grace.deny_rumor{

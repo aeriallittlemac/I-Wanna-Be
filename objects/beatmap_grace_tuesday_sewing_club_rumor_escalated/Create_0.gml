@@ -1,4 +1,4 @@
-right_character_silhouette = spr_grace_silhouette;
+right_character_silhouette = spr_grace_portrait_default;
 QTE = true;
 target_score = 7;
 win_cutscene = dialogue_grace_interact_if_rumor_escalation_succeed;
