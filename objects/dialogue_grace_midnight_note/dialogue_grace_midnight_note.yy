@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "dialogue_you_got_the_goods",
+  "name": "dialogue_grace_midnight_note",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -26,12 +26,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Diamondwood High",
-    "path": "folders/Dialogue_Lines/Day 2 - after_club/Diamondwood High.yy",
+    "name": "Day 2 - night",
+    "path": "folders/Dialogue_Lines/Day 2 - night.yy",
   },
 }

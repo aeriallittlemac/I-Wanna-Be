@@ -4,7 +4,11 @@
   "name": "qte_bgm",
   "conversionMode": 0,
   "compression": 0,
+<<<<<<< Updated upstream
   "volume": 0.4,
+=======
+  "volume": 0.41,
+>>>>>>> Stashed changes
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,

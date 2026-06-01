@@ -1,7 +1,7 @@
 //Shortcuts to scenes
 #macro GRACE_MISSING ord("U")
 //#macro GAMBINOS_ROOM ord("Y")
-#macro TUESDAY_MORNING ord("Y")
+#macro GRACE_VILLAIN_SPEECH ord("Y")
 #macro FRENCHIE_GHOST ord("O")
 #macro MONDAY_SEWING_CLUB ord("Q")
 #macro LUNCH ord("G")
@@ -17,6 +17,11 @@
 #macro GRACE_QTE ord("L")
 #macro ASHLEY_SCENE ord("M")
 //#macro GRACE_RIPS_FRENCHIE ord("Q")
+if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
+	game_camera_change_settings(obj_player, -1);
+	AddInstanceToDestroy(inst_1D43132F);
+	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
+}
 
 if keyboard_check(TUESDAY_MORNING){
 		game_camera_change_settings(obj_player, -1);
