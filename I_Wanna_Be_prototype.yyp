@@ -1148,6 +1148,7 @@
     {"id":{"name":"spr_frenchie_portrait_default","path":"sprites/spr_frenchie_portrait_default/spr_frenchie_portrait_default.yy",},"order":0,},
     {"id":{"name":"dialogue_band_first_lunch_1_envelope_1","path":"objects/dialogue_band_first_lunch_1_envelope_1/dialogue_band_first_lunch_1_envelope_1.yy",},"order":9,},
     {"id":{"name":"cutscene_character_pamphlet","path":"objects/cutscene_character_pamphlet/cutscene_character_pamphlet.yy",},"order":4,},
+    {"id":{"name":"obj_scribble_events","path":"objects/obj_scribble_events/obj_scribble_events.yy",},"order":19,},
     {"id":{"name":"objects_back_sprite_1","path":"sprites/objects_back_sprite_1/objects_back_sprite_1.yy",},"order":4,},
     {"id":{"name":"bobbys_room","path":"sounds/bobbys_room/bobbys_room.yy",},"order":3,},
     {"id":{"name":"dialogue_hunger","path":"objects/dialogue_hunger/dialogue_hunger.yy",},"order":6,},
