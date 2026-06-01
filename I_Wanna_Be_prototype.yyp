@@ -262,6 +262,7 @@
     {"id":{"name":"spr_selection","path":"sprites/spr_selection/spr_selection.yy",},"order":3,},
     {"id":{"name":"spr_main_font","path":"sprites/spr_main_font/spr_main_font.yy",},"order":5,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":4,},
+    {"id":{"name":"obj_camera_shake","path":"objects/obj_camera_shake/obj_camera_shake.yy",},"order":5,},
     {"id":{"name":"spr_grace_snicker","path":"sprites/spr_grace_snicker/spr_grace_snicker.yy",},"order":8,},
     {"id":{"name":"scribble_anim_blink","path":"scripts/scribble_anim_blink/scribble_anim_blink.yy",},"order":0,},
     {"id":{"name":"spr_diamondwood_high_bathroom_door","path":"sprites/spr_diamondwood_high_bathroom_door/spr_diamondwood_high_bathroom_door.yy",},"order":0,},

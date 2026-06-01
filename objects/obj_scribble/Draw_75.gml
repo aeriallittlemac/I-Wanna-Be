@@ -2,6 +2,8 @@ if (!active) {
 	exit;
 }
 
+draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.5);
+
 if (identified) {
 	var portrait_scale = layout[$portrait_bounds_key].height * SCALE / sprite_get_height(active_portrait_sprite);
 	var x_offset = sprite_get_xoffset(active_portrait_sprite) * portrait_scale;

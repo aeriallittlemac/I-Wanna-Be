@@ -15,6 +15,7 @@ TYPIST_DEFAULT = scribble_typist().in(1, 0)
 
 SCALE = 810 / RESOLUTION_W;
 ASYNC_PAGE_DELAY_SECONDS = 1.5;
+minimap_scale = room_get_viewport(room, 0)[3] / RESOLUTION_W;
 
 layout = {};
 text_element = noone;
@@ -27,10 +28,6 @@ async_waiting = false;
 queue_chain = array_create(0);
 
 scribble_font_set_default("fnt_joystix_monospace");
-
-scribble_typists_add_event("npc_move", obj_scribble_events.npc_move);
-scribble_typists_add_event("player_move", obj_scribble_events.player_move);
-scribble_typists_add_event("in_dialogue_force_set", obj_scribble_events.in_dialogue_force_set);
 
 function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, bounds=BOUNDS_DEFAULT, typist=TYPIST_DEFAULT) {
 	if (active) {
