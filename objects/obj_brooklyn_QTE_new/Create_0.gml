@@ -1,4 +1,12 @@
-
+QTE_bgm = qte_bgm;
+original_bgm_gain = audio_sound_get_gain(global.bgm);
+audio_sound_gain(global.bgm, 0, 100);
+if audio_is_playing(QTE_bgm){
+	audio_stop_sound(QTE_bgm);
+}
+audio_play_sound(QTE_bgm, 1, true);
+audio_sound_gain(QTE_bgm, 0, 0);
+audio_sound_gain(QTE_bgm, 0.4, 100);
 randomise();
 win_cutscene = dialogue_QTE_one;
 lose_cutscene = dialogue_QTE_two;
