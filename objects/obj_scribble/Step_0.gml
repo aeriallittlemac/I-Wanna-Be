@@ -5,13 +5,11 @@ if (!active) {
 var accept_key = keyboard_check_pressed(CONFIRM_ACTION) && !global.input_off;
 
 if (keyboard_check_pressed(CANCEL_ACTION)) {
-	instance_destroy(active_dialogue);
-	active = false;
+	close_dialogue();
 } else if (accept_key) {
 	text_element.on_last_page()
 	if (text_element.on_last_page()) {
-		instance_destroy(active_dialogue);
-		active = false;
+		close_dialogue();
 		exit;
 	}
 	var typist_state = active_typist.get_state();
