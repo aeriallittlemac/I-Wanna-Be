@@ -11,34 +11,38 @@
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
+#macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
 #macro FRENCHIE_CHASE ord("F")
 #macro WEI_DRUMS_DEBUT ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
 #macro GRACE_QTE ord("L")
 #macro ASHLEY_SCENE ord("M")
-//#macro GRACE_RIPS_FRENCHIE ord("Q")
+#macro GRACE_RIPS_FRENCHIE ord("I")
+if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
+
+}
 if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
 	game_camera_change_settings(obj_player, -1);
 	AddInstanceToDestroy(inst_1D43132F);
 	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
 }
 
-if keyboard_check(TUESDAY_MORNING){
-		game_camera_change_settings(obj_player, -1);
-		global.day = 3;
-		global.game_time = "10:00 am";
-		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
-		//global.reputation = 1;
-		//global.female_affinity = 1;
-		//instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
-		//game_change_reputation(49);
-		//game_wait(1.2);
-		//game_change_female_affinity(49);
-		AddInstanceToDestroy(inst_325AA326);
-		AddInstanceToDestroy(inst_60A96728);
-		AddInstanceToDestroy(inst_1D43132F);
- 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
-}
+//if keyboard_check(TUESDAY_MORNING){
+//		game_camera_change_settings(obj_player, -1);
+//		global.day = 3;
+//		global.game_time = "10:00 am";
+//		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
+//		global.reputation = 1;
+//		global.female_affinity = 1;
+//		instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
+//		game_change_reputation(49);
+//		game_wait(1.2);
+//		game_change_female_affinity(49);
+//		AddInstanceToDestroy(inst_325AA326);
+//		AddInstanceToDestroy(inst_60A96728);
+//		AddInstanceToDestroy(inst_1D43132F);
+// 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
+//}
 if keyboard_check(FRENCHIE_GHOST){
 	game_camera_change_settings(obj_player, -1);
 	global.day = 3;
@@ -52,38 +56,38 @@ if keyboard_check(FRENCHIE_GHOST){
 	AddInstanceToDestroy(inst_1D43132F);
 	AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 }
-//if keyboard_check(GRACE_RIPS_FRENCHIE){
-//	//audio_sound_gain()
-//	teleport_npc(obj_wei, noone, 0,0,DOWN);
-//	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
-//	instance_create_depth(0,0,0, player_n_grace);
-//var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
-//		with inst{
-//			default_pixel_font = font_add("joystix monospace.otf", 45*2, false, false, 32, 128);
-//			overlay_text = "10 seconds later\n";
-//			angle = 0;
-//			timer = 0;
-//			fade_speed = 0.4;
-//		}
-//		teleport_npc(obj_grace, school_1F, 700, 125, LEFT);
-//		teleport_npc(obj_brooklyn, school_1F, 760, 118, LEFT);
-//		teleport_npc(obj_mei, school_1F, 810, 130, LEFT);
+if keyboard_check(GRACE_RIPS_FRENCHIE){
+	//audio_sound_gain()
+	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
+	instance_create_depth(0,0,0, player_n_grace);
+var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
+		with inst{
+			default_pixel_font = font_add("joystix monospace.otf", 45*2, false, false, 32, 128);
+			overlay_text = "10 seconds later\n";
+			angle = 0;
+			timer = 0;
+			fade_speed = 0.4;
+		}
+		teleport_npc(obj_grace, school_1F, 700, 125, LEFT);
+		teleport_npc(obj_brooklyn, school_1F, 760, 118, LEFT);
+		teleport_npc(obj_mei, school_1F, 810, 130, LEFT);
 		
-//		npc_move_to_pos(obj_grace, 1, 0, 570, obj_grace.y);
-//		npc_move_to_pos(obj_brooklyn, 1, 0, 615, obj_grace.y);
-//		npc_move_to_pos(obj_mei, 1, 0, 660, obj_mei.y);
-//		npc_move_to_pos(obj_mei, 1, 1, 655, 135 + 5);
-//		npc_move_to_pos(obj_mei, 1, 0, 650, 135 + 5);
-//		//npc_move_to_pos(obj_mei, 0, 1, 650, 135 + 4);
+		npc_move_to_pos(obj_grace, 1, 0, 570, obj_grace.y);
+		npc_move_to_pos(obj_brooklyn, 1, 0, 615, obj_grace.y);
+		npc_move_to_pos(obj_mei, 1, 0, 660, obj_mei.y);
+		npc_move_to_pos(obj_mei, 1, 1, 655, 135 + 5);
+		npc_move_to_pos(obj_mei, 1, 0, 650, 135 + 5);
+		//npc_move_to_pos(obj_mei, 0, 1, 650, 135 + 4);
 		
-//		//game_camera_change_settings(obj_grace, 1);
+		//game_camera_change_settings(obj_grace, 1);
 		
-//		global.cutscene = false;
-//		global.game_time = "5:00 pm";
-//		teleport_player(870, 135, school_1F);
-//		move_to_pos(1, 0, 705, obj_player.y);
-//		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
-//}
+		global.cutscene = false;
+		global.game_time = "5:00 pm";
+		teleport_player(870, 135, school_1F);
+		move_to_pos(1, 0, 705, obj_player.y);
+		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
+}
 if keyboard_check(CAMERA_ZOOM) && !global.QTE && !global.in_dialogue{
 	//instance_create_depth(0,0,0, obj_choice_default_QTE);
 	//instance_create_depth(0,0,0, obj_mei_QTE);
