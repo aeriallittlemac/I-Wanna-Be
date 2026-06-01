@@ -10,10 +10,10 @@ timer = 12;
 ashley_message = "Breakdown breakdown breakdown breakdown breakdown"
 line_sep = 60;
 line_width = 500;
-
-
+minigame_text = "Find the weak points and shatter the illusion."
 win_cutscene = dialogue_QTE_one;
 lose_cutscene = dialogue_QTE_two;
+minigame_text_pixel_font = font_add("joystix monospace.otf", 12, false, false, 64, 128);
 timer_pixel_font = font_add("joystix monospace.otf", 25, false, false, 64, 128);
 message_pixel_font = font_add("joystix monospace.otf", 15, false, false, 64, 128);
 array_push(hammer_target_x, 135);
@@ -23,3 +23,4 @@ array_push(hammer_target_y, 100);
 array_push(hammer_target_x, 180);
 array_push(hammer_target_y, 40);
 global.QTE = true;
+

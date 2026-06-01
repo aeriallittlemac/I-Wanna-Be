@@ -5,7 +5,6 @@ if !hammer_out_of_range{
 	array_delete(hammer_target_y, 0, 1);
 	}
 	else{
-		game_NewDialogue(win_cutscene);
 		instance_destroy(self);
 	}
 }

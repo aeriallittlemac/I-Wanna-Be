@@ -17,6 +17,9 @@ character_shake_offset = 0;
 character_shake_margins = 3; 
 character_shake_count = 8;
 
+minigame_text = "Solve the puzzle to arrange your defense."
+
+minigame_text_pixel_font = font_add("joystix monospace.otf", 12, false, false, 64, 128);
 choice_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 timer_pixel_font = font_add("joystix monospace.otf", 25, false, false, 64, 128);
 
@@ -39,12 +42,12 @@ array_push(puzzle_empty_spaces, 4);
 array_push(puzzle_empty_spaces, 8);
 array_push(puzzle_empty_spaces, 9);
 piece_size = 29*minimap_scale;
-puzzle_x = 85;
-puzzle_y = 30;
+puzzle_x = 85+45;
+puzzle_y = 30+45;
 puzzle_row_num = 4;
 scattered_words = array_create(0);
-scattered_pieces_x = 10;
-scattered_pieces_y = 120;
+scattered_pieces_x = 10+16;
+scattered_pieces_y = 120+16;
 scatter_pieces_padding = 50;
 select_piece_index = 0;
 function drawPuzzle(){
@@ -75,7 +78,7 @@ function drawPuzzle(){
 			}
 		}
 		if !displayed_missing[i]{
-		draw_text_ext_transformed_colour(puzzle_x + (col+0.5)*piece_size,  puzzle_y+(row+0.5)*piece_size, displayed_words[i], -1, -1, 1,  1.2, text_angle, c_yellow, c_yellow, c_yellow, c_yellow, 1);
+		draw_text_ext_transformed_colour(puzzle_x + (col)*piece_size,  puzzle_y+(row)*piece_size, displayed_words[i], -1, -1, 1,  1.2, text_angle, c_yellow, c_yellow, c_yellow, c_yellow, 1);
 		}
 	}
 }

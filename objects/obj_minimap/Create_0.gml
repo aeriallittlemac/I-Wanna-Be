@@ -268,9 +268,11 @@ global.storylines = {
 				ashley: false,
 				brooklyn: false,
 			},
+			
 			hard_on: false,
 		},
 		Day_Three:{
+			mei_resolves_to_talk: false,
 			talked_to: {
 				mei: false,
 				grace: false,

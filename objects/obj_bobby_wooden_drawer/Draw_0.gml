@@ -1,5 +1,5 @@
 draw_self();
-draw_sprite_ext(spr_bobby_wooden_drawer_outline, -1, x, y, 1, 1, 0, c_white, in_detect_range);
+draw_sprite_ext(outline_spr, -1, x, y, 1, 1, 0, c_white, in_detect_range);
 draw_sprite_ext(spr_interact, interact_image_index, x, y, 1, 1, 0, c_white, in_detect_range);
 show_debug_message(interact_image_index);
 if !in_detect_range{

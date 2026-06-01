@@ -1,0 +1,2 @@
+game_NewDialogue(dialogue_brooklynseat_deny_rumor_letter);
+game_change_reputation(+15);

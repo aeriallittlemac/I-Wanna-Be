@@ -34,4 +34,7 @@ if start{
 	
 	
 }
-
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_font(minigame_text_pixel_font);
+draw_text_ext_transformed_color(50, 100, minigame_text, 30, 200, 1, 1, 35, c_white, c_white, c_white, c_white, 1);

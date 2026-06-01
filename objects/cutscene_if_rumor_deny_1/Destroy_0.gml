@@ -7,3 +7,4 @@ obj_brooklyn.entityActivateScript = NewDialogue;
 obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
 game_wait(0.8);
 set_QTE_bgm(sewing_club_happy);
+instance_create_depth(0,0,0, cutscene_sewing_club_setup_day_3_deny_rumor)

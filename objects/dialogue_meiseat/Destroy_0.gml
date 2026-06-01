@@ -12,7 +12,7 @@ if global.day == 2 && global.game_time == "3:30 pm"{
 else if global.day == 3 && global.game_time == "3:30 pm"{
 	global.storylines.Sewing_Club.Day_Three.talked_to.mei = true;
 	if global.storylines.Grace.truth_or_dare_confession{
-		if global.storylines.Grace.deny_rumor{
+		if global.storylines.Grace.deny_rumor && global.storylines.Sewing_Club.Day_Three.mei_resolves_to_talk{
 			//instance_create_depth(0, 0, 0, beatmap_mei_tuesday_sewing_club_rumor_deny);
 			var inst = instance_create_depth(0, 0, 0, obj_mei_QTE);
 			inst.win_cutscene = dialogue_mei_interact_if_rumor_deny_succeed;

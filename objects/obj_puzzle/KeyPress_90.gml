@@ -2,13 +2,7 @@ if piece_index == obj_brooklyn_QTE_new.select_piece_index{
 	piece_grabbed = !piece_grabbed;
 	obj_brooklyn_QTE_new.grabbing = piece_grabbed;	
 	if !piece_grabbed && obj_brooklyn_QTE_new.displayed_missing[puzzle_index]{
-	var row = floor(puzzle_index/obj_brooklyn_QTE_new.puzzle_row_num);
-	var col = puzzle_index%obj_brooklyn_QTE_new.puzzle_row_num;
-	var snap_target_x = (obj_brooklyn_QTE_new.puzzle_x + col*obj_brooklyn_QTE_new.piece_size)/minimap_scale;
-	var snap_target_y = (obj_brooklyn_QTE_new.puzzle_y + row*obj_brooklyn_QTE_new.piece_size)/minimap_scale;
-	show_debug_message("row"+ string(row));
-	show_debug_message("col"+ string(col));
-	if sqr(x-snap_target_x) + sqr(y-snap_target_y) < 160{
+	if snapping{
 	x = snap_target_x;
 	y = snap_target_y;
 	

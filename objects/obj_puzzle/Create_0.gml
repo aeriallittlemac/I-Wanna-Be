@@ -6,3 +6,6 @@ piece_index = -1;
 choice_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 piece_grabbed = false;
 move_speed = 150;
+snapping = false;
+snap_target_x = 0;
+snap_target_y = 0;

@@ -21,6 +21,9 @@ maze_y = 15;
 player_x = maze_x+5;
 player_y = maze_y+1;
 
+minigame_text = "Escape the labyrinth of female logic."
+
+minigame_text_pixel_font = font_add("joystix monospace.otf", 12, false, false, 64, 128);
 choice_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 timer_pixel_font = font_add("joystix monospace.otf", 25, false, false, 64, 128);
 

@@ -9,5 +9,6 @@ scr_text("???", spr_grace_portrait_default, 0);
 scr_text("You’re usually way crueler. What’s going on?", spr_grace_portrait_default, 0);
 scr_text("Just do it.", spr_brooklyn_portrait_default, 0);
 scr_text("Fine, I guess.", spr_grace_portrait_default, 0);
-scr_text("Brooklyn would go on to use AI to doctor indecent photos of you and Grace and put them on the internet.");
+scr_text("Brooklyn would go on to use AI to doctor indecent photos of you and Grace...");
+scr_text("and put them on the internet.");
 scr_text("But no one would find out...until it was too late.");
