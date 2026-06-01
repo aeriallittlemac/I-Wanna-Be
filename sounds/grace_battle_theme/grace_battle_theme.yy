@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "qte_bgm",
+  "name": "grace_battle_theme",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.4,
+  "volume": 0.29,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "qte_bgm.wav",
-  "duration": 9.6,
+  "soundFile": "grace_battle_theme.wav",
+  "duration": 48.0,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

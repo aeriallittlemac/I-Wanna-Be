@@ -1,18 +1,12 @@
 QTE_bgm = qte_bgm;
 original_bgm_gain = audio_sound_get_gain(global.bgm);
-<<<<<<< Updated upstream
+
 audio_sound_gain(global.bgm, 0, 100);
 if audio_is_playing(QTE_bgm){
 	audio_stop_sound(QTE_bgm);
 }
 audio_play_sound(QTE_bgm, 1, true);
-=======
-QTE_bgm = qte_bgm;
-audio_sound_gain(global.bgm, 0, 100);
-if !audio_is_playing(QTE_bgm){
-audio_play_sound(QTE_bgm, 1, true);
-}
->>>>>>> Stashed changes
+
 audio_sound_gain(QTE_bgm, 0, 0);
 audio_sound_gain(QTE_bgm, 0.4, 100);
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
