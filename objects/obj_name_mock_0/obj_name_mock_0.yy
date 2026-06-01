@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tb_mgr",
-  "spriteId": null,
+  "name": "obj_name_mock_0",
+  "spriteId": {
+    "name": "spr_box_mock",
+    "path": "sprites/spr_box_mock/spr_box_mock.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialogue System",
-    "path": "folders/UI/Dialogue System.yy",
+    "name": "Mock 0",
+    "path": "folders/UI/Dialogue System/Mocks/Mock 0.yy",
   },
 }
