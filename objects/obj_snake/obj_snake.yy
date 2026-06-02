@@ -18,7 +18,7 @@
   "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
-  "physicsLinearDamping": 0.7,
+  "physicsLinearDamping": 1.1,
   "physicsAngularDamping": 5.0,
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
