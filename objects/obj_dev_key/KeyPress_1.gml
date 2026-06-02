@@ -24,6 +24,8 @@ if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
 	game_camera_change_settings(obj_player, -1);
 	AddInstanceToDestroy(inst_1D43132F);
+	AddInstanceToDestroy(inst_60A96728);
+	AddInstanceToDestroy(inst_325AA326);
 	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
 }
 
