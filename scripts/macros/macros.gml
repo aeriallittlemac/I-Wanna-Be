@@ -29,5 +29,3 @@
 #macro KICK_DRUM_1 keyboard_check_pressed(CONFIRM_ACTION)
 #macro KICK_DRUM_2 keyboard_check_pressed(CANCEL_ACTION)
 #macro SNARE_DRUM keyboard_check_pressed(MOVE_LEFT)
-
-
