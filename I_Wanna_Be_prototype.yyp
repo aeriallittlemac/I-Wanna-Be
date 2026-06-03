@@ -829,7 +829,6 @@
     {"id":{"name":"spr_window","path":"sprites/spr_window/spr_window.yy",},"order":7,},
     {"id":{"name":"scribble_font_combine","path":"scripts/scribble_font_combine/scribble_font_combine.yy",},"order":5,},
     {"id":{"name":"scribble_font_set_style_family","path":"scripts/scribble_font_set_style_family/scribble_font_set_style_family.yy",},"order":16,},
-    {"id":{"name":"dialogue_infiltration_success","path":"objects/dialogue_infiltration_success/dialogue_infiltration_success.yy",},"order":0,},
     {"id":{"name":"cutscene_grace_appearanace","path":"objects/cutscene_grace_appearanace/cutscene_grace_appearanace.yy",},"order":14,},
     {"id":{"name":"spr_mcronald_up","path":"sprites/spr_mcronald_up/spr_mcronald_up.yy",},"order":2,},
     {"id":{"name":"obj_rap_grace_verse_1","path":"objects/obj_rap_grace_verse_1/obj_rap_grace_verse_1.yy",},"order":0,},
