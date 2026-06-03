@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_snake",
   "spriteId": {
-    "name": "spr_snake",
-    "path": "sprites/spr_snake/spr_snake.yy",
+    "name": "spr_snake_head",
+    "path": "sprites/spr_snake_head/spr_snake_head.yy",
   },
   "solid": false,
   "visible": true,
