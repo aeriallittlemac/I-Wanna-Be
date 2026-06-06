@@ -62,7 +62,7 @@ if keyboard_check(GRACE_RIPS_FRENCHIE){
 	//audio_sound_gain()
 	teleport_npc(obj_wei, noone, 0,0,DOWN);
 	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
-	instance_create_depth(0,0,0, player_n_grace);
+	//instance_create_depth(0,0,0, player_n_grace);
 var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 		with inst{
 			default_pixel_font = font_add("joystix monospace.otf", 45*2, false, false, 32, 128);
@@ -82,13 +82,10 @@ var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 		npc_move_to_pos(obj_mei, 1, 0, 650, 135 + 5);
 		//npc_move_to_pos(obj_mei, 0, 1, 650, 135 + 4);
 		
-		//game_camera_change_settings(obj_grace, 1);
-		
 		global.cutscene = false;
 		global.game_time = "5:00 pm";
-		teleport_player(870, 135, school_1F);
-		move_to_pos(1, 0, 705, obj_player.y);
-		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
+		obj_player.visible = false;
+		teleport_player(870, 135, school_1F, timed_dialogue_grace_rips_frenchie_apart);
 }
 if keyboard_check(CAMERA_ZOOM) && !global.QTE && !global.in_dialogue{
 	//instance_create_depth(0,0,0, obj_choice_default_QTE);
