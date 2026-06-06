@@ -30,6 +30,7 @@ if (keyboard_check_pressed(CANCEL_ACTION)) {
 	close_dialogue();
 } else if (accept_key) {
 	if (text_element.on_last_page()) {
+		audio_play_sound(sfx_move_select, 1, false);
 		close_dialogue();
 		exit;
 	}

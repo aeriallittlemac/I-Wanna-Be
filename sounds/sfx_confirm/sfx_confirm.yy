@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_confirm.wav",
-  "duration": 1.126125,
+  "duration": 0.49678,
   "parent": {
     "name": "sfx",
     "path": "folders/UI/Pause Menu/sfx.yy",

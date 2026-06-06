@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("One!");
+obj_scribble.textbox_unnamed("[sfx_open_door]One!");

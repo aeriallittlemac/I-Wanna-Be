@@ -1,0 +1,1 @@
+ashley_index = 0;

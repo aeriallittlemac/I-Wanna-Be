@@ -18,6 +18,10 @@
 #macro GRACE_QTE ord("L")
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
+#macro SANDWICH_GAME ord("K")
+if keyboard_check_pressed(SANDWICH_GAME){
+	instance_create_depth(0,0,0,obj_PBnJ_minigame);
+}
 if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 
 }

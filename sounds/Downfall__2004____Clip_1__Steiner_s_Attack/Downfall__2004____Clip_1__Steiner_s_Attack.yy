@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "making_decisions",
+  "name": "Downfall__2004____Clip_1__Steiner_s_Attack",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "making_decisions.wav",
-  "duration": 39.27272,
+  "soundFile": "Downfall__2004____Clip_1__Steiner_s_Attack.mp3",
+  "duration": 256.4441,
   "parent": {
-    "name": "Music",
-    "path": "folders/School Assets/Non-UI Sounds/Music.yy",
+    "name": "Ashley_test",
+    "path": "folders/UI/Dialogue System/Character Sounds/Ashley_test.yy",
   },
 }
