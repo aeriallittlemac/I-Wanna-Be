@@ -15,10 +15,8 @@ var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 		npc_move_to_pos(obj_brooklyn, 1, 0, 615, obj_grace.y);
 		npc_move_to_pos(obj_mei, 1, 0, 660, obj_grace.y);
 		instance_create_depth(0,0,0,grace_n_mei);
-		teleport_player(840, 120, school_1F);
+		teleport_player(840, 120, school_1F, timed_dialogue_grace_rips_frenchie_apart);
 		//move_to_pos(1, 0, 605, obj_player.y)
 		global.cutscene = false;
 		global.game_time = "5:00 pm";
-		
 		obj_player.visible = false;
-		game_NewDialogue(timed_dialogue_grace_rips_frenchie_apart);
