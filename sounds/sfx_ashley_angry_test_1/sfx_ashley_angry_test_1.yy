@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_ashley_test_angry_1",
+  "name": "sfx_ashley_angry_test_1",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_ashley_test_angry_1.wav",
+  "soundFile": "sfx_ashley_angry_test_1.wav",
   "duration": 1.726644,
   "parent": {
     "name": "Ashley_test",

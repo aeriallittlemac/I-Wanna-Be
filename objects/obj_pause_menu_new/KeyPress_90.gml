@@ -1,6 +1,6 @@
+if global.pause_menu{
 show_debug_message(page);
 show_debug_message(selected_page);
-if global.pause_menu{
 if bookmark_select{
 	audio_play_sound(sfx_book_slide, 1, false);
 	audio_play_sound(sfx_book_open, 1, false);

@@ -229,6 +229,7 @@ function change_reputation(val){
 		cur_val = global.reputation;
 		global.reputation += val;
 	}
+	return inst;
 }
 
 function change_female_affinity(val){

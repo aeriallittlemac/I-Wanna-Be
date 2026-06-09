@@ -1,5 +1,9 @@
 timer -= delta_time/1000000;
 	if timer <=0{
+		// This fix is a band-aid that prevents both win and lose 
+		// cutscenes from being triggered.
+		win_cutscene = noone;
+		
 		game_NewDialogue(lose_cutscene);
 		instance_destroy(self);
 	}
