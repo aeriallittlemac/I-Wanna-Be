@@ -1,0 +1,1 @@
+NewDialogue(dialogue_sewing_club_ashleys_breakdown_8);

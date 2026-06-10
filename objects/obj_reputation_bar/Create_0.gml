@@ -1,6 +1,6 @@
 new_val = 0;
 cur_val = 0;
-y_offset = 20;
+y_offset = 0;
 change_speed = room_speed;
 alarm[0] = room_speed/change_speed;
 bar_show_extra_time = 0.4;
