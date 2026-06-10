@@ -12,13 +12,35 @@
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
+#macro SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE ord("Y")
 #macro FRENCHIE_CHASE ord("F")
-#macro WEI_DRUMS_DEBUT ord("V")
+#macro THURSDAY_MORNING ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
-#macro GRACE_QTE ord("L")
+#macro DRAWER ord("L")
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro SANDWICH_GAME ord("K")
+
+if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE){
+	
+}
+
+if keyboard_check_pressed(THURSDAY_MORNING){
+		game_camera_change_settings(obj_player, -1);
+		global.day = 5;
+		global.game_time = "10:00 am";
+		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
+		global.reputation = 1;
+		global.female_affinity = 1;
+		instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
+		game_change_reputation(49);
+		game_wait(1.2);
+		game_change_female_affinity(49);
+		AddInstanceToDestroy(inst_325AA326);
+		AddInstanceToDestroy(inst_60A96728);
+		AddInstanceToDestroy(inst_1D43132F);
+ 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
+}
 if keyboard_check_pressed(SANDWICH_GAME){
 	instance_create_depth(0,0,0,obj_PBnJ_minigame);
 }
@@ -110,23 +132,19 @@ if keyboard_check(ASHLEY_SCENE){
 	teleport_player(CLASSROOM_TOP_LEFT_CORNER_SEAT_X + CLASSROOM_SEATS_SPACING_X-5, CLASSROOM_TOP_LEFT_CORNER_SEAT_Y + CLASSROOM_SEATS_SPACING_Y + 2, school_main_classroom, cutscene_sewing_club_setup_day_4_ashleys_route_1);
 }
 
-if keyboard_check(GRACE_QTE){
-	var inst = instance_create_depth(0,0,0, obj_graces_snake_game);
-	with inst{
-		win_cutscene = dialogue_QTE_one;
-		lose_cutscene = dialogue_QTE_two;
-	}
+if keyboard_check(DRAWER){
+	var inst = instance_create_depth(0,0,0, obj_drawer_scene);
 }
 
-if keyboard_check(WEI_DRUMS_DEBUT){
-	teleport_npc(obj_mcronald, school_2F, 582, 125, LEFT);
-	teleport_player(470, 117, school_2F);
-	AddInstanceToActivate(inst_WEI_DRUM_DEBUT);
-	AddInstanceToDestroy(inst_60A96728);
-	global.day = 2
-	global.game_time = "8:00 pm";
-	global.night = true;
-}
+//if keyboard_check(WEI_DRUMS_DEBUT){
+//	teleport_npc(obj_mcronald, school_2F, 582, 125, LEFT);
+//	teleport_player(470, 117, school_2F);
+//	AddInstanceToActivate(inst_WEI_DRUM_DEBUT);
+//	AddInstanceToDestroy(inst_60A96728);
+//	global.day = 2
+//	global.game_time = "8:00 pm";
+//	global.night = true;
+//}
 
 if keyboard_check(SEWING_CLUB_TUESDAY_GRACE_ROUTE){
 	global.sewing_club_second_day_debug = true;

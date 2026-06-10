@@ -16,6 +16,28 @@ function play_music(elem, params, idx) {
     }
 }
 
+function instance_create_object(elem, params, idx) {
+	//audio_play_sound(params[0], 1, true);
+	var object_name = params[0];
+    var object_asset = asset_get_index(object_name);
+
+    if (object_asset != -1)
+    {
+        instance_create_depth(0,0,0,object_asset);
+    }
+}
+
+function instance_destroy_object(elem, params, idx) {
+	//audio_play_sound(params[0], 1, true);
+	var object_name = params[0];
+    var object_asset = asset_get_index(object_name);
+
+    if (object_asset != -1)
+    {
+        instance_destroy(object_asset);
+    }
+}
+
 function in_dialogue_force_set(elem, params, idx) {
 	global.in_dialogue = params[0] == "true";
 }
@@ -41,3 +63,5 @@ scribble_typists_add_event("camera_shake", camera_shake);
 scribble_typists_add_event("red_flash", red_flash);
 scribble_typists_add_event("play_music", play_music);
 scribble_typists_add_event("audio_stop_all", stop_audio);
+scribble_typists_add_event("instance_create_object",instance_create_object);
+scribble_typists_add_event("instance_destroy_object",instance_destroy_object);

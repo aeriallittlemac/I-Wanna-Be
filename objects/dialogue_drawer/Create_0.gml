@@ -1,3 +1,9 @@
 event_inherited();
-scr_text("Just an ordinary drawer.");
-scr_text("Nothing to see here...");
+if global.day >= 5{
+	obj_scribble.textbox_unnamed("Just an ordinary drawer.", sfx_noisy_speech);
+	obj_scribble.textbox_unnamed("Nothing to see here-", sfx_noisy_speech);
+}
+else{
+	obj_scribble.textbox_unnamed("Just an ordinary drawer.");
+	obj_scribble.textbox_unnamed("Nothing to see here...");
+}
