@@ -2,6 +2,10 @@ function npc_move(elem, params, idx) {
 	npc_move_to_pos(asset_get_index(params[0]), real(params[1]), real(params[2]), real(params[3]), real(params[4]));
 }
 
+function npc_teleport(elem, params, idx) {
+	teleport_npc(asset_get_index(params[0]), asset_get_index(params[1]), real(params[2]), real(params[3]), real(params[4]));
+}
+
 function player_move(elem, params, idx) {
 	move_to_pos(real(params[0]), real(params[1]), real(params[2]), real(params[3]));
 }
@@ -35,6 +39,7 @@ function stop_audio(elem, params, idx) {
 
 
 scribble_typists_add_event("npc_move", npc_move);
+scribble_typists_add_event("npc_teleport", npc_teleport);
 scribble_typists_add_event("player_move", player_move);
 scribble_typists_add_event("in_dialogue_force_set", in_dialogue_force_set);
 scribble_typists_add_event("camera_shake", camera_shake);

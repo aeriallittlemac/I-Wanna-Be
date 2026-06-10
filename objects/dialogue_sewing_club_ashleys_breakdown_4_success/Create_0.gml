@@ -8,7 +8,7 @@ obj_scribble.textbox_unnamed(
 );
 
 obj_scribble.textbox(
-	"No...",
+	"[audio_stop_all][play_music,important_decision_looping]No...",
 	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
 );
 
@@ -17,7 +17,7 @@ obj_scribble.textbox_unnamed(
 );
 
 obj_scribble.textbox(
-	"[audio_stop_all][sfx_ashley_angry_test_1]He [shake]killed[/shake] himself! Are you happy?!",
+	"[sfx_ashley_angry_test_1]He [shake]killed[/shake] himself! Are you happy?!",
 	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
 );
 

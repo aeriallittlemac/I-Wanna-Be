@@ -8,7 +8,7 @@ obj_scribble.textbox_unnamed(
 );
 
 obj_scribble.textbox(
-	"[sfx_ashley_angry_test_1][camera_shake]STOP IT!",
+	"[audio_stop_all][play_music,important_decision_looping][sfx_ashley_angry_test_1][camera_shake]STOP IT!",
 	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
 );
 

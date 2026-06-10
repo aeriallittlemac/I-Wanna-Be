@@ -1,8 +1,5 @@
 event_inherited();
 
-var rep_bar = change_reputation(1000);
-rep_bar.y_offset = -50;
-
 obj_scribble.textbox(
 	"[sfx_ashley_test_1]H-hello, Senpai! I'm so super g-glad you could make it!",
 	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
