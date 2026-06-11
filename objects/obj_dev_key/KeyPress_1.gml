@@ -27,7 +27,7 @@ if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
 	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
 	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
 	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
-	teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_4_graces_route);
+	teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_graces_route);
 	global.storylines.Grace.truth_or_dare_confession = true;
 	global.storylines.Grace.deny_rumor = false;
 }
@@ -157,14 +157,14 @@ if keyboard_check(SEWING_CLUB_TUESDAY_GRACE_ROUTE){
 	global.sewing_club_second_day_debug = true;
 	//if global.storylines.Grace.truth_or_dare_confession{
 	//	if global.storylines.Grace.deny_rumor{
-	//		teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+	//		teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 	//	}
 	//	else{
-	//		teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+	//		teleport_player(215, 57, school_sewing_club, dialogue_if_rumor);
 	//	}
 	//}
 	//else{
-	//	teleport_player(215, 45, school_sewing_club);
+	//	teleport_player(215, 57, school_sewing_club);
 	//}
 	//instance_create_depth(0,0,0,cutscene_talk_to_girls);
 	//global.day = 3
@@ -179,14 +179,14 @@ if keyboard_check(SEWING_CLUB_TUESDAY_GRACE_ROUTE){
 		teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 				if global.storylines.Grace.deny_rumor{
 					teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
-					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+					teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 				}
 				else{
-					teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
+					teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
 				}
 			}
 			else{
-				teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_no_rumor);
+				teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_no_rumor);
 			}
 			QuestCompleted(global.quest_list.sewing_club_quest);
 			global.game_time = "3:30 pm";
@@ -196,7 +196,7 @@ if keyboard_check(SEWING_CLUB_TUESDAY_GRACE_ROUTE){
 				
 				obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
 				teleport_npc(obj_ashley, school_sewing_club, 85+53, 140, DOWN);
-				//teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup);
+				//teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup);
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		//if !global.storylines.Grace.deny_rumor{
@@ -243,14 +243,14 @@ if keyboard_check(SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE){
 		teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 				if global.storylines.Grace.deny_rumor{
 					teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
-					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+					teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 				}
 				else{
-					teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
+					teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
 				}
 			}
 			else{
-				teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_no_rumor);
+				teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_no_rumor);
 			}
 			QuestCompleted(global.quest_list.sewing_club_quest);
 			global.game_time = "3:30 pm";
@@ -260,7 +260,7 @@ if keyboard_check(SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE){
 				
 				obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
 				teleport_npc(obj_ashley, school_sewing_club, 85+53, 140, DOWN);
-				//teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup);
+				//teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup);
 	if global.storylines.Grace.truth_or_dare_confession{
 	
 		//if !global.storylines.Grace.deny_rumor{
@@ -305,14 +305,14 @@ if keyboard_check(SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE){
 		teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 				if global.storylines.Grace.deny_rumor{
 					teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
-					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+					teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 				}
 				else{
-					teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
+					teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
 				}
 			}
 			else{
-				teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_4_ashleys_route);
+				teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_ashleys_route);
 			}
 			QuestCompleted(global.quest_list.sewing_club_quest);
 			
@@ -355,14 +355,14 @@ if keyboard_check(GRACE_MISSING){
 //		teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 //				if global.storylines.Grace.deny_rumor{
 //					teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
-//					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+//					teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 //				}
 //				else{
-//					teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
+//					teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_3_rumor_escalate);
 //				}
 //			}
 //			else{
-//				teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_4_ashleys_route);
+//				teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_ashleys_route);
 //			}
 //			QuestCompleted(global.quest_list.sewing_club_quest);
 			
@@ -435,5 +435,5 @@ if keyboard_check(MONDAY_SEWING_CLUB){
 	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 	//obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
 	teleport_npc(obj_ashley, school_sewing_club, 85+63, 140, DOWN);
-	teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_2);
+	teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_2);
 }

@@ -51,17 +51,21 @@ obj_scribble.textbox(
 );
 //move frenchie to door
 obj_scribble.textbox_unnamed(
-	"[npc_teleport,obj_frenchie,school_1F,618,119,RIGHT] There he goes.");
+	"[npc_teleport,obj_frenchie,school_1F,618,119,0] There he goes.");
 
 obj_scribble.textbox(
 	"[vl_grace_default_1]Wow, he took that a lot better than I thought he would.",
 	"Grace", spr_grace_portrait_cocky
 );
 obj_scribble.textbox(
-	"[vl_grace_default_2]I totally thought he would start crying, ha!",
+	"[vl_grace_default_2]I totally thought he would start crying, ha![sfx_dramatic_1][instance_create_object,obj_frenchie_shooting_scene]",
 	"Grace", spr_grace_portrait_cocky_2
 );	
 obj_scribble.textbox(
-	"[vl_brooklyn_default_1]I suppose even primates learn self control at some point.",
+	"[vl_brooklyn_default_1]I suppose even primates learn self control at some point.[sfx_dramatic_2][instance_create_object,obj_frenchie_shooting_scene_2]",
 	"Brooklyn", spr_brooklyn_portrait_amused
-);	
+);
+
+obj_scribble.textbox_unnamed(
+	@"This is not good. We must figure out a way to stop him.
+	[/page]Perhaps there’s something in this room...");

@@ -17,7 +17,7 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 			for(var i = 0; i < array_length(sewing_club_r2); i++){
 					teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
 				}
-				teleport_player(215, 45, school_sewing_club);
+				teleport_player(215, 57, school_sewing_club);
 			//obj_ashley.entityActivateArg = dialogue_ashleyseat;
 			//obj_mei.entityActivateArg = dialogue_meiseat;
 			//obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
@@ -30,14 +30,14 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 		if global.game_time == "1:00 pm"{
 			if global.storylines.Grace.truth_or_dare_confession{
 				if global.storylines.Grace.deny_rumor{
-					teleport_player(215, 45, school_sewing_club, cutscene_if_rumor_deny);
+					teleport_player(215, 57, school_sewing_club, cutscene_if_rumor_deny);
 				}
 				else{
-					teleport_player(215, 45, school_sewing_club, dialogue_if_rumor);
+					teleport_player(215, 57, school_sewing_club, dialogue_if_rumor);
 				}
 			}
 			else{
-				teleport_player(215, 45, school_sewing_club);
+				teleport_player(215, 57, school_sewing_club);
 			}
 			QuestCompleted(global.quest_list.sewing_club_quest);
 			global.game_time = "3:30 pm";
@@ -72,7 +72,7 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 			for(var i = 0; i < array_length(sewing_club_r2); i++){
 					teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
 				}
-				teleport_player(215, 45, school_sewing_club);
+				teleport_player(215, 57, school_sewing_club);
 	
 			//obj_ashley.entityActivateArg = dialogue_ashleyseat;
 			//obj_mei.entityActivateArg = dialogue_meiseat;

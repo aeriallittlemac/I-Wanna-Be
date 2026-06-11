@@ -47,12 +47,12 @@ else if global.day == 4{
 		}
 	}
 	else{
-		if !global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn{
+		//if !global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn{
 			
-		}
-		else{
+		//}
+		//else{
 			
-		}
+		//}
 	}
 }
 else{
