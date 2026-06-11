@@ -84,7 +84,8 @@ obj_scribble.textbox(
 
 obj_scribble.textbox_unnamed(
 	@"But if anyone could, you would be the one to do it.
-[/page]Think about it. This is something you can do now. You could have done something before, but you can make up for it now with this.
+[/page]Think about it. This is something you can do now.
+[/page]You could have done something before, but you can make up for it now with this.
 [/page]Everyone will like you. The real you."
 );
 
@@ -96,5 +97,5 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox_unnamed(
-	"[npc_move,obj_ashley,1,1,215,30][npc_teleport,obj_ashley,school_1F,1000,1000,3]...Good, this will work perfectly."
+	"[npc_move,obj_ashley,1,1,215,35][npc_teleport,obj_ashley,school_1F,1000,1000,3]...Good, this will work perfectly."
 );
