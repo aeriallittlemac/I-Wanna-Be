@@ -2,8 +2,8 @@ event_inherited();
 if global.day == 2 && global.game_time == "3:30 pm"{
 	scr_text("*walks in", spr_mei_portrait_default, 0);
 	scr_text("Oh, hey!", spr_mei_portrait_default, 0);
-	scr_text("You’re the new kid, right?", spr_mei_portrait_default, 0);
-	scr_text("Glad to have you here! What’s your name?", spr_mei_portrait_default, 0);
+	scr_text("You're the new kid, right?", spr_mei_portrait_default, 0);
+	scr_text("Glad to have you here! What's your name?", spr_mei_portrait_default, 0);
 }
 else if global.day == 3 && global.game_time == "3:30 pm"{
 	obj_player.face = UP;
@@ -26,7 +26,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 					scr_text("I know that you must feel like Grace is acting, like, super unfair.", spr_mei_portrait_default, 0);
 					scr_text("But that's just kind of how it goes with her.", spr_mei_portrait_default, 0);
 					scr_text("Once she calms down, could you go make up with her?", spr_mei_portrait_default, 0);
-					scr_text("You’ll say sorry, and maybe she’ll say sorry...", spr_mei_portrait_default, 0);
+					scr_text("You'll say sorry, and maybe she'll say sorry...", spr_mei_portrait_default, 0);
 				}
 			}
 			else{
@@ -41,7 +41,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 					scr_text("She might pretend to crash out first.", spr_brooklyn_portrait_default, 0);
 					scr_text("But she's too much of an attention whore not to love this.", spr_brooklyn_portrait_default, 0);
 					scr_text("Basking in the glory of her own notoriety...", spr_brooklyn_portrait_default, 0);
-					scr_text("That’s the kind of degenerate she is.", spr_brooklyn_portrait_default, 0);
+					scr_text("That's the kind of degenerate she is.", spr_brooklyn_portrait_default, 0);
 					scr_text("Really?", spr_mei_portrait_default, 0);
 					scr_text("Yeah.", spr_brooklyn_portrait_default, 0);
 					scr_text("The only way I can see her ever getting mad about people talking about her...", spr_brooklyn_portrait_default, 0);
@@ -61,7 +61,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 			scr_text("Hey, Bobby.", spr_mei_portrait_default, 0);
 			scr_text("Club today sure feels empty, huh?", spr_mei_portrait_default, 0);
 			scr_text("You ask her if she has any clue where the other members have gone.");
-			scr_text("I think Brooklyn’s hanging out with her boyfriend, which makes sense.", spr_mei_portrait_default, 0);
+			scr_text("I think Brooklyn's hanging out with her boyfriend, which makes sense.", spr_mei_portrait_default, 0);
 			scr_text("She really only sticks around when she thinks something interesting is going to happen.", spr_mei_portrait_default, 0);
 			scr_text("Grace is probably walking in any time now...", spr_mei_portrait_default, 0);
 			
@@ -82,7 +82,7 @@ else if global.day == 4 && global.game_time == "3:30 pm"{
 			if !global.storylines.Sewing_Club.Day_Four.talked_to.mei{
 				scr_text("And all that I can see...", spr_mei_portrait_default, 0);
 				scr_text("Is just another Yemen dream~", spr_mei_portrait_default, 0);
-				scr_text("I don’t think those are the lyrics...");
+				scr_text("I don't think those are the lyrics...");
 				scr_text("Oh, hey.", spr_mei_portrait_default, 0);
 				scr_text("So Grace really just disappeared on us, huh...", spr_mei_portrait_default, 0);
 				scr_text("Have you seen any sign of her?", spr_mei_portrait_default, 0);
@@ -100,10 +100,10 @@ else if global.day == 4 && global.game_time == "3:30 pm"{
 				scr_text("I just wanted to have a normal school life, for me!", spr_mei_portrait_default, 0);
 				scr_text("I worked so hard to become the club president...", spr_mei_portrait_default, 0);
 				scr_text("Why did this happen to me?", spr_mei_portrait_default, 0);
-				scr_text("This is all Grace’s fault...", spr_mei_portrait_default, 0);
+				scr_text("This is all Grace's fault...", spr_mei_portrait_default, 0);
 			}
 			else{
-				scr_text("This is all Grace’s fault...", spr_mei_portrait_default, 0);
+				scr_text("This is all Grace's fault...", spr_mei_portrait_default, 0);
 			}
 		}
 	

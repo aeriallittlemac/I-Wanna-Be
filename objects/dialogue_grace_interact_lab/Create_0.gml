@@ -10,7 +10,7 @@ if global.storylines.Grace.truth_or_dare_confession{
 }
 else{
 	scr_text("Oh, hello!", spr_grace_portrait_default, 0);
-	scr_text("It’s so unfortunate that I already have a lab partner, so no, thank you!", spr_grace_portrait_default, 0);
-	scr_text("It’s so nice having that dumb Frenchie boy run errands for me.", spr_grace_gloat_1, 0);
+	scr_text("It's so unfortunate that I already have a lab partner, so no, thank you!", spr_grace_portrait_default, 0);
+	scr_text("It's so nice having that dumb Frenchie boy run errands for me.", spr_grace_gloat_1, 0);
 	scr_text("Last semester, I even made him do my taxes, heehee!", spr_grace_gloat_1, 0);
 }

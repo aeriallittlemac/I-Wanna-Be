@@ -3,7 +3,7 @@ if icon{
 	show_debug_message(object_get_name(object_index));
 	show_debug_message(hmm);
 	show_debug_message(opt);
-	script_execute(entityActivateScript, entityActivateArg);
+	
 	setPlayerFace();
 	switch(player_relative_pos){
 		
@@ -45,5 +45,5 @@ if icon{
 			
 			
 	}
-	
+	script_execute(entityActivateScript, entityActivateArg);
 }

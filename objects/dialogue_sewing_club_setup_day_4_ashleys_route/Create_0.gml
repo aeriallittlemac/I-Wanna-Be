@@ -24,7 +24,7 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	"[vl_brooklyn_amused_1]I’m honestly impressed how thick your skull is, there’s gotta be a genetic defect somewhere.",
+	"[vl_brooklyn_amused_1]I'm honestly impressed how thick your skull is, there's gotta be a genetic defect somewhere.",
 	"Brooklyn", spr_brooklyn_portrait_amused
 );
 

@@ -12,7 +12,7 @@
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
-#macro SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE ord("Y")
+#macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
 #macro FRENCHIE_CHASE ord("F")
 #macro THURSDAY_MORNING ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
@@ -21,8 +21,15 @@
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro SANDWICH_GAME ord("K")
 
-if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE){
-	
+if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
+	game_camera_change_settings(obj_player, -1);
+	global.day = 4;
+	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
+	teleport_player(215, 45, school_sewing_club, cutscene_sewing_club_setup_day_4_graces_route);
+	global.storylines.Grace.truth_or_dare_confession = true;
+	global.storylines.Grace.deny_rumor = false;
 }
 
 if keyboard_check_pressed(THURSDAY_MORNING){
@@ -47,13 +54,13 @@ if keyboard_check_pressed(SANDWICH_GAME){
 if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 
 }
-if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
-	game_camera_change_settings(obj_player, -1);
-	AddInstanceToDestroy(inst_1D43132F);
-	AddInstanceToDestroy(inst_60A96728);
-	AddInstanceToDestroy(inst_325AA326);
-	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
-}
+//if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
+//	game_camera_change_settings(obj_player, -1);
+//	AddInstanceToDestroy(inst_1D43132F);
+//	AddInstanceToDestroy(inst_60A96728);
+//	AddInstanceToDestroy(inst_325AA326);
+//	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
+//}
 
 //if keyboard_check(TUESDAY_MORNING){
 //		game_camera_change_settings(obj_player, -1);

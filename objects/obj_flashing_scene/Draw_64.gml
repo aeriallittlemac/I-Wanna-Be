@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, alpha);

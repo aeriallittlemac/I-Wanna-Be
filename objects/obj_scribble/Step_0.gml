@@ -1,4 +1,5 @@
 if (!active) {
+	previously_active = active;
 	exit;
 }
 
@@ -24,7 +25,7 @@ if (is_async) {
 	exit;
 }
 
-var accept_key = keyboard_check_pressed(CONFIRM_ACTION) && !global.input_off;
+var accept_key = keyboard_check_pressed(CONFIRM_ACTION) && !global.input_off && previously_active;
 
 if (keyboard_check_pressed(CANCEL_ACTION)) {
 	close_dialogue();
@@ -41,3 +42,4 @@ if (keyboard_check_pressed(CANCEL_ACTION)) {
 		text_element.page(text_element.get_page() + 1);
 	}
 }
+previously_active = active;

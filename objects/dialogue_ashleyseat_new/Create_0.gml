@@ -1,6 +1,6 @@
 event_inherited();
 
-if global.day == 2 && global.game_time = "3:30 pm"{
+if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
 		
 	}
@@ -8,7 +8,7 @@ if global.day == 2 && global.game_time = "3:30 pm"{
 		
 	}
 }
-else if global.day == 3 && global.game_time = "3:30 pm"{
+else if global.day == 3{
 	
 	if global.storylines.ashley.truth_or_dare_confession{
 	
@@ -25,7 +25,7 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 		global.storylines.Sewing_Club.Day_Three.talked_to.ashley = true;
 	}
 }
-else if global.day == 4 && global.game_time = "3:30 pm"{
+else if global.day == 4{
 	if global.storylines.grace.truth_or_dare_confession{
 		if !global.storylines.ashley.deny_rumor{
 			

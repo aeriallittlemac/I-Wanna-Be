@@ -1,1 +1,3 @@
-//frenchie moves out of classroom
+event_inherited();
+//frenchie goes out the door
+

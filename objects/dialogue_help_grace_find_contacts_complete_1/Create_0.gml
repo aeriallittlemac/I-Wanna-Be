@@ -1,6 +1,6 @@
 event_inherited();
 scr_text("*smile fades", spr_grace_portrait_default, 0);
-scr_text("Oh, it’s you...", spr_grace_portrait_default, 0);
+scr_text("Oh, it's you...", spr_grace_portrait_default, 0);
 scr_text("...");
 scr_text("Well, I owe you one now, I guess..", spr_grace_portrait_default, 0);
 scr_text("...", spr_grace_portrait_default, 0);

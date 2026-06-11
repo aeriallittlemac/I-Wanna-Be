@@ -5,7 +5,7 @@ scr_text("Listen, I know I'm not the sharpest fool in the shed...", spr_wei_icon
 scr_text("But even I know that Frenchie's going to get crushed like a bug.", spr_wei_icon, 0);
 scr_text("That pink haired girl is a witch, I tell you.", spr_wei_icon, 0);
 scr_text("If it were back then, we would've burned her at the stake.", spr_wei_icon, 0);
-scr_text("You don’t say.");
+scr_text("You don't say.");
 scr_text("I think it's inevitable, though. And necessary.", spr_wei_icon, 0);
 scr_text("God's lessons can be...", spr_wei_icon, 0);
 scr_text("...very hard to watch.", spr_wei_icon, 0);

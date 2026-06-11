@@ -7,7 +7,7 @@ if (global.day == 2 && global.storylines.Main_Classroom.Day_Two.chen_obtained_pa
 	var papers_handed_out = global.storylines.Main_Classroom.Day_Two.papers_handed_out;
 	if (papers_handed_out == 0) {
 		scr_text("Hey thanks!", spr_wei_icon, 0);
-		scr_text("That’s my guy right there.", spr_wei_icon, 0);
+		scr_text("That's my guy right there.", spr_wei_icon, 0);
 	} else if (papers_handed_out <= 2) {
 		scr_text("Alright, thanks Bobby!", spr_wei_icon, 0);
 	} else if (papers_handed_out <= 5) {

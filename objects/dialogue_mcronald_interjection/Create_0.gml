@@ -11,9 +11,9 @@ if global.storylines.Grace.truth_or_dare_confession{
 	
 	scr_text("I know you think that Grace is your friend, maybe even more.", spr_mcronald_icon, 0);
 	
-	scr_text("But either you’re lying, or you’re in deep.", spr_mcronald_icon, 0);
+	scr_text("But either you're lying, or you're in deep.", spr_mcronald_icon, 0);
 	
-	scr_text("It’s the former, right? Tell me it’s the former.", spr_mcronald_icon, 0);
+	scr_text("It's the former, right? Tell me it's the former.", spr_mcronald_icon, 0);
 	
 	scr_text("You");
 	
@@ -29,8 +29,8 @@ if global.storylines.Grace.truth_or_dare_confession{
 				scr_text("That's really great, I'm happy for you Bobby!", spr_mcronald_icon, 0)
 				scr_text("I genuinely am.", spr_mcronald_icon, 0);;
 				scr_text("Well, hopefully that pans out well for you.", spr_mcronald_icon, 0);
-				scr_text("You don’t follow.");
-				scr_text("I’m wishing you well, Bobby Johns!", spr_mcronald_icon, 0);
+				scr_text("You don't follow.");
+				scr_text("I'm wishing you well, Bobby Johns!", spr_mcronald_icon, 0);
 				scr_text("All the best.", spr_mcronald_icon, 0);
 				scr_text("You thanks him.");
 				scr_text("All, shucks. Well, see you round the bend!", spr_mcronald_icon, 0);
@@ -40,17 +40,17 @@ if global.storylines.Grace.truth_or_dare_confession{
 			case "affirm":
 				scr_text("Alright, good. I mean- you have to understand something.", spr_mcronald_icon, 0);
 
-				scr_text("Don’t get too close to the girls.", spr_mcronald_icon, 0);
+				scr_text("Don't get too close to the girls.", spr_mcronald_icon, 0);
 
 				scr_text("I mean, you can talk to them...", spr_mcronald_icon, 0);
 
 				scr_text("But get too close to them, and they might bite, yeah...?", spr_mcronald_icon, 0);
 
-				scr_text("You don’t follow.");
+				scr_text("You don't follow.");
 
-				scr_text("I guess what I’m trying to say is...", spr_mcronald_icon, 0);
+				scr_text("I guess what I'm trying to say is...", spr_mcronald_icon, 0);
 
-				scr_text("I’ve seen this before. And I know how this ends.", spr_mcronald_icon, 0);
+				scr_text("I've seen this before. And I know how this ends.", spr_mcronald_icon, 0);
 
 				scr_text("...Sure.");
 			break;
@@ -67,17 +67,17 @@ else{
 
 		scr_text("A word to the wise, yeah?", spr_mcronald_icon, 0);
 
-		scr_text("Don’t get too close to the girls.", spr_mcronald_icon, 0);
+		scr_text("Don't get too close to the girls.", spr_mcronald_icon, 0);
 
 		scr_text("I mean, you can talk to them...", spr_mcronald_icon, 0);
 
 		scr_text("But get too close to them, and they might bite, yeah...?", spr_mcronald_icon, 0);
 
-		scr_text("You don’t follow.");
+		scr_text("You don't follow.");
 
-		scr_text("I guess what I’m trying to say is...", spr_mcronald_icon, 0);
+		scr_text("I guess what I'm trying to say is...", spr_mcronald_icon, 0);
 
-		scr_text("I’ve seen this before. And I know how this ends.", spr_mcronald_icon, 0);
+		scr_text("I've seen this before. And I know how this ends.", spr_mcronald_icon, 0);
 
 		scr_text("...Sure.");
 

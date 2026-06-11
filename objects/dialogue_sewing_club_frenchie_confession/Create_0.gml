@@ -11,12 +11,12 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	"[vl_frenchie_calm_1]Sorry, I’m not here to join the club.",
+	"[vl_frenchie_calm_1]Sorry, I'm not here to join the club.",
 	"Frenchie", spr_frenchie_portrait_twiddling_thumbs
 );
 
 obj_scribble.textbox(
-	"[vl_frenchie_calm_2]I’m here for something else.",
+	"[vl_frenchie_calm_2]I'm here for something else.",
 	"Frenchie", spr_frenchie_portrait_twiddling_thumbs
 );
 //pause dialogue and move Frenchie to Grace
@@ -37,7 +37,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	"[vl_grace_default_1]Nope!",
-	"Grace", spr_grace_portrait_cocky
+	"Grace", spr_grace_portrait_default
 );
 
 obj_scribble.textbox(
@@ -46,6 +46,22 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	"[vl_frenchie_calm_1]Alright. I’ll go.",
+	"[vl_frenchie_calm_1]Alright. I'll go.",
 	"Frenchie", spr_frenchie_portrait_twiddling_thumbs
 );
+//move frenchie to door
+obj_scribble.textbox_unnamed(
+	"[npc_teleport,obj_frenchie,school_1F,618,119,RIGHT] There he goes.");
+
+obj_scribble.textbox(
+	"[vl_grace_default_1]Wow, he took that a lot better than I thought he would.",
+	"Grace", spr_grace_portrait_cocky
+);
+obj_scribble.textbox(
+	"[vl_grace_default_2]I totally thought he would start crying, ha!",
+	"Grace", spr_grace_portrait_cocky_2
+);	
+obj_scribble.textbox(
+	"[vl_brooklyn_default_1]I suppose even primates learn self control at some point.",
+	"Brooklyn", spr_brooklyn_portrait_amused
+);	

@@ -1,6 +1,5 @@
 event_inherited();
-
-if global.day == 2 && global.game_time = "3:30 pm"{
+if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
 		
 	}
@@ -8,7 +7,7 @@ if global.day == 2 && global.game_time = "3:30 pm"{
 		
 	}
 }
-else if global.day == 3 && global.game_time = "3:30 pm"{
+else if global.day == 3{
 	
 	if global.storylines.Grace.truth_or_dare_confession{
 	
@@ -25,9 +24,10 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 		global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn = true;
 	}
 }
-else if global.day == 4 && global.game_time = "3:30 pm"{
+else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Grace.deny_rumor{
+			
 			obj_scribble.textbox(
 			"...", 
 			"Brooklyn", spr_brooklyn_portrait_default);

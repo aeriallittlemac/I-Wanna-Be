@@ -9,7 +9,7 @@ if global.day == 2 && global.game_time == "3:30 pm"{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
 		scr_text("*blushes", spr_ashley_portrait_default, 0);
 		scr_text("N-n-nice to m-meet you, sempaai!", spr_ashley_portrait_default, 0);
-		scr_text("I come from a lineage of \"Carpenter\"s, that’s my family name,", spr_ashley_portrait_default, 0);
+		scr_text("I come from a lineage of \"Carpenter\"s, that's my family name,", spr_ashley_portrait_default, 0);
 		scr_text("but if you want, you can call me Ah–", spr_ashley_portrait_default, 0);
 		scr_text("ah- ", spr_ashley_portrait_default, 0);
 		scr_text("*blushes some more", spr_ashley_portrait_default, 0);
@@ -50,8 +50,8 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 			scr_text("You tap on her shoulder, catching her by surprise.");
 			scr_text("*Skips a concerning length in the opposite direction.", spr_ashley_portrait_default, 0);
 			scr_text("*Unnecessarily surprised", spr_ashley_portrait_default, 0);
-			scr_text("You’re b-back, s-senpai?", spr_ashley_portrait_default, 0);
-			scr_text("I’m so g-glad to s-see y-", spr_ashley_portrait_default, 0);
+			scr_text("You're b-back, s-senpai?", spr_ashley_portrait_default, 0);
+			scr_text("I'm so g-glad to s-see y-", spr_ashley_portrait_default, 0);
 			scr_text("*Gasp* Is that a l-l-l-letter... For me??!!", spr_ashley_portrait_default, 0);
 			scr_text("*Turns around* Ah! My heart is in my throat… My chest is pounding!", spr_ashley_portrait_default, 0);
 			scr_text("*Gasp* Is that a l-l-l-letter... For me??!!", spr_ashley_portrait_default, 0);

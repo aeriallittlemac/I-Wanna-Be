@@ -1,6 +1,6 @@
 event_inherited();
 
-if global.day == 2 && global.game_time = "3:30 pm"{
+if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.mei{
 		
 	}
@@ -8,7 +8,7 @@ if global.day == 2 && global.game_time = "3:30 pm"{
 		
 	}
 }
-else if global.day == 3 && global.game_time = "3:30 pm"{
+else if global.day == 3{
 	
 	if global.storylines.Grace.truth_or_dare_confession{
 	
@@ -25,9 +25,9 @@ else if global.day == 3 && global.game_time = "3:30 pm"{
 		global.storylines.Sewing_Club.Day_Three.talked_to.mei = true;
 	}
 }
-else if global.day == 4 && global.game_time = "3:30 pm"{
+else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{		
+		if !global.storylines.Grace.deny_rumor{
 			obj_scribble.textbox(
 			"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?", 
 			"Mei", spr_mei_portrait_default);

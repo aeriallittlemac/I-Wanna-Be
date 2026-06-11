@@ -1,8 +1,8 @@
 event_inherited();
 scr_text("Hm? A wax-sealed envelope in this day and age...", spr_brooklyn_portrait_default, 0);
 scr_text("interesting.", spr_brooklyn_portrait_default, 0);
-scr_text("You don’t strike me as such an old fashioned guy.", spr_brooklyn_portrait_default, 0);
-scr_text("I assume you’re just the messenger boy?", spr_brooklyn_portrait_default, 0);
+scr_text("You don't strike me as such an old fashioned guy.", spr_brooklyn_portrait_default, 0);
+scr_text("I assume you're just the messenger boy?", spr_brooklyn_portrait_default, 0);
 scr_text("You nod your head.");
 scr_text("Well, I thank you for your service.", spr_brooklyn_portrait_default, 0);
 scr_text("And your sacrifice for our amusement.", spr_brooklyn_portrait_default, 0);

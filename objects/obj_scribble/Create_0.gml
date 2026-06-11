@@ -29,6 +29,8 @@ queue_chain = array_create(0);
 
 scribble_font_set_default("fnt_joystix_monospace");
 
+previously_active = false;
+
 function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, bounds=BOUNDS_DEFAULT, typist=TYPIST_DEFAULT) {
 	if (active) {
 		array_insert(queue_chain, 0, {

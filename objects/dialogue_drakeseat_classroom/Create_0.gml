@@ -11,7 +11,7 @@ if (global.day == 2 && global.storylines.Main_Classroom.Day_Two.chen_obtained_pa
 	} else if (papers_handed_out <= 2) {
 		scr_text("Hm? Heey, thanks, new kid.", spr_drake_icon, 0);
 	} else if (papers_handed_out <= 5) {
-		scr_text("Hu’? Oh, thanks a lot.", spr_drake_icon, 0);
+		scr_text("Huh? Oh, thanks a lot.", spr_drake_icon, 0);
 	} else{
 		scr_text("*Hic* Oh, hey. Thanks", spr_drake_icon, 0);
 	}

@@ -1,2 +1,2 @@
 event_inherited();
-scr_text("Try the bed, it’s pretty comfy.");
+scr_text("Try the bed, it's pretty comfy.");

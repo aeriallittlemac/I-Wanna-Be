@@ -9,7 +9,7 @@ function branches(branch){
 	switch(branch){
 		
 		case "tease":
-			scr_text("You tell her that you’d gladly eat the leftovers if she couldn’t finish.")
+			scr_text("You tell her that you'd gladly eat the leftovers if she couldn't finish.")
 			
 			scr_text("No no no, that wasn't, like, my point...", spr_grace_portrait_default, 0);
 			
@@ -25,9 +25,9 @@ function branches(branch){
 	    break;
 
 		case "blunt":
-			scr_text("You tell her that she’s eating it or it’s going in the trash.");
+			scr_text("You tell her that she's eating it or it's going in the trash.");
 			
-			scr_text("W-wait, let’s not be hasty!I’ll eat it!", spr_grace_portrait_default, 0);
+			scr_text("W-wait, let's not be hasty!I'll eat it!", spr_grace_portrait_default, 0);
 			
 		break;
 		

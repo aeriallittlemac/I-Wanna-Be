@@ -31,14 +31,14 @@ function branches(branch){
 function continuation(branch){
 	switch(branch){
 		case "dontcare":
-			scr_text("No, don't actually answer that, I honestly don’t really give a damn.", spr_mrchen_icon, 0);
+			scr_text("No, don't actually answer that, I honestly don't really give a damn.", spr_mrchen_icon, 0);
 			scr_text("First class in and I already wanna kill myself...", spr_mrchen_icon, 0);
 			scr_text("Alright, Math class.", spr_mrchen_icon, 0);
-			scr_text("Let’s get this over with, shall we?", spr_mrchen_icon, 0);
+			scr_text("Let's get this over with, shall we?", spr_mrchen_icon, 0);
 			scr_text("Wait, Mr. Chen!", spr_grace_portrait_default, 1);
 			scr_text("What about welcoming the new kid?", spr_grace_portrait_default, 1);
-			scr_text("We’re already well behind schedule, there’s no time for that useless crap.", spr_mrchen_icon, 0);
-			scr_text("But how can we be behind schedule? Isn’t it our first day of class?", spr_grace_portrait_default, 0);
+			scr_text("We're already well behind schedule, there's no time for that useless crap.", spr_mrchen_icon, 0);
+			scr_text("But how can we be behind schedule? Isn't it our first day of class?", spr_grace_portrait_default, 0);
 			scr_text("Words from the president:", spr_mrchen_icon, 0);
 			scr_text("\"The kids are...what do they say now, mentally challenged...", spr_mrchen_icon, 0);
 			scr_text("... so we might as well be behind schedule.\" - what he said.", spr_mrchen_icon, 0);
@@ -47,9 +47,9 @@ function continuation(branch){
 			scr_text("Suck my balls.", spr_wei_angry, 1);
 			scr_text("Is he wrong though?", spr_mcronald_icon, 0);
 			scr_text("Speak for yourself, fool.", spr_brooklyn_portrait_default, 1);
-			scr_text("So, let’s start by reviewing the multiplication table, shall we?", spr_mrchen_icon, 0);
+			scr_text("So, let's start by reviewing the multiplication table, shall we?", spr_mrchen_icon, 0);
 			scr_text("Wait, this is a high school, right?");
-			scr_text("Doesn’t matter. That’s what the president says.", spr_mrchen_icon, 0)
+			scr_text("Doesn't matter. That's what the president says.", spr_mrchen_icon, 0)
 			scr_text("Anyways, I need somebody to hand these out.", spr_mrchen_icon, 0);
 			scr_text("New kid, get over here!.", spr_mrchen_icon, 0);
 
