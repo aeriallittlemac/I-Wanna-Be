@@ -17,7 +17,7 @@
   "soundFile": "vl_mei_shocked_1.wav",
   "duration": 1.593878,
   "parent": {
-    "name": "Grace Voicelines(placeholders rn)",
-    "path": "folders/UI/Dialogue System/Character Sounds/Grace Voicelines(placeholders rn).yy",
+    "name": "Mei Voicelines(placeholders rn)",
+    "path": "folders/UI/Dialogue System/Character Sounds/Mei Voicelines(placeholders rn).yy",
   },
 }

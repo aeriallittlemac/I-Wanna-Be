@@ -1,11 +1,34 @@
 event_inherited();
-scr_text("S-senpaaai!", spr_ashley_portrait_default, 0);
-scr_text("Lord have mercy.");
-scr_text("S-senpaaai!", spr_ashley_portrait_default, 0);
-scr_text("*dead inside", spr_mei_portrait_default, 0);
-scr_text("...", spr_mei_portrait_default, 0);
-scr_text("*are we deadass?", spr_mei_portrait_default, 0);
-scr_text("???", spr_mei_portrait_default, 0);
-scr_text("W-we gotta get ready for the math competition, s-senpai!", spr_ashley_portrait_default, 0);
-scr_text("I’m honestly impressed how thick your skull is, there’s gotta be a genetic defect somewhere.", spr_brooklyn_portrait_default, 0);
-scr_text("S-senpai, follow me!", spr_ashley_portrait_default, 0);
+obj_scribble.textbox(
+	"[sfx_ashley_test_1]S-senpaaai!",
+	"Ashley", spr_ashley_portrait_default
+);
+
+obj_scribble.textbox_unnamed(
+	"Lord have mercy."
+);
+
+obj_scribble.textbox(
+	"...",
+	"Mei", spr_mei_portrait_default
+);
+
+obj_scribble.textbox(
+	"???",
+	"Mei", spr_grace_portrait_confused
+);
+
+obj_scribble.textbox(
+	"[sfx_ashley_test_1]W-we gotta get ready for the math competition, s-senpai!",
+	"Ashley", spr_ashley_portrait_default
+);
+
+obj_scribble.textbox(
+	"[vl_brooklyn_amused_1]I’m honestly impressed how thick your skull is, there’s gotta be a genetic defect somewhere.",
+	"Brooklyn", spr_brooklyn_portrait_amused
+);
+
+obj_scribble.textbox(
+	"[sfx_ashley_test_2]S-senpai, follow me!",
+	"Ashley", spr_ashley_portrait_default
+);

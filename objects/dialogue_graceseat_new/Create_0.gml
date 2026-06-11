@@ -34,23 +34,23 @@ else if global.day == 4 && global.game_time = "3:30 pm"{
 		if !global.storylines.Grace.deny_rumor{
 			obj_scribble.textbox(
 			"[vl_grace_default_1]Ah, it feels so good to know that I finally have a boyfriend...", 
-			"Grace", spr_grace_portrait_cocky_2, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_cocky_2);
 			
 			obj_scribble.textbox(
 			"...", 
-			"Grace", spr_grace_portrait_default, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_default);
 			
 			obj_scribble.textbox(
 			"[vl_grace_annoyed_1]Why the hell is Brooklyn sitting there like she doesn’t care?", 
-			"Grace", spr_grace_portrait_confused, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_confused);
 			
 			obj_scribble.textbox(
 			"[vl_grace_angry_1]Goddamnit, after shitting on me for being single all this time...", 
-			"Grace", spr_grace_portrait_angry, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_angry);
 			
 			obj_scribble.textbox(
 			"[vl_grace_angry_2]She can’t keep getting away with this!", 
-			"Grace", spr_grace_portrait_angry, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_angry);
 		}
 		else{
 			

@@ -9,5 +9,5 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"!!!...[/page]...What?",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );

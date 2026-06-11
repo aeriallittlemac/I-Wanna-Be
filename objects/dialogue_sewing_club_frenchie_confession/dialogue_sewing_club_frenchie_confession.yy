@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "dialogue_frenchies_confession",
+  "name": "dialogue_sewing_club_frenchie_confession",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "dialogue_parent",
-    "path": "objects/dialogue_parent/dialogue_parent.yy",
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 4 - sewing_club",
-    "path": "folders/Dialogue_Lines/Day 4 - sewing_club.yy",
+    "name": "Grace's route",
+    "path": "folders/Dialogue_Lines/Day 4 - sewing_club/Grace's route.yy",
   },
 }

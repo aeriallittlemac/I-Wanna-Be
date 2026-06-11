@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ashley's scene(new dialogue system)",
-    "path": "folders/Dialogue_Lines/Day 4 - sewing_club/Ashley's scene(new dialogue system).yy",
+    "name": "Grace's route",
+    "path": "folders/Dialogue_Lines/Day 4 - sewing_club/Grace's route.yy",
   },
 }

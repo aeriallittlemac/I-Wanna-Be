@@ -6,13 +6,13 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"...[/page]I...[/page]I was...[/page][shake]...Scared.[/shake]",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox(
 	@"Brooklyn- and Grace too, they already hate me...
 [/page]If I defied them... [scale,0.75]They'd kick me out of the club...[/s]",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -21,7 +21,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"No! No, I just...",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -30,7 +30,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"It's too late... He's already [c_grey]dead[/c].",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -41,7 +41,7 @@ obj_scribble.textbox_unnamed(
 obj_scribble.textbox(
 	@"Even so...
 [/page]I couldn't possibly help.",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -61,7 +61,7 @@ obj_scribble.textbox(
 [/page]It couldn't change a thing. Frenchie's death, the AI photos, [slant]anything[/slant].
 [/page]I hate this... I hate...
 [/page]Myself...",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -70,7 +70,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"What?",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -79,7 +79,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	"That was... a rumor. Guy even joked about it. No one has ever actually made one.",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
@@ -92,7 +92,7 @@ obj_scribble.textbox(
 	@"Yeah.[/page]Yeah![sewing_club_ashley]I can do this! I can help everyone!
 [/page]Talk to me tomorrow after club, Senpai. We can work together, we can do this!
 [/page][rainbow]This is going to be super, duper, sugoi![/rainbow]",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"Ashley", spr_ashley_portrait_default
 );
 
 obj_scribble.textbox_unnamed(

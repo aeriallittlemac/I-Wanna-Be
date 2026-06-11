@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 4 - sewing_club",
-    "path": "folders/Dialogue_Lines/Day 4 - sewing_club.yy",
+    "name": "Grace's route",
+    "path": "folders/Dialogue_Lines/Day 4 - sewing_club/Grace's route.yy",
   },
 }

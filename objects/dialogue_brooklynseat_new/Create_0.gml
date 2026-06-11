@@ -30,17 +30,17 @@ else if global.day == 4 && global.game_time = "3:30 pm"{
 		if !global.storylines.Grace.deny_rumor{
 			obj_scribble.textbox(
 			"...", 
-			"Brooklyn", spr_brooklyn_portrait_default, sfx_noisy_speech);
+			"Brooklyn", spr_brooklyn_portrait_default);
 			
 			obj_scribble.textbox(
 			"[vl_brooklyn_default_1]Why do you comply?", 
-			"Brooklyn", spr_brooklyn_portrait_default, sfx_noisy_speech);
+			"Brooklyn", spr_brooklyn_portrait_default);
 			
 			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
 			
 			obj_scribble.textbox(
 			"[vl_brooklyn_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"Brooklyn", spr_brooklyn_portrait_default, sfx_noisy_speech);
+			"Brooklyn", spr_brooklyn_portrait_default);
 		}
 		else{
 			

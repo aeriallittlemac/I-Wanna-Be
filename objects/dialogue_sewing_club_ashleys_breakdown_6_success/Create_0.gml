@@ -12,6 +12,6 @@ call_later(1, time_source_units_frames, function () {
 
 	obj_scribble.textbox(
 		"No! I don't want to be involved in this. I didn't do anything!",
-		"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+		"Ashley", spr_ashley_portrait_default
 	);
 });

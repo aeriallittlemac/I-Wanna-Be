@@ -30,23 +30,23 @@ else if global.day == 4 && global.game_time = "3:30 pm"{
 		if !global.storylines.Grace.deny_rumor{		
 			obj_scribble.textbox(
 			"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?", 
-			"Mei", spr_mei_portrait_default, sfx_noisy_speech);
+			"Mei", spr_mei_portrait_default);
 			
 			obj_scribble.textbox(
 			"[vl_brooklyn_amused_1]Yes, like Donkey and Shrek.", 
-			"Brooklyn", spr_brooklyn_portrait_amused, sfx_noisy_speech);
+			"Brooklyn", spr_brooklyn_portrait_amused);
 			
 			obj_scribble.textbox(
 			"[vl_grace_angry_1]Whatchu say?", 
-			"Grace", spr_grace_portrait_angry, sfx_noisy_speech);
+			"Grace", spr_grace_portrait_angry);
 			
 			obj_scribble.textbox(
 			"[vl_mei_shocked_1]Woah, woah, woah!", 
-			"Mei", spr_mei_portrait_default, sfx_noisy_speech);
+			"Mei", spr_mei_portrait_default);
 			
 			obj_scribble.textbox(
 			"[vl_mei_shocked_2]Grace, calm down!", 
-			"Mei", spr_mei_portrait_default, sfx_noisy_speech);
+			"Mei", spr_mei_portrait_default);
 		}
 		else{
 			

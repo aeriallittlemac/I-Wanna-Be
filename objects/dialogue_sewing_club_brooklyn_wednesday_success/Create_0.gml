@@ -1,14 +1,21 @@
 event_inherited();
-obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask her if she knows what happened yesterday.")
+obj_scribble.textbox_unnamed("You tell her that it’s part of a plan.")
 obj_scribble.textbox(
-	"[sfx_stop]*face turns pale[play_music,important_decision_looping]",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"[vl_brooklyn_amused_1]Oh?",
+	"Brooklyn", spr_brooklyn_portrait_amused
 );
 obj_scribble.textbox(
-	"[sfx_ashley_test_1]Y-yes!",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"[vl_brooklyn_amused_2]Elaborate, please.",
+	"Brooklyn", spr_brooklyn_portrait_amused
 );
+
 obj_scribble.textbox(
-	"[sfx_ashley_test_2]We needed to practice for the m-mathalon, so I asked Sensei for some practice problems!",
-	"Ashley", spr_ashley_portrait_default, sfx_noisy_speech
+	"[vl_brooklyn_amused_1]I want to hear more of this nonsense.",
+	"Brooklyn", spr_brooklyn_portrait_amused
+);
+obj_scribble.textbox_unnamed("You tell her that she’ll see in the next ten minutes.");
+
+obj_scribble.textbox(
+	"[vl_brooklyn_amused_2]Hmm?",
+	"Brooklyn", spr_brooklyn_portrait_amused
 );
