@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "dialogue_parent",
-    "path": "objects/dialogue_parent/dialogue_parent.yy",
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,11 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 3 - sewing_club",
-    "path": "folders/Dialogue_Lines/Day 3 - sewing_club.yy",
+    "name": "Ashley's Route",
+    "path": "folders/Dialogue_Lines/Day 3 - sewing_club/Ashley's Route.yy",
   },
 }

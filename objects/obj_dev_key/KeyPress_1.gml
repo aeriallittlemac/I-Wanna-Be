@@ -6,7 +6,7 @@
 #macro MONDAY_SEWING_CLUB ord("Q")
 #macro LUNCH ord("G")
 #macro CAMERA_ZOOM ord("H")
-#macro BAND_FIRST_PRACTICE ord("B")
+#macro THURSDAY_BROOKLYN_OUTSIDE_LAB ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
@@ -21,6 +21,15 @@
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro SANDWICH_GAME ord("K")
 
+if keyboard_check_pressed(THURSDAY_BROOKLYN_OUTSIDE_LAB){
+	game_camera_change_settings(obj_player, -1);
+	global.day = 4;
+	AddInstanceToDestroy(inst_FIRST_BAND_PRACTICE);
+	AddInstanceToActivate(INST_BROOKLYN_OUTSIDE_LAB);
+	teleport_npc(obj_wei, school_B1, 1007, 110, UP);
+	teleport_npc(obj_mcronald, school_B1, 955, 190, DOWN);
+	teleport_player(1130, 100, school_B1);
+}
 if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
 	game_camera_change_settings(obj_player, -1);
 	global.day = 4;
@@ -323,21 +332,21 @@ if keyboard_check(SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE){
 
 }
 
-if keyboard_check(BAND_FIRST_PRACTICE){
-	global.day = 3;
-	AddInstanceToDestroy(inst_1D032C1A);
-	AddInstanceToActivate(inst_210D4C1);
-	game_camera_change_settings(obj_player,-1);
-	obj_npc_manager.npcs[0].initial_animation = spr_wei_rapping_1;
-	obj_npc_manager.npcs[5].initial_animation = spr_mcronald_keyboard_1;
-	obj_npc_manager.npcs[12].initial_animation = spr_frenchie_guitar_1;
-	teleport_npc(obj_frenchie, school_2F, 375, 135, DOWN);
-	teleport_npc(obj_mcronald, school_2F, 450, 150, DOWN);
-	teleport_npc(obj_wei, school_2F, 350, 185, DOWN);
-	teleport_npc(obj_job, school_2F, 320, 120, DOWN);
-	//teleport_player(410, 110, school_2F, dialogue_band_first_practice);
-	teleport_player(410, 110, school_2F);
-}
+//if keyboard_check(BAND_FIRST_PRACTICE){
+//	global.day = 3;
+//	AddInstanceToDestroy(inst_1D032C1A);
+//	AddInstanceToActivate(inst_210D4C1);
+//	game_camera_change_settings(obj_player,-1);
+//	obj_npc_manager.npcs[0].initial_animation = spr_wei_rapping_1;
+//	obj_npc_manager.npcs[5].initial_animation = spr_mcronald_keyboard_1;
+//	obj_npc_manager.npcs[12].initial_animation = spr_frenchie_guitar_1;
+//	teleport_npc(obj_frenchie, school_2F, 375, 135, DOWN);
+//	teleport_npc(obj_mcronald, school_2F, 450, 150, DOWN);
+//	teleport_npc(obj_wei, school_2F, 350, 185, DOWN);
+//	teleport_npc(obj_job, school_2F, 320, 120, DOWN);
+//	//teleport_player(410, 110, school_2F, dialogue_band_first_practice);
+//	teleport_player(410, 110, school_2F);
+//}
 
 if keyboard_check(GRACE_MISSING){
 	teleport_npc(obj_mei, school_graces_room, 120, 118, DOWN);

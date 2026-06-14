@@ -1,0 +1,2 @@
+event_inherited();
+instance_activate_object(INST_BROOKLYN_OUTSIDE_LAB_MCRONALD);

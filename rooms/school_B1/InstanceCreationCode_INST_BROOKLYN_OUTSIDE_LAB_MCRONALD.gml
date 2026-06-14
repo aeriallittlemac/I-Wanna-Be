@@ -1,0 +1,2 @@
+instance_deactivate_object(self);
+cutscene_object = cutscene_outside_lab_mcronald;

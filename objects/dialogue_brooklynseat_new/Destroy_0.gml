@@ -17,7 +17,6 @@ else if global.day == 3&& !global.storylines.Sewing_Club.Day_Two.talked_to.brook
 	}
 }
 else if global.day == 4&& !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
-	global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Grace.deny_rumor{
 			var inst = instance_create_depth(0,0,0,obj_brooklyn_QTE_new);
@@ -33,9 +32,12 @@ else if global.day == 4&& !global.storylines.Sewing_Club.Day_Two.talked_to.brook
 			inst.sentence = sentence;
 			inst.full_sentence = "Smarter than you woman";
 		}
+		else{
+			global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
+		}
 	}
 	else{
-		
+		global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn = true;
 	}
 
 }

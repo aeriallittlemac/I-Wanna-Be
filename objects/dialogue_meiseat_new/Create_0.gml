@@ -29,7 +29,9 @@ else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Grace.deny_rumor{
 			obj_scribble.textbox(
-			"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?", 
+			@"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?
+			[/page]You two look so good together!"
+			, 
 			"Mei", spr_mei_portrait_default);
 			
 			obj_scribble.textbox(
@@ -57,7 +59,20 @@ else if global.day == 4{
 			
 		}
 		else{
+			obj_scribble.textbox(
+			@"[vl_mei_default_1]Hey, Bobby.
+			[/page][vl_mei_default_2]Club today sure feels empty, huh?
+			", 
+			"Mei", spr_mei_portrait_default);
+			 
+			obj_scribble.textbox_unnamed("You ask her if she has any clue where the other members have gone.");
 			
+			obj_scribble.textbox(
+			@"[vl_mei_default_1]I think Brooklyn’s hanging out with her boyfriend, which makes sense.
+			[/page][vl_mei_default_2]She really only sticks around when she thinks [c_yellow]something interesting[/c] is going to happen.
+			[/page][vl_mei_default_1]Grace is probably walking in any time now...
+			", 
+			"Mei", spr_mei_portrait_default);
 		}
 	}
 }
