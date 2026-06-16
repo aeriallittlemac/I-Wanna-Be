@@ -1,2 +1,0 @@
-set_QTE_bgm(grace_debut_theme);
-game_NewDialogue(dialogue_help_grace_find_contacts_complete_1);

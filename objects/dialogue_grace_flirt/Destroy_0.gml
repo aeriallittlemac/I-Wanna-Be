@@ -1,1 +1,0 @@
-game_NewDialogue(dialogue_grace_flirt_2)

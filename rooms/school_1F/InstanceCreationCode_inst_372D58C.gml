@@ -1,2 +1,0 @@
-cutscene_object = dialogue_help_grace_find_contacts_complete
-instance_deactivate_object(self);

@@ -28,6 +28,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "after lab",
-    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam/after lab.yy",
+    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam)/after lab.yy",
   },
 }

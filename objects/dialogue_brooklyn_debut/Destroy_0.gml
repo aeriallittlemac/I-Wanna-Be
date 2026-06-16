@@ -1,2 +1,0 @@
-game_NewCharacterIntro(obj_brooklyn);
-game_NewDialogue(dialogue_brooklyn_debut_2);

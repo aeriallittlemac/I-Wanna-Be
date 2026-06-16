@@ -1,1 +1,0 @@
-item_acquired(global.item_list.graces_contact_lens)

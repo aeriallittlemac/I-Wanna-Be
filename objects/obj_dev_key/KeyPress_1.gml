@@ -1,6 +1,7 @@
 //Shortcuts to scenes
 #macro GRACE_MISSING ord("U")
 //#macro GAMBINOS_ROOM ord("Y")
+#macro BROOKLYN_ACTION_SCENE ord("J")
 #macro GRACE_VILLAIN_SPEECH ord("Y")
 #macro FRENCHIE_GHOST ord("O")
 #macro MONDAY_SEWING_CLUB ord("Q")
@@ -20,6 +21,21 @@
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro SANDWICH_GAME ord("K")
+
+if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
+	global.day = 5;
+	instance_activate_object(inst_WELCOME_TABLE);
+	game_camera_change_settings(obj_brooklyn,-1);
+	teleport_npc(obj_wei, noone, 0, 0, DOWN);
+	teleport_npc(obj_drake, school_gambinos_room, 200, 110, DOWN);
+	teleport_npc(obj_brooklyn, school_gambinos_room, 135, 145, UP);
+	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
+	//teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
+	room_goto(school_gambinos_room);
+	AddInstanceToDestroy(inst_1D43132F);
+}
+
+
 
 if keyboard_check_pressed(THURSDAY_BROOKLYN_OUTSIDE_LAB){
 	game_camera_change_settings(obj_player, -1);

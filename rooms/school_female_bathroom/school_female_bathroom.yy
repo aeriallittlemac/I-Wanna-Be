@@ -27,7 +27,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6C1C33DE_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":225.0,"y":95.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CA526B2_1","properties":[],"isDnd":false,"objectId":{"name":"obj_diamondwood_high_big_bathroom_door","path":"objects/obj_diamondwood_high_big_bathroom_door/obj_diamondwood_high_big_bathroom_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1753610E_1","properties":[],"isDnd":false,"objectId":{"name":"obj_diamondwood_high_bathroom_door","path":"objects/obj_diamondwood_high_bathroom_door/obj_diamondwood_high_bathroom_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":1,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37CE4C82","properties":[],"isDnd":false,"objectId":{"name":"obj_contact_lens","path":"objects/obj_contact_lens/obj_contact_lens.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":159.0,"y":146.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_4AA53F4D_1","spriteId":{"name":"spr_diamondwood_high_bathroom","path":"sprites/spr_diamondwood_high_bathroom/spr_diamondwood_high_bathroom.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -44,7 +43,6 @@
     {"name":"inst_6C1C33DE_1_1_1","path":"rooms/school_female_bathroom/school_female_bathroom.yy",},
     {"name":"inst_4CA526B2_1","path":"rooms/school_female_bathroom/school_female_bathroom.yy",},
     {"name":"inst_1753610E_1","path":"rooms/school_female_bathroom/school_female_bathroom.yy",},
-    {"name":"inst_37CE4C82","path":"rooms/school_female_bathroom/school_female_bathroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

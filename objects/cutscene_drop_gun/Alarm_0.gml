@@ -1,0 +1,1 @@
+npc_animate(obj_brooklyn, spr_brooklyn_up_hand)

@@ -93,6 +93,6 @@
   },
   "parent": {
     "name": "gambinos_room",
-    "path": "folders/School Assets/school_1F/gambinos_room.yy",
+    "path": "folders/School Assets/school_B1/gambinos_room.yy",
   },
 }
