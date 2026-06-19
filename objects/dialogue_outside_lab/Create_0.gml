@@ -1,6 +1,7 @@
 event_inherited();
+npc_move_to_pos(obj_wei, 1, 0, obj_wei.x+1, obj_wei.y);
 obj_scribble.textbox(
-	@"[vl_wei_default_1]Well, if it ain't Bobby Johns!
+	@"[sfx_surprise_fx]Well, if it ain't[vl_wei_default_1] Bobby Johns!
 	[/page][vl_wei_default_2]Now don't you worry about the band today, cause I ain't showin' up.
 	"
 	,

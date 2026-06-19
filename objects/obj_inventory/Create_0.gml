@@ -85,6 +85,11 @@ global.item_list = {
 		item_name: "Vacuum Cleaner",
 		item_dialogue: dialogue_vacuum,
 	},
+	weis_posters : {
+		item_name: "Wei's posters",
+		item_dialogue: -1,
+
+	},
 
 
 }

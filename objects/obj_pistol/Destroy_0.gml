@@ -1,1 +1,0 @@
-NewDialogue(cutscene_shoot_gun);

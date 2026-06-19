@@ -7,7 +7,7 @@
 #macro MONDAY_SEWING_CLUB ord("Q")
 #macro LUNCH ord("G")
 #macro CAMERA_ZOOM ord("H")
-#macro THURSDAY_BROOKLYN_OUTSIDE_LAB ord("B")
+#macro THURSDAY_LAB_VENTS_TEST ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
@@ -27,7 +27,7 @@ if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	instance_activate_object(inst_WELCOME_TABLE);
 	game_camera_change_settings(obj_brooklyn,-1);
 	teleport_npc(obj_wei, noone, 0, 0, DOWN);
-	teleport_npc(obj_drake, school_gambinos_room, 200, 110, DOWN);
+	teleport_npc(obj_drake, school_gambinos_room, 196, 110, DOWN);
 	teleport_npc(obj_brooklyn, school_gambinos_room, 135, 145, UP);
 	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
 	//teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
@@ -37,14 +37,11 @@ if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 
 
 
-if keyboard_check_pressed(THURSDAY_BROOKLYN_OUTSIDE_LAB){
+if keyboard_check_pressed(THURSDAY_LAB_VENTS_TEST){
 	game_camera_change_settings(obj_player, -1);
-	global.day = 4;
-	AddInstanceToDestroy(inst_FIRST_BAND_PRACTICE);
-	AddInstanceToActivate(INST_BROOKLYN_OUTSIDE_LAB);
-	teleport_npc(obj_wei, school_B1, 1007, 110, UP);
-	teleport_npc(obj_mcronald, school_B1, 955, 190, DOWN);
-	teleport_player(1130, 100, school_B1);
+	global.day = 5;
+	teleport_player(100, 120, school_lab);
+	
 }
 if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
 	game_camera_change_settings(obj_player, -1);

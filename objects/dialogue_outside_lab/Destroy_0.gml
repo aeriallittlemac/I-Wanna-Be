@@ -1,3 +1,4 @@
 event_inherited();
 obj_wei.entityActivateArg = dialogue_outside_lab_default_wei;
 instance_activate_object(INST_BROOKLYN_OUTSIDE_LAB_MCRONALD);
+item_acquired(global.item_list.weis_posters)

@@ -1,0 +1,11 @@
+player_x = 910;
+player_y = 310;
+vertical_barrier_x = array_create(0);
+vertical_barrier_y = array_create(0);
+horizontal_barrier_x = array_create(0);
+horizontal_barrier_y = array_create(0);
+destination_x = 850;
+destination_y = 790;
+target_room = noone;
+room_goto(vents);
+global.QTE = true;
