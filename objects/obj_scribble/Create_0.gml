@@ -21,7 +21,7 @@ layout = {};
 text_element = noone;
 name_element = noone;
 active = false;
-identified = false;
+identified = 0;
 is_async = false;
 async_waiting = false;
 
@@ -34,11 +34,13 @@ previously_active = false;
 function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, bounds=BOUNDS_DEFAULT, typist=TYPIST_DEFAULT) {
 	if (active) {
 		array_insert(queue_chain, 0, {
-			identified: false, 
+			identified: 0, 
 			params: [text, sfx_speech, async, textbox, bounds, typist]
 		});
 		exit;
 	}
+	
+	keyboard_clear(CONFIRM_ACTION);
 	
 	active = true;
 	is_async = async;
@@ -52,14 +54,16 @@ function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox
 function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, portrait_bounds=PORTRAIT_DEFAULT, typist=TYPIST_DEFAULT) {
 	if (active) {
 		array_insert(queue_chain, 0, {
-			identified: true, 
+			identified: 1, 
 			params: [text, name, portrait_sprite, sfx_speech, async, textbox, namebox, bounds, name_bounds, portrait_bounds, typist]
 		});
 		exit;
 	}
 	
+	keyboard_clear(CONFIRM_ACTION);
+	
 	active = true;
-	identified = true;
+	identified = 1;
 	is_async = async;
 	textbox_key = object_get_name(textbox);
 	namebox_key = object_get_name(namebox);
@@ -74,19 +78,58 @@ function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async
 	active_typist = typist.reset().sound_per_char([sfx_speech], 1, 1);
 }
 
+function textbox_converse(text, name, portrait_sprites_bounds, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, typist=TYPIST_DEFAULT) {
+	if (active) {
+		array_insert(queue_chain, 0, {
+			identified: 2, 
+			params: [text, name, portrait_sprites_bounds, sfx_speech, async, textbox, namebox, bounds, name_bounds, typist]
+		});
+		exit;
+	}
+	
+	keyboard_clear(CONFIRM_ACTION);
+	
+	active = true;
+	identified = 2;
+	is_async = async;
+	textbox_key = object_get_name(textbox);
+	namebox_key = object_get_name(namebox);
+	bounds_key = object_get_name(bounds);
+	name_bounds_key = object_get_name(name_bounds);
+	textbox_sprite = object_get_sprite(textbox);
+	namebox_sprite = object_get_sprite(namebox);
+	text_element = scribble(text).wrap(layout[$bounds_key].width * SCALE, layout[$bounds_key].height * SCALE).page(0);
+	name_element = scribble(name).scale_to_box(layout[$name_bounds_key].width * SCALE, layout[$name_bounds_key].height * SCALE);
+	active_portrait_sprites_bounds = array_create(0);
+	for (var i = 0; i < array_length(portrait_sprites_bounds); ++i) {
+		var portrait_sprite_bound = portrait_sprites_bounds[i];
+		array_push(active_portrait_sprites_bounds, [portrait_sprite_bound[0], object_get_name(portrait_sprite_bound[1])]);
+	}
+	active_typist = typist.reset().sound_per_char([sfx_speech], 1, 1);
+}
+
+function draw_portrait(sprite, bounds_key) {
+	var portrait_scale = layout[$bounds_key].height * SCALE / sprite_get_height(sprite);
+	var x_offset = sprite_get_xoffset(sprite) * portrait_scale;
+	var y_offset = sprite_get_yoffset(sprite) * portrait_scale;
+	draw_sprite_ext(sprite, -1, layout[$bounds_key].x * SCALE + x_offset, layout[$bounds_key].y * SCALE + y_offset, portrait_scale, portrait_scale, 0, c_white, 1);
+}
+
 active_dialogue = noone;
 
 function close_dialogue() {
 	active = false;
-	identified = false;
+	identified = 0;
 	is_async = false;
 	
 	if (array_length(queue_chain) > 0) {
 		var next = array_pop(queue_chain);
-		if (next.identified) {
-			textbox(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9], next.params[10]);
-		} else {
+		if (next.identified == 0) {
 			textbox_unnamed(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5]);
+		} else if (next.identified == 1) {
+			textbox(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9], next.params[10]);
+		} else if (next.identified == 2) {
+			textbox_converse(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9]);
 		}
 	} else {
 		instance_destroy(active_dialogue);
