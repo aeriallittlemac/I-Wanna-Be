@@ -1,0 +1,2 @@
+AddInstanceToActivate(INST_MAIN_CLASSROOM_VENT);
+instance_destroy(self);

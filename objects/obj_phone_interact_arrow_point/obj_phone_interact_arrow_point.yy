@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "graces_room",
-    "path": "folders/School Assets/school_1F/graces_room.yy",
+    "path": "folders/School Assets/school_3F/graces_room.yy",
   },
 }

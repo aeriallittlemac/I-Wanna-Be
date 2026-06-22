@@ -14,7 +14,7 @@
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
 #macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
-#macro FRENCHIE_CHASE ord("F")
+#macro STEALING_FROM_GRACE ord("F")
 #macro THURSDAY_MORNING ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
 #macro DRAWER ord("L")
@@ -149,10 +149,10 @@ if keyboard_check(CAMERA_ZOOM) && !global.QTE && !global.in_dialogue{
 	//show_debug_message(global.storylines.Grace.truth_or_dare_confession);
 }
 
-if keyboard_check(FRENCHIE_CHASE){
+if keyboard_check(STEALING_FROM_GRACE){
+	global.day = 5;
 	game_camera_change_settings(obj_player,-1);
-	instance_destroy(cutscene_sewing_club_setup_day_3_rumor_escalate);
-	teleport_player(1140, 120, school_1F, dialogue_frenchies_murder_attempt);
+	teleport_player(175, 129, school_graces_room);
 }
 
 if keyboard_check(ASHLEY_SCENE){

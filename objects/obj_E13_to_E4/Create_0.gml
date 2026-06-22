@@ -1,0 +1,10 @@
+event_inherited();
+player_x = 850;
+player_y = 780;
+vertical_barrier_x = [800, 620, 600, 650];
+vertical_barrier_y = [780, 540, 300, 60];
+destination_x = 1120;
+destination_y = 70;
+target_room = school_graces_room;
+target_x = 125;
+target_y = 111;

@@ -1,0 +1,12 @@
+event_inherited();
+player_x = 880;
+player_y = 580;
+vertical_barrier_x = [900];
+vertical_barrier_y = [780];
+horizontal_barrier_x = [1200, 1110, 660, 30, 1200];
+horizontal_barrier_y = [290, 260, 260, 290, 600];
+destination_x = 670;
+destination_y = 650;
+target_room = school_sewing_club;
+target_x = 215;
+target_y = 57;

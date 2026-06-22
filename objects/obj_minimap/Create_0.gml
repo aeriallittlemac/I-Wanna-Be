@@ -314,7 +314,11 @@ global.storylines = {
 	Frenchie : {
 		talk_to_ghost_debut: false,
 	},
-	
+	Brooklyns_quest : {
+		cash_obtained : false,
+		bullets_obtained : false,
+		
+	}
 	
 }
 

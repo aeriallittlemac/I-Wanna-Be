@@ -1,0 +1,2 @@
+instance_deactivate_object(self);
+activate_cutscene = cutscene_main_classroom_uncover_vents;

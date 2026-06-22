@@ -90,6 +90,15 @@ global.item_list = {
 		item_dialogue: -1,
 
 	},
+	graces_abortion_fund : {
+		item_name: "Grace's abortion fund",
+		item_dialogue: -1,
+
+	},
+	mr_chens_bullets : {
+		item_name: "Mr. Chen's bullets",
+		item_dialogue:-1
+	},
 
 
 }
