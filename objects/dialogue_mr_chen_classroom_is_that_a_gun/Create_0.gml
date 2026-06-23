@@ -5,4 +5,4 @@ obj_scribble.textbox(
 	"Mr. Chen", spr_mr_chen_portrait_gun
 );
 obj_scribble.textbox_unnamed(
-	"You ask what it’s for.");
+	"You ask what it's for.");

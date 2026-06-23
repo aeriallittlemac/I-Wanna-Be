@@ -26,8 +26,8 @@ else if global.day == 3{
 		");
 		obj_scribble.textbox(
 		@"*Skips a concerning length in the opposite direction.
-		[/page][sfx_ashley_test_1]You’re b-back, s-senpai?
-		[/page][sfx_ashley_test_2]I’m so g-glad to s-see y-
+		[/page][sfx_ashley_test_1]You're b-back, s-senpai?
+		[/page][sfx_ashley_test_2]I'm so g-glad to s-see y-
 		[/page][sfx_surprise_fx]Is that a l-l-l-letter... For me??!!
 		[/page][sfx_ashley_test_1]*Turns around* Ah! My heart is in my throat... My chest is pounding!
 		[/page][sfx_ashley_test_3]What could be in that letter...

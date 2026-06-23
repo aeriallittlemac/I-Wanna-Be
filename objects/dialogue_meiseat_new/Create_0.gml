@@ -68,7 +68,7 @@ else if global.day == 4{
 			obj_scribble.textbox_unnamed("You ask her if she has any clue where the other members have gone.");
 			
 			obj_scribble.textbox(
-			@"[vl_mei_default_1]I think Brooklyn’s hanging out with her boyfriend, which makes sense.
+			@"[vl_mei_default_1]I think Brooklyn's hanging out with her boyfriend, which makes sense.
 			[/page][vl_mei_default_2]She really only sticks around when she thinks [c_yellow]something interesting[/c] is going to happen.
 			[/page][vl_mei_default_1]Grace is probably walking in any time now...
 			", 

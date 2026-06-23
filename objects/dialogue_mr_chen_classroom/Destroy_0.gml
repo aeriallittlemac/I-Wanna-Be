@@ -1,5 +1,5 @@
 event_inherited();
-if !global.item_list.Brooklyns_quest.cash_obtained{
+if !global.storylines.Brooklyns_quest.cash_obtained{
 	var inst = instance_create_depth(0, 0, 0, obj_choice_default_QTE);
 	with (inst) {
 		choice.one.choice_text = "How's it going?";
@@ -11,6 +11,6 @@ if !global.item_list.Brooklyns_quest.cash_obtained{
 	}
 }
 else{
-	item_remove(global.item_list.graces_abortion_fund);
-	item_acquired(global.item_list.mr_chens_bullets);
+	item_remove(global.storylines.graces_abortion_fund);
+	item_acquired(global.storylines.mr_chens_bullets);
 }

@@ -1,2 +1,3 @@
 activate_cutscene = noone;
-activate_range = 5;
+activate_range = 7;
+depth = -50;
