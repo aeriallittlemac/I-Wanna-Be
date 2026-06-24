@@ -1,6 +1,6 @@
 event_inherited();
-player_x = 670;
-player_y = 550;
+player_x = 880;
+player_y = 580;
 vertical_barrier_x = [800, 620, 600, 650];
 vertical_barrier_y = [780, 540, 300, 60];
 destination_x = 1120;

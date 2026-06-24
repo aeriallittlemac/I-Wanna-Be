@@ -11,6 +11,6 @@ if !global.storylines.Brooklyns_quest.cash_obtained{
 	}
 }
 else{
-	item_remove(global.storylines.graces_abortion_fund);
-	item_acquired(global.storylines.mr_chens_bullets);
+	item_remove(global.item_list.graces_abortion_fund);
+	item_acquired(global.item_list.mr_chens_bullets);
 }

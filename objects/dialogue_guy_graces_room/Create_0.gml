@@ -18,7 +18,11 @@ obj_scribble.textbox_unnamed(
 	"...");
 obj_scribble.textbox(
 	@"Relax, relax. I'm swear I won't interfere.
-	[/page]Just don't get any blood in my lab, ok?
+	", 
+	"Guy", spr_guy_portrait_default
+);
+obj_scribble.textbox(
+	@"Just don't get any blood in my lab, ok?
 	", 
 	"Guy", spr_guy_portrait_default
 );

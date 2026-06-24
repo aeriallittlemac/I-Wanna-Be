@@ -1,4 +1,6 @@
 event_inherited();
+audio_stop_all();
+set_QTE_bgm(morning);
 obj_scribble.textbox_unnamed(
 	"You say hello to Mr. Chen.");
 obj_scribble.textbox(
