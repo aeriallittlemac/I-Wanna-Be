@@ -6,7 +6,7 @@
 #macro FRENCHIE_GHOST ord("O")
 #macro MONDAY_SEWING_CLUB ord("Q")
 #macro LUNCH ord("G")
-#macro CAMERA_ZOOM ord("H")
+#macro GAMBINO_MINIGAME ord("H")
 #macro THURSDAY_LAB_VENTS_TEST ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
@@ -142,7 +142,7 @@ var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 		obj_player.visible = false;
 		teleport_player(870, 135, school_1F, timed_dialogue_grace_rips_frenchie_apart);
 }
-if keyboard_check(CAMERA_ZOOM) && !global.QTE && !global.in_dialogue{
+if keyboard_check(GAMBINO_MINIGAME){
 	//instance_create_depth(0,0,0, obj_choice_default_QTE);
 	//instance_create_depth(0,0,0, obj_mei_QTE);
 	instance_create_depth(0,0,0, obj_choice_double_QTE);
