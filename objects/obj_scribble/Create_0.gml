@@ -118,6 +118,8 @@ function draw_portrait(sprite, bounds_key) {
 active_dialogue = noone;
 
 function close_dialogue() {
+	audio_play_sound(sfx_move_select, 1, false);
+	
 	active = false;
 	identified = 0;
 	is_async = false;

@@ -149,15 +149,18 @@ else{
 		var col = i;
 		for (var row = 0; row < page_max_rows; ++row) {
 			obj_hints.draw_hint_icon(row, col, 180, 105);
+			obj_hints.draw_hint_mark(row, col, 180, 105);
 		}
 	}
 	if (hint_columns > page_max_columns){
 		for(var i=0; i<hint_columns - page_max_columns; i++){
-			draw_sprite_ext(IWB_UI_hint_box_column, -1, second_page_margin*minimap_scale + (sprite_get_bbox_right(IWB_UI_hint_box_column) - sprite_get_bbox_left(IWB_UI_hint_box_column) + hint_horizontal_margin)*minimap_scale*i, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+			draw_sprite_ext(IWB_UI_hint_box_column, -1, minimap_scale + second_page_margin*minimap_scale + (sprite_get_bbox_right(IWB_UI_hint_box_column) - sprite_get_bbox_left(IWB_UI_hint_box_column) + hint_horizontal_margin)*minimap_scale*i, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 			
 			var col = i + page_max_columns;
 			for (var row = 0; row < page_max_rows; ++row) {
-				obj_hints.draw_hint_icon(row, col, 170 - obj_hints.hint_grid_col_spacing * page_max_columns + second_page_margin * minimap_scale, 105);
+				var origin_x = 170 - obj_hints.hint_grid_col_spacing * page_max_columns + second_page_margin * minimap_scale;
+				obj_hints.draw_hint_icon(row, col, origin_x, 105);
+				obj_hints.draw_hint_mark(row, col, origin_x, 105);
 			}
 		}
 	

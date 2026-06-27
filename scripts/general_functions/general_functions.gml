@@ -201,7 +201,15 @@ function hint_obtain(hint) {
 		hint.found = true;
 		obj_hints.draw_hint_emphemeral(hint.text, string_length(hint.text) * 0.1);
 	}
-	game_save_json(hint.save_name);
+	// game_save_json(hint.save_name);
+}
+
+function hint_use(hint) {
+	if (!hint.found) {
+		hint_obtain(hint);
+		show_debug_message("Warning: A hint was used before it was found.");
+	}
+	hint.utilized = true;
 }
 
 function game_camera_change_settings(ctarget, chspeed){

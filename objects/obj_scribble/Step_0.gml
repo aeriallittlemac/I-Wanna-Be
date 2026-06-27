@@ -28,16 +28,15 @@ if (is_async) {
 var accept_key = keyboard_check_pressed(CONFIRM_ACTION) && !global.input_off && previously_active;
 
 if (keyboard_check_pressed(CANCEL_ACTION)) {
-	audio_play_sound(sfx_move_select, 1, false);
 	close_dialogue();
 } else if (accept_key) {
 	var typist_state = active_typist.get_state();
 	if (text_element.on_last_page() && typist_state == 1) {
-		audio_play_sound(sfx_move_select, 1, false);
 		close_dialogue();
 	} else if (typist_state < 1 && typist_state > 0) {
 		active_typist.skip();
 	} else if (typist_state > 0) {
+		audio_play_sound(sfx_move_select, 1, false);
 		text_element.page(text_element.get_page() + 1);
 	}
 }
