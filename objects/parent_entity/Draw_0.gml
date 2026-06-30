@@ -13,9 +13,13 @@ else{
 if !in_detect_range{
 	interact_image_index = 0;
 	alarm[0] = -1;
+	if previously_in_range{
+		global.interactable_in_range = false;
+	}
 	
 }
 else{
+	global.interactable_in_range = true;
 	if !previously_in_range{
 		alarm[0] = interact_anim_time;
 	}

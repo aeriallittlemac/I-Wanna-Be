@@ -1,4 +1,12 @@
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
-instance_create_depth(obj_player.x*minimap_scale, obj_player.y*minimap_scale, depth-1, obj_lightning_player);
+instance_create_depth(obj_player.x, obj_player.y, depth-1, obj_lightning_player);
 gambino_x = 135;
 gambino_y = -100;
+spawn_interval = 1.3;
+random_x_deviance = 100;
+random_y_deviance = 60;
+strikes_num = 3;
+alarm[0] = spawn_interval*room_speed;
+global.QTE = true;
+win_cutscene = dialogue_QTE_one;
+lose_cutscene = dialogue_QTE_two;

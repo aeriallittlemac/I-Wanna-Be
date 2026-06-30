@@ -1,1 +1,1 @@
-global.QTE = false;
+obj_gambino_QTE.alarm[2] = 50;

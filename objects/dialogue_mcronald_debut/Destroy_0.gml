@@ -1,2 +1,0 @@
-game_NewCharacterIntro(obj_mcronald);
-game_NewDialogue(dialogue_mcronald_debut_1);

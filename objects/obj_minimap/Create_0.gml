@@ -220,14 +220,12 @@ global.storylines = {
 	},
 	Main_Classroom : {
 		Day_Two : {
-			chen_obtained_papers: false,
-			papers_handed_out: 0,
-			papers_given:{
+			talked_to:{
 				wei: false,
 				grace: false,
 				brooklyn: false,
 				drake: false,
-				mei: false,
+				ashley: false,
 				mcronald: false,
 				job: false,
 			},

@@ -1,1 +1,0 @@
-owner = obj_grace;

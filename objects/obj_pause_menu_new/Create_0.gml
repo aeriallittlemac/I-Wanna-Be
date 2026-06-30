@@ -1,4 +1,4 @@
- minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
+minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 depth = FILTER_DEPTH
 intro_alpha = 0.6;
 text_x_offset = 60;

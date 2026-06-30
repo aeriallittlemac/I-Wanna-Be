@@ -21,6 +21,20 @@
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro SANDWICH_GAME ord("K")
+#macro MONDAY_CLASSROOM ord("A")
+
+if keyboard_check_pressed(MONDAY_CLASSROOM){
+	global.day = 2;
+	teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
+	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
+	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
+	teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
+	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
+	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
+	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
+	teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
+}
 
 if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	global.day = 5;
@@ -145,7 +159,7 @@ var inst = instance_create_depth(15, 50, OBJ_MAX_DEPTH, obj_ghost_text)
 if keyboard_check(GAMBINO_MINIGAME){
 	//instance_create_depth(0,0,0, obj_choice_default_QTE);
 	//instance_create_depth(0,0,0, obj_mei_QTE);
-	instance_create_depth(0,0,0, obj_choice_double_QTE);
+	instance_create_depth(0,0,0, obj_gambino_QTE);
 	//show_debug_message(global.storylines.Grace.truth_or_dare_confession);
 }
 

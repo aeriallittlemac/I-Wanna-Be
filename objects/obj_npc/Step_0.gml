@@ -1,3 +1,7 @@
+if previously_in_range &&!icon{
+global.npc_in_interaction = noone;
+}
+previously_in_range = icon;
 if !global.pause_menu{
 //setPlayerFace();
 
@@ -112,6 +116,11 @@ else{
 xdiff = obj_player.x - x;
 ydiff = obj_player.y - y - 2;
 detection = ((xdiff*xdiff/7)+(ydiff*ydiff/5)) < oval_detection_scale;
-icon =  detection && !global.cutscene && 
+var in_range =  detection && !global.cutscene && 
 !global.in_dialogue && !global.timed_dialogue && entityActivateScript != -1 && entityActivateArg != -1 &&!global.in_slideshow && !instance_exists(obj_rhythm_game_arrows)
 && !global.in_hints && !global.QTE;
+
+if in_range && global.npc_in_interaction == noone{
+	global.npc_in_interaction = self;
+}
+icon = in_range && global.npc_in_interaction == self;

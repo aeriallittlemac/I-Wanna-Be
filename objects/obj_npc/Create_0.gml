@@ -1,4 +1,5 @@
 event_inherited();
+previously_in_range = false;
 talk_priority = false;
 oval_detection_scale = 160;
 detection = false;

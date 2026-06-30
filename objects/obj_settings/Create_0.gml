@@ -1,4 +1,6 @@
 //window_set_fullscreen(true)
+global.interactable_in_range = false;
+global.npc_in_interaction = noone;
 global.day = 1;
 global.game_time = "5:00 pm";
 global.night = false;
