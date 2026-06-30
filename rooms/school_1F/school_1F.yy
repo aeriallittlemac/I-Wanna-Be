@@ -70,6 +70,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"INST_LUNCH_TABLE","properties":[],"isDnd":false,"objectId":{"name":"obj_big_table","path":"objects/obj_big_table/obj_big_table.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":981.0,"y":152.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_MCRONALD_INTERJECTION","properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":801.0,"y":95.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75F49967","properties":[],"isDnd":false,"objectId":{"name":"obj_test_interactable","path":"objects/obj_test_interactable/obj_test_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1593.0,"y":133.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FB94016","properties":[],"isDnd":false,"objectId":{"name":"obj_vfx","path":"objects/obj_vfx/obj_vfx.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1539.0,"y":171.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7F0F12C9","spriteId":{"name":"school_1F0__2_","path":"sprites/school_1F0__2_/school_1F0__2_.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -127,6 +128,7 @@
     {"name":"inst_MCRONALD_INTERJECTION","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_75F49967","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_WELCOME_TABLE","path":"rooms/school_1F/school_1F.yy",},
+    {"name":"inst_2FB94016","path":"rooms/school_1F/school_1F.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

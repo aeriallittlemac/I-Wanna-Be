@@ -8,12 +8,12 @@ if bookmark_select{
 	page = selected_bookmark;
 }
 else{
-if (focus_hint != -1 && focus_hint.found && !global.in_dialogue) {
-	audio_play_sound(sfx_confirm, 1, false);
-	instance_create_depth(
-		0, 0, 9999, dialogue_restore_save_choice, 
-		{save_name: focus_hint.save_name}
-	);
+	if (focus_hint != -1 && focus_hint.found && !global.in_dialogue) {
+		//audio_play_sound(sfx_confirm, 1, false);
+		//instance_create_depth(
+		//	0, 0, 9999, dialogue_restore_save_choice, 
+		//	{save_name: focus_hint.save_name}
+		//);
 	}
 }
 }

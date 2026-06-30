@@ -5,60 +5,70 @@ global.hints = {
 		sprite: spr_mei_portrait_default, 
 		text: "Public composure is key to survival.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Meeting Mei"
 	}, 
 	after_first_class: {
 		sprite: spr_wei_icon, 
 		text: "stuff?", 
 		found: false, 
+		utilized: false, 
 		save_name: "After First Class"
 	}, 
 	if_rumor_choose: {
 		sprite: spr_mcronald_icon, 
 		text: "Word goes around", 
 		found: false, 
+		utilized: false, 
 		save_name: "Hanging with the boys"
 	}, 
 	if_rumor: {
 		sprite: spr_grace_frown, 
 		text: "Always double down.", 
 		found: false, 
+		utilized: false, 
 		save_name: "If Rumor"
 	}, 
 	if_rumor_deny: {
 		sprite: spr_mei_portrait_default, 
 		text: "Some people are better mediators? Perchance.", 
 		found: false, 
+		utilized: false, 
 		save_name: "If Rumor Deny"
 	}, 
 	beef: {
 		sprite: spr_hot_pocket, 
 		text: "A recall for the \"philly cheesesteak\" variety of Hot Pockets was issued due to concern of beef contamination caused by a supplier.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Chicken Katsu"
 	},
 	yup: {
 		sprite: spr_grace_portrait_default, 
 		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Cretaceous"
 	}, 
 	uhhuh: {
 		sprite: spr_hot_pocket, 
 		text: "A recall for the \"philly cheesesteak\" variety of Hot Pockets was issued due to concern of beef contamination caused by a supplier.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Chicken Katsu"
 	},
 	yeh: {
 		sprite: spr_grace_portrait_default, 
 		text: "The end-Cretaceous mass extinction occurred about 65 million years ago.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Cretaceous"
 	}, 
 	bi: {
 		sprite: spr_hot_pocket, 
 		text: "A recall for the \"philly cheesesteak\" variety of Hot Pockets was issued due to concern of beef contamination caused by a supplier.", 
 		found: false, 
+		utilized: false, 
 		save_name: "Chicken Katsu"
 	}
 	
@@ -112,6 +122,14 @@ function draw_hint_icon(row, col, origin_x, origin_y) {
 	var icon_width = sprite_get_width(hint.sprite);
 	var icon_scale = box_width / icon_width;
 	draw_sprite_ext(hint.sprite, -1, origin_x + col * hint_grid_col_spacing, origin_y + row * hint_grid_row_spacing, icon_scale * ui_scale, icon_scale * ui_scale, 0, c_white, 1);
+}
+
+function draw_hint_mark(row, col, origin_x, origin_y) {
+	var hint = get_hint(row, col);
+	if (!hint.utilized) {
+		return;
+	}
+	draw_sprite_ext(IWB_UI_hint_box_column_mark, -1, origin_x + col * hint_grid_col_spacing, origin_y + row * hint_grid_row_spacing, ui_scale, ui_scale, 0, c_white, 1);
 }
 
 function draw_hint(text, origin_x, origin_y) {
