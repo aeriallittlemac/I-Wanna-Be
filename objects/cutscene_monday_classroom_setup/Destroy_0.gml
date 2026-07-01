@@ -1,1 +1,0 @@
-game_NewDialogue(dialogue_meeting_the_boys);

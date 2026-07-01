@@ -123,4 +123,4 @@ var in_range =  detection && !global.cutscene &&
 if in_range && global.npc_in_interaction == noone{
 	global.npc_in_interaction = self;
 }
-icon = in_range && global.npc_in_interaction == self;
+icon = in_range && global.npc_in_interaction == self && !global.interactable_in_range;

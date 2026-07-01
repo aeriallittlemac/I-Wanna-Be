@@ -1,2 +1,3 @@
 set_QTE_bgm(gambinos_theme);
-alarm[0] = 80;
+game_wait(2);
+game_NewDialogue(dialogue_gambino_apparence_2);

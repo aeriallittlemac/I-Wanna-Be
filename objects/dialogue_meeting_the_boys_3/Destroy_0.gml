@@ -11,3 +11,4 @@ with inst{
 }
 global.cutscene = false;
 global.game_time = "3:30 pm";
+teleport_player(1127, 107, school_1F);

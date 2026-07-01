@@ -7,4 +7,5 @@ obj_mcronald.entityActivateArg = dialogue_mcronaldseat_classroom_lab;
 obj_job.entityActivateArg = dialogue_jobseat_classroom_lab;
 
 obj_drake.entityActivateArg = dialogue_drakeseat_classroom_lab;
-//obj_mrchen.entityActivateArg = ;
+set_QTE_bgm(classroom);
+instance_destroy(self);

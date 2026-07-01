@@ -1,3 +1,4 @@
+audio_stop_all();
 audio_play_sound(sfx_light_switch, 1, false);
 alarm[0] = 30;
 var inst = instance_create_depth(0,0,0,obj_black_screen);

@@ -5,8 +5,10 @@ if icon{
 	show_debug_message(opt);
 	
 	setPlayerFace();
+	last_x = x;
+	last_y = y;
+	last_face = face;
 	switch(player_relative_pos){
-		
 			case "DOWN":
 				move_to_pos(0,3,obj_player.x, y + 26);
 				move_to_pos(0,3,obj_player.x, y + 25);

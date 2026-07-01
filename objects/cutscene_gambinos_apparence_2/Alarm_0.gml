@@ -1,1 +1,0 @@
-game_NewDialogue(dialogue_gambino_apparence_2);

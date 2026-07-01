@@ -25,7 +25,7 @@
 
 if keyboard_check_pressed(MONDAY_CLASSROOM){
 	global.day = 2;
-	teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
 	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
 	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
 	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);

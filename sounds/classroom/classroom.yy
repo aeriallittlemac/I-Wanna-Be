@@ -4,7 +4,7 @@
   "name": "classroom",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "classroom.wav",
-  "duration": 26.737507,
+  "duration": 24.0,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

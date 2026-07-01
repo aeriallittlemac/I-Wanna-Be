@@ -9,5 +9,5 @@ obj_scribble.textbox(
 	[/page]Do we understand?
 	"
 	, 
-	"Gambino", spr_gambino_down
+	"Gambino", spr_gambino_portrait_default
 );

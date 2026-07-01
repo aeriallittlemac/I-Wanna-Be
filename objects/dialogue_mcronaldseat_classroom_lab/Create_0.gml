@@ -1,10 +1,32 @@
 event_inherited();
 if global.day == 2{
 	if !global.storylines.Main_Classroom.Day_Two.talked_to.mcronald{
-		obj_scribble.textbox(
-			"*has you participate in a magic trick", 
-			"McRonald", spr_mcronald_portrait_default
-		);
+		obj_scribble.textbox_converse(
+	@"Hey hey hey!(placeholder dialogue)
+	[/page]*self-deprecating jokes", 
+	"Weird guy", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_grace_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"Ha ha! You're pretty funny for a lowlife...", 
+	"Grace", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_grace_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"You make a good jester. But it is starting to bore me.
+	[/page]You may get out of my sight now(again, placeholder).
+	", 
+	"Goth blonde", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_brooklyn_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
 	}
 	else{
 		

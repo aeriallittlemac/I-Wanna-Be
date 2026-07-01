@@ -68,6 +68,9 @@ else if abs(max(A-P, M-D, O-B, C-N) - (C-N))<0.001{
 }
 show_debug_message(player_relative_pos);
 
+last_x = x;
+last_y = y;
+last_face = face;
 
 
 }

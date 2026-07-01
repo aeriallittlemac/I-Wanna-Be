@@ -9,7 +9,7 @@ character_y = 200;
 text_y = 150;
 title_y = 250;
 text_x_offset = -80;
-character_scale = 2;
+character_scale = 1.6;
 font_add_enable_aa(false);
 global.input_off = true;
 global.cutscene = true;
