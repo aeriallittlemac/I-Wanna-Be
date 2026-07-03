@@ -1,1 +1,0 @@
-game_NewDialogue(dialogue_conversation_with_gambino_1);

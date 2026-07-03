@@ -38,7 +38,7 @@ default_pixel_font = font_add("joystix monospace.otf", 40, false, false, 64, 128
 quest_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 rumor_pixel_font = font_add("joystix monospace.otf", 10, false, false, 64, 128);
 
-name_pixel_font = font_add("joystix monospace.otf", 30, false, false, 64, 128);
+name_pixel_font = font_add("joystix monospace.otf", 24, false, false, 64, 128);
 //character pamphlet setting
 title_pixel_font = font_add("joystix monospace.otf", 13, false, false, 64, 128);
 //relationship_pixel_font = font_add("joystix monospace.otf", 12, false, false, 64, 128);
@@ -49,15 +49,15 @@ character = obj_npc_manager.npcs[0];
 character_name = "";
 character_title = "";
 character_x = 260;
-character_y = 280;
+character_y = 200;
 
 character_x_offset = 440;
 
 text_y = 90
 title_y = 130
 current_obersavation_y = 170;
-character_scale = 1.4;
-female_y_offset = 24;
+character_scale = 0.8;
+female_y_offset = 0;
 
 global.pause_menu = false;
 paused_surf = -1;

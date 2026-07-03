@@ -1,4 +1,10 @@
 event_inherited();
-scr_text("Boss, we brought the kid you asked for!", spr_jake_icon, 0);
-scr_text("Quit your yelling, you blonde ape.", spr_gambino_icon, 1);
-scr_text("How many times have I told you to knock instead?", spr_gambino_icon,1);
+obj_scribble.textbox(
+	@"Boss, we brought the kid you asked for!",
+	"Jake", spr_jake_default_portrait
+);
+obj_scribble.textbox(
+	@"Quit your yelling, you blonde ape.
+	[/page]How many times have I told you to knock instead?", 
+	"Gambino", spr_gambino_portrait_tired
+);

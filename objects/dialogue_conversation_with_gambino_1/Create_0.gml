@@ -1,7 +1,18 @@
 event_inherited();
-scr_text("In case you haven't noticed, Bobby.", spr_gambino_icon, 0);
-scr_text("Things aren't going well around here.", spr_gambino_icon, 0);
-scr_text("This shithole is short on faculty, equipment, talent, pretty much everything.", spr_gambino_icon, 0);
-scr_text("Ashley's a god damn genius, but that's all we have going for us.", spr_gambino_icon, 0);
-scr_text("We're consistently ranked in the bottom 20th. Do you know what that means?", spr_gambino_icon, 0);
-scr_text("A school I run is ranked amongst goddamn ghetto schools and fucking churches for rednecks.", spr_gambino_icon, 0);
+obj_scribble.textbox(
+	@"Thought I should also mention...
+	[/page]The doors are locked. They lock at night.
+	[/page]Including this office.
+	[/page]That should give you enough time to figure out this stuffed animal, right?
+	[/page]You got all night.
+	", 
+	"Gambino", spr_gambino_portrait_tired
+);
+obj_scribble.textbox_unnamed(
+	"What?", 
+);
+
+obj_scribble.textbox(
+	@"Good luck.", 
+	"Gambino", spr_gambino_portrait_tired
+);

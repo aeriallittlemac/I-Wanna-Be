@@ -1,0 +1,2 @@
+game_NewCharacterIntro(obj_jake);
+game_NewDialogue(dialogue_drake_debut);

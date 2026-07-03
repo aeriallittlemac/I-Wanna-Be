@@ -1,0 +1,2 @@
+game_NewCharacterIntro(obj_gambino);
+game_NewDialogue(dialogue_meeting_gambino_2);

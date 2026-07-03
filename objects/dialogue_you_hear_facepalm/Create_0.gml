@@ -1,3 +1,7 @@
 event_inherited();
-scr_text("You hear the faint sound of a facepalm on the other side of the door.");
-scr_text("...come in.", spr_gambino_icon, 1);
+obj_scribble.textbox_unnamed(
+	"You hear the faint sound of a facepalm on the other side of the door.")
+obj_scribble.textbox(
+	@"...come in.",
+	"Gambino", spr_gambino_portrait_tired
+);

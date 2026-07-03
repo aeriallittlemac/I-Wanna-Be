@@ -13,12 +13,12 @@ global.npc_list = {
 		relationshipPoints : 0,
 		introduced : false,
 		current_obersavation : "Crude bastard. Former drug addict in his preteens. Devout Christian. Wants to be friends."
-	},
+ 	},
 	grace : {
 		object: obj_grace,
 		first_name : "Grace",
 		title : "the Girl",
-		intro_sprite : spr_grace_down,
+		intro_sprite : spr_grace_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,
@@ -27,13 +27,13 @@ global.npc_list = {
 		relationship : "Affection",
 		relationshipPoints : 0,
 		introduced : false,
-		current_obersavation : "Two-faced bitch. Most popular girl in school(self proclaimed). Closeted glutton."
+		current_obersavation : "Most popular girl in school(self proclaimed). Closeted glutton."
 	},
 	drake : {
 		object: obj_drake,
 		first_name : "Drake",
 		title : "the Drunkard",
-		intro_sprite : spr_drake_down,
+		intro_sprite : spr_drake_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,
@@ -48,7 +48,7 @@ global.npc_list = {
 		object: obj_guy,
 		first_name : "Guy",
 		title : "the Guy",
-		intro_sprite : spr_guy_down,
+		intro_sprite : spr_guy_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,
@@ -72,7 +72,7 @@ global.npc_list = {
 		relationship : "Affection",
 		relationshipPoints : 0,
 		introduced : false,
-		current_obersavation : "Snarky goth bitch. Refers to normies like they're muggles.",
+		current_obersavation : "Snarky goth bitch. Doesn't seem to care for most things.",
 	},
 	mcronald : {
 		object : obj_mcronald,
@@ -106,9 +106,9 @@ global.npc_list = {
 	},
 	mrchen : {
 		object : obj_mrchen,
-		first_name : "Mr. Chen",
+		first_name : "Mr.Chen",
 		title : "the Employee",
-		intro_sprite : spr_mrchen_down,
+		intro_sprite : spr_mr_chen_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,
@@ -183,7 +183,7 @@ global.npc_list = {
 		object: obj_frenchie,
 		first_name : "Frenchie",
 		title: "le French",
-		intro_sprite : spr_frenchie_down,
+		intro_sprite : spr_frenchie_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,
@@ -192,7 +192,7 @@ global.npc_list = {
 		relationship : "Friendship",
 		relationshipPoints : 0,
 		introduced : false,
-		current_obersavation : "Innocent and good hearted.",
+		current_obersavation : "Kind of pathetic.",
 	},
 }
 npcs = array_create(0);

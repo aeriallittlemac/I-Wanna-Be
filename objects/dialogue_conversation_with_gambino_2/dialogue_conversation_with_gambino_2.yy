@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "dialogue_parent",
-    "path": "objects/dialogue_parent/dialogue_parent.yy",
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,12 +26,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 2 - after_club",
-    "path": "folders/Dialogue_Lines/Day 2 - after_club.yy",
+    "name": "new",
+    "path": "folders/Dialogue_Lines/Day 2 - after_club/new.yy",
   },
 }

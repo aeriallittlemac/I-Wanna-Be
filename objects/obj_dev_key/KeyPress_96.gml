@@ -1,7 +1,1 @@
- teleport_npc(obj_wei, school_2F, 100, obj_wei.y, RIGHT);
-destroy_if_in_scene(inst_GAME_START_CUTSCENE_TRIGGER);
-teleport_player(350,100,school_2F);
-destroy_if_in_scene(inst_1D43132F);
-NewQuest(global.quest_list.enter_dorm, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-
-
+set_QTE_bgm(qte_bgm);

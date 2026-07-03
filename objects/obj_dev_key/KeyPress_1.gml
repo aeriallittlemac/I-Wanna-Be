@@ -17,10 +17,10 @@
 #macro STEALING_FROM_GRACE ord("F")
 #macro THURSDAY_MORNING ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
-#macro DRAWER ord("L")
+#macro JAKE_N_DRAKE ord("L")
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
-#macro SANDWICH_GAME ord("K")
+#macro TUESDAY_LAB ord("K")
 #macro MONDAY_CLASSROOM ord("A")
 
 if keyboard_check_pressed(MONDAY_CLASSROOM){
@@ -84,8 +84,17 @@ if keyboard_check_pressed(THURSDAY_MORNING){
 		AddInstanceToDestroy(inst_1D43132F);
  		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 }
-if keyboard_check_pressed(SANDWICH_GAME){
-	instance_create_depth(0,0,0,obj_PBnJ_minigame);
+if keyboard_check_pressed(TUESDAY_LAB){
+	game_camera_change_settings(obj_player, -1);
+	global.day = 2;
+	teleport_npc(obj_grace, school_lab, 198, 142, LEFT);
+	teleport_npc(obj_frenchie, school_lab, 164, 142, RIGHT);
+	teleport_npc(obj_brooklyn, school_lab, 228, 90, LEFT);
+	teleport_npc(obj_ashley, school_lab, 40, 80, DOWN);
+	teleport_npc(obj_mei, school_lab, 220, 80, DOWN);
+	teleport_npc(obj_job, school_lab, 120, 70, LEFT);
+	teleport_npc(obj_guy, school_lab, 120, 110, DOWN);
+	teleport_player(100, 120, school_lab);
 }
 if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 
@@ -175,8 +184,12 @@ if keyboard_check(ASHLEY_SCENE){
 	teleport_player(CLASSROOM_TOP_LEFT_CORNER_SEAT_X + CLASSROOM_SEATS_SPACING_X-5, CLASSROOM_TOP_LEFT_CORNER_SEAT_Y + CLASSROOM_SEATS_SPACING_Y + 2, school_main_classroom, cutscene_sewing_club_setup_day_4_ashleys_route_1);
 }
 
-if keyboard_check(DRAWER){
-	var inst = instance_create_depth(0,0,0, obj_drawer_scene);
+if keyboard_check(JAKE_N_DRAKE){
+	game_camera_change_settings(obj_player, -1);
+	if room == school_1F{
+		obj_player.x = 728;
+	}
+	teleport_player(728, 122, school_1F, dialogue_go_back_to_nap);
 }
 
 //if keyboard_check(WEI_DRUMS_DEBUT){

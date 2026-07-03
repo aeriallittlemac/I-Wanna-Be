@@ -1,3 +1,4 @@
+event_inherited();
 camera_set_view_target(view_camera[0], noone);
 game_wait(2.5);
 wait(0.8);

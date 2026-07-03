@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "new monday",
-    "path": "folders/Dialogue_Lines/Day 2 - day/new monday.yy",
+    "name": "classroom",
+    "path": "folders/Dialogue_Lines/Day 2 - day/new monday/classroom.yy",
   },
 }

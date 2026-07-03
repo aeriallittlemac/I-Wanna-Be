@@ -1,2 +1,5 @@
 event_inherited();
-scr_text("So much for the nap...");
+obj_scribble.textbox_unnamed(
+	"So much for the nap..."
+);
+
