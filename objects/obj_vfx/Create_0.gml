@@ -1,4 +1,49 @@
-// Built-in filters and effects.
+enum UniformType {
+	Float, FloatArr, Int, IntArr, Matrix, MatrixArr, DELIM
+}
+
+uniform_types = array_create(UniformType.DELIM);
+uniform_types[UniformType.Float] = shader_set_uniform_f;
+uniform_types[UniformType.FloatArr] = shader_set_uniform_f_array;
+uniform_types[UniformType.Int] = shader_set_uniform_i;
+uniform_types[UniformType.IntArr] = shader_set_uniform_i_array;
+uniform_types[UniformType.Matrix] = shader_set_uniform_matrix;
+uniform_types[UniformType.MatrixArr] = shader_set_uniform_matrix_array;
+
+active_shader = noone;
+
+function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor {
+	asset = _shader_asset;
+	schema = _schema;
+	schema_size = array_length(schema);
+	step = _step;
+	draw = _draw;
+	
+	static step_eval = function() {
+		var ret = step();
+		for (var i = 0; i < schema_size; ++i) {
+			var key = schema[i][1];
+			var res = shader_get_uniform(asset, key);
+			script_execute(
+				obj_vfx.uniform_types[schema[i][0]],
+				res, ret.uniform[$key]
+			);
+		}
+		return ret;
+	};
+	static draw_eval = function(step_ret) {
+		draw(step_ret);
+	}
+	
+	static start = function() {
+		application_surface_draw_enable(false);
+		obj_vfx.active_shader = self;
+	};
+	static stop = function() {
+		application_surface_draw_enable(true);
+		obj_vfx.active_shader = noone;
+	};
+}
 
 function Effect(
 	_effect_asset, _param_defaults, 
@@ -142,7 +187,7 @@ effects_assets = {
 	lightning_edge: fx_create("_filter_edgedetect")
 };
 
-effects_list = {
+effects = {
 	romance: new Effect(effects_assets.romance, {
 		param_sprite : spr_romance_particles,
 		param_particle_mass_min : 0.00,
@@ -241,11 +286,25 @@ effects_list = {
 		}
 	], function() {
 		show_debug_message("Lightning flashed.");
-	}, "effect_lightning")
+	}, "effect_lightning"),
+	spinner: new PostProcessingShader(sh_kaleidoscope, [
+		[UniformType.FloatArr, "u_resolution"], 
+		[UniformType.Float, "u_time"]
+	], function() {
+		return {
+			uniform: {
+				u_resolution: [surface_get_width(application_surface), surface_get_height(application_surface)],
+				u_time: current_time * 0.005
+			}
+		};
+	}, function(step_ret) {
+		var _pos = application_get_position();
+		draw_surface_stretched(application_surface, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
+	})
 };
 
-effects_list.rain.start();
+//effects.rain.start();
+//effects.romance.start();
+effects.spinner.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));
-
-//application_surface_draw_enable(false);

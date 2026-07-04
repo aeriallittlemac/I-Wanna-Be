@@ -1,8 +1,9 @@
 event_inherited();
 
-obj_vfx.effects_list.romance.stop();
-obj_vfx.effects_list.rain.stop();
-obj_vfx.effects_list.lightning.start();
+obj_vfx.effects.romance.stop();
+//obj_vfx.effects.rain.stop();
+obj_vfx.effects.spinner.stop();
+obj_vfx.effects.lightning.start();
 
 //if (!global.hints.meeting_mei.found) {
 //	hint_obtain(global.hints.meeting_mei);
