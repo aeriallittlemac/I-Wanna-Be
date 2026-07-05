@@ -89,11 +89,12 @@ if keyboard_check_pressed(TUESDAY_LAB){
 	global.day = 2;
 	teleport_npc(obj_grace, school_lab, 198, 142, LEFT);
 	teleport_npc(obj_frenchie, school_lab, 164, 142, RIGHT);
-	teleport_npc(obj_brooklyn, school_lab, 228, 90, LEFT);
-	teleport_npc(obj_ashley, school_lab, 40, 80, DOWN);
+	teleport_npc(obj_ashley, school_lab, 60, 50, DOWN);
 	teleport_npc(obj_mei, school_lab, 220, 80, DOWN);
 	teleport_npc(obj_job, school_lab, 120, 70, LEFT);
+	teleport_npc(obj_mcronald, school_lab, 210, 50, DOWN);
 	teleport_npc(obj_guy, school_lab, 120, 110, DOWN);
+	teleport_npc(obj_drake, school_lab, 110, 145, UP);
 	teleport_player(100, 120, school_lab);
 }
 if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){

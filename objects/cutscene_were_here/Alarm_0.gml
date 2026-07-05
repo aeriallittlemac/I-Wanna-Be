@@ -1,0 +1,1 @@
+audio_sound_gain(global.bgm, 0, 1000);

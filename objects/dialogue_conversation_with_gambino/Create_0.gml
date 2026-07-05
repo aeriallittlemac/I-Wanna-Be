@@ -1,5 +1,5 @@
 event_inherited();
-set_QTE_bgm(conversation_with_gambino);
+set_QTE_bgm(gambinos_theme);
 obj_scribble.textbox(
 	@"Un imbarazzo...
 	[/page]Oh well, I'm not paying the both of them, so I suppose I can't really complain...

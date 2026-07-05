@@ -7,28 +7,28 @@ obj_scribble.textbox(
 obj_scribble.textbox_converse(
 	@"N-no... no homo.", 
 	"Drake",[
-		[spr_jake_down, obj_portrait_mock_left_1], 
+		[spr_jake_default_portrait, obj_portrait_mock_left_1], 
 		[spr_drake_portrait_default, obj_portrait_mock_right_1]
 	]
 );
 obj_scribble.textbox_converse(
 	@"Dude, you gotta stop getting drunk on the job!", 
 	"Jake",[
-		[spr_jake_down, obj_portrait_mock_left_1], 
+		[spr_jake_default_portrait, obj_portrait_mock_left_1], 
 		[spr_drake_portrait_default, obj_portrait_mock_right_1]
 	]
 );
 obj_scribble.textbox_converse(
 	@"But he's not paying us?", 
 	"Drake",[
-		[spr_jake_down, obj_portrait_mock_left_1], 
+		[spr_jake_default_portrait, obj_portrait_mock_left_1], 
 		[spr_drake_portrait_default, obj_portrait_mock_right_1]
 	]
 );
 obj_scribble.textbox_converse(
 	@"Alright, just come with me, you two...", 
 	"Jake",[
-		[spr_jake_down, obj_portrait_mock_left_1], 
+		[spr_jake_default_portrait, obj_portrait_mock_left_1], 
 		[spr_drake_portrait_default, obj_portrait_mock_right_1]
 	]
 );
