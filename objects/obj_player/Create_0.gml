@@ -38,3 +38,6 @@ skip_c_sequence = false;
 classroom_mode = false;
 
 hidden = false;
+
+active_shader = noone;
+_shader_time = 0;

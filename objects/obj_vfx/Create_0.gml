@@ -19,11 +19,18 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 	step = _step;
 	draw = _draw;
 	
+	ures = {};
+	for (var i = 0; i < schema_size; ++i) {
+		var key = schema[i][1];
+		var res = shader_get_uniform(asset, key);
+		ures[$key] = res;
+	}
+	
 	static step_eval = function() {
 		var ret = step();
 		for (var i = 0; i < schema_size; ++i) {
 			var key = schema[i][1];
-			var res = shader_get_uniform(asset, key);
+			var res = ures[$key];
 			script_execute(
 				obj_vfx.uniform_types[schema[i][0]],
 				res, ret.uniform[$key]
@@ -32,7 +39,7 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 		return ret;
 	};
 	static draw_eval = function(step_ret) {
-		draw(step_ret);
+		return draw(step_ret);
 	}
 	
 	static start = function() {
@@ -42,6 +49,44 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 	static stop = function() {
 		application_surface_draw_enable(true);
 		obj_vfx.active_shader = noone;
+	};
+}
+
+function ObjectShader(_shader_asset, _schema, _step, _draw) constructor {
+	asset = _shader_asset;
+	schema = _schema;
+	schema_size = array_length(schema);
+	step = _step;
+	draw = _draw;
+	
+	ures = {};
+	for (var i = 0; i < schema_size; ++i) {
+		var key = schema[i][1];
+		var res = shader_get_uniform(asset, key);
+		ures[$key] = res;
+	}
+	
+	static step_eval = function(object) {
+		var ret = step(object);
+		for (var i = 0; i < schema_size; ++i) {
+			var key = schema[i][1];
+			var res = ures[$key];
+			script_execute(
+				obj_vfx.uniform_types[schema[i][0]],
+				res, ret.uniform[$key]
+			);
+		}
+		return ret;
+	};
+	static draw_eval = function(step_ret, object) {
+		return draw(step_ret, object);
+	}
+	
+	static start = function(object) {
+		object.active_shader = self;
+	};
+	static stop = function(object) {
+		object.active_shader = noone;
 	};
 }
 
@@ -300,11 +345,43 @@ effects = {
 	}, function(step_ret) {
 		var _pos = application_get_position();
 		draw_surface_stretched(application_surface, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
+	}),
+	grayscale: new ObjectShader(sh_grayscale, [
+	], function(object) {
+		return {
+			uniform: {
+			}
+		};
+	}, function(step_ret, object) {
+	}),
+	rainbow: new ObjectShader(sh_rainbow, [
+		[UniformType.FloatArr, "u_uv"],
+		[UniformType.Float, "u_time"],
+		[UniformType.Float, "u_speed"],
+		[UniformType.Float, "u_section"],
+		[UniformType.Float, "u_saturation"],
+		[UniformType.Float, "u_brightness"],
+		[UniformType.Float, "u_mix"]
+	], function(object) {
+		object._shader_time += 1 / game_get_speed(gamespeed_fps);
+		var uv = sprite_get_uvs(object.sprite_index, object.image_index);
+		return {
+			uniform: {
+				u_uv: [uv[0], uv[2]],
+				u_time: object._shader_time,
+				u_speed: 1.0,
+				u_section: 0.5,
+				u_saturation: 0.7,
+				u_brightness: 0.8,
+				u_mix: 0.5
+			}
+		};
+	}, function(step_ret, object) {
 	})
 };
 
 //effects.rain.start();
 //effects.romance.start();
-effects.spinner.start();
+//effects.spinner.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));

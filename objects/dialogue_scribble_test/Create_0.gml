@@ -1,8 +1,15 @@
 event_inherited();
 
 obj_vfx.effects.romance.stop();
-//obj_vfx.effects.rain.stop();
+obj_vfx.effects.rain.stop();
 obj_vfx.effects.spinner.stop();
+if (obj_player.active_shader == noone) {
+	//obj_vfx.effects.grayscale.start(obj_player);
+	obj_vfx.effects.rainbow.start(obj_player);
+} else {
+	//obj_vfx.effects.grayscale.stop(obj_player);
+	obj_vfx.effects.rainbow.stop(obj_player);
+}
 obj_vfx.effects.lightning.start();
 
 //if (!global.hints.meeting_mei.found) {
