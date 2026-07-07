@@ -1,7 +1,3 @@
-enum UniformType {
-	Float, FloatArr, Int, IntArr, Matrix, MatrixArr, DELIM
-}
-
 uniform_types = array_create(UniformType.DELIM);
 uniform_types[UniformType.Float] = shader_set_uniform_f;
 uniform_types[UniformType.FloatArr] = shader_set_uniform_f_array;
@@ -11,216 +7,11 @@ uniform_types[UniformType.Matrix] = shader_set_uniform_matrix;
 uniform_types[UniformType.MatrixArr] = shader_set_uniform_matrix_array;
 
 active_shader = noone;
+composite = false;
+surface_a = noone;
+surface_b = noone;
 
-function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor {
-	asset = _shader_asset;
-	schema = _schema;
-	schema_size = array_length(schema);
-	step = _step;
-	draw = _draw;
-	
-	ures = {};
-	for (var i = 0; i < schema_size; ++i) {
-		var key = schema[i][1];
-		var res = shader_get_uniform(asset, key);
-		ures[$key] = res;
-	}
-	
-	static step_eval = function() {
-		var ret = step();
-		for (var i = 0; i < schema_size; ++i) {
-			var key = schema[i][1];
-			var res = ures[$key];
-			script_execute(
-				obj_vfx.uniform_types[schema[i][0]],
-				res, ret.uniform[$key]
-			);
-		}
-		return ret;
-	};
-	static draw_eval = function(step_ret) {
-		return draw(step_ret);
-	}
-	
-	static start = function() {
-		application_surface_draw_enable(false);
-		obj_vfx.active_shader = self;
-	};
-	static stop = function() {
-		application_surface_draw_enable(true);
-		obj_vfx.active_shader = noone;
-	};
-}
-
-function ObjectShader(_shader_asset, _schema, _step, _draw) constructor {
-	asset = _shader_asset;
-	schema = _schema;
-	schema_size = array_length(schema);
-	step = _step;
-	draw = _draw;
-	
-	ures = {};
-	for (var i = 0; i < schema_size; ++i) {
-		var key = schema[i][1];
-		var res = shader_get_uniform(asset, key);
-		ures[$key] = res;
-	}
-	
-	static step_eval = function(object) {
-		var ret = step(object);
-		for (var i = 0; i < schema_size; ++i) {
-			var key = schema[i][1];
-			var res = ures[$key];
-			script_execute(
-				obj_vfx.uniform_types[schema[i][0]],
-				res, ret.uniform[$key]
-			);
-		}
-		return ret;
-	};
-	static draw_eval = function(step_ret, object) {
-		return draw(step_ret, object);
-	}
-	
-	static start = function(object) {
-		object.active_shader = self;
-	};
-	static stop = function(object) {
-		object.active_shader = noone;
-	};
-}
-
-function Effect(
-	_effect_asset, _param_defaults, 
-	_effect_layer_id="Effects", _effect_layer_depth=-600
-) constructor {
-	asset = _effect_asset;
-	params = fx_get_parameters(asset);
-	layer_id = _effect_layer_id;
-	effect_depth = _effect_layer_depth;
-	
-	//show_debug_message(params);
-	
-	var param_names = variable_struct_get_names(_param_defaults);
-	var param_count = variable_struct_names_count(_param_defaults);
-	for (var i = 0; i < param_count; ++i) {
-		var name = param_names[i];
-		params[$name] = _param_defaults[$name];
-	}
-	
-	static start = function() {
-		fx_set_parameters(asset, params);
-		if (!layer_exists(layer_id)) {
-			layer_create(effect_depth, layer_id);
-		}
-		layer_set_fx(layer_id, asset);
-	};
-	static stop = function() {
-		if (layer_exists(layer_id)) {
-			layer_destroy(layer_id);
-		}
-	};
-}
-
-function EffectEphemeral(
-	_effect_asset, _param_defaults, 
-	_time_units, _duration, _on_finish, 
-	_effect_layer_id="Effects", _effect_layer_depth=-600
-) constructor {
-	asset = _effect_asset;
-	params = fx_get_parameters(asset);
-	layer_id = _effect_layer_id;
-	effect_depth = _effect_layer_depth;
-	
-	time_units = _time_units;
-	duration = _duration;
-	on_finish = _on_finish;
-	
-	var param_names = variable_struct_get_names(_param_defaults);
-	var param_count = variable_struct_names_count(_param_defaults);
-	for (var i = 0; i < param_count; ++i) {
-		var name = param_names[i];
-		params[$name] = _param_defaults[$name];
-	}
-	
-	// Must be non-static.
-	start = function() {
-		fx_set_parameters(asset, params);
-		if (!layer_exists(layer_id)) {
-			layer_create(effect_depth, layer_id);
-		}
-		layer_set_fx(layer_id, asset);
-		call_later(duration, time_units, function() {stop(layer_id, on_finish);}
-		);
-	};
-	static stop = function(layer_id, on_finish) {
-		if (layer_exists(layer_id)) {
-			layer_destroy(layer_id);
-		}
-		on_finish();
-	};
-}
-
-function MultiEffect(
-	_effect_asset_params_list, 
-	_effect_layer_id="Effects", _effect_layer_depth=-600
-) constructor {
-	effects = {};
-	size = array_length(_effect_asset_params_list);
-	names = [];
-	for (var i = 0; i < size; ++i) {
-		var asset_params = _effect_asset_params_list[i];
-		effects[$asset_params.name] = new obj_vfx.Effect(
-			asset_params.asset, asset_params.defaults,
-			_effect_layer_id + "_" + asset_params.name, 
-			_effect_layer_depth
-		);
-		array_push(names, asset_params.name);
-	}
-	
-	static start = function() {
-		for (var i = 0; i < size; ++i) {
-			effects[$names[i]].start();
-		}
-	};
-	static stop = function() {
-		for (var i = 0; i < size; ++i) {
-			effects[$names[i]].stop();
-		}
-	};
-}
-
-function MultiEffectEphemeral(
-	_effect_asset_params_list, _on_finish,
-	_effect_layer_id="Effects", _effect_layer_depth=-600
-) constructor {
-	effects = {};
-	size = array_length(_effect_asset_params_list);
-	names = [];
-	for (var i = 0; i < size; ++i) {
-		var asset_params = _effect_asset_params_list[i];
-		effects[$asset_params.name] = new obj_vfx.EffectEphemeral(
-			asset_params.asset, asset_params.defaults,
-			asset_params.time_units, asset_params.duration, function() {},
-			_effect_layer_id + "_" + asset_params.name, 
-			_effect_layer_depth
-		);
-		if (i > 0) {
-			effects[$names[i - 1]].on_finish = effects[$asset_params.name].start;
-		}
-		array_push(names, asset_params.name);
-	}
-	effects[$names[size - 1]].on_finish = _on_finish;
-	
-	static start = function() {
-		effects[$names[0]].start();
-	};
-	static stop = function() {
-		for (var i = 0; i < size; ++i) {
-			effects[$names[i]].stop();
-		}
-	};
-}
+global.sh_ambience = [0.0, 0.0, 0.0];
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -335,16 +126,15 @@ effects = {
 	spinner: new PostProcessingShader(sh_kaleidoscope, [
 		[UniformType.FloatArr, "u_resolution"], 
 		[UniformType.Float, "u_time"]
-	], function() {
+	], function(surface_width, surface_height) {
 		return {
 			uniform: {
-				u_resolution: [surface_get_width(application_surface), surface_get_height(application_surface)],
+				u_resolution: [surface_width, surface_height],
 				u_time: current_time * 0.005
 			}
 		};
-	}, function(step_ret) {
-		var _pos = application_get_position();
-		draw_surface_stretched(application_surface, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
+	}, function(step_ret, surface, pos) {
+		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
 	}),
 	grayscale: new ObjectShader(sh_grayscale, [
 	], function(object) {
@@ -377,11 +167,92 @@ effects = {
 			}
 		};
 	}, function(step_ret, object) {
+	}),
+	lighting_school_1F: new PostProcessingShader(sh_lighting, [
+		[UniformType.FloatArr, "u_xArr"], 
+		[UniformType.FloatArr, "u_yArr"],
+		[UniformType.FloatArr, "u_rChannel"],
+		[UniformType.FloatArr, "u_gChannel"],
+		[UniformType.FloatArr, "u_bChannel"],
+		[UniformType.FloatArr, "u_aChannel"],
+		[UniformType.FloatArr, "u_brightness"],
+		[UniformType.FloatArr, "u_bloomArr"],
+		[UniformType.Int, "u_count"],
+		[UniformType.FloatArr, "u_ambience"],
+		[UniformType.FloatArr, "u_camPos"],
+		[UniformType.FloatArr, "u_resolution"]
+	], function(surface_width, surface_height) {
+		var x_arr = [];
+		var y_arr = [];
+		var red = [];
+		var green = [];
+		var blue = [];
+		var alpha = [];
+		var brightness = [];
+		var bloom = [];
+		var softening = [];
+		
+		var i = 0;
+		with (obj_sh_light) {
+			x_arr[i] = x;
+			y_arr[i] = y;
+			red[i] = color_get_red(image_blend);
+			green[i] = color_get_green(image_blend);
+			blue[i] = color_get_blue(image_blend);
+			alpha[i] = image_alpha;
+			brightness[i] = _brightness;
+			bloom[i] = _bloom;
+			softening[i] = _softening;
+			++i;
+		}
+		
+		//vec2 dist = worldPos - pos;
+		//float distSq = dot(dist, dist);
+		//float invSq = inversesqrt(distSq + 1.0);
+		//invSq = invSq * invSq;
+		//float attenuation = clamp(5000.0 * invSq, 0.0, 1.0);
+		
+		//var dist = [
+		//	camera_get_view_x(view_camera[0]) - x_arr[0],
+		//	camera_get_view_y(view_camera[0]) - y_arr[0]
+		//];
+		//var distSq = dist[0] * dist[0] + dist[1] * dist[1];
+		//var invSq = 1 / sqrt(distSq + 1.0);
+		//invSq = invSq * invSq;
+		//var attenuation = clamp(5000.0 * invSq, 0.0, 1.0);
+		//show_debug_message(attenuation);
+		
+		return {
+			uniform: {
+				u_xArr: x_arr,
+				u_yArr: y_arr,
+				u_rChannel: red,
+				u_gChannel: green,
+				u_bChannel: blue,
+				u_aChannel: alpha,
+				u_bloomArr: bloom,
+				u_brightness: brightness,
+				u_count: i,
+				u_ambience: global.sh_ambience,
+				u_softening: softening,
+				u_camPos: [
+					camera_get_view_x(view_camera[0]),
+					camera_get_view_y(view_camera[0])
+				],
+				u_resolution: [
+					camera_get_view_width(view_camera[0]),
+					camera_get_view_height(view_camera[0])
+				]
+			}
+		};
+	}, function(step_ret, surface, pos) {
+		draw_surface(surface, pos[0], pos[1]);
 	})
 };
 
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();
+effects.lighting_school_1F.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));

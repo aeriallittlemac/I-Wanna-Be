@@ -10,15 +10,15 @@ uniform float u_time;
 void main() {
 	vec2 st = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
 	
-	float segements = 6.0;
+	float segments = 6.0;
 	
 	vec2 p = v_vTexcoord - 0.5;
 	p.x *= u_resolution.x / u_resolution.y;
 	float r = length(p);
 	float a = atan(p.y, p.x);
 	float tau = 3.1415926536 * 2.0;
-	a = mod(a + u_time, tau / segements);
-	abs(a - tau / (segements * 2.0));
+	a = mod(a + u_time, tau / segments);
+	abs(a - tau / (segments * 2.0));
 	vec2 p2 = r * vec2(cos(a), sin(a));
 	p2.x /= u_resolution.x / u_resolution.y;
 	vec2 uv = p2 + 0.5;
