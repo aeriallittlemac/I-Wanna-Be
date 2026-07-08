@@ -11,7 +11,8 @@ composite = false;
 surface_a = noone;
 surface_b = noone;
 
-global.sh_ambience = [0.0, 0.0, 0.0];
+global.sh_ambience = [0.5, 0.0, 0.0];
+global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -169,77 +170,44 @@ effects = {
 	}, function(step_ret, object) {
 	}),
 	lighting_school_1F: new PostProcessingShader(sh_lighting, [
-		[UniformType.FloatArr, "u_xArr"], 
-		[UniformType.FloatArr, "u_yArr"],
-		[UniformType.FloatArr, "u_rChannel"],
-		[UniformType.FloatArr, "u_gChannel"],
-		[UniformType.FloatArr, "u_bChannel"],
-		[UniformType.FloatArr, "u_aChannel"],
-		[UniformType.FloatArr, "u_brightness"],
-		[UniformType.FloatArr, "u_bloomArr"],
-		[UniformType.Int, "u_count"],
+		[UniformType.FloatArr, "u_pos"], 
+		[UniformType.FloatArr, "u_color"],
+		[UniformType.FloatArr, "u_bloom"],
+		[UniformType.FloatArr, "u_bleed"],
 		[UniformType.FloatArr, "u_ambience"],
 		[UniformType.FloatArr, "u_camPos"],
-		[UniformType.FloatArr, "u_resolution"]
+		[UniformType.FloatArr, "u_screenSize"]
 	], function(surface_width, surface_height) {
-		var x_arr = [];
-		var y_arr = [];
-		var red = [];
-		var green = [];
-		var blue = [];
-		var alpha = [];
-		var brightness = [];
-		var bloom = [];
-		var softening = [];
+		var pos = array_create(16 * 4);
+		var color = array_create(16 * 4);
+		var bloom = array_create(16 * 2);
 		
-		var i = 0;
+		var i_pos = 0, i_color = 0, i_bloom = 0;
 		with (obj_sh_light) {
-			x_arr[i] = x;
-			y_arr[i] = y;
-			red[i] = color_get_red(image_blend);
-			green[i] = color_get_green(image_blend);
-			blue[i] = color_get_blue(image_blend);
-			alpha[i] = image_alpha;
-			brightness[i] = _brightness;
-			bloom[i] = _bloom;
-			softening[i] = _softening;
-			++i;
+			pos[i_pos++] = x;
+			pos[i_pos++] = y;
+			pos[i_pos++] = _radius;
+			pos[i_pos++] = _illumination;
+			color[i_color++] = color_get_red(image_blend);
+			color[i_color++] = color_get_green(image_blend);
+			color[i_color++] = color_get_blue(image_blend);
+			color[i_color++] = image_alpha;
+			bloom[i_bloom++] = _bloom;
+			bloom[i_bloom++] = _mbright;
 		}
-		
-		//vec2 dist = worldPos - pos;
-		//float distSq = dot(dist, dist);
-		//float invSq = inversesqrt(distSq + 1.0);
-		//invSq = invSq * invSq;
-		//float attenuation = clamp(5000.0 * invSq, 0.0, 1.0);
-		
-		//var dist = [
-		//	camera_get_view_x(view_camera[0]) - x_arr[0],
-		//	camera_get_view_y(view_camera[0]) - y_arr[0]
-		//];
-		//var distSq = dist[0] * dist[0] + dist[1] * dist[1];
-		//var invSq = 1 / sqrt(distSq + 1.0);
-		//invSq = invSq * invSq;
-		//var attenuation = clamp(5000.0 * invSq, 0.0, 1.0);
-		//show_debug_message(attenuation);
 		
 		return {
 			uniform: {
-				u_xArr: x_arr,
-				u_yArr: y_arr,
-				u_rChannel: red,
-				u_gChannel: green,
-				u_bChannel: blue,
-				u_aChannel: alpha,
-				u_bloomArr: bloom,
-				u_brightness: brightness,
-				u_count: i,
+				u_pos: pos,
+				u_color: color,
+				u_bloom: bloom,
+				u_bleed: global.sh_bloom_bleed,
 				u_ambience: global.sh_ambience,
-				u_softening: softening,
 				u_camPos: [
 					camera_get_view_x(view_camera[0]),
 					camera_get_view_y(view_camera[0])
 				],
-				u_resolution: [
+				u_screenSize: [
 					camera_get_view_width(view_camera[0]),
 					camera_get_view_height(view_camera[0])
 				]
