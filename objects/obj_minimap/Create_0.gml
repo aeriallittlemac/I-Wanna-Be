@@ -137,6 +137,20 @@ global.quest_list = {
 		quest_x : 1290,
 		quest_y : 104,
 	},
+	
+	
+	//NEW!
+	
+	copper_coin : {
+		description : "Find and retrieve a copper coin(check hints!)",
+		icon: spr_main_quest_icon,
+		quest_room : school_lab,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1330,
+		quest_y : 104,
+	},
+	//
 	potato_battery : {
 		description : "Complete the lab experiment",
 		icon: spr_main_quest_icon,
@@ -174,6 +188,17 @@ global.quest_list = {
 		quest_y : 104,
 	},
 	//day 4
+	
+	figure_out_Brooklyns_rumor : {
+		description : "Figure out what's going on.",
+		icon: spr_main_quest_icon,
+		quest_room : school_main_classroom,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1330,
+		quest_y : 104,
+	
+	},
 	math_quiz : {
 		description : "Math quiz.",
 		icon: spr_main_quest_icon,
@@ -232,17 +257,26 @@ global.storylines = {
 		},
 		Day_Four : {
 			quiz_pass: false,
+			talked_to:{
+				wei: false,
+				mei: false,
+				brooklyn: false,
+				drake: false,
+				ashley: false,
+				mcronald: false,
+			},
 		},
 	},
 	Lab : {
 		Day_Three : {
 			
 			talked_to:{
-					//grace: false,
+					grace: false,
 					//brooklyn: false,
-					//drake: false,
-					//mei: false,
-					//mcronald: false,
+					drake: false,
+					mei: false,
+					mcronald: false,
+					frenchie: false,
 					guy: false,
 					job: false,
 				},

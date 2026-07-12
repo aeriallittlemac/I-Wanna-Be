@@ -19,17 +19,7 @@ else if global.day == 3&& !global.storylines.Main_Classroom.Day_Two.talked_to.mc
 		
 	}
 }
-else if global.day == 4&& !global.storylines.Main_Classroom.Day_Two.talked_to.mcronald{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-		
-		}
-		else{
-			global.storylines.Main_Classroom.Day_Four.talked_to.mcronald = true;
-		}
-	}
-	else{
-		global.storylines.Main_Classroom.Day_Four.talked_to.mcronald = true;
-	}
+else if global.day == 4&& !global.storylines.Main_Classroom.Day_Four.talked_to.mcronald{
+	global.storylines.Main_Classroom.Day_Four.talked_to.mcronald = true;
 
 }

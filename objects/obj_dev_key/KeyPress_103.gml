@@ -1,1 +1,1 @@
-instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_rhythm_game);
+instance_create_depth(0, 0, 0, obj_E18_to_E19);

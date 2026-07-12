@@ -1,0 +1,12 @@
+event_inherited();
+player_x = 1090;
+player_y = 780;
+vertical_barrier_x = [620, 800];
+vertical_barrier_y = [540, 780];
+horizontal_barrier_x = [870, 1110, 1200];
+horizontal_barrier_y = [530, 560, 560];
+destination_x = 670;
+destination_y = 550;
+target_room = school_gambinos_room;
+target_x = 215;
+target_y = 57;

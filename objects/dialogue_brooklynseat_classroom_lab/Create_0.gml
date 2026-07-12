@@ -7,25 +7,14 @@ if global.day == 2{
 		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			"*ignores you", 
+			"Brooklyn", spr_brooklyn_portrait_default
+		);
 	}
 }
 else if global.day == 3{
-	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.brooklyn = true;
-	}
+	//not in lab?
 }
 else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{

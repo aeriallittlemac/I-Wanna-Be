@@ -7,43 +7,38 @@ if global.day == 2{
 		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			"*Quirky anime line about transfer students.", 
+			"Ashley", spr_ashley_portrait_default
+		);
 	}
 }
 else if global.day == 3{
-	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
+	if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.ashley{
+		obj_scribble.textbox(
+				"*Quirky anime line about building the ultimate device.", 
+				"Ashley", spr_ashley_portrait_default
+		);
 	}
 	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.ashley = true;
+		obj_scribble.textbox(
+				"*Quirky anime line about building the ultimate device.", 
+				"Ashley", spr_ashley_portrait_default
+		);
 	}
+		
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{		
-			
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.ashley{
-			
-		//}
-		//else{
-			
-		//}
-	}
+	obj_scribble.textbox(
+		@"S-senpaaai!
+		[/page]I heard from someone else that the president,
+		[/pagethat gray haired meanie with a s-smoking addiction...
+		[/page]...was lusting after my petite figure with his scary, judgemental eyes yesterday...
+		[/page]I don't have anything against him, b-but he's scary and he's not my type!
+		[/page]Please, s-senpai, won't you protect me?
+		", 
+		"Ashley", spr_ashley_portrait_default
+	);	
 }
 else{
 	

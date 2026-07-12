@@ -198,6 +198,7 @@ function item_remove(item){
 
 function hint_obtain(hint) {
 	if (!hint.found) {
+		audio_play_sound(sfx_surprise_fx, 1, false);
 		hint.found = true;
 		obj_hints.draw_hint_emphemeral(hint.text, string_length(hint.text) * 0.1);
 	}

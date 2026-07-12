@@ -18,15 +18,17 @@ if global.day == 2{
 	]
 	);
 	
+	
 	obj_scribble.textbox_converse(
 	@"You make a good jester. But it is starting to bore me.
 	[/page]You may get out of my sight now(again, placeholder).
 	", 
 	"Goth blonde", [
 		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
-		[spr_brooklyn_portrait_default, obj_portrait_mock_right_1]
+		[spr_brooklyn_portrait_default, obj_portrait_mock_right_1], 
+		[spr_grace_portrait_default, obj_portrait_mock_0]
 	]
-	);
+);
 	}
 	else{
 		
@@ -50,35 +52,15 @@ else if global.day == 3{
 	}
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"mcronald", spr_mcronald_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_mcronald_default_1]Why do you comply?", 
-			"mcronald", spr_mcronald_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_mcronald_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"mcronald", spr_mcronald_portrait_default);
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.mcronald{
-			
-		//}
-		//else{
-			
-		//}
-	}
+	obj_scribble.textbox(
+		@"Now that Mei has mentioned that...
+		[/page]McRonald has noticed that the president's gaze has changed recently.
+		[/page]Not of his usual harshness, but rather a soft, chud-like appearance-
+		[/page]-similar to whenever he started dating Brooklyn!
+		[/page]Has the Don's gaze wanders onto brunette bushels? What a world!
+		", 
+		"McRonald", spr_mcronald_portrait_default
+	);	
 }
 else{
 	

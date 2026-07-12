@@ -1,12 +1,12 @@
 global.in_hints = false;
 
 global.hints = {
-	meeting_mei: {
-		sprite: spr_mei_portrait_default, 
-		text: "Public composure is key to survival.", 
+	gambinos_promise: {
+		sprite: spr_gambino_icon, 
+		text: "Gambino will support your academics.", 
 		found: false, 
 		utilized: false, 
-		save_name: "Meeting Mei"
+		save_name: "Gambino's promise"
 	}, 
 	after_first_class: {
 		sprite: spr_wei_icon, 
@@ -77,7 +77,7 @@ global.hints = {
 is_choosing_restore = false;
 
 hint_grid = [
-	["meeting_mei", "if_rumor_deny"], 
+	["gambinos_promise", "if_rumor_deny"], 
 	//["after_first_class", "beef"],
 	["if_rumor_choose", "if_rumor"],
 	["yup", "uhhuh"],
@@ -129,6 +129,8 @@ function draw_hint_mark(row, col, origin_x, origin_y) {
 	if (!hint.utilized) {
 		return;
 	}
+//	draw_set_halign(fa_middle)
+//draw_set_valign(fa_center)
 	draw_sprite_ext(IWB_UI_hint_box_column_mark, -1, origin_x + col * hint_grid_col_spacing, origin_y + row * hint_grid_row_spacing, ui_scale, ui_scale, 0, c_white, 1);
 }
 

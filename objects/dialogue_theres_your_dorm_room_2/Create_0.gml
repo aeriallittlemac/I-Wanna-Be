@@ -1,7 +1,12 @@
 event_inherited();
-instance_destroy(inst_4DF821E7);
-scr_text("Mines over there: other side, end of the hallway.", spr_wei_icon, 0);
-scr_text("You got any questions later, come knock and I'll hear ya out.", spr_wei_icon, 0);
-scr_text("But if it ain't got nothing to do with me, like you got bed bugs or something...", spr_wei_icon, 0);
-scr_text("I'll tell you to get your butt back to bed, I ain't yer mom. Hehe.", spr_wei_icon, 0);
-scr_text("Adios!", spr_wei_icon, 0);
+obj_scribble.textbox(
+	@"Figure out which way to turn, and you can get in that son-of-a-bitch easily.
+	[/page]Understand?
+	[/page]I’ll see ya in a minute. Gotta go take a phat shit.
+	", 
+	"Wei", spr_wei_portrait_default
+);
+//obj_scribble.textbox_unnamed(
+//	@"Follow Wei up the stairs.
+//	"
+//);

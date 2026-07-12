@@ -1,3 +1,5 @@
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 if (ephemeral_duration > 0) {
 	draw_set_font(default_pixel_font);
 	draw_set_colour(#55402c);

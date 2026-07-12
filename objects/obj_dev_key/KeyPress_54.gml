@@ -1,1 +1,1 @@
-game_NewCutscene(cutscene_drop_gun);
+var inst = instance_create_depth(0,0,0, obj_mog_off_QTE);

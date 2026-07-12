@@ -12,42 +12,24 @@ if global.day == 2{
 }
 else if global.day == 3{
 	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
+	if !global.storylines.Lab.Day_Three.talked_to.grace{
+		obj_scribble.textbox(
+			@"*Asks you something dumb
+			[/page]Gets flustered and insults you", 
+			"Grace", spr_grace_portrait_default
+		);
 	}
 	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.grace = true;
+		obj_scribble.textbox(
+			@"*Asks you something dumb
+			[/page]Gets flustered and insults you", 
+			"Grace", spr_grace_portrait_default
+		);
 	}
 }
 else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"grace", spr_grace_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_grace_default_1]Why do you comply?", 
-			"grace", spr_grace_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_grace_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"grace", spr_grace_portrait_default);
-		}
-		else{
-			
-		}
+		
 	}
 	else{
 		//if !global.storylines.Main_Classroom.Day_Four.talked_to.grace{

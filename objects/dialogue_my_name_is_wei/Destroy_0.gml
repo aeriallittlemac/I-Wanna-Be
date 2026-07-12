@@ -1,3 +1,4 @@
+event_inherited();
 obj_npc_manager.npcs[WEI].introduced = true;
 wait(0.25);
 var y_margin = abs(obj_player.y - obj_wei.y)

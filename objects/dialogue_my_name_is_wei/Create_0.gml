@@ -1,4 +1,9 @@
-//instance_destroy(inst_B4BE96B);
 event_inherited();
-scr_text("The name's Wei Torres, and I know where ya sleeping tonight.", spr_wei_icon, 0);
-scr_text("Follow me.", spr_wei_icon, 0);
+obj_scribble.textbox(
+	@"How ya doing, you slow son-of-a-bitch?
+	[/page]The name’s Wei, and the only thing I love more than God is fighting evil.
+	[/page]I also know where you’re sleeping tonight.
+	[/page]Follow me.
+	", 
+	"Wei", spr_wei_portrait_default
+);

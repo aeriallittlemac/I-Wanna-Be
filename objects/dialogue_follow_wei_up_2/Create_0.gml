@@ -1,2 +1,5 @@
 event_inherited();
-scr_text("Follow Wei up the stairs.");
+obj_scribble.textbox_unnamed(
+	@"Follow Wei up the stairs.
+	"
+);

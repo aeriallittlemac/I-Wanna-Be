@@ -9,38 +9,38 @@ if global.day == 2{
 }
 else if global.day == 3{
 	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.mei = true;
-	}
 }
-else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-		
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.mei{
-			
-		//}
-		//else{
-			
-		//}
-	}
+else if global.day == 4{	
+	obj_scribble.textbox_converse(
+		@"*whispers
+		[/page]Hey, did you hear?
+		[/page]I can't believe the president would do that!
+		", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+		@"Hear, hear!
+		", 
+	"McRonald", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+		@"The fact that it happened with Ashley is what's so mind boggling!
+		[/page]Poor Brooklyn, losing out to that weeabo...
+		", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+
 }
 else{
 	

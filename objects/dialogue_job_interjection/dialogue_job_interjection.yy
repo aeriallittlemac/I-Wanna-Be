@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 4 - class and after",
-    "path": "folders/Dialogue_Lines/Day 4 - class and after.yy",
+    "name": "Brooklyn's route",
+    "path": "folders/Dialogue_Lines/Day 4 - class and after/Brooklyn's route.yy",
   },
 }

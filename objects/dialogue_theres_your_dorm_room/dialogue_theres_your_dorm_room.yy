@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "dialogue_parent",
-    "path": "objects/dialogue_parent/dialogue_parent.yy",
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 1 - afternoon",
-    "path": "folders/Dialogue_Lines/Day 1 - afternoon.yy",
+    "name": "new",
+    "path": "folders/Dialogue_Lines/Day 1 - afternoon/new.yy",
   },
 }

@@ -7,56 +7,29 @@ if global.day == 2{
 		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			"*warns you that you're not allowed to go out", 
+			"Drake", spr_drake_portrait_default
+		);
 	}
 }
 else if global.day == 3{
-	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
+	if !global.storylines.Lab.Day_Three.talked_to.drake{
+		obj_scribble.textbox(
+				"*warns you that you're not allowed to go out", 
+				"Drake", spr_drake_portrait_default
+		);
 		}
-		else{
-			
-		}
-	
-	}
 	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.drake = true;
+		obj_scribble.textbox(
+				"*warns you that you're not allowed to go out", 
+				"Drake", spr_drake_portrait_default
+		);
 	}
+	
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"drake", spr_drake_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_drake_default_1]Why do you comply?", 
-			"drake", spr_drake_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_drake_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"drake", spr_drake_portrait_default);
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.drake{
-			
-		//}
-		//else{
-			
-		//}
-	}
+	
 }
 else{
 	

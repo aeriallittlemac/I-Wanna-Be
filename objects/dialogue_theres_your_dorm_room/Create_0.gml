@@ -1,4 +1,12 @@
 event_inherited();
-instance_destroy(inst_4DF821E7);
-scr_text("There's your room, right there.", spr_wei_icon, 0);
-scr_text("And here's your keys, don't lose them.", spr_wei_icon, 0);
+obj_scribble.textbox(
+	@"There’s your room right there.
+	[/page]Now what you do is ya take this key I’m handing you, take it to that door over there, 
+	[/page]and shove it straight up its candy ass.
+	", 
+	"Wei", spr_wei_portrait_default
+);
+//obj_scribble.textbox_unnamed(
+//	@"Follow Wei up the stairs.
+//	"
+//);

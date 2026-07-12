@@ -17,7 +17,7 @@ obj_scribble.textbox(
 	"Job", spr_job_down
 );
 obj_scribble.textbox(
-	"*Reminded of the band, Wei starts doing off on Gambino for overplaying last practice.", 
+	"*Reminded of the band, Wei starts doing off on McRonald for overplaying last practice.", 
 	"Wei", spr_wei_portrait_default
 );
 

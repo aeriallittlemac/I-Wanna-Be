@@ -12,19 +12,63 @@ if global.day == 2{
 }
 else if global.day == 3{
 	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
+	if !global.storylines.Lab.Day_Three.talked_to.job{
+		obj_scribble.textbox_converse(
+		@"*Annoyed at Frenchie for giving Grace the copper coin", 
+		"Job", [
+			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+		]
+		);
+		
+		obj_scribble.textbox_converse(
+		@"*Stutters.
+		[/page]*Something about Grace being too dazzling for him to refuse
+		", 
+		"Frenchie", [
+			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+		]
+		);
+		
+		obj_scribble.textbox(
+			@"*He wishes Wei were here, he would take the coin back without a second thought,", 
+			"Job", spr_job_down
+		);
+		
+		obj_scribble.textbox_converse(
+		@"*On the topic of Wei, McRonald decides to weigh in
+		[/page]*He says that Wei is just as inconsiderate, as he is straightforward
+		[/page]*He goes on a rant about Wei being an obnoxious bandmate
+		", 
+		"McRonald", [
+			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_mcronald_portrait_default, obj_portrait_mock_right_1]
+		]
+		);
+		
+		obj_scribble.textbox(
+			@"*Job changes the topic back to the experiment
+			[/page]He asks you to help him find another copper coin
+			", 
+			"Job", spr_job_down
+		);
+		
+		obj_scribble.textbox_unnamed(
+			@"A copper coin...
+			[/page]Maybe someone might be able to give us a hint here...
+			[/page]Press escape to check hints.
+			", 
+		);
 	}
 	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.job = true;
+		obj_scribble.textbox_converse(
+		@"*Annoyed at Frenchie for giving Grace the copper coin", 
+		"Job", [
+			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+		]
+		);
 	}
 }
 else if global.day == 4{

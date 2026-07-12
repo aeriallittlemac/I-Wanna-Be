@@ -10,6 +10,11 @@ global.item_list = {
 		item_dialogue: dialogue_PBnJ,
 	
 	},
+	teddy_bar : {
+		item_name : "Teddy Bear",
+		item_dialogue: -1,
+	
+	},
 	joker_card : {
 		item_name: "joker card",
 		item_dialogue: dialogue_joker_card,
