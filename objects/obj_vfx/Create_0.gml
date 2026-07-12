@@ -7,7 +7,6 @@ uniform_types[UniformType.Matrix] = shader_set_uniform_matrix;
 uniform_types[UniformType.MatrixArr] = shader_set_uniform_matrix_array;
 
 active_shader = noone;
-composite = false;
 surface_a = noone;
 surface_b = noone;
 
@@ -143,7 +142,6 @@ effects = {
 			uniform: {
 			}
 		};
-	}, function(step_ret, object) {
 	}),
 	rainbow: new ObjectShader(sh_rainbow, [
 		[UniformType.FloatArr, "u_uv"],
@@ -167,9 +165,8 @@ effects = {
 				u_mix: 0.5
 			}
 		};
-	}, function(step_ret, object) {
 	}),
-	lighting_school_1F: new PostProcessingShader(sh_lighting, [
+	lighting: new PostProcessingShader(sh_lighting, [
 		[UniformType.FloatArr, "u_pos"], 
 		[UniformType.FloatArr, "u_color"],
 		[UniformType.FloatArr, "u_bloom"],
@@ -215,12 +212,27 @@ effects = {
 		};
 	}, function(step_ret, surface, pos) {
 		draw_surface(surface, pos[0], pos[1]);
-	})
+	}),
+	shadow: new ObjectShader(sh_shadow, [
+	], function(object) {
+		return {
+			uniform: {
+			}
+		};
+	}, 30)
 };
+
+effects.lighting_spinner_test = new CompositePostProcessingShader([
+	effects.spinner, effects.lighting
+]);
+effects.shadow_rainbow_test = new CompositeObjectShader([
+	effects.shadow, effects.rainbow
+]);
 
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();
-effects.lighting_school_1F.start();
+//effects.lighting.start();
+//effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));

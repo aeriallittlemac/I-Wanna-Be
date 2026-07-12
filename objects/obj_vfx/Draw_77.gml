@@ -6,7 +6,7 @@ var _width = surface_get_width(application_surface);
 var _height = surface_get_height(application_surface);
 var _pos = application_get_position();
 
-if (composite) {
+if (active_shader.composite) {
 	if (!surface_exists(surface_a)) {
 		surface_a = surface_create(_width, _height);
 	}
@@ -15,30 +15,44 @@ if (composite) {
 	}
 	var source = application_surface;
 	var target = surface_a;
-	var m = true;
 	
-	for (var i = 0; i < active_shader.count; ++i) {
-		var shader_layer = active_shader.shaders[i];
+	// Start initial pass.
+	
+	var shader_layer = active_shader.shaders[0];
+		
+	surface_set_target(target);
+	draw_clear_alpha(c_black, 0);
+		
+	shader_set(shader_layer.asset);
+	var step_ret = shader_layer.step_eval(_width, _height);
+	shader_layer.draw_eval(step_ret, source, _pos);
+	shader_reset();
+		
+	surface_reset_target();
+	
+	// End initial pass.
+	
+	source = surface_a;
+	target = surface_b;
+	
+	for (var i = 1; i < active_shader.count; ++i) {
+		shader_layer = active_shader.shaders[i];
+		
 		surface_set_target(target);
 		draw_clear_alpha(c_black, 0);
 		
 		shader_set(shader_layer.asset);
 		var step_ret = shader_layer.step_eval(_width, _height);
-		shader_layer.draw_eval(step_ret, surface, _pos);
+		shader_layer.draw_eval(step_ret, source, _pos);
 		shader_reset();
+		
 		surface_reset_target();
 		
-		if (m) {
-			source = surface_a;
-			target = surface_b;
-			m = false;
-		} else {
-			source = surface_b;
-			target = surface_a;
-			m = true;
-		}
+		temp_surface = source;
+		source = target;
+		target = temp_surface;
 	}
-	draw_surface_stretched(target, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
+	draw_surface_stretched(source, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
 } else {
 	shader_set(active_shader.asset);
 

@@ -15,6 +15,7 @@
     {"id":{"name":"obj_bear_interactable","path":"objects/obj_bear_interactable/obj_bear_interactable.yy",},"order":7,},
     {"id":{"name":"important_decision_conclusion","path":"sounds/important_decision_conclusion/important_decision_conclusion.yy",},"order":34,},
     {"id":{"name":"IWB_UI_button","path":"sprites/IWB_UI_button/IWB_UI_button.yy",},"order":2,},
+    {"id":{"name":"sh_shadow","path":"shaders/sh_shadow/sh_shadow.yy",},"order":4,},
     {"id":{"name":"spr_wei_portrait_furious_2","path":"sprites/spr_wei_portrait_furious_2/spr_wei_portrait_furious_2.yy",},"order":4,},
     {"id":{"name":"_3F_4_png__1_","path":"sprites/_3F_4_png__1_/_3F_4_png__1_.yy",},"order":1,},
     {"id":{"name":"spr_grace_right","path":"sprites/spr_grace_right/spr_grace_right.yy",},"order":4,},

@@ -8,6 +8,7 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 	schema_size = array_length(schema);
 	step = _step;
 	draw = _draw;
+	composite = false;
 	
 	ures = {};
 	for (var i = 0; i < schema_size; ++i) {
@@ -46,6 +47,8 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 
 function CompositePostProcessingShader(_shaders) constructor {
 	shaders = _shaders;
+	count = array_length(shaders);
+	composite = true;
 	
 	static start = function() {
 		application_surface_draw_enable(false);
@@ -59,12 +62,13 @@ function CompositePostProcessingShader(_shaders) constructor {
 	};
 }
 
-function ObjectShader(_shader_asset, _schema, _step, _draw) constructor {
+function ObjectShader(_shader_asset, _schema, _step, _padding = 0) constructor {
 	asset = _shader_asset;
 	schema = _schema;
 	schema_size = array_length(schema);
 	step = _step;
-	draw = _draw;
+	padding = _padding;
+	composite = false;
 	
 	ures = {};
 	for (var i = 0; i < schema_size; ++i) {
@@ -83,10 +87,24 @@ function ObjectShader(_shader_asset, _schema, _step, _draw) constructor {
 				res, ret.uniform[$key]
 			);
 		}
-		return ret;
 	};
-	static draw_eval = function(step_ret, object) {
-		return draw(step_ret, object);
+	
+	static start = function(object) {
+		object.active_shader = self;
+	};
+	static stop = function(object) {
+		object.active_shader = noone;
+	};
+}
+
+function CompositeObjectShader(_shaders) constructor {
+	shaders = _shaders;
+	count = array_length(shaders);
+	composite = true;
+	
+	padding = shaders[0].padding;
+	for (var i = 1; i < count; ++i) {
+		padding = max(padding, shaders[i].padding);
 	}
 	
 	static start = function(object) {
