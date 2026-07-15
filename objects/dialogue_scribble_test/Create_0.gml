@@ -26,7 +26,26 @@ obj_vfx.effects.lighting_spinner_test.stop();
 //	hint_use(global.hints.meeting_mei);
 //}
 
-obj_scribble.textbox_unnamed("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+function callback_1() {
+	obj_scribble.textbox_unnamed("You selected choice 1.");
+}
+
+function callback_2() {
+	obj_scribble.textbox_unnamed("You selected choice 2.");
+}
+
+function callback_3() {
+	obj_scribble.textbox_unnamed("You selected choice 3.");
+}
+
+obj_scribble.textbox_unnamed(
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	,,,,,[
+		{text: "Choice 1", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: callback_1},
+		{text: "Choice 2", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: callback_2},
+		{text: "Choice 3", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: callback_3}
+	]
+);
 
 //obj_scribble.textbox(
 //	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
