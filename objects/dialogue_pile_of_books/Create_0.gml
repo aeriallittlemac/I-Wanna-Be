@@ -1,5 +1,5 @@
 event_inherited();
-obj_scribble.textbox_unnamed(@"This is a really big teddy bear.
-[/page]Wonder if I could fit-
-[/page]Cease that thought.
+obj_scribble.textbox_unnamed(@"What a massive pile of books
+[/page]Wait, is there something under...
+[/page]....vents?
 ");

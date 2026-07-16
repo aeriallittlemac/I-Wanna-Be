@@ -1,38 +1,24 @@
 event_inherited();
 if global.day == 2{
-	if !global.storylines.Main_Classroom.Day_Two.talked_to.drake{
-		obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
-			"Drake", spr_drake_portrait_default
-		);
-	}
-	else{
-		obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
-			"Drake", spr_drake_portrait_default
-		);
-	}
+	//not present
 }
 else if global.day == 3{
-	if !global.storylines.Lab.Day_Three.talked_to.drake{
+	if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.frenchie{
 		obj_scribble.textbox(
-				"*warns you that you're not allowed to go out", 
-				"Drake", spr_drake_portrait_default
-		);
-		}
-	else{
-		obj_scribble.textbox(
-				"*warns you that you're not allowed to go out", 
-				"Drake", spr_drake_portrait_default
+				"*Simping over Grace", 
+				"frenchie", spr_frenchie_portrait_default
 		);
 	}
-	
+	else{
+		obj_scribble.textbox(
+				"*Simping over Grace", 
+				"frenchie", spr_frenchie_portrait_default
+		);
+	}
+		
 }
 else if global.day == 4{
-	obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
-			"Drake", spr_drake_portrait_default
-		);
+	
 }
 else{
 	
@@ -55,10 +41,10 @@ else{
 
 //obj_scribble.textbox(
 //	"Lorem[red_flash] ipsum dolor sit amet[in_dialogue_force_set,false][player_move,1,1,1610,100], consectetur adipiscing elit[red_flash], sed do eiusmod tempor incididunt ut [red_flash]labore et dolore magna aliqua. [camera_shake]Ut enim ad minim veniam, quis [red_flash]nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in [red_flash]reprehenderit in voluptate velit [camera_shake]esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non [red_flash]proident, sunt in culpa qui officia deserunt mollit anim id est [in_dialogue_force_set,true]laborum.", 
-//	"drake", spr_drake_portrait_default, sfx_grace_speech, true
+//	"frenchie", spr_frenchie_portrait_default, sfx_grace_speech, true
 //);
 
 //obj_scribble.textbox_unnamed(
-//	"[scale,2]Lorem ipsum dolor[npc_move,obj_wei,1,1,1420,100] sit amet[/], [/page][Font1]consectetur adipiscing elit[/], [/page][c_aqua]sed do eiusmod tempor incididunt ut labore et dolore magna aliqua[/c]. [/page][spr_drake_portrait_default]Ut enim ad minim veniam[spr_drake_portrait_default], quis nostrud exercitation ullamco laboris[spr_frenchie_portrait_default] nisi ut aliquip ex ea commodo consequat[spr_mei_portrait_default]. [/page][sfx_mission_accomplished][speed,2]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum[/speed] [slant]dolore eu fugiat nulla pariatur[/slant]. [/page][wave]Excepteur sint[/wave] [shake]occaecat cupidatat[/shake] [wobble]non proident[/wobble], [pulse]sunt in[/pulse] [wheel]culpa qui[/wheel] [jitter]officia deserunt[/jitter] [blink]mollit anim[/blink] [rainbow]id est laborum.[/rainbow]", 
+//	"[scale,2]Lorem ipsum dolor[npc_move,obj_wei,1,1,1420,100] sit amet[/], [/page][Font1]consectetur adipiscing elit[/], [/page][c_aqua]sed do eiusmod tempor incididunt ut labore et dolore magna aliqua[/c]. [/page][spr_frenchie_portrait_default]Ut enim ad minim veniam[spr_frenchie_portrait_default], quis nostrud exercitation ullamco laboris[spr_frenchie_portrait_default] nisi ut aliquip ex ea commodo consequat[spr_mei_portrait_default]. [/page][sfx_mission_accomplished][speed,2]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum[/speed] [slant]dolore eu fugiat nulla pariatur[/slant]. [/page][wave]Excepteur sint[/wave] [shake]occaecat cupidatat[/shake] [wobble]non proident[/wobble], [pulse]sunt in[/pulse] [wheel]culpa qui[/wheel] [jitter]officia deserunt[/jitter] [blink]mollit anim[/blink] [rainbow]id est laborum.[/rainbow]", 
 //	sfx_noisy_speech
 //);

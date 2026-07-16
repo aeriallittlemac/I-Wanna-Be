@@ -1,6 +1,6 @@
 obj_grace.entityActivateArg = dialogue_graceseat_classroom_lab;
 obj_ashley.entityActivateArg = dialogue_ashleyseat_classroom_lab;
-obj_frenchie.entityActivateArg = -1;
+obj_frenchie.entityActivateArg = dialogue_frenchieseat_classroom_lab;
 
 obj_job.entityActivateArg = dialogue_jobseat_classroom_lab;
 

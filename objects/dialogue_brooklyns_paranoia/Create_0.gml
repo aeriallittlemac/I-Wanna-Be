@@ -32,7 +32,7 @@ obj_scribble.textbox_unnamed(
 )
 obj_scribble.textbox(
 	@"Put the paper down for a second, dumbass.
-	[/page]I’m talking to you.
+	[/page]I'm talking to you.
 	[/page]The worksheets can wait.
 	", 
 	"Brooklyn", spr_brooklyn_portrait_disgusted
@@ -40,7 +40,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	@"*Clears throat
-	[/page]Anyways, I need to know for real if Gambino’s cheating on me.
+	[/page]Anyways, I need to know for real if Gambino's cheating on me.
 	[/page]I happen to know that he won't be in his office this afternoon.
 	[/page]So, I want you to head over and go through his stuff.
 	
@@ -55,7 +55,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	@"What part of [slant]he won't be in his office[/slant] do you not understand?
-	[/page]Look. I’ll do the whole assignment if you go right now.
+	[/page]Look. I'll do the whole assignment if you go right now.
 	[/page]And please...
 	[/page]Please don't be another person who lets me down.
 	", 
@@ -63,7 +63,7 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox_unnamed(
-	@"You ask how you’re going to get to his stuff.
+	@"You ask how you're going to get to his stuff.
 	"
 );
 

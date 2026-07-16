@@ -471,6 +471,7 @@
     {"id":{"name":"spr_PBnJ_minigame_toast","path":"sprites/spr_PBnJ_minigame_toast/spr_PBnJ_minigame_toast.yy",},"order":12,},
     {"id":{"name":"spr_PBnJ_plate_2","path":"sprites/spr_PBnJ_plate_2/spr_PBnJ_plate_2.yy",},"order":42,},
     {"id":{"name":"scribble_font_set_default","path":"scripts/scribble_font_set_default/scribble_font_set_default.yy",},"order":14,},
+    {"id":{"name":"dialogue_frenchieseat_classroom_lab","path":"objects/dialogue_frenchieseat_classroom_lab/dialogue_frenchieseat_classroom_lab.yy",},"order":25,},
     {"id":{"name":"spr_bookshelf_open","path":"sprites/spr_bookshelf_open/spr_bookshelf_open.yy",},"order":9,},
     {"id":{"name":"dialogue_jake_debutt","path":"objects/dialogue_jake_debutt/dialogue_jake_debutt.yy",},"order":1,},
     {"id":{"name":"obj_black_filter_night","path":"objects/obj_black_filter_night/obj_black_filter_night.yy",},"order":4,},
