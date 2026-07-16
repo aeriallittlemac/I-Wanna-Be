@@ -1,11 +1,63 @@
-//var _pos = application_get_position();
+if (active_shader == noone) {
+	exit;
+}
 
-//shader_set(sh_kaleidoscope);
-//var _res = shader_get_uniform(sh_kaleidoscope, "u_resolution");
-//var _segs = shader_get_uniform(sh_kaleidoscope, "u_segements");
-//var _angle = shader_get_uniform(sh_kaleidoscope, "u_time");
-//shader_set_uniform_f(_res, surface_get_width(application_surface), surface_get_height(application_surface));
-//shader_set_uniform_f(_segs, 2.0);
-//shader_set_uniform_f(_angle, current_time * 0.005);
-//draw_surface_stretched(application_surface, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
-//shader_reset();
+var _width = surface_get_width(application_surface);
+var _height = surface_get_height(application_surface);
+var _pos = application_get_position();
+
+if (active_shader.composite) {
+	if (!surface_exists(surface_a)) {
+		surface_a = surface_create(_width, _height);
+	}
+	if (!surface_exists(surface_b)) {
+		surface_b = surface_create(_width, _height);
+	}
+	var source = application_surface;
+	var target = surface_a;
+	
+	// Start initial pass.
+	
+	var shader_layer = active_shader.shaders[0];
+		
+	surface_set_target(target);
+	draw_clear_alpha(c_black, 0);
+		
+	shader_set(shader_layer.asset);
+	var step_ret = shader_layer.step_eval(_width, _height);
+	shader_layer.draw_eval(step_ret, source, _pos);
+	shader_reset();
+		
+	surface_reset_target();
+	
+	// End initial pass.
+	
+	source = surface_a;
+	target = surface_b;
+	
+	for (var i = 1; i < active_shader.count; ++i) {
+		shader_layer = active_shader.shaders[i];
+		
+		surface_set_target(target);
+		draw_clear_alpha(c_black, 0);
+		
+		shader_set(shader_layer.asset);
+		var step_ret = shader_layer.step_eval(_width, _height);
+		shader_layer.draw_eval(step_ret, source, _pos);
+		shader_reset();
+		
+		surface_reset_target();
+		
+		temp_surface = source;
+		source = target;
+		target = temp_surface;
+	}
+	draw_surface_stretched(source, _pos[0], _pos[1], _pos[2] - _pos[0], _pos[3] - _pos[1]);
+} else {
+	shader_set(active_shader.asset);
+
+	var step_ret = active_shader.step_eval(_width, _height);
+	active_shader.draw_eval(step_ret, application_surface, _pos);
+
+	shader_reset();
+}

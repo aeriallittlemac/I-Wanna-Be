@@ -38,3 +38,7 @@ skip_c_sequence = false;
 classroom_mode = false;
 
 hidden = false;
+
+shader_setup(function(px, py) {
+	draw_sprite_ext(sprite_index, image_index, px, py, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+});

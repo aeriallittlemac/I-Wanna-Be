@@ -1,47 +1,86 @@
 event_inherited();
 
-if (!global.hints.meeting_mei.found) {
-	hint_obtain(global.hints.meeting_mei);
+obj_vfx.effects.romance.stop();
+obj_vfx.effects.rain.stop();
+obj_vfx.effects.spinner.stop();
+
+if (obj_player.active_shader == noone) {
+	//obj_vfx.effects.grayscale.start(obj_player);
+	//obj_vfx.effects.rainbow.start(obj_player);
+	//obj_vfx.effects.shadow.start(obj_player);
+	obj_vfx.effects.shadow_rainbow_test.start(obj_player);
 } else {
-	hint_use(global.hints.meeting_mei);
+	//obj_vfx.effects.grayscale.stop(obj_player);
+	//obj_vfx.effects.rainbow.stop(obj_player);
+	//obj_vfx.effects.shadow.stop(obj_player);
+	obj_vfx.effects.shadow_rainbow_test.stop(obj_player);
+}
+obj_vfx.effects.lightning.start();
+
+obj_vfx.effects.lighting.stop();
+obj_vfx.effects.lighting_spinner_test.stop();
+
+//if (!global.hints.meeting_mei.found) {
+//	hint_obtain(global.hints.meeting_mei);
+//} else {
+//	hint_use(global.hints.meeting_mei);
+//}
+
+function callback_1() {
+	obj_scribble.textbox_unnamed("You selected choice 1.");
 }
 
-obj_scribble.textbox_unnamed("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+function callback_2() {
+	obj_scribble.textbox_unnamed("You selected choice 2.");
+}
 
-obj_scribble.textbox(
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-	"Brooklyn", spr_brooklyn_portrait_disgusted
-);
+function callback_3() {
+	obj_scribble.textbox_unnamed("You selected choice 3.");
+}
 
-obj_scribble.textbox_converse(
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-	"Frenchie", [
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_left_1], 
-		[spr_brooklyn_portrait_disgusted, obj_portrait_mock_right_1]
+obj_scribble.textbox_unnamed(
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	,,,,,[
+		{text: "Choice 1", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: callback_1},
+		{text: "Choice 2", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: callback_2},
+		{text: "Choice 3", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: callback_3}
 	]
 );
 
-obj_scribble.textbox_converse(
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-	"Mei", [
-		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1]
-	]
-);
+//obj_scribble.textbox(
+//	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+//	"Brooklyn", spr_brooklyn_portrait_disgusted
+//);
 
-obj_scribble.textbox_converse(
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-	"McRonald", [
-		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1], 
-		[spr_mcronald_portrait_default, obj_portrait_mock_0]
-	]
-);
+//obj_scribble.textbox_converse(
+//	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+//	"Frenchie", [
+//		[spr_frenchie_portrait_shocked, obj_portrait_mock_left_1], 
+//		[spr_brooklyn_portrait_disgusted, obj_portrait_mock_right_1]
+//	]
+//);
 
-obj_scribble.textbox(
-	"Major Oak has died.", 
-	"Brooklyn", spr_brooklyn_portrait_disgusted
-);
+//obj_scribble.textbox_converse(
+//	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+//	"Mei", [
+//		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
+//		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1]
+//	]
+//);
+
+//obj_scribble.textbox_converse(
+//	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+//	"McRonald", [
+//		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
+//		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1], 
+//		[spr_mcronald_portrait_default, obj_portrait_mock_0]
+//	]
+//);
+
+//obj_scribble.textbox(
+//	"Major Oak has died.", 
+//	"Brooklyn", spr_brooklyn_portrait_disgusted
+//);
 
 //obj_scribble.textbox_unnamed("[sfx_open_door]I'm opening a door. It's now open. I can do anything I want!![sfx_school_bell] School just started. I better go. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
 

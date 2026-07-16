@@ -19,3 +19,15 @@ if (identified > 0) {
 	draw_sprite_ext(namebox_sprite, -1, layout[$namebox_key].x * SCALE, layout[$namebox_key].y * SCALE, SCALE, SCALE, 0, c_white, 1);
 	name_element.draw(layout[$name_bounds_key].x * SCALE, layout[$name_bounds_key].y * SCALE);
 }
+
+if (active_typist.get_state() == 1 
+	&& active_choices != noone && text_element.on_last_page()
+) {
+	var count = array_length(active_choices);
+	for (var i = 0; i < count; ++i) {
+		var selected_choice = active_choices[i];
+		var confirmed = i == active_choice_idx;
+		draw_sprite_ext(selected_choice.textbox_sprite, -1, layout[$selected_choice.textbox_key].x * SCALE, layout[$selected_choice.textbox_key].y * SCALE, SCALE, SCALE, 0, c_white, confirmed ? 1 : 0.5);
+		selected_choice.text_element.draw(layout[$selected_choice.bounds_key].x * SCALE, layout[$selected_choice.bounds_key].y * SCALE, selected_choice.typist);
+	}
+}
