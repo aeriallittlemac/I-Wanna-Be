@@ -53,11 +53,11 @@ function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox
 	create_choices(choices);
 }
 
-function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, portrait_bounds=PORTRAIT_DEFAULT, typist=TYPIST_DEFAULT) {
+function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, portrait_bounds=PORTRAIT_DEFAULT, typist=TYPIST_DEFAULT, choices=[]) {
 	if (active) {
 		array_insert(queue_chain, 0, {
 			identified: 1, 
-			params: [text, name, portrait_sprite, sfx_speech, async, textbox, namebox, bounds, name_bounds, portrait_bounds, typist]
+			params: [text, name, portrait_sprite, sfx_speech, async, textbox, namebox, bounds, name_bounds, portrait_bounds, typist, choices]
 		});
 		exit;
 	}
@@ -78,13 +78,15 @@ function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async
 	active_portrait_sprite = portrait_sprite;
 	portrait_bounds_key = object_get_name(portrait_bounds);
 	active_typist = typist.reset().sound_per_char([sfx_speech], 1, 1);
+
+	create_choices(choices);
 }
 
-function textbox_converse(text, name, portrait_sprites_bounds, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, typist=TYPIST_DEFAULT) {
+function textbox_converse(text, name, portrait_sprites_bounds, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, typist=TYPIST_DEFAULT, choices=[]) {
 	if (active) {
 		array_insert(queue_chain, 0, {
 			identified: 2, 
-			params: [text, name, portrait_sprites_bounds, sfx_speech, async, textbox, namebox, bounds, name_bounds, typist]
+			params: [text, name, portrait_sprites_bounds, sfx_speech, async, textbox, namebox, bounds, name_bounds, typist, choices]
 		});
 		exit;
 	}
@@ -108,6 +110,8 @@ function textbox_converse(text, name, portrait_sprites_bounds, sfx_speech=sfx_bo
 		array_push(active_portrait_sprites_bounds, [portrait_sprite_bound[0], object_get_name(portrait_sprite_bound[1])]);
 	}
 	active_typist = typist.reset().sound_per_char([sfx_speech], 1, 1);
+
+	create_choices(choices);
 }
 
 function draw_portrait(sprite, bounds_key) {
@@ -134,9 +138,9 @@ function close_dialogue() {
 		if (next.identified == 0) {
 			textbox_unnamed(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6]);
 		} else if (next.identified == 1) {
-			textbox(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9], next.params[10]);
+			textbox(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9], next.params[10], next.params[11]);
 		} else if (next.identified == 2) {
-			textbox_converse(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9]);
+			textbox_converse(next.params[0], next.params[1], next.params[2], next.params[3], next.params[4], next.params[5], next.params[6], next.params[7], next.params[8], next.params[9], next.params[10]);
 		}
 	} else {
 		instance_destroy(active_dialogue);
