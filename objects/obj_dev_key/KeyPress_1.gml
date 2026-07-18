@@ -21,9 +21,18 @@
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro TUESDAY_LAB ord("K")
-#macro MONDAY_CLASSROOM ord("A")
+//#macro MONDAY_CLASSROOM ord("A")
 #macro WEDNESDAY_CLASSROOM ord("S")
+#macro DATING_SIM ord("A")
 
+if keyboard_check_pressed(DATING_SIM){
+	game_camera_change_settings(obj_player, -1);
+	global.day = 2;
+	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
+	teleport_player(215, 57, school_sewing_club, obj_dating_sim);
+}
 if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	//global.day = 2;
 	global.day = 4;
@@ -37,19 +46,19 @@ if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	teleport_player(190, 77, school_main_classroom, cutscene_wednesday_classroom_setup)
 }
 
-if keyboard_check_pressed(MONDAY_CLASSROOM){
-	//global.day = 2;
-	global.day = 2;
-	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
-	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
-	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
-	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
-	teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
-	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
-	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
-	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
-	teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
-}
+//if keyboard_check_pressed(MONDAY_CLASSROOM){
+//	//global.day = 2;
+//	global.day = 2;
+//	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+//	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
+//	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
+//	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
+//	teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
+//	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
+//	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
+//	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
+//	teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
+//}
 
 if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	global.day = 5;

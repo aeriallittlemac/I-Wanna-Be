@@ -1,0 +1,3 @@
+draw_sprite_ext(spr_romance_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
+draw_sprite_ext(spr_pink_ui_affection_base, -1, affection_bar_x*minimap_scale, affection_bar_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1);
+draw_sprite_ext(spr_pink_ui_affection_frame, -1, affection_bar_x*minimap_scale, affection_bar_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1);
