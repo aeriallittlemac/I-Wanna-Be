@@ -1,4 +1,8 @@
 event_inherited();
+audio_sound_gain(weis_theme, 0, 1000);
+set_QTE_bgm(frenchies_theme);
+audio_sound_gain(frenchies_theme,0,0);
+audio_sound_gain(frenchies_theme, 0.25, 2500);
 game_wait(2);
 wait(2.5);
 move_to_pos(1, 0, obj_player.x-1, obj_player.y);

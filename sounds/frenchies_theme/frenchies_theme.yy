@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "grace_debut_theme",
+  "name": "frenchies_theme",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.25,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "grace_debut_theme.wav",
+  "soundFile": "frenchies_theme.wav",
   "duration": 42.67,
   "parent": {
     "name": "Music",
