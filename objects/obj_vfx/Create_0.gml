@@ -10,7 +10,7 @@ active_shader = noone;
 surface_a = noone;
 surface_b = noone;
 
-global.sh_ambience = [0.5, 0.0, 0.0];
+global.sh_ambience = [0.1, 0.1, 0.1];
 global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 
 // GameMaker must evaluate the use of built-in effects before runtime.
@@ -177,7 +177,7 @@ effects = {
 	], function(surface_width, surface_height) {
 		var pos = array_create(16 * 4);
 		var color = array_create(16 * 4);
-		var bloom = array_create(16 * 2);
+		var bloom = array_create(16 * 4);
 		
 		var i_pos = 0, i_color = 0, i_bloom = 0;
 		with (obj_sh_light) {
@@ -191,6 +191,8 @@ effects = {
 			color[i_color++] = image_alpha;
 			bloom[i_bloom++] = _bloom;
 			bloom[i_bloom++] = _mbright;
+			bloom[i_bloom++] = _angle_lower;
+			bloom[i_bloom++] = _angle_upper;
 		}
 		
 		return {
@@ -232,7 +234,7 @@ effects.shadow_rainbow_test = new CompositeObjectShader([
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();
-//effects.lighting.start();
+effects.lighting.start();
 //effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));
