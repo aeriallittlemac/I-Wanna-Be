@@ -266,8 +266,8 @@ effects.shadow_rainbow_test = new CompositeObjectShader([
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();
-effects.lighting.start();
-obj_vfx.effects.shadow.start(obj_player);
+//effects.lighting.start();
+//obj_vfx.effects.shadow.start(obj_player);
 //effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));
