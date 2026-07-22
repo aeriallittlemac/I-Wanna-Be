@@ -12,6 +12,8 @@ surface_b = noone;
 
 global.sh_ambience = [0.1, 0.1, 0.1];
 global.sh_bloom_bleed = [0.125, 0.125, 0.125];
+global.shadow_blur_radius = 20;
+global.shadow_bleed = 0.125;
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -172,8 +174,7 @@ effects = {
 		[UniformType.FloatArr, "u_bloom"],
 		[UniformType.FloatArr, "u_bleed"],
 		[UniformType.FloatArr, "u_ambience"],
-		[UniformType.FloatArr, "u_camPos"],
-		[UniformType.FloatArr, "u_screenSize"]
+		[UniformType.FloatArr, "u_screen"]
 	], function(surface_width, surface_height) {
 		var pos = array_create(16 * 4);
 		var color = array_create(16 * 4);
@@ -202,13 +203,11 @@ effects = {
 				u_bloom: bloom,
 				u_bleed: global.sh_bloom_bleed,
 				u_ambience: global.sh_ambience,
-				u_camPos: [
+				u_screen: [
+					camera_get_view_width(view_camera[0]),
+					camera_get_view_height(view_camera[0]),
 					camera_get_view_x(view_camera[0]),
 					camera_get_view_y(view_camera[0])
-				],
-				u_screenSize: [
-					camera_get_view_width(view_camera[0]),
-					camera_get_view_height(view_camera[0])
 				]
 			}
 		};
@@ -216,9 +215,42 @@ effects = {
 		draw_surface(surface, pos[0], pos[1]);
 	}),
 	shadow: new ObjectShader(sh_shadow, [
+		[UniformType.FloatArr, "u_pos"], 
+		[UniformType.FloatArr, "u_angles"], 
+		[UniformType.Float, "u_padding"], 
+		[UniformType.Float, "u_blurRadius"], 
+		[UniformType.Float, "u_bleed"], 
+		[UniformType.FloatArr, "u_objPos"],
+		[UniformType.FloatArr, "u_objSize"]
 	], function(object) {
+		var pos = array_create(16 * 4);
+		var angles = array_create(16 * 2);
+		
+		var i_pos = 0, i_angles = 0;
+		with (obj_sh_light) {
+			pos[i_pos++] = x;
+			pos[i_pos++] = y;
+			pos[i_pos++] = _radius;
+			pos[i_pos++] = _illumination;
+			angles[i_angles++] = _angle_lower;
+			angles[i_angles++] = _angle_upper;
+		}
 		return {
 			uniform: {
+				u_pos: pos,
+				u_angles: angles,
+				u_padding: 30.0,
+				u_blurRadius: global.shadow_blur_radius,
+				u_bleed: global.shadow_bleed,
+				u_objPos: [
+					object.x, object.y, 
+					sprite_get_xoffset(object.sprite_index), 
+					sprite_get_yoffset(object.sprite_index)
+				],
+				u_objSize: [
+					sprite_get_width(object.sprite_index), 
+					sprite_get_height(object.sprite_index)
+				]
 			}
 		};
 	}, 30)
@@ -235,6 +267,7 @@ effects.shadow_rainbow_test = new CompositeObjectShader([
 //effects.romance.start();
 //effects.spinner.start();
 effects.lighting.start();
+obj_vfx.effects.shadow.start(obj_player);
 //effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));

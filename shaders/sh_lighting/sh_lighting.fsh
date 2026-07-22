@@ -19,15 +19,17 @@ uniform vec4 u_bloom[16];
 uniform vec3 u_bleed;
 uniform vec3 u_ambience;
 
-uniform vec2 u_camPos;
-uniform vec2 u_screenSize;
+uniform vec4 u_screen;
+// xy = screen size
+// zw = camera position
 
 void main()
 {
-    vec2 worldPos = v_vTexcoord * u_screenSize + u_camPos;
+    vec2 worldPos = v_vTexcoord * u_screen.xy + u_screen.zw;
 
     vec3 lighting = u_ambience;
 	vec3 bloom = vec3(0.0);
+	float bleedMag = length(u_bleed);
 
     for (int i = 0; i < 16; ++i)
     {
@@ -52,11 +54,11 @@ void main()
 		float lower = mod(pbloom.z, 360.0);
 		float upper = mod(pbloom.w, 360.0);
 		float between = step(lower, angle) * step(angle, upper);
-		float in_bounds = float(
+		float in_bounds = max(float(
 			(upper == lower) 
 			|| (upper > lower && between > 0.0) 
 			|| (lower > upper && (angle > lower || angle < upper))
-		);
+		), bleedMag);
 
         // Fake bloom.
         vec3 unbound = color.rgb * pbloom.x * attenuation;
