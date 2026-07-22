@@ -154,10 +154,10 @@ function Choice(_text, _textbox, _bounds, _cb, _typist) constructor {
 	textbox_key = object_get_name(_textbox);
 	bounds_key = object_get_name(_bounds);
 	textbox_sprite = object_get_sprite(_textbox);
-	text_element = scribble(_text).wrap(
+	text_element = scribble(_text).fit_to_box(
 		obj_scribble.layout[$bounds_key].width * obj_scribble.SCALE, 
 		obj_scribble.layout[$bounds_key].height * obj_scribble.SCALE
-	).page(0);
+	);
 	cb = _cb;
 	typist = _typist;
 }

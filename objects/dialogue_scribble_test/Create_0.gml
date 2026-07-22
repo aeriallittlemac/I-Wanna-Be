@@ -8,17 +8,19 @@ if (obj_player.active_shader == noone) {
 	//obj_vfx.effects.grayscale.start(obj_player);
 	//obj_vfx.effects.rainbow.start(obj_player);
 	//obj_vfx.effects.shadow.start(obj_player);
-	obj_vfx.effects.shadow_rainbow_test.start(obj_player);
+	//obj_vfx.effects.shadow_rainbow_test.start(obj_player);
+	obj_vfx.effects.shadow.start(obj_player);
 } else {
 	//obj_vfx.effects.grayscale.stop(obj_player);
 	//obj_vfx.effects.rainbow.stop(obj_player);
 	//obj_vfx.effects.shadow.stop(obj_player);
-	obj_vfx.effects.shadow_rainbow_test.stop(obj_player);
+	//obj_vfx.effects.shadow_rainbow_test.stop(obj_player);
+	obj_vfx.effects.shadow.stop(obj_player);
 }
 obj_vfx.effects.lightning.start();
 
-obj_vfx.effects.lighting.stop();
-obj_vfx.effects.lighting_spinner_test.stop();
+//obj_vfx.effects.lighting.stop();
+//obj_vfx.effects.lighting_spinner_test.stop();
 
 //if (!global.hints.meeting_mei.found) {
 //	hint_obtain(global.hints.meeting_mei);
@@ -40,19 +42,10 @@ function callback_3() {
 
 obj_scribble.textbox_unnamed(
 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-	,,obj_textbox_mock_pink,obj_bounds_mock_pink,,[
-		{text: "Choice 1", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: callback_1},
-		{text: "Choice 2", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: callback_2},
-		{text: "Choice 3", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: callback_3}
-	]
-);
-
-obj_scribble.textbox(
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, [/page]sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,,,,[
-		{text: "Choice 1", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: callback_1},
-		{text: "Choice 2", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: callback_2},
-		{text: "Choice 3", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: callback_3}
+	,,,,,[
+		{text: "Lorem ipsum dolor sit amet", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: callback_1},
+		{text: "consectetur adipiscing elit", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: callback_2},
+		{text: "sed do eiusmod tempor incididunt ut labore", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: callback_3}
 	]
 );
 
