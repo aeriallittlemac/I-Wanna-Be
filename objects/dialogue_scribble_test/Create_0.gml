@@ -6,13 +6,13 @@ obj_vfx.effects.spinner.stop();
 
 if (obj_player.active_shader == noone) {
 	//obj_vfx.effects.grayscale.start(obj_player);
-	obj_vfx.effects.rainbow.start(obj_player);
+	//obj_vfx.effects.rainbow.start(obj_player);
 	//obj_vfx.effects.shadow.start(obj_player);
 	//obj_vfx.effects.shadow_rainbow_test.start(obj_player);
 	//obj_vfx.effects.shadow.start(obj_player);
 } else {
 	//obj_vfx.effects.grayscale.stop(obj_player);
-	obj_vfx.effects.rainbow.stop(obj_player);
+	//obj_vfx.effects.rainbow.stop(obj_player);
 	//obj_vfx.effects.shadow.stop(obj_player);
 	//obj_vfx.effects.shadow_rainbow_test.stop(obj_player);
 	//obj_vfx.effects.shadow.stop(obj_player);

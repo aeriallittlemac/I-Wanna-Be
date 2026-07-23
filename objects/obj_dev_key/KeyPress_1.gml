@@ -5,7 +5,7 @@
 #macro GRACE_VILLAIN_SPEECH ord("Y")
 #macro MEETING_GAMBINO ord("O")
 #macro MONDAY_SEWING_CLUB ord("Q")
-#macro LUNCH ord("G")
+//#macro JAKE_MONDAY ord("G")
 #macro GAMBINO_MINIGAME ord("H")
 #macro THURSDAY_LAB_VENTS_TEST ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
@@ -21,9 +21,9 @@
 #macro ASHLEY_SCENE ord("M")
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro TUESDAY_LAB ord("K")
-//#macro MONDAY_CLASSROOM ord("A")
+#macro MONDAY_CLASSROOM ord("A")
 #macro WEDNESDAY_CLASSROOM ord("S")
-#macro DATING_SIM ord("A")
+#macro DATING_SIM ord("D")
 
 if keyboard_check_pressed(DATING_SIM){
 	game_camera_change_settings(obj_player, -1);
@@ -46,19 +46,20 @@ if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	teleport_player(190, 77, school_main_classroom, cutscene_wednesday_classroom_setup)
 }
 
-//if keyboard_check_pressed(MONDAY_CLASSROOM){
-//	//global.day = 2;
-//	global.day = 2;
-//	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
-//	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
-//	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
-//	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
-//	teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
-//	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
-//	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
-//	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
-//	teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
-//}
+if keyboard_check_pressed(MONDAY_CLASSROOM){
+	game_camera_change_settings(obj_player, -1);
+	//global.day = 2;
+	global.day = 2;
+	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
+	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
+	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
+	teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
+	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
+	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
+	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
+	teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
+}
 
 if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	global.day = 5;
@@ -460,23 +461,23 @@ if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 			inst.target_rm = school_main_classroom;
 			inst.start_cutscene = dialogue_first_lesson;
 }
-if keyboard_check(LUNCH){
-	global.day = 3;
-	global.game_time = "12:00 pm"
-	AddInstanceToDestroy(inst_1D032C1A);
-	AddInstanceToActivate(inst_210D4C1);
-	game_camera_change_settings(obj_player,-1);
-	//obj_npc_manager.npcs[WEI].initial_animation = spr_wei_eating;
-	//obj_npc_manager.npcs[MCRONALD].initial_animation = spr_mcronald_eating;
-	//obj_npc_manager.npcs[FRENCHIE].initial_animation = spr_frenchie_eating;
+//if keyboard_check(LUNCH){
+//	global.day = 3;
+//	global.game_time = "12:00 pm"
+//	AddInstanceToDestroy(inst_1D032C1A);
+//	AddInstanceToActivate(inst_210D4C1);
+//	game_camera_change_settings(obj_player,-1);
+//	obj_npc_manager.npcs[WEI].initial_animation = spr_wei_eating;
+//	obj_npc_manager.npcs[MCRONALD].initial_animation = spr_mcronald_eating;
+//	obj_npc_manager.npcs[FRENCHIE].initial_animation = spr_frenchie_eating;
 	
 	
-	teleport_npc(obj_frenchie, school_1F, 910, 155, RIGHT);
-	teleport_npc(obj_mcronald, school_1F, 945, 135, DOWN);
-	teleport_npc(obj_wei, school_1F, 1000, 135, DOWN);
-	teleport_player(980, 170, school_1F, cutscene_band_first_lunch);
-	instance_activate_object(INST_LUNCH_TABLE);
-}
+//	teleport_npc(obj_frenchie, school_1F, 910, 155, RIGHT);
+//	teleport_npc(obj_mcronald, school_1F, 945, 135, DOWN);
+//	teleport_npc(obj_wei, school_1F, 1000, 135, DOWN);
+//	teleport_player(980, 170, school_1F, cutscene_band_first_lunch);
+//	instance_activate_object(INST_LUNCH_TABLE);
+//}
 
 //if keyboard_check(GAMBINOS_ROOM){
 //	global.day = 2

@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 1 - midnight",
-    "path": "folders/Dialogue_Lines/Day 1 - midnight.yy",
+    "name": "new",
+    "path": "folders/Dialogue_Lines/Day 1 - midnight/new.yy",
   },
 }

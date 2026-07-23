@@ -19,6 +19,11 @@ if (_hmove != 0 || _vmove != 0) {
     // Apply speed perfectly uniform in all directions
     x += _length_x * player_speed;
     y += _length_y * player_speed;
+	if place_meeting(x + _length_x * player_speed, y +  _length_y * player_speed, obj_wall){
+		x -= _length_x * player_speed;
+		y -= _length_y * player_speed;
+	}
+
 }
 
 if place_meeting(x, y, obj_snake_body){

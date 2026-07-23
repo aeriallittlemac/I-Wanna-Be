@@ -1,7 +1,7 @@
 event_inherited();
 	
 obj_scribble.textbox(
-	@"So I wouldn't recommend interacting with me too much.
+	@"[#c94242]So I wouldn't recommend interacting with me too much.
 	[/page]Not for him, no, I just don't like you.
 	[/page]Go on, shoo.
 	",
