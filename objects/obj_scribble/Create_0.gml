@@ -31,6 +31,12 @@ scribble_font_set_default("fnt_joystix_monospace");
 
 previously_active = false;
 
+function prepare(text) {
+	text = string_replace_all(text, "\n", "");
+	text = string_replace_all(text, "<br>", "\n");
+	return text;
+}
+
 function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, bounds=BOUNDS_DEFAULT, typist=TYPIST_DEFAULT, choices=[]) {
 	if (active) {
 		array_insert(queue_chain, 0, {
@@ -39,6 +45,7 @@ function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox
 		});
 		exit;
 	}
+	text = prepare(text);
 	
 	keyboard_clear(CONFIRM_ACTION);
 	
@@ -61,6 +68,7 @@ function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async
 		});
 		exit;
 	}
+	text = prepare(text);
 	
 	keyboard_clear(CONFIRM_ACTION);
 	
@@ -90,6 +98,7 @@ function textbox_converse(text, name, portrait_sprites_bounds, sfx_speech=sfx_bo
 		});
 		exit;
 	}
+	text = prepare(text);
 	
 	keyboard_clear(CONFIRM_ACTION);
 	

@@ -23,11 +23,10 @@ function be_friends() {
 	
 	obj_scribble.textbox(
 	@"...
-	[/page]Friends?
-	[/page]I'm already friends with people that don't suck.
-	[/page]Besides, only creeps talk like that nowadays.
-	[/page][instance_create_object,cutscene_dating_shatter]You're not a creep, are you?
-	",
+[/page]Friends?
+[/page]I'm already friends with people that don't suck.
+[/page]Besides, only creeps talk like that nowadays.
+[/page][instance_create_object,cutscene_dating_shatter]You're not a creep, are you?",
 	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 	obj_scribble.textbox_unnamed("...",
