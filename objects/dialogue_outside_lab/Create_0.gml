@@ -9,7 +9,7 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	@"[vl_wei_default_1]Gotta hang up these sum-of-a-bitch posters so I can knock Gambino's candy-ass,
+	@"[vl_wei_default_1]Gotta hang up these son-of-a-bitch posters so I can knock Gambino's candy-ass,
 	[/page][vl_wei_default_2]OFF his high horse at the election, as God intends me to do!
 	"
 	,

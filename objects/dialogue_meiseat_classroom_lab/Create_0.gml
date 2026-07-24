@@ -1,11 +1,9 @@
 event_inherited();
 if global.day == 2{
-	if !global.storylines.Main_Classroom.Day_Two.talked_to.mei{
-		//not in classroom
-	}
-	else{
-		
-	}
+obj_scribble.textbox(
+	"[sfx_bang_door]Bobby, I really don't think this is a good idea...", 
+	"Mei", spr_mei_portrait_uncomfortable
+);
 }
 else if global.day == 3{
 	

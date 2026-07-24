@@ -1,8 +1,5 @@
 event_inherited();
-obj_scribble.textbox_unnamed(
-	@"Follow Wei up the stairs.
-	"
-);
+
 if instance_exists(inst_60A96728){
 	instance_destroy(inst_60A96728)
 }
@@ -41,9 +38,12 @@ if global.day == 1{
 				[/page]You think you'll take a little nap...
 				"
 			);
+			
 		obj_black_filter_bed.filter_mode = "fade_out";
 		global.game_time = "12:30 am";
-		//global.night = true;
+		teleport_npc(obj_grace, school_3F, 396, 109, DOWN);
+		AddInstanceToActivate(inst_3D85AE7E);
+		AddInstanceToActivate(inst_10061687);
 		audio_sound_gain(bobbys_room, 0, 3200);
 	}
 }

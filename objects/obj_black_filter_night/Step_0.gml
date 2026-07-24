@@ -1,1 +1,1 @@
-image_alpha = night_alpha*global.night;
+image_alpha = night_alpha*global.night && room != graces_snake_game;

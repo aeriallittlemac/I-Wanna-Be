@@ -23,10 +23,10 @@ function be_friends() {
 	
 	obj_scribble.textbox(
 	@"[#c94242]...
-	[/page]Friends?
-	[/page]I'm already friends with people that don't suck.
-	[/page]Besides, only creeps talk like that nowadays.
-	[/page][cutscene_lose_life]You're not a creep, are you?
+[/page]Friends?
+[/page]I'm already friends with people that don't suck.
+[/page]Besides, only creeps talk like that nowadays.
+[/page][instance_create_object,cutscene_lose_life]You're not a creep, are you?
 	",
 	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
@@ -46,7 +46,7 @@ function please_please_please() {
 	);
 	
 	obj_scribble.textbox(
-	@"[#c94242][cutscene_lose_life]...
+	@"[#c94242][instance_create_object,cutscene_lose_life]...
 	",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);

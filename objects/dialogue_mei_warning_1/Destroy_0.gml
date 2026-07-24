@@ -1,0 +1,10 @@
+event_inherited();
+global.day = 2;
+	global.game_time = "3:30 pm";
+	game_camera_change_settings(obj_player, -1);
+	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
+	//obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
+	teleport_npc(obj_ashley, school_sewing_club, 85+63, 140, DOWN);
+	teleport_player(215, 57, school_sewing_club, cutscene_monday_sewing_club_setup);

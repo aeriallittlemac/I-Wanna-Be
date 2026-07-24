@@ -8,7 +8,7 @@ obj_scribble.textbox(
 );
 obj_scribble.textbox(
 	@"You know what?
-	[/page]I don’t trust you, so I’m just gonna go tell everyone anyway.
+	[/page]I don't trust you, so I'm just gonna go tell everyone anyway.
 	[/page]in the middle of the night...
 	[/page]Night!
 	", 

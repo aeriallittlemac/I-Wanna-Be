@@ -1,5 +1,5 @@
 event_inherited();
-
+QuestCompleted(global.quest_list.midnight_snack);
 obj_scribble.textbox(
 	"You. Saw?", 
 	"Grace", spr_grace_portrait_default
@@ -9,13 +9,7 @@ obj_scribble.textbox_unnamed(
 );
 obj_scribble.textbox(
 	@"Oh.
-	[/page]So you’re not just an ugly creep, you’re a lying little f****t too?
-	", 
-	"Grace", spr_grace_portrait_default
-);
-obj_scribble.textbox(
-	@"Oh.
-	[/page]So you’re not just an ugly creep, you’re a lying little f****t too?
+	[/page]So you're not just an ugly creep, you're a lying little f****t too?
 	", 
 	"Grace", spr_grace_portrait_default
 );

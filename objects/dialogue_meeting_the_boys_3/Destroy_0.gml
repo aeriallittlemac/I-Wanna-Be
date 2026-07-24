@@ -12,4 +12,4 @@ with inst{
 global.cutscene = false;
 global.game_time = "3:30 pm";
 teleport_npc(obj_wei, school_1F, 1115, 107, RIGHT);
-teleport_player(1127, 107, school_1F, dialogue_wei_chat_after_class);
+teleport_player(1165, 107, school_1F, dialogue_wei_chat_after_class);

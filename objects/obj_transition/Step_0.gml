@@ -16,4 +16,4 @@ if room == target_rm && image_index<1
 		NewDialogue(start_cutscene);
 		}
 		instance_destroy();
-	}
+ 	}

@@ -28,7 +28,7 @@ function any_interests() {
 	[/page]While listening to vintage vinyl records,
 	[/page]And taking sips of an earthy mocha latte...
 	[/page]...Not that an illiterate fag like you would understand.
-	[/page][cutscene_lose_life]WBU? Preferably something that isn't with the lexicon of a fourth grader.
+	[/page][instance_create_object,cutscene_lose_life]WBU? Preferably something that isn't with the lexicon of a fourth grader.
 	",
 	"Brooklyn",spr_brooklyn_portrait_proud,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
@@ -44,7 +44,7 @@ function sniff() {
 	);
 	
 	obj_scribble.textbox(
-	@"[#c94242][cutscene_lose_life]...
+	@"[#c94242][instance_create_object,cutscene_lose_life]...
 	[/page]*awkward silence
 	",
 	"Brooklyn",spr_brooklyn_portrait_disgusted,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink

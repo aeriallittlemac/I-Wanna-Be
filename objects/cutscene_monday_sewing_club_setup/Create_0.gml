@@ -1,3 +1,7 @@
-obj_ashley.entityActivateArg = dialogue_ashleyseat;
-obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
-obj_grace.entityActivateArg = dialogue_graceseat;
+obj_ashley.entityActivateArg = dialogue_ashleyseat_classroom_lab;
+obj_brooklyn.entityActivateArg = dialogue_brooklynseat_classroom_lab;
+obj_grace.entityActivateArg = dialogue_graceseat_classroom_lab;
+obj_mei.entityActivateArg = dialogue_meiseat_classroom_lab;
+game_wait(1);
+game_NewDialogue(dialogue_monday_sewing_club_setup);
+instance_destroy(self);
