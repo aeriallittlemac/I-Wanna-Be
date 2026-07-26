@@ -1,0 +1,1 @@
+draw_sprite_ext(screen_gif, gif_index, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);

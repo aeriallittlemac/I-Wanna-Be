@@ -1,4 +1,6 @@
 event_inherited();
+audio_stop_all();
+audio_play_sound(scary_ambience, 1, true);
 QuestCompleted(global.quest_list.midnight_snack);
 obj_scribble.textbox(
 	"You. Saw?", 
@@ -19,7 +21,7 @@ obj_scribble.textbox_unnamed(
 obj_scribble.textbox(
 	@"Shut up, nobody cares.
 	[/page]Listen here.
-	[/page]but do you even know who I am?
+	[/page]Do you even know who. I. am?
 	", 
 	"Grace", spr_grace_portrait_default
 );

@@ -1,10 +1,6 @@
-if self == inst_60A96728{
-	if global.day > 1{
-		instance_destroy(self);
-	}
-}
-else{
-	if place_meeting(x,y,obj_player){
+
+
+	if place_meeting(x,y,obj_player) && !triggered{
 		if (variable_instance_exists(self, "callback")) {
 			callback();
 		}
@@ -18,7 +14,14 @@ else{
 		else{
 			instance_create_depth(0,0,0, cutscene_object);
 		}
+		if respawnable{
+			show_debug_message("interacted!")
+			triggered = true;
+		}
+		else{
+		
 		instance_destroy(self);
+		}
 	}
-}
+
 

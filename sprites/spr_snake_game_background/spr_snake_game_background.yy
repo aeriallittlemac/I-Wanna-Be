@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"419d7a95-ff32-4735-8fd2-32621346ab5b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11f1e546-2960-437e-b7a6-ffdc7be38248",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57250327-7185-4b1c-984f-6fa216e90872",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2948b68f-1b0f-4011-b09f-76979fc0a101",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57250327-7185-4b1c-984f-6fa216e90872",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11f1e546-2960-437e-b7a6-ffdc7be38248",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"419d7a95-ff32-4735-8fd2-32621346ab5b",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c4be1e0e-4629-4a15-a4df-1c6272c90c20","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"419d7a95-ff32-4735-8fd2-32621346ab5b","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5e3c8e0a-f457-4a51-8baf-30d71f222401","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11f1e546-2960-437e-b7a6-ffdc7be38248","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5317728c-4f8c-4aad-81c6-33a7f409361f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57250327-7185-4b1c-984f-6fa216e90872","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f1d201a5-0ca1-497e-a888-556e1e49997a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2948b68f-1b0f-4011-b09f-76979fc0a101","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f1d201a5-0ca1-497e-a888-556e1e49997a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2948b68f-1b0f-4011-b09f-76979fc0a101","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5317728c-4f8c-4aad-81c6-33a7f409361f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57250327-7185-4b1c-984f-6fa216e90872","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e3c8e0a-f457-4a51-8baf-30d71f222401","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11f1e546-2960-437e-b7a6-ffdc7be38248","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c4be1e0e-4629-4a15-a4df-1c6272c90c20","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"419d7a95-ff32-4735-8fd2-32621346ab5b","path":"sprites/spr_snake_game_background/spr_snake_game_background.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

@@ -1,2 +1,5 @@
 event_inherited();
-scr_text("Better hold on to these, yeah?");
+obj_scribble.textbox_unnamed(
+	@"Better hold on to these, yeah?
+	"
+);

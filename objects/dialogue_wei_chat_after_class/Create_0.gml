@@ -1,8 +1,7 @@
 event_inherited();
-set_QTE_bgm(weis_theme)
 obj_scribble.textbox(
-	@"Well if it ain't Bobby Johns!
-	[/page]Decide which club you're going to, ya son-of-a-bitch?
+	@"So!
+	[/page]Ya decided which club you're going to, ya son-of-a-bitch?
 	", 
 	"Wei", spr_wei_portrait_default
 );

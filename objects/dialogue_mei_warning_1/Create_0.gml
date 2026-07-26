@@ -57,7 +57,5 @@ obj_scribble.textbox(
 );
 obj_scribble.textbox_unnamed(
 	@"Undeterred by the bid red flags, you walk in anyways.
-[/page][slant]It's not everyday that the stars align.
-[/page]]It's not everyday you meet the love of your life...[/slant]
 "
 );

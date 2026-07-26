@@ -93,7 +93,7 @@ global.npc_list = {
 		object : obj_job,
 		first_name : "Job",
 		title : "the Jinxed",
-		intro_sprite : spr_job_down,
+		intro_sprite : spr_job_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,

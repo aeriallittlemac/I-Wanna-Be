@@ -1,5 +1,5 @@
 event_inherited();
-
+set_QTE_bgm(important_decision_looping);
 obj_scribble.textbox_unnamed(
 	@"You tell her that no one will believe her...
 	[/page]Because you've been secretly recording this conversation.
@@ -14,9 +14,9 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	@"You bitch!
-	[/page]How could you?!
-	[/page]Delete the recordings, right nyah!
+	@"[audio_stop_all][jitter]You bitch![/jitter]
+	[/page][jitter]How could you?![/jitter]
+	[/page][jitter]Delete the recordings, right nyah![/jitter]
 	", 
 	"Grace", spr_grace_portrait_crying
 );

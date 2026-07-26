@@ -1,9 +1,6 @@
 event_inherited();
 
-if instance_exists(inst_60A96728){
-	instance_destroy(inst_60A96728)
-}
-
+sleep = false;
 if global.day == 1{
 	global.player_sleeping = true;
 	if global.night{
@@ -13,6 +10,7 @@ if global.day == 1{
 				@"After making a new acquaintance, you go to sleep...
 				"
 			);
+			sleep = true;
 			obj_black_filter_bed.filter_mode = "fade_out";
 			global.game_time = "10:00 am";
 			audio_sound_gain(school_night, 0, 1600);
@@ -30,15 +28,14 @@ if global.day == 1{
 		}
 	}
 	else{
-		instance_destroy(inst_60A96728);
-		instance_destroy(inst_325AA326);
+		QuestCompleted(global.quest_list.enter_dorm);
 		obj_scribble.textbox_unnamed(
 				@"You try the bed.
 				[/page]A sense of drowsiness comes over your entire body.
 				[/page]You think you'll take a little nap...
 				"
 			);
-			
+		sleep = true;
 		obj_black_filter_bed.filter_mode = "fade_out";
 		global.game_time = "12:30 am";
 		teleport_npc(obj_grace, school_3F, 396, 109, DOWN);
@@ -54,6 +51,7 @@ else if global.day == 2{
 				@"Monday sleep message...
 				"
 			);
+		sleep = true;
 		obj_black_filter_bed.filter_mode = "fade_out";
 		global.game_time = "10:00 am";
 		global.day = 3;
@@ -73,6 +71,7 @@ else if global.night{
 		@"Generic sleep message...
 		"
 	);
+	sleep = true;
 	obj_black_filter_bed.filter_mode = "fade_out";
 	global.game_time = "10:00 am";
 	audio_sound_gain(school_night, 0, 1600);
@@ -80,4 +79,8 @@ else if global.night{
 }
 else {
 	scr_text("You can only sleep at night.");
+}
+
+if sleep{
+	audio_sound_gain(bobbys_room, 0, 2500);
 }

@@ -7,20 +7,17 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 		if global.game_time == "1:00 pm"{
 			QuestCompleted(global.quest_list.sewing_club_quest);
 			global.game_time = "3:30 pm";
-			var sewing_club_r1 = [obj_ashley]; 
-			for(var i = 0; i < array_length(sewing_club_r1); i++){
-					teleport_npc(sewing_club_r1[i], school_sewing_club, 85+i*43, 68, DOWN);
-				}
-
-		
-			var sewing_club_r2 = [obj_brooklyn, obj_mei]; 
-			for(var i = 0; i < array_length(sewing_club_r2); i++){
-					teleport_npc(sewing_club_r2[i], school_sewing_club, 85+i*43, 111, UP);
-				}
-				teleport_player(215, 57, school_sewing_club);
-			//obj_ashley.entityActivateArg = dialogue_ashleyseat;
-			//obj_mei.entityActivateArg = dialogue_meiseat;
-			//obj_brooklyn.entityActivateArg = dialogue_brooklynseat;
+			game_camera_change_settings(obj_player, -1);
+			global.day = 2;
+			//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+			teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
+			teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
+			teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
+			teleport_npc(obj_grace, school_main_classroom, 196, 121, LEFT);
+			teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
+			teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
+			teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
+			teleport_player(190, 77, school_main_classroom, cutscene_monday_classroom_setup)
 				
 		}
 	

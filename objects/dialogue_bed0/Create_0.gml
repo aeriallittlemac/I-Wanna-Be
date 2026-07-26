@@ -1,7 +1,5 @@
 event_inherited();
-if instance_exists(inst_60A96728){
-	instance_destroy(inst_60A96728)
-}
+
 if instance_exists(obj_frenchie_ghost){
 	if global.storylines.Lab.Day_Three.vacuum{
 		scr_text("You have a tool at your disposal to get rid of him.");
@@ -37,8 +35,6 @@ if global.day == 1{
 		}
 	}
 	else{
-		instance_destroy(inst_60A96728);
-		instance_destroy(inst_325AA326);
 		scr_text("You try the bed.");
 		scr_text("A sense of drowsiness comes over your entire body.");
 		scr_text("You think you'll take a little nap...");

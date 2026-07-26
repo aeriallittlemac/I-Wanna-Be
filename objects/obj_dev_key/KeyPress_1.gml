@@ -50,7 +50,7 @@ if keyboard_check_pressed(MONDAY_CLASSROOM){
 	game_camera_change_settings(obj_player, -1);
 	//global.day = 2;
 	global.day = 2;
-	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+	teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
 	teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
 	teleport_npc(obj_job, school_main_classroom, 69, 79, UP);
 	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
@@ -104,10 +104,8 @@ if keyboard_check_pressed(THURSDAY_MORNING){
 		game_change_reputation(49);
 		game_wait(1.2);
 		game_change_female_affinity(49);
-		AddInstanceToDestroy(inst_325AA326);
-		AddInstanceToDestroy(inst_60A96728);
+		
 		AddInstanceToDestroy(inst_1D43132F);
- 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 }
 if keyboard_check_pressed(TUESDAY_LAB){
 	hint_obtain(global.hints.gambinos_promise);
@@ -129,7 +127,7 @@ if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 //if keyboard_check_pressed(GRACE_VILLAIN_SPEECH){
 //	game_camera_change_settings(obj_player, -1);
 //	AddInstanceToDestroy(inst_1D43132F);
-//	AddInstanceToDestroy(inst_60A96728);
+//	
 //	AddInstanceToDestroy(inst_325AA326);
 //	teleport_player(62, 117, school_bobbys_room, cutscene_grace_midnight_note);
 //}
@@ -146,7 +144,7 @@ if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 //		game_wait(1.2);
 //		game_change_female_affinity(49);
 //		AddInstanceToDestroy(inst_325AA326);
-//		AddInstanceToDestroy(inst_60A96728);
+//		
 //		AddInstanceToDestroy(inst_1D43132F);
 // 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 //}
@@ -217,7 +215,7 @@ if keyboard_check(JAKE_N_DRAKE){
 //	teleport_npc(obj_mcronald, school_2F, 582, 125, LEFT);
 //	teleport_player(470, 117, school_2F);
 //	AddInstanceToActivate(inst_WEI_DRUM_DEBUT);
-//	AddInstanceToDestroy(inst_60A96728);
+//	
 //	global.day = 2
 //	global.game_time = "8:00 pm";
 //	global.night = true;

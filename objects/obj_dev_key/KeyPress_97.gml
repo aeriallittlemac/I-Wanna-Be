@@ -1,15 +1,11 @@
+AddInstanceToDestroy(inst_1D43132F)
 teleport_npc(obj_wei, school_2F, 100, obj_wei.y, RIGHT);
 destroy_if_in_scene(inst_GAME_START_CUTSCENE_TRIGGER);
 teleport_player(600,100,school_3F);
 destroy_if_in_scene(inst_1D43132F);
-instance_destroy(inst_60A96728);
-instance_destroy(inst_325AA326);
 teleport_npc(obj_grace, school_3F, 396, 109, DOWN);
 global.game_time = "12:30 am"
 global.night = true;
 AddInstanceToActivate(inst_3D85AE7E);
 AddInstanceToActivate(inst_10061687);
-
-
-
-
+teleport_player(711, 119, school_3F);

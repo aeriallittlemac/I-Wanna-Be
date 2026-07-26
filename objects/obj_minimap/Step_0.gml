@@ -1,4 +1,4 @@
-map_visible_conditions = !global.cutscene&&!global.in_dialogue && !global.timed_dialogue && !instance_exists(obj_rhythm_game_arrows) && !instance_exists(obj_rhythm_game_new) && !instance_exists(obj_character_pamphlet) &&!global.pause_menu && !global.QTE && room != graces_snake_game;
+map_visible_conditions = !global.cutscene&&!global.in_dialogue && !global.timed_dialogue && !instance_exists(obj_rhythm_game_arrows) && !instance_exists(obj_rhythm_game_new) && !instance_exists(obj_character_pamphlet) &&!global.pause_menu && !global.QTE && room != graces_snake_game&&!global.in_inventory
 if map_visible_conditions {
 	if !map_visible && alarm[0] == -1{
 		alarm[0] = 2;
@@ -9,6 +9,4 @@ else{
 	map_visible = false;
 	
 }
-//x = camera_get_view_x(view_camera[0]) + relation_to_camera_x;
-
-
+//x = camera_get_view_x(view_camera[0]) + relation_to_camera_x; 

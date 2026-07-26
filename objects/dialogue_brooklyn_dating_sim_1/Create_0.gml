@@ -37,7 +37,8 @@ function any_interests() {
 
 function sniff() {
 	obj_scribble.textbox_unnamed(@"[#c94242]You breathe in deeply,
-	[/page]as if the musk of this woman was the first breath of a mountain breeze-
+	[/page]as if the musk of this woman was the first breath,
+	[/page]of a mountain breeze,
 	[/page]after a twelve hour shift in the coal mines.
 	",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink

@@ -1,28 +1,28 @@
 event_inherited();
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
-		
+		obj_scribble.textbox(
+			@"?
+			[/page]...What do you want?
+			", 
+			"Brooklyn", spr_brooklyn_portrait_default
+		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			@"?
+			[/page]...What do you want?
+			", 
+			"Brooklyn", spr_brooklyn_portrait_default
+		);
 	}
 }
 else if global.day == 3{
-	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
-		
-		global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn = true;
-	}
+	obj_scribble.textbox(
+			@"Oh, you’re back.
+			", 
+			"Brooklyn", spr_brooklyn_portrait_default
+		);
 }
 else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{

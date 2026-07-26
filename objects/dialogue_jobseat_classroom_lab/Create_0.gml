@@ -3,7 +3,7 @@ if global.day == 2{
 	if !global.storylines.Main_Classroom.Day_Two.talked_to.job{
 		obj_scribble.textbox(
 			"*Nods at you.", 
-			"Job", spr_job_down
+			"Job", spr_job_portrait_default
 		);
 	}
 	else{
@@ -16,7 +16,7 @@ else if global.day == 3{
 		obj_scribble.textbox_converse(
 		@"*Annoyed at Frenchie for giving Grace the copper coin", 
 		"Job", [
-			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_job_portrait_default, obj_portrait_mock_left_1], 
 			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
 		]
 		);
@@ -26,14 +26,14 @@ else if global.day == 3{
 		[/page]*Something about Grace being too dazzling for him to refuse
 		", 
 		"Frenchie", [
-			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_job_portrait_default, obj_portrait_mock_left_1], 
 			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
 		]
 		);
 		
 		obj_scribble.textbox(
 			@"*He wishes Wei were here, he would take the coin back without a second thought,", 
-			"Job", spr_job_down
+			"Job", spr_job_portrait_default
 		);
 		
 		obj_scribble.textbox_converse(
@@ -42,7 +42,7 @@ else if global.day == 3{
 		[/page]*He goes on a rant about Wei being an obnoxious bandmate
 		", 
 		"McRonald", [
-			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_job_portrait_default, obj_portrait_mock_left_1], 
 			[spr_mcronald_portrait_default, obj_portrait_mock_right_1]
 		]
 		);
@@ -51,7 +51,7 @@ else if global.day == 3{
 			@"*Job changes the topic back to the experiment
 			[/page]He asks you to help him find another copper coin
 			", 
-			"Job", spr_job_down
+			"Job", spr_job_portrait_default
 		);
 		
 		obj_scribble.textbox_unnamed(
@@ -65,7 +65,7 @@ else if global.day == 3{
 		obj_scribble.textbox_converse(
 		@"*Annoyed at Frenchie for giving Grace the copper coin", 
 		"Job", [
-			[spr_job_down, obj_portrait_mock_left_1], 
+			[spr_job_portrait_default, obj_portrait_mock_left_1], 
 			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
 		]
 		);

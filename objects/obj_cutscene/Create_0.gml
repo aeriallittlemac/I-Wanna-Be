@@ -1,0 +1,2 @@
+respawnable = false;
+triggered = false;

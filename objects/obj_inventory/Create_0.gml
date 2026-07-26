@@ -1,3 +1,6 @@
+frame_rate = 12;
+inventory_anim_frame = 0;
+in_animation = false;
 global.item_list = {
 	
 	dorm_keys : {
@@ -111,9 +114,8 @@ inventory = array_create(0);
 
 default_pixel_font = font_add("joystix monospace.otf", 32, false, false, 32, 128);
 font_add_enable_aa(false);
-x_border = 400;
-portrait_x_border = 8;
-y_border = 130;
+x_border = 50;
+y_border = 60;
 display_text = "";
 //text = ["I walk this empty street, on the boulevard of broken dreams. Where the city sleeps, and I'm the only one and I walk alone.", "My shadow's only thing that walks besides me."]
 global.in_inventory = false;
@@ -123,3 +125,10 @@ setup = false;
 
 item_pos = 0;
 text_width_limit = 0;
+array_push(inventory, global.item_list.dorm_keys);
+array_push(inventory, global.item_list.mr_chens_bullets);
+
+function toggle_inventory(){
+in_animation = true;
+alarm[0] = room_speed/obj_inventory.frame_rate;
+}

@@ -4,7 +4,7 @@
   "name": "graces_theme",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.25,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "graces_theme.wav",
-  "duration": 42.67,
+  "duration": 90.25306,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

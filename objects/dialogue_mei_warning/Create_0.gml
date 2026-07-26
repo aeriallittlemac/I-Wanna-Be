@@ -1,4 +1,5 @@
 event_inherited();
+audio_stop_all();
 set_QTE_bgm(frenchies_theme);
 obj_mei.face = RIGHT;
 obj_mei.sprite_index = obj_mei.sprite[RIGHT]

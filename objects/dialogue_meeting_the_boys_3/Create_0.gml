@@ -4,7 +4,7 @@ obj_scribble.textbox_unnamed(
 
 obj_scribble.textbox(
 	@"*Job explains to you what the election is and how the school works.", 
-	"Job", spr_job_icon
+	"Job", spr_job_portrait_default
 );
 
 obj_scribble.textbox(
@@ -14,7 +14,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	"*Job recalls that the that song that Wei wrote for the band was about that", 
-	"Job", spr_job_down
+	"Job", spr_job_portrait_default
 );
 obj_scribble.textbox(
 	"*Reminded of the band, Wei starts doing off on McRonald for overplaying last practice.", 
@@ -33,7 +33,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	"*Job comments that Frenchie wants to be a \"tough guy\"", 
-	"Job", spr_job_down
+	"Job", spr_job_portrait_default
 );
 
 obj_scribble.textbox(
