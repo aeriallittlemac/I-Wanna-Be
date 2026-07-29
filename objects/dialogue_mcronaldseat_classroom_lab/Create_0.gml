@@ -2,8 +2,13 @@ event_inherited();
 if global.day == 2{
 	if !global.storylines.Main_Classroom.Day_Two.talked_to.mcronald{
 		obj_scribble.textbox_converse(
-	@"Hey hey hey!(placeholder dialogue)
-	[/page]*self-deprecating jokes", 
+	@"Hey hey hey!
+	[/page]New guy.
+	[/page]That's your name, Niu Gai, right?
+	[/page]Niu Gai. Ha ha.
+	[/page]Don’t mind me [wobble]rizzing[/wobble] up with all these gorgeous women.
+	[/page]I'm, pound for pound, greatest footstool for females around!
+	", 
 	"Weird guy", [
 		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
 		[spr_grace_portrait_default, obj_portrait_mock_right_1]
@@ -11,7 +16,7 @@ if global.day == 2{
 	);
 	
 	obj_scribble.textbox_converse(
-	@"Ha ha! You're pretty funny for a lowlife...", 
+	@"Ha ha! How'd you even think of that, you lowlife?", 
 	"Grace", [
 		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
 		[spr_grace_portrait_default, obj_portrait_mock_right_1]
@@ -20,17 +25,23 @@ if global.day == 2{
 	
 	
 	obj_scribble.textbox_converse(
-	@"You make a good jester. But it is starting to bore me.
-	[/page]You may get out of my sight now(again, placeholder).
+	@"Come on, Mei!
+	[/page]You're being mean!
 	", 
-	"Goth blonde", [
+	"Normie girl", [
 		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
 		[spr_brooklyn_portrait_default, obj_portrait_mock_right_1], 
-		[spr_grace_portrait_default, obj_portrait_mock_0]
+		[spr_mei_portrait_default, obj_portrait_mock_0]
 	]
-);
+	);
 	}
 	else{
+		obj_scribble.text_unnamed(
+		@"This guy is weird.
+		[/page]He seems to be doing pretty good for himself though.
+		
+		"
+		)
 		
 	}
 }

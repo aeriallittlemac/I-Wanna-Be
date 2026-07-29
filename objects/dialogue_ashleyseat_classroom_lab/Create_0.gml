@@ -2,14 +2,18 @@ event_inherited();
 if global.day == 2{
 	if !global.storylines.Main_Classroom.Day_Two.talked_to.ashley{
 		obj_scribble.textbox(
-			"*Quirky anime line about transfer students.", 
-			"Ashley", spr_ashley_portrait_default
+			@"Kyaaaa!
+			[/page]Senpai, you scared me...!
+			", 
+			"Weeabo Girl", spr_ashley_portrait_default
 		);
 	}
 	else{
 		obj_scribble.textbox(
-			"*Quirky anime line about transfer students.", 
-			"Ashley", spr_ashley_portrait_default
+			@"Kyaaaa!
+			[/page]Senpai, you scared me...!
+			", 
+			"Weeabo Girl", spr_ashley_portrait_default
 		);
 	}
 }

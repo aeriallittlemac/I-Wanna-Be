@@ -1,5 +1,6 @@
 event_inherited();
-	
+audio_stop_all();
+set_QTE_bgm(frenchies_theme);
 obj_scribble.textbox(
 	@"[#c94242]You know, new kid, I've got to hand it to you.
 	",
@@ -18,7 +19,7 @@ obj_scribble.textbox(
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 obj_scribble.textbox(
-	@"[#c94242]You decide to be a moron.
+	@"[#c94242][audio_stop_all]You decide to be a moron.
 	[/page]You ignore all the big red signs.
 	[/page]By walking in here...
 	[/page]You decide to exercise your free will,

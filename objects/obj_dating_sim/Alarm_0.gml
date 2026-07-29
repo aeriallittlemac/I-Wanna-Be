@@ -1,4 +1,4 @@
-frame_x+=1.5;
+frame_x+=2.2;
 if frame_x <0{
 	alarm[0] = 1;
 }

@@ -1,5 +1,5 @@
 event_inherited();
-obj_scribble.textbox(
-	@"Go to downstairs to take math.
+obj_scribble.textbox_unnamed(
+	@"Go downstairs to take math.
 	"
 );

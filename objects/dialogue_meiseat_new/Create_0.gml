@@ -2,10 +2,16 @@ event_inherited();
 
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.mei{
-		
+		obj_scribble.textbox(
+		@"[slant]I told you this wasn't a good idea...
+		", 
+		"Mei", spr_mei_portrait_default);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			@"[slant]I told you this wasn't a good idea...
+			", 
+			"Mei", spr_mei_portrait_default);
 	}
 }
 else if global.day == 3{

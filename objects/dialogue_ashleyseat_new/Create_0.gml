@@ -2,10 +2,28 @@ event_inherited();
 
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
+		obj_scribble.textbox(
+		@"S-s-senpai?
+		[/page]Is that you, my childhood friend fom 8 years ago who moved away?
+		",
+		"Weeabo Girl", spr_ashley_portrait_default);
 		
+		obj_scribble.textbox_unnamed(@"None of that happened, you never moved in your life.
+		[/page][slant]That girl is sick in the head.[/slant]
+		[/page]Best to keep your distance so she doesn't drag you into her weird fanatasies.
+		")
 	}
 	else{
+		obj_scribble.textbox(
+		@"S-s-senpai?
+		[/page]Is that you, my childhood friend fom 8 years ago who moved away?
+		",
+		"???", spr_ashley_portrait_default);
 		
+		obj_scribble.textbox_unnamed(@"None of that happened, you never moved in your life.
+		[/page][slant]That girl is a weeabo weirdo.[/slant]
+		[/page]Best to keep your distance so she doesn't drag you into her weird fanatasies.
+		")
 	}
 }
 else if global.day == 3{

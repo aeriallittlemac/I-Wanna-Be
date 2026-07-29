@@ -1,33 +1,41 @@
 event_inherited();
 obj_scribble.textbox(
-	"Lorem ipsum dolor si", 
-	"Brooklyn", spr_brooklyn_portrait_disgusted
+	@"!?
+	[/page]Why is this guy here...?
+	", 
+	"Grace", spr_grace_portrait_angry_cute
 );
 
 obj_scribble.textbox_converse(
-	"Lorem ipsum .", 
-	"Frenchie", [
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_left_1], 
-		[spr_brooklyn_portrait_disgusted, obj_portrait_mock_right_1]
+	@"W-wow, is a boy gonna join our club?
+	[/page]This just like that harem manga I read...!
+	", 
+	"???", [
+		[spr_grace_portrait_angry_cute, obj_portrait_mock_left_1], 
+		[spr_ashley_portrait_default, obj_portrait_mock_right_1]
 	]
 );
 
 obj_scribble.textbox_converse(
-	"opidatat non proident, sunt in est laborum.", 
+	@"Harem!? WIth this guy!?
+	[/page]What the fuck are you talking about?
+", 
+	"Grace", [
+		[spr_grace_portrait_angry, obj_portrait_mock_left_1], 
+		[spr_ashley_portrait_default, obj_portrait_mock_right_1]
+	]
+);
+
+
+obj_scribble.textbox_converse(
+	@"*clears throat
+	[/page]This is Bobby, he just transfered here and he told me that he wanted to check the club out.
+	[/page]Please don't bully him...too much.
+	", 
 	"Mei", [
-		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1]
-	]
-);
-
-
-
-obj_scribble.textbox_converse(
-	" culpa qui officia deserunt mollit anim id est laborum.", 
-	"McRonald", [
-		[spr_mei_portrait_default, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_shocked, obj_portrait_mock_right_1], 
-		[spr_mcronald_portrait_default, obj_portrait_mock_0]
+		[spr_grace_portrait_angry, obj_portrait_mock_left_1], 
+		[spr_ashley_portrait_default, obj_portrait_mock_right_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_0]
 	]
 );
 

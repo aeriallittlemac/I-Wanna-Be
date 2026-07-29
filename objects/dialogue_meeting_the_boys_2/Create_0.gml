@@ -7,4 +7,9 @@ obj_scribble.textbox(
 	"Job", spr_job_portrait_default
 );
 obj_scribble.textbox_unnamed(
-	"Ah, that guy[spr_frenchie_portrait_twiddling_thumbs].");
+	"Ah, he's talking about that guy[spr_frenchie_portrait_twiddling_thumbs].");
+obj_scribble.textbox(
+	@"Uh huh.
+	", 
+	"Job", spr_job_portrait_default
+);

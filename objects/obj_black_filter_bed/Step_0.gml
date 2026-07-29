@@ -49,11 +49,10 @@ else if filter_mode == "fade_in"{
 	}
 	if !global.night{
 		if global.day == 2{
-			NewDialogue(dialogue_wake_up_monday);
-			NewQuest(global.quest_list.first_class, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)	
+			NewDialogue(dialogue_wake_up_monday);	
 		}
 		else if global.day ==3 {
-			//NewQuest(global.quest_list.go_to_lab, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)
+			NewDialogue(dialogue_wake_up_tuesday);
 		}
 		else if global.day == 4{
 			AddInstanceToActivate(inst_JAKE_CONTRACT);

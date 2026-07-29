@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "conversation_with_gambino",
+  "name": "gambinos_goons_theme",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.48,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "conversation_with_gambino.wav",
+  "soundFile": "gambinos_goons_theme.wav",
   "duration": 65.37145,
   "parent": {
     "name": "Music",

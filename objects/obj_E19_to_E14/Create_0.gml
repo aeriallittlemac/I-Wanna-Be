@@ -7,6 +7,6 @@ horizontal_barrier_x = [870, 1110, 1200];
 horizontal_barrier_y = [530, 560, 560];
 destination_x = 670;
 destination_y = 550;
-target_room = school_gambinos_room;
+target_room = school_sewing_club;
 target_x = 215;
 target_y = 57;

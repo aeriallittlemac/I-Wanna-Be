@@ -4,6 +4,7 @@ sleep = false;
 if global.day == 1{
 	global.player_sleeping = true;
 	if global.night{
+		if array_length(obj_minimap.inv)>0{
 		if obj_minimap.inv[0] == global.quest_list.go_back_to_sleep{
 			QuestCompleted(global.quest_list.go_back_to_sleep);
 			obj_scribble.textbox_unnamed(
@@ -19,6 +20,16 @@ if global.day == 1{
 			AddInstanceToActivate(obj_bulletin_board_monday);
 //			AddInstanceToActivate(inst_1DF12FEC);
 		}
+			else{
+				obj_scribble.textbox_unnamed(
+					@"The night is still young...
+					"
+				);
+				global.player_sleeping = false;
+			}
+		}
+		
+		
 		else{
 			obj_scribble.textbox_unnamed(
 				@"The night is still young...
@@ -48,7 +59,8 @@ else if global.day == 2{
 	if global.night{
 		global.player_sleeping = true;
 			obj_scribble.textbox_unnamed(
-				@"Monday sleep message...
+				@"First day of school sure was something...
+				[/page][slant]I hope that my efforts will bear fruit.[/slanted]
 				"
 			);
 		sleep = true;

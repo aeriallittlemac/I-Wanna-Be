@@ -1,9 +1,9 @@
 event_inherited();
 if global.day == 2{
-obj_scribble.textbox(
-	"[sfx_bang_door]Bobby, I really don't think this is a good idea...", 
-	"Mei", spr_mei_portrait_uncomfortable
-);
+	obj_scribble.textbox(
+		"Hullo!", 
+		"Mei", spr_mei_portrait_default
+	);
 }
 else if global.day == 3{
 	

@@ -2,67 +2,35 @@ event_inherited();
 
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.grace{
+		obj_scribble.textbox(
+		@"I didn't want to see you, like, ever again...",
+		"Grace", spr_grace_portrait_cocky_2);
 		
+		obj_scribble.textbox_unnamed("You can tell she's still afraid of you.")
 	}
-	else{
+	else{	
+		obj_scribble.textbox(
+		@"I didn't want to see you, like, ever again...",
+		"Grace", spr_grace_portrait_cocky_2);
 		
+		obj_scribble.textbox_unnamed("You can tell she's still afraid of you.")
 	}
 }
 else if global.day == 3{
-	obj_player.face = LEFT;
-	obj_player.sprite_index = obj_player.sprite[LEFT];
-	obj_grace.face = RIGHT;
-	obj_grace.sprite_index = obj_grace.sprite[RIGHT];
+	//not in scene
 	
-	if global.storylines.Grace.truth_or_dare_confession{
+	//obj_player.face = LEFT;
+	//obj_player.sprite_index = obj_player.sprite[LEFT];
+	//obj_grace.face = RIGHT;
+	//obj_grace.sprite_index = obj_grace.sprite[RIGHT];
 	
-		if !global.storylines.Grace.deny_rumor{
+}
+else if global.day == 4{
+	if !global.storylines.Sewing_Club.Day_Four.talked_to.grace{
 			
-		}
-		else{
-			
-		}
-	
 	}
 	else{
 		
-		global.storylines.Sewing_Club.Day_Three.talked_to.grace = true;
-	}
-}
-else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			obj_scribble.textbox(
-			"[vl_grace_default_1]Ah, it feels so good to know that I finally have a boyfriend...", 
-			"Grace", spr_grace_portrait_cocky_2);
-			
-			obj_scribble.textbox(
-			"...", 
-			"Grace", spr_grace_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_grace_annoyed_1]Why the hell is Brooklyn sitting there like she doesn't care?", 
-			"Grace", spr_grace_portrait_confused);
-			
-			obj_scribble.textbox(
-			"[vl_grace_angry_1]Goddamnit, after shitting on me for being single all this time...", 
-			"Grace", spr_grace_portrait_angry);
-			
-			obj_scribble.textbox(
-			"[vl_grace_angry_2]She can't keep getting away with this!", 
-			"Grace", spr_grace_portrait_angry);
-		}
-		else{
-			
-		}
-	}
-	else{
-		if !global.storylines.Sewing_Club.Day_Four.talked_to.grace{
-			
-		}
-		else{
-			
-		}
 	}
 }
 else{

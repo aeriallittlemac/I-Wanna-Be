@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "dialogue_go_back_to_nap",
+  "name": "dialogue_brooklyn_dating_sim_game_over",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 2 - after_club",
-    "path": "folders/Dialogue_Lines/Day 2 - after_club.yy",
+    "name": "sewing_club",
+    "path": "folders/Dialogue_Lines/Day 2 - day/new monday/sewing_club.yy",
   },
 }

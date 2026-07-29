@@ -56,6 +56,6 @@ obj_scribble.textbox(
 	"Mei", spr_mei_portrait_uncomfortable_smile
 );
 obj_scribble.textbox_unnamed(
-	@"Undeterred by the bid red flags, you walk in anyways.
+	@"Undeterred by the big red flags, you walk in anyways.
 "
 );

@@ -7,4 +7,3 @@ global.game_time = "12:30 am"
 global.night = true;
 inst_3D85AE7E.triggered = false;
 inst_10061687.triggered = false;
-instance_destroy(obj_game_over_screen);
