@@ -1,5 +1,5 @@
 if player_facing_self&&!global.cutscene&&!global.in_dialogue&&!instance_exists(obj_transition){	
-	if global.day == 2{
+	if global.day == 2 && global.game_time == "10:00 am"{
 		//if global.game_time == "10:00 am"{
 			//show_debug_message("door");
 			//QuestCompleted(global.quest_list.first_class);

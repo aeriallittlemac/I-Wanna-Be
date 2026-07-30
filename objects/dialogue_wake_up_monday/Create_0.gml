@@ -7,6 +7,6 @@ obj_scribble.textbox(
 );
 obj_scribble.textbox_unnamed(
 	@"There's a crazy person outside.
-[/page]You should probably answer the door before he breaks it donw.
+[/page]You should probably answer the door before he breaks it down.
 	", 
 );

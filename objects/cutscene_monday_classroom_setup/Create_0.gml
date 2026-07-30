@@ -1,4 +1,5 @@
 //obj_brooklyn.entityActivateArg = dialogue_brooklynseat_classroom_lab;
+QuestCompleted(global.quest_list.first_class);
 obj_mei.entityActivateArg = dialogue_meiseat_classroom_lab;
 obj_grace.entityActivateArg = dialogue_graceseat_classroom_lab;
 obj_ashley.entityActivateArg = dialogue_ashleyseat_classroom_lab;

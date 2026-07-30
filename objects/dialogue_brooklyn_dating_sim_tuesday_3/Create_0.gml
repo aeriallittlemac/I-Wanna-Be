@@ -1,6 +1,6 @@
 event_inherited();
 obj_scribble.textbox(
-	@"Well, I’d be worried about Gambino if I were you.", 
+	@"Well, I'd be worried about Gambino if I were you.", 
 	"Bobby", spr_bobby_portrait_default
 );
 obj_scribble.textbox(
@@ -8,8 +8,8 @@ obj_scribble.textbox(
 	"Brooklyn", spr_brooklyn_portrait_default
 );
 obj_scribble.textbox(
-	@"Well, it’s true that he’s this amazing guy as you’ve described.
-[/page]And that’s the problem.
+	@"Well, it's true that he's this amazing guy as you've described.
+[/page]And that's the problem.
 [/page]From where I stand, there aren't many worthy of standing by his side.
 [/page]He definitely knows that too.
 	", 
@@ -20,8 +20,8 @@ obj_scribble.textbox(
 	"Brooklyn", spr_brooklyn_portrait_default
 );
 obj_scribble.textbox(
-	@"Gambino’s such a pragmatist,
-[/page]so he’ll ask himself:
+	@"Gambino's such a pragmatist,
+[/page]so he'll ask himself:
 [/page][slant]What do I get from Brooklyn, with all I have to give her?[/slant]
 [/page]And once he weighs the two...
 [/page]Who knows if he will decide to keep you?

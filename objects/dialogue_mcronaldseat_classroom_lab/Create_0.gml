@@ -6,7 +6,7 @@ if global.day == 2{
 	[/page]New guy.
 	[/page]That's your name, Niu Gai, right?
 	[/page]Niu Gai. Ha ha.
-	[/page]Don’t mind me [wobble]rizzing[/wobble] up with all these gorgeous women.
+	[/page]Don't mind me [wobble]rizzing[/wobble] up with all these gorgeous women.
 	[/page]I'm, pound for pound, greatest footstool for females around!
 	", 
 	"Weird guy", [

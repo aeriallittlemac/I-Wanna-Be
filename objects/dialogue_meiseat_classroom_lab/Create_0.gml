@@ -2,7 +2,7 @@ event_inherited();
 if global.day == 2{
 	obj_scribble.textbox(
 		"Hullo!", 
-		"Mei", spr_mei_portrait_default
+		"Chinese Girl", spr_mei_portrait_default
 	);
 }
 else if global.day == 3{

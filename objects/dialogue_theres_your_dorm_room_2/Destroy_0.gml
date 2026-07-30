@@ -1,6 +1,7 @@
 event_inherited();
 audio_sound_gain(weis_theme, 0, 1000);
 set_QTE_bgm(frenchies_theme);
+audio_sound_gain(frenchies_theme, 0.5, 0);
 audio_sound_gain(frenchies_theme,0,0);
 audio_sound_gain(frenchies_theme, 0.25, 3500);
 game_wait(2);

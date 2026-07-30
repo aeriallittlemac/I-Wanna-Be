@@ -57,11 +57,8 @@ else if filter_mode == "fade_in"{
 		else if global.day == 4{
 			AddInstanceToActivate(inst_JAKE_CONTRACT);
 			teleport_npc(obj_jake, school_2F, 495, 122, RIGHT);
-			NewQuest(global.quest_list.first_class, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)
 		}
-		else{
-		array_push(obj_minimap.inv, global.quest_list.first_class);
-		}
+	
 	}
 	}
 }

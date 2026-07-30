@@ -37,9 +37,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	@"*Drunk humming
-	[/page]Dancing in the wind~
-	[/page]As roses born again~
-	[/page]There, you'll find me~
+	[/page]Dancing in the wind, as roses born again~
 	", 
 	"Drake", spr_drake_portrait_default
 );
@@ -47,4 +45,10 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	"Dude, let's go!", 
 	"Jake", spr_jake_default_portrait
+);
+
+obj_scribble.textbox(
+	@"There, you'll find me~
+	", 
+	"Drake", spr_drake_portrait_default
 );

@@ -3,17 +3,17 @@ obj_scribble.textbox_unnamed(
 	"You ask about the errands and this whole president deal");
 
 obj_scribble.textbox(
-	@"So that guy who came in, Gambino, that’s the student body president and he pretty much runs the school.
-	[/page]But, he’s up for reelection at the end of the week.
+	@"So that guy who came in, Gambino, that's the student body president and he pretty much runs the school.
+	[/page]But, he's up for reelection at the end of the week.
 	", 
 	"Job", spr_job_portrait_default
 );
 obj_scribble.textbox_unnamed(
-	"You ask who’s running against him.");
+	"You ask who's running against him.");
 obj_scribble.textbox(
-	@"Nobody’s dumb enough to.
+	@"Nobody's dumb enough to.
 	[/page]But Gambino likes to do this shit the right way.
-	[/page]He’s gonna make us all vote even though we know he’s gonna win.
+	[/page]He's gonna make us all vote even though we know he's gonna win.
 	", 
 	"Job", spr_job_portrait_default
 );
@@ -27,7 +27,7 @@ obj_scribble.textbox(
 	@"Really? You're running?
 	[/page]Do you even have a plan?
 	", 
-	"McRonald", spr_job_portrait_default
+	"Job", spr_job_portrait_default
 );
 obj_scribble.textbox(
 	@"McRonald reckons that Wei's plan is to bust out that wonderful punk tune that he wrote,

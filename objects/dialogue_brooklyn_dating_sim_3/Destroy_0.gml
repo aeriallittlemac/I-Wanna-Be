@@ -7,3 +7,4 @@ teleport_npc(obj_ashley, noone, 0, 0, DOWN);
 teleport_npc(obj_mei, noone, 0, 0, DOWN);
 teleport_npc(obj_brooklyn, noone, 0, 0, DOWN);
 teleport_npc(obj_grace, noone, 0, 0, DOWN);
+obj_vfx.effects.romance.stop();

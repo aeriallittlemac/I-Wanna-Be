@@ -1,6 +1,7 @@
 event_inherited();
 audio_stop_all();
 set_QTE_bgm(frenchies_theme);
+audio_sound_gain(frenchies_theme, 0.5, 0);
 obj_scribble.textbox(
 	@"[#c94242]You know, new kid, I've got to hand it to you.
 	",

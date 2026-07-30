@@ -25,7 +25,7 @@ function im_begging_you() {
 
 function but_why() {
 	 
-	obj_scribble.textbox_unnamed(@"[#c94242]You sincerely ask why you’re not allowed to talk to her.
+	obj_scribble.textbox_unnamed(@"[#c94242]You sincerely ask why you're not allowed to talk to her.
 	",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);
@@ -42,7 +42,7 @@ function but_why() {
 function pout() {
 	obj_scribble.textbox_unnamed(
 	@"[#c94242]You pout.
-	[/page]That’s it.
+	[/page]That's it.
 	",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);
@@ -62,7 +62,7 @@ obj_scribble.textbox(
 [/page]-for developmental disorders.
 [/page]But I think even someone like you,
 [/page]who probably sniffs glue for breakfast,
-[/page][/slant]would remember when they’re not wanted.[slant]
+[/page][/slant]would remember when they're not wanted.[slant]
 	",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink,,,[
 		{text: "I'M BEGGING YOU", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: im_begging_you},

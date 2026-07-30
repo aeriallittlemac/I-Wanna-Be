@@ -19,7 +19,7 @@ if global.day == 2{
 }
 else if global.day == 3{
 	obj_scribble.textbox(
-			@"Oh, you’re back.
+			@"Oh, you're back.
 			", 
 			"Brooklyn", spr_brooklyn_portrait_default
 		);

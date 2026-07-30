@@ -1,14 +1,14 @@
 event_inherited();
 chair_scenario = false;
 function gambino() {
-	obj_scribble.textbox_unnamed(@"[#c94242]You clarify if she’s talking about Gambino.
+	obj_scribble.textbox_unnamed(@"[#c94242]You clarify if she's talking about Gambino.
 ",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);
 	
 	obj_scribble.textbox(
 	@"[#c94242]Woah, you have object permanence!
-[/page]I honestly didn’t believe in you for a second there, Bobby.
+[/page]I honestly didn't believe in you for a second there, Bobby.
 ",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
@@ -19,7 +19,7 @@ function gambino() {
 function weep() {
 	 
 	obj_scribble.textbox_unnamed(@"[#c94242]You immediately start crying profusely.
-[/page]Like, rivers’ worth of tears.
+[/page]Like, rivers' worth of tears.
 ",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);

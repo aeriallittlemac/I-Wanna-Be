@@ -18,4 +18,4 @@ with inst{
 	screen_duration = 1;
 	screen_cutscene = dialogue_meeting_the_boys;
 }
-game_wait(5);
+game_wait(3);
