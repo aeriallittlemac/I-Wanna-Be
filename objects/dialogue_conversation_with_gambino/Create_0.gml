@@ -18,11 +18,22 @@ obj_scribble.textbox_unnamed(
 obj_scribble.textbox(
 	@"Good. So you know that the school is mine to run.
 	[/page]At least, while I am still president...
-	[/page]I will 
-	[/page]*Tells you to sew him a cute stuffed animal or something.
-	[/page]
-	[/page]*Explains that he wants to give Brooklyn something for their one month anniversary...
-	[/page]*but he hasn't got a clue of what to give.
+	[/page]I have authority to tell you to do whatever I need.
+	[/page]That includes getting me a stuffed animal for my girlfriend.",
+	"Gambino", spr_gambino_portrait_tired
+);
+
+obj_scribble.textbox_unnamed(
+	@"???
+	"
+);
+obj_scribble.textbox(
+	@"You're part of the sewing club, no?
+	[/page]Surely you can come up with something.
+	[/page][slant]Look, man. I just need to give Brooklyn something for their one month anniversary.
+	[/page]Or else she's probably gonna crash out
+	[/page]A stuffed animal should be fine, right?
+	[/page]Girls like stuffed animals.[/slant]
 	", 
 	"Gambino", spr_gambino_portrait_tired
 );
