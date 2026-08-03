@@ -27,35 +27,11 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
-	
-	if global.storylines.ashley.truth_or_dare_confession{
-	
-		if !global.storylines.grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
-		obj_scribble.textbox_unnamed(@"You notice Ashley has been writing on a bunch of individual sheets of composition paper.
-		[/page]You tap on her shoulder, catching her by surprise.
-		");
-		obj_scribble.textbox(
-		@"*Skips a concerning length in the opposite direction.
-		[/page][sfx_ashley_test_1]You're b-back, s-senpai?
-		[/page][sfx_ashley_test_2]I'm so g-glad to s-see y-
-		[/page][sfx_surprise_fx]Is that a l-l-l-letter... For me??!!
-		[/page][sfx_ashley_test_1]*Turns around* Ah! My heart is in my throat... My chest is pounding!
-		[/page][sfx_ashley_test_3]What could be in that letter...
-		[/page][sfx_ashley_test_2]Could it be... A confession?! This is all too fast...
-		", 
-		"Ashley", spr_ashley_portrait_default);
-		obj_scribble.textbox_unnamed("All of that was...very audible.");
-		
-		global.storylines.Sewing_Club.Day_Three.talked_to.ashley = true;
-	}
+	obj_scribble.textbox(
+		@"That was a fun lab, wasn't it s-senpai?
+		[/page]Did you see what I made?
+		",
+		"Weeabo Girl", spr_ashley_portrait_default);
 }
 else if global.day == 4{
 	if global.storylines.grace.truth_or_dare_confession{

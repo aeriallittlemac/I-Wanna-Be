@@ -48,7 +48,7 @@ function pout() {
 	);
 	
 	obj_scribble.textbox(
-	@"That's disgusting.
+	@"[instance_create_object,cutscene_lose_life]That's disgusting.
 [/page]I feel like throwing up in my mouth.
 	",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink

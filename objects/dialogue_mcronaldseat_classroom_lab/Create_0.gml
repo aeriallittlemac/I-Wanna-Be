@@ -45,22 +45,75 @@ if global.day == 2{
 		
 	}
 }
-else if global.day == 3{
+else if global.day == 3{	
+	obj_scribble.textbox_converse(
+	@"McRonald requires a favor from Mei.", 
+	"McRonald", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"Mm hmm?", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"You'll see Brooklyn around club period today, right?", 
+	"McRonald", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"Yup!", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"McRonald needs you to deliver a letter to Brooklyn.
+	[/page]But you must promise not to read its content.
+	", 
+	"McRonald", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"Hold on. Is this a love letter?
+	[/page]But she has a boyfriend-
+	", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_shocked, obj_portrait_mock_right_1]
+	]
+	);
 	
-	if global.storylines.Grace.truth_or_dare_confession{
+	obj_scribble.textbox_converse(
+	@"Well, there's just something I need to tell her-
+	", 
+	"McRonald", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_shocked, obj_portrait_mock_right_1]
+	]
+	);
 	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
+	obj_scribble.textbox_converse(
+	@"[scale,2]Oooooh!
+	[/page]How scandalous!
+	[/page][scale,1]Don't worry, McRonald.
+	[/page]It's an uphill battle but I'll root for ya!
+	", 
+	"Mei", [
+		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mei_portrait_playful, obj_portrait_mock_right_1]
+	]
+	);
 	
-	}
-	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.mcronald = true;
-	}
 }
 else if global.day == 4{
 	obj_scribble.textbox(

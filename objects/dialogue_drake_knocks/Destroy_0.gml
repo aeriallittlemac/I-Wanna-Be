@@ -1,3 +1,4 @@
+event_inherited();
 var inst = instance_create_depth(0,0,0, obj_choice_default_QTE);
 		with inst{
 			choice.one.choice_text = "5 seconds ago";

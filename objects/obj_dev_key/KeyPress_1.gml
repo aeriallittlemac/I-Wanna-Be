@@ -23,16 +23,40 @@
 #macro TUESDAY_LAB ord("K")
 #macro MONDAY_CLASSROOM ord("A")
 #macro WEDNESDAY_CLASSROOM ord("S")
-#macro DATING_SIM ord("D")
+//#macro THURSDAY_MORNING ord("D")
+#macro TUESDAY_SEWING_CLUB ord("N")
+if keyboard_check(THURSDAY_MORNING){
+	global.day = 5;
+	//global.night = true;
+	teleport_player(61, 125, school_bobbys_room, dialogue_wake_up_thursday);
+	AddInstanceToDestroy(inst_1D43132F);
+}
 
-if keyboard_check_pressed(DATING_SIM){
+if keyboard_check(TUESDAY_SEWING_CLUB){
 	game_camera_change_settings(obj_player, -1);
-	global.day = 2;
-	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+	//instance_activate_object(inst_WELCOME_TABLE);
+	global.day = 3;
+	global.game_time = "3:30 pm";
+	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
+	game_camera_change_settings(obj_player, -1);
+	//teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
 	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
 	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
-	teleport_player(215, 57, school_sewing_club, obj_dating_sim);
+	//obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
+	teleport_npc(obj_ashley, school_sewing_club, 85+63, 140, DOWN);
+	teleport_player(215, 57, school_sewing_club, cutscene_tuesday_sewing_club_setup);
 }
+
+//if keyboard_check_pressed(DATING_SIM){
+//	game_camera_change_settings(obj_player, -1);
+//	global.day = 2;
+//	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+//	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+//	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
+//	teleport_player(215, 57, school_sewing_club, obj_dating_sim);
+//}
+
 if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	//global.day = 2;
 	global.day = 4;
@@ -70,7 +94,7 @@ if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	teleport_npc(obj_drake, school_gambinos_room, 196, 110, DOWN);
 	teleport_npc(obj_brooklyn, school_gambinos_room, 135, 145, UP);
 	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
-	//teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
+	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
 	room_goto(school_gambinos_room);
 	AddInstanceToDestroy(inst_1D43132F);
 }
@@ -94,31 +118,31 @@ if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
 	global.storylines.Grace.deny_rumor = false;
 }
 
-if keyboard_check_pressed(THURSDAY_MORNING){
-		game_camera_change_settings(obj_player, -1);
-		global.day = 5;
-		global.game_time = "10:00 am";
-		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
-		global.reputation = 1;
-		global.female_affinity = 1;
-		instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
-		game_change_reputation(49);
-		game_wait(1.2);
-		game_change_female_affinity(49);
+//if keyboard_check_pressed(THURSDAY_MORNING){
+//		game_camera_change_settings(obj_player, -1);
+//		global.day = 5;
+//		global.game_time = "10:00 am";
+//		teleport_player(62, 117, school_bobbys_room, cutscene_day_start);
+//		global.reputation = 1;
+//		global.female_affinity = 1;
+//		instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
+//		game_change_reputation(49);
+//		game_wait(1.2);
+//		game_change_female_affinity(49);
 		
-		AddInstanceToDestroy(inst_1D43132F);
-}
+//		AddInstanceToDestroy(inst_1D43132F);
+//}
 if keyboard_check_pressed(TUESDAY_LAB){
 	hint_obtain(global.hints.gambinos_promise);
 	game_camera_change_settings(obj_player, -1);
 	global.day = 3;
 	teleport_npc(obj_grace, school_lab, 198, 142, LEFT);
 	teleport_npc(obj_frenchie, school_lab, 170, 97, LEFT);
-	teleport_npc(obj_ashley, school_lab, 50, 60, DOWN);
+	teleport_npc(obj_ashley, school_lab, 50, 52, DOWN);
 	teleport_npc(obj_mei, school_lab, 190, 60, LEFT);
 	teleport_npc(obj_job, school_lab, 120, 85, RIGHT);
 	teleport_npc(obj_mcronald, school_lab, 150, 50, DOWN);
-	teleport_npc(obj_guy, school_lab, 220, 66, DOWN);
+	teleport_npc(obj_guy, school_lab, 225, 66, DOWN);
 	teleport_npc(obj_drake, school_lab, 110, 145, UP);
 	teleport_player(100, 120, school_lab, cutscene_brooklyn_tuesday_lab_setup);
 }
@@ -150,11 +174,13 @@ if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 // 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 //}
 if keyboard_check(MEETING_GAMBINO){
+	global.night = true;
+	global.day = 2;
 	game_camera_change_settings(obj_player.x, -1);
 	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP)
 	teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP)
 	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
-	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino)
+	teleport_player(135, 140, school_gambinos_room)//, dialogue_meeting_gambino)
 }
 if keyboard_check(GRACE_RIPS_FRENCHIE){
 	//audio_sound_gain()

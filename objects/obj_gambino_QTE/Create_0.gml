@@ -11,3 +11,4 @@ global.QTE = true;
 win_cutscene = dialogue_QTE_one;
 lose_cutscene = dialogue_QTE_two;
 alarm[1] = 300;
+gambino_anim_index = 0;

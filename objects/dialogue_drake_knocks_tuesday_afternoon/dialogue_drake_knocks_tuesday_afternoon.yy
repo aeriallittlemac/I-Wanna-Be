@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "morning(before free roam)",
-    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam).yy",
+    "name": "first round of responses",
+    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam)/first round of responses.yy",
   },
 }

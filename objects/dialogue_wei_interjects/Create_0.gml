@@ -1,7 +1,7 @@
 event_inherited();
 obj_scribble.textbox(
 	@"Wassup!
-	[/page]*Just got done finish Gambino's tasks
+	[/page]*Just got done finishing Gambino's tasks
 	[/page]*Complains about Gambino", 
 	"Wei", spr_wei_portrait_default
 );

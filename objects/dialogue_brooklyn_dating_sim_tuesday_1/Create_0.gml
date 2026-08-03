@@ -27,7 +27,7 @@ function weep() {
 	obj_scribble.textbox(
 	@"[#c94242]Are you actually crying?
 [/page]Oh my god, that is genuinely pathetic, Bobby.
-[/page]Even for you.
+[/page][instance_create_object,cutscene_lose_life]Even for you.
 	",
 	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
@@ -42,7 +42,7 @@ function weep() {
 
 function chair() {
 	obj_scribble.textbox_unnamed(
-	@"[#c94242]*You clothesline Brooklyn with the chair behind you.
+	@"[#c94242][instance_create_object,cutscene_lose_life][instance_create_object,cutscene_lose_life]*You clothesline Brooklyn with the chair behind you.
 	",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);

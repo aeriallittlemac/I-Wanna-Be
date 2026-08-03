@@ -7,23 +7,43 @@ if global.day == 2{
 		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			"*Pretends not to recognize you", 
+			"Grace", spr_grace_portrait_default
+		);
 	}
 }
 else if global.day == 3{
 	
 	if !global.storylines.Lab.Day_Three.talked_to.grace{
 		obj_scribble.textbox(
-			@"*Asks you something dumb
-			[/page]Gets flustered and insults you", 
+			@"How the hell does any of this work?
+			[/page]Do these gross potatoes come out of the ground looking like this?
+			", 
 			"Grace", spr_grace_portrait_default
+		);
+		obj_scribble.textbox_unnamed(
+			@"She's muttering to herself.", 
+		);
+		obj_scribble.textbox(
+			@"What up with all these wires around them?
+			[/page]Are they like leaves? Are they the roots?
+			", 
+			"Grace", spr_grace_portrait_default
+		);
+		obj_scribble.textbox_unnamed(
+			@"You quietly leave as to not poke the retard.", 
 		);
 	}
 	else{
 		obj_scribble.textbox(
-			@"*Asks you something dumb
-			[/page]Gets flustered and insults you", 
+			@"What up with all these wires around them?
+			[/page]Are they like leaves? Are they the roots?
+			", 
 			"Grace", spr_grace_portrait_default
+		);
+		obj_scribble.textbox_unnamed(
+			@"You quietly leave as to not poke the retard.", 
 		);
 	}
 }

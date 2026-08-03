@@ -1,11 +1,8 @@
 event_inherited();
+set_QTE_bgm(important_decision_looping);
+audio_sound_gain(important_decision_looping, 0.5, 0);
 obj_scribble.textbox(
-	"Asking questions about Jake.",
-	"Drake", spr_ashley_portrait_default
-);
-//obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask her if she knows what happened yesterday.")
-
-obj_scribble.textbox(
-	"When's the last time you saw him?",
-	"Drake", spr_ashley_portrait_default
+	@"When's the last time you saw him, Robert?
+	",
+	"Drake", spr_drake_silhouette
 );

@@ -20,14 +20,22 @@ if global.day == 2{
 else if global.day == 3{
 	if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.ashley{
 		obj_scribble.textbox(
-				"*Quirky anime line about building the ultimate device.", 
-				"Ashley", spr_ashley_portrait_default
+@"Check this out, senpai. Tadaaaa!
+[/page]A POTATO PARTICAL ACCELERATOR!
+[/page] Ive successfully exchanged the more limiting components of the potato battery-
+[/page]-for some of my custom built accessories
+[/page][slant]The power of the sun, in the palm of my hand...[/slant]
+				", 
+				"Weeabo Girl", spr_ashley_portrait_default
 		);
+	obj_scribble.textbox_unnamed(
+"Oh wow that's crazy"
+	);
 	}
 	else{
 		obj_scribble.textbox(
-				"*Quirky anime line about building the ultimate device.", 
-				"Ashley", spr_ashley_portrait_default
+				"*Rambles on about building the ultimate device.", 
+				"Weeabo Girl", spr_ashley_portrait_default
 		);
 	}
 		
@@ -41,7 +49,7 @@ else if global.day == 4{
 		[/page]I don't have anything against him, b-but he's scary and he's not my type!
 		[/page]Please, s-senpai, won't you protect me?
 		", 
-		"Ashley", spr_ashley_portrait_default
+		"Weeabo Girl", spr_ashley_portrait_default
 	);	
 }
 else{

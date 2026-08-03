@@ -1,6 +1,6 @@
 event_inherited();
 obj_scribble.textbox(
-	@"My ex wife recently won in the court for fucking alimony and emotional damages.
+	@"My ex wife recently won in the court for alimony and emotional damages.
 	[/page]Absolutely fantastic.
 	[/page]I'm barely getting paid above minimum wage-
 	[/page]I have literally nothing, and they're letting her take half of that.

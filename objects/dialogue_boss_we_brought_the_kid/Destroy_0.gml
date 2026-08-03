@@ -1,3 +1,4 @@
+event_inherited();
 game_wait(3);
 npc_move_to_pos(obj_jake, 1, 0, 1400, obj_jake.y);
 npc_move_to_pos(obj_jake, 0, 1, obj_jake.x, 98);

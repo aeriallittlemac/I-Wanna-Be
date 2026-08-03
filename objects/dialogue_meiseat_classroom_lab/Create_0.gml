@@ -6,7 +6,10 @@ if global.day == 2{
 	);
 }
 else if global.day == 3{
-	
+	obj_scribble.textbox(
+		"*singing a taylor swift song", 
+		"Mei", spr_mei_portrait_default
+	);
 }
 else if global.day == 4{	
 	obj_scribble.textbox_converse(
@@ -29,7 +32,7 @@ else if global.day == 4{
 	]
 	);
 	obj_scribble.textbox_converse(
-		@"The fact that it happened with Ashley is what's so mind boggling!
+		@"The fact that it happened with her is what's so mind boggling!
 		[/page]Poor Brooklyn, losing out to that weeabo...
 		", 
 	"Mei", [

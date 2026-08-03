@@ -5,7 +5,7 @@ obj_scribble.textbox(
 	"Jake", spr_jake_default_portrait
 );
 obj_scribble.textbox(
-	@"Quit your yelling, you blonde ape.
+	@"Quit your yelling, you blond ape.
 	[/page]How many times have I told you to knock instead?", 
 	"Gambino", spr_gambino_portrait_tired
 );

@@ -7,58 +7,121 @@ if global.day == 2{
 		);
 	}
 	else{
-		
+		obj_scribble.textbox(
+			"*Nods at you.", 
+			"Job", spr_job_portrait_default
+		);
 	}
 }
 else if global.day == 3{
 	
 	if !global.storylines.Lab.Day_Three.talked_to.job{
 		obj_scribble.textbox_converse(
-		@"*Annoyed at Frenchie for giving Grace the copper coin", 
-		"Job", [
-			[spr_job_portrait_default, obj_portrait_mock_left_1], 
-			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
-		]
-		);
-		
-		obj_scribble.textbox_converse(
-		@"*Stutters.
-		[/page]*Something about Grace being too dazzling for him to refuse
-		", 
-		"Frenchie", [
-			[spr_job_portrait_default, obj_portrait_mock_left_1], 
-			[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
-		]
-		);
-		
-		obj_scribble.textbox(
-			@"*He wishes Wei were here, he would take the coin back without a second thought,", 
-			"Job", spr_job_portrait_default
-		);
-		
-		obj_scribble.textbox_converse(
-		@"*On the topic of Wei, McRonald decides to weigh in
-		[/page]*He says that Wei is just as inconsiderate, as he is straightforward
-		[/page]*He goes on a rant about Wei being an obnoxious bandmate
-		", 
-		"McRonald", [
-			[spr_job_portrait_default, obj_portrait_mock_left_1], 
-			[spr_mcronald_portrait_default, obj_portrait_mock_right_1]
-		]
-		);
-		
-		obj_scribble.textbox(
-			@"*Job changes the topic back to the experiment
-			[/page]He asks you to help him find another copper coin
-			", 
-			"Job", spr_job_portrait_default
-		);
+	@"Ah I’m in me feelins again.
+	[/page]Thinkin about the words that were spoken between me and me girl.
+	[/page]Grace.
+	[/page]She’s the one for me ay?
+	[/page]Her words are like the froth on a guinness at me pub back in Yorkstumptry upon Frothhampton.
+	", 
+	"Frenchie", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"Here we go...
+	", 
+	"Job", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"She asked me for a coppah with a knife in her hands and a thumpin in her heart.
+	[/page]Wouldn’t take no for an answer.
+	", 
+	"Frenchie", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"She robbed you, retard. You're saying it like she proposed.
+	", 
+	"Job", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"...She’n’t rob me. She gave me somethin in return innit.
+	[/page][slant]First toime...
+	[/page]A girl has evah tolked to me...
+	", 
+	"Frenchie", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"Now how the hell are we supposed to do the experiment without the coin?
+	[/page]I wish Wei was here.
+	[/page]He would've taken the coin back without a second thought.
+	", 
+	"Job", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"Yes, because Wei is so righteous and so courageous.
+	[/page][slant]Surely it's not because that rufus has no consideration for others.[/slant]
+	", 
+	"McRonald", [
+		[spr_job_portrait_default, obj_portrait_mock_left_1], 
+		[spr_mcronald_portrait_irritated, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox_converse(
+	@"McRonald, you got a problem with Wei?
+	[/page]Don't tell me this is about the band stuff...
+	", 
+	"Frenchie", [
+		[spr_mcronald_portrait_irritated, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	
+	obj_scribble.textbox_converse(
+	@"Of course not.
+	[/page]It doesn't bother me at all when he calls me out on my playing- 
+	", 
+	"McRonald", [
+		[spr_mcronald_portrait_irritated, obj_portrait_mock_left_1], 
+		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
+	]
+	);
+	obj_scribble.textbox(
+	@"We'll talk about that later.
+	[/page]Please focus on the task right now.
+	[/page]We need another copper coin to actually do the experiment for today.
+	[/page]Since that dumbass lost it.
+	[/page]Bobby, could you help us find one?
+	",
+	"Job", spr_job_portrait_annoyed
+	);
 		
 		obj_scribble.textbox_unnamed(
 			@"A copper coin...
 			[/page]Maybe someone might be able to give us a hint here...
 			[/page]Press escape to check hints.
-			", 
+			" 
 		);
 	}
 	else{

@@ -16,20 +16,12 @@ if global.day == 2{
 }
 else if global.day == 3{
 	
-	if global.storylines.Grace.truth_or_dare_confession{
-	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
+	obj_scribble.textbox(
+		@"Hi!
+		[/page]You're still here, huh?
+		", 
+		"Mei", spr_mei_portrait_default);
 		
-		global.storylines.Sewing_Club.Day_Three.talked_to.mei = true;
-	}
 }
 else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{

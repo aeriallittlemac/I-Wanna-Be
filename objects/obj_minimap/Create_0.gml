@@ -279,6 +279,7 @@ global.storylines = {
 					frenchie: false,
 					guy: false,
 					job: false,
+					ashley: false,
 				},
 			instructions_obtained: false,
 			copper_coin: false,
@@ -346,11 +347,14 @@ global.storylines = {
 	Frenchie : {
 		talk_to_ghost_debut: false,
 	},
+	
+	//day 5
+	dead_bodies_checked : false,
 	Brooklyns_quest : {
 		cash_obtained : false,
-		bullets_obtained : false,
-		
+		bullets_obtained : false,	
 	}
+	
 	
 }
 

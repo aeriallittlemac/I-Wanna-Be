@@ -4,5 +4,5 @@ teleport_npc(obj_grace, noone, 0,0, DOWN);
 game_wait(3.5);
 wait(1.4);
 move_to_pos(1, 0, 195, obj_player.y);
-game_NewDialogue(cutscene_if_rumor_deny_1)
+//game_NewDialogue(cutscene_if_rumor_deny_1)
 //slam!

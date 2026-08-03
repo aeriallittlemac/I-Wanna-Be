@@ -40,6 +40,14 @@ else if global.night{
 		"
 	);
 }
+else if global.day == 5 && !global.storylines.dead_bodies_checked{
+		obj_scribble.textbox_unnamed(
+		@"Deal with the smell of the drawer first.
+		"
+	);
+	
+
+}
 else {
 	obj_scribble.textbox_unnamed(
 		@"You answer the door...

@@ -1,11 +1,9 @@
 event_inherited();
 obj_scribble.textbox(
-	"Asking questions about Jake.",
-	"Drake", spr_ashley_portrait_default
-);
-//obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask her if she knows what happened yesterday.")
-
-obj_scribble.textbox(
-	"When's the last time you saw him?",
-	"Drake", spr_ashley_portrait_default
+	@"I see...
+	[/page]In that case.
+	[/page]He handed you a paper, right?
+	[/page]Do you remember what that paper asked you to do?
+	",
+	"Drake", spr_drake_silhouette
 );

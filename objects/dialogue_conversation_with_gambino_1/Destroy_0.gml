@@ -1,3 +1,4 @@
+event_inherited();
 audio_sound_gain(gambinos_theme, 0, 1000);
 set_QTE_bgm(qte_bgm);
 audio_sound_gain(qte_bgm, 0, 0);

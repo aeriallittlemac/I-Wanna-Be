@@ -25,7 +25,9 @@ if filter_mode == "still"{
 		}
 		else{
 			audio_stop_all();
+			if global.day != 5{
 			audio_play_sound(sfx_bang_door,1 , false);
+			}
 			audio_play_sound(bobbys_room, 1, true);
 			//audio_sound_gain(school_night, 1,  3200);
 		}
@@ -45,7 +47,7 @@ else if filter_mode == "fade_in"{
 		}
 	else{
 		global.player_sleeping = false;
-		obj_player.y += 15;
+		//obj_player.y += 15;
 	}
 	if !global.night{
 		if global.day == 2{
@@ -55,8 +57,11 @@ else if filter_mode == "fade_in"{
 			NewDialogue(dialogue_wake_up_tuesday);
 		}
 		else if global.day == 4{
-			AddInstanceToActivate(inst_JAKE_CONTRACT);
+			//AddInstanceToActivate(inst_JAKE_CONTRACT);
 			teleport_npc(obj_jake, school_2F, 495, 122, RIGHT);
+		}
+		else if global.day == 5{
+			NewDialogue(dialogue_wake_up_thursday);
 		}
 	
 	}
