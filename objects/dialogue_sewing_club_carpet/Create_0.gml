@@ -7,7 +7,6 @@ if global.day < 4{
 else{
 	obj_scribble.textbox_unnamed(@"Hmm?
 	[/page]It seems like there is something under the carpet...
-	[/page][instance_create_object,obj_vent_scene]
 	");
 }
 

@@ -17,10 +17,10 @@ else if global.day == 3{
 	
 	if !global.storylines.Lab.Day_Three.talked_to.job{
 		obj_scribble.textbox_converse(
-	@"Ah I’m in me feelins again.
+	@"Ah I'm in me feelins again.
 	[/page]Thinkin about the words that were spoken between me and me girl.
 	[/page]Grace.
-	[/page]She’s the one for me ay?
+	[/page]She's the one for me ay?
 	[/page]Her words are like the froth on a guinness at me pub back in Yorkstumptry upon Frothhampton.
 	", 
 	"Frenchie", [
@@ -40,7 +40,7 @@ else if global.day == 3{
 	
 	obj_scribble.textbox_converse(
 	@"She asked me for a coppah with a knife in her hands and a thumpin in her heart.
-	[/page]Wouldn’t take no for an answer.
+	[/page]Wouldn't take no for an answer.
 	", 
 	"Frenchie", [
 		[spr_job_portrait_default, obj_portrait_mock_left_1], 
@@ -58,7 +58,7 @@ else if global.day == 3{
 	);
 	
 	obj_scribble.textbox_converse(
-	@"...She’n’t rob me. She gave me somethin in return innit.
+	@"...She'n't rob me. She gave me somethin in return innit.
 	[/page][slant]First toime...
 	[/page]A girl has evah tolked to me...
 	", 

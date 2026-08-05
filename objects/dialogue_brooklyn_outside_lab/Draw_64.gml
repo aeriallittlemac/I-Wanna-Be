@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_romance_filter,-1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);

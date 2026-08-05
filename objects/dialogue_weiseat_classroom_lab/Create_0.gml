@@ -27,35 +27,15 @@ else if global.day == 3{
 	}
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"ashley", spr_ashley_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_ashley_default_1]Why do you comply?", 
-			"ashley", spr_ashley_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_ashley_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"ashley", spr_ashley_portrait_default);
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.ashley{
-			
-		//}
-		//else{
-			
-		//}
-	}
+	
+}
+else if global.day == 5{
+	obj_scribble.textbox(
+	@"We're gonna crush this election, Bobby Johns!
+	"	,
+	"Wei", spr_wei_portrait_pumped_up
+	);
+	obj_scribble.textbox_unnamed("You agree.")
 }
 else{
 	

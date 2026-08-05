@@ -17,34 +17,53 @@ else if global.day == 3{
 	//not in lab?
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"brooklyn", spr_brooklyn_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_default_1]Why do you comply?", 
-			"brooklyn", spr_brooklyn_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"brooklyn", spr_brooklyn_portrait_default);
-		}
-		else{
-			
-		}
+
+}
+else if global.day == 5{
+	if global.storylines.Lab.Day_Five.talked_to.brooklyn{
+		obj_scribble.textbox(
+@"So, did you go talk to Guy yet?
+	", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	
+if global.storylines.Lab.Day_Five.talked_to.guy{
+	obj_scribble.textbox(
+@"Oh, you did?
+[/page]What'd he tell you?
+", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+@"You repeated back to her what guy told you.
+");
+obj_scribble.textbox(
+@"I see...
+[/page]Well, I'll go talk to guy about the gun now.
+[/page]Can you help me obtain the bullets, babe?
+[/page]I'll see you in the sewing club later.
+
+", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	}
+	
 	}
 	else{
-		//if !global.storylines.Main_Classroom.Day_Four.talked_to.brooklyn{
-			
-		//}
-		//else{
-			
-		//}
+		obj_scribble.textbox(
+@"I suppose it is on me to end his life.
+[/page]I was his lover, after all...
+[/page]We're going to need a gun.
+[/page]Even if it sounds like a weird ask...
+[/page]I think that gas masked freak would be crazy enough to help us out.
+[/page]Babe, can you go ask him for me?
+	
+	", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+		
+	
+
 	}
 }
 else{

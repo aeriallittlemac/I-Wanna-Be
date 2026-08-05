@@ -1,6 +1,7 @@
 event_inherited();
+audio_stop_all();
 obj_scribble.textbox(
-	@"I suppose that wouldn’t work.
+	@"I suppose that wouldn't work.
 	[/page]The rot of the bodies would sell you out like a black guy under police interrogation. 
 	[/page]Well, I appreciate it, Robert. You should really get to the lab
 	[/page]And from the bottom of my heart...

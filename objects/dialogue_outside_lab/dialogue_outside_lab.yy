@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "after lab",
-    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam)/after lab.yy",
+    "name": "archived",
+    "path": "folders/Dialogue_Lines/Day 5 - brooklyn's route/morning(before free roam)/after lab/archived.yy",
   },
 }

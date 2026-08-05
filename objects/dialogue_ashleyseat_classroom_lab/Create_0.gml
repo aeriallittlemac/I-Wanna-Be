@@ -52,9 +52,13 @@ else if global.day == 4{
 		"Weeabo Girl", spr_ashley_portrait_default
 	);	
 }
-else{
-	
-	
+else if global.day == 5{
+	obj_scribble.textbox(
+		@"The moon is red.
+		[/page]The frenzy has begun...
+		", 
+		"Weeabo Girl", spr_ashley_portrait_default
+	);	
 }
 
 

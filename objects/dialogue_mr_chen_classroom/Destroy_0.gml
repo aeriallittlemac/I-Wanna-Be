@@ -13,4 +13,6 @@ if !global.storylines.Brooklyns_quest.cash_obtained{
 else{
 	item_remove(global.item_list.graces_abortion_fund);
 	item_acquired(global.item_list.mr_chens_bullets);
+	NewQuest(global.quest_list.sewing_club_brooklyn, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
+	INST_MAIN_CLASSROOM_VENT.activate_cutscene = obj_E14_to_E13;
 }

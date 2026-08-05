@@ -25,35 +25,29 @@ else if global.day == 3{
 		);
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			
-			obj_scribble.textbox(
-			"...", 
-			"Brooklyn", spr_brooklyn_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_default_1]Why do you comply?", 
-			"Brooklyn", spr_brooklyn_portrait_default);
-			
-			obj_scribble.textbox_unnamed("[sfx_heartbeat]You ask what she means.");
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_default_1]Why would you decide to build a relationship with that pink neanderthal??", 
-			"Brooklyn", spr_brooklyn_portrait_default);
-		}
-		else{
-			
-		}
-	}
-	else{
-		//if !global.storylines.Sewing_Club.Day_Four.talked_to.brooklyn{
-			
-		//}
-		//else{
-			
-		//}
-	}
+
+}
+else if global.day == 5{
+	
+	obj_scribble.textbox(
+		@"So...
+		[/page]*gulps
+		[/page]You ready?
+		", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+		@"Shot out of my daddy ready.
+		"
+	);
+	obj_scribble.textbox(
+		@"I'm going to head over to Gambino's office 10 mins from now.
+		I dunno if Gambino knows, but there's a second vent on the ceiling...
+		When I cue you, be ready to drop me this.
+		", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	
 }
 else{
 	

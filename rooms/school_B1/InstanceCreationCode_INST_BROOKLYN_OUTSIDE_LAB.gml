@@ -1,2 +1,2 @@
 instance_deactivate_object(self);
-cutscene_object = dialogue_outside_lab;
+cutscene_object = dialogue_brooklyn_outside_lab;

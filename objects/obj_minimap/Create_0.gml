@@ -208,6 +208,25 @@ global.quest_list = {
 		quest_x : 1080,
 		quest_y : 95,
 	},
+	//day 5
+	go_fetch_bullets: {
+		description : "Go find the bullets...?",
+		icon: spr_main_quest_icon,
+		quest_room : school_1F,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 860,
+		quest_y : 95,
+	},
+	sewing_club_brooklyn: {
+		description : "Meet up with Brooklyn at the sewing club",
+		icon: spr_main_quest_icon,
+		quest_room : school_1F,
+		quest_room_width : 1620,
+		//1620 is default
+		quest_x : 1080,
+		quest_y : 95,
+	},
 	
 	
 }
@@ -291,7 +310,23 @@ global.storylines = {
 				//instructions_obtained: false,
 				vacuum: false,
 			},
+		Day_Five : {
 			
+			talked_to:{
+					//grace: false,
+					brooklyn: false,
+					drake: false,
+					//mei: false,
+					//mcronald: false,
+					//frenchie: false,
+					guy: false,
+					//job: false,
+					ashley: false,
+					wei: true
+				},
+
+			
+		},
 	},
 	Sewing_Club : {
 		Day_Two:{
@@ -349,13 +384,13 @@ global.storylines = {
 	},
 	
 	//day 5
-	dead_bodies_checked : false,
+	
 	Brooklyns_quest : {
 		cash_obtained : false,
 		bullets_obtained : false,	
-	}
-	
-	
+	},
+	dead_bodies_checked : false,
+
 }
 
 global.hottest_rumor = "";
