@@ -1,6 +1,12 @@
 obj_ashley.entityActivateArg = dialogue_ashleyseat_new;
 obj_mei.entityActivateArg = dialogue_meiseat_new;
 
+global.sh_ambience = [0.9, 0.85, 0.8];
+obj_vfx.effects.lighting.start();
+obj_vfx.effects.shadow.start(obj_player);
+obj_vfx.effects.shadow.start(obj_ashley);
+obj_vfx.effects.shadow.start(obj_mei);
+
 function brooklyn_walks_in() {
 	if (
 		!global.storylines.Sewing_Club.Day_Four.talked_to.ashley
@@ -17,6 +23,14 @@ function brooklyn_walks_in() {
 	move_to_pos(0.5, 0.5, player_pos_1[0], player_pos_1[1]);
 	move_to_pos(0.5, 0.5, player_pos_1[0] - 1, player_pos_1[1]);
 	
+	obj_play_ac.start(ac_brooklyn_dim_1, 5, function (values) {
+		global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
+		with (obj_sh_light) {
+			_illumination = values.illumination;
+			image_blend = make_color_rgb(values.light_red, values.light_green, values.light_blue);
+		}
+	});
+	
 	call_later(5, time_source_units_seconds, function () {
 		audio_stop_all();
 		obj_player.x = player_pos_1[0];
@@ -25,6 +39,7 @@ function brooklyn_walks_in() {
 		call_later(0.5, time_source_units_seconds, function () {
 			obj_player.sprite_index = obj_player.sprite[UP];
 			obj_mei.sprite_index = obj_mei.sprite[RIGHT];
+			obj_vfx.effects.shadow.start(obj_brooklyn);
 		});
 		call_later(3, time_source_units_seconds, function () {
 			obj_player.sprite_index = obj_player.sprite[LEFT];
@@ -86,6 +101,13 @@ Yeah, like Brooklyn's boy-", "Ashley", spr_ashley_portrait_default
 		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_player_move_1 = function () {
 			move_to_pos(0.5, 0.5, 100, 80);
 			call_later(5, time_source_units_seconds, _bobby_and_brooklyn);
+			obj_play_ac.start(ac_brooklyn_dim_2, 5, function (values) {
+				global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
+				with (obj_sh_light) {
+					_illumination = values.illumination;
+					image_blend = make_color_rgb(values.light_red, values.light_green, values.light_blue);
+				}
+			});
 		};
 		obj_scribble.textbox(
 			@"[npc_move,obj_mei,0.5,0.5,50,120][npc_move,obj_ashley,0.5,0.5,45,125]

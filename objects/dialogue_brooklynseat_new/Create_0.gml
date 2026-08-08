@@ -96,6 +96,14 @@ You stop the song on her phone and cover her up with blanket"
 [/page][play_music,date_with_grace]He shall prove to be quite the useful tool...",
 				"Brooklyn", spr_brooklyn_portrait_amused
 			);
+			
+			obj_play_ac.start(ac_brooklyn_fin, 10, function (values) {
+				global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
+				with (obj_sh_light) {
+					_illumination = values.illumination;
+					image_blend = make_color_rgb(values.light_red, values.light_green, values.light_blue);
+				}
+			});
 		});
 	};
 }

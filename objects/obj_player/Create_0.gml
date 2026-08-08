@@ -39,6 +39,6 @@ classroom_mode = false;
 
 hidden = false;
 
-shader_setup(function(px, py) {
-	draw_sprite_ext(sprite_index, image_index, px, py, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+shader_setup(function(px, py, ps) {
+	draw_sprite_ext(sprite_index, image_index, px * ps, py * ps, image_xscale * ps, image_yscale * ps, image_angle, image_blend, image_alpha);
 });

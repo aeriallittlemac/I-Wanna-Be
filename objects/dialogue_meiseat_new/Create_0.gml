@@ -2,8 +2,8 @@ event_inherited();
 
 function _day_4_truth_dare_n_deny() {
 	obj_scribble.textbox(
-		@"And all that I can see...
-[/page]Is just another Yemen dream~",
+		@"[wave]And all that I can see...
+[/page]Is just another Yemen dream~[/wave]",
 		"Mei", spr_mei_portrait_default
 	);
 	obj_scribble.textbox_unnamed(

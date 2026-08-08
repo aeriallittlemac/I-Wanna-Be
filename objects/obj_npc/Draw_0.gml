@@ -1,4 +1,4 @@
-draw_self();
+shader_apply();
 if talk_priority{
 draw_sprite_ext(spr_interaction_priority, 0, x, y-40, 1, 1, 0, c_white, icon);
 }

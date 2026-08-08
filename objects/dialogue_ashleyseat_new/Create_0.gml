@@ -6,7 +6,7 @@ function _day_4_truth_dare_n_deny() {
 [/page]I can't b-believe they disbanded the m-math team...
 [/page]I-Isn't that unfair!?
 [/page]N-now I'm out of the cash p-prize!
-[/page]How else am I gonna fund my yao--hobbies?",
+[/page]How else am I gonna fund my [slant]yao--[/slant]hobbies?",
 		"Ashley", spr_ashley_portrait_default);
 	obj_scribble.textbox(
 		"I must convince Gambino Senpai to r-reinstate the team!",
