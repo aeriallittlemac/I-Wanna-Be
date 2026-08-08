@@ -1,5 +1,28 @@
 event_inherited();
 
+function _day_4_truth_dare_n_deny() {
+	obj_scribble.textbox(
+		@"And all that I can see...
+[/page]Is just another Yemen dream~",
+		"Mei", spr_mei_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+		"I don't think those are the lyrics..."
+	);
+	obj_scribble.textbox(
+		@"Oh, hey.
+[/page]So Grace really just disappeared on us, huh...
+[/page]Have you seen any sign of her?",
+		"Mei", spr_mei_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+		"You shake your head."
+	);
+	obj_scribble.textbox(
+		"I see...", "Mei", spr_mei_portrait_default
+	);
+}
+
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.mei{
 		
@@ -28,27 +51,7 @@ else if global.day == 3{
 else if global.day == 4{
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Grace.deny_rumor{
-			obj_scribble.textbox(
-			@"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?
-			[/page]You two look so good together!"
-			, 
-			"Mei", spr_mei_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_amused_1]Yes, like Donkey and Shrek.", 
-			"Brooklyn", spr_brooklyn_portrait_amused);
-			
-			obj_scribble.textbox(
-			"[vl_grace_angry_1]Whatchu say?", 
-			"Grace", spr_grace_portrait_angry);
-			
-			obj_scribble.textbox(
-			"[vl_mei_shocked_1]Woah, woah, woah!", 
-			"Mei", spr_mei_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_mei_shocked_2]Grace, calm down!", 
-			"Mei", spr_mei_portrait_default);
+			_day_4_truth_dare_n_deny();
 		}
 		else{
 			
@@ -80,7 +83,6 @@ else{
 	
 	
 }
-
 
 //obj_scribble.textbox_unnamed("[sfx_open_door]I'm opening a door. It's now open. I can do anything I want!![sfx_school_bell] School just started. I better go. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
 

@@ -2,10 +2,11 @@ if (!active) {
 	exit;
 }
 
-if !instance_exists(obj_dating_sim){
-draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.5);
+if (black_filter && !instance_exists(obj_dating_sim)) {
+	draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.5);
 }
-if (identified == 1) {
+
+if (identified == 1 && active_portrait_sprite != noone) {
 	draw_portrait(active_portrait_sprite, portrait_bounds_key);
 } else if (identified == 2) {
 	for (var i = 0; i < array_length(active_portrait_sprites_bounds); ++i) {

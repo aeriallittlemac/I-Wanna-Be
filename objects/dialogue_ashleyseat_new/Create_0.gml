@@ -1,5 +1,19 @@
 event_inherited();
 
+function _day_4_truth_dare_n_deny() {
+	obj_scribble.textbox(
+		@"S-senpai!
+[/page]I can't b-believe they disbanded the m-math team...
+[/page]I-Isn't that unfair!?
+[/page]N-now I'm out of the cash p-prize!
+[/page]How else am I gonna fund my yao--hobbies?",
+		"Ashley", spr_ashley_portrait_default);
+	obj_scribble.textbox(
+		"I must convince Gambino Senpai to r-reinstate the team!",
+		"Ashley", spr_ashley_portrait_default
+	);
+}
+
 if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
 		
@@ -40,9 +54,9 @@ else if global.day == 3{
 	}
 }
 else if global.day == 4{
-	if global.storylines.grace.truth_or_dare_confession{
-		if !global.storylines.grace.deny_rumor{
-			
+	if global.storylines.Grace.truth_or_dare_confession{
+		if !global.storylines.Grace.deny_rumor{
+			_day_4_truth_dare_n_deny();
 		}
 		else{
 			

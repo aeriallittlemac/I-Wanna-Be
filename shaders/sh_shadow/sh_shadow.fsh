@@ -13,6 +13,7 @@ uniform vec2 u_angles[16];
 uniform float u_padding;
 uniform float u_blurRadius;
 uniform float u_bleed;
+uniform float u_weight;
 
 uniform vec4 u_objPos;
 uniform vec2 u_objSize;
@@ -52,10 +53,12 @@ void main()
 			
 			alpha = max(alpha, n_alpha * (1.0 - dec * (j - 1.0)) * antiFan * in_bounds);
 		}
-		float delta = distance(pos.xy, worldPos);
+		float delta_1 = distance(pos.xy, worldPos);
 		
 		// Alternative:
-		// float delta = max(distance(pos.xy, worldPos) - pos.z, 0.0);
+		float delta_2 = max(distance(pos.xy, worldPos) - pos.z, 0.0);
+		
+		float delta = u_weight * delta_2 + (1.0 - u_weight) * delta_1;
 		
 		float distSq = delta * delta;
 		na = max(na, alpha * pos.w / (distSq + pos.w));
