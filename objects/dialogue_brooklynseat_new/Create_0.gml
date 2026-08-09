@@ -24,7 +24,7 @@ function _day_4_truth_dare_n_deny() {
 You mention that you've heard about the news...the rumors of Gambino cheating on her.",
 	);
 	obj_scribble.textbox(
-		@"...[/page]And?", "Brooklyn", spr_brooklyn_portrait_default
+		@"...[/page][slant]And?[/slant]", "Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble.textbox_unnamed(
 		"You feel like you want to stay beside her. Even if just for a little longer."
@@ -49,7 +49,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 	);
 	obj_scribble.textbox(
 		@"*tears slowly drip down her face
-[/page][play_music,bobbys_room]...idiot...",
+[/page][play_music,bobbys_room][jitter]...idiot...[/jitter]",
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble.textbox_unnamed("You ask her if she needs anything.");
@@ -59,7 +59,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 	obj_scribble.textbox(
 		@"*points at her phone
 [/page][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_lightning]
-I don't want to ruin my phone with the disgusting residue of my unseemly tears...
+[scale,0.75]I don't want to ruin my phone with the disgusting residue of my unseemly tears...[/s]
 [/page]Go to spotify, and search up (parody name of MCR)",
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
@@ -108,7 +108,8 @@ Hey, this...
 		};
 		obj_scribble.textbox(
 			@"Perhaps, if us two were to be together...
-[/page][exec_seconds,5,cutscene_sewing_club_day_4_brooklyn_sleep_2]We might not look half bad.",
+[/page][exec_seconds,5,cutscene_sewing_club_day_4_brooklyn_sleep_2]
+We might not look half bad.",
 			"Brooklyn", spr_brooklyn_portrait_default
 		);
 		
@@ -136,7 +137,7 @@ You stop the song on her phone and cover her up with blanket"
 			// SINGLE SHOT OF BROOKLYN UNDER THE BLANKET
 			obj_scribble.textbox(
 				@"I can't believe that shabby act convinced him.
-[/page][play_music,date_with_grace]He shall prove to be quite the useful tool...",
+[/page][play_music,date_with_grace][slant]He shall prove to be quite the useful tool...[/slant]",
 				"Brooklyn", spr_brooklyn_portrait_amused
 			);
 			

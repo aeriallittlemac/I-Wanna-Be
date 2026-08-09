@@ -1593,6 +1593,7 @@
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Day 4 Sewing Club","folderPath":"folders/Animation Curves/Day 4 Sewing Club.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Camera Follow Points","folderPath":"folders/Camera Follow Points.yy","order":26,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Characters","folderPath":"folders/Characters.yy","order":20,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Ashley","folderPath":"folders/Characters/Ashley.yy","order":12,},
@@ -1812,7 +1813,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX","folderPath":"folders/VFX.yy","order":22,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX Objects","folderPath":"folders/VFX/VFX Objects.yy","order":15,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"VFX Sprites","folderPath":"folders/VFX/VFX Sprites.yy","order":14,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Day 4 Sewing Club","folderPath":"folders/Animation Curves/Day 4 Sewing Club.yy","order":1,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
