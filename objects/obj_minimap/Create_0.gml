@@ -262,6 +262,10 @@ global.storylines = {
 		date_grace_truth: false,
 		},
 	},
+	Grace_Ghost : {
+		tuesday: false,
+	
+	},
 	Main_Classroom : {
 		Day_Two : {
 			talked_to:{

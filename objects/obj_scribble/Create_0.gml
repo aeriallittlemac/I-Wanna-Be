@@ -1,3 +1,4 @@
+show_debug_message(depth);
 TEXTBOX_DEFAULT = obj_textbox_mock_0;
 NAMEBOX_DEFAULT = obj_namebox_mock_0;
 

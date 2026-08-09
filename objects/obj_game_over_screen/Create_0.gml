@@ -1,3 +1,7 @@
+//show_debug_message("textbox depth");
+//show_debug_message(obj_scribble.depth);
+//show_debug_message("game over screen depth");
+//show_debug_message(depth);
 audio_stop_all()
 audio_play_sound(sfx_keyboard_slamming, 1, false);
 fade_in_speed = 1;

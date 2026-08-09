@@ -15,12 +15,12 @@ global.hints = {
 		utilized: false, 
 		save_name: "After First Class"
 	}, 
-	if_rumor_choose: {
-		sprite: spr_mcronald_icon, 
-		text: "Word goes around", 
+	rob_dead_people: {
+		sprite: spr_bobby_icon, 
+		text: "Dead people are easier to rob.", 
 		found: false, 
 		utilized: false, 
-		save_name: "Hanging with the boys"
+		save_name: "Rob dead people"
 	}, 
 	if_rumor: {
 		sprite: spr_grace_frown, 
@@ -79,7 +79,7 @@ is_choosing_restore = false;
 hint_grid = [
 	["gambinos_promise", "if_rumor_deny"], 
 	//["after_first_class", "beef"],
-	["if_rumor_choose", "if_rumor"],
+	["rob_dead_people", "if_rumor"],
 	["yup", "uhhuh"],
 	["yeh", "bi"]
 ];

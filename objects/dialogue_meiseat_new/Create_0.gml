@@ -15,64 +15,30 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
-	
-	obj_scribble.textbox(
+	if global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
+		obj_scribble.textbox(
+		@"Hey, Bobby.
+[/page]...
+[/page]Oh geez. Where do I begin?
+[/page]I know that you must feel like Grace is acting, like, super unfair.
+[/page]But that's just kind of how it goes with her.
+[/page]Once she calms down, could you go make up with her?
+[/page]You'll say sorry, and maybe she'll say sorry...
+		", 
+		"Mei", spr_mei_portrait_default);
+	}
+	else 
+	{
+		obj_scribble.textbox(
 		@"Hi!
 		[/page]You're still here, huh?
 		", 
 		"Mei", spr_mei_portrait_default);
+	}
 		
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			obj_scribble.textbox(
-			@"[vl_mei_default_1]Ain't you a lucky guy, scoring a girlfriend as soon as you come to this school?
-			[/page]You two look so good together!"
-			, 
-			"Mei", spr_mei_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_brooklyn_amused_1]Yes, like Donkey and Shrek.", 
-			"Brooklyn", spr_brooklyn_portrait_amused);
-			
-			obj_scribble.textbox(
-			"[vl_grace_angry_1]Whatchu say?", 
-			"Grace", spr_grace_portrait_angry);
-			
-			obj_scribble.textbox(
-			"[vl_mei_shocked_1]Woah, woah, woah!", 
-			"Mei", spr_mei_portrait_default);
-			
-			obj_scribble.textbox(
-			"[vl_mei_shocked_2]Grace, calm down!", 
-			"Mei", spr_mei_portrait_default);
-		}
-		else{
-			
-		}
-	}
-	else{
-		if !global.storylines.Sewing_Club.Day_Four.talked_to.mei{
-			
-		}
-		else{
-			obj_scribble.textbox(
-			@"[vl_mei_default_1]Hey, Bobby.
-			[/page][vl_mei_default_2]Club today sure feels empty, huh?
-			", 
-			"Mei", spr_mei_portrait_default);
-			 
-			obj_scribble.textbox_unnamed("You ask her if she has any clue where the other members have gone.");
-			
-			obj_scribble.textbox(
-			@"[vl_mei_default_1]I think Brooklyn's hanging out with her boyfriend, which makes sense.
-			[/page][vl_mei_default_2]She really only sticks around when she thinks [c_yellow]something interesting[/c] is going to happen.
-			[/page][vl_mei_default_1]Grace is probably walking in any time now...
-			", 
-			"Mei", spr_mei_portrait_default);
-		}
-	}
+	
 }
 else{
 	

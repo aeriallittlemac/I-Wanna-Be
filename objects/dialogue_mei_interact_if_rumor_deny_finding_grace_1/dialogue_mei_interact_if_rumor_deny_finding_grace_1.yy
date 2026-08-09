@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "dialogue_parent",
-    "path": "objects/dialogue_parent/dialogue_parent.yy",
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 3 - sewing_club",
-    "path": "folders/Dialogue_Lines/Day 3 - sewing_club.yy",
+    "name": "Finding Grace (Brooklyn's route)",
+    "path": "folders/Dialogue_Lines/Day 3 - sewing_club/Finding Grace (Brooklyn's route).yy",
   },
 }

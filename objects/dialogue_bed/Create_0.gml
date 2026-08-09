@@ -77,6 +77,37 @@ else if global.day == 2{
 			);
 	}
 }
+else if global.day == 3{
+	if global.night{
+		if global.storylines.Grace_Ghost.tuesday{
+		global.player_sleeping = true;
+			obj_scribble.textbox_unnamed(
+				@"After talking to the ghost girl, you drift into sweet dreams...
+				"
+			);
+		sleep = true;
+		obj_black_filter_bed.filter_mode = "fade_out";
+		global.game_time = "10:00 am";
+		global.day = 4;
+		}
+		else{
+			obj_scribble.textbox_unnamed(
+				@"You'd like to sleep, but you can't quite ignore weird pink ghost girl floating on your bed.
+				"
+			);
+		}
+	}
+	else{
+		obj_scribble.textbox_unnamed(
+				@"Really?
+				[/page]You're sleeping, now?
+				[/page]Get a grip.
+				"
+			);
+	}
+//
+
+}
 else if global.night{
 	global.player_sleeping = true;
 	obj_scribble.textbox_unnamed(

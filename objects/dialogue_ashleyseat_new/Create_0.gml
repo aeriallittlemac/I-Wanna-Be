@@ -4,7 +4,7 @@ if global.day == 2{
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.ashley{
 		obj_scribble.textbox(
 		@"S-s-senpai?
-		[/page]Is that you, my childhood friend fom 8 years ago who moved away?
+		[/page]Is that you, my childhood friend from 8 years ago who moved away?
 		",
 		"Weeabo Girl", spr_ashley_portrait_default);
 		
@@ -27,11 +27,20 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
+	if global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 	obj_scribble.textbox(
 		@"That was a fun lab, wasn't it s-senpai?
 		[/page]Did you see what I made?
 		",
 		"Weeabo Girl", spr_ashley_portrait_default);
+	}
+	else{
+	obj_scribble.textbox(
+		@"*kinda feels sorry for you, but doesn't know what to say...
+		[/page]Did you see what I made?
+		",
+		"Weeabo Girl", spr_ashley_portrait_default);
+	}
 }
 else if global.day == 4{
 	if global.storylines.grace.truth_or_dare_confession{

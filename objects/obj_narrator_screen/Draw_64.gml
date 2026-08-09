@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_narrator_screen, screen_index, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.9);

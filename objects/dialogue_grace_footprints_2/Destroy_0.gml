@@ -1,2 +1,2 @@
 AddInstanceToActivate(obj_grace_ghost);
-teleport_player(350, 116, school_2F);
+teleport_player(350, 116, school_2F, cutscene_brooklyn_tuesday_nighttime);

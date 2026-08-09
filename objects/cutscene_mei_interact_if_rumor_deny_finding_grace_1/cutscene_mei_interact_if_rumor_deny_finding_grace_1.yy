@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 3 - sewing_club",
-    "path": "folders/Dialogue_Lines/Day 3 - sewing_club.yy",
+    "name": "Finding Grace (Brooklyn's route)",
+    "path": "folders/Dialogue_Lines/Day 3 - sewing_club/Finding Grace (Brooklyn's route).yy",
   },
 }

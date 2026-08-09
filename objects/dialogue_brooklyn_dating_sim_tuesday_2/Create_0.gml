@@ -13,10 +13,11 @@ obj_scribble.textbox(
 [/page]From where I stand, there aren't many worthy of standing by his side.
 [/page]He definitely knows that too.
 	", 
-	"Wei", spr_wei_portrait_pumped_up
+	"Bobby", spr_bobby_portrait_default
 );
 obj_scribble.textbox(
-	@"What are you implying?", 
+	@"...
+[/page]What are you implying?", 
 	"Brooklyn", spr_brooklyn_portrait_default
 );
 obj_scribble.textbox(
@@ -26,6 +27,6 @@ obj_scribble.textbox(
 [/page]And once he weighs the two...
 [/page]Who knows if he will decide to keep you?
 	", 
-	"Wei", spr_wei_portrait_pumped_up
+	"Bobby", spr_bobby_portrait_default
 );
 

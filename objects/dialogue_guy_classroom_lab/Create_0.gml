@@ -28,14 +28,14 @@ else if global.day == 5{
 			[/page]And rattle your walls
 			[/page]For the times they are a-changin'...
 			", 
-			"Masked Man", spr_guy_portrait_default
+			"Guy", spr_guy_portrait_default
 		);
 		}
 		else{
 		obj_scribble.textbox(
 		@"What's up, loverboy?
 		", 
-		"Masked Man", spr_guy_portrait_default
+		"Guy", spr_guy_portrait_default
 	);
 		obj_scribble.textbox_unnamed(
 		"You tell him that you need a gun."
@@ -45,7 +45,7 @@ else if global.day == 5{
 			[/page]The subtlety of a truck, what are the writers doing?
 			[/page]Fine...
 			", 
-			"Masked Man", spr_guy_portrait_default
+			"Guy", spr_guy_portrait_default
 		);
 		obj_scribble.textbox(
 			@"Save the explanation.
@@ -54,7 +54,7 @@ else if global.day == 5{
 			[/page]That's just for the firearm itself, though. You'll have to figure out what to do with the bullets...
 			[/page]Best of luck!
 			", 
-			"Masked Man", spr_guy_portrait_wink
+			"Guy", spr_guy_portrait_wink
 		);
 		}
 	}

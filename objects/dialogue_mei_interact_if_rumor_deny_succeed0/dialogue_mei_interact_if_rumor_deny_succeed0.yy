@@ -1,16 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_E19_to_E14",
+  "name": "dialogue_mei_interact_if_rumor_deny_succeed0",
   "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
-    "name": "obj_vents_setup",
-    "path": "objects/obj_vents_setup/obj_vents_setup.yy",
+    "name": "dialogue_parent",
+    "path": "objects/dialogue_parent/dialogue_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,13 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Thursday",
-    "path": "folders/Vents/Brooklyns Route/Thursday.yy",
+    "name": "Day 3 - sewing_club",
+    "path": "folders/Dialogue_Lines/Day 3 - sewing_club.yy",
   },
 }

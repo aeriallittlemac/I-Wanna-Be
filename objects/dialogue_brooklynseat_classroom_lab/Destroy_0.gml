@@ -24,7 +24,9 @@ else if global.day == 4&& !global.storylines.Main_Classroom.Day_Two.talked_to.br
 
 }
 else if global.day == 5{
-	if global.storylines.Lab.Day_Five.talked_to.brooklyn && global.storylines.Lab.Day_Five.talked_to.guy{
+	if global.storylines.Lab.Day_Five.talked_to.brooklyn && global.storylines.Lab.Day_Five.talked_to.guy
+	{
+		
 		audio_play_sound(sfx_pop, 1, false);
 		obj_brooklyn.x = 225
 		obj_brooklyn.y = 45

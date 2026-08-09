@@ -52,7 +52,7 @@ function chair() {
 obj_scribble.textbox(
 	@"[#c94242]Unless you have something worthwhile,
 [/page]and not just incoherent blabbering...
-[/page]get lost.
+[/page]get lost. I have a boyfriend.
 	",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink,,,[
 		{text: "Gambino?", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: gambino},

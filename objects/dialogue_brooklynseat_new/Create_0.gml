@@ -18,11 +18,30 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
+	if global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
+	obj_scribble.textbox(
+		@"Looks like you’re in deep shit, Bobby Johns.
+		[/page]Well, hope you enjoyed your life so far.
+		", 
+		"Brooklyn", spr_brooklyn_portrait_default
+		);
+	obj_scribble.textbox_unnamed(
+	"You knew about Grace's secret?"
+	)
+	obj_scribble.textbox(
+		@"Duh, we lived on the same floor with that retard for years.
+		[/page]You couldn't miss the sight of that hog stuffing her face.
+		", 
+		"Brooklyn", spr_brooklyn_portrait_default
+		);
+	}
+	else{
 	obj_scribble.textbox(
 			@"Oh, you're back.
 			", 
 			"Brooklyn", spr_brooklyn_portrait_default
 		);
+	}
 }
 else if global.day == 4{
 
