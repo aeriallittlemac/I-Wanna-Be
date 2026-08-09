@@ -33,6 +33,7 @@ sfx = array_create(0);
 animation = array_create(0);
 speech_bubbles = array_create(0)
 active_speech_bubbles = array_create(0)
+freeze_depth = false;
 
 if  instance_number(self.object_index) > 1{
 	instance_destroy(self);
@@ -74,3 +75,7 @@ last_face = face;
 
 
 }
+
+shader_setup(function(px, py, ps) {
+	draw_sprite_ext(sprite_index, image_index, px * ps, py * ps, image_xscale * ps, image_yscale * ps, image_angle, image_blend, image_alpha);
+});

@@ -5,7 +5,7 @@ previously_in_range = icon;
 if !global.pause_menu{
 //setPlayerFace();
 
-depth = -bbox_bottom;
+depth = -bbox_bottom * !freeze_depth + depth * freeze_depth;
 if array_length(sequences) > 0{
 	talk_priority = false;
 	if (sequences[0] == "move") {

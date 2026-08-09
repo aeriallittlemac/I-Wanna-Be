@@ -14,6 +14,7 @@ global.sh_ambience = [0.1, 0.1, 0.1];
 global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 global.shadow_blur_radius = 20;
 global.shadow_bleed = 0.125;
+global.shadow_weight = 0.0;
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -220,6 +221,7 @@ effects = {
 		[UniformType.Float, "u_padding"], 
 		[UniformType.Float, "u_blurRadius"], 
 		[UniformType.Float, "u_bleed"], 
+		[UniformType.Float, "u_weight"], 
 		[UniformType.FloatArr, "u_objPos"],
 		[UniformType.FloatArr, "u_objSize"]
 	], function(object) {
@@ -242,6 +244,7 @@ effects = {
 				u_padding: 30.0,
 				u_blurRadius: global.shadow_blur_radius,
 				u_bleed: global.shadow_bleed,
+				u_weight: global.shadow_weight,
 				u_objPos: [
 					object.x, object.y, 
 					sprite_get_xoffset(object.sprite_index), 

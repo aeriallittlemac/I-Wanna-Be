@@ -1,3 +1,6 @@
+#macro SURFACE_SCALING 4
+#macro SURFACE_SCALING_INV (1 / SURFACE_SCALING)
+
 function shader_setup(draw_func) {
 	self.active_shader = noone;
 	self._shader_surface_a = noone;
@@ -10,7 +13,7 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 	var shader = self.active_shader;
 	
 	if (shader == noone) {
-		return self._shader_draw_func(self.x, self.y);
+		return self._shader_draw_func(self.x, self.y, 1);
 	}
 
 	if (shader.padding == 0 && !shader.composite) {
@@ -18,7 +21,7 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 		
 		shader_set(shader.asset);
 		shader.step_eval(self);
-		var ret = self._shader_draw_func(self.x, self.y);
+		var ret = self._shader_draw_func(self.x, self.y, 1);
 		shader_reset();
 		return ret;
 	}
@@ -31,22 +34,24 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 		
 		var surface = self._shader_surface_a;
 		var padding = 2 * shader.padding;
-		var _w = sprite_get_width(spr_idx) + padding;
-		var _h = sprite_get_height(spr_idx) + padding;
+		var _w = (sprite_get_width(spr_idx) + padding) * SURFACE_SCALING;
+		var _h = (sprite_get_height(spr_idx) + padding) * SURFACE_SCALING;
 		if (_surface_invalid(surface, _w, _h)) {
 			surface_free(surface);
 			surface = surface_create(_w, _h);
 			self._shader_surface_a = surface;
+			
+			show_debug_message("Created surface for shader. If this message prints a lot, it may indicate a performance penalty.");
 		}
 		
 		surface_set_target(surface);
 		draw_clear_alpha(c_black, 0);
-		var ret = self._shader_draw_func(shader.padding + xoffset, shader.padding + yoffset);
+		var ret = self._shader_draw_func(shader.padding + xoffset, shader.padding + yoffset, SURFACE_SCALING);
 		surface_reset_target();
 		
 		shader_set(shader.asset);
 		shader.step_eval(self);
-		draw_surface(surface, posx - shader.padding - xoffset, posy - shader.padding - yoffset);
+		draw_surface_ext(surface, posx - shader.padding - xoffset, posy - shader.padding - yoffset, SURFACE_SCALING_INV, SURFACE_SCALING_INV, 0, c_white, 1);
 		shader_reset();
 		
 		return ret;
@@ -57,17 +62,21 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 		var surface_a = self._shader_surface_a;
 		var surface_b = self._shader_surface_b;
 		var padding = 2 * shader.padding;
-		var _w = sprite_get_width(spr_idx) + padding;
-		var _h = sprite_get_height(spr_idx) + padding;
+		var _w = (sprite_get_width(spr_idx) + padding) * SURFACE_SCALING;
+		var _h = (sprite_get_height(spr_idx) + padding) * SURFACE_SCALING;
 		if (_surface_invalid(surface_a, _w, _h)) {
 			surface_free(surface_a);
 			surface_a = surface_create(_w, _h);
 			self._shader_surface_a = surface_a;
+			
+			show_debug_message("Created surface for shaders. If this message prints a lot, it may indicate a performance penalty.");
 		}
 		if (_surface_invalid(surface_b, _w, _h)) {
 			surface_free(surface_b);
 			surface_b = surface_create(_w, _h);
 			self._shader_surface_b = surface_b;
+			
+			show_debug_message("Created surface for shaders. If this message prints a lot, it may indicate a performance penalty.");
 		}
 		
 		var source = surface_b;
@@ -78,7 +87,7 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 		surface_set_target(target);
 		draw_clear_alpha(c_black, 0);
 		
-		var ret = self._shader_draw_func(shader.padding + xoffset, shader.padding + yoffset);
+		var ret = self._shader_draw_func(shader.padding + xoffset, shader.padding + yoffset, SURFACE_SCALING);
 		
 		surface_reset_target();
 	
@@ -104,7 +113,7 @@ function shader_apply(spr_idx=self.sprite_index, posx=self.x, posy=self.y) {
 			source = target;
 			target = temp_surface;
 		}
-		draw_surface(source, posx - shader.padding - xoffset, posy - shader.padding - yoffset);
+		draw_surface_ext(source, posx - shader.padding - xoffset, posy - shader.padding - yoffset, SURFACE_SCALING_INV, SURFACE_SCALING_INV, 0, c_white, 1);
 		
 		return ret;
 	}

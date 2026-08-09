@@ -276,6 +276,7 @@ global.storylines = {
 				ashley: false,
 				mcronald: false,
 				job: false,
+				mei: false,
 			},
 		},
 		Day_Four : {

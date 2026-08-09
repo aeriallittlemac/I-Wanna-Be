@@ -15,7 +15,8 @@ TYPIST_DEFAULT = scribble_typist().in(1, 0)
 	.character_delay_add("?", PUNCTUATION_DELAY_MILLISECONDS);
 
 SCALE = 810 / RESOLUTION_W;
-ASYNC_PAGE_DELAY_SECONDS = 1.5;
+async_page_delay_seconds = 5.0;
+black_filter = true;
 minimap_scale = room_get_viewport(room, 0)[3] / RESOLUTION_W;
 
 layout = {};

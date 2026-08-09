@@ -10,6 +10,7 @@
 #macro THURSDAY_LAB_VENTS_TEST ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
+#macro SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE ord("D")
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
@@ -431,6 +432,23 @@ if keyboard_check(SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE){
 				obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
 				teleport_npc(obj_ashley, school_sewing_club, 85+53, 140, DOWN);
 
+}
+
+if (keyboard_check(SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE)) {
+	global.game_time = "3:30 pm";
+	global.day = 4;
+	global.storylines.Grace.truth_or_dare_confession = true;
+	global.storylines.Grace.deny_rumor = false;
+	obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
+	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
+	QuestCompleted(global.quest_list.sewing_club_quest);
+	game_camera_change_settings(obj_player, -1);
+	
+	teleport_npc(obj_wei, noone, 0, 0, DOWN);
+	
+	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+	teleport_npc(obj_ashley, school_sewing_club, 85 + 53, 140, DOWN);
+	teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_brooklyns_route);
 }
 
 //if keyboard_check(BAND_FIRST_PRACTICE){

@@ -9,6 +9,11 @@ function npc_teleport(elem, params, idx) {
 function player_move(elem, params, idx) {
 	move_to_pos(real(params[0]), real(params[1]), real(params[2]), real(params[3]));
 }
+
+function player_teleport(elem, params, idx) {
+	teleport_player(real(params[0]), real(params[1]), asset_get_index(params[2]), real(params[3]));
+}
+
 function play_music(elem, params, idx) {
 	//audio_play_sound(params[0], 1, true);
 	var sound_name = params[0];
@@ -59,10 +64,18 @@ function stop_audio(elem, params, idx) {
 	audio_stop_all();
 }
 
+exec_seconds_callbacks = {};
+function exec_seconds(elem, params, idx) {
+	//var slice = [];
+	//array_copy(slice, 0, params, 2, array_length(params) - 2);
+	//exec_seconds_callbacks[$params[1]].args = slice;
+	call_later(real(params[0]), time_source_units_seconds, obj_scribble_events.exec_seconds_callbacks[$params[1]]);
+}
 
 scribble_typists_add_event("npc_move", npc_move);
 scribble_typists_add_event("npc_teleport", npc_teleport);
 scribble_typists_add_event("player_move", player_move);
+scribble_typists_add_event("player_teleport", player_teleport);
 scribble_typists_add_event("in_dialogue_force_set", in_dialogue_force_set);
 scribble_typists_add_event("camera_shake", camera_shake);
 scribble_typists_add_event("red_flash", red_flash);
@@ -70,3 +83,4 @@ scribble_typists_add_event("play_music", play_music);
 scribble_typists_add_event("audio_stop_all", stop_audio);
 scribble_typists_add_event("instance_create_object",instance_create_object);
 scribble_typists_add_event("instance_destroy_object",instance_destroy_object);
+scribble_typists_add_event("exec_seconds", exec_seconds);

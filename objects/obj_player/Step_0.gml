@@ -167,7 +167,9 @@ if image_alpha > 0{
 					array_delete(c_yspeed, 0, 1);
 					array_delete(c_sequences, 0, 1);
 				} else {
-					face = face_matrix[clamp(real_xspeed, -1, 1) + 1][clamp(real_yspeed, -1, 1) + 1];
+					face = face_matrix
+						[clamp(ceil(abs(real_xspeed)) * sign(real_xspeed), -1, 1) + 1]
+						[clamp(ceil(abs(real_yspeed)) * sign(real_yspeed), -1, 1) + 1];
 					sprite_index = sprite[face];
 					if obj_player_hitbox.hitwall(real_xspeed, real_yspeed){
 						image_index = 0;

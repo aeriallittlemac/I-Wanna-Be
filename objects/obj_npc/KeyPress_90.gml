@@ -1,5 +1,5 @@
 
-if icon{
+if (icon && !obj_player.player_frozen) {
 	show_debug_message(object_get_name(object_index));
 	show_debug_message(hmm);
 	show_debug_message(opt);

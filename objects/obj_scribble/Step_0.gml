@@ -11,13 +11,13 @@ if (is_async) {
 	}
 	if (text_element.on_last_page()) {
 		async_waiting = true;
-		call_later(ASYNC_PAGE_DELAY_SECONDS, time_source_units_seconds, function () {
+		call_later(async_page_delay_seconds, time_source_units_seconds, function () {
 			async_waiting = false;
 			close_dialogue();
 		});
 	} else {
 		async_waiting = true;
-		call_later(ASYNC_PAGE_DELAY_SECONDS, time_source_units_seconds, function () {
+		call_later(async_page_delay_seconds, time_source_units_seconds, function () {
 			text_element.page(text_element.get_page() + 1);
 			call_later(1, time_source_units_frames, function () {
 				async_waiting = false;
@@ -48,7 +48,8 @@ if (on_last_page && typist_state == 1
 }
 
 if (keyboard_check_pressed(CANCEL_ACTION)) {
-	if (active_choices != noone && !on_last_page) {
+	if (!on_last_page) {
+		audio_play_sound(sfx_move_select, 1, false);
 		text_element.page(text_element.get_page() + 1);
 	} else if (active_choices == noone) {
 		close_dialogue();
