@@ -7,8 +7,21 @@ function _day_4_truth_dare_n_deny() {
 		"What? What are you here for? The day is over. Aren't you gonna go back to your... dirty, unkempt room?",
 		"Brooklyn", spr_brooklyn_portrait_disgusted
 	);
+	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_light_fold = function () {
+		obj_play_ac.start(ac_brooklyn_light_fold, 2, function (values) {
+			inst_sewing_light_lower._angle_lower = values.light_langle;
+			inst_sewing_light_lower._angle_upper = values.light_uangle;
+		});
+		call_later(2, time_source_units_seconds, function () {
+			obj_play_ac.start(ac_brooklyn_light_fold, 2, function (values) {
+				inst_sewing_light_upper._angle_lower = values.light_langle;
+				inst_sewing_light_upper._angle_upper = values.light_uangle;
+			});
+		});
+	};
 	obj_scribble.textbox_unnamed(
-		"You mention that you've heard about the news...the rumors of Gambino cheating on her.",
+		@"[exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_light_fold]
+You mention that you've heard about the news...the rumors of Gambino cheating on her.",
 	);
 	obj_scribble.textbox(
 		@"...[/page]And?", "Brooklyn", spr_brooklyn_portrait_default
@@ -16,25 +29,44 @@ function _day_4_truth_dare_n_deny() {
 	obj_scribble.textbox_unnamed(
 		"You feel like you want to stay beside her. Even if just for a little longer."
 	);
+	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_dim_3 = function () {
+		obj_play_ac.start(ac_brooklyn_dim_3, 2, function (values) {
+			global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
+		});
+	};
 	obj_scribble.textbox(
 		@"*annoyed
-[/page]What are you doing? Your shallow pity isn't going to get to me...",
+[/page][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_dim_3]
+What are you doing? Your shallow pity isn't going to get to me...",
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
+	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_rain = function () {
+		obj_vfx.effects.rain.start();
+	};
+	obj_scribble.textbox_unnamed(
+		@"[exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_rain]
+BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
+	);
 	obj_scribble.textbox(
-		@"BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING
-[/page]*tears slowly drip down her face
+		@"*tears slowly drip down her face
 [/page][play_music,bobbys_room]...idiot...",
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble.textbox_unnamed("You ask her if she needs anything.");
+	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_lightning = function () {
+		obj_vfx.effects.lightning.start();
+	};
 	obj_scribble.textbox(
 		@"*points at her phone
-[/page]I don't want to ruin my phone with the disgusting residue of my unseemly tears...
+[/page][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_lightning]
+I don't want to ruin my phone with the disgusting residue of my unseemly tears...
 [/page]Go to spotify, and search up (parody name of MCR)",
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
-	obj_scribble.textbox_unnamed("[audio_stop_all][play_music,grace_battle_theme]*cries some more");
+	obj_scribble.textbox_unnamed(
+		@"[audio_stop_all][play_music,grace_battle_theme][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_lightning]
+*cries some more"
+	);
 	
 	call_later(5, time_source_units_seconds, function () {
 		obj_scribble.textbox_unnamed("You gently ask if you can show her a song.");
@@ -43,8 +75,19 @@ function _day_4_truth_dare_n_deny() {
 [/page]Sure, I guess why not, at this point?",
 			"Brooklyn", spr_brooklyn_portrait_default
 		);
+		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_brighten = function () {
+			obj_vfx.effects.rain.stop();
+			obj_play_ac.start(ac_brooklyn_brighten, 5, function (values) {
+				global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
+				inst_sewing_light_lower._angle_lower = values.light_langle;
+				inst_sewing_light_lower._angle_upper = values.light_uangle;
+				inst_sewing_light_upper._angle_lower = values.light_langle;
+				inst_sewing_light_upper._angle_upper = values.light_uangle;
+			});
+		};
 		obj_scribble.textbox(
-			@"[play_music,date_with_grace]Hey, this...
+			@"[play_music,date_with_grace][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_brighten]
+Hey, this...
 [/page]This is actually pretty good.",
 			"Brooklyn", spr_brooklyn_portrait_amused
 		);

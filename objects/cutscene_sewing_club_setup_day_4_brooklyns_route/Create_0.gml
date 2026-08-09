@@ -52,7 +52,7 @@ function brooklyn_walks_in() {
 		npc_move_to_pos(obj_brooklyn, 0.5, 0.5, 60, 80);
 
 		// Set to false for debugging.
-		var async = false;
+		var async = true;
 		
 		obj_scribble.textbox("Greetings.", "Brooklyn", noone,, async);
 		obj_scribble.textbox(

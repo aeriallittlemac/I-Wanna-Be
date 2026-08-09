@@ -55,12 +55,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E09A15F","properties":[],"isDnd":false,"objectId":{"name":"obj_sewing_club_carpet_interactable","path":"objects/obj_sewing_club_carpet_interactable/obj_sewing_club_carpet_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.2222223,"scaleY":0.7368421,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":202.0,"y":40.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F6C81A0","properties":[],"isDnd":false,"objectId":{"name":"obj_sewing_club_teddy_bear","path":"objects/obj_sewing_club_teddy_bear/obj_sewing_club_teddy_bear.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":0.31578946,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":45.0,"y":39.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F1BBABA","properties":[],"isDnd":false,"objectId":{"name":"obj_teddy_bear_interact_arrow_point","path":"objects/obj_teddy_bear_interact_arrow_point/obj_teddy_bear_interact_arrow_point.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":54.0,"y":25.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70B1367","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_sewing_light_upper","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_lower","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"-45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_upper","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"0.25",},
           ],"isDnd":false,"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-10.0,"y":50.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_467CFDE4","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_sewing_light_lower","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_lower","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"-45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_upper","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"0.25",},
@@ -94,8 +94,8 @@
     {"name":"inst_3E09A15F","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_4F6C81A0","path":"rooms/school_sewing_club/school_sewing_club.yy",},
     {"name":"inst_1F1BBABA","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_70B1367","path":"rooms/school_sewing_club/school_sewing_club.yy",},
-    {"name":"inst_467CFDE4","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_sewing_light_upper","path":"rooms/school_sewing_club/school_sewing_club.yy",},
+    {"name":"inst_sewing_light_lower","path":"rooms/school_sewing_club/school_sewing_club.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
