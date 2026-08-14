@@ -5,6 +5,7 @@ global.day = 1;
 global.game_time = "5:00 pm";
 global.night = false;
 global.player_sleeping = false;
+global.standing_on_gambinos_couch = false;
 global.input_off = false;
 global.rap_battle = false;
 global.QTE = false;

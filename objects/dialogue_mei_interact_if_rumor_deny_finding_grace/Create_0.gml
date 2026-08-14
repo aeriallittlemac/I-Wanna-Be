@@ -1,11 +1,11 @@
 event_inherited();
 teleport_npc(obj_mei, school_1F, obj_player.x - 40, obj_player.y, DOWN);
-//how does Brooklyn enrage Grace?
 obj_scribble.textbox(
-	@"I'm sure Grace will be getting her megaphone from her room.
-	[/page]It's the only way people don't ignore what she says.
+	@"Where'd she go?
+	[/page]It doesn't seem like she's on the first floor...
+	[/page]Let's go upstairs to find her.
 	", 
-	"Mei", spr_mei_portrait_default
+	"Mei", spr_mei_portrait_uncomfortable_smile
 );
 obj_scribble.textbox_unnamed(
 "Uh huh."

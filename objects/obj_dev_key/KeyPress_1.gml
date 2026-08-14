@@ -1,8 +1,8 @@
-//Shortcuts to scenes
+  //Shortcuts to scenes
 #macro GRACE_MISSING ord("U")
 //#macro GAMBINOS_ROOM ord("Y")
 #macro BROOKLYN_ACTION_SCENE ord("J")
-#macro GRACE_VILLAIN_SPEECH ord("Y")
+//#macro GRACE_VILLAIN_SPEECH ord("Y")
 #macro MEETING_GAMBINO ord("O")
 #macro MONDAY_SEWING_CLUB ord("Q")
 //#macro JAKE_MONDAY ord("G")
@@ -10,22 +10,30 @@
 #macro THURSDAY_LAB_VENTS_TEST ord("B")
 #macro SECOND_DAY_MAIN_CLASSROOM ord("P")
 #macro SEWING_CLUB_TUESDAY_BROOKLYN_ROUTE ord("W")
-#macro SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE ord("D")
+#macro SEWING_CLUB_WEDNESDAY_BROOKLYN_ROUTE vk_space
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
 #macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
-#macro STEALING_FROM_GRACE ord("F")
+#macro GRACE_GHOST ord("F")
 #macro THURSDAY_MORNING ord("V")
 //#macro WEDNESDAY_SEWING_CLUB ord("R")
 #macro JAKE_N_DRAKE ord("L")
 #macro ASHLEY_SCENE ord("M")
+#macro GAMBINO_INVESTIGATION vk_alt
 #macro GRACE_RIPS_FRENCHIE ord("I")
 #macro TUESDAY_LAB ord("K")
 #macro MONDAY_CLASSROOM ord("A")
 #macro WEDNESDAY_CLASSROOM ord("S")
 #macro THURSDAY_LAB ord("D")
 #macro TUESDAY_SEWING_CLUB ord("N")
+if keyboard_check(GAMBINO_INVESTIGATION){
+	game_camera_change_settings(obj_player, -1);
+	global.day = 4;
+	teleport_player(24, 124, school_gambinos_room);
+
+	
+}
 
 if keyboard_check(THURSDAY_MORNING){
 	game_camera_change_settings(obj_player, -1);
@@ -55,6 +63,7 @@ if keyboard_check(TUESDAY_SEWING_CLUB){
 	global.day = 3;
 	global.game_time = "3:30 pm";
 	teleport_npc(obj_wei, noone, 0,0,DOWN);
+	teleport_npc(obj_grace, noone, 0,0,DOWN);
 	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
 	game_camera_change_settings(obj_player, -1);
 	//teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
@@ -79,6 +88,7 @@ if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	global.day = 4;
 	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
 	//teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
+	teleport_npc(obj_gambino, school_main_classroom, 132, 43, DOWN);
 	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
 	teleport_npc(obj_mei, school_main_classroom, 196, 121, LEFT);
 	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
@@ -155,12 +165,12 @@ if keyboard_check_pressed(TUESDAY_LAB){
 	teleport_npc(obj_grace, school_lab, 198, 142, LEFT);
 	teleport_npc(obj_frenchie, school_lab, 170, 97, LEFT);
 	teleport_npc(obj_ashley, school_lab, 50, 52, DOWN);
-	teleport_npc(obj_mei, school_lab, 190, 60, LEFT);
+	//teleport_npc(obj_mei, school_lab, 190, 60, LEFT);
 	teleport_npc(obj_job, school_lab, 120, 85, RIGHT);
 	teleport_npc(obj_mcronald, school_lab, 150, 50, DOWN);
 	teleport_npc(obj_guy, school_lab, 225, 66, DOWN);
 	teleport_npc(obj_drake, school_lab, 110, 145, UP);
-	teleport_player(100, 120, school_lab, cutscene_brooklyn_tuesday_lab_setup);
+	teleport_player(225, 100, school_lab, cutscene_brooklyn_tuesday_lab_setup);
 }
 if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 
@@ -234,10 +244,10 @@ if keyboard_check(GAMBINO_MINIGAME){
 	//show_debug_message(global.storylines.Grace.truth_or_dare_confession);
 }
 
-if keyboard_check(STEALING_FROM_GRACE){
-	global.day = 5;
+if keyboard_check(GRACE_GHOST){
+	global.day = 3;
 	game_camera_change_settings(obj_player,-1);
-	teleport_player(175, 129, school_graces_room);
+	teleport_player(350, 116, school_2F, cutscene_brooklyn_tuesday_nighttime);
 }
 
 if keyboard_check(ASHLEY_SCENE){

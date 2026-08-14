@@ -1,0 +1,9 @@
+player_speed = 2;
+lightSurface = -1;
+light_radius = 100;
+location_text = font_add("joystix monospace.otf", 12, false, false, 64, 128);
+str = "";
+destination_reached = false;
+sound = noone;
+min_crawl_interval = 20;
+max_crawl_interval = 50;

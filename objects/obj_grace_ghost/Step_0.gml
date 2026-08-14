@@ -12,7 +12,5 @@ if in_range && global.npc_in_interaction == noone{
 icon = in_range && global.npc_in_interaction == self && !global.interactable_in_range;
 
 if icon && keyboard_check_pressed(CONFIRM_ACTION){
-	if global.day == 2{
-		game_NewDialogue(dialogue_grace_ghost_tuesday);
-	}
+	game_NewDialogue(dialogue_grace_ghost);
 }

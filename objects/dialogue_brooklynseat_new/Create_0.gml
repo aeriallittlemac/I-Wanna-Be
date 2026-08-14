@@ -171,9 +171,9 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
-	if global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
+	if global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 	obj_scribble.textbox(
-		@"Looks like you’re in deep shit, Bobby Johns.
+		@"Looks like you're in deep shit, Bobby Johns.
 		[/page]Well, hope you enjoyed your life so far.
 		", 
 		"Brooklyn", spr_brooklyn_portrait_default

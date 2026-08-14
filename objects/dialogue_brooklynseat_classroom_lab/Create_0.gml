@@ -17,7 +17,23 @@ else if global.day == 3{
 	//not in lab?
 }
 else if global.day == 4{
-
+	if !global.storylines.Main_Classroom.Day_Four.talked_to.brooklyn{
+	obj_scribble.textbox(
+@"...
+", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	
+	}
+	else{
+	obj_scribble.textbox(
+@"...
+", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	}
+	
+	
 }
 else if global.day == 5{
 	if global.storylines.Lab.Day_Five.talked_to.brooklyn{

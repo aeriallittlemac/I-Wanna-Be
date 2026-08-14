@@ -28,7 +28,9 @@ if filter_mode == "still"{
 			if global.day != 5{
 			audio_play_sound(sfx_bang_door,1 , false);
 			}
+			instance_create_depth(0,0, OBJ_MAX_DEPTH, obj_day);
 			audio_play_sound(bobbys_room, 1, true);
+			audio_sound_gain(bobbys_room, 0.2, 0);
 			//audio_sound_gain(school_night, 1,  3200);
 		}
 		filter_mode = "fade_in";

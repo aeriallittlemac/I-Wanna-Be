@@ -168,7 +168,7 @@ global.npc_list = {
 		object: obj_jake,
 		first_name : "Jake",
 		title: "the Jock",
-		intro_sprite : spr_jake_down,
+		intro_sprite : spr_jake_portrait_default,
 		cur_room : noone,
 		initial_x : 0,
 		initial_y : 0,

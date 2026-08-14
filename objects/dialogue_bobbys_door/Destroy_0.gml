@@ -5,17 +5,25 @@ if venture{
 		teleport_player(650, 104, school_2F, dialogue_wake_up_monday_outside);
 	}
 	else if global.day == 3{
-		teleport_player(650, 104, school_2F);
+		teleport_npc(obj_jake, school_2F, 606, 104, RIGHT);
+		teleport_player(650, 104, school_2F, dialogue_wake_up_tuesday_outside);
 		//NewQuest(global.quest_list.go_to_lab, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER)
+	}
+	else if global.day == 4{
+		teleport_npc(obj_jake, school_2F, 606, 104, RIGHT);
+		teleport_player(650, 104, school_2F);
+		NewQuest(global.quest_list.first_class, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
 	}
 	else if global.day == 5 && global.storylines.dead_bodies_checked{
 		teleport_npc(obj_drake, school_2F, 595, 104, RIGHT);
 		teleport_player(650, 104, school_2F, dialogue_wake_up_drake_outside);
 	}
-	else{
+	else
+	{
+		//teleport_player(650, 104, school_2F);
+		//teleport_npc(obj_jake, school_2F, 606, 104, RIGHT);
+		//teleport_player(650, 104, school_2F, dialogue_wake_up_monday_outside);'
 		teleport_player(650, 104, school_2F);
-		teleport_npc(obj_jake, school_2F, 606, 104, RIGHT);
-		teleport_player(650, 104, school_2F, dialogue_wake_up_monday_outside);
 	}
 }
 else{

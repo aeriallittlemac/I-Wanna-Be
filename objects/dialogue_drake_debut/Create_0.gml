@@ -2,7 +2,7 @@ event_inherited();
 QuestCompleted(global.quest_list.go_take_a_nap)
 obj_scribble.textbox(
 	"Boss wants to see you.", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );
 
 obj_scribble.textbox(

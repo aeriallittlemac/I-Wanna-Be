@@ -4,5 +4,5 @@ obj_scribble.textbox(
 	[/page]School start at 10:00 am, so move yo ass to class!
 	[/page]Go!
 	", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );

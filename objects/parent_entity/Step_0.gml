@@ -76,7 +76,7 @@ player_facing_self =
 || (player_relative_pos == "DOWN" && obj_player.sprite_index == obj_player.sprite[UP]);
 in_detect_range = player_facing_self && !global.cutscene && 
 	!global.in_dialogue && !global.timed_dialogue && entityActivateScript != -1 && entityActivateArg != -1 &&!global.in_slideshow && !instance_exists(obj_rhythm_game_arrows)
-	&& !global.in_hints &&!global.QTE;
+	&& !global.in_hints &&!global.QTE &&!global.standing_on_gambinos_couch
 //if sprite_index != spr_interactable{
 //	if alternative_sprite == noone{
 //		image_alpha = in_detect_range;

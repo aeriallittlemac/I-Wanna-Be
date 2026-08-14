@@ -9,9 +9,11 @@ obj_scribble.textbox(
 	[/page]Wei told me that you were cool...
 	[/page]...Surely this isn't too much to ask?
 	[/page]I'll come along, ok? Pleeeeease!
-	[/page]You reluctantly agree.
 	", 
 	"Mei", spr_mei_portrait_uncomfortable_smile
+);
+obj_scribble.textbox_unnamed(
+"You reluctantly agree."
 );
 
 

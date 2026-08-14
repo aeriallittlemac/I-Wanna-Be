@@ -1,2 +1,2 @@
 draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.8);
-draw_sprite_ext(spr_gambino_minigame_anim, gambino_anim_index, 0, 0, minimap_scale, minimap_scale, 1, c_white, 1);
+draw_sprite_ext(spr_gambino_minigame_anim, gambino_anim_index, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);

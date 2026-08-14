@@ -5,3 +5,4 @@ obj_player.sprite_index = obj_player.sprite[facing];
 obj_player.face = DOWN;
 image_speed = -1;
 audio_master_gain(1);
+game_camera_change_settings(obj_player, -1);

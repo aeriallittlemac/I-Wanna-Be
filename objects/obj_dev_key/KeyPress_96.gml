@@ -1,1 +1,1 @@
-set_QTE_bgm(qte_bgm);
+game_NewCutscene(obj_grace_investigation_setup);

@@ -9,7 +9,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"Boss has done all he can do!
 	[/page]He spent all of last week coming to school on holiday just to get rid of the smell of the couch-", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );
 obj_scribble.textbox(
 	@"Chiudere il becco, chiaccierone.
@@ -21,7 +21,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"Oh!
 	[/page]Sorry, boss!", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );
 obj_scribble.textbox(
 	@"Thank you for escorting Bobby here, but I would appreciate it if you left us alone.
@@ -32,7 +32,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"Sir, yes, sir!
 	[/page]Come, Drake! We shall not disturb the boss.", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );
 
 obj_scribble.textbox(
@@ -44,7 +44,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	"Dude, let's go!", 
-	"Jake", spr_jake_default_portrait
+	"Jake", spr_jake_portrait_default
 );
 
 obj_scribble.textbox(

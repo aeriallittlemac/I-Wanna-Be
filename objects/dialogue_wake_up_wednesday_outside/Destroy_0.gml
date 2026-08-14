@@ -1,0 +1,5 @@
+event_inherited();
+game_wait(2);
+npc_move_to_pos(obj_jake, 2, 0, obj_player.x-160, obj_jake.y);
+teleport_npc(obj_jake, noone, 0, 0, DOWN);
+game_NewDialogue(dialogue_wake_up_tuesday_outside_2);

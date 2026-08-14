@@ -1,8 +1,7 @@
 event_inherited();
 //how does Brooklyn enrage Grace?
 obj_scribble.textbox(
-	@"Great news!
-	[/page]We didn't see her around the stairs, so that means she's still digging through her stuff in her room.
+	@"I think she's in her room, there's a little bit of light coming from there.
 	[/page][sfx_knock_door]Grace, you wanna come out and talk?
 	", 
 	"Mei", spr_mei_portrait_default

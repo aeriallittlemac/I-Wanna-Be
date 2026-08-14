@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Day 4 - before_class",
-    "path": "folders/Dialogue_Lines/Day 4 - before_class.yy",
+    "name": "Day 5 - before_class",
+    "path": "folders/Dialogue_Lines/Day 5 - before_class.yy",
   },
 }

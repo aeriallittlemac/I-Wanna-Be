@@ -17,7 +17,15 @@ if (_hmove != 0 || _vmove != 0) {
     var _length_y = lengthdir_y(1, _dir);
     
     // Apply speed perfectly uniform in all directions
+	
     x += _length_x * player_speed;
     y += _length_y * player_speed;
+	if x > RESOLUTION_W - x_border_margins || x < x_border_margins{
+		x -= _length_x * player_speed
+	}
+	
+	if y > y_bottom_border || y < y_top_border_{
+		y -= _length_y * player_speed
+	}
 }
 

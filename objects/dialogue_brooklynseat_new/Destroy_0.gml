@@ -4,7 +4,7 @@ if global.day == 2&& !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
 	global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn = true;
 	instance_create_depth(0,0,0,obj_dating_sim);
 }
-else if global.day == 3&& !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
+else if global.day == 3&& !global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 	instance_create_depth(0,0,0,obj_dating_sim);
 	global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn = true;
 }

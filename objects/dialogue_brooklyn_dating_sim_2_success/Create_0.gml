@@ -15,7 +15,7 @@ obj_scribble.textbox(
 	",
 	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
-obj_scribble.textbox_unnamed(@"Oh?
+obj_scribble.textbox_unnamed(@"[#c94242]Oh?
 	",
 	,,obj_textbox_mock_pink, obj_bounds_mock_pink
 	);

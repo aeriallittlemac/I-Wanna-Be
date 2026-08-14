@@ -14,6 +14,3 @@ draw_text_transformed_colour(day_x*minimap_scale, day_y*minimap_scale, "THURSDAY
 else if global.day == 6{
 draw_text_transformed_colour(day_x*minimap_scale, day_y*minimap_scale, "FRIDAY", 1, 1, 0, c_white, c_white, c_white, c_white, 1);
 }
-else if global.day == 7{
-draw_text_transformed_colour(day_x*minimap_scale, day_y*minimap_scale, "SATURDAY", 1, 1, 0, c_white, c_white, c_white, c_white, 1);
-}

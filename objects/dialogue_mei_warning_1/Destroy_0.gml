@@ -1,4 +1,5 @@
 event_inherited();
+QuestCompleted(global.quest_list.sewing_club_quest)
 global.day = 2;
 	global.game_time = "3:30 pm";
 	game_camera_change_settings(obj_player, -1);

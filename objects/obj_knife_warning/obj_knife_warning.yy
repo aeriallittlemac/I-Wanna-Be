@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_knife_warning",
   "spriteId": {
-    "name": "spr_crosshair",
-    "path": "sprites/spr_crosshair/spr_crosshair.yy",
+    "name": "spr_crosshair_vfx",
+    "path": "sprites/spr_crosshair_vfx/spr_crosshair_vfx.yy",
   },
   "solid": false,
   "visible": true,
