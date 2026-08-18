@@ -7,5 +7,5 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	"What?", 
-	"Gambino", spr_gambino_down
+	"Gambino", spr_gambino_down_no_jacket
 );

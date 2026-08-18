@@ -48,6 +48,83 @@ obj_scribble.textbox_unnamed(
 	"
 );
 }
+else if global.day == 4{
+if !global.storylines.Grace_Ghost.wednesday{
+obj_scribble.textbox(
+@"...
+", 
+"Grace", spr_grace_portrait_wistful_ghost
+);
+obj_scribble.textbox_unnamed(
+	@"*She looks like she wants to say something to you...
+	[/page]But is unsure with how she should go about it.
+	"
+);
+obj_scribble.textbox(
+@"*clears throat
+[/page]Hey, Bobby.
+[/page]Y'know...
+[/page]There hasn't been anything for me to do.
+[/page]So, I've just been watching you guys...
+", 
+"Grace", spr_grace_portrait_wistful_ghost
+);
+obj_scribble.textbox_unnamed(
+	@"Huh?
+	"
+);
+obj_scribble.textbox(
+@"I saw the thing with Brooklyn. Her rumors.
+", 
+"Grace", spr_grace_portrait_wistful_ghost
+);
+obj_scribble.textbox(
+@"For how much of a bitch she was, she sure had it coming, haha...
+", 
+"Grace", spr_grace_portrait_cocky_ghost
+);
+obj_scribble.textbox(
+@"But the way you treated her...
+[/page]Despite how mean she was to you, you still decided to look out for her.
+[/page]Even when nobody cared to do the same. I mean, for her...
+[/page]You were even willing to sneak into that scary Gambino's office...
+[/page]and comfort her when no one's around.
+[/page]Why?
+[/page]Why go so far to help that woman?
+", 
+"Grace", spr_grace_portrait_wistful_ghost
+);
+obj_scribble.textbox(
+@"...
+[/page]Who knows?
+[/page]Maybe I got a crush on her.
+", 
+"Bobby", spr_bobby_portrait_default
+);
+obj_scribble.textbox(
+@"...
+[/page]Somehow I don't think you mean that.
+", 
+"Grace", spr_grace_portrait_frown_ghost
+);
+
+obj_scribble.textbox_unnamed(
+	@"You feel like this is a good place the end the conversation.
+	[/page]Go to sleep.
+	"
+);
+}
+else{
+obj_scribble.textbox_unnamed(
+	@"You feel like this is a good place the end the conversation.
+	[/page]Go to sleep.
+	"
+);
+}
+}
+else if global.day == 5{
+
+}
 else{
 	obj_scribble.textbox_unnamed(
 	@"Grace ghost dialogue

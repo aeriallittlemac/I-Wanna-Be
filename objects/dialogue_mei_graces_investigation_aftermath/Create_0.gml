@@ -1,4 +1,7 @@
 event_inherited();
+audio_stop_all();
+set_QTE_bgm(frenchies_theme);
+audio_sound_gain(frenchies_theme, 0.5, 0);
 obj_scribble.textbox_converse(
 		@"*Wei and Mei converse about Grace's disappearance.
 		", 

@@ -7,7 +7,7 @@ if global.day == 3{
 	);
 }
 else if global.day == 5{
-	
+	if !global.storylines.Lab.Day_Five.start_roam{
 	if global.storylines.Lab.Day_Five.talked_to.brooklyn{
 		if global.storylines.Lab.Day_Five.talked_to.guy{
 			obj_scribble.textbox(
@@ -46,5 +46,15 @@ else if global.day == 5{
 		);
 		}
 	}
-
+	}
+	else{
+		obj_scribble.textbox_converse(
+		@"*consulting Guy
+		", 
+		"Brooklyn", [
+			[spr_brooklyn_portrait_default, obj_portrait_mock_left_1], 
+			[spr_guy_portrait_default, obj_portrait_mock_right_1]
+		]
+		);
+	}
 }

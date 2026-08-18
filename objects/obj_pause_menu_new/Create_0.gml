@@ -187,8 +187,8 @@ else if page == 2{
 	
 }
 }
-	draw_healthbar(25*minimap_scale, 128*minimap_scale, 245*minimap_scale, 134*minimap_scale, global.reputation, #093315, c_maroon, #22B14C, 0, true, false);
-	draw_healthbar(25*minimap_scale, (128+11)*minimap_scale, 245*minimap_scale, (134+11)*minimap_scale, global.female_affinity, #4B214C, c_maroon, #A349A4, 0, true, false);
+	//draw_healthbar(25*minimap_scale, 128*minimap_scale, 245*minimap_scale, 134*minimap_scale, global.reputation, #093315, c_maroon, #22B14C, 0, true, false);
+	//draw_healthbar(25*minimap_scale, (128+11)*minimap_scale, 245*minimap_scale, (134+11)*minimap_scale, global.female_affinity, #4B214C, c_maroon, #A349A4, 0, true, false);
 	
 
 //draw_set_font(corner_pixel_font);

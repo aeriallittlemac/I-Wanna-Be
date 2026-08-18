@@ -12,16 +12,7 @@ else if global.day == 3{
 }
 else if global.day == 4{
 	global.storylines.Sewing_Club.Day_Four.talked_to.mei = true;
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			cutscene_sewing_club_setup_day_4_brooklyns_route.brooklyn_walks_in();
-		}
-		else{
-			
-		}
-	}
-	else{
-		
-	}
+	cutscene_sewing_club_setup_day_4_brooklyns_route.brooklyn_walks_in();
+	
 
 }

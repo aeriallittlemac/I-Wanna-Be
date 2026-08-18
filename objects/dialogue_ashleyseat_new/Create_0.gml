@@ -57,22 +57,7 @@ else if global.day == 3{
 	}
 }
 else if global.day == 4{
-	if global.storylines.Grace.truth_or_dare_confession{
-		if !global.storylines.Grace.deny_rumor{
-			_day_4_truth_dare_n_deny();
-		}
-		else{
-			
-		}
-	}
-	else{
-		if !global.storylines.Sewing_Club.Day_Four.talked_to.ashley{
-			
-		}
-		else{
-			
-		}
-	}
+	_day_4_truth_dare_n_deny();
 }
 else{
 	

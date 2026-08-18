@@ -2,7 +2,7 @@ event_inherited();
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 obj_vfx.effects.romance.start();
 obj_scribble.textbox(
-	@"*Greets you
+	@"[#c94242]*Greets you
 	[/page]*Awkward upon remembering what happened yesterday...
 	[/page]*Opens up about wanting to trust people again...
 	[/page]*Forge connections with others, like yourself...
@@ -12,7 +12,6 @@ obj_scribble.textbox(
 	[/page]*She defends herself by saying that it would be the best course of action...
 	[/page]...for the two of you, Bobby and Brooklyn
 	[/page]*She soft tells you that she'll talk to you more about it in lab...
-	"
-	,
-	"Brooklyn", spr_brooklyn_portrait_default
-);
+	",
+	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	);

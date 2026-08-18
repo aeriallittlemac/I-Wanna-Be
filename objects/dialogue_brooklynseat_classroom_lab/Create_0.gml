@@ -36,6 +36,7 @@ else if global.day == 4{
 	
 }
 else if global.day == 5{
+	if !global.storylines.Lab.Day_Five.start_roam{	
 	if global.storylines.Lab.Day_Five.talked_to.brooklyn{
 		obj_scribble.textbox(
 @"So, did you go talk to Guy yet?
@@ -80,6 +81,15 @@ obj_scribble.textbox(
 		
 	
 
+	}
+	}
+	else{
+		obj_scribble.textbox(
+	@"Go, Bobby.
+	[/page]There must be a way to obtain bullets at this shithole of a school, somehow...
+	", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
 	}
 }
 else{

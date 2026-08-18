@@ -19,5 +19,5 @@ obj_scribble.textbox(
 	@"Just you w-wait, my love! It doesn't matter how many damn miles I have to walk...
 	[/page]I will chase you, to the end of the Earth!!!
 	", 
-	"Frenchie", spr_frenchie_portrait_default
+	"Frenchie", spr_frenchie_portrait_determined
 );

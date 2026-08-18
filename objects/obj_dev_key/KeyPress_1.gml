@@ -1,4 +1,4 @@
-  //Shortcuts to scenes
+//Shortcuts to scenes
 #macro GRACE_MISSING ord("U")
 //#macro GAMBINOS_ROOM ord("Y")
 #macro BROOKLYN_ACTION_SCENE ord("J")
@@ -30,8 +30,8 @@
 if keyboard_check(GAMBINO_INVESTIGATION){
 	game_camera_change_settings(obj_player, -1);
 	global.day = 4;
-	teleport_player(24, 124, school_gambinos_room);
-
+	//teleport_player(24, 124, school_gambinos_room);
+	game_NewCutscene(obj_gambino_investigation_setup);
 	
 }
 
@@ -94,7 +94,7 @@ if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
 	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);
 	teleport_npc(obj_drake, school_main_classroom, 216, 45, DOWN);
-	teleport_player(190, 77, school_main_classroom, cutscene_wednesday_classroom_setup)
+	teleport_player(69, 110, school_main_classroom, cutscene_wednesday_classroom_setup)
 }
 
 if keyboard_check_pressed(MONDAY_CLASSROOM){

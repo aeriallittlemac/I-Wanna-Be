@@ -1,1 +1,2 @@
-NewDialogue(timed_dialogue_timed_textbox_test);
+global.day = 5;
+teleport_player(144, 124, school_bobbys_room);

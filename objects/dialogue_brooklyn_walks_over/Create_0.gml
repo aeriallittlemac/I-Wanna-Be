@@ -1,6 +1,7 @@
 event_inherited();
 obj_scribble.textbox(
-	@"Bobby, come over here.
+	@"*calls you from across the room
+	[/page]Bobby, come over here.
 	", 
 	"Brooklyn", spr_brooklyn_portrait_default
 );

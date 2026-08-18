@@ -1,5 +1,5 @@
 event_inherited();
-game_wait(2);
-npc_move_to_pos(obj_jake, 2, 0, obj_player.x-160, obj_jake.y);
-teleport_npc(obj_jake, noone, 0, 0, DOWN);
-game_NewDialogue(dialogue_wake_up_tuesday_outside_2);
+audio_stop_all();
+//instance_create_depth(0,0,0,obj_narrator_screen);
+game_wait(0.5);
+game_NewDialogue(dialogue_wake_up_wednesday_outside_1);

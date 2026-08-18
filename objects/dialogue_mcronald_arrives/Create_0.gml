@@ -9,13 +9,13 @@ obj_scribble.textbox(
 	[/page]Oh, WHO could have DONE this-
 	[/page][jitter]It's HORRIBLE!!![/jitter]
 	", 
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_rage
 );
 obj_scribble.textbox(
 	@"...Her. I... wasn't able to save the Boss in time...
 	[/page]I...
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_sad
 );
 obj_scribble.textbox(
 	@"That WENCH! 
@@ -24,12 +24,12 @@ obj_scribble.textbox(
 	[/page]The female enemy is REAL, Drake!
 	[/page][slant]But McRonald knows who truly caused this...
 	", 
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_rage
 );
 obj_scribble.textbox(
 	@"...???
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 obj_scribble.textbox(
 	@"McRonald was able to overhear Bobby.
@@ -37,13 +37,13 @@ obj_scribble.textbox(
 	[/page]and [jitter]preyed[/jitter] on her insecurities!
 	[/page] He is the one to blame, Drake.
 	", 
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_determined
 );
 obj_scribble.textbox(
 	@"I knew it was him...
 	[/page]He must pay for his life...
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 obj_scribble.textbox(
 	@"Agreed, Drake.
@@ -52,13 +52,13 @@ obj_scribble.textbox(
 	[/page]There is only 1 true solution to this, Drake.
 	[/page]As the world mourns for the loss of our great leader...
 	[/page]McRonald will carry his will, and run in his stead.",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_determined
 );
 obj_scribble.textbox(
 	@"Why?
 	[/page]You have nothing to do with the boss...
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 obj_scribble.textbox(
 	@"Drake, McRonald knew Gambino very well...
@@ -67,7 +67,7 @@ obj_scribble.textbox(
 	[/page]but he just wouldn't hear reason..
 	[/page]McRonald doesn't blame him, he did nothing wrong, and yet...
 	",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_determined
 );
 
 obj_scribble.textbox(
@@ -77,20 +77,20 @@ obj_scribble.textbox(
 	[/page]With your help, we can fix this school in the way Gambino would've wanted to, carry on his wishes.
 	[/page]McRonald doesn't blame him, he did nothing wrong, and yet...
 	",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_determined
 );
 
 obj_scribble.textbox(
 	@"...Understood. Then I will be your vice president.
 	[/page]For Gambino.
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 
 obj_scribble.textbox(
 	@"Good. Now, go get some rest, Drake. You look shaken up.
 	[/page]McRonald will take care of this mess.",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_fake_determined
 );
 
 obj_scribble.textbox(
@@ -98,19 +98,19 @@ obj_scribble.textbox(
 	[/page]*Rummages through Gambino's pockets.
 	[/page]*Pulls out something shiny
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 
 obj_scribble.textbox(
 	@"What's that?",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_irritated
 );
 
 obj_scribble.textbox(
 	@"Gambino instructed me to keep this key safe...
 	[/page]...if anything were to happen to him, to give to the next president.
 	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 
 obj_scribble.textbox(
@@ -118,31 +118,16 @@ obj_scribble.textbox(
 	[/page]Since you and McRonald are in the race together now,
 	[/page]McRonald is sure to be the next president.
 	",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_irritated
 );
-
 obj_scribble.textbox(
-	@"...Sure...
+	@"You can have it after we win.
 	", 
-	"Drake", spr_drake_portrait_default
-);
-
-obj_scribble.textbox(
-	@"Great, so-
-	",
-	"McRonald", spr_mcronald_portrait_default
-);
-
-obj_scribble.textbox(
-	@"You know, I think I'll hold onto it.
-	[/page]You can have it after we win.
-	[/page]Just to be sure.
-	", 
-	"Drake", spr_drake_portrait_default
+	"Drake", spr_drake_portrait_angry
 );
 
 obj_scribble.textbox(
 	@"...Sure! That makes sense. Mhm.
 	",
-	"McRonald", spr_mcronald_portrait_default
+	"McRonald", spr_mcronald_portrait_irritated
 );

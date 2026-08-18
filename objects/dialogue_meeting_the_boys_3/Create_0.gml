@@ -63,7 +63,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	@"I'm telling you! You kind of just play like you want to show off.
-	Just play some simple basslines!
+	[/page]Just play some simple basslines!
 	", 
 	"Wei", spr_wei_portrait_default
 );

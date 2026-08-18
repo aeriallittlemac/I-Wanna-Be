@@ -38,7 +38,8 @@ if global.day == 1{
 			global.player_sleeping = false;
 		}
 	}
-	else{
+	else{	
+		
 		QuestCompleted(global.quest_list.enter_dorm);
 		obj_scribble.textbox_unnamed(
 				@"You try the bed.
@@ -81,6 +82,7 @@ else if global.day == 3{
 	if global.night{
 		if global.storylines.Grace_Ghost.tuesday{
 		global.player_sleeping = true;
+		QuestCompleted(global.quest_list.go_back_to_sleep);
 			obj_scribble.textbox_unnamed(
 				@"After talking to the ghost girl, you drift into sweet dreams...
 				"
@@ -93,6 +95,38 @@ else if global.day == 3{
 		else{
 			obj_scribble.textbox_unnamed(
 				@"You'd like to sleep, but you can't quite ignore weird pink ghost girl floating on your bed.
+				"
+			);
+		}
+	}
+	else{
+		obj_scribble.textbox_unnamed(
+				@"Really?
+				[/page]You're sleeping, now?
+				[/page]Get a grip.
+				"
+			);
+	}
+//
+
+}
+else if global.day == 4{
+	if global.night{
+		if global.storylines.Grace_Ghost.wednesday{
+		global.player_sleeping = true;
+		//QuestCompleted(global.quest_list.go_back_to_sleep);
+			obj_scribble.textbox_unnamed(
+				@"The pink witch has become surprisingly wholesome, hasn't she?
+				"
+			);
+		sleep = true;
+		obj_black_filter_bed.filter_mode = "fade_out";
+		global.game_time = "10:00 am";
+		global.day = 5;
+		}
+		else{
+			obj_scribble.textbox_unnamed(
+				@"Grace seems to have something to tell you.
 				"
 			);
 		}

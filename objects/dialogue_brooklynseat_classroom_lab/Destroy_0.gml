@@ -25,7 +25,7 @@ else if global.day == 5{
 		obj_guy.face = UP;
 		obj_guy.sprite_index = obj_guy.sprite[UP]
 		NewQuest(global.quest_list.go_fetch_bullets, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-		
+		global.storylines.Lab.Day_Five.start_roam = true;
 	}
 	else{
 		global.storylines.Lab.Day_Five.talked_to.brooklyn = true;

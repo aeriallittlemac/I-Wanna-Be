@@ -7,3 +7,4 @@ destination_reached = false;
 sound = noone;
 min_crawl_interval = 20;
 max_crawl_interval = 50;
+depth = OBJ_MAX_DEPTH;

@@ -29,7 +29,7 @@ obj_scribble.textbox(
 obj_scribble.textbox_unnamed("You nod in agreement and confusion")
 
 obj_scribble.textbox(
-	@"Alas, the universe is works in mysterious ways.
+	@"Alas, the universe works in mysterious ways.
 	[/page]The harder you look for a man, the more the world seems determined to remind you of every place he isn't.
 	[/page]Gambino needs to speak with him, I need his company, but Jake appears to have wandered beyond expectation.
 	[/page]So tell me-

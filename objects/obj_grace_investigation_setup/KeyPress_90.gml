@@ -1,6 +1,4 @@
-show_debug_message("yo1")
 if !global.in_dialogue{
-	show_debug_message("yo")
 	switch (obj_crosshair.str)
 {
     case "Grace's phone":

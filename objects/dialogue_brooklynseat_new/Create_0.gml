@@ -2,10 +2,28 @@ event_inherited();
 
 function _day_4_truth_dare_n_deny() {
 	obj_player.player_frozen = true;
-	
 	obj_scribble.textbox(
-		"What? What are you here for? The day is over. Aren't you gonna go back to your... dirty, unkempt room?",
-		"Brooklyn", spr_brooklyn_portrait_disgusted
+		"*Asks you about what you found in Gambino's room",
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+		@"You tell her",
+	);
+	obj_scribble.textbox(
+		"*She believes that her suspcions are confirmed.",
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	obj_scribble.textbox(
+		"...",
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+	obj_scribble.textbox_unnamed(
+		@"...",
+	);
+	obj_scribble.textbox(
+		@"...
+		[/page]What? What are you here for? The day is over. Aren't you gonna go back to your... dirty, unkempt room?",
+		"Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_light_fold = function () {
 		obj_play_ac.start(ac_brooklyn_light_fold, 2, function (values) {
@@ -21,13 +39,13 @@ function _day_4_truth_dare_n_deny() {
 	};
 	obj_scribble.textbox_unnamed(
 		@"[exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_light_fold]
-You mention that you've heard about the news...the rumors of Gambino cheating on her.",
+You tell her that you don't really get it.",
 	);
 	obj_scribble.textbox(
 		@"...[/page][slant]And?[/slant]", "Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble.textbox_unnamed(
-		"You feel like you want to stay beside her. Even if just for a little longer."
+		"But you feel like you want to stay beside her. Even if just for a little longer."
 	);
 	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_dim_3 = function () {
 		obj_play_ac.start(ac_brooklyn_dim_3, 2, function (values) {
@@ -50,7 +68,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 	obj_scribble.textbox(
 		@"*tears slowly drip down her face
 [/page][play_music,bobbys_room][jitter]...idiot...[/jitter]",
-		"Brooklyn", spr_brooklyn_portrait_default
+		"Brooklyn", spr_brooklyn_portrait_sad
 	);
 	obj_scribble.textbox_unnamed("You ask her if she needs anything.");
 	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_lightning = function () {
@@ -61,7 +79,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 [/page][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_lightning]
 [scale,0.75]I don't want to ruin my phone with the disgusting residue of my unseemly tears...[/s]
 [/page]Go to spotify, and search up (parody name of MCR)",
-		"Brooklyn", spr_brooklyn_portrait_default
+		"Brooklyn", spr_brooklyn_portrait_sad
 	);
 	obj_scribble.textbox_unnamed(
 		@"[audio_stop_all][play_music,grace_battle_theme][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_lightning]
@@ -73,7 +91,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 		obj_scribble.textbox(
 			@"[audio_stop_all]...
 [/page]Sure, I guess why not, at this point?",
-			"Brooklyn", spr_brooklyn_portrait_default
+			"Brooklyn", spr_brooklyn_portrait_sad
 		);
 		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_brighten = function () {
 			obj_vfx.effects.rain.stop();
@@ -89,7 +107,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 			@"[play_music,date_with_grace][exec_seconds,0,cutscene_sewing_club_day_4_brooklyn_brighten]
 Hey, this...
 [/page]This is actually pretty good.",
-			"Brooklyn", spr_brooklyn_portrait_amused
+			"Brooklyn", spr_brooklyn_portrait_default
 		);
 		obj_scribble.textbox_unnamed("You nod.");
 		obj_scribble.textbox(
@@ -200,7 +218,7 @@ else if global.day == 4{
 	_day_4_truth_dare_n_deny();
 }
 else if global.day == 5{
-	
+	if !global.storylines.Brooklyns_quest.gun_obtained{
 	obj_scribble.textbox(
 		@"So...
 		[/page]*gulps
@@ -212,10 +230,11 @@ else if global.day == 5{
 		@"Shot out of my daddy ready.
 		"
 	);
+	}
 	obj_scribble.textbox(
 		@"I'm going to head over to Gambino's office 10 mins from now.
-		I dunno if Gambino knows, but there's a second vent on the ceiling...
-		When I cue you, be ready to drop me this.
+		[/page]I dunno if Gambino knows, but there's a second vent on the ceiling...
+		[/page]When I cue you, be ready to drop me this.
 		", 
 		"Brooklyn", spr_brooklyn_portrait_default
 	);

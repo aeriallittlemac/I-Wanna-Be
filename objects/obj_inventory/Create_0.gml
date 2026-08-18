@@ -129,8 +129,8 @@ setup = false;
 
 item_pos = 0;
 text_width_limit = 0;
-//array_push(inventory, global.item_list.dorm_keys);
-//array_push(inventory, global.item_list.mr_chens_bullets);
+array_push(inventory, global.item_list.dorm_keys);
+array_push(inventory, global.item_list.mr_chens_bullets);
 
 function toggle_inventory(){
 in_animation = true;

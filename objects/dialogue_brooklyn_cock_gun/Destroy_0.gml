@@ -7,6 +7,7 @@ with inst{
 audio_play_sound(sfx_glass_shatter, 1, false);
 npc_animate(obj_drake, spr_drake_down);
 obj_drake.image_angle = 0;
+teleport_npc(obj_drake, noone, 0,0,DOWN);
 npc_animate(obj_gambino, spr_gambino_dead);
 obj_drake.x = obj_gambino.x+12;
 obj_drake.y = obj_gambino.y;

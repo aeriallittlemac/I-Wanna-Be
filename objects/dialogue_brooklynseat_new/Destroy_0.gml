@@ -21,6 +21,7 @@ else if global.day == 4&& !global.storylines.Sewing_Club.Day_Two.talked_to.brook
 	}
 
 }
-else if global.day == 5{
+else if global.day == 5 &&!global.storylines.Brooklyns_quest.gun_obtained {
 	item_acquired(global.item_list.brooklyns_gun);
+	global.storylines.Brooklyns_quest.gun_obtained = true;
 }

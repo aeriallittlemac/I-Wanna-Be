@@ -264,7 +264,8 @@ global.storylines = {
 	},
 	Grace_Ghost : {
 		tuesday: false,
-	
+		wednesday: false,
+		thursday: false,
 	},
 	Main_Classroom : {
 		Day_Two : {
@@ -329,7 +330,8 @@ global.storylines = {
 					ashley: false,
 					wei: true
 				},
-
+			start_roam: false,
+			start_roam: false,
 			
 		},
 	},
@@ -393,6 +395,7 @@ global.storylines = {
 	Brooklyns_quest : {
 		cash_obtained : false,
 		bullets_obtained : false,	
+		gun_obtained : false,
 	},
 	dead_bodies_checked : false,
 

@@ -7,6 +7,15 @@ obj_scribble.textbox(
 	"Hello, Bobby.", 
 	"Mr. Chen", spr_mr_chen_portrait_gun
 );
+if global.storylines.Brooklyns_quest.bullets_obtained{
+	obj_scribble.textbox(
+	@"It's been a long time since I've seen so much of these...
+	[/page]Hello Benjamin.
+	", 
+	"Mr. Chen", spr_mr_chen_portrait_default
+	);
+}
+else{
 if global.storylines.Brooklyns_quest.cash_obtained{
 	obj_scribble.textbox(
 	"You got the cash?", 
@@ -20,4 +29,6 @@ if global.storylines.Brooklyns_quest.cash_obtained{
 	", 
 	"Mr. Chen", spr_mr_chen_portrait_gun
 	);
+	
+}
 }

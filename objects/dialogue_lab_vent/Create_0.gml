@@ -1,8 +1,8 @@
 event_inherited();
 obj_scribble.textbox_unnamed(@"It's a poster of the periodic table
-	[/page]Somehow, there seems to be elements on this than you remember...
+	[/page]Somehow, there seems to be more elements on this than you remember...
 	");
-if global.storylines.Lab.Day_Three.talked_to.job{
+if global.storylines.Lab.Day_Three.talked_to.job||global.storylines.Lab.Day_Five.start_roam{
 	obj_scribble.textbox_unnamed(@"Hmm?
 	[/page]It seems like there is something behind this poster...
 	[/page]An air vent...?
