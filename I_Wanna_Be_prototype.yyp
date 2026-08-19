@@ -1652,6 +1652,7 @@
     {"id":{"name":"dialogue_guy_potion","path":"objects/dialogue_guy_potion/dialogue_guy_potion.yy",},"order":12,},
     {"id":{"name":"obj_maze_player","path":"objects/obj_maze_player/obj_maze_player.yy",},"order":1,},
     {"id":{"name":"IWB_UI_base","path":"sprites/IWB_UI_base/IWB_UI_base.yy",},"order":21,},
+    {"id":{"name":"spr_brooklyn_portrait_gun","path":"sprites/spr_brooklyn_portrait_gun/spr_brooklyn_portrait_gun.yy",},"order":5,},
     {"id":{"name":"__scribble_class_typist","path":"scripts/__scribble_class_typist/__scribble_class_typist.yy",},"order":6,},
     {"id":{"name":"spr_frenchie_shooting_scene_2","path":"sprites/spr_frenchie_shooting_scene_2/spr_frenchie_shooting_scene_2.yy",},"order":3,},
     {"id":{"name":"spr_mei_nervous_guilty","path":"sprites/spr_mei_nervous_guilty/spr_mei_nervous_guilty.yy",},"order":6,},
@@ -1746,6 +1747,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"textbox_mock","path":"rooms/textbox_mock/textbox_mock.yy",},},
+    {"roomId":{"name":"school_math_quiz","path":"rooms/school_math_quiz/school_math_quiz.yy",},},
     {"roomId":{"name":"graces_room_investigate","path":"rooms/graces_room_investigate/graces_room_investigate.yy",},},
     {"roomId":{"name":"school_1F","path":"rooms/school_1F/school_1F.yy",},},
     {"roomId":{"name":"vents","path":"rooms/vents/vents.yy",},},
@@ -1753,7 +1755,6 @@
     {"roomId":{"name":"school_bobbys_room","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},},
     {"roomId":{"name":"roomEmpty","path":"rooms/roomEmpty/roomEmpty.yy",},},
     {"roomId":{"name":"school_3F","path":"rooms/school_3F/school_3F.yy",},},
-    {"roomId":{"name":"school_math_quiz","path":"rooms/school_math_quiz/school_math_quiz.yy",},},
     {"roomId":{"name":"school_run_minigame_new","path":"rooms/school_run_minigame_new/school_run_minigame_new.yy",},},
     {"roomId":{"name":"school_B1","path":"rooms/school_B1/school_B1.yy",},},
     {"roomId":{"name":"school_2F","path":"rooms/school_2F/school_2F.yy",},},
