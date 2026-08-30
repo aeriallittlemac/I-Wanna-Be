@@ -26,6 +26,7 @@ function _day_4_truth_dare_n_deny() {
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
 	obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_light_fold = function () {
+		global.sh_bloom_bleed = [0, 0, 0];
 		obj_play_ac.start(ac_brooklyn_light_fold, 2, function (values) {
 			inst_sewing_light_lower._angle_lower = values.light_langle;
 			inst_sewing_light_lower._angle_upper = values.light_uangle;
@@ -95,6 +96,7 @@ BROOKLYN ANGRILY TRYING HER BEST TO HOLD BACK TEARS, BUT FAILING"
 		);
 		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_brighten = function () {
 			obj_vfx.effects.rain.stop();
+			global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 			obj_play_ac.start(ac_brooklyn_brighten, 5, function (values) {
 				global.sh_ambience = [values.ambience_r, values.ambience_g, values.ambience_b];
 				inst_sewing_light_lower._angle_lower = values.light_langle;
@@ -117,9 +119,11 @@ Hey, this...
 		);
 		obj_scribble.textbox_unnamed("Ouch.");
 		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_sleep_2 = function () {
-			obj_brooklyn.sprite_index = spr_brooklyn_dead;
-			obj_brooklyn.x += 100 - 72;
-			obj_brooklyn.y += 62 - 77;
+			obj_brooklyn.sprite_index = spr_brooklyn_right;
+			obj_brooklyn.image_angle = 90;
+
+			obj_brooklyn.x += 100 - 62;
+			obj_brooklyn.y += 62 - 80;
 			obj_brooklyn.freeze_depth = true;
 			obj_brooklyn.depth = obj_sewing_club_row_2.depth - 1; // Appear on top of table.
 			call_later(3, time_source_units_seconds, _day_4_truth_dare_n_deny_conclusion);

@@ -22,10 +22,16 @@ function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor 
 		for (var i = 0; i < schema_size; ++i) {
 			var key = schema[i][1];
 			var res = ures[$key];
-			script_execute(
-				obj_vfx.uniform_types[schema[i][0]],
-				res, ret.uniform[$key]
-			);
+			// See comment in `obj_vfx` Create.
+			//obj_vfx.uniform_types[schema[i][0]](res, ret.uniform[$key]);
+			switch (schema[i][0]) {
+				case UniformType.Float: shader_set_uniform_f(res, ret.uniform[$key]); break;
+				case UniformType.FloatArr: shader_set_uniform_f_array(res, ret.uniform[$key]); break;
+				case UniformType.Int: shader_set_uniform_i(res, ret.uniform[$key]); break;
+				case UniformType.IntArr: shader_set_uniform_i_array(res, ret.uniform[$key]); break;
+				case UniformType.Matrix: shader_set_uniform_matrix(res); break;
+				case UniformType.MatrixArr: shader_set_uniform_matrix_array(res, ret.uniform[$key]); break;
+			}
 		}
 		return ret;
 	};
@@ -82,10 +88,16 @@ function ObjectShader(_shader_asset, _schema, _step, _padding = 0) constructor {
 		for (var i = 0; i < schema_size; ++i) {
 			var key = schema[i][1];
 			var res = ures[$key];
-			script_execute(
-				obj_vfx.uniform_types[schema[i][0]],
-				res, ret.uniform[$key]
-			);
+			// See comment in `obj_vfx` Create.
+			//obj_vfx.uniform_types[schema[i][0]](res, ret.uniform[$key]);
+			switch (schema[i][0]) {
+				case UniformType.Float: shader_set_uniform_f(res, ret.uniform[$key]); break;
+				case UniformType.FloatArr: shader_set_uniform_f_array(res, ret.uniform[$key]); break;
+				case UniformType.Int: shader_set_uniform_i(res, ret.uniform[$key]); break;
+				case UniformType.IntArr: shader_set_uniform_i_array(res, ret.uniform[$key]); break;
+				case UniformType.Matrix: shader_set_uniform_matrix(res); break;
+				case UniformType.MatrixArr: shader_set_uniform_matrix_array(res, ret.uniform[$key]); break;
+			}
 		}
 	};
 	

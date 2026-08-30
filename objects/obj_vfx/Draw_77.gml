@@ -7,6 +7,9 @@ var _height = surface_get_height(application_surface);
 var _pos = application_get_position();
 
 if (active_shader.composite) {
+	_pos_ping_pong[2] = _width;
+	_pos_ping_pong[3] = _height;
+	
 	if (!surface_exists(surface_a)) {
 		surface_a = surface_create(_width, _height);
 	}
@@ -25,7 +28,7 @@ if (active_shader.composite) {
 		
 	shader_set(shader_layer.asset);
 	var step_ret = shader_layer.step_eval(_width, _height);
-	shader_layer.draw_eval(step_ret, source, _pos);
+	shader_layer.draw_eval(step_ret, source, _pos_ping_pong);
 	shader_reset();
 		
 	surface_reset_target();
@@ -43,7 +46,7 @@ if (active_shader.composite) {
 		
 		shader_set(shader_layer.asset);
 		var step_ret = shader_layer.step_eval(_width, _height);
-		shader_layer.draw_eval(step_ret, source, _pos);
+		shader_layer.draw_eval(step_ret, source, _pos_ping_pong);
 		shader_reset();
 		
 		surface_reset_target();

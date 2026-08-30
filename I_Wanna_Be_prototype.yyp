@@ -669,6 +669,7 @@
     {"id":{"name":"sh_defaultNormal","path":"shaders/sh_defaultNormal/sh_defaultNormal.yy",},"order":0,},
     {"id":{"name":"sfx_heart_monitor_beep","path":"sounds/sfx_heart_monitor_beep/sfx_heart_monitor_beep.yy",},"order":31,},
     {"id":{"name":"dialogue_vacuum_obtain","path":"objects/dialogue_vacuum_obtain/dialogue_vacuum_obtain.yy",},"order":20,},
+    {"id":{"name":"ac_daylight","path":"animcurves/ac_daylight/ac_daylight.yy",},"order":3,},
     {"id":{"name":"spr_grace_portrait_cocky_2","path":"sprites/spr_grace_portrait_cocky_2/spr_grace_portrait_cocky_2.yy",},"order":2,},
     {"id":{"name":"sfx_grace_speech","path":"sounds/sfx_grace_speech/sfx_grace_speech.yy",},"order":0,},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":0,},

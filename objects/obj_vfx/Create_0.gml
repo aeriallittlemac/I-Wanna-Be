@@ -1,20 +1,26 @@
-uniform_types = array_create(UniformType.DELIM);
-uniform_types[UniformType.Float] = shader_set_uniform_f;
-uniform_types[UniformType.FloatArr] = shader_set_uniform_f_array;
-uniform_types[UniformType.Int] = shader_set_uniform_i;
-uniform_types[UniformType.IntArr] = shader_set_uniform_i_array;
-uniform_types[UniformType.Matrix] = shader_set_uniform_matrix;
-uniform_types[UniformType.MatrixArr] = shader_set_uniform_matrix_array;
+// Old anonymous wrapper dispatch method. Too slow?
+//uniform_types = array_create(UniformType.DELIM);
+//uniform_types[UniformType.Float] = function(uid, val) { shader_set_uniform_f(uid, val); };
+//uniform_types[UniformType.FloatArr] = function(uid, val) { shader_set_uniform_f_array(uid, val); };
+//uniform_types[UniformType.Int] = function(uid, val) { shader_set_uniform_i(uid, val); };
+//uniform_types[UniformType.IntArr] = function(uid, val) { shader_set_uniform_i_array(uid, val); };
+//uniform_types[UniformType.Matrix] = function(uid, val) { shader_set_uniform_matrix(uid); };
+//uniform_types[UniformType.MatrixArr] = function(uid, val) { shader_set_uniform_matrix_array(uid, val); };
 
 active_shader = noone;
 surface_a = noone;
 surface_b = noone;
+_pos_ping_pong = [0, 0, 0, 0];
 
-global.sh_ambience = [0.1, 0.1, 0.1];
+previous_game_time = global.game_time;
+previous_night = global.night;
+
+global.sh_ambience = [1.0, 1.0, 1.0];
 global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 global.shadow_blur_radius = 20;
 global.shadow_bleed = 0.125;
 global.shadow_weight = 0.0;
+global.time_based_lighting = true;
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -213,7 +219,7 @@ effects = {
 			}
 		};
 	}, function(step_ret, surface, pos) {
-		draw_surface(surface, pos[0], pos[1]);
+		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
 	}),
 	shadow: new ObjectShader(sh_shadow, [
 		[UniformType.FloatArr, "u_pos"], 
@@ -266,11 +272,65 @@ effects.shadow_rainbow_test = new CompositeObjectShader([
 	effects.shadow, effects.rainbow
 ]);
 
+T = 86400;
+
+function parse_time(time_string) {
+	var parts = string_split_ext(global.game_time, [":", " "], true);
+
+	var hour = real(parts[0]);
+	var minute = real(parts[1]);
+	var pm = string_lower(parts[2]) == "pm";
+
+	var t = 0; // Seconds since midnight.
+
+	if (hour == 12 && !pm) { // 12:00 AM
+		t = minute * 60;
+	} else if (hour == 12 && pm) {  // 12:00 PM
+		t = 12 * 60 * 60 + minute * 60;
+	} else if (pm) { // PM
+		t = (12 + hour) * 60 * 60 + minute * 60;
+	} else { // AM
+		t = hour * 60 * 60 + minute * 60;
+	}
+	
+	return t;
+}
+
+function parse_time_normalized(time_string) {
+	return parse_time(time_string) / T;
+}
+
+function update_time_based_lighting() {
+	var t_norm = global.night ? 0 : parse_time_normalized(global.game_time);
+
+	var r_channel = animcurve_get_channel(ac_daylight, "r");
+	var g_channel = animcurve_get_channel(ac_daylight, "g");
+	var b_channel = animcurve_get_channel(ac_daylight, "b");
+	var r = animcurve_channel_evaluate(r_channel, t_norm);
+	var g = animcurve_channel_evaluate(g_channel, t_norm);
+	var b = animcurve_channel_evaluate(b_channel, t_norm);
+
+	show_debug_message(string("Time-based lighting update: {0} {1} {2} {3}", t_norm, r, g, b));
+	with (obj_sh_light) {
+		if (!_dynamic) {
+			continue;
+		}
+		// Multiplying by 255 since the original intention was 
+		// to apply the colors to the ambience, but now it's for the window light.
+		image_blend = make_color_rgb(r * 255, g * 255, b * 255);
+	}
+
+	with (obj_npc) {
+		obj_vfx.effects.shadow.start(self);
+	}
+}
+
+effects.lighting.start();
+obj_vfx.effects.shadow.start(obj_player);
+
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();
-//effects.lighting.start();
-//obj_vfx.effects.shadow.start(obj_player);
 //effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));
