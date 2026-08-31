@@ -33,6 +33,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"INST_GRACES_DRAWER","properties":[],"isDnd":false,"objectId":{"name":"obj_graces_drawer","path":"objects/obj_graces_drawer/obj_graces_drawer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":8.111111,"scaleY":1.0526316,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":95.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D3A55D6","properties":[],"isDnd":false,"objectId":{"name":"obj_graces_drawer_interact_arrow_point","path":"objects/obj_graces_drawer_interact_arrow_point/obj_graces_drawer_interact_arrow_point.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":179.0,"y":52.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E201A7D","properties":[],"isDnd":false,"objectId":{"name":"obj_ground_vent","path":"objects/obj_ground_vent/obj_ground_vent.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":126.0,"y":111.673416,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_469C7FE","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"1.0",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_dynamic","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_illumination","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"10000.0",},
+          ],"isDnd":false,"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-27.0,"y":-19.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_42E46424","spriteId":{"name":"spr_graces_room","path":"sprites/spr_graces_room/spr_graces_room.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -55,6 +60,7 @@
     {"name":"INST_GRACES_DRAWER","path":"rooms/school_graces_room/school_graces_room.yy",},
     {"name":"inst_3D3A55D6","path":"rooms/school_graces_room/school_graces_room.yy",},
     {"name":"inst_7E201A7D","path":"rooms/school_graces_room/school_graces_room.yy",},
+    {"name":"inst_469C7FE","path":"rooms/school_graces_room/school_graces_room.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

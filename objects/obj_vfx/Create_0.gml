@@ -15,6 +15,11 @@ _pos_ping_pong = [0, 0, 0, 0];
 previous_game_time = global.game_time;
 previous_night = global.night;
 
+// Optimization to reduce redundant computation.
+objectshader_pos = array_create(16 * 4);
+objectshader_angles = array_create(16 * 2);
+ZEROS = array_create(max(array_length(objectshader_pos), array_length(objectshader_angles)));
+
 global.sh_ambience = [1.0, 1.0, 1.0];
 global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 global.shadow_blur_radius = 20;
@@ -231,22 +236,10 @@ effects = {
 		[UniformType.FloatArr, "u_objPos"],
 		[UniformType.FloatArr, "u_objSize"]
 	], function(object) {
-		var pos = array_create(16 * 4);
-		var angles = array_create(16 * 2);
-		
-		var i_pos = 0, i_angles = 0;
-		with (obj_sh_light) {
-			pos[i_pos++] = x;
-			pos[i_pos++] = y;
-			pos[i_pos++] = _radius;
-			pos[i_pos++] = _illumination;
-			angles[i_angles++] = _angle_lower;
-			angles[i_angles++] = _angle_upper;
-		}
 		return {
 			uniform: {
-				u_pos: pos,
-				u_angles: angles,
+				u_pos: objectshader_pos,
+				u_angles: objectshader_angles,
 				u_padding: 30.0,
 				u_blurRadius: global.shadow_blur_radius,
 				u_bleed: global.shadow_bleed,
@@ -262,7 +255,37 @@ effects = {
 				]
 			}
 		};
-	}, 30)
+	}, 30),
+	importance: new ArbitraryEffect(
+		function() {
+			self.previous_ambience = global.sh_ambience;
+		},
+		function() {
+			self.previous_ambience = global.sh_ambience;
+			
+			animcurve_get_channel(ac_importance_enter, "r").points[0].value = global.sh_ambience[0];
+			animcurve_get_channel(ac_importance_enter, "g").points[0].value = global.sh_ambience[1];
+			animcurve_get_channel(ac_importance_enter, "b").points[0].value = global.sh_ambience[2];
+			
+			obj_play_ac.start(ac_importance_enter, 3, function (values) {
+				global.sh_ambience = [values.r, values.g, values.b];
+				show_debug_message(global.sh_ambience);
+			});
+		},
+		function() {
+			animcurve_get_channel(ac_importance_exit, "r").points[0].value = global.sh_ambience[0];
+			animcurve_get_channel(ac_importance_exit, "g").points[0].value = global.sh_ambience[1];
+			animcurve_get_channel(ac_importance_exit, "b").points[0].value = global.sh_ambience[2];
+			
+			animcurve_get_channel(ac_importance_exit, "r").points[1].value = self.previous_ambience[0];
+			animcurve_get_channel(ac_importance_exit, "g").points[1].value = self.previous_ambience[1];
+			animcurve_get_channel(ac_importance_exit, "b").points[1].value = self.previous_ambience[2];
+			
+			obj_play_ac.start(ac_importance_exit, 3, function (values) {
+				global.sh_ambience = [values.r, values.g, values.b];
+			});
+		}
+	)
 };
 
 effects.lighting_spinner_test = new CompositePostProcessingShader([

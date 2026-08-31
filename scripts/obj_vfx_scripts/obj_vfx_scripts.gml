@@ -257,3 +257,17 @@ function MultiEffectEphemeral(
 		}
 	};
 }
+
+function ArbitraryEffect(_init, _cb_start, _cb_stop) constructor {
+	_init();
+	
+	cb_start = _cb_start;
+	cb_stop = _cb_stop;
+	
+	static start = function() {
+		cb_start();
+	};
+	static stop = function() {
+		cb_stop();
+	};
+}

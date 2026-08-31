@@ -28,8 +28,12 @@ if (obj_player.active_shader == noone) {
 //	hint_use(global.hints.meeting_mei);
 //}
 
+obj_vfx.effects.importance.start();
+
 function callback_1() {
 	obj_scribble.textbox_unnamed("You selected choice 1.");
+	
+	obj_vfx.effects.importance.stop();
 }
 
 function callback_2() {
