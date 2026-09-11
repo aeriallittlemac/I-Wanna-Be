@@ -1,4 +1,5 @@
 event_inherited();
+set_QTE_bgm(somber_theme);
 obj_scribble.textbox(
 	@"I'm working with you on the math problems.
 	[/page]Can't believe that it has to come to this...
@@ -31,47 +32,10 @@ obj_scribble.textbox_unnamed(
 	"
 )
 obj_scribble.textbox(
-	@"Put the paper down for a second, dumbass.
-	[/page]I'm talking to you.
-	[/page]The worksheets can wait.
+	@"Look at me, Bobby.
+	[/page]Help me. I'm scared and I don't know what to do.
+	[/page]But I need answers, and you're the only one I can turn to.
+	[/page]Please?
 	", 
 	"Brooklyn", spr_brooklyn_portrait_disgusted
-);
-
-obj_scribble.textbox(
-	@"*Clears throat
-	[/page]Anyways, I need to know for real if Gambino's cheating on me.
-	[/page]I happen to know that he won't be in his office this afternoon.
-	[/page]So, I want you to head over and go through his stuff.
-	
-	", 
-	"Brooklyn", spr_brooklyn_portrait_default
-);
-
-obj_scribble.textbox_unnamed(
-	@"You worry about if he catches you.
-	"
-)
-
-obj_scribble.textbox(
-	@"What part of [slant]he won't be in his office[/slant] do you not understand?
-	[/page]Look. I'll do the whole assignment if you go right now.
-	[/page]And please...
-	[/page]Please don't be another person who lets me down.
-	", 
-	"Brooklyn", spr_brooklyn_portrait_default
-);
-
-obj_scribble.textbox_unnamed(
-	@"You ask how you're going to get to his stuff.
-	"
-);
-
-obj_scribble.textbox(
-	@"Don't play dumb.
-	[/page]Gambino has spoken highly about your skills in this regard.
-	[/page]You've paid him and his office a visit before, no?
-	[/page]Surely, it can't be that difficult to do it again.
-	", 
-	"Brooklyn", spr_brooklyn_portrait_default
 );

@@ -43,14 +43,16 @@ else if global.day == 3{
 else if global.day == 4{
 	obj_scribble.textbox(
 		@"S-senpaaai!
-		[/page]I heard from someone else that the president,
-		[/page]that gray haired meanie with a s-smoking addiction...
-		[/page]...was lusting after my petite figure with his scary, judgemental eyes yesterday...
-		[/page]I don't have anything against him, b-but he's scary and he's not my type!
-		[/page]Please, s-senpai, won't you protect me?
+		[/page]Can you believe this?!
+		[/page]The mathalon?! Gambino-senpai can't get away with this!
+		[/page]That prize money, it's all I've looked forward to for the past 3 days!
+		[/page]How will I fund my yao- my hobbies!?
 		", 
 		"Weeabo Girl", spr_ashley_portrait_default
-	);	
+	);
+	obj_scribble.textbox_unnamed(
+	"Atrocious priorities."
+	)
 }
 else if global.day == 5{
 	obj_scribble.textbox(

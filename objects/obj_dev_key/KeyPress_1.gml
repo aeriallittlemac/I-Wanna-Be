@@ -86,10 +86,10 @@ if keyboard_check(TUESDAY_SEWING_CLUB){
 if keyboard_check_pressed(WEDNESDAY_CLASSROOM){
 	//global.day = 2;
 	global.day = 4;
-	//teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
+	teleport_npc(obj_mrchen, school_main_classroom, 61, 43, RIGHT);
 	//teleport_npc(obj_wei, school_main_classroom, 120, 78, DOWN);
 	teleport_npc(obj_gambino, school_main_classroom, 132, 43, DOWN);
-	teleport_npc(obj_mcronald, school_main_classroom, 130, 112, RIGHT);
+	teleport_npc(obj_wei, school_main_classroom, 140, 112, RIGHT);
 	teleport_npc(obj_mei, school_main_classroom, 196, 121, LEFT);
 	teleport_npc(obj_brooklyn, school_main_classroom, 196, 145, DOWN);
 	teleport_npc(obj_ashley, school_main_classroom, 42, 143, UP);

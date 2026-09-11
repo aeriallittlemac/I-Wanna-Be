@@ -23,14 +23,27 @@ else if global.day == 4{
 ", 
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
+	obj_scribble.textbox_unnamed(@"She puts up her usual poker face...
+	[/page]...but the vibes you're getting from her are even scarier than usual.
+	[/page]It would be in your best interest to retreat for now.
+	")
 	
 	}
 	else{
+		if audio_is_playing(qte_bgm){
+	obj_scribble.textbox(
+@"Help me, Bobby...
+", 
+		"Brooklyn", spr_brooklyn_portrait_default
+	);
+		}
+		else{
 	obj_scribble.textbox(
 @"...
 ", 
 		"Brooklyn", spr_brooklyn_portrait_default
 	);
+	}
 	}
 	
 	

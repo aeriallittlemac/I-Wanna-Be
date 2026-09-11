@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sewing_club_new",
+  "name": "sfx_close_door",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.18,
+  "volume": 0.6,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sewing_club_new.wav",
-  "duration": 42.67,
+  "soundFile": "sfx_close_door.wav",
+  "duration": 0.37229,
   "parent": {
-    "name": "Music",
-    "path": "folders/School Assets/Non-UI Sounds/Music.yy",
+    "name": "sfx",
+    "path": "folders/UI/Pause Menu/sfx.yy",
   },
 }

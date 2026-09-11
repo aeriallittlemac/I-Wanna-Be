@@ -16,7 +16,7 @@ obj_scribble.textbox_unnamed(
 );
 obj_scribble.textbox(
 	@"No need to worry about the fine details, B-dawg.
-	[/page]Who reads anyways? Here’s a pen.
+	[/page]Who reads anyways? Here's a pen.
 	", 
 	"Jake", spr_jake_portrait_default
 );

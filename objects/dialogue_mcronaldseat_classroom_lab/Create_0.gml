@@ -117,11 +117,10 @@ else if global.day == 3{
 }
 else if global.day == 4{
 	obj_scribble.textbox(
-		@"Now that Mei has mentioned that...
-		[/page]McRonald has noticed that the president's gaze has changed recently.
+		@"McRonald has noticed that the president's gaze has changed recently.
 		[/page]Not of his usual harshness, but rather a soft, chud-like appearance-
 		[/page]-similar to whenever he started dating Brooklyn!
-		[/page]Has the Don's gaze wanders onto brunette bushels? What a world!
+		[/page]Has the Don's gaze wanders onto blonder bushels? What a world!
 		", 
 		"McRonald", spr_mcronald_portrait_default
 	);	

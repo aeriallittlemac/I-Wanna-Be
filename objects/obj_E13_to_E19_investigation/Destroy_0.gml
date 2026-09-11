@@ -1,1 +1,2 @@
+QuestCompleted(global.quest_list.gambino_investigation);
 game_NewCutscene(obj_gambino_investigation_setup);

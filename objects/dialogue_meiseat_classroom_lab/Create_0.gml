@@ -11,33 +11,14 @@ else if global.day == 3{
 		"Mei", spr_mei_portrait_default
 	);
 }
-else if global.day == 4{	
+else if global.day == 4{
 	obj_scribble.textbox_converse(
-		@"*whispers
-		[/page]Hey, did you hear?
+		@"OMG!
 		[/page]I can't believe the president would do that!
 		", 
 	"Mei", [
 		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
-		[spr_mei_portrait_default, obj_portrait_mock_right_1]
-	]
-	);
-	
-	obj_scribble.textbox_converse(
-		@"Hear, hear!
-		", 
-	"McRonald", [
-		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
-		[spr_mei_portrait_default, obj_portrait_mock_right_1]
-	]
-	);
-	obj_scribble.textbox_converse(
-		@"The fact that it happened with her is what's so mind boggling!
-		[/page]Poor Brooklyn, losing out to that weeabo...
-		", 
-	"Mei", [
-		[spr_mcronald_portrait_default, obj_portrait_mock_left_1], 
-		[spr_mei_portrait_default, obj_portrait_mock_right_1]
+		[spr_mei_portrait_shocked, obj_portrait_mock_right_1]
 	]
 	);
 	

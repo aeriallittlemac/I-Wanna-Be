@@ -11,23 +11,15 @@ if global.day == 2{
 }
 else if global.day == 3{
 	
-	if global.storylines.Grace.truth_or_dare_confession{
 	
-		if !global.storylines.Grace.deny_rumor{
-			
-		}
-		else{
-			
-		}
-	
-	}
-	else{
-		
-		global.storylines.Main_Classroom.Day_Three.talked_to.ashley = true;
-	}
 }
 else if global.day == 4{
-	
+	obj_scribble.textbox(
+	@"*Muttering to self
+	[/page]The world has gone mad.
+	[/page]Lord, what do I do?
+	", 
+	"Wei", spr_wei_portrait_confusion);
 }
 else if global.day == 5{
 	obj_scribble.textbox(

@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "cutscene_wednesday_classroom_setup",
-  "spriteId": null,
+  "name": "obj_choice_1_mock_0",
+  "spriteId": {
+    "name": "spr_black_ui_dialogue_choice",
+    "path": "sprites/spr_black_ui_dialogue_choice/spr_black_ui_dialogue_choice.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "new wednesday",
-    "path": "folders/Dialogue_Lines/Day 4 - class and after/Brooklyn's route/new wednesday.yy",
+    "name": "Mock 0",
+    "path": "folders/UI/Dialogue System/Mocks/Mock 0.yy",
   },
 }

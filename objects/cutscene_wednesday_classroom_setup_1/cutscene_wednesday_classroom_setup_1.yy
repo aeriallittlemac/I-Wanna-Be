@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "cutscene_wednesday_classroom_setup",
+  "name": "cutscene_wednesday_classroom_setup_1",
   "spriteId": null,
   "solid": false,
   "visible": true,

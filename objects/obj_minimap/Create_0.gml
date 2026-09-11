@@ -189,13 +189,13 @@ global.quest_list = {
 	},
 	//day 4
 	
-	figure_out_Brooklyns_rumor : {
-		description : "Figure out what's going on.",
+	gambino_investigation : {
+		description : "Find proof that Gambino is cheating.",
 		icon: spr_main_quest_icon,
-		quest_room : school_main_classroom,
+		quest_room : school_B1,
 		quest_room_width : 1620,
 		//1620 is default
-		quest_x : 1330,
+		quest_x : 1400,
 		quest_y : 104,
 	
 	},
