@@ -1,5 +1,5 @@
 if player_facing_self && !global.cutscene && 
-!global.in_dialogue && entityActivateScript != -1&&!global.in_slideshow && !instance_exists(obj_rhythm_game_new){
+!global.in_dialogue && entityActivateScript != -1 && !instance_exists(obj_rhythm_game_new){
 	script_execute(entityActivateScript, entityActivateArg);
 	show_debug_message(self.id);
 	show_debug_message(possibility);

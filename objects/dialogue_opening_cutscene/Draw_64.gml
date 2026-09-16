@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_opening, 0, 0, 0, minimap_scale * RESOLUTION_W / sprite_get_width(spr_opening), minimap_scale * 152 / sprite_get_height(spr_opening) , 0, c_white, 1 );

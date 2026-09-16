@@ -10,9 +10,8 @@ obj_scribble.textbox(
 );
 obj_scribble.textbox(
 	@"So you are gonna forget everything you just saw,
-	[/page]Or I'll make sure everyone in this school knows that I saw you,
-	[/page]in the middle of the night...
-	[/page][audio_stop_all][sfx_crowd_gasp]Raw dogging a teddy bear by the kitchen counter.
+	[/page]Or I'll make sure everyone in this school thinks...
+	[/page][audio_stop_all][sfx_crowd_gasp]you're just a [scale,1.5]worthless. disgusting. pervert[/].
 	", 
 	"Grace", spr_grace_portrait_default
 );

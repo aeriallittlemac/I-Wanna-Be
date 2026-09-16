@@ -6,8 +6,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"Good.
 	[/page]I'll leave the class to Mr. Chen now.
-	[/page]Do not disappoint me.
-	"
+	[/page]Drake, ake yourself and make sure these insetti actually cooperate."
 	, 
 	"Gambino", spr_gambino_portrait_default
 );

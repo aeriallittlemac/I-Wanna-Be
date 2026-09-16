@@ -1,10 +1,9 @@
 event_inherited();
 
 obj_scribble.textbox(
-	@"I think someone here does not understand.
-	[/page]I think I will repeat myself.
-	[/page]I will skin anybody who dirupts the order of the classroom.
-	[/page]Do we understand?
+	@"Hm. It would seem some of us do not.
+	[/page]Let us try again.
+	[/page]Do. We. understand?
 	"
 	, 
 	"Gambino", spr_gambino_portrait_default

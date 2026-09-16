@@ -1,5 +1,5 @@
 if player_facing_self && !global.cutscene && 
-!global.in_dialogue &&!global.in_slideshow && !instance_exists(obj_rhythm_game_arrows)
+!global.in_dialogue  && !instance_exists(obj_rhythm_game_arrows)
 &&!(audio_is_playing(song_band_first_song)){
 	obj_player.x = x+18;
 	//obj_player.y = y+5;

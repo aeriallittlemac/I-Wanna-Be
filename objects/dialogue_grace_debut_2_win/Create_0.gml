@@ -1,46 +1,36 @@
 event_inherited();
-set_QTE_bgm(important_decision_looping);
+//stripped down version of Grace's theme
+audio_sound_set_track_position(graces_theme_drums, 4.3636);
+set_QTE_bgm(graces_theme_drums);
+audio_sound_gain(graces_theme_drums, 0.5, 0);
+audio_sound_set_track_position(graces_theme_bass, 4.3636);
+audio_play_sound(graces_theme_bass, 1, true);
+audio_sound_gain(graces_theme_bass, 0.5, 0);
+
 obj_scribble.textbox_unnamed(
-	@"You tell her that no one will believe her...
-	[/page]Because you've been secretly recording this conversation.
-	[/page](You're only bluffing)
+	@"You ask her what her plan is, exactly.
 	"
 	);
+	
 obj_scribble.textbox(
-	@"What?
-	[/page]You-
+	@"Well, uh...
 	", 
 	"Grace", spr_grace_portrait_default
 );
-
 obj_scribble.textbox(
-	@"[audio_stop_all][jitter]You bitch![/jitter]
-	[/page][jitter]How could you?![/jitter]
-	[/page][jitter]Delete the recordings, right nyah![/jitter]
+	@"I'll tell everyone, duh!
 	", 
-	"Grace", spr_grace_portrait_crying
+	"Grace", spr_grace_portrait_cocky
 );
 
 obj_scribble.textbox_unnamed(
-	"You politely refuse."
+	@"[slant]Tell them what?[/slant]
+	"
 	);
-obj_scribble.textbox(
-	@"Please, don't tell anyone about this please please please.
-	[/page]I'll...I'll do whatever you ask me.
-	[/page]I'll even take my clothes off if you promise to stay quiet about this!!!
+	
+	obj_scribble.textbox(
+	@"[music_set_gain,graces_theme_bass,0,0]That, uh...That I- no-
+	[/page]That [scale,1.5]YOU,[/] uh...
 	", 
-	"Grace", spr_grace_portrait_crying
-);
-obj_scribble.textbox_unnamed(
-	"You ask her to go back to sleep and leave you alone."
-);
-obj_scribble.textbox(
-	@"...
-	[/page]You promise you won't tell?
-	", 
-	"Grace", spr_grace_portrait_crying
-);
-
-obj_scribble.textbox_unnamed(
-	"After consoling her for 30 minutes, you finally head back to your room..."
+	"Grace", spr_grace_portrait_default
 );

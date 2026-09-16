@@ -23,6 +23,23 @@ function play_music(elem, params, idx) {
     {
         audio_play_sound(sound_asset, 1, true);
     }
+	
+	
+}
+
+function music_set_gain(elem, params, idx) {
+	//audio_play_sound(params[0], 1, true);
+	var sound_name = params[0];
+	var gain = real(params[1]);
+	var time = real(params[2]);
+    var sound_asset = asset_get_index(sound_name);
+
+    if (sound_asset != -1)
+    {
+        audio_sound_gain(sound_asset, gain, time);
+    }
+	
+	
 }
 
 function instance_create_object(elem, params, idx) {
@@ -80,6 +97,7 @@ scribble_typists_add_event("in_dialogue_force_set", in_dialogue_force_set);
 scribble_typists_add_event("camera_shake", camera_shake);
 scribble_typists_add_event("red_flash", red_flash);
 scribble_typists_add_event("play_music", play_music);
+scribble_typists_add_event("music_set_gain", music_set_gain);
 scribble_typists_add_event("audio_stop_all", stop_audio);
 scribble_typists_add_event("instance_create_object",instance_create_object);
 scribble_typists_add_event("instance_destroy_object",instance_destroy_object);

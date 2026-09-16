@@ -194,6 +194,7 @@ effects = {
 		
 		var i_pos = 0, i_color = 0, i_bloom = 0;
 		with (obj_sh_light) {
+			show_debug_message(x);
 			pos[i_pos++] = x;
 			pos[i_pos++] = y;
 			pos[i_pos++] = _radius;

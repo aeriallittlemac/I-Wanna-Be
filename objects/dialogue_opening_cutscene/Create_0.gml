@@ -1,5 +1,14 @@
 event_inherited();
-scr_text("Your first day at the boarding school.");
-scr_text("You hesitate whether or not you should go in...");
-scr_text("but you remember that somebody is supposed to come pick you up.");
-scr_text("You must be Bobby Johns. Come on in!", spr_wei_icon, 0);
+minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
+set_QTE_bgm(morning);
+obj_scribble.textbox_unnamed(
+	@"Your first day at the boarding school.
+	[/page]You hesitate whether or not you should go in...
+	[/page]but you remember that somebody is supposed to come pick you up.
+	"
+);
+
+obj_scribble.textbox(
+	"You must be Bobby Johns. Come on in!", 
+	"Wei", spr_wei_portrait_default
+);

@@ -3,7 +3,10 @@ obj_scribble.textbox_unnamed(
 	"You decide to sit down on the only free seat, but...");
 	
 obj_scribble.textbox(
-	@"W-why the fuck are you sitting next to me?
+	@"Hey! The fuck you think you're doing?
+	[/page]This corner's girls only! We don't want your gross-ass stench over here!
+	[/page]Remember what I told you, pervert?
+	[/page]Don't make me destroy you, Bobby.
 	", 
 	"Grace", spr_grace_portrait_angry
 );
@@ -15,7 +18,7 @@ obj_scribble.textbox(
 	"Chinese girl", spr_mei_portrait_uncomfortable_smile
 	)
 obj_scribble.textbox(
-	@"Don't you think that's a hard ask, sis?
+	@"Don't be unreasonable, sis!
 	", 
 	"Wei", spr_wei_portrait_default
 );
@@ -26,7 +29,8 @@ obj_scribble.textbox(
 	"Grace", spr_grace_portrait_cocky
 	)
 obj_scribble.textbox(
-	@"How could you do this to the new kid?
+	@"How could you subject the new kid to the torture...
+	[/page]of sitting next to that crazy woman?
 	[/page]Don't you have any humanity?
 	", 
 	"Wei", spr_wei_portrait_default

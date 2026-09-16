@@ -11,12 +11,12 @@ obj_scribble.textbox_unnamed(
 );
 obj_scribble.textbox(
 	@"Oh.
-	[/page]So you're not just an ugly creep, you're a lying little f****t too?
+	[/page]So you're not just an ugly creep, you're a lying little **** too?
 	", 
 	"Grace", spr_grace_portrait_default
 );
 obj_scribble.textbox_unnamed(
-	"I actually like girls-"
+	"I-"
 );
 obj_scribble.textbox(
 	@"Shut up, nobody cares.
