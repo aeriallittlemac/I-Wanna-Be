@@ -17,7 +17,7 @@ obj_scribble.textbox_unnamed(
 	"
 	);
 obj_scribble.textbox(
-	@"Little pervert junior, gonna cry?
+	@"Look at little pervert junior, gonna cry?
 	", 
 	"Grace", spr_grace_portrait_cocky_2
 );

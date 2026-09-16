@@ -2,6 +2,7 @@ event_inherited();
 audio_stop_all();
 audio_play_sound(scary_ambience, 1, true);
 QuestCompleted(global.quest_list.midnight_snack);
+obj_vfx.effects.horror_lighting.start()
 obj_scribble.textbox(
 	"You. Saw?", 
 	"Grace", spr_grace_portrait_default

@@ -1,4 +1,5 @@
 event_inherited();
+obj_vfx.effects.horror_lighting.stop()
 audio_stop_all();
 set_QTE_bgm(graces_theme);
 instance_create_depth(0,0,0,player_n_grace);

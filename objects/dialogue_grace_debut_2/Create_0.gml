@@ -11,7 +11,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"So you are gonna forget everything you just saw,
 	[/page]Or I'll make sure everyone in this school thinks...
-	[/page][audio_stop_all][sfx_crowd_gasp]you're just a [scale,1.5]worthless. disgusting. pervert[/].
+	[/page][instance_create_object,obj_horror_effect_start][audio_stop_all][sfx_crowd_gasp]you're just a [scale,1.5]worthless. disgusting. pervert[/].
 	", 
 	"Grace", spr_grace_portrait_default
 );
