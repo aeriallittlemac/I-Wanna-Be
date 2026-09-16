@@ -370,6 +370,7 @@
     {"id":{"name":"spr_main_classroom_row_2","path":"sprites/spr_main_classroom_row_2/spr_main_classroom_row_2.yy",},"order":2,},
     {"id":{"name":"spr_inventory_new","path":"sprites/spr_inventory_new/spr_inventory_new.yy",},"order":4,},
     {"id":{"name":"dialogue_theres_your_dorm_room_2","path":"objects/dialogue_theres_your_dorm_room_2/dialogue_theres_your_dorm_room_2.yy",},"order":3,},
+    {"id":{"name":"sh_invert","path":"shaders/sh_invert/sh_invert.yy",},"order":6,},
     {"id":{"name":"spr_jam_room","path":"sprites/spr_jam_room/spr_jam_room.yy",},"order":0,},
     {"id":{"name":"obj_player_shading_test","path":"objects/obj_player_shading_test/obj_player_shading_test.yy",},"order":53,},
     {"id":{"name":"cutscene_outside_lab_mcronald","path":"objects/cutscene_outside_lab_mcronald/cutscene_outside_lab_mcronald.yy",},"order":3,},

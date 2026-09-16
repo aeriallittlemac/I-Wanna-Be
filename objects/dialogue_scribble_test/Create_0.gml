@@ -28,12 +28,24 @@ if (obj_player.active_shader == noone) {
 //	hint_use(global.hints.meeting_mei);
 //}
 
-obj_vfx.effects.importance.start();
+//obj_vfx.effects.importance.start();
 
 function callback_1() {
 	obj_scribble.textbox_unnamed("You selected choice 1.");
 	
-	obj_vfx.effects.importance.stop();
+	//obj_vfx.effects.importance.stop();
+	
+	call_later(2, time_source_units_seconds, function() { obj_vfx.effects.horror.start(); });
+	call_later(4, time_source_units_seconds, function() { obj_vfx.effects.horror_lighting.start(); });
+	call_later(6, time_source_units_seconds, function() { obj_vfx.effects.horror_lighting.stop(); obj_vfx.effects.heat_haze.start(); });
+	call_later(8, time_source_units_seconds, function() { obj_vfx.effects.heat_haze.stop(); obj_vfx.effects.pixelate.start(); });
+	call_later(10, time_source_units_seconds, function() { obj_vfx.effects.posterize.start(); });
+	call_later(12, time_source_units_seconds, function() { obj_vfx.effects.rgb_noise.start(); });
+	call_later(14, time_source_units_seconds, function() { obj_vfx.effects.screen_shake.start(); });
+	call_later(16, time_source_units_seconds, function() { obj_vfx.effects.underwater.start(); });
+	call_later(18, time_source_units_seconds, function() { obj_vfx.effects.vignette.start(); });
+	call_later(20, time_source_units_seconds, function() { obj_vfx.effects.white_noise.start(); });
+	call_later(22, time_source_units_seconds, function() { obj_vfx.effects.white_noise.stop(); });
 }
 
 function callback_2() {

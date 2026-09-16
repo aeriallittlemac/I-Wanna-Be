@@ -34,7 +34,16 @@ effects_assets = {
 	rain_drop: fx_create("_effect_windblown_particles"),
 	rain_colorize: fx_create("_filter_colourise"),
 	lightning_contrast: fx_create("_filter_contrast"),
-	lightning_edge: fx_create("_filter_edgedetect")
+	lightning_edge: fx_create("_filter_edgedetect"),
+	
+	heat_haze: fx_create("_filter_heathaze"),
+	pixelate: fx_create("_filter_pixelate"),
+	posterize: fx_create("_filter_posterise"),
+	rgb_noise: fx_create("_filter_rgbnoise"),
+	screen_shake: fx_create("_filter_screenshake"),
+	underwater: fx_create("_filter_underwater"),
+	vignette: fx_create("_filter_vignette"),
+	white_noise: fx_create("_filter_whitenoise")
 };
 
 effects = {
@@ -194,7 +203,6 @@ effects = {
 		
 		var i_pos = 0, i_color = 0, i_bloom = 0;
 		with (obj_sh_light) {
-			show_debug_message(x);
 			pos[i_pos++] = x;
 			pos[i_pos++] = y;
 			pos[i_pos++] = _radius;
@@ -286,15 +294,78 @@ effects = {
 				global.sh_ambience = [values.r, values.g, values.b];
 			});
 		}
-	)
+	),
+	horror: new PostProcessingShader(sh_invert, [
+	], function(surface_width, surface_height) {
+		return {};
+	}, function(step_ret, surface, pos) {
+		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
+	}),
+	heat_haze: new Effect(effects_assets.heat_haze, {
+		g_Distort1Speed : 0.01, 
+		g_Distort2Speed : 0.03, 
+		g_Distort1Scale : [ 13.30, 1.30 ], 
+		g_Distort2Scale : [ 33.30, 3.30 ], 
+		g_Distort1Amount : 2, 
+		g_Distort2Amount : 4, 
+		g_ChromaSpreadAmount : 0.50, 
+		g_CamOffsetScale : 1
+	}, "effect_heat_haze"),
+	pixelate: new Effect(effects_assets.pixelate, {
+		g_CellSize : 4
+	}),
+	posterize: new Effect(effects_assets.posterize, {
+		g_ColourLevels : 4
+	}),
+	rgb_noise: new Effect(effects_assets.rgb_noise, {
+		g_RGBNoiseIntensity : 0.50, 
+		g_RGBNoiseAnimation : 1, 
+		g_RGBNoiseColour : [ 1, 1, 1, 1 ]
+	}),
+	screen_shake: new Effect(effects_assets.screen_shake, {
+		g_Magnitude : 10, 
+		g_ShakeSpeed : 0.25
+	}),
+	underwater: new Effect(effects_assets.underwater, {
+		g_TintCol : [ 0.50, 0.80, 1, 1 ], 
+		g_Distort1Speed : 0.01, 
+		g_Distort2Speed : 0.03, 
+		g_Distort1Scale : [ 20, 2 ], 
+		g_Distort2Scale : [ 100, 10 ], 
+		g_Distort1Amount : 3, 
+		g_Distort2Amount : 6, 
+		g_ChromaSpreadAmount : 1, 
+		g_CamOffsetScale : 1, 
+		g_GlintCol : [ 0.10, 0.10, 0.10, 1 ], 
+		g_AddCol : [ 0,0.10,0.20,1 ]
+	}),
+	vignette: new Effect(effects_assets.vignette, {
+		g_VignetteEdges : [ 0.50, 1.20 ], 
+		g_VignetteSharpness : 2
+	}),
+	white_noise: new Effect(effects_assets.white_noise, {
+		g_WhiteNoiseIntensity : 0.50, 
+		g_WhiteNoiseAnimation : 1
+	}),
 };
 
+effects.horror_lighting = new CompositePostProcessingShader([
+	effects.lighting, effects.horror
+]);
 effects.lighting_spinner_test = new CompositePostProcessingShader([
 	effects.spinner, effects.lighting
 ]);
 effects.shadow_rainbow_test = new CompositeObjectShader([
 	effects.shadow, effects.rainbow
 ]);
+
+effects.lighting.start();
+obj_vfx.effects.shadow.start(obj_player);
+
+//effects.rain.start();
+//effects.romance.start();
+//effects.spinner.start();
+//effects.lighting_spinner_test.start();
 
 T = 86400;
 
@@ -348,13 +419,5 @@ function update_time_based_lighting() {
 		obj_vfx.effects.shadow.start(self);
 	}
 }
-
-effects.lighting.start();
-obj_vfx.effects.shadow.start(obj_player);
-
-//effects.rain.start();
-//effects.romance.start();
-//effects.spinner.start();
-//effects.lighting_spinner_test.start();
 
 //show_debug_message(fx_get_parameters(layer_get_fx("Rooms")));
