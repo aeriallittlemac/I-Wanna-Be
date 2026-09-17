@@ -1,4 +1,5 @@
 event_inherited();
+obj_scribble.black_filter = false;
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
 set_QTE_bgm(morning);
 obj_scribble.textbox_unnamed(

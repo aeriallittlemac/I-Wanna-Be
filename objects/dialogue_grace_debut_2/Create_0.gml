@@ -1,4 +1,5 @@
 event_inherited();
+obj_scribble.black_filter = false;
 npc_animate(obj_grace, obj_grace.sprite[RIGHT])
 obj_grace.sprite_index = obj_grace.sprite[RIGHT];
 obj_grace.face = RIGHT;
@@ -11,7 +12,12 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"So you are gonna forget everything you just saw,
 	[/page]Or I'll make sure everyone in this school thinks...
-	[/page][instance_create_object,obj_horror_effect_start][audio_stop_all][sfx_crowd_gasp]you're just a [scale,1.5]worthless. disgusting. pervert[/].
 	", 
 	"Grace", spr_grace_portrait_default
+);
+
+obj_scribble.textbox(
+	@"[instance_create_object,obj_horror_effect_start][audio_stop_all][sfx_crowd_gasp]That you're just a [scale,1.5]worthless. disgusting. pervert[/].
+	", 
+	"Grace", spr_grace_portrait_scary
 );

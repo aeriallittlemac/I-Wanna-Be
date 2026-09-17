@@ -7,7 +7,7 @@
     "path": "sprites/spr_spotlight/spr_spotlight.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -1,4 +1,5 @@
 event_inherited();
+obj_scribble.black_filter = false;
 //stripped down version of Grace's theme
 audio_sound_set_track_position(graces_theme_drums, 4.3636);
 set_QTE_bgm(graces_theme_drums);

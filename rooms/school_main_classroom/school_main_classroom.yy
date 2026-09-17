@@ -36,13 +36,13 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47FD017F","properties":[],"isDnd":false,"objectId":{"name":"obj_classroom_blackboard_text","path":"objects/obj_classroom_blackboard_text/obj_classroom_blackboard_text.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":87.0,"y":6.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7299E4D1","properties":[],"isDnd":false,"objectId":{"name":"obj_bobbys_table","path":"objects/obj_bobbys_table/obj_bobbys_table.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":-0.13988231,"scaleX":3.6666667,"scaleY":0.57894737,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0002,"y":131.22183,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B28753C","properties":[],"isDnd":false,"objectId":{"name":"obj_pile_of_books","path":"objects/obj_pile_of_books/obj_pile_of_books.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":230.97949,"y":79.08006,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13C7FF3B","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_classroom_light_1","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_lower","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"-45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_upper","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"0.25",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_dynamic","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"True",},
           ],"isDnd":false,"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-8.0,"y":50.49913,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2BF6A7B4","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_classroom_light_2","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_lower","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"-45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_angle_upper","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"45.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"0.25",},
@@ -70,8 +70,8 @@
     {"name":"inst_47FD017F","path":"rooms/school_main_classroom/school_main_classroom.yy",},
     {"name":"inst_7299E4D1","path":"rooms/school_main_classroom/school_main_classroom.yy",},
     {"name":"inst_6B28753C","path":"rooms/school_main_classroom/school_main_classroom.yy",},
-    {"name":"inst_13C7FF3B","path":"rooms/school_main_classroom/school_main_classroom.yy",},
-    {"name":"inst_2BF6A7B4","path":"rooms/school_main_classroom/school_main_classroom.yy",},
+    {"name":"inst_classroom_light_1","path":"rooms/school_main_classroom/school_main_classroom.yy",},
+    {"name":"inst_classroom_light_2","path":"rooms/school_main_classroom/school_main_classroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

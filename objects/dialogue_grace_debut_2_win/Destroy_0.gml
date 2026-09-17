@@ -1,4 +1,5 @@
 event_inherited();
+obj_scribble.black_filter = true;
 audio_stop_all();
 audio_play_sound(sfx_thinking, 1, false);
 game_wait(2.3);

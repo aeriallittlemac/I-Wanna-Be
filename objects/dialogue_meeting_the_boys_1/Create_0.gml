@@ -1,4 +1,9 @@
 event_inherited();
+obj_scribble.mcronald_y_offset = 160;
+obj_wei.sprite_index = obj_wei.sprite[UP];
+obj_wei.face = UP;
+audio_play_sound(sfx_slide_whistle, 1, false);
+alarm[0] = 1;
 set_QTE_bgm(mcronald_theme);
 obj_scribble.textbox(
 	@"You don't say.

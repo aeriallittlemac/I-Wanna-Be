@@ -1,5 +1,9 @@
 event_inherited();
-obj_vfx.effects.horror_lighting.stop()
+obj_scribble.black_filter = true;
+obj_vfx.effects.white_noise.stop();
+obj_vfx.effects.horror.stop()
+global.game_time = "12:00 am";
+global.night = true;
 audio_stop_all();
 set_QTE_bgm(graces_theme);
 instance_create_depth(0,0,0,player_n_grace);

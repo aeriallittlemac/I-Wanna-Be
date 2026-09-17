@@ -1,4 +1,5 @@
 event_inherited();
+obj_scribble.black_filter = false;
 //audio_sound_set_track_position(graces_theme_drums, 4.3636);
 set_QTE_bgm(graces_theme_drums);
 audio_sound_gain(graces_theme_drums, 0.5, 0);
@@ -35,7 +36,7 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	@"[scale,1.5]Asshole![/] They'll still believe it!
+	@"[instance_create_object,obj_screen_shake_effect][scale,1.5]Asshole![/] They'll still believe it!
 	[/page]I just... Remember this, r****d!
 	[/page]If you [scale,1.5]EVER[/] say a [scale,1.5]WORD[/] about this, I will tell [scale,1.5]ALL![/]
 	", 

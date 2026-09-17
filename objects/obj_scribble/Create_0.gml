@@ -61,7 +61,7 @@ function textbox_unnamed(text, sfx_speech=sfx_bobby_speech, async=false, textbox
 	
 	create_choices(choices);
 }
-
+mcronald_y_offset = 0;
 function textbox(text, name, portrait_sprite, sfx_speech=sfx_bobby_speech, async=false, textbox=TEXTBOX_DEFAULT, namebox=NAMEBOX_DEFAULT, bounds=BOUNDS_DEFAULT, name_bounds=NAME_DEFAULT, portrait_bounds=PORTRAIT_DEFAULT, typist=TYPIST_DEFAULT, choices=[]) {
 	if (active) {
 		array_insert(queue_chain, 0, {
@@ -129,7 +129,7 @@ function draw_portrait(sprite, bounds_key) {
 	var portrait_scale = layout[$bounds_key].height * SCALE / sprite_get_height(sprite);
 	var x_offset = sprite_get_xoffset(sprite) * portrait_scale;
 	var y_offset = sprite_get_yoffset(sprite) * portrait_scale;
-	draw_sprite_ext(sprite, -1, layout[$bounds_key].x * SCALE + x_offset, layout[$bounds_key].y * SCALE + y_offset, portrait_scale, portrait_scale, 0, c_white, 1);
+	draw_sprite_ext(sprite, -1, layout[$bounds_key].x * SCALE + x_offset, layout[$bounds_key].y * SCALE + y_offset + mcronald_y_offset, portrait_scale, portrait_scale, 0, c_white, 1);
 }
 
 active_dialogue = noone;

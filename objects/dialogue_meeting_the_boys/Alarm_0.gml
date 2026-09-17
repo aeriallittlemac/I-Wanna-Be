@@ -1,0 +1,1 @@
+mcronalds_lighting();

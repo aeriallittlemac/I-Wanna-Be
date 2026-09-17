@@ -1,5 +1,7 @@
 event_inherited();
 audio_stop_all();
+obj_scribble.black_filter = true;
+reverse_gambinos_lighting();
 npc_move_to_pos(obj_gambino, 1, 0, 216, obj_gambino.y);
 npc_move_to_pos(obj_drake, 0,1, obj_drake.x, obj_drake.y + 15);
 teleport_npc(obj_gambino, noone, 0, 0, DOWN);
