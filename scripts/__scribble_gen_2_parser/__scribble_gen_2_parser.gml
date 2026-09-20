@@ -1379,7 +1379,7 @@ function __scribble_gen_2_parser()
                         //Replace with hyphen -
                         _glyph_ord = 0x002D;
                     }
-                    else if ((_glyph_ord == 0x2018)  //Start single quote ‘
+                    else if ((_glyph_ord == 0x2018)  //Start single quote '
                          ||  (_glyph_ord == 0x2019)) //End single quote '
                     {
                         //Replace with single quote '

@@ -1,7 +1,15 @@
 enum UniformType {
 	Float, FloatArr, Int, IntArr, Matrix, MatrixArr, DELIM
 }
+function hex_to_rgb(_hex){
 
+   var _r = (_hex >> 16) & 0xFF;
+    var _g = (_hex >> 8) & 0xFF;
+    var _b = _hex & 0xFF;
+    
+   return [ _r/255,_g/255,_b/255];
+
+}
 function PostProcessingShader(_shader_asset, _schema, _step, _draw) constructor {
 	asset = _shader_asset;
 	schema = _schema;

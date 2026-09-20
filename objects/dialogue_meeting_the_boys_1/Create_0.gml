@@ -1,4 +1,5 @@
 event_inherited();
+teleport_npc(obj_mcronald, school_main_classroom, 130, 112, LEFT);
 obj_scribble.mcronald_y_offset = 160;
 obj_wei.sprite_index = obj_wei.sprite[UP];
 obj_wei.face = UP;

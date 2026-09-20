@@ -1,10 +1,5 @@
 event_inherited();
-global.cutscene = false;
-global.game_time = "3:30 pm";
-teleport_npc(obj_wei, school_1F, 815, 107, RIGHT);
-teleport_player(865, 107, school_1F, cutscene_wei_chat_after_club);
-teleport_npc(obj_ashley, noone, 0, 0, DOWN);
-teleport_npc(obj_mei, noone, 0, 0, DOWN);
-teleport_npc(obj_brooklyn, noone, 0, 0, DOWN);
-teleport_npc(obj_grace, noone, 0, 0, DOWN);
 obj_vfx.effects.romance.stop();
+instance_create_depth(0,0,0,obj_mcronald_lighting);
+//game_wait(1);
+game_NewDialogue(dialogue_brooklyn_dating_sim_4);

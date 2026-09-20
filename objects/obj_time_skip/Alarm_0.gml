@@ -1,12 +1,15 @@
 screen_index++;
-if screen_index>=sprite_get_number(spr_time_skip){
+if screen_index>=sprite_get_number(spr_time_skip)-1{
 	instance_destroy(self);
 }
 else{
 	if screen_index == sprite_get_number(spr_time_skip)-4{
+		if (room != target_rm){
+		room_goto(target_rm);
+		}
 		obj_player.x = target_x;
 		obj_player.y = target_y;
 		game_camera_change_settings(obj_player, -1);
 	}
-alarm[0] = 20;
+alarm[0] = 5;
 }

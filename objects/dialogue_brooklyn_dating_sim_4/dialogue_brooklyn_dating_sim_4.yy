@@ -1,14 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "cutscene_wei_chat_after_class_2",
+  "name": "dialogue_brooklyn_dating_sim_4",
   "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "dialogue_scribble_parent",
+    "path": "objects/dialogue_scribble_parent/dialogue_scribble_parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,11 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "new monday",
-    "path": "folders/Dialogue_Lines/Day 2 - day/new monday.yy",
+    "name": "sewing_club",
+    "path": "folders/Dialogue_Lines/Day 2 - day/new monday/sewing_club.yy",
   },
 }

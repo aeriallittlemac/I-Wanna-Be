@@ -7,6 +7,8 @@
 //uniform_types[UniformType.Matrix] = function(uid, val) { shader_set_uniform_matrix(uid); };
 //uniform_types[UniformType.MatrixArr] = function(uid, val) { shader_set_uniform_matrix_array(uid, val); };
 
+
+
 active_shader = noone;
 surface_a = noone;
 surface_b = noone;
@@ -26,6 +28,15 @@ global.shadow_blur_radius = 20;
 global.shadow_bleed = 0.125;
 global.shadow_weight = 0.0;
 global.time_based_lighting = true;
+
+global.sh_vents_colors = [
+	hex_to_rgb(0x003B68), // darkest adjustable
+	hex_to_rgb(0x0F609D),
+	hex_to_rgb(0x3F80B1),
+	hex_to_rgb(0x6FA0C4),
+	hex_to_rgb(0x9FBFD8),
+	hex_to_rgb(0xCFDFEB)  // lightest adjustable
+];
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -301,6 +312,29 @@ effects = {
 	}, function(step_ret, surface, pos) {
 		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
 	}),
+
+	vents_palette: new PostProcessingShader(sh_vents, [
+		[UniformType.FloatArr, "u_col1"],
+		[UniformType.FloatArr, "u_col2"],
+		[UniformType.FloatArr, "u_col3"],
+		[UniformType.FloatArr, "u_col4"],
+		[UniformType.FloatArr, "u_col5"],
+		[UniformType.FloatArr, "u_col6"]
+	], function(surface_width, surface_height) {
+		return {
+			uniform: {
+				u_col1: global.sh_vents_colors[0],
+				u_col2: global.sh_vents_colors[1],
+				u_col3: global.sh_vents_colors[2],
+				u_col4: global.sh_vents_colors[3],
+				u_col5: global.sh_vents_colors[4],
+				u_col6: global.sh_vents_colors[5]
+			}
+		};
+	}, function(step_ret, surface, pos) {
+		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
+	}),
+
 	heat_haze: new Effect(effects_assets.heat_haze, {
 		g_Distort1Speed : 0.01, 
 		g_Distort2Speed : 0.03, 
@@ -361,7 +395,7 @@ effects.shadow_rainbow_test = new CompositeObjectShader([
 
 effects.lighting.start();
 obj_vfx.effects.shadow.start(obj_player);
-
+//effects.vents_palette.start();
 //effects.rain.start();
 //effects.romance.start();
 //effects.spinner.start();

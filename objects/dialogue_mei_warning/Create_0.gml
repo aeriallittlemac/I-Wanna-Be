@@ -1,5 +1,6 @@
 event_inherited();
 audio_stop_all();
+revserse_meis_lighting();
 set_QTE_bgm(frenchies_theme);
 audio_sound_gain(frenchies_theme, 0.5, 0);
 obj_mei.face = RIGHT;

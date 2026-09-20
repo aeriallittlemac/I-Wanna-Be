@@ -1,4 +1,5 @@
 event_inherited();
+instance_create_depth(0, 0, 0,obj_jake_and_drake_lighting);
 audio_sound_gain(school_night, 0, 1000);
 set_QTE_bgm(gambinos_goons_theme);
 audio_sound_gain(gambinos_goons_theme, 0, 0);

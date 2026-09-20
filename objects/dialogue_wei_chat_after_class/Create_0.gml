@@ -1,7 +1,6 @@
 event_inherited();
 obj_scribble.textbox(
-	@"So!
-	[/page]Ya decided which club you're going to, ya son-of-a-bitch?
+	@"Bobby! Ya decided which club you're going to?
 	", 
 	"Wei", spr_wei_portrait_default
 );
@@ -10,9 +9,19 @@ obj_scribble.textbox_unnamed(
 	"
 );
 obj_scribble.textbox(
-	@"Well ya totally should come to my club!
-	[/page]It's this thing called ping pong.
-	[/page]We hit a ball back and forth for an hour straight and it's the best thing ever.
+	@"Why, you should join my bible study!
+	[/page]It's... not a real club, but we only need a couple more signatures to make it real.
+	[/page]Come on, join me on the path to salvation!
+	", 
+	"Wei", spr_wei_portrait_default
+);
+obj_scribble.textbox_unnamed(
+	@"You politely decline.
+	"
+);
+obj_scribble.textbox(
+	@"That’s a load of crap, Bobby.
+	[/page]What could possibly be more important than praising the lord?
 	", 
 	"Wei", spr_wei_portrait_default
 );

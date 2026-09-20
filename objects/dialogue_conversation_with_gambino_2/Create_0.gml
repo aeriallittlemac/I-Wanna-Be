@@ -1,4 +1,5 @@
 event_inherited();
+mission_lighting();
 audio_sound_gain(qte_bgm, 0.4, 500);
 obj_scribble.textbox_unnamed(
 	@"There's no way you're making a stuffed animal out of scratch.

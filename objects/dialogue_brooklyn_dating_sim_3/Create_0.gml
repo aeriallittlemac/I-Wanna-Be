@@ -9,12 +9,5 @@ obj_scribble.textbox(
 	
 obj_scribble.textbox_unnamed(
 	@"That's fucking bullshit-
-	[/page][wobble][sfx_school_bell]riiiing[/wobble]
 	"
 )
-obj_scribble.textbox(
-	@"Well, that's the bell
-	[/page]Go on, shoo.
-	",
-	"Brooklyn",spr_brooklyn_portrait_default
-	);
