@@ -9,6 +9,6 @@ obj_scribble.textbox_unnamed(
 	@"[slant]It's been hours, but...
 	[/page]I haven't even talked to a single girl yet.
 	[/page]I feel nauseous...
-	[/page][scale,1.2]Need to talk to fine shyt. now...[scale,1.2][/slant]
+	[/page][scale,1.2]Need to talk to female. now...[scale,1.2][/slant]
 	"
 );

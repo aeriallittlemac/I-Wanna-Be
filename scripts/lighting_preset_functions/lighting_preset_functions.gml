@@ -192,6 +192,13 @@ function mcronalds_lighting(){
 		angle_lower = -100.0;
 		angle_upper = -80.0;
 	}
+	
+	if room == school_sewing_club{
+		inst_sewing_light_upper.image_blend = c_blue;
+		inst_sewing_light_lower.image_blend = c_blue;
+		angle_lower = -100.0;
+		angle_upper = -80.0;
+	}
 	//var spotlight = instance_create_depth(obj_mcronald.x, spotlight_y_offset, 0, obj_sh_light);
 	//with spotlight{
 	//	image_blend = c_white;

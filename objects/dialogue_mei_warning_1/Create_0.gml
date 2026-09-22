@@ -31,7 +31,7 @@ obj_scribble.textbox(
 	"Mei", spr_mei_portrait_uncomfortable_smile
 );
 obj_scribble.textbox_unnamed(
-	@"You insist that you're interested.
+	@"You insist that you're interested(in getting bitches)
 "
 );
 obj_scribble.textbox(
@@ -51,7 +51,7 @@ obj_scribble.textbox(
 	@"I guess I can't stop you...
 [/page]But just to give you a heads up.
 [/page]Some of the girls might not take kindly to your, um,
-[/page]existance. So, this might be a bad idea... 
+[/page]existence. So, this might be a bad idea... 
 ", 
 	"Mei", spr_mei_portrait_uncomfortable_smile
 );

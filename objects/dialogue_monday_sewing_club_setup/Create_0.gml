@@ -26,17 +26,12 @@ obj_scribble.textbox_converse(
 	]
 );
 
-
-obj_scribble.textbox_converse(
+obj_scribble.textbox(
 	@"*clears throat
 	[/page]This is Bobby, he just transfered here and he told me that he wanted to check the club out.
 	[/page]Please don't bully him...too much.
 	", 
-	"Mei", [
-		[spr_grace_portrait_angry, obj_portrait_mock_left_1], 
-		[spr_ashley_portrait_default, obj_portrait_mock_right_1], 
-		[spr_mei_portrait_default, obj_portrait_mock_0]
-	]
+	"Mei", spr_mei_portrait_default
 );
 
 obj_scribble.textbox_unnamed(@"[audio_stop_all][instance_create_object,cutscene_brooklyn_spotlight]And there she stood...

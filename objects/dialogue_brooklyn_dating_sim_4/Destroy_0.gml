@@ -1,5 +1,7 @@
 event_inherited();
+reverse_mcronalds_lighting();
 var inst = instance_create_depth(0, 0, 0, obj_time_skip);
+
 with inst{
 	target_rm = school_1F;
 	target_x = 865;

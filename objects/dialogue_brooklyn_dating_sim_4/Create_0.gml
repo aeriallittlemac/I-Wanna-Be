@@ -1,5 +1,7 @@
 event_inherited();
-	
+teleport_npc(obj_mcronald, school_sewing_club, obj_player.x-20, obj_player.y, DOWN);
+obj_scribble.mcronald_y_offset = 160;
+alarm[0] = 1;
 obj_scribble.textbox(
 	@"Gorgeous queens, McRonald makes his rounds for you!
 	[/page]And... Bobby. Drag queen included, McRonald supposes.
@@ -15,7 +17,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"B-b-b-baka???
 	",
-	"Weeabo Girl",spr_mei_portrait_default
+	"Weeabo Girl",spr_ashley_portrait_default
 	);
 obj_scribble.textbox(
 	@"Look what McRonald has to show you gals today.
@@ -58,7 +60,7 @@ obj_scribble.textbox(
 	@"See that? Six fingers.
 	[/page]Show me your sixth finger. Right now.
 	",
-	"Brooklyn",spr_brooklyn_portrait_amused
+	"Brooklyn",spr_brooklyn_portrait_disgusted
 	);
 obj_scribble.textbox(
 	@"*Hides hand* McRonald does not want to.
