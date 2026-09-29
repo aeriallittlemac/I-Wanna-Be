@@ -1,0 +1,2 @@
+cutscene_object = cutscene_tuesday_mei_and_mcronald;
+instance_deactivate_object(self);

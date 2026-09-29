@@ -31,8 +31,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"Your morning routine is compromised so long as the mosca holds this knowledge.
 	[/page]NOBODY can know what lies beyond that door, Jake.
-	[/page]Everything I have built up is teetering on that door’s secrecy,
-	[/page]and you go around throwing away valuable information!
+	[/page]Everything I have built up is teetering on that door’s secrecy, and you go around throwing away valuable information!
 	[/page]...
 	[/page]Jake. It is imperative that you ensure his silence on the matter.
 	[/page]Fail at this, and I will find someone more capable.

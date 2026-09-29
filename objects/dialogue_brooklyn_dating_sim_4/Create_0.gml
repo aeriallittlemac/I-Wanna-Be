@@ -26,12 +26,12 @@ obj_scribble.textbox(
 	);
 obj_scribble.textbox_unnamed(
 	@"McRonald pulls out his phone.
-	[/page]There’s a crummy photoshop of him in front of a lambrogini.
+	[/page]There's a crummy photoshop of him in front of a lambrogini.
 	",
 	);
 obj_scribble.textbox(
 	@"Just bought this sick new ride with all the money McRonald got from being rich. 
-	[/page]It’s not too late to start falling for McRonald, girls - he’s the hottest property around!
+	[/page]It's not too late to start falling for McRonald, girls - he's the hottest property around!
 	",
 	"McRonald",spr_mcronald_portrait_default
 	);

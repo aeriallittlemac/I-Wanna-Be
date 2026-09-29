@@ -1,3 +1,4 @@
+reverse_mission_lighting();
 player_x = 910;
 player_y = 310;
 vertical_barrier_x = array_create(0);

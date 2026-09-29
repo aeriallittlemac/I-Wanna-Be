@@ -17,7 +17,7 @@
 #macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
 #macro GRACE_GHOST ord("F")
 #macro THURSDAY_MORNING ord("V")
-//#macro WEDNESDAY_SEWING_CLUB ord("R")
+ //#macro WEDNESDAY_SEWING_CLUB ord("R")
 #macro JAKE_N_DRAKE ord("L")
 #macro ASHLEY_SCENE ord("M")
 #macro GAMBINO_INVESTIGATION vk_alt
@@ -67,6 +67,7 @@ if keyboard_check(TUESDAY_SEWING_CLUB){
 	instance_destroy(inst_GAME_START_CUTSCENE_TRIGGER);
 	game_camera_change_settings(obj_player, -1);
 	//teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+	teleport_npc(obj_mcronald, school_sewing_club, 165, 40, DOWN);
 	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
 	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
 	//obj_npc_manager.npcs[ASHLEY].initial_animation = spr_ashley_writing;
@@ -167,7 +168,7 @@ if keyboard_check_pressed(TUESDAY_LAB){
 	teleport_npc(obj_ashley, school_lab, 50, 52, DOWN);
 	//teleport_npc(obj_mei, school_lab, 190, 60, LEFT);
 	teleport_npc(obj_job, school_lab, 120, 85, RIGHT);
-	teleport_npc(obj_mcronald, school_lab, 150, 50, DOWN);
+	//teleport_npc(obj_mcronald, school_lab, 150, 50, DOWN);
 	teleport_npc(obj_guy, school_lab, 225, 66, DOWN);
 	teleport_npc(obj_drake, school_lab, 110, 145, UP);
 	teleport_player(225, 100, school_lab, cutscene_brooklyn_tuesday_lab_setup);
@@ -200,7 +201,7 @@ if keyboard_check_pressed(SEWING_CLUB_TUESDAY_ASHLEY_ROUTE){
 // 		AddInstanceToDestroy(inst_WEI_DRUM_DEBUT)
 //}
 if keyboard_check(MEETING_GAMBINO){
-	global.night = true;
+	//global.night = true;
 	global.day = 2;
 	game_camera_change_settings(obj_player.x, -1);
 	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP)

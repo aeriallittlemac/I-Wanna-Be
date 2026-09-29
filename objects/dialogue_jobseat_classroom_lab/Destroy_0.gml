@@ -5,9 +5,15 @@ obj_job.face = obj_job.last_face;
 
 if global.day == 2&& !global.storylines.Main_Classroom.Day_Two.talked_to.job{
 	global.storylines.Main_Classroom.Day_Two.talked_to.job = true;
+	
 }
 else if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.job{
 	global.storylines.Lab.Day_Three.talked_to.job = true
+	audio_sound_gain(lab_theme, 0, 1000);
+	set_QTE_bgm(qte_bgm);
+	audio_sound_gain(qte_bgm, 0, 0);
+	audio_sound_gain(qte_bgm, 0.4, 1000);
+	mission_lighting();
 	NewQuest(global.quest_list.copper_coin, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
 }
 else if global.day == 4&& !global.storylines.Main_Classroom.Day_Two.talked_to.job{

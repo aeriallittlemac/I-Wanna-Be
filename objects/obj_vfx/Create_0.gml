@@ -29,14 +29,10 @@ global.shadow_bleed = 0.125;
 global.shadow_weight = 0.0;
 global.time_based_lighting = true;
 
-global.sh_vents_colors = [
-	hex_to_rgb(0x003B68), // darkest adjustable
-	hex_to_rgb(0x0F609D),
-	hex_to_rgb(0x3F80B1),
-	hex_to_rgb(0x6FA0C4),
-	hex_to_rgb(0x9FBFD8),
-	hex_to_rgb(0xCFDFEB)  // lightest adjustable
-];
+// Two-tone vents palette: outlines vs. everything else.
+global.sh_vents_outline   = hex_to_rgb(0x53A4E2); // near black
+global.sh_vents_fill      = hex_to_rgb(0x0A0F18); // everything else
+global.sh_vents_threshold = 0.15;                 // luminance below this = outline
 
 // GameMaker must evaluate the use of built-in effects before runtime.
 // Only string literals can be used to create effects.
@@ -312,29 +308,21 @@ effects = {
 	}, function(step_ret, surface, pos) {
 		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
 	}),
-
 	vents_palette: new PostProcessingShader(sh_vents, [
-		[UniformType.FloatArr, "u_col1"],
-		[UniformType.FloatArr, "u_col2"],
-		[UniformType.FloatArr, "u_col3"],
-		[UniformType.FloatArr, "u_col4"],
-		[UniformType.FloatArr, "u_col5"],
-		[UniformType.FloatArr, "u_col6"]
+		[UniformType.FloatArr, "u_outline"],
+		[UniformType.FloatArr, "u_fill"],
+		[UniformType.Float,    "u_threshold"]
 	], function(surface_width, surface_height) {
 		return {
 			uniform: {
-				u_col1: global.sh_vents_colors[0],
-				u_col2: global.sh_vents_colors[1],
-				u_col3: global.sh_vents_colors[2],
-				u_col4: global.sh_vents_colors[3],
-				u_col5: global.sh_vents_colors[4],
-				u_col6: global.sh_vents_colors[5]
+				u_outline:   global.sh_vents_outline,
+				u_fill:      global.sh_vents_fill,
+				u_threshold: global.sh_vents_threshold
 			}
 		};
 	}, function(step_ret, surface, pos) {
 		draw_surface_stretched(surface, pos[0], pos[1], pos[2] - pos[0], pos[3] - pos[1]);
 	}),
-
 	heat_haze: new Effect(effects_assets.heat_haze, {
 		g_Distort1Speed : 0.01, 
 		g_Distort2Speed : 0.03, 

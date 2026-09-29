@@ -18,16 +18,12 @@ function default_lighting(){
 }
 
 function mission_lighting(){
-	
-	if (room == school_gambinos_room){
-		global_hue(#ffffff);
-		global.sh_bloom_bleed = [0.125, 0.125, 0.125];
-		global.shadow_blur_radius = 20;
-		global.shadow_bleed = 0.125;
-		global.shadow_weight = 0.0;
-		global.time_based_lighting = false;
-	}
 	obj_vfx.effects.vents_palette.start();
+}
+function reverse_mission_lighting(){
+	obj_vfx.effects.vents_palette.stop();
+	obj_vfx.effects.lighting.start()
+	
 }
 function revserse_meis_lighting(){
 	obj_vfx.effects.heat_haze.stop();
@@ -170,7 +166,8 @@ function jake_and_drake_lighting(){
 	global.shadow_blur_radius = 20;
 	global.shadow_bleed = 0.125;
 	global.shadow_weight = 0.0;
-	global.time_based_lighting = true;
+	global.time_based_lighting = false;
+	obj_black_filter_night.image_alpha = 0;
 	
 }
 

@@ -93,6 +93,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_illumination","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"10000.0",},
           ],"isDnd":false,"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-45.0,"y":19.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6174C6C","properties":[],"isDnd":false,"objectId":{"name":"dialogue_opening_cutscene","path":"objects/dialogue_opening_cutscene/dialogue_opening_cutscene.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1584.0,"y":171.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"INST_MEI_AND_MCRONALD","properties":[],"isDnd":false,"objectId":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.5263157,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":900.0,"y":95.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7F0F12C9","spriteId":{"name":"school_1F0__2_","path":"sprites/school_1F0__2_/school_1F0__2_.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -156,6 +157,7 @@
     {"name":"inst_233ED2B9","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_768FAD6A","path":"rooms/school_1F/school_1F.yy",},
     {"name":"inst_6174C6C","path":"rooms/school_1F/school_1F.yy",},
+    {"name":"INST_MEI_AND_MCRONALD","path":"rooms/school_1F/school_1F.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -1,14 +1,49 @@
 event_inherited();
-obj_scribble.textbox_unnamed(
-	@"It seems like not everyone is here...
-	[/page]But it doesn't matter.
-	[/page]You've only got eyes for one girl, after all...
-	"
+mcronalds_lighting();
+set_QTE_bgm(mcronald_theme);
+audio_sound_gain(mcronald_theme, 0.4, 0);
+obj_scribble.textbox(
+	"*Chokes* What is that smell-desu?", 
+	"Weeabo Girl", spr_ashley_portrait_default
 );
-//obj_scribble.textbox(
-//	"Lorem ipsum dolor si", 
-//	"Brooklyn", spr_brooklyn_portrait_disgusted
-//);
+obj_scribble.textbox(
+	@"A mix of weed, trail mix, and asbestos.
+	[/page]How putrid.
+	", 
+	"Brooklyn", spr_brooklyn_portrait_disgusted
+);
+
+obj_scribble.textbox(
+	@"Ah, you must be smelling my newest perfume.
+	[/page]Flaveur d’Buffune, he called it.
+	[/page]Guy gave it to me.
+	", 
+	"McRonald", spr_mcronald_portrait_flex
+);
+obj_scribble.textbox_unnamed(
+	"No wonder he needs the gas mask all the time."
+)
+obj_scribble.textbox(
+	@"So where’s my hug at, ladies?",
+	"McRonald", spr_mcronald_portrait_flex
+);
+
+obj_scribble.textbox(
+	@"Yamete kudasai!!!",
+	"Ashley", spr_ashley_portrait_default
+);
+
+obj_scribble.textbox(
+	@"Fuck—-*gags*---off McRonald.",
+	"Brooklyn", spr_brooklyn_portrait_disgusted
+);
+
+obj_scribble.textbox(
+	@"Very well. McRonald recedes.",
+	"McRonald", spr_mcronald_portrait_flex
+);
+
+
 
 //obj_scribble.textbox_converse(
 //	"Lorem ipsum .", 

@@ -20,7 +20,7 @@ obj_scribble.textbox_unnamed(
 	"
 );
 obj_scribble.textbox(
-	@"That’s a load of crap, Bobby.
+	@"That's a load of crap, Bobby.
 	[/page]What could possibly be more important than praising the lord?
 	", 
 	"Wei", spr_wei_portrait_default

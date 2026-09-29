@@ -5,7 +5,7 @@ function to_talk() {
 	);
 	
 	obj_scribble.textbox(
-	@"[#c94242]Why?
+	@"[#c94242]...
 	[/page]What would we even talk about?
 	",
 	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink

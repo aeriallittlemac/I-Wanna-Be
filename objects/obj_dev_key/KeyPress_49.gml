@@ -1,7 +1,15 @@
-audio_stop_all();
-audio_play_sound(sfx_pop, 1, false);
-teleport_npc(obj_mcronald, school_main_classroom, 130, 112, DOWN);
-instance_create_depth(0,0,0,obj_mcronald_lighting);
-game_wait(1);
-game_NewDialogue(dialogue_meeting_the_boys_1);
-//instance_create_depth(0,0,0, obj_brooklyn_QTE_new);
+game_camera_change_settings(obj_player, -1);
+teleport_npc(obj_gambino, school_gambinos_room, 230, 130, RIGHT);
+NewDialogue(cutscene_gambinos_room_setup);
+//global.QTE = false;
+teleport_player(24, 124, school_gambinos_room);
+//audio_sound_gain(qte_bgm, 0, 1000);
+
+
+//global.storylines.Lab.Day_Three.talked_to.job = true
+//	audio_sound_gain(lab_theme, 0, 1000);
+//	set_QTE_bgm(qte_bgm);
+//	audio_sound_gain(qte_bgm, 0, 0);
+//	audio_sound_gain(qte_bgm, 0.4, 1000);
+//	mission_lighting();
+//	NewQuest(global.quest_list.copper_coin, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);

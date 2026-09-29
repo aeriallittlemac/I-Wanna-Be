@@ -1,0 +1,2 @@
+instance_deactivate_object(self);
+cutscene_object = cutscene_gambinos_call_with_brooklyn;
