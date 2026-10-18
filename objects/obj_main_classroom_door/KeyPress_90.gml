@@ -35,4 +35,7 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue&&!instance_exists(o
 	
 	
 	}
+	else{
+		NewDialogue(dialogue_main_classroom_door);
+	}
 }

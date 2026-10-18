@@ -30,7 +30,7 @@ else if global.day == 3{
 	);
 	
 	obj_scribble.textbox_converse(
-	@"Here we go...
+	@"Please stop talking.
 	", 
 	"Job", [
 		[spr_job_portrait_default, obj_portrait_mock_left_1], 
@@ -49,14 +49,18 @@ else if global.day == 3{
 	);
 	
 	obj_scribble.textbox_converse(
-	@"She robbed you, retard. You're saying it like she proposed.
+	@"What kind of idiot falls in love with a girl that robs him?
+	[/page]Fucking retard.
 	", 
 	"Job", [
 		[spr_job_portrait_default, obj_portrait_mock_left_1], 
 		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
 	]
 	);
-	
+	obj_scribble.textbox_unnamed(
+	@"Better yet, why are people robbing each other at knifepoint for petty lab equipment?
+	[/page]It's a fucking penny!"
+	);
 	obj_scribble.textbox_converse(
 	@"...She'n't rob me. She gave me somethin in return innit.
 	[/page][slant]First toime...
@@ -77,44 +81,6 @@ else if global.day == 3{
 		[spr_job_portrait_default, obj_portrait_mock_left_1], 
 		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
 	]
-	);
-	
-	obj_scribble.textbox_converse(
-	@"Yes, because Wei is so righteous and so courageous.
-	[/page][slant]Surely it's not because that rufus has no consideration for others.[/slant]
-	", 
-	"McRonald", [
-		[spr_job_portrait_default, obj_portrait_mock_left_1], 
-		[spr_mcronald_portrait_irritated, obj_portrait_mock_right_1]
-	]
-	);
-	obj_scribble.textbox_converse(
-	@"McRonald, you got a problem with Wei?
-	[/page]Don't tell me this is about the band stuff...
-	", 
-	"Frenchie", [
-		[spr_mcronald_portrait_irritated, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
-	]
-	);
-	
-	obj_scribble.textbox_converse(
-	@"Of course not.
-	[/page]It doesn't bother me at all when he calls me out on my playing- 
-	", 
-	"McRonald", [
-		[spr_mcronald_portrait_irritated, obj_portrait_mock_left_1], 
-		[spr_frenchie_portrait_default, obj_portrait_mock_right_1]
-	]
-	);
-	obj_scribble.textbox(
-	@"We'll talk about that later.
-	[/page]Please focus on the task right now.
-	[/page]We need another copper coin to actually do the experiment for today.
-	[/page]Since that dumbass lost it.
-	[/page]Bobby, could you help us find one?
-	",
-	"Job", spr_job_portrait_annoyed
 	);
 		
 		obj_scribble.textbox_unnamed(

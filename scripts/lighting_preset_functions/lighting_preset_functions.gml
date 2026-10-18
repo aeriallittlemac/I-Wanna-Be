@@ -18,9 +18,13 @@ function default_lighting(){
 }
 
 function mission_lighting(){
+	global.blue = true;
+	default_lighting();
 	obj_vfx.effects.vents_palette.start();
 }
+
 function reverse_mission_lighting(){
+	global.blue = false;
 	obj_vfx.effects.vents_palette.stop();
 	obj_vfx.effects.lighting.start()
 	

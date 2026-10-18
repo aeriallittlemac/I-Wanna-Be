@@ -1,6 +1,6 @@
 original_arrow = false;
 if instance_number(obj_arrow) == 1{
-	original_arrow = true
+	original_arrow = true;
 }
 original_timer = 0;
 arrow_sprite = spr_arrows;

@@ -4,4 +4,6 @@
 //teleport_npc(obj_brooklyn, school_B1, 1126, 118, LEFT);
 //AddInstanceToActivate(INST_BROOKLYN_OUTSIDE_LAB);
 
-instance_create_depth(0, 0, 0, obj_mei_lighting);
+//instance_create_depth(0, 0, 0, obj_mei_lighting);
+mission_lighting();
+audio_sound_gain(qte_bgm, 0.4, 500);

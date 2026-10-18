@@ -66,6 +66,9 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 				
 		}
 	}
+	else{
+		NewDialogue(dialogue_sewing_club_door);
+	}
 	
 	
 }

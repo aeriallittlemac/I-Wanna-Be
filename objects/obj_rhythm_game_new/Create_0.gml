@@ -5,9 +5,9 @@ current_fps = game_get_speed(gamespeed_fps);
 game_set_speed(240, gamespeed_fps)
 left_character_silhouette = spr_grace_portrait_default;
 right_character_silhouette = spr_bobby_silhouette;
-left_character_x = 20;
-right_character_x = 200;
-character_y = 20;
+left_character_x = 40;
+right_character_x = 220;
+character_y = 70;
 
 //zoom = 1.4;
 //camera_set_view_border(view_camera[0], camera_get_view_border_x(view_camera[0]), 9999)

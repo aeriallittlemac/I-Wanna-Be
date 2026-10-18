@@ -1,5 +1,8 @@
 event_inherited();
 obj_scribble.black_filter = true;
-global.game_time = "1:00 am"
-NewQuest(global.quest_list.go_back_to_sleep, QUEST_TEXT_FONT_SIZE, c_yellow, QUEST_TEXT_TIMER);
-teleport_player(62, 117, school_bobbys_room, dialogue_grace_debut_aftermath);
+npc_move_to_pos(obj_grace, 2, 0, camera_get_view_x(view_camera[0])-20, obj_grace.y);
+game_wait(2);
+game_camera_change_settings(obj_player, 3);
+game_wait(2);
+game_NewDialogue(dialogue_grace_debut_4_win);
+

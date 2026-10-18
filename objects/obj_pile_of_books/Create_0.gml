@@ -7,5 +7,5 @@
 // Inherit the parent event
 event_inherited();
 self_visible = true;
-outline_spr = spr_megaphone_outline;
+outline_spr = spr_pile_of_books_outline;
 

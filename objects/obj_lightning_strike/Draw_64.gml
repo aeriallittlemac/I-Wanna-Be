@@ -5,7 +5,11 @@ instance_destroy(self)
 }
 else{
 	if instance_exists(obj_lightning_player){
-		if place_meeting(x,y,obj_lightning_player) && !player_struck{
+		if (obj_lightning_player.x >= x-x_col_box/2
+		&& obj_lightning_player.x <= x+x_col_box/2
+		&& obj_lightning_player.y >= y-y_col_box/2
+		&& obj_lightning_player.y <= y+y_col_box/2)
+		 && !player_struck{
 			player_struck = true;
 			instance_destroy(obj_lightning_player);
 		}

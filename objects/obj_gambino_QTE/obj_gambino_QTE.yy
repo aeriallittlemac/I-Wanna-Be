@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "QTEs",
-    "path": "folders/UI/QTEs.yy",
+    "name": "Gambino's lightning game",
+    "path": "folders/UI/QTEs/Gambino's lightning game.yy",
   },
 }

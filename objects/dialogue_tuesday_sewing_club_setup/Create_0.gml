@@ -15,7 +15,7 @@ obj_scribble.textbox(
 
 obj_scribble.textbox(
 	@"Ah, you must be smelling my newest perfume.
-	[/page]Flaveur d’Buffune, he called it.
+	[/page]Flaveur d'Buffune, he called it.
 	[/page]Guy gave it to me.
 	", 
 	"McRonald", spr_mcronald_portrait_flex
@@ -24,7 +24,7 @@ obj_scribble.textbox_unnamed(
 	"No wonder he needs the gas mask all the time."
 )
 obj_scribble.textbox(
-	@"So where’s my hug at, ladies?",
+	@"So where's my hug at, ladies?",
 	"McRonald", spr_mcronald_portrait_flex
 );
 

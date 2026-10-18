@@ -16,3 +16,4 @@ outline_spr = spr_bobby_wooden_drawer_outline;
 interactable_arrow_point = noone;
 self_visible = false;
 previously_in_range = false;
+interact_arrow = spr_interact;

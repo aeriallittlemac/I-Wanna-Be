@@ -1,13 +1,31 @@
 if self_visible{
 draw_self();
 }
-if interactable_arrow_point == noone{
-	draw_sprite_ext(outline_spr, -1, x, y, 1, 1, 0, c_white, in_detect_range);
-	draw_sprite_ext(spr_interact, interact_image_index, x, y, 1, 1, 0, c_white, in_detect_range);
+if(!global.blue){
+	interact_arrow = spr_interact;
 }
 else{
-	draw_sprite_ext(outline_spr, -1, interactable_arrow_point.x, interactable_arrow_point.y, 1, 1, 0, c_white, in_detect_range);
-	draw_sprite_ext(spr_interact, interact_image_index, interactable_arrow_point.x, interactable_arrow_point.y, 1, 1, 0, c_white, in_detect_range);
+	interact_arrow = spr_interact_blue;
+}
+
+if interactable_arrow_point == noone{
+	if !global.blue{
+		draw_sprite_ext(outline_spr, -1, x, y, 1, 1, 0, c_white, in_detect_range);
+	}
+	else{
+		draw_sprite_ext(outline_spr, -1, x, y, 1, 1, 0, c_black, in_detect_range);
+	}
+	
+	draw_sprite_ext(interact_arrow, interact_image_index, x, y, 1, 1, 0, c_white, in_detect_range);
+}
+else{
+	if !global.blue{
+		draw_sprite_ext(outline_spr, -1, interactable_arrow_point.x, interactable_arrow_point.y, 1, 1, 0, c_white, in_detect_range);
+	}
+	else{
+		draw_sprite_ext(outline_spr, -1, interactable_arrow_point.x, interactable_arrow_point.y, 1, 1, 0, c_black, in_detect_range);
+	}
+	draw_sprite_ext(interact_arrow, interact_image_index, interactable_arrow_point.x, interactable_arrow_point.y, 1, 1, 0, c_white, in_detect_range);
 }
 //show_debug_message(interact_image_index);
 if !in_detect_range{
@@ -25,7 +43,7 @@ else{
 	}
 	else{
 		if alarm[0] == -1{
-		interact_image_index = sprite_get_number(spr_interact)-1;
+		interact_image_index = sprite_get_number(interact_arrow)-1;
 		}
 	}
 	

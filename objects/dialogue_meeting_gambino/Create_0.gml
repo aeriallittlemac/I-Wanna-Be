@@ -1,54 +1,54 @@
 event_inherited();
-obj_scribble.textbox(
-	@"Hello, Bobby. We meet again.
-	[/page]To greet you in this run-down storage room...che peccato, aie.
-	[/page]But with this school's poor excuse of a budget, there's not much I can do, eh?
-	", 
-	"Gambino", spr_gambino_portrait_tired
-);
-obj_scribble.textbox(
-	@"Boss has done all he can do!
-	[/page]He spent all of last week coming to school on holiday just to get rid of the smell of the couch-", 
-	"Jake", spr_jake_portrait_default
-);
-obj_scribble.textbox(
-	@"Chiudere il becco, chiaccierone.
-	[/page]I don't recall asking for your comment.
-	", 
-	"Gambino", spr_gambino_portrait_tired
-);
+
+
+function accept_cigarette() {
+	
+	obj_scribble.textbox(
+	@"Alright.
+	[/page]..hm...
+	", "Gambino", spr_gambino_portrait_default
+	)
+	
+	obj_scribble.textbox_unnamed(
+	@"Gambino sloppily rummages through the items on the table.
+	"
+	)
+	
+	obj_scribble.textbox(
+	@"no...
+	[/page]...
+	[/page]It would seem I have used them all. My apologies.
+	", "Gambino", spr_gambino_portrait_tired
+	)
+	
+	
+}
+
+function reject_cigarette() {
+	 
+	
+	obj_scribble.textbox(
+	@"Well then.
+	[/page]Better man than me.
+	", "Gambino", spr_gambino_portrait_tired
+	);
+	
+}
 
 obj_scribble.textbox(
-	@"Oh!
-	[/page]Sorry, boss!", 
-	"Jake", spr_jake_portrait_default
-);
+	@"Welcome, Bobby.
+	[/page]You have already heard of my position.
+	[/page]But in case you forget, I am Gambino.
+	[/page]President of this school.
+	", "Gambino", spr_gambino_portrait_default
+	);
 obj_scribble.textbox(
-	@"Thank you for escorting Bobby here, but I would appreciate it if you left us alone.
-	", 
-	"Gambino", spr_gambino_portrait_tired
-);
-
-obj_scribble.textbox(
-	@"Sir, yes, sir!
-	[/page]Come, Drake! We shall not disturb the boss.", 
-	"Jake", spr_jake_portrait_default
-);
-
-obj_scribble.textbox(
-	@"*Drunk humming
-	[/page]Dancing in the wind, as roses born again~
-	", 
-	"Drake", spr_drake_portrait_default
-);
-
-obj_scribble.textbox(
-	"Dude, let's go!", 
-	"Jake", spr_jake_portrait_default
-);
-
-obj_scribble.textbox(
-	@"There, you'll find me~
-	", 
-	"Drake", spr_drake_portrait_default
+	@"...
+	[/page]...Could I offer you a cigarette?
+	",
+	"Gambino",spr_gambino_portrait_tired,,,,,,,,,[
+		{text: "Yay!", textbox: obj_choice_1_mock_0, bounds: obj_bounds_1_mock_2, cb: accept_cigarette},
+		{text: "I'm good", textbox: obj_choice_2_mock_0, bounds: obj_bounds_2_mock_2, cb: reject_cigarette}
+		//,{text: "Say nothing", textbox: obj_choice_3_mock_0, bounds: obj_bounds_3_mock_2, cb: say_nothing}
+	]
 );

@@ -1,48 +1,26 @@
 event_inherited();
 obj_scribble.textbox(
-	@"*on the phone
-	[/page]You WHAT?!
-	[/page]	IDIOTA! IMBECILE!
-	"
-	, 
-	"Gambino", spr_gambino_portrait_default
-);
-
-obj_scribble.textbox(
-	@"Boss, I know shit sound bad, but motherfucker don’t even know about the goddamn room!
-	[/page]
-	"
-	, 
-	"Jake", spr_jake_portrait_default
-);
-obj_scribble.textbox(
-	@"Hm... Yes. Just about the fucking DOOR you were supposed to hold post!
-	[/page]
-	"
-	, 
-	"Gambino", spr_gambino_portrait_default
-);
-obj_scribble.textbox(
-	@"*Gulp
-	"
-	, 
-	"Jake", spr_jake_portrait_default
-);
-obj_scribble.textbox(
-	@"Your morning routine is compromised so long as the mosca holds this knowledge.
-	[/page]NOBODY can know what lies beyond that door, Jake.
-	[/page]Everything I have built up is teetering on that door’s secrecy, and you go around throwing away valuable information!
+	@"[npc_move,obj_gambino,1,0,229,130][sfx_surprise_fx]Hm?
+	[/page]Ah, Bobby. Didn't see you there.
 	[/page]...
-	[/page]Jake. It is imperative that you ensure his silence on the matter.
-	[/page]Fail at this, and I will find someone more capable.
-	[/page]Begone.
+	[/page]What are you doing here?
+	[/page]Class is currently in session.
+	[/page]Do you forget your place?
 	"
 	, 
 	"Gambino", spr_gambino_portrait_default
 );
 
 obj_scribble.textbox_unnamed(
-	@"...It doesn't seem like he's noticed you yet.
-	[/page]Might be a good idea not not announce your presence immediately
+	@"You ask if you could borrow a penny for your lab assignment.
 	"
+);
+
+obj_scribble.textbox(
+	@"...Hm.
+	[/page]I see no reason why you can't.
+	[/page]Why, did the proctor forget to supply you?
+	"
+	, 
+	"Gambino", spr_gambino_portrait_default
 );

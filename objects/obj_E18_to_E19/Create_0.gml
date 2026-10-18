@@ -9,4 +9,4 @@ destination_x = 1090;
 destination_y = 780;
 target_room = school_gambinos_room;
 target_x = 24;
-target_y = 124;
+target_y = 150;

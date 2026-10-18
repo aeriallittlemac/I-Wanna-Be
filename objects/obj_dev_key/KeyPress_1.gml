@@ -1,6 +1,6 @@
 //Shortcuts to scenes
 #macro GRACE_MISSING ord("U")
-//#macro GAMBINOS_ROOM ord("Y")
+#macro GAMBINOS_ROOM ord("Y")
 #macro BROOKLYN_ACTION_SCENE ord("J")
 //#macro GRACE_VILLAIN_SPEECH ord("Y")
 #macro MEETING_GAMBINO ord("O")
@@ -14,7 +14,7 @@
 #macro SEWING_CLUB_TUESDAY_GRACE_ROUTE ord("E")
 #macro SEWING_CLUB_WEDNESDAY_ASHLEY_ROUTE ord("R")
 #macro SEWING_CLUB_TUESDAY_ASHLEY_ROUTE ord("T")
-#macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
+//#macro SEWING_CLUB_WEDNESDAY_GRACE_ROUTE ord("Y")
 #macro GRACE_GHOST ord("F")
 #macro THURSDAY_MORNING ord("V")
  //#macro WEDNESDAY_SEWING_CLUB ord("R")
@@ -134,16 +134,16 @@ if keyboard_check_pressed(THURSDAY_LAB_VENTS_TEST){
 	teleport_player(100, 120, school_lab);
 	
 }
-if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
-	game_camera_change_settings(obj_player, -1);
-	global.day = 4;
-	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
-	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
-	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
-	teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_graces_route);
-	global.storylines.Grace.truth_or_dare_confession = true;
-	global.storylines.Grace.deny_rumor = false;
-}
+//if keyboard_check_pressed(SEWING_CLUB_WEDNESDAY_GRACE_ROUTE){
+//	game_camera_change_settings(obj_player, -1);
+//	global.day = 4;
+//	teleport_npc(obj_grace, school_sewing_club, 60, 55, LEFT);
+//	teleport_npc(obj_mei, school_sewing_club, 165, 40, DOWN);
+//	teleport_npc(obj_brooklyn, school_sewing_club, 80, 112, UP);
+//	teleport_player(215, 57, school_sewing_club, cutscene_sewing_club_setup_day_4_graces_route);
+//	global.storylines.Grace.truth_or_dare_confession = true;
+//	global.storylines.Grace.deny_rumor = false;
+//}
 
 //if keyboard_check_pressed(THURSDAY_MORNING){
 //		game_camera_change_settings(obj_player, -1);
@@ -548,19 +548,17 @@ if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 //	instance_activate_object(INST_LUNCH_TABLE);
 //}
 
-//if keyboard_check(GAMBINOS_ROOM){
-//	global.day = 2
-//	instance_activate_object(inst_WELCOME_TABLE);
-//	game_camera_change_settings(obj_player,-1);
-//	teleport_npc(obj_wei, noone, 0, 0, DOWN);
-//	teleport_npc(obj_jake, school_gambinos_room, 100, 165, UP);
-//	teleport_npc(obj_drake, school_gambinos_room, 170, 165, UP);
-//	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
-//	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
-//	AddInstanceToDestroy(inst_1D43132F);
+if keyboard_check(GAMBINOS_ROOM){
+	global.day = 2
+	instance_activate_object(inst_WELCOME_TABLE);
+	game_camera_change_settings(obj_player,-1);
+	teleport_npc(obj_wei, noone, 0, 0, DOWN);
+	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
+	teleport_player(135, 140, school_gambinos_room)//, dialogue_meeting_gambino);
+	AddInstanceToDestroy(inst_1D43132F);
 	
 	
-//}
+}
 
 if keyboard_check(MONDAY_SEWING_CLUB){
 	game_camera_change_settings(obj_player, -1);

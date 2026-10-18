@@ -1,10 +1,57 @@
 event_inherited();
-scr_text("Boss has done all he can do!", spr_jake_icon, 1);
-scr_text("He spent all of last week coming to school on holiday just to get rid of the smell of the couch-", spr_jake_icon, 1);
-scr_text("Chiudere il becco, chiaccierone.", spr_gambino_icon, 0);
-scr_text("I don't recall asking for your comment", spr_gambino_icon, 0);
-scr_text("Oh! Sorry, boss!", spr_jake_icon, 1);
-scr_text("Thank you for escorting Bobby here, but I would appreciate it if you left us alone.", spr_gambino_icon, 0);
-scr_text("Sir, yes, sir!", spr_jake_icon, 1);
-scr_text("Come, Drake! We shall not disturb the boss", spr_jake_icon, 1);
-scr_text("Yeeeeeah, dat means wer dismissed, yeah?", spr_drake_icon, 1);
+
+
+function identity() {
+	obj_scribble.textbox_unnamed(
+	@"You ask who you would even be looking out for, given you’re new to the school.
+	")
+	obj_scribble.textbox(
+	@"Think simple, fool.
+	[/page]Features, description, voice-
+	[/page]Hell, ask their name, maybe they’ll answer.
+	", "Gambino", spr_gambino_portrait_default
+	)
+}
+
+function intent() {
+	obj_scribble.textbox_unnamed(
+	@"You ask what he means by intent.
+	[/page]Where are they looking?
+	[/page]Are they doing anything specific?
+	[/page]Use your [scale,1.2]insight.[s/]
+	")
+	obj_scribble.textbox(
+	@"...
+	[/page]Just listen and nod along, I don't have time for this.
+	", "Gambino", spr_gambino_portrait_tired
+	);
+	
+}
+
+function got_it() {
+	obj_scribble.textbox(
+	@"Good.
+	", "Gambino", spr_gambino_portrait_tired
+	);
+	
+}
+
+obj_scribble.textbox(
+	@"Anyways.
+	[/page]What I require of you is something extremely important.
+	[/page]Despite my attempts to rebuild the school, there is some party that would rather see it crumble.
+	[/page]A rat has been crawling in my fucking air vents, spying on my administration’s every move.
+	", "Gambino", spr_gambino_portrait_tired
+	);
+	
+obj_scribble.textbox(
+	@"That is where you come in.
+	[/page]Your task is simple;
+	[/page]Utilize the air vents, find the rat, and report their identity and intent back to me. Capiche?
+	",
+	"Gambino",spr_gambino_portrait_default,,,,,,,,,[
+		{text: "Identity?", textbox: obj_choice_1_mock_0, bounds: obj_bounds_1_mock_2, cb: identity},
+		{text: "Intent?", textbox: obj_choice_2_mock_0, bounds: obj_bounds_2_mock_2, cb: intent},
+		{text: "Got it.", textbox: obj_choice_3_mock_0, bounds: obj_bounds_3_mock_2, cb: got_it}
+	]
+);

@@ -10,12 +10,12 @@ inst.tempo = tempo;
 inst.arrows = arrows;
 inst.target_score = target_score;
 inst.QTE = QTE;
+inst.calculate_music_buffer_time();
 if QTE == false{
 inst.max_misses = max_misses;
 }
 else{
 inst.right_character_silhouette = right_character_silhouette;
 }
-inst.calculate_start_time();
 instance_destroy(self);
 

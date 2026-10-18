@@ -43,6 +43,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_dynamic","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"True",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_illumination","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"10000.0",},
           ],"isDnd":false,"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":297.0,"y":-19.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"INST_BOB_PBNJ","properties":[],"isDnd":false,"objectId":{"name":"obj_PBnJ_plate","path":"objects/obj_PBnJ_plate/obj_PBnJ_plate.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":164.0,"y":148.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"INST_BOB_CROSS","properties":[],"isDnd":false,"objectId":{"name":"obj_wooden_cross","path":"objects/obj_wooden_cross/obj_wooden_cross.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":184.0,"y":139.0,},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":9,"gridY":19,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Rooms","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2ED6D034","spriteId":{"name":"spr_bobbys_room_1_png","path":"sprites/spr_bobbys_room_1_png/spr_bobbys_room_1_png.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -69,6 +71,8 @@
     {"name":"inst_67DB17D8","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
     {"name":"INST_BOBBY_DOOR","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
     {"name":"inst_1979498C","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
+    {"name":"INST_BOB_PBNJ","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
+    {"name":"INST_BOB_CROSS","path":"rooms/school_bobbys_room/school_bobbys_room.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

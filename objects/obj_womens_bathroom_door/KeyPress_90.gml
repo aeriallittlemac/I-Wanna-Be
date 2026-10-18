@@ -9,6 +9,9 @@ if player_facing_self&&!global.cutscene&&!global.in_dialogue{
 		}
 	
 	}
+	else{
+		NewDialogue(dialogue_womans_bathroom_door);
+	}
 	
 }
 

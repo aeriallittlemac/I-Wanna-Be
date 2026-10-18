@@ -1,7 +1,9 @@
 xspeed = (keyboard_check(MOVE_RIGHT) - keyboard_check(MOVE_LEFT))*player_speed;
 yspeed = (keyboard_check(MOVE_DOWN) - keyboard_check(MOVE_UP))*player_speed;
+if(!global.in_dialogue && !global.cutscene){
 x += xspeed
 y += yspeed
+}
 if place_meeting(x + xspeed, y, obj_wall_vent){
 	x -= xspeed;
 }

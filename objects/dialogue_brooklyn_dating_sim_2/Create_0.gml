@@ -5,7 +5,7 @@ audio_sound_gain(frenchies_theme, 0.5, 0);
 obj_scribble.textbox(
 	@"[#c94242]You know, new kid, I've got to hand it to you.
 	",
-	"Brooklyn",spr_brooklyn_portrait_disgusted,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	"Brooklyn",spr_brooklyn_portrait_smiling_zoomed_in,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 obj_scribble.textbox_unnamed(@"[#c94242]???
 	",
@@ -17,7 +17,7 @@ obj_scribble.textbox(
 	[/page]Even now, that idiot Grace is staring a hole through you.
 	[/page]Yet, despite all that...
 	",
-	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	"Brooklyn",spr_brooklyn_portrait_smiling_zoomed_in,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 obj_scribble.textbox(
 	@"[#c94242][audio_stop_all]You decide to be a moron.
@@ -28,5 +28,5 @@ obj_scribble.textbox(
 	[/page]Can't you get a clue?
 	[/page][slant]You don't belong here.[/slant]
 	",
-	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
