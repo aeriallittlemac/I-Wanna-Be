@@ -6,7 +6,7 @@ if (!music_started){
 	if pre_music_timer >= music_buffer_time{
 		music_started = true;
 		bgm_instance = set_QTE_bgm(song_im_sorry); // make sure set_QTE_bgm returns the sound instance id from audio_play_sound()
-		video_open("My Video-5.mp4");
+		video_open("im_so_sorry.mp4");
 	}
 }
  
@@ -31,21 +31,23 @@ if (music_started){
 		// us permanently behind, it'll spawn the missed beats immediately and keep going.
 		while (next_beat_index <= target_beat_index && !stop_rhythm_game){
 			var arrow_y;
-			var randint = irandom(2);
-			while(randint == last_arrow_dir){
-				randint = irandom(2);
-			}
+			//var randint = irandom(2);
+			//while(randint == last_arrow_dir){
+			//	randint = irandom(2);
+			//}
 
-			if randint == 0{
-				arrow_y = r1_arrow_y;
-			}
-			else if randint == 1{
-				arrow_y = r2_arrow_y;
-			}
-			else{
-				arrow_y = r3_arrow_y;
-			}
-			last_arrow_dir = randint;
+			//if randint == 0{
+			//	arrow_y = r1_arrow_y;
+			//}
+			//else if randint == 1{
+			//	arrow_y = r2_arrow_y;
+			//}
+			//else{
+			//	arrow_y = r3_arrow_y;
+			//}
+			//last_arrow_dir = randint;
+			
+			arrow_y = r2_arrow_y;
 
 			if arrows[bar][beat] == 1{
 				instance_create_depth(camera_get_view_x(view_camera[0])+right_border, arrow_y, OBJ_MAX_DEPTH, obj_arrow);

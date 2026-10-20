@@ -165,7 +165,7 @@ if keyboard_check_pressed(TUESDAY_LAB){
 	global.day = 3;
 	teleport_npc(obj_grace, school_lab, 198, 142, LEFT);
 	teleport_npc(obj_frenchie, school_lab, 170, 97, LEFT);
-	teleport_npc(obj_ashley, school_lab, 50, 52, DOWN);
+	teleport_npc(obj_ashley, school_lab, 93, 117, DOWN);
 	//teleport_npc(obj_mei, school_lab, 190, 60, LEFT);
 	teleport_npc(obj_job, school_lab, 120, 85, RIGHT);
 	//teleport_npc(obj_mcronald, school_lab, 150, 50, DOWN);

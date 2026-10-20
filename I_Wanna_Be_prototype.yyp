@@ -650,6 +650,7 @@
     {"id":{"name":"scribble_font_exists","path":"scripts/scribble_font_exists/scribble_font_exists.yy",},"order":7,},
     {"id":{"name":"IWB_UI_slider2","path":"sprites/IWB_UI_slider2/IWB_UI_slider2.yy",},"order":3,},
     {"id":{"name":"obj_mrchen","path":"objects/obj_mrchen/obj_mrchen.yy",},"order":0,},
+    {"id":{"name":"spr_arrows_white","path":"sprites/spr_arrows_white/spr_arrows_white.yy",},"order":71,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":15,},
     {"id":{"name":"obj_grace_investigation_setup","path":"objects/obj_grace_investigation_setup/obj_grace_investigation_setup.yy",},"order":7,},
     {"id":{"name":"__scribble_config_colours","path":"scripts/__scribble_config_colours/__scribble_config_colours.yy",},"order":1,},
@@ -1666,6 +1667,7 @@
     {"id":{"name":"spr_horror_hallway","path":"sprites/spr_horror_hallway/spr_horror_hallway.yy",},"order":46,},
     {"id":{"name":"spr_rhythm_game_arrows","path":"sprites/spr_rhythm_game_arrows/spr_rhythm_game_arrows.yy",},"order":44,},
     {"id":{"name":"IWB_UI_character_right_arrow","path":"sprites/IWB_UI_character_right_arrow/IWB_UI_character_right_arrow.yy",},"order":13,},
+    {"id":{"name":"spr_arrows_white_hit_left_vfx","path":"sprites/spr_arrows_white_hit_left_vfx/spr_arrows_white_hit_left_vfx.yy",},"order":72,},
     {"id":{"name":"spr_mcronald_portrait_upset","path":"sprites/spr_mcronald_portrait_upset/spr_mcronald_portrait_upset.yy",},"order":3,},
     {"id":{"name":"dialogue_wednesday_classroom_mcronald_interjection","path":"objects/dialogue_wednesday_classroom_mcronald_interjection/dialogue_wednesday_classroom_mcronald_interjection.yy",},"order":12,},
     {"id":{"name":"dialogue_brooklyn_dating_sim_tuesday_1","path":"objects/dialogue_brooklyn_dating_sim_tuesday_1/dialogue_brooklyn_dating_sim_tuesday_1.yy",},"order":29,},
@@ -2123,10 +2125,11 @@
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"joystix monospace.otf","CopyToMask":3035426170322551022,"filePath":"datafiles",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"bobbys_room.m4a","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"bobbys_room.m4a","CopyToMask":3035426170322551022,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"hot_pocket-20241123-101924.piskel","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"scribble_license.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"My Video-5.mp4","CopyToMask":3035426170322551022,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"im_so_sorry.mp4","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.3.85",

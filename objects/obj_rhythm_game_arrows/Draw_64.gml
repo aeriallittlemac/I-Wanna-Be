@@ -1,14 +1,16 @@
+draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 1);
 if (music_started){
-var _data = video_draw();
-var _status = _data[0];
-var _video_status = video_get_status();
 
-if (_status == 0 && _video_status == video_status_playing)
-{
-    var _surface = _data[1];
+//var _data = video_draw();
+//var _status = _data[0];
+//var _video_status = video_get_status();
 
-    draw_surface_stretched(_surface, 30, -160, RESOLUTION_W*minimap_scale, RESOLUTION_H*minimap_scale);
-}
+//if (_status == 0 && _video_status == video_status_playing)
+//{
+//    var _surface = _data[1];
+
+//    draw_surface_stretched(_surface, 30, -160, RESOLUTION_W*minimap_scale, RESOLUTION_H*minimap_scale);
+//}
 }
 if player_score > 999{
 	display_player_score_string = string(player_score);
@@ -27,7 +29,7 @@ else{
 	}
 }
 
-draw_sprite_ext(spr_rhythm_game_arrows, -1, 0, y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
+//draw_sprite_ext(spr_rhythm_game_arrows, -1, 0, y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
 if !QTE{
 	draw_sprite_ext(spr_player_down, 0, (obj_player.x - camera_get_view_x(view_camera[0])) * minimap_scale, obj_drum_kit.y * minimap_scale, minimap_scale*obj_player.image_xscale, minimap_scale*obj_player.image_yscale, 0, c_white, 1);
 	draw_sprite_ext(spr_drum_kit, obj_drum_kit.image_index, (obj_drum_kit.x - camera_get_view_x(view_camera[0])) * minimap_scale, obj_drum_kit.y * minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1);
@@ -38,5 +40,9 @@ if QTE{
 	draw_sprite_ext(left_character_silhouette, character_anim_frame, left_character_x*minimap_scale, character_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
 	draw_sprite_ext(right_character_silhouette, -1, right_character_x*minimap_scale, character_y*minimap_scale, minimap_scale, minimap_scale, 0, c_white, 1 );
 }
+draw_set_halign(fa_left);
 draw_set_font(default_pixel_font);
 draw_text_transformed_color(245 * minimap_scale,0,display_player_score_string, 0.5, 0.5, 0, c_white, c_white, c_white, c_white,1);
+draw_set_halign(fa_middle);
+draw_set_font(lyrics_font);
+draw_text_transformed_color(135 * minimap_scale,100,lyrics, 0.5, 0.5, 0, c_white, c_white, c_white, c_white,1);

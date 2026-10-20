@@ -1,8 +1,23 @@
+lyrics="";
+lyric_index = 0;
+lyric_syllables = [
+    "Brook", "lyn ", "please ", "lis", "ten ", "to ", "me ", "um ", "I ",
+    "know ", "that ", "you ", "are ", "mad ", "at ", "me ", "for ", "some ",
+    "rea", "son ", "like ", "I ", "talked ", "shit ", "a", "bout ", "your ",
+    "re", "la", "tion", "ship ", "and ", "now ", "I ", "know ", "that's ",
+    "not ", "a ", "nice ", "thing ", "to ", "say ", "I'm ", "so ", "so-",
+    "o-", "ry ", "I'll ", "do ", "with ", "you ", "what", "e", "ver ",
+    "you ", "want ", "please ", "for", "gi","ve ", "me ", "I'm ", "so ",
+    "so-", "o-", "ry ", "and ", "can ", "you ", "go ", "out ", "with ",
+    "me ", "please "
+];
+lyrics_max_length = 12;
 next_beat_index = 0;
 music_started = false;
 music_buffer_time = 0;
 QTE = true;
 default_pixel_font = font_add("joystix monospace.otf", 28, false, false, 32, 128);
+lyrics_font = font_add("joystix monospace.otf", 64, false, false, 32, 128);
 misses = 0;
 max_misses = 0;
 minimap_scale = room_get_viewport(room,0)[3]/RESOLUTION_W;
@@ -12,7 +27,7 @@ bgm_instance = song_im_sorry;          // will hold the playing sound's instance
 audio_resync_timer = 0;
 audio_resync_interval = 1;  // seconds between resyncs; 0.5–2 is a reasonable range
 
-left_character_silhouette = spr_bobby_silhouette;
+left_character_silhouette = spr_bobby_portrait_default;
 right_character_silhouette = spr_grace_portrait_default;
 character_frame_rate = 12;
 character_anim_frame = 0;
