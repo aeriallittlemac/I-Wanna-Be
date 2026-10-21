@@ -8,10 +8,7 @@ obj_scribble.textbox(
 obj_scribble.textbox(
 	@"...
 	[/page]...Right.
-	[/page]Well, be sure to return this to me.
-	[/page]And remember...
-	[/page]Knock on the door. Both of you.
-	[/page]It is simply good manners.
+	[/page]...You. Out.
 	"
 	, 
 	"Gambino", spr_gambino_portrait_default

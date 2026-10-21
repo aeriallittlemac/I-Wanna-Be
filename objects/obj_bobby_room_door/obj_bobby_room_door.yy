@@ -7,7 +7,7 @@
     "path": "sprites/spr_interactable/spr_interactable.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

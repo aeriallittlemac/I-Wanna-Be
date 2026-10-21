@@ -14,6 +14,6 @@ obj_scribble.textbox(
 obj_scribble.textbox_unnamed(
 @"
 [/page]Was that...
-[/page]A guy in a rat costume?
+[/page]A giant rat?
 "
 )

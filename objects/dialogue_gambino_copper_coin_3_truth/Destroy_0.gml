@@ -1,0 +1,2 @@
+event_inherited();
+game_NewDialogue(dialogue_gambino_copper_coin_3_truth_1);

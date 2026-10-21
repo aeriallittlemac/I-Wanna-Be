@@ -1,12 +1,12 @@
 event_inherited();
-
+set_QTE_bgm(all_the_leaves_are_brown);
 
 function accept_cigarette() {
 	
 	obj_scribble.textbox(
 	@"Alright.
 	[/page]..hm...
-	", "Gambino", spr_gambino_portrait_default
+	", "Gambino", spr_gambino_portrait_tired
 	)
 	
 	obj_scribble.textbox_unnamed(
@@ -40,7 +40,7 @@ obj_scribble.textbox(
 	[/page]You have already heard of my position.
 	[/page]But in case you forget, I am Gambino.
 	[/page]President of this school.
-	", "Gambino", spr_gambino_portrait_default
+	", "Gambino", spr_gambino_portrait_tired
 	);
 obj_scribble.textbox(
 	@"...

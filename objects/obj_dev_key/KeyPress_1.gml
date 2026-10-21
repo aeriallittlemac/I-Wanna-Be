@@ -554,7 +554,7 @@ if keyboard_check(GAMBINOS_ROOM){
 	game_camera_change_settings(obj_player,-1);
 	teleport_npc(obj_wei, noone, 0, 0, DOWN);
 	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);
-	teleport_player(135, 140, school_gambinos_room)//, dialogue_meeting_gambino);
+	teleport_player(135, 140, school_gambinos_room, dialogue_meeting_gambino);
 	AddInstanceToDestroy(inst_1D43132F);
 	
 	
