@@ -8,14 +8,24 @@ obj_scribble.textbox(
 	@"Come on, please?
 	[/page]Wei told me that you were cool...
 	[/page]...Surely this isn't too much to ask?
-	[/page]I'll come along, ok? Pleeeeease!
+	[/page]Pleeeeease!
 	", 
 	"Mei", spr_mei_portrait_uncomfortable_smile
 );
 obj_scribble.textbox_unnamed(
-"You reluctantly agree."
+"You ask her how you should even go about it."
 );
 
+obj_scribble.textbox(
+	@"Umm...
+	[/page]Maybe apologize to her?
+	", 
+	"Mei", spr_mei_portrait_uncomfortable_smile
+);
+
+obj_scribble.textbox_unnamed(
+"[slant]Ok, let me try..."
+);
 
 //obj_scribble.textbox(
 //	@"Well, it's true that he's this amazing guy as you've described.

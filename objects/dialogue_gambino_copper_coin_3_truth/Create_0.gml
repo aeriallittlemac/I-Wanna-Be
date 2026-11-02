@@ -13,7 +13,7 @@ function truth() {
 	)
 	
 	obj_scribble.textbox_unnamed(
-	@"You tell him that you’re being dead honest and dead serious.
+	@"You tell him that you're being dead honest and dead serious.
 	")
 	//dialogue_gambino_copper_coin_3_truth.option = 2;
 }

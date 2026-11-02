@@ -6,13 +6,16 @@ obj_drake.face = obj_drake.last_face;
 if global.day == 2&& !global.storylines.Main_Classroom.Day_Two.talked_to.drake{
 	global.storylines.Main_Classroom.Day_Two.talked_to.drake = true;
 }
-else if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.drake{
+else if global.day == 3&& !global.storylines.Lab.Day_Three.talked_to.drake && global.storylines.Lab.Day_Three.talked_to.job{
 	global.storylines.Lab.Day_Three.talked_to.drake = true
+	teleport_npc(obj_gambino, school_gambinos_room, 230, 130, RIGHT);
+	NewDialogue(cutscene_gambinos_room_setup);
+	teleport_player(135, 162, school_gambinos_room)
 }
 else if global.day == 4&& !global.storylines.Main_Classroom.Day_Two.talked_to.drake{
 	if global.storylines.Grace.truth_or_dare_confession{
 		if !global.storylines.Grace.deny_rumor{
-		
+			
 		}
 		else{
 			global.storylines.Main_Classroom.Day_Four.talked_to.drake = true;

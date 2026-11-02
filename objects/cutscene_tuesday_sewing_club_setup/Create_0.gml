@@ -1,3 +1,4 @@
+audio_stop_all();
 obj_ashley.entityActivateArg = dialogue_ashleyseat_new;
 obj_brooklyn.entityActivateArg = dialogue_brooklynseat_new;
 //obj_grace.entityActivateArg = dialogue_graceseat_new;

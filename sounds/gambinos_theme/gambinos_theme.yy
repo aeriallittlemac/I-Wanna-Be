@@ -4,7 +4,7 @@
   "name": "gambinos_theme",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "gambinos_theme.wav",
-  "duration": 24.4,
+  "duration": 43.6,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

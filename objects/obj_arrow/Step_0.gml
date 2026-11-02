@@ -6,5 +6,9 @@ if original_arrow{
 }
 
 if x < camera_get_view_x(view_camera[0]){
+	instance_destroy(obj_arrow);
+	instance_destroy();
+		obj_rhythm_game_arrows.arrow_missed = true;
+		instance_destroy(obj_rhythm_game_arrows)
 		instance_destroy(self);
 	}

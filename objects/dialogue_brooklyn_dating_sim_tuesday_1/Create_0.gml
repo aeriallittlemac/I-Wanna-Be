@@ -10,7 +10,7 @@ function gambino() {
 	@"[#c94242]Woah, you have object permanence!
 [/page]I honestly didn't believe in you for a second there, Bobby.
 ",
-	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	"[#c94242]Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 	
 	
@@ -29,7 +29,7 @@ function weep() {
 [/page]Oh my god, that is genuinely pathetic, Bobby.
 [/page][instance_create_object,cutscene_lose_life]Even for you.
 	",
-	"Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
+	"[#c94242]Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);
 	
 	obj_scribble.textbox_unnamed(@"[#c94242]The tears seem to not move her.
@@ -54,7 +54,7 @@ obj_scribble.textbox(
 [/page]and not just incoherent blabbering...
 [/page]get lost. I have a boyfriend.
 	",
-	"Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink,,,[
+	"[#c94242]Brooklyn",spr_brooklyn_portrait_default,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink,,,[
 		{text: "Gambino?", textbox: obj_choice_1_mock_2, bounds: obj_bounds_1_mock_2, cb: gambino},
 		{text: "Weep", textbox: obj_choice_2_mock_2, bounds: obj_bounds_2_mock_2, cb: weep},
 		{text: "Chair", textbox: obj_choice_3_mock_2, bounds: obj_bounds_3_mock_2, cb: chair}

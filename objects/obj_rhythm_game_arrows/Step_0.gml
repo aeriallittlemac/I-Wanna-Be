@@ -5,8 +5,10 @@ if (!music_started){
 	pre_music_timer += delta_time/1000000;
 	if pre_music_timer >= music_buffer_time{
 		music_started = true;
-		bgm_instance = set_QTE_bgm(song_im_sorry); // make sure set_QTE_bgm returns the sound instance id from audio_play_sound()
-		video_open("im_so_sorry.mp4");
+		set_QTE_bgm(bgm_instance);
+		//audio_play_sound(bgm_instance, 1, false);
+		//audio_sound_gain(bgm_instance, 0.6, 0);
+		//video_open("im_so_sorry.mp4");
 	}
 }
  

@@ -4,20 +4,20 @@ if room == school_sewing_club{
 		global.cutscene = false;
 	}
 	if global.day == 2{
-	set_QTE_bgm(sewing_club_happy);
-	}
-	else{
-		if global.storylines.Grace.truth_or_dare_confession{
-			if global.storylines.Grace.deny_rumor{
+	//set_QTE_bgm(sewing_club_happy);
+	//}
+	//else{
+	//	if global.storylines.Grace.truth_or_dare_confession{
+	//		if global.storylines.Grace.deny_rumor{
 				
-			}
-			else{
-				set_QTE_bgm(sewing_club_happy);
-			}
-		}
-		else{
-			set_QTE_bgm(sewing_club_happy);
-		}
+	//		}
+	//		else{
+	//			set_QTE_bgm(sewing_club_happy);
+	//		}
+	//	}
+	//	else{
+	//		set_QTE_bgm(sewing_club_happy);
+	//	}
 	}
 }
 if !audio_is_playing(morning){
@@ -35,5 +35,6 @@ else{
 }
 if room == school_lab{
 	audio_stop_all();
-	set_QTE_bgm(lab_theme);
+	set_QTE_bgm(five_four_theme_inverted);
+	audio_sound_gain(five_four_theme_inverted, 0.3, 0);
 }

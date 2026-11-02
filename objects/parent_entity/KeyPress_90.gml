@@ -1,6 +1,6 @@
 if player_facing_self && !global.cutscene && 
 !global.in_dialogue && !global.timed_dialogue && entityActivateScript != -1 && entityActivateArg != -1  && !instance_exists(obj_rhythm_game_arrows)
-&& !global.in_hints &&!global.QTE&&!instance_exists(obj_black_screen){
+&& !global.in_hints &&!global.QTE&&!instance_exists(obj_black_screen) && !instance_exists(obj_time_skip){
 	show_debug_message(object_get_name(object_index));
 	show_debug_message(hmm);
 	show_debug_message(opt);

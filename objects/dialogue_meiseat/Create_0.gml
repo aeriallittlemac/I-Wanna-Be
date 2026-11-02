@@ -23,7 +23,7 @@ else if global.day == 3 && global.game_time == "3:30 pm"{
 					scr_text("Hey, Bobby.", spr_mei_portrait_default, 0);
 					scr_text("...");
 					scr_text("Oh geez. Where do I begin?", spr_mei_portrait_default, 0);
-					scr_text("I know that you must feel like Grace is acting, like, super unfair.", spr_mei_portrait_default, 0);
+					scr_text("I know that you must feel like Brooklyn is acting, like, super unfair.", spr_mei_portrait_default, 0);
 					scr_text("But that's just kind of how it goes with her.", spr_mei_portrait_default, 0);
 					scr_text("Once she calms down, could you go make up with her?", spr_mei_portrait_default, 0);
 					scr_text("You'll say sorry, and maybe she'll say sorry...", spr_mei_portrait_default, 0);

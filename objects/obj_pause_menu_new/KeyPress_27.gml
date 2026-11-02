@@ -30,9 +30,9 @@
 //}
 if bookmark_select{
 
-pauseMenu();
+//pauseMenu();
 }
 else{
-	audio_play_sound(sfx_book_close, 1, false);
-	bookmark_select = true;
+	//audio_play_sound(sfx_book_close, 1, false);
+	//bookmark_select = true;
 }

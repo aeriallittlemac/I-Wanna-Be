@@ -1,4 +1,6 @@
 event_inherited();
+obj_player.x = 143;
+obj_player.y = 144;
 obj_scribble.textbox_unnamed(
 	"You decide to sit down on the only free seat, but...");
 	

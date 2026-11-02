@@ -3,7 +3,7 @@ event_inherited();
 
 function understand_yes() {
 	obj_scribble.textbox(
-	@"Excellent.
+	@"[vl_gambino_Good_]Excellent.
 	", "Gambino", spr_gambino_portrait_tired
 	)
 }
@@ -11,7 +11,7 @@ function understand_yes() {
 function understand_no() {
 	obj_scribble.textbox(
 	@"...
-	[/page]Just listen and nod along, I don't have time for this.
+	[/page][vl_gambino_sigh]Just listen and nod along, I don't have time for this.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 	
@@ -20,23 +20,22 @@ function understand_no() {
 function question_gambino() {
 	obj_scribble.textbox(
 	@"Maybe a story for another day.
-	[/page]But I don't have time for this right now.
+	[/page][vl_gambino_No_]But I don't have time for this right now.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 	
 }
 
 obj_scribble.textbox(
-	@"*clears throat
-	[/page]Back to business.
+	@"[vl_gambino_Listen_close]Back to business.
 	[/page]At the least, I assume you to be attentive, Bobby.
 	[/page]Your classmates, the walls, the textbooks, all have one thing in common.
-	[/page]They're all [scale,1.2]atrocious[/].
-	[/page][scale,1.2]Bottom of the barrel[/], as quality goes.
+	[/page][vl_gambino_unfortunate]They're all [scale,1.2]atrocious[/].
+	[/page][vl_gambino_idioti_short][scale,1.2]Bottom of the barrel[/], as quality goes.
 	[/page]This school, even.
-	[/page]Ranked second to last in the entire state.
-	[/page]Our lead? Against Huckleberry's school for [scale,1.2]down syndrome kids[/].
-	[/page]We win by a hair in mathematics.
+	[/page][vl_gambino_Hm]Ranked second to last in the entire state.
+	[/page][vl_gambino_sigh]Our lead? Against Huckleberry's school for [scale,1.2]down syndrome kids[/].
+	[/page][vl_gambino_Hm]We win by a hair in mathematics.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 obj_scribble.textbox_unnamed(
@@ -44,12 +43,12 @@ obj_scribble.textbox_unnamed(
 	")
 	
 obj_scribble.textbox(
-	@"Our presidents, each of varying quality themselves...
+	@"[vl_gambino_Now_long]Our presidents, each of varying quality themselves...
 	[/page][scale,1.2]Uphold the school. Protect it. Improve it.[/]
-	[/page][slant]That is- save for the previous mosca.[/slant]
-	[/page]He brought the school to its lowest low.
+	[/page][vl_gambino_sigh][slant]That is- save for the previous mosca.[/slant]
+	[/page][vl_gambino_idioti_short]He brought the school to its lowest low.
 	[/page]Now I am here, and I alone hold the responsibility of salvaging this cesso.
-	[/page]Understand?
+	[/page][vl_gambino_Hm_confused]Understand?
 	",
 	"Gambino",spr_gambino_portrait_tired,,,,,,,,,[
 		{text: "Yes.", textbox: obj_choice_1_mock_0, bounds: obj_bounds_1_mock_2, cb: understand_yes},

@@ -1,5 +1,4 @@
 event_inherited();
-obj_player.image_alpha = 0;
 obj_scribble.textbox(
 	@"My queen. McRonald, requires a favor from your majesty.
 	", 

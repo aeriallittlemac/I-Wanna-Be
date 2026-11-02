@@ -4,7 +4,7 @@
   "name": "sewing_club_happy",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sewing_club_happy.wav",
-  "duration": 39.27272,
+  "duration": 78.54546,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

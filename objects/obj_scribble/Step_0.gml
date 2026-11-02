@@ -62,7 +62,7 @@ if (keyboard_check_pressed(CANCEL_ACTION)) {
 	} else if (typist_state < 1 && typist_state > 0) {
 		active_typist.skip();
 	} else if (typist_state > 0) {
-		audio_play_sound(sfx_move_select, 1, false);
+		//audio_play_sound(sfx_move_select, 1, false);
 		text_element.page(text_element.get_page() + 1);
 	}
 }

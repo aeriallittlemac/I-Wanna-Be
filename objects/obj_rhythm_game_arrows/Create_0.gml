@@ -56,8 +56,8 @@ lose_cutscene_object = noone;
 beat = 0;
 bar = 0;
 arrows = array_create(0);
-last_arrow_dir = 0
-
+last_arrow_dir = 0;
+arrow_missed = false;
 
 for (var i = 0; i < 8; i++){
 	array_push(arrows,[1,0,0,1,0,0,1,0,0,1,1,0,1,0,1,0]);

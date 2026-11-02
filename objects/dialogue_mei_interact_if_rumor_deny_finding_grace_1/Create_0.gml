@@ -1,21 +1,29 @@
 event_inherited();
-//how does Brooklyn enrage Grace?
+
 obj_scribble.textbox(
-	@"I think she's in her room, there's a little bit of light coming from there.
-	[/page][sfx_knock_door]Grace, you wanna come out and talk?
+	@"Grace, what the hell are you doing?
+	[/page][sfx_knock_door]*knocks door
+	[/page]The door is... unlocked?
 	", 
-	"Mei", spr_mei_portrait_default
+	"Brooklyn", spr_brooklyn_portrait_default
 );
-obj_scribble.textbox_unnamed(
-	"No response."
-)
-obj_scribble.textbox(
-	@"I know you're in here, Grace!
-	[/page]You've locked the-
-	[/page][sfx_turn_door_hinge]Wait, the door isn't locked?
-	", 
-	"Mei", spr_mei_portrait_default
-);
+
+//obj_scribble.textbox(
+//	@"I think she's in her room, there's a little bit of light coming from there.
+//	[/page][sfx_knock_door]Grace, you wanna come out and talk?
+//	", 
+//	"Mei", spr_mei_portrait_default
+//);
+//obj_scribble.textbox_unnamed(
+//	"No response."
+//)
+//obj_scribble.textbox(
+//	@"I know you're in here, Grace!
+//	[/page]You've locked the-
+//	[/page][sfx_turn_door_hinge]Wait, the door isn't locked?
+//	", 
+//	"Mei", spr_mei_portrait_default
+//);
 
 
 //obj_scribble.textbox(

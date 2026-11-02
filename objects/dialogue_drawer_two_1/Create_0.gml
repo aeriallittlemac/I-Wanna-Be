@@ -1,9 +1,16 @@
 event_inherited();
 instance_destroy(obj_grace_corpse_reveal)
+//obj_scribble.textbox(
+//	@"You find anything, Bobby?
+//	", 
+//	"Mei", spr_mei_portrait_default
+//);
+
 obj_scribble.textbox(
 	@"You find anything, Bobby?
+	[/page]I know I'm not going into that room of filth.
 	", 
-	"Mei", spr_mei_portrait_default
+	"Brooklyn", spr_brooklyn_portrait_default
 );
 
 obj_scribble.textbox(

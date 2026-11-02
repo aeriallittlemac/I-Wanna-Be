@@ -1,15 +1,33 @@
 event_inherited();
-teleport_npc(obj_mei, school_1F, obj_player.x - 40, obj_player.y, DOWN);
+teleport_npc(obj_brooklyn, school_1F, obj_player.x - 40, obj_player.y, DOWN);
+
 obj_scribble.textbox(
-	@"Where'd she go?
-	[/page]It doesn't seem like she's on the first floor...
-	[/page]Let's go upstairs to find her.
+	@"It doesn't seem like she's on the first floor...
+	[/page]Let's go upstairs.
 	", 
-	"Mei", spr_mei_portrait_uncomfortable_smile
+	"Brooklyn", spr_brooklyn_portrait_default
 );
+
 obj_scribble.textbox_unnamed(
-"Uh huh."
+"You ask why we're going up the stairs."
 )
+
+obj_scribble.textbox(
+	@"Mei seems worried about her, so I'm gonna go take a look on her behalf.
+	[/page]She went through the trouble of making you beg for my forgiveness, after all.
+	", 
+	"Brooklyn", spr_brooklyn_portrait_default
+);
+
+obj_scribble.textbox_unnamed(
+"You ask why you're coming along."
+);
+
+obj_scribble.textbox(
+	@"If she crashes out violently, I will need a human shield. That's why.
+	", 
+	"Brooklyn", spr_brooklyn_portrait_default
+);
 
 
 //obj_scribble.textbox(

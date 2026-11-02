@@ -119,7 +119,7 @@ ydiff = obj_player.y - y - 2;
 detection = ((xdiff*xdiff/7)+(ydiff*ydiff/5)) < oval_detection_scale*sqr(image_xscale/CLASSROOM_CHARACTER_SCALE);
 var in_range =  detection && !global.cutscene && 
 !global.in_dialogue && !global.timed_dialogue && entityActivateScript != -1 && entityActivateArg != -1  && !instance_exists(obj_rhythm_game_arrows)
-&& !global.in_hints && !global.QTE;
+&& !global.in_hints && !global.QTE && !instance_exists(obj_time_skip);
 
 if in_range && global.npc_in_interaction == noone{
 	global.npc_in_interaction = self;

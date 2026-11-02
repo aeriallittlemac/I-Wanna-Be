@@ -1,0 +1,1 @@
+depth = OBJ_MAX_DEPTH;

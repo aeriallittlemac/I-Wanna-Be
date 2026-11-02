@@ -14,18 +14,42 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
-	if !global.storylines.Lab.Day_Three.talked_to.drake{
-		obj_scribble.textbox(
-				"*warns you that you're not allowed to go out", 
-				"Drake", spr_drake_portrait_default
-		);
+	obj_scribble.textbox(
+	@"snorrre... snore... zzzzzzz...", 
+	"Drake", spr_drake_portrait_default
+	);
+	
+	if !global.storylines.Lab.Day_Three.talked_to.drake && global.storylines.Lab.Day_Three.talked_to.job{
+	obj_scribble.textbox(
+	@"snrk?
+	[/page]Aw man! I totally spaced out!
+	[/page]Boss man wants to see you!
+	[/page]Like, 20 minutes ago!
+	[/page]Go! Now! Be free!
+	", 
+	"Drake", spr_drake_portrait_default
+	);
+	
+	obj_scribble.textbox_unnamed(
+	@"[slant]You sleep with your eyes open?"
+	)
+	
+	obj_scribble.textbox(
+	@"Yeah man.
+	[/page]It's called nocturnal lagophthalmos, google it.
+	[/page]Now move!
+	", 
+	"Drake", spr_drake_portrait_default
+	);
+	
+	
 		}
-	else{
-		obj_scribble.textbox(
-				"*warns you that you're not allowed to go out", 
-				"Drake", spr_drake_portrait_default
-		);
-	}
+	//else{
+	//	obj_scribble.textbox(
+	//			"*warns you that you're not allowed to go out", 
+	//			"Drake", spr_drake_portrait_default
+	//	);
+	//}
 	
 }
 else if global.day == 4{

@@ -1,8 +1,8 @@
 right_character_silhouette = spr_brooklyn_portrait_default;
 QTE = true;
 target_score = 7;
-win_cutscene = noone;
-lose_cutscene = noone;
+win_cutscene = dialogue_brooklyn_apology_success;
+lose_cutscene = dialogue_brooklyn_apology_fail;
 tempo = 80;
 arrows = array_create(0);
 //for(var i=0; i<4; i++){

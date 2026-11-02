@@ -9,6 +9,7 @@ function global_hue(_hex){
 }
 
 function default_lighting(){
+	obj_vfx.effects.lighting.start()
 	global_hue(#ffffff);
 	global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 	global.shadow_blur_radius = 20;
@@ -111,7 +112,7 @@ function gambinos_lighting(){
 	global.shadow_bleed = 0.125;
 	global.shadow_weight = 0.0;
 	global.time_based_lighting = true;
-	
+	global.night = false;
 }
 
 function reverse_gambinos_lighting(){
@@ -131,47 +132,14 @@ function reverse_gambinos_lighting(){
 
 function jake_and_drake_lighting(){
 	
-	var spotlight_y_offset = -20;
-	var radius = 50.0;
-	var	illumination = 10000.0;
-	var	bloom = 0.2;
-	var	mbright = 1.0;
-	var	angle_lower = -110.0;
-	var	angle_upper = -70.0;
-	var	dynamic = false;
 	
-	var spotlight = instance_create_depth(obj_jake.x, spotlight_y_offset, 0, obj_sh_light);
-	with spotlight{
-		image_blend = #FFF8B2;
-		_radius = radius;
-		_illumination = illumination;
-		_bloom = bloom;
-		_mbright = mbright;
-		_angle_lower = angle_lower;
-		_angle_upper = angle_upper;
-		_dynamic = dynamic;
-		light_name = "Jake spotlight";
-	}
-	
-	var spotlight = instance_create_depth(obj_drake.x, spotlight_y_offset, 0, obj_sh_light);
-	with spotlight{
-		image_blend = #FFF8B2;
-		_radius = radius;
-		_illumination = illumination;
-		_bloom = bloom;
-		_mbright = mbright;
-		_angle_lower = angle_lower;
-		_angle_upper = angle_upper;
-		_dynamic = dynamic;
-		light_name = "Drake spotlight";
-	}
 	global_hue(#990F16);
 	global.sh_bloom_bleed = [0.125, 0.125, 0.125];
 	global.shadow_blur_radius = 20;
 	global.shadow_bleed = 0.125;
 	global.shadow_weight = 0.0;
 	global.time_based_lighting = false;
-	obj_black_filter_night.image_alpha = 0;
+	global.night = false;
 	
 }
 

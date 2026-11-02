@@ -4,7 +4,7 @@ NewQuest(global.quest_list.sewing_club_quest, QUEST_TEXT_FONT_SIZE, c_yellow, QU
 audio_sound_gain(weis_theme, 0, 1000);
 audio_play_sound(uncomfortable_ambience, 1, true);
 audio_sound_gain(uncomfortable_ambience, 0, 0);
-audio_sound_gain(uncomfortable_ambience, 0.25, 1000);
+audio_sound_gain(uncomfortable_ambience, 0.15, 1000);
 obj_scribble.textbox_unnamed(
 	@"[slant]It's been hours, but...
 	[/page]I haven't even talked to a single girl yet.

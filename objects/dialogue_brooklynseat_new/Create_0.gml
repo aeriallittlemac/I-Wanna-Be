@@ -115,7 +115,7 @@ Hey, this...
 		obj_scribble.textbox(
 			@"You know what's funny?
 [/page]I'm pretty ugly on the inside, while you're pretty ugly on the outside.",
-			"Brooklyn", spr_brooklyn_portrait_proud
+			"Brooklyn", spr_brooklyn_portrait_smiling
 		);
 		obj_scribble.textbox_unnamed("Ouch.");
 		obj_scribble_events.exec_seconds_callbacks.cutscene_sewing_club_day_4_brooklyn_sleep_2 = function () {
@@ -175,6 +175,7 @@ You stop the song on her phone and cover her up with blanket"
 }
 
 if global.day == 2{
+	audio_sound_gain(date_with_grace, 0, 1000);
 	if !global.storylines.Sewing_Club.Day_Two.talked_to.brooklyn{
 		obj_scribble.textbox(
 			@"?
@@ -195,20 +196,12 @@ if global.day == 2{
 else if global.day == 3{
 	if global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 	obj_scribble.textbox(
-		@"Looks like you're in deep shit, Bobby Johns.
-		[/page]Well, hope you enjoyed your life so far.
+		@"...
+		[/page]*refuses to acknowledge you
 		", 
 		"Brooklyn", spr_brooklyn_portrait_default
 		);
-	obj_scribble.textbox_unnamed(
-	"You knew about Grace's secret?"
-	)
-	obj_scribble.textbox(
-		@"Duh, we lived on the same floor with that retard for years.
-		[/page]You couldn't miss the sight of that hog stuffing her face.
-		", 
-		"Brooklyn", spr_brooklyn_portrait_default
-		);
+	
 	}
 	else{
 	obj_scribble.textbox(

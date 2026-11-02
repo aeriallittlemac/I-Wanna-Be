@@ -11,3 +11,6 @@ if audio_is_playing(global.bgm){
 	//	}
 	//}
 }
+else{
+	song_current_runtime = 0;
+}

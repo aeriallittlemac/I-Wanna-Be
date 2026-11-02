@@ -1,5 +1,7 @@
 event_inherited();
 option = -1;
+set_QTE_bgm(gambinos_theme);
+audio_sound_gain(gambinos_theme, 0.4, 0);
 function truth() {
 	obj_scribble.textbox_unnamed(
 	@"You tell Gambino about the shadowy figure in the vents.

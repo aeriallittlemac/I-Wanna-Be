@@ -85,8 +85,7 @@ else if global.day == 3{
 		
 		obj_scribble.textbox_unnamed(
 			@"A copper coin...
-			[/page]Maybe someone might be able to give us a hint here...
-			[/page]Press escape to check hints.
+			[/page]Maybe we can borrow one from somewhere...
 			" 
 		);
 	}

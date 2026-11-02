@@ -1,6 +1,6 @@
 event_inherited();
 set_QTE_bgm(all_the_leaves_are_brown);
-audio_sound_gain(all_the_leaves_are_brown, 0.6, 0);
+audio_sound_gain(all_the_leaves_are_brown, 0.2, 0);
 obj_scribble.textbox(
 	@"*on the phone
 	[/page]You [scale,1.5]WHAT?![/s]

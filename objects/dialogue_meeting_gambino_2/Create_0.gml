@@ -6,9 +6,9 @@ function identity() {
 	@"You ask who you would even be looking out for, given you're new to the school.
 	")
 	obj_scribble.textbox(
-	@"Think simple, fool.
+	@"[vl_gambino_idioti_short]Think simple, fool.
 	[/page]Features, description, voice-
-	[/page]Hell, ask their name, maybe they'll answer.
+	[/page][vl_gambino_Hm]Hell, ask their name, maybe they'll answer.
 	", "Gambino", spr_gambino_portrait_tired
 	)
 }
@@ -16,38 +16,33 @@ function identity() {
 function intent() {
 	obj_scribble.textbox_unnamed(
 	@"You ask what he means by intent.
-	[/page]Where are they looking?
+	[/page][vl_gambino_Listen_close]Where are they looking?
 	[/page]Are they doing anything specific?
-	[/page]Use your [scale,1.2]insight.[s/]
+	[/page][vl_gambino_idioti_short]Use your [scale,1.2]insight.[s/]
 	")
-	obj_scribble.textbox(
-	@"...
-	[/page]Just listen and nod along, I don't have time for this.
-	", "Gambino", spr_gambino_portrait_tired
-	);
 	
 }
 
 function got_it() {
 	obj_scribble.textbox(
-	@"Good.
+	@"[vl_gambino_Good_]Good.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 	
 }
 
 obj_scribble.textbox(
-	@"Anyways.
+	@"[vl_gambino_Listen_close]Anyways.
 	[/page]What I require of you is something extremely important.
-	[/page]Despite my attempts to rebuild the school, there is some party that would rather see it crumble.
-	[/page]A rat has been crawling in my fucking air vents, spying on my administration's every move.
+	[/page][vl_gambino_sigh]Despite my attempts to rebuild the school, there is some party that would rather see it crumble.
+	[/page][vl_gambino_unfortunate]A rat has been crawling in my fucking air vents, spying on my administration's every move.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 	
 obj_scribble.textbox(
-	@"That is where you come in.
+	@"[vl_gambino_Now_long]That is where you come in.
 	[/page]Your task is simple;
-	[/page]Utilize the air vents, find the rat, and report their identity and intent back to me. Capiche?
+	[/page][vl_gambino_Listen_close]Utilize the air vents, find the rat, and report their identity and intent back to me. Capiche?
 	",
 	"Gambino",spr_gambino_portrait_tired,,,,,,,,,[
 		{text: "Identity?", textbox: obj_choice_1_mock_0, bounds: obj_bounds_1_mock_2, cb: identity},

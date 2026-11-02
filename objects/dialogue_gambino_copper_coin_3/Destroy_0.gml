@@ -16,4 +16,3 @@ else{
 		inst.lose_cutscene = dialogue_gambino_copper_coin_3_lie_lose;
 	}
 }
-game_NewDialogue(dialogue_gambino_copper_coin_4);

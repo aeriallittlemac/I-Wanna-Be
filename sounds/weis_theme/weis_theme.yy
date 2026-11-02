@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "weis_theme.wav",
-  "duration": 52.324306,
+  "duration": 36.0,
   "parent": {
     "name": "Music",
     "path": "folders/School Assets/Non-UI Sounds/Music.yy",

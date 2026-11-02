@@ -1,0 +1,3 @@
+event_inherited();
+game_NewCharacterIntro(obj_gambino);
+game_NewDialogue(dialogue_gambino_apparence_3)

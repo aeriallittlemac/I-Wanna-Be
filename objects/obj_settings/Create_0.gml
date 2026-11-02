@@ -1,4 +1,7 @@
 //window_set_fullscreen(true)
+audio_group_load(vl_gambino);
+
+audio_group_set_gain(vl_gambino, 0.75, 0);
 global.blue = false;
 global.interactable_in_range = false;
 global.npc_in_interaction = noone;

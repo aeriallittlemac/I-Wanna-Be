@@ -5,5 +5,7 @@
 //AddInstanceToActivate(INST_BROOKLYN_OUTSIDE_LAB);
 
 //instance_create_depth(0, 0, 0, obj_mei_lighting);
-mission_lighting();
-audio_sound_gain(qte_bgm, 0.4, 500);
+//mission_lighting();
+//audio_sound_gain(qte_bgm, 0.4, 500);
+teleport_player(300, 112, school_2F, dialogue_wei_post_hang_out);
+teleport_npc(obj_wei, school_2F, 250, 100, RIGHT);

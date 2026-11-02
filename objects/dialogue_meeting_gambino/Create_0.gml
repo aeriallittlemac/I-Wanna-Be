@@ -1,11 +1,12 @@
 event_inherited();
 set_QTE_bgm(all_the_leaves_are_brown);
+audio_sound_gain(all_the_leaves_are_brown, 0.2, 0);
 
 function accept_cigarette() {
 	
 	obj_scribble.textbox(
-	@"Alright.
-	[/page]..hm...
+	@"[vl_gambino_Good_]Alright.
+	[/page][vl_gambino_Hm_confused]..hm...
 	", "Gambino", spr_gambino_portrait_tired
 	)
 	
@@ -15,9 +16,9 @@ function accept_cigarette() {
 	)
 	
 	obj_scribble.textbox(
-	@"no...
+	@"[vl_gambino_No_]no...
 	[/page]...
-	[/page]It would seem I have used them all. My apologies.
+	[/page][vl_gambino_unfortunate]It would seem I have used them all. My apologies.
 	", "Gambino", spr_gambino_portrait_tired
 	)
 	
@@ -29,22 +30,22 @@ function reject_cigarette() {
 	
 	obj_scribble.textbox(
 	@"Well then.
-	[/page]Better man than me.
+	[/page][vl_gambino_sigh]Better man than me.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 	
 }
 
 obj_scribble.textbox(
-	@"Welcome, Bobby.
+	@"[vl_gambino_Hm]Welcome, Bobby.
 	[/page]You have already heard of my position.
-	[/page]But in case you forget, I am Gambino.
+	[/page][vl_gambino_Now_long]But in case you forget, I am Gambino.
 	[/page]President of this school.
 	", "Gambino", spr_gambino_portrait_tired
 	);
 obj_scribble.textbox(
 	@"...
-	[/page]...Could I offer you a cigarette?
+	[/page][vl_gambino_sigh]...Could I offer you a cigarette?
 	",
 	"Gambino",spr_gambino_portrait_tired,,,,,,,,,[
 		{text: "Yay!", textbox: obj_choice_1_mock_0, bounds: obj_bounds_1_mock_2, cb: accept_cigarette},

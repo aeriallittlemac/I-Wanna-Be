@@ -1,5 +1,6 @@
 event_inherited();
 set_QTE_bgm(gambinos_theme);
+audio_sound_gain(gambinos_theme, 0.4, 0);
 obj_scribble.textbox(
 	@"Un imbarazzo...
 	[/page]Oh well, I'm not paying the both of them, so I suppose I can't really complain...

@@ -226,7 +226,12 @@ function redo_UI(){
 	
 }
 function set_QTE_bgm(song){
-	audio_play_sound(song, 1, true);
+	if(song == song_im_sorry){
+		audio_play_sound(song, 1, false);
+	}
+	else{
+		audio_play_sound(song, 1, true);
+	}
 	global.bgm = song;
 	obj_music_manager.song_current_runtime = 0;
 }

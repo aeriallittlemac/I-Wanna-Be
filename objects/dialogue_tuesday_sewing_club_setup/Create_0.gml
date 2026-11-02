@@ -39,7 +39,8 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	@"Very well. McRonald recedes.",
+	@"Very well. McRonald recedes.
+	",
 	"McRonald", spr_mcronald_portrait_flex
 );
 
