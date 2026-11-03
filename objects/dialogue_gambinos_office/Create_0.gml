@@ -1,0 +1,6 @@
+event_inherited();
+
+	obj_scribble.textbox_unnamed(@"...
+	[/page]What's going on in there?
+	[/page]I can't see inside...
+	");

@@ -1,5 +1,10 @@
 event_inherited();
 game_camera_change_settings(obj_brooklyn, 2);
+audio_sound_gain(morning, 0, 1000);
+set_QTE_bgm(all_the_leaves_are_brown);
+audio_sound_gain(all_the_leaves_are_brown, 0, 0);
+audio_sound_gain(all_the_leaves_are_brown, 0.2, 1000);
+
 obj_scribble.textbox(
 	@"Gamby, you're not listening.
 	[/page]It's Mars.

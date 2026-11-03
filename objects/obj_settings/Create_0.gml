@@ -1,4 +1,6 @@
 //window_set_fullscreen(true)
+persistent = true;
+obj_minimap.persistent = true;
 audio_group_load(vl_gambino);
 
 audio_group_set_gain(vl_gambino, 0.75, 0);

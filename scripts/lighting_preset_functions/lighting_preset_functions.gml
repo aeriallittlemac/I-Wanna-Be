@@ -195,6 +195,12 @@ function reverse_mcronalds_lighting(){
 		inst_classroom_light_1.image_blend = c_white;
 		inst_classroom_light_2.image_blend = c_white;
 	}
+	if room == school_sewing_club{
+		inst_sewing_light_upper.image_blend = c_white;
+		inst_sewing_light_lower.image_blend = c_white;
+		angle_lower = -100.0;
+		angle_upper = -80.0;
+	}
 	with (obj_sh_light) {
     if (light_name == "McRonald spotlight") {
         instance_destroy(self);
