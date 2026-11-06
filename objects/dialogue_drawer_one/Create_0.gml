@@ -8,10 +8,10 @@ obj_scribble.textbox_unnamed(
 
 )
 obj_scribble.textbox(
-	@"Oh, I think I have that one as well.
+	@"Hey! I think I have that one too!
 	[/page]It protects you from evil spirits.
 	", 
-	"Brooklyn", spr_mei_portrait_default
+	"Mei", spr_mei_portrait_default
 );
 obj_scribble.textbox_unnamed(
 @"You shortly onclude that the crystals are useless.

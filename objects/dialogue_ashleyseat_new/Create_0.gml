@@ -41,7 +41,7 @@ if global.day == 2{
 	}
 }
 else if global.day == 3{
-	if !global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
+	if global.storylines.Sewing_Club.Day_Three.talked_to.brooklyn{
 	obj_scribble.textbox(
 		@"That was a fun lab, wasn't it s-senpai?
 		[/page]Did you see what I made?
@@ -51,6 +51,7 @@ else if global.day == 3{
 	else{
 	obj_scribble.textbox(
 		@"*kinda feels sorry for you, but doesn't know what to say...
+		[/page]Did you see what I made?
 		",
 		"Weeabo Girl", spr_ashley_portrait_default);
 	}

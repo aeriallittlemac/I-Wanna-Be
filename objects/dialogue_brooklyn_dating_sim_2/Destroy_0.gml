@@ -11,7 +11,6 @@ if obj_dating_sim.lives_left>0{
 	array_push(sentence, "bath");
 	inst.sentence = sentence;
 	inst.full_sentence = "Take a toaster bath";
-	game_set_speed(240, gamespeed_fps);
 }
 else{
 	NewDialogue(dialogue_brooklyn_dating_sim_game_over);

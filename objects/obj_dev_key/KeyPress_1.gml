@@ -116,6 +116,7 @@ if keyboard_check_pressed(MONDAY_CLASSROOM){
 
 if keyboard_check_pressed(BROOKLYN_ACTION_SCENE){
 	global.day = 5;
+	instance_activate_object(inst_WELCOME_TABLE);
 	game_camera_change_settings(obj_brooklyn,-1);
 	teleport_npc(obj_wei, noone, 0, 0, DOWN);
 	teleport_npc(obj_drake, school_gambinos_room, 196, 110, DOWN);
@@ -549,6 +550,7 @@ if keyboard_check(SECOND_DAY_MAIN_CLASSROOM){
 
 if keyboard_check(GAMBINOS_ROOM){
 	global.day = 2
+	instance_activate_object(inst_WELCOME_TABLE);
 	game_camera_change_settings(obj_player,-1);
 	teleport_npc(obj_wei, noone, 0, 0, DOWN);
 	teleport_npc(obj_gambino, school_gambinos_room, 135, 95, DOWN);

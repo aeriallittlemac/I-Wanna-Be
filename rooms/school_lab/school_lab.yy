@@ -41,7 +41,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7061FE45","properties":[],"isDnd":false,"objectId":{"name":"obj_lab_locked_warp","path":"objects/obj_lab_locked_warp/obj_lab_locked_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.1111114,"scaleY":0.31578997,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":95.0,"y":152.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4098DAB7","properties":[],"isDnd":false,"objectId":{"name":"obj_lab_vent_interactable","path":"objects/obj_lab_vent_interactable/obj_lab_vent_interactable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.111111,"scaleY":0.2631579,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":101.0,"y":33.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4086FC66","properties":[],"isDnd":false,"objectId":{"name":"obj_lab_vents_interact_arrow_point","path":"objects/obj_lab_vents_interact_arrow_point/obj_lab_vents_interact_arrow_point.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":100.0,"y":19.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EC52EA9","properties":[],"isDnd":false,"objectId":{"name":"obj_lab_table_2","path":"objects/obj_lab_table_2/obj_lab_table_2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_574594E8","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_radius","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"5.0",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_bloom","path":"objects/obj_sh_light/obj_sh_light.yy",},"objectId":{"name":"obj_sh_light","path":"objects/obj_sh_light/obj_sh_light.yy",},"value":"0.5",},
@@ -106,7 +105,6 @@
     {"name":"inst_6328CCE8","path":"rooms/school_lab/school_lab.yy",},
     {"name":"inst_64BC6F94","path":"rooms/school_lab/school_lab.yy",},
     {"name":"inst_545DFB55","path":"rooms/school_lab/school_lab.yy",},
-    {"name":"inst_3EC52EA9","path":"rooms/school_lab/school_lab.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

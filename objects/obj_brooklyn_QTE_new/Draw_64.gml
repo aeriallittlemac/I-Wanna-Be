@@ -1,7 +1,7 @@
 draw_sprite_ext(spr_black_filter, -1, 0, 0, minimap_scale, minimap_scale, 0, c_white, 0.8);
 draw_sprite_ext(character_silhouette, character_anim_frame, (character_x+character_shake_offset)*minimap_scale, character_y*minimap_scale, character_scale*minimap_scale, character_scale*minimap_scale, 0, c_white, 1 );
 
-if QTE_start{
+if start{
 	draw_set_font(choice_pixel_font);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);

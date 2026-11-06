@@ -38,7 +38,8 @@ obj_scribble.textbox(
 );
 
 obj_scribble.textbox(
-	@"Besides, McRonald doubts someone as [scale,1.5]pompous[/] as you,
+	@"What? Only a fool would dare challenge Gambino!
+	[/page]Besides, McRonald doubts someone as [scale,1.5]pompous[/] as you,
 	[/page]could get even close to surmounting Gambino in the election.
 	", 
 	"McRonald", spr_mcronald_portrait_default
@@ -63,7 +64,7 @@ obj_scribble.textbox_unnamed(
 );
 
 obj_scribble.textbox(
-	@"Every year, we host an election to decide our new president for the year.
+	@"Every year, we host an election to decide our ‘new president' for the year.
 	[/page]However, if McRonald is recalling correctly, Gambino has not lost once.
 	[/page]Because no one is foolish enough to challenge Gambino. They would go missing.
 	", 

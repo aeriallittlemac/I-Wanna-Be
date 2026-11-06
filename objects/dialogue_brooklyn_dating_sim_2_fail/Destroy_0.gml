@@ -1,2 +1,7 @@
 event_inherited();
-NewDialogue(dialogue_brooklyn_dating_sim_game_over);
+if obj_dating_sim.lives_left>0{
+	NewDialogue(dialogue_brooklyn_dating_sim_3);
+}
+else{
+	NewDialogue(dialogue_brooklyn_dating_sim_game_over);
+}
