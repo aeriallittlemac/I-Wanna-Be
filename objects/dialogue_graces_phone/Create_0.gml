@@ -5,8 +5,8 @@ obj_scribble.textbox_unnamed(
 
 )
 obj_scribble.textbox(
-	@"That's Grace's phone!
-	[/page]She always keeps it by her side, so her must be somewhere near!
+	@"That's Grace's phone.
+	[/page]She's probably somewhere near then.
 	", 
-	"Mei", spr_mei_portrait_shocked
+	"Brooklyn", spr_brooklyn_portrait_default
 );

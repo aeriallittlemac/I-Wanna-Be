@@ -5,8 +5,7 @@ obj_scribble.textbox_unnamed(
 
 )
 obj_scribble.textbox(
-	@"Um...
-	[/page]What are you doing?
+	@"What are you doing?
 	", 
-	"Mei", spr_mei_portrait_uncomfortable_smile
+	"Brooklyn", spr_brooklyn_portrait_disgusted
 );

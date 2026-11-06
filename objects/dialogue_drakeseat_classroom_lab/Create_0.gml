@@ -2,13 +2,13 @@ event_inherited();
 if global.day == 2{
 	if !global.storylines.Main_Classroom.Day_Two.talked_to.drake{
 		obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
+			"zzzzzz...", 
 			"Drake", spr_drake_portrait_default
 		);
 	}
 	else{
 		obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
+			"zzzzzz...", 
 			"Drake", spr_drake_portrait_default
 		);
 	}
@@ -54,7 +54,7 @@ else if global.day == 3{
 }
 else if global.day == 4{
 	obj_scribble.textbox(
-			"*warns you that you're not allowed to go out", 
+			"zzzzzz...", 
 			"Drake", spr_drake_portrait_default
 		);
 }

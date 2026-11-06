@@ -1,7 +1,7 @@
 event_inherited();
 obj_scribble.textbox(
 	"We hear you loud and clear.", 
-	"Brooklyn", spr_brooklyn_portrait_smiling
+	"???", spr_brooklyn_portrait_smiling
 );
 obj_scribble.textbox(
 	@"[vl_gambino_Good_]Good.

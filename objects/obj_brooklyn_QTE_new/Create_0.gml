@@ -1,4 +1,3 @@
-
 QTE_bgm = qte_bgm;
 original_bgm_gain = audio_sound_get_gain(global.bgm);
 audio_sound_gain(global.bgm, 0, 100);
@@ -95,8 +94,7 @@ function drawPuzzle(){
 
 
 current_fps = game_get_speed(gamespeed_fps);
-game_set_speed(240, gamespeed_fps);
-start = false;
+QTE_start = false;
 puzzle_start = false;
 puzzle_finished = false;
 alarm[0] = 1;

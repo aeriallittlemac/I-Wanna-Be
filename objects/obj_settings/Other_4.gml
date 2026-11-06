@@ -25,14 +25,6 @@ if room == school_2F && global.game_time = "10:00 am"{
 	audio_play_sound(morning, 1, true);
 }
 }
-if room == school_1F && global.game_time = "12:00 pm"{
-	instance_activate_object(INST_LUNCH_TABLE);
-}
-else{
-	if instance_exists(INST_LUNCH_TABLE){
-		instance_deactivate_object(INST_LUNCH_TABLE);
-	}
-}
 if room == school_lab{
 	audio_stop_all();
 	set_QTE_bgm(five_four_theme_inverted);

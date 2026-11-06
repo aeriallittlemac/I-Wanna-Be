@@ -5,7 +5,7 @@ character_scale = target_camera_height/camera_get_view_height(view_camera[0])*ch
 if camera_get_view_height(view_camera[0])<= target_camera_height{
 	
 	alarm[0] = -1;
-	start=true;
+	QTE_start=true;
 }
 else{
 
