@@ -1,6 +1,0 @@
-event_inherited();
-
-	obj_scribble.textbox_unnamed(@"...
-	[/page]Is that puke I smell?
-	[/page]Better not go in there...
-	");

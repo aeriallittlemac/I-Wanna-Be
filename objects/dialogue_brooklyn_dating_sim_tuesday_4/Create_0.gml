@@ -5,6 +5,7 @@ event_inherited();
 obj_scribble.textbox(
 	@"I'l have to make sure that every single person, including Gambino...
 	[/page]...Know that you violently r**ed the sewing club teddy bear...
+	[/page]And took it when no one was looking.
 	", 
 	"Grace", spr_grace_portrait_default
 );

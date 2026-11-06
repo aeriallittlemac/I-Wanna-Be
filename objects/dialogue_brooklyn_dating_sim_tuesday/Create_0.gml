@@ -31,9 +31,8 @@ function but_why() {
 	);
 	
 	obj_scribble.textbox(
-	@"[#c94242]My Boyfriend, you know, the President?
-[/page]He exists, and is actually enjoyable to be around.
-[/page]Unlike the the likes of you.
+	@"[#c94242]*calls out Bobby for being here with impure motivations
+[/page]*Praises Gambino, who is her ideal stoic partner
 	",
 	"[#c94242]Brooklyn",spr_brooklyn_portrait_amused,,,obj_textbox_mock_pink,obj_namebox_mock_pink,obj_bounds_mock_pink,obj_name_mock_pink
 	);

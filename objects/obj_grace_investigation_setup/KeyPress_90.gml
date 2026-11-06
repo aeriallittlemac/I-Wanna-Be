@@ -1,4 +1,4 @@
-if !global.in_dialogue && !instance_exists(obj_grace_corpse_reveal){
+if !global.in_dialogue{
 	switch (obj_crosshair.str)
 {
     case "Grace's phone":
